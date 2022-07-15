@@ -1,0 +1,1 @@
+wget --spider --force-html -r -l1 http://parlafoi.fr 2>&1 | grep 'Saving to:'

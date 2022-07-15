@@ -1,0 +1,16 @@
+
+
+
+
+-------------------------------codes dans l'ordre d'execution-----------------------------------
+lib_scraping.py :
+N'est pas execute mais contient la librarie avec toutes les fonctions utilisees par les autres fichiers .py
+
+get_corpus_philosophy.py :
+Ecrit dans le fichier texte corpus_philosophy.txt les parties de chaque texte du corpus de philosophie apres l'avoir decoupe
+
+get_corpus_baptism.py :
+Ecrit dans un fichier texte corpus_baptism.txt les parties de chaque texte du corpus sur le bapteme apres l'avoir decoupe
+
+create_dataset_philosophy.py :
+Cree le dataframe pour l'algorithme d'apprentissage automatique stocke dans le fichier dataset_philosophy.csv
