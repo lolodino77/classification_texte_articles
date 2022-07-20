@@ -4,7 +4,7 @@
 
 -------------------------------codes dans l'ordre d'execution-----------------------------------
 lib_scraping.py :
-N'est pas execute mais contient la librarie avec toutes les fonctions utilisees par les autres fichiers .py
+N'est pas execute dans le terminal mais contient la librarie avec toutes les fonctions utilisees par les autres fichiers .py
 
 get_corpus_philosophy.py :
 Ecrit dans le fichier texte corpus_philosophy.txt les parties de chaque texte du corpus de philosophie apres l'avoir decoupe

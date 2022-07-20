@@ -7,6 +7,10 @@ url = "https://parlafoi.fr/lire/series/commentaire-de-la-summa/"
 urls = get_urls_on_webpage(url, filename, "w")
 url = "https://parlafoi.fr/lire/series/notions-de-base-en-philosophie/"
 urls = urls + get_urls_on_webpage(url, filename, "a")
+url = "https://parlafoi.fr/lire/series/la-scolastique-protestante/"
+urls = urls + get_urls_on_webpage(url, filename, "a")
+url = "https://parlafoi.fr/lire/series/le-presuppositionnalisme/"
+urls = urls + get_urls_on_webpage(url, filename, "a")
 urls = list(set(urls)) #enlever les doublons
 
 #Ecrit dans le fichier texte corpus_philosophy.txt tous les paragraphes de philosophie
