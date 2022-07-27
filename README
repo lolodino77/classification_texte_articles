@@ -23,4 +23,3 @@ Pretraite les messages du corpus pour les renvoyer dans un format exploitable pa
 
 1_feature_engineering.py :
 Cree les parametres du modele d'apprentissage supervise
-

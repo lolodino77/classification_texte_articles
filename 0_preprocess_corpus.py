@@ -56,3 +56,8 @@ print(type(preprocessed_corpus))
 # enregistre le corpus nettoye
 filename = "dataset_philosophy_preprocessed.csv"
 preprocessed_corpus.to_csv(filename, index=False)
+
+
+
+
+#Credit source : https://inside-machinelearning.com/preprocessing-nlp-tutoriel-pour-nettoyer-rapidement-un-texte/
