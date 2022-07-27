@@ -1,0 +1,20 @@
+# enlever la ponctuation et met en minuscule
+sentence_w_punct = "".join([i.lower() for i in sentence if i not in string.punctuation])
+
+# enlever les chiffres
+sentence_w_num = ''.join(i for i in sentence_w_punct if not i.isdigit())
+
+# transformer les phrases en liste de tokens (en liste de mots)
+tokenize_sentence = nltk.tokenize.word_tokenize(sentence_w_num)
+
+# enlever les stopwords (mots n’apportant pas de sens)
+words_w_stopwords = [i for i in tokenize_sentence if i not in stopwords]
+
+# lemmatizer
+words_lemmatize = (lemmatizer.lemmatize(w) for w in words_w_stopwords)
+
+# enlever les majuscules
+sentence_clean = ' '.join(w for w in words_lemmatize if w.lower() in words or not w.isalpha())
+
+# reformer les phrases avec les mots restants
+preprocess_list.append(sentence_clean)
