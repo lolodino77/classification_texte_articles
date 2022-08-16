@@ -19,7 +19,7 @@ print()
 language = "french"
 french_stopwords = nltk.corpus.stopwords.words(language)
 mots = set(line.strip() for line in open('dictionnaire.txt'))
-	lemmatizer = FrenchLefffLemmatizer()
+lemmatizer = FrenchLefffLemmatizer()
 
 #remplacer les virgules bizarres
 print("avant d'enlever les virgules bizarres")

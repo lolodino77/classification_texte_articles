@@ -23,6 +23,9 @@ mots = set(line.strip() for line in open('dictionnaire.txt'))
 lemmatizer = FrenchLefffLemmatizer()
 
 def preprocess_list_of_documents(listofdocuments):
+# cas speciaux a traiter
+# mots avec un apostrophe avant
+# mots composes avec un ou plusieurs tirets
 	preprocess_list = []
 	for document in listofdocuments :
 		#remplacer les virgules bizarres
@@ -45,9 +48,7 @@ def preprocess_list_of_documents(listofdocuments):
 
 		# lemmatizer (convertir en la racine)
 		words_lemmatize = (lemmatizer.lemmatize(w) for w in words_w_stopwords) #words_lemmatize est un iterateur
-
-		# reformer la phrase en reliant les mots precedents
-		document_clean = ' '.join(w for w in words_lemmatize if w.lower() in mots or not w.isalpha())
+		words_lemmatize = list(words_lemmatize)
 
 		# reformer la phrase en reliant les mots precedents
 		document_clean = " ".join(words_lemmatize)
@@ -65,7 +66,7 @@ print(type(preprocessed_corpus))
 
 # enregistre le corpus nettoye
 filename = "dataset_philosophy_preprocessed.csv"
-preprocessed_corpus.to_csv(filename, index=False)
+preprocessed_corpus.to_csv(filename, index=False, sep=",")
 
 
 
