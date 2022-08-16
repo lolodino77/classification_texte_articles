@@ -24,8 +24,8 @@ lemmatizer = FrenchLefffLemmatizer()
 
 def preprocess_list_of_documents(listofdocuments):
 # cas speciaux a traiter
-# mots avec un apostrophe avant
-# mots composes avec un ou plusieurs tirets
+# mots avec un apostrophe avant (Traite)
+# mots composes avec un ou plusieurs tirets (A traiter)
 	preprocess_list = []
 	for document in listofdocuments :
 		#remplacer les virgules bizarres
