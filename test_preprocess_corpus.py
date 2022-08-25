@@ -9,7 +9,8 @@ pd.set_option('display.min_rows', 100)
 pd.set_option('display.max_rows', 100)
 
 df = pd.read_csv('dataset_philosophy.csv')
-sentence = df.iloc[10][0]
+# sentence = df.iloc[10][0]
+sentence = "la toute-puissance de Dieu"
 sentence_original = sentence
 print("sentence")
 print(sentence)
@@ -31,7 +32,8 @@ print(sentence)
 sentence = re.sub(r"\s\w+'", " ", sentence, 0)
 
 # enlever la ponctuation et met en minuscule
-sentence_w_punct = "".join([i.lower() for i in sentence if i not in string.punctuation])
+ponctuation_to_remove = string.punctuation.replace("-", "")
+sentence_w_punct = "".join([i.lower() for i in sentence if i not in ponctuation_to_remove])
 print("sentence_w_punct")
 print(sentence_w_punct)
 print()

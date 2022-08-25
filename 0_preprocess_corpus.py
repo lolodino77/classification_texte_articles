@@ -35,7 +35,8 @@ def preprocess_list_of_documents(listofdocuments):
 		document = re.sub(r"\s\w+'", " ", document, 0)
 
 		# enlever la ponctuation et met en minuscule
-		document_w_punct = "".join([i.lower() for i in document if i not in string.punctuation])
+		ponctuation_to_remove = string.punctuation.replace("-", "")
+		document_w_punct = "".join([i.lower() for i in document if i not in ponctuation_to_remove])
 
 		# enlever les chiffres
 		document_w_num = ''.join(i for i in document_w_punct if not i.isdigit())
