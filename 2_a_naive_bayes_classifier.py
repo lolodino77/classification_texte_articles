@@ -20,7 +20,7 @@ X_train_counts = count_vect.fit_transform(train_data.data)
 # transform a count matrix to a normalized tf-idf representation (tf-idf transformer)
 tfidf_transformer = TfidfTransformer()
 X_train_tfidf = tfidf_transformer.fit_transform(X_train_counts)
-
+print(X_train_tfidf)
 
 
 
