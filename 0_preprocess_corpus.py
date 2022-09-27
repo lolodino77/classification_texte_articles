@@ -4,23 +4,9 @@ import nltk
 import re
 import string
 from french_lefff_lemmatizer.french_lefff_lemmatizer import FrenchLefffLemmatizer
-pd.set_option('display.max_colwidth', 600)
-pd.set_option('display.min_rows', 100)
-pd.set_option('display.max_rows', 100)
-
-df = pd.read_csv('dataset_philosophy.csv')
-# print(df)
-
-#Pas besoin si tout est deja installe
-# nltk.download('stopwords')
-# nltk.download('punkt')
-# nltk.download('words')
-# nltk.download('wordnet')
-
-language = "french"
-french_stopwords = nltk.corpus.stopwords.words(language)
-mots = set(line.strip() for line in open('dictionnaire.txt'))
-lemmatizer = FrenchLefffLemmatizer()
+pd.set_option('display.max_colwidth', 30)
+pd.set_option('display.min_rows', 20)
+pd.set_option('display.max_rows', 20)
 
 def preprocess_list_of_documents(listofdocuments):
 # cas speciaux a traiter
@@ -58,18 +44,38 @@ def preprocess_list_of_documents(listofdocuments):
 		preprocess_list.append(document_clean)
 	return preprocess_list
 
+#Pas besoin si tout est deja installe
+# nltk.download('stopwords')
+# nltk.download('punkt')
+# nltk.download('words')
+# nltk.download('wordnet')
 
-preprocessed_corpus = df.copy()
-preprocessed_corpus['message'] = preprocess_list_of_documents(df['message'])
-print("preprocessed_corpus :")
-print(preprocessed_corpus)
-print(type(preprocessed_corpus))
+corpus_philosophy = pd.read_csv('dataset_philosophy.csv')
+corpus_baptism = pd.read_csv('dataset_baptism.csv')
 
-# enregistre le corpus nettoye
-filename = "dataset_philosophy_preprocessed.csv"
-preprocessed_corpus.to_csv(filename, index=False, sep=",")
+corpus_philosophy["category"] = "philosophy"
+corpus_baptism["category"] = "baptism"
+	
+corpus = pd.concat([corpus_philosophy, corpus_baptism]) 
+print(corpus.shape)
+print(corpus.columns)
 
+language = "french"
+french_stopwords = nltk.corpus.stopwords.words(language)
+mots = set(line.strip() for line in open('dictionnaire.txt'))
+lemmatizer = FrenchLefffLemmatizer()
 
+corpus["message_preprocessed"] = preprocess_list_of_documents(corpus['message'])
+
+corpus["id"] = corpus.index
+corpus = corpus.rename(columns={"length_x": "length"})
+corpus['length_preprocessed'] = corpus['message_preprocessed'].str.len()
+corpus = corpus[["id", "message", "message_preprocessed", "category"]]
+corpus["length"] = corpus["message_preprocessed"].str.len()
+
+print(corpus.shape)
+print(corpus.columns)
+corpus.to_parquet("data.parquet", engine="fastparquet")
 
 
 #Credit source : 
