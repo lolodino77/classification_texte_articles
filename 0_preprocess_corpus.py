@@ -67,17 +67,16 @@ lemmatizer = FrenchLefffLemmatizer()
 
 corpus["message_preprocessed"] = preprocess_list_of_documents(corpus['message'])
 
-corpus["id"] = list(range(len(corpus)))
-print(corpus["id"].duplicated().any()) #verifier qu'il n'y a pas d'id doublons
+corpus.index = list(range(len(corpus)))
+corpus["id"] = corpus.index	
+#corpus["id"] = list(range(len(corpus)))
 
-corpus = corpus.rename(columns={"length_x": "length"})
-corpus['length_preprocessed'] = corpus['message_preprocessed'].str.len()
 corpus = corpus[["id", "message", "message_preprocessed", "category"]]
-corpus["length"] = corpus["message_preprocessed"].str.len()
+corpus["length"] = corpus["message"].str.len()
 
-print(corpus.shape)
-print(corpus.columns)
+print(corpus)
 corpus.to_parquet("data.parquet", engine="fastparquet")
+
 
 
 #Credit source : 
