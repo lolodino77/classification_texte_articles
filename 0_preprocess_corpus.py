@@ -67,7 +67,9 @@ lemmatizer = FrenchLefffLemmatizer()
 
 corpus["message_preprocessed"] = preprocess_list_of_documents(corpus['message'])
 
-corpus["id"] = corpus.index
+corpus["id"] = list(range(len(corpus)))
+print(corpus["id"].duplicated().any()) #verifier qu'il n'y a pas d'id doublons
+
 corpus = corpus.rename(columns={"length_x": "length"})
 corpus['length_preprocessed'] = corpus['message_preprocessed'].str.len()
 corpus = corpus[["id", "message", "message_preprocessed", "category"]]
