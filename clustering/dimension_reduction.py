@@ -22,6 +22,7 @@ print(corpus.index.duplicated().any())
 
 sb.histplot(data=corpus, x="length")
 plt.xlim(0, 600)
+plt.show()
 
 X = corpus["message_preprocessed"]
 y = corpus["category"]
