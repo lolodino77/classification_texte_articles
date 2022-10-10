@@ -1,3 +1,4 @@
+import os
 import numpy as np
 import pandas as pd
 from sklearn.feature_extraction.text import CountVectorizer
@@ -11,8 +12,16 @@ pd.set_option('display.max_colwidth', 30)
 pd.set_option('display.min_rows', 20)
 pd.set_option('display.max_rows', 20)
 
+from pathlib import Path, PureWindowsPath
+os.chdir(os.path.dirname(os.getcwd()))
+path = PureWindowsPath( + "\\data\\data.parquet")
+path = path.as_posix()
+corpus = pd.read_parquet(path) #engine="fastparquet"
+# corpus = pd.read_parquet(os.path.dirname(path), engine="fastparquet")
+
 corpus = pd.read_parquet("data.parquet", engine="fastparquet")
 corpus = corpus.sample(frac=1).reset_index(drop=True)
+
 X = corpus["message_preprocessed"]
 y = corpus["category"]
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, stratify=y)

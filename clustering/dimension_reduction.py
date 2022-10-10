@@ -5,15 +5,18 @@ from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.feature_extraction.text import TfidfTransformer
 from sklearn.decomposition import TruncatedSVD
 from sklearn.manifold import TSNE
+from pathlib import Path, PureWindowsPath
+from inspect import getsourcefile
+from os.path import abspath
 
 pd.set_option('display.max_colwidth', 60)
 pd.set_option('display.min_rows', 10)
 pd.set_option('display.max_rows', 10)
 
-root = "/home/lolodino77/Documents/projets_ia/projet_philo_pedobaptisme"
-corpus = pd.read_parquet(root + "/data.parquet", engine="fastparquet")
-corpus["id"] = list(range(len(corpus)))
-corpus = corpus.sort_values("id")
+os.chdir(os.path.dirname(os.path.abspath(__file__)))
+path = PureWindowsPath(os.path.dirname(os.getcwd()) + "\\data\\data.parquet")
+path = path.as_posix()
+corpus = pd.read_parquet(path) #engine="fastparquet"
 print(corpus)
 
 #Verifier qu'il n'y a pas d'id en doublon
