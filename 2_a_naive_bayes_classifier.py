@@ -13,13 +13,10 @@ pd.set_option('display.min_rows', 20)
 pd.set_option('display.max_rows', 20)
 
 from pathlib import Path, PureWindowsPath
-os.chdir(os.path.dirname(os.getcwd()))
-path = PureWindowsPath( + "\\data\\data.parquet")
+os.chdir(os.path.dirname(os.path.abspath(__file__)))
+path = PureWindowsPath(os.getcwd() + "\\data\\input\\data.parquet")
 path = path.as_posix()
 corpus = pd.read_parquet(path) #engine="fastparquet"
-# corpus = pd.read_parquet(os.path.dirname(path), engine="fastparquet")
-
-corpus = pd.read_parquet("data.parquet", engine="fastparquet")
 corpus = corpus.sample(frac=1).reset_index(drop=True)
 
 X = corpus["message_preprocessed"]
@@ -54,16 +51,16 @@ print(classification_report(y_test, y_pred))
 corpus_test = pd.DataFrame({"message_preprocessed":X_test, "truth":y_test, "pred":y_pred})
 corpus_test_errors = corpus_test.query("truth != pred")
 corpus_test_errors = corpus_test_errors[["truth", "pred", "message_preprocessed"]]
-corpus_test_errors.to_csv("output/prediction_errors.csv", index=False)
+corpus_test_errors.to_csv("data/output/prediction_errors.csv", index=False)
 
 # on affiche les poids des mots tfidf
 idf = tfidf_transformer.idf_
 df_idf_weights = pd.DataFrame({"words":count_vect.get_feature_names(), "idf":idf})
 df_idf_weights =  df_idf_weights.sort_values("idf", ascending=False)
-pd.DataFrame({"words":count_vect.get_feature_names(), "idf":idf})
+# print(pd.DataFrame({"words":count_vect.get_feature_names(), "idf":idf}))
 
 idf = tfidf_vectorizer.idf_
-pd.DataFrame({"words":tfidf_vectorizer.get_feature_names(), "idf":idf})
+scores_tfidf = pd.DataFrame({"words":tfidf_vectorizer.get_feature_names(), "idf":idf})
 
 # Sources :
 # https://iq.opengenus.org/text-classification-naive-bayes/

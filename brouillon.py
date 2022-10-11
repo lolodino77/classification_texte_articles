@@ -12,8 +12,10 @@ pd.set_option('display.max_colwidth', 30)
 pd.set_option('display.min_rows', 20)
 pd.set_option('display.max_rows', 20)
 
-# from pathlib import Path, PureWindowsPath
-# path = PureWindowsPath(os.getcwd() + "\\data.parquet")
-# path = path.as_posix()
-# corpus = pd.read_parquet(os.path.dirname(path)) #engine="fastparquet"
-# print(corpus)
+from pathlib import Path, PureWindowsPath
+os.chdir(os.path.dirname(os.path.abspath(__file__)))
+path = PureWindowsPath(os.getcwd() + "\\data\\input\\data.parquet")
+path = path.as_posix()
+corpus = pd.read_parquet(path) #engine="fastparquet"
+print(corpus)
+print("tonmere")

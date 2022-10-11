@@ -1,0 +1,8 @@
+comprehension algo :
+- comprendre / reproduire le calcul de idf_ de la classe TfidfVectorizer dans sklearn
+- comprendre en details et intuitivement tfidf
+- comprendre les cas d'usages, avantages et desavantages de tfidf
+- faire de chaque colonne pour avoir qque chose qui ressemble a idf_
+- visualisation des meilleurs mots (avec les meilleurs scores tfidf) pour un document
+
+- visualisation en 2d des clusters (groupes de chaque classe)
