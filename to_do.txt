@@ -1,4 +1,5 @@
 comprehension algo :
+- automatiser plot (creer fonction, peut etre classe dimension_reduction)
 - comprendre / reproduire le calcul de idf_ de la classe TfidfVectorizer dans sklearn
 - comprendre en details et intuitivement tfidf
 - comprendre les cas d'usages, avantages et desavantages de tfidf
@@ -9,3 +10,4 @@ comprehension algo :
 
 - visualisation en 2d des clusters (groupes de chaque classe)
 - revoir les matrices de passage et formule de pca et svd (obtenir le dataset dans la nouvelle base par changement de base)
+- plotly : #bizarre verifier pourquoi valeurs changent en fonction du nombre de couleur presente ?
