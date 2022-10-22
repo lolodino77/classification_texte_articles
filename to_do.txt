@@ -1,6 +1,6 @@
 comprehension algo :
 - automatiser plot (creer fonction, peut etre classe dimension_reduction)
-- comprendre / reproduire le calcul de idf_ de la classe TfidfVectorizer dans sklearn
+- comprendre / reproduire le calcul de l'attribut idf_ de la classe TfidfVectorizer dans sklearn
 - comprendre en details et intuitivement tfidf
 - comprendre les cas d'usages, avantages et desavantages de tfidf
 - faire de chaque colonne pour avoir qque chose qui ressemble a idf_
