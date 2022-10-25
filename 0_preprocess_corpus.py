@@ -3,12 +3,14 @@ import numpy as np
 import nltk
 import re
 import string
+import os
+from pathlib import Path, PureWindowsPath
 from french_lefff_lemmatizer.french_lefff_lemmatizer import FrenchLefffLemmatizer
 pd.set_option('display.max_colwidth', 30)
 pd.set_option('display.min_rows', 20)
 pd.set_option('display.max_rows', 20)
 
-def preprocess_list_of_documents(listofdocuments):
+def preprocess_list_of_documents(listofdocuments, lemmatizer):
 # cas speciaux a traiter
 # mots avec un apostrophe avant (Traite)
 # mots composes avec un ou plusieurs tirets (A traiter)
@@ -45,11 +47,13 @@ def preprocess_list_of_documents(listofdocuments):
 	return preprocess_list
 
 #Pas besoin si tout est deja installe
-# nltk.download('stopwords')
-# nltk.download('punkt')
-# nltk.download('words')
-# nltk.download('wordnet')
+nltk.download('stopwords')
+nltk.download('punkt')
+nltk.download('words')
+nltk.download('wordnet')
 
+os.chdir(os.path.dirname(os.path.abspath(__file__)))
+print(os.getcwd())
 corpus_philosophy = pd.read_csv('dataset_philosophy.csv')
 corpus_baptism = pd.read_csv('dataset_baptism.csv')
 
@@ -62,10 +66,11 @@ print(corpus.columns)
 
 language = "french"
 french_stopwords = nltk.corpus.stopwords.words(language)
-mots = set(line.strip() for line in open('dictionnaire.txt'))
-lemmatizer = FrenchLefffLemmatizer()
+print("os.getcwd() =", os.getcwd())
+mots = set(line.strip() for line in open('dictionnaire.txt', encoding="utf8"))
 
-corpus["message_preprocessed"] = preprocess_list_of_documents(corpus['message'])
+lemmatizer = FrenchLefffLemmatizer()
+corpus["message_preprocessed"] = preprocess_list_of_documents(corpus['message'], lemmatizer)
 
 corpus.index = list(range(len(corpus)))
 corpus["id"] = corpus.index	
@@ -74,10 +79,26 @@ corpus["id"] = corpus.index
 corpus = corpus[["id", "message", "message_preprocessed", "category"]]
 corpus["length"] = corpus["message"].str.len()
 
+corpus["category_bin"] = np.select([corpus["category"] == "philosophy"], [1], default=0)
+corpus = corpus.sample(frac=1).reset_index(drop=True)
+
+#enlever les retours a la ligne \n et \r
+corpus.replace("\\n", " ", regex=True, inplace=True)
+corpus.replace("\\r", " ", regex=True, inplace=True)
+
+#supprimer les doublons
+print("corpus.shape =", corpus.shape)
+corpus.drop_duplicates("message", inplace=True, keep="first")
+print("corpus.shape =", corpus.shape)
+
+#pour enlever les faux exemples : commentaires, description auteur, texte anglais, references bibliographiques
+
+# Enregistrer le corpus
+path = PureWindowsPath(os.getcwd() + "\\data\\input\\data.parquet")
+path = path.as_posix()
+corpus.to_parquet(path, engine="fastparquet")
+corpus = pd.read_parquet(path) #engine="fastparquet"
 print(corpus)
-corpus.to_parquet("data.parquet", engine="fastparquet")
-
-
 
 #Credit source : 
 #https://inside-machinelearning.com/preprocessing-nlp-tutoriel-pour-nettoyer-rapidement-un-texte/

@@ -11,3 +11,15 @@ comprehension algo :
 - visualisation en 2d des clusters (groupes de chaque classe)
 - revoir les matrices de passage et formule de pca et svd (obtenir le dataset dans la nouvelle base par changement de base)
 - plotly : #bizarre verifier pourquoi valeurs changent en fonction du nombre de couleur presente ?
+
+
+
+
+depot git/installation/compatibilite sur tout environnement
+- creer un fichier requirements pour installer automatiquement toutes les dependances
+pip install git+https://github.com/ClaudeCoulombe/FrenchLefffLemmatizer.git4
+depot git : https://github.com/ClaudeCoulombe/FrenchLefffLemmatizer/tree/master/french_lefff_lemmatizer
+
+python general notions :
+- try except
+- differences \n et \r

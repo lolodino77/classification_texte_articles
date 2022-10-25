@@ -1,20 +1,35 @@
-# enlever la ponctuation et met en minuscule
-sentence_w_punct = "".join([i.lower() for i in sentence if i not in string.punctuation])
+# corpus["message_preprocessed"] = preprocess_list_of_documents(corpus['message'])
 
-# enlever les chiffres
-sentence_w_num = ''.join(i for i in sentence_w_punct if not i.isdigit())
+# corpus.index = list(range(len(corpus)))
+# corpus["id"] = corpus.index	
+# #corpus["id"] = list(range(len(corpus)))
 
-# transformer les phrases en liste de tokens (en liste de mots)
-tokenize_sentence = nltk.tokenize.word_tokenize(sentence_w_num)
+# corpus = corpus[["id", "message", "message_preprocessed", "category"]]
+# corpus["length"] = corpus["message"].str.len()
 
-# enlever les stopwords (mots n’apportant pas de sens)
-words_w_stopwords = [i for i in tokenize_sentence if i not in stopwords]
+# print(corpus)
+# corpus.to_parquet("data.parquet", engine="fastparquet")
 
-# lemmatizer
-words_lemmatize = (lemmatizer.lemmatize(w) for w in words_w_stopwords)
+# path = PureWindowsPath(os.getcwd() + "\\data\\input\\data.parquet")
+# path = path.as_posix()
+# corpus = pd.read_parquet(path) #engine="fastparquet"
+# corpus["category_bin"] = np.select([corpus["category"] == "philosophy"], [1], default=0)
+# corpus = corpus.sample(frac=1).reset_index(drop=True)
+# # corpus["category_bin"] = (corpus["category_bin"] == "philosophy")
+# # corpus
 
-# enlever les majuscules
-sentence_clean = ' '.join(w for w in words_lemmatize if w.lower() in words or not w.isalpha())
+# #enlever les retours a la ligne
+# corpus.replace("\\n", " ", regex=True, inplace=True)
 
-# reformer les phrases avec les mots restants
-preprocess_list.append(sentence_clean)
+# #supprimer les doublons
+# print("corpus.shape =", corpus.shape)
+# corpus.drop_duplicates("message", inplace=True, keep="first")
+# print("corpus.shape =", corpus.shape)
+
+# # corpus.shape = (4007, 6) si False
+# # corpus.shape = (4649, 6) si first
+
+# print(corpus)
+
+#Credit source : 
+#https://inside-machinelearning.com/preprocessing-nlp-tutoriel-pour-nettoyer-rapidement-un-texte/
