@@ -12,7 +12,8 @@ comprehension algo :
 - revoir les matrices de passage et formule de pca et svd (obtenir le dataset dans la nouvelle base par changement de base)
 - plotly : #bizarre verifier pourquoi valeurs changent en fonction du nombre de couleur presente ?
 
-
+algorithmes a tester :
+- tester perf sur CountVectorizer (matrice d'occurrences simple)
 
 
 depot git/installation/compatibilite sur tout environnement
@@ -23,3 +24,5 @@ depot git : https://github.com/ClaudeCoulombe/FrenchLefffLemmatizer/tree/master/
 python general notions :
 - try except
 - differences \n et \r
+- comprendre : current_folder = globals()['_dh'][0]
+- 

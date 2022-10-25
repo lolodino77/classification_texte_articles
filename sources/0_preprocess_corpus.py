@@ -52,10 +52,11 @@ nltk.download('punkt')
 nltk.download('words')
 nltk.download('wordnet')
 
-os.chdir(os.path.dirname(os.path.abspath(__file__)))
 print(os.getcwd())
-corpus_philosophy = pd.read_csv('dataset_philosophy.csv')
-corpus_baptism = pd.read_csv('dataset_baptism.csv')
+os.chdir(os.path.dirname(os.path.abspath(__file__ + '/..')))
+print(os.getcwd())
+corpus_philosophy = pd.read_csv('data/input/dataset_philosophy.csv')
+corpus_baptism = pd.read_csv('data/input/dataset_baptism.csv')
 
 corpus_philosophy["category"] = "philosophy"
 corpus_baptism["category"] = "baptism"
