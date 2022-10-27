@@ -10,12 +10,21 @@ pd.set_option('display.max_colwidth', 30)
 pd.set_option('display.min_rows', 20)
 pd.set_option('display.max_rows', 20)
 
-def preprocess_list_of_documents(listofdocuments, lemmatizer):
-# cas speciaux a traiter
+def preprocess_list_of_documents(list_of_documents, lemmatizer):
+	"""Nettoie tous les documents d'une liste pour creer un dataset exploitable par des modeles d'IA.
+	
+	Parametres:
+	list_of_documents (liste de string) : Une liste de documents (les textes a classifier) a nettoyer 
+	lemmatizer (fonction) : Le lemmatizer qui servira a lemmatizer les mots des documents si possible
+	
+	Sortie:
+	preprocess_list (liste de string) : Une liste de documents nettoyes
+	"""
+# cas speciaux restants a traiter :
 # mots avec un apostrophe avant (Traite)
 # mots composes avec un ou plusieurs tirets (A traiter)
 	preprocess_list = []
-	for document in listofdocuments :
+	for document in list_of_documents :
 		#remplacer les virgules bizarres
 		document = document.replace("’", "'")
 
@@ -52,42 +61,53 @@ nltk.download('punkt')
 nltk.download('words')
 nltk.download('wordnet')
 
+#Lecture des fichiers csv
 print(os.getcwd())
-os.chdir(os.path.dirname(os.path.abspath(__file__ + '/..')))
+os.chdir(os.path.dirname(os.path.abspath(__file__ + '/..' * 2)))
 print(os.getcwd())
 corpus_philosophy = pd.read_csv('data/input/dataset_philosophy.csv')
 corpus_baptism = pd.read_csv('data/input/dataset_baptism.csv')
 
+# Annotation des documents
 corpus_philosophy["category"] = "philosophy"
 corpus_baptism["category"] = "baptism"
-	
+
+# Creation du dataset final en regroupant les documents des deux classes
 corpus = pd.concat([corpus_philosophy, corpus_baptism]) 
 print(corpus.shape)
 print(corpus.columns)
 
+# Recuperation du lemmatizer
 language = "french"
 french_stopwords = nltk.corpus.stopwords.words(language)
 print("os.getcwd() =", os.getcwd())
-mots = set(line.strip() for line in open('dictionnaire.txt', encoding="utf8"))
-
+# mots = set(line.strip() for line in open('dictionnaire.txt', encoding="utf8"))
 lemmatizer = FrenchLefffLemmatizer()
+
+# Execution de la fonction principale qui fait le nettoyage
 corpus["message_preprocessed"] = preprocess_list_of_documents(corpus['message'], lemmatizer)
 
+# Creation de l'id unique
 corpus.index = list(range(len(corpus)))
-corpus["id"] = corpus.index	
-#corpus["id"] = list(range(len(corpus)))
+corpus["id"] = corpus.index
 
+# Suppression des colonnes inutiles
 corpus = corpus[["id", "message", "message_preprocessed", "category"]]
+
+# Creation de la taille de chaque documents (en nombre de caracteres)
 corpus["length"] = corpus["message"].str.len()
 
+# Annotation au format entier (necessaire pour certaines fonctions de sklearn)
 corpus["category_bin"] = np.select([corpus["category"] == "philosophy"], [1], default=0)
+
+# Melange aleatoire des documents
 corpus = corpus.sample(frac=1).reset_index(drop=True)
 
-#enlever les retours a la ligne \n et \r
+# Suppression des retours a la ligne \n et \r
 corpus.replace("\\n", " ", regex=True, inplace=True)
 corpus.replace("\\r", " ", regex=True, inplace=True)
 
-#supprimer les doublons
+# Suppression des doublons
 print("corpus.shape =", corpus.shape)
 corpus.drop_duplicates("message", inplace=True, keep="first")
 print("corpus.shape =", corpus.shape)
