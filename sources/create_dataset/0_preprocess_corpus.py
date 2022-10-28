@@ -66,15 +66,19 @@ nltk.download('wordnet')
 print(os.getcwd())
 os.chdir(os.path.dirname(os.path.abspath(__file__ + '/..' * 2)))
 print(os.getcwd())
-corpus_philosophy = pd.read_csv('data/input/dataset_philosophy.csv')
-corpus_baptism = pd.read_csv('data/input/dataset_baptism.csv')
+# corpus_1 = pd.read_csv('data/input/dataset_philosophy.csv')
+corpus_1 = pd.read_csv('data/input/dataset_epistemology.csv')
+corpus_0 = pd.read_csv('data/input/dataset_moyen_age.csv')
 
 # Annotation des documents
-corpus_philosophy["category"] = "philosophy"
-corpus_baptism["category"] = "baptism"
+# corpus_1["category"] = "philosophy"
+class_1 = "middle_age"
+class_0 = "epistemology"
+corpus_1["category"] = class_1
+corpus_0["category"] = class_0
 
 # Creation du dataset final en regroupant les documents des deux classes
-corpus = pd.concat([corpus_philosophy, corpus_baptism]) 
+corpus = pd.concat([corpus_1, corpus_0]) 
 print(corpus.shape)
 print(corpus.columns)
 
@@ -99,7 +103,7 @@ corpus = corpus[["id", "message", "message_preprocessed", "category"]]
 corpus["length"] = corpus["message"].str.len()
 
 # Annotation au format entier (necessaire pour certaines fonctions de sklearn)
-corpus["category_bin"] = np.select([corpus["category"] == "philosophy"], [1], default=0)
+corpus["category_bin"] = np.select([corpus["category"] == class_1], [1], default=0)
 
 # Melange aleatoire des documents
 corpus = corpus.sample(frac=1).reset_index(drop=True)
@@ -116,7 +120,7 @@ print("corpus.shape =", corpus.shape)
 #pour enlever les faux exemples : commentaires, description auteur, texte anglais, references bibliographiques
 
 # Enregistrer le corpus
-path = PureWindowsPath(os.getcwd() + "\\data\\input\\data.parquet")
+path = PureWindowsPath(os.getcwd() + "\\data\\input\\data_" + class_1 + "_" + class_0 + ".parquet")
 path = path.as_posix()
 corpus.to_parquet(path, engine="fastparquet")
 corpus = pd.read_parquet(path) #engine="fastparquet"
