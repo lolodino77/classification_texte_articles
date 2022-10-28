@@ -1,35 +1,14 @@
-# corpus["message_preprocessed"] = preprocess_list_of_documents(corpus['message'])
+# Creation du dataframe bapteme
+bibliography_urls = ["https://parlafoi.fr/lire/series/commentaire-de-la-summa/",
+"https://parlafoi.fr/lire/series/notions-de-base-en-philosophie/",
+"https://parlafoi.fr/lire/series/la-scolastique-protestante/",
+"https://parlafoi.fr/lire/series/le-presuppositionnalisme/"]
+filename_urls_articles = "urls_bapteme_articles.txt"
+filename_corpus = "corpus_bapteme.txt"
 
-# corpus.index = list(range(len(corpus)))
-# corpus["id"] = corpus.index	
-# #corpus["id"] = list(range(len(corpus)))
+write_corpus_from_urls(bibliography_urls, filename_urls_articles, filename_corpus, file_open_mode="a")
 
-# corpus = corpus[["id", "message", "message_preprocessed", "category"]]
-# corpus["length"] = corpus["message"].str.len()
+filename_corpus_input = "corpus_bapteme.txt"
+filename_corpus_output = "dataset_bapteme.csv"
 
-# print(corpus)
-# corpus.to_parquet("data.parquet", engine="fastparquet")
-
-# path = PureWindowsPath(os.getcwd() + "\\data\\input\\data.parquet")
-# path = path.as_posix()
-# corpus = pd.read_parquet(path) #engine="fastparquet"
-# corpus["category_bin"] = np.select([corpus["category"] == "philosophy"], [1], default=0)
-# corpus = corpus.sample(frac=1).reset_index(drop=True)
-# # corpus["category_bin"] = (corpus["category_bin"] == "philosophy")
-# # corpus
-
-# #enlever les retours a la ligne
-# corpus.replace("\\n", " ", regex=True, inplace=True)
-
-# #supprimer les doublons
-# print("corpus.shape =", corpus.shape)
-# corpus.drop_duplicates("message", inplace=True, keep="first")
-# print("corpus.shape =", corpus.shape)
-
-# # corpus.shape = (4007, 6) si False
-# # corpus.shape = (4649, 6) si first
-
-# print(corpus)
-
-#Credit source : 
-#https://inside-machinelearning.com/preprocessing-nlp-tutoriel-pour-nettoyer-rapidement-un-texte/
+write_corpus_dataset_from_paragraphs(filename_corpus_input, filename_corpus_output, file_open_mode="a")

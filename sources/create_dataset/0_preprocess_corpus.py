@@ -53,6 +53,7 @@ def preprocess_list_of_documents(list_of_documents, lemmatizer):
 
 		#rajouter la phrase dans la liste
 		preprocess_list.append(document_clean)
+		
 	return preprocess_list
 
 #Pas besoin si tout est deja installe
