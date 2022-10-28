@@ -1,14 +1,6 @@
-# Creation du dataframe bapteme
-bibliography_urls = ["https://parlafoi.fr/lire/series/commentaire-de-la-summa/",
-"https://parlafoi.fr/lire/series/notions-de-base-en-philosophie/",
-"https://parlafoi.fr/lire/series/la-scolastique-protestante/",
-"https://parlafoi.fr/lire/series/le-presuppositionnalisme/"]
-filename_urls_articles = "urls_bapteme_articles.txt"
-filename_corpus = "corpus_bapteme.txt"
-
-write_corpus_from_urls(bibliography_urls, filename_urls_articles, filename_corpus, file_open_mode="a")
-
-filename_corpus_input = "corpus_bapteme.txt"
-filename_corpus_output = "dataset_bapteme.csv"
-
-write_corpus_dataset_from_paragraphs(filename_corpus_input, filename_corpus_output, file_open_mode="a")
+X_test_count = count_vectorizer.fit_transform(X_test)
+X_test_normalized = normalize(X_test_count, norm='l2', axis=1) #normalisation par ligne
+X_test_tfidf = tfidf_vectorizer.fit_transform(X_test)
+X_test_hashing = hashing_vectorizer.fit_transform(X_test)
+X_test_observed_expected = vsm.observed_over_expected(X_test_count).round(2)
+X_test_pmi = vsm.pmi(X_test_count)

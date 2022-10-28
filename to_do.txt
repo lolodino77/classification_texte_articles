@@ -15,6 +15,11 @@ comprehension algo :
 algorithmes a tester :
 - tester perf sur CountVectorizer (matrice d'occurrences simple)
 
+tests/experiences de classification
+- sur les differents reweighting de matrices 
+- reglage fin des hyperparametres
+- feature selection
+- reduction svd pour "feature selection" 
 
 depot git/installation/compatibilite sur tout environnement
 - creer un fichier requirements pour installer automatiquement toutes les dependances
