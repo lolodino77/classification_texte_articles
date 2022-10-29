@@ -66,14 +66,14 @@ nltk.download('wordnet')
 print(os.getcwd())
 os.chdir(os.path.dirname(os.path.abspath(__file__ + '/..' * 2)))
 print(os.getcwd())
-# corpus_1 = pd.read_csv('data/input/dataset_philosophy.csv')
-corpus_1 = pd.read_csv('data/input/dataset_epistemology.csv')
-corpus_0 = pd.read_csv('data/input/dataset_moyen_age.csv')
+# corpus_1 = pd.read_csv('data/input/dataset_epistemology.csv')
+corpus_1 = pd.read_csv('data/input/dataset_philosophy.csv')
+corpus_0 = pd.read_csv('data/input/dataset_baptism.csv')
 
 # Annotation des documents
 # corpus_1["category"] = "philosophy"
-class_1 = "middle_age"
-class_0 = "epistemology"
+class_1 = "philosophy"
+class_0 = "baptism"
 corpus_1["category"] = class_1
 corpus_0["category"] = class_0
 
