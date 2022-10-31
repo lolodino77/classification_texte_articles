@@ -8,15 +8,11 @@ comprehension algo :
 - comprendre pourquoi en tfidf on fait un fit_transform sur le train et pas aussi sur le test
 - comprendre difference en tfidf de sklearn et tfidf standar
 
-- visualisation en 2d des clusters (groupes de chaque classe)
-- revoir les matrices de passage et formule de pca et svd (obtenir le dataset dans la nouvelle base par changement de base)
+- revoir les matrices de passage et formule de pca et svd (obtenir le dataset dans la nouvelle base par changement de base) DONE : https://en.wikipedia.org/wiki/Principal_component_analysis#Singular_value_decomposition
 - plotly : #bizarre verifier pourquoi valeurs changent en fonction du nombre de couleur presente ?
 
-algorithmes a tester :
-- tester perf sur CountVectorizer (matrice d'occurrences simple)
-
 tests/experiences de classification
-- sur les differents reweighting de matrices 
+- sur les differents reweighting de matrices DONE
 - reglage fin des hyperparametres
 - feature selection
 - reduction svd pour "feature selection" 
