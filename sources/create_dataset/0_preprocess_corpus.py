@@ -117,7 +117,9 @@ print("corpus.shape =", corpus.shape)
 corpus.drop_duplicates("message", inplace=True, keep="first")
 print("corpus.shape =", corpus.shape)
 
-#pour enlever les faux exemples : commentaires, description auteur, texte anglais, references bibliographiques
+#pour enlever les faux exemples, preprocessing restant =
+#  enlever commentaires, description auteur, texte anglais, references bibliographiques
+#  enlever ponctuations (guillemets par exemple) 
 
 # Enregistrer le corpus
 path = PureWindowsPath(os.getcwd() + "\\data\\input\\data_" + class_1 + "_" + class_0 + ".parquet")
