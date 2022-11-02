@@ -7,8 +7,17 @@ from sklearn.metrics import classification_report, confusion_matrix
 from sklearn.model_selection import learning_curve
 from sklearn.model_selection import KFold, StratifiedKFold, cross_validate, cross_val_score 
 from sklearn.model_selection import RepeatedStratifiedKFold
-from sklearn.linear_model import LogisticRegression
+from sklearn.naive_bayes import MultinomialNB
+from sklearn.linear_model import LogisticRegression, SGDClassifier
+from sklearn.ensemble import RandomForestClassifier, AdaBoostClassifier
+from sklearn.neighbors import KNeighborsClassifier
+from sklearn.neural_network import MLPClassifier
+from sklearn.svm import SVC
+from sklearn.tree import DecisionTreeClassifier
 from sklearn.metrics import accuracy_score
+from sklearn import metrics
+pd.set_option("display.precision", 2)
+
 
 def get_balanced_binary_dataset(data, class_col_name):
     """Equilibre un dataset binaire non equilibre : il aura le meme nombre d'exemples de chaque classe
@@ -39,6 +48,45 @@ def get_balanced_binary_dataset(data, class_col_name):
     balanced_data["id"] = balanced_data.index	#creation de l'id seulement apres equilibrage des classes et melange aleatoire
 
     return(balanced_data)
+
+
+def do_cross_validation(X_train, y_train, scoring, num_iter, k):
+    """Equilibre un dataset binaire non equilibre : il aura le meme nombre d'exemples de chaque classe
+
+    Parametres: 
+    X_train (numpy ndarray) : Les parametres 
+    y_train (numpy ndarray) : Les etiquettes 
+    scoring (string) : Le nom de la colonne du dataframe qui contient les classes 
+                                Exemples : 
+                                ['accuracy', 'precision', 'recall', 'f1', 'f1_macro'] 
+                                ['f1_macro', 'f1_micro']
+    num_iter (int) : Nombre d'iterations de la k-fold cross validation
+    k (int) : Nombre de decoupages du train durant chaque etape de la k-fold cross validation 
+                Exemple : k=10 en general
+    """
+    # Cross validation
+    #Methode version automatisee facile grace a la fonction RepeatedStratifiedKFold de sklearn
+    #Selection de modeles avec la k cross validation pour determiner le meilleur
+
+    models = []
+    models.append(('LR', LogisticRegression(solver='liblinear', multi_class='ovr')))
+    models.append(('AdaBoostClassifier', AdaBoostClassifier()))
+    models.append(('KNN', KNeighborsClassifier()))
+    models.append(('RandomForest', RandomForestClassifier()))
+    # models.append(('MLPClassifier', MLPClassifier(max_iter=500))) car diverge donc trop long
+    models.append(('SGDClassifier', SGDClassifier()))
+    models.append(('SVM', SVC()))
+    models.append(('DecisionTreeClassifier', DecisionTreeClassifier()))
+    
+    # evaluate each model in turn
+    results = []
+    names = []
+    for name, model in models:
+        kfold = RepeatedStratifiedKFold(n_splits=k, n_repeats=num_iter, random_state=None)
+        cv_results = cross_validate(model, X_train, y_train, cv=kfold, scoring=scoring)
+        for i, scores in cv_results.items():
+            cv_results[i] = round(np.mean(scores), 4) #on fait la moyenne de chaque score (rappel, precision, etc.) pour les k experiences
+        print((str(list(cv_results.items())[2:])+" ({0})").format(name)) #2: pour ignorer les info inutiles
 
 
 def get_confusion_matrix(y_test, y_pred, model):
@@ -96,3 +144,29 @@ def get_learning_curve(model, X_train, y_train, cv_param, scoring, train_sizes, 
     plt.show()
 
 
+def plot_roc(y_true, y_pred):
+    """Affiche la courbe roc
+
+    Parametres: 
+    y_true (numpy ndarray) : Les etiquettes correctes 
+    y_pred (numpy ndarray) : Les etiquettes devinees par le modele
+    """
+    fpr, tpr, thresholds = metrics.roc_curve(y_true, y_pred)
+    auc = metrics.auc(fpr, tpr)
+    plt.figure()
+    lw = 2
+    plt.plot(
+        fpr,
+        tpr,
+        color="darkorange",
+        lw=lw,
+        label="ROC curve (area = %0.2f)" % auc,
+    )
+    plt.plot([0, 1], [0, 1], color="navy", lw=lw, linestyle="--")
+    plt.xlim([0.0, 1.0])
+    plt.ylim([0.0, 1.05])
+    plt.xlabel("False Positive Rate")
+    plt.ylabel("True Positive Rate")
+    plt.title("Receiver operating characteristic example")
+    plt.legend(loc="lower right")
+    plt.show()

@@ -15,7 +15,11 @@ tests/experiences de classification
 - sur les differents reweighting de matrices DONE
 - reglage fin des hyperparametres
 - feature selection
-- reduction svd pour "feature selection" 
+- reduction svd pour "feature selection"  DONE
+- methode word2vec sg et cbow entrainement manuel DONE
+- methode word2vec sg et cbow transfer learning
+- methode word2vec glove transfer learning
+
 
 depot git/installation/compatibilite sur tout environnement
 - creer un fichier requirements pour installer automatiquement toutes les dependances
