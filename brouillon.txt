@@ -1,6 +1,12 @@
-X_test_count = count_vectorizer.fit_transform(X_test)
-X_test_normalized = normalize(X_test_count, norm='l2', axis=1) #normalisation par ligne
-X_test_tfidf = tfidf_vectorizer.fit_transform(X_test)
-X_test_hashing = hashing_vectorizer.fit_transform(X_test)
-X_test_observed_expected = vsm.observed_over_expected(X_test_count).round(2)
-X_test_pmi = vsm.pmi(X_test_count)
+Définition fonctionnelle de Cassandra 
+Définition technique de Cassandra 
+Les cas d'utilisation de Cassandra 
+Les différents types de Cassandra 
+Les différences de Cassandra avec le SQL 
+Les avantages et les inconvénients 
+=> tout en un jour
+
+9 chapitres = 10 chapitres environ 
+=> 10 / 2 chapitres par jour 
+=> 5 jours = environ une semaine
+https://learn.microsoft.com/fr-fr/certifications/azure-data-engineer/

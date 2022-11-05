@@ -3,6 +3,8 @@ import numpy as np
 import pandas as pd
 import seaborn as sb
 import matplotlib.pyplot as plt
+from sklearn.feature_extraction.text import TfidfTransformer, TfidfVectorizer
+from sklearn.model_selection import train_test_split
 from sklearn.metrics import classification_report, confusion_matrix
 from sklearn.model_selection import learning_curve
 from sklearn.model_selection import KFold, StratifiedKFold, cross_validate, cross_val_score 
@@ -50,13 +52,87 @@ def get_balanced_binary_dataset(data, class_col_name):
     return(balanced_data)
 
 
+def get_train_and_test(data, features_col_names, class_col_name, id_col_name):
+    """Separe les donnees en train et en test
+
+    Parametres: 
+    data (pandas DataFrame) : Le dataframe pandas a deux classes (binaire)
+                                Exemple : dataset_voitures
+    features_col_names (string) : Le nom de la colonne du dataframe qui contient les documents (messages) 
+                                Exemple : "message_preprocessed"
+    class_col_name (string) : Le nom de la colonne du dataframe qui contient les classes 
+                                Exemple : "categorie"
+    id_col_name (string) : Le nom de la colonne du dataframe qui contient les id uniques (cle primaire) 
+                                Exemple : "categorie"
+
+
+    Sortie:
+    balanced_data (pandas DataFrame) : Le dataframe pandas equilibre
+    """
+    X = data[features_col_names]
+    y = data[class_col_name]
+    indices = data[id_col_name]
+    X_train, X_test, y_train, y_test, indices_train, indices_test = train_test_split(X, y, indices, test_size=0.33, random_state=42)
+    return(X_train, X_test, y_train, y_test, indices_train, indices_test)
+
+
+def apply_tfidf_to_train(X_train):
+    """Applique la transformation tfidf aux parametres du train
+    (cree le vocabulaire a partir du train), implicitement transformation count puis tfidf 
+
+    Parametres: 
+    X_train (pandas DataFrame) : Les parametres du train
+
+    Sorties:
+    X_train_tfidf (pandas DataFrame) : Les parametres du train apres transformation tfidf
+    tfidf_vectorizer (TfidfVectorizer) : La fonction tfidf (contenant entre autres le vocabulaire du train)                              
+    """
+    tfidf_vectorizer = TfidfVectorizer()
+    X_train_tfidf = tfidf_vectorizer.fit_transform(X_train)
+
+    return(X_train_tfidf, tfidf_vectorizer)
+
+
+def apply_tfidf_to_test(X_test, tfidf_vectorizer):
+    """Applique la transformation tfidf aux parametres du test en se basant sur le vocabulaire du train
+
+    Parametres: 
+    X_test (pandas DataFrame) : Les parametres du test  
+    tfidf_vectorizer (TfidfVectorizer) : La fonction tfidf (contenant entre autres le vocabulaire du train)                              
+
+    Sorties:
+    X_test_tfidf (pandas DataFrame) : Les parametres du test apres transformation tfidf         
+    """
+    X_test_tfidf = tfidf_vectorizer.transform(X_test)
+
+    return(X_test_tfidf)
+
+
+def apply_tfidf_to_train_and_test(X_train, X_test):
+    """Applique la transformation tfidf aux parametres du train et du test 
+    (en se basant sur le vocabulaire du train), implicitement transformation count puis tfidf 
+
+    Parametres: 
+    X_train (pandas DataFrame) : Les parametres du train
+    X_test (pandas DataFrame) : Les parametres du test                                
+
+    Sorties:
+    X_train_tfidf (pandas DataFrame) : Les parametres du train apres transformation tfidf
+    X_test_tfidf (pandas DataFrame) : Les parametres du test apres transformation tfidf         
+    """
+    X_train_tfidf, tfidf_vectorizer = apply_tfidf_to_train(X_train)
+    X_test_tfidf = apply_tfidf_to_test(X_test, tfidf_vectorizer)
+
+    return(X_train_tfidf, X_test_tfidf)
+
+
 def do_cross_validation(X_train, y_train, scoring, num_iter, k):
     """Equilibre un dataset binaire non equilibre : il aura le meme nombre d'exemples de chaque classe
 
     Parametres: 
     X_train (numpy ndarray) : Les parametres 
-    y_train (numpy ndarray) : Les etiquettes 
-    scoring (string) : Le nom de la colonne du dataframe qui contient les classes 
+    y_train (numpy ndarray int) : Les etiquettes au format int (le format string ne marche pas)
+    scoring (liste de string) : Le nom de la colonne du dataframe qui contient les classes 
                                 Exemples : 
                                 ['accuracy', 'precision', 'recall', 'f1', 'f1_macro'] 
                                 ['f1_macro', 'f1_micro']
@@ -81,6 +157,7 @@ def do_cross_validation(X_train, y_train, scoring, num_iter, k):
     # evaluate each model in turn
     results = []
     names = []
+    print("models =", models)
     for name, model in models:
         kfold = RepeatedStratifiedKFold(n_splits=k, n_repeats=num_iter, random_state=None)
         cv_results = cross_validate(model, X_train, y_train, cv=kfold, scoring=scoring)
@@ -118,11 +195,25 @@ def get_confusion_matrix(y_test, y_pred, model):
     plt.ylabel("Catégories réelles", fontsize=font_size + 3)
 
 
-# Learning curves du modele selectionne : performances du modele en fonction de la taille du trainset
 #Entrees
     #train_sizes (liste de float) : tailles du train en pourcentage 
+    # y_train (numpy ndarray int) : Les etiquettes au format int (le format string ne marche pas)
     #cv_param : parametres de type kfold pour la cross validation
 def get_learning_curve(model, X_train, y_train, cv_param, scoring, train_sizes, n_jobs=-1):
+    """Affiche la learning curve du modele selectionne selon un critere
+       Learning curve = performances du modele (selon un critere) en fonction de la taille du trainset
+
+    Parametres: 
+    model (modele sklearn) : Le modele de classification
+    X_train (numpy ndarray) : Les parametres 
+    y_train (numpy ndarray int) : Les etiquettes au format int (le format string ne marche pas)
+    cv_param (liste) : Les parametres de la k-fold cross validation
+    scoring (string) : Le nom du critere (metrique) choisi pour evaluer le modele avec les learning curves
+                                Exemples : 'accuracy', 'precision', 'recall', 'f1', 'f1_macro'
+    train_sizes (liste de float) : La liste des tailles des train (en pourcentage du train total original)
+                                   Exemple : [0.2, 0.5, 0.7] = 20 % du train, 50 % du train, 70 % du train
+    n_jobs (int) : Le nombre de jobs
+    """
     # print("train_sizes =", 100 * train_sizes * len(y_train))
     train_sizes, train_scores, cv_scores = learning_curve(model, X_train, y_train, cv=cv_param, scoring=scoring, n_jobs=n_jobs, train_sizes=train_sizes)
     # learning_curve(AdaBoostClassifier(), X_train, y_train, cv=kfold, scoring='accuracy', n_jobs=-1, train_sizes=np.linspace(0.01, 1.0, 50))
@@ -142,6 +233,27 @@ def get_learning_curve(model, X_train, y_train, cv_param, scoring, train_sizes, 
     plt.ylabel(scoring.capitalize(), fontsize=12)
     plt.legend(loc="upper right")
     plt.show()
+
+
+def get_all_learning_curves(model, X_train, y_train, cv_param, scorings, train_sizes, n_jobs=-1):
+    """Affiche les learning curves du modele selectionne selon les critere choisis par l'utilisateur
+       Learning curve = performances du modele (selon un critere) en fonction de la taille du trainset
+
+    Parametres: 
+    model (modele sklearn) : Le modele de classification
+    X_train (numpy ndarray) : Les parametres 
+    y_train (numpy ndarray int) : Les etiquettes au format int (le format string ne marche pas)
+    cv_param (liste) : Les parametres de la k-fold cross validation
+    scorings (string) : Le nom des criteres (metriques) choisis pour evaluer le modele avec les learning curves 
+                                Exemples : 
+                                ['accuracy', 'precision', 'recall', 'f1', 'f1_macro'] 
+                                ['f1_macro', 'f1_micro']
+    train_sizes (liste de float) : La liste des tailles des train (en pourcentage du train total original)
+                                   Exemple : [0.2, 0.5, 0.7] = 20 % du train, 50 % du train, 70 % du train
+    n_jobs (int) : Le nombre de jobs
+    """
+    for scoring in scorings:
+        get_learning_curve(model, X_train, y_train, cv_param, scoring, train_sizes, n_jobs=-1)
 
 
 def plot_roc(y_true, y_pred):
