@@ -18,6 +18,7 @@ from sklearn.svm import SVC
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.metrics import accuracy_score
 from sklearn import metrics
+from pathlib import Path, PureWindowsPath
 pd.set_option("display.precision", 2)
 
 
@@ -199,7 +200,7 @@ def get_confusion_matrix(y_test, y_pred, model):
     #train_sizes (liste de float) : tailles du train en pourcentage 
     # y_train (numpy ndarray int) : Les etiquettes au format int (le format string ne marche pas)
     #cv_param : parametres de type kfold pour la cross validation
-def get_learning_curve(model, X_train, y_train, cv_param, scoring, train_sizes, n_jobs=-1):
+def get_learning_curve(model, X_train, y_train, cv_param, scoring, train_sizes, n_jobs=-1, savefig=False):
     """Affiche la learning curve du modele selectionne selon un critere
        Learning curve = performances du modele (selon un critere) en fonction de la taille du trainset
 
@@ -213,29 +214,33 @@ def get_learning_curve(model, X_train, y_train, cv_param, scoring, train_sizes, 
     train_sizes (liste de float) : La liste des tailles des train (en pourcentage du train total original)
                                    Exemple : [0.2, 0.5, 0.7] = 20 % du train, 50 % du train, 70 % du train
     n_jobs (int) : Le nombre de jobs
+    savefig (string) : Indique si on enregistre la learning curve dans une image
     """
-    # print("train_sizes =", 100 * train_sizes * len(y_train))
     train_sizes, train_scores, cv_scores = learning_curve(model, X_train, y_train, cv=cv_param, scoring=scoring, n_jobs=n_jobs, train_sizes=train_sizes)
-    # learning_curve(AdaBoostClassifier(), X_train, y_train, cv=kfold, scoring='accuracy', n_jobs=-1, train_sizes=np.linspace(0.01, 1.0, 50))
     train_scores_mean = np.mean(train_scores, axis=1)
     train_scores_std = np.std(train_scores, axis=1)
     cv_scores_mean = np.mean(cv_scores, axis=1)
     cv_scores_std = np.std(cv_scores, axis=1)
     model_name = str(model)
-    plt.figure()
+    plt.figure(figsize=(14, 9))
     train_plot_label = scoring.capitalize() + " sur le trainset"
     cv_plot_label = scoring.capitalize() + " sur le cvset"
     title = scoring.capitalize() + " sur le trainset et sur le cvset en fonction de la taille du trainset pour " + model_name
     plt.plot(train_sizes, train_scores_mean, label=train_plot_label, color="b")
     plt.plot(train_sizes, cv_scores_mean, label=cv_plot_label, color="r")
-    plt.title(title)
-    plt.xlabel("Taille du trainset", fontsize=12)
-    plt.ylabel(scoring.capitalize(), fontsize=12)
-    plt.legend(loc="upper right")
+    plt.title(title, size=19)
+    plt.xlabel("Taille du trainset", fontsize=18)
+    plt.ylabel(scoring.capitalize(), fontsize=18)
+    plt.legend(loc="upper right", prop={'size': 15})
+    if(savefig):
+        path = PureWindowsPath("{}\\data\\output\\learning_curve_{}_{}".format(os.getcwd(), model.__class__.__name__, scoring))
+        # path = PureWindowsPath(os.getcwd() + "\\data\\output\\learning_curve_" + model.__class__.__name__ + scoring + ".png")
+        path = path.as_posix()
+        plt.savefig(path)
     plt.show()
 
 
-def get_all_learning_curves(model, X_train, y_train, cv_param, scorings, train_sizes, n_jobs=-1):
+def get_all_learning_curves(model, X_train, y_train, cv_param, scorings, train_sizes, n_jobs=-1, savefig=False):
     """Affiche les learning curves du modele selectionne selon les critere choisis par l'utilisateur
        Learning curve = performances du modele (selon un critere) en fonction de la taille du trainset
 
@@ -244,16 +249,18 @@ def get_all_learning_curves(model, X_train, y_train, cv_param, scorings, train_s
     X_train (numpy ndarray) : Les parametres 
     y_train (numpy ndarray int) : Les etiquettes au format int (le format string ne marche pas)
     cv_param (liste) : Les parametres de la k-fold cross validation
-    scorings (string) : Le nom des criteres (metriques) choisis pour evaluer le modele avec les learning curves 
+    scorings (liste de string) : Le nom des criteres (metriques) choisis pour evaluer le modele avec 
+                                 les learning curves 
                                 Exemples : 
                                 ['accuracy', 'precision', 'recall', 'f1', 'f1_macro'] 
                                 ['f1_macro', 'f1_micro']
     train_sizes (liste de float) : La liste des tailles des train (en pourcentage du train total original)
                                    Exemple : [0.2, 0.5, 0.7] = 20 % du train, 50 % du train, 70 % du train
     n_jobs (int) : Le nombre de jobs
+    savefig (string) : Indique si on enregistre les learning curves dans une image
     """
     for scoring in scorings:
-        get_learning_curve(model, X_train, y_train, cv_param, scoring, train_sizes, n_jobs=-1)
+        get_learning_curve(model, X_train, y_train, cv_param, scoring, train_sizes, n_jobs, savefig)
 
 
 def plot_roc(y_true, y_pred):
