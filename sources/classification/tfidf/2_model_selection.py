@@ -1,5 +1,6 @@
 import sys
 import os
+import glob
 import numpy as np
 import pandas as pd
 import seaborn as sb
@@ -30,60 +31,31 @@ add_paths(paths = ["/sources/classification/"])
 from lib_classification import *
 
 
+# Les differents cas d'executions :
+# python 2_model_selection.py in_command parquet data_history_baptism.parquet data_philosophy_baptism.parquet
+    # ==> Execute le script sur les datasets data_history_baptism.parquet data_philosophy_baptism.parquet
+# python 2_model_selection.py in_input_repertory parquet
+    # ==> Execute le script sur tous les datasets parquet dans ./data/input
 def main():
     print('Number of arguments:', len(sys.argv), 'arguments.')
     print('Argument List:', str(sys.argv))
-    filename = sys.argv[1]
-    # filename = "data_middle_age_epistemology.parquet"
+    files_to_open = sys.argv[1] # argument du script, si files_to_open==in_command execute le script sur les 
+    # fichiers (datasets) entres en arguments dans la ligne de commande, 
+    # mais si files_to_open==in_input_repertory execute le script sur tous les fichiers du dossier ./data/input
     
-    # Initialisation des variables necessaires
-    input_or_output = "input"
-    # class_col_name = "category"
-    id_col_name = "id"
-    features_col_names = "message_preprocessed" 
-    # class_col_name = "category"
-    class_col_name = "category_bin"
-    savefig = True
+    files_format = sys.argv[2] # format des fichiers datasets a ouvrir (parquet, csv, etc.), multiple si plusieurs formats
+    # sert quand files_to_open==in_input_repertory, pour n'importer que les parquet, ou que les csv, etc.
 
-    # Recupere le nom du dataset grace au nom du fichier du dataset filename
-    # filename = data_middle_age_epistemology.parquet => dataset_name = middle_age_epistemology
-    filename_split = filename.split("data")
-    filename_split = filename_split[1].split(".parquet")
-    dataset_name = filename_split[0][1:]
+    if(files_to_open == "in_command"):
+        if(len(sys.argv) == 3): # cas quand il n'y a qu'un seul dataset => il faut creer une liste
+            filenames = [sys.arg[3]]
+        else: #cas quand il y a au moins deux datasets => pas besoin de creer de liste
+            filenames = sys.argv[3:] # ignorer les 2 premiers arguments, le nom du script et files_to_open
+    elif(files_to_open == "in_input_repertory"):
+        filenames = glob.glob(os.path.join(os.getcwd() + "\\data\\input", "*." + files_format))
+        filenames = [filename.split("input\\")[1] for filename in filenames] # enlever le path entier, garder que le nom du fichier
 
-    # Importer le dataset puis equilibrer ses classes
-    corpus = get_dataset(filename)
-    corpus = get_balanced_binary_dataset(corpus, class_col_name)
-    print(corpus)
-
-    # Verifier la presence ou non de doublons
-    check_duplicates(corpus, id_col_name)
-
-    # Creation du train et du test
-    X_train, X_test, y_train, y_test, indices_train, indices_test = get_train_and_test(corpus, features_col_names, class_col_name, id_col_name)
-    X_train_tfidf, X_test_tfidf = apply_tfidf_to_train_and_test(X_train, X_test)
-
-    # Creation du dossier de sorties si besoin
-    if(savefig):
-        os.makedirs("./data/output/" + dataset_name, exist_ok=True)
-
-    # Cross validation
-    scorings = ['accuracy', 'f1_macro']
-    num_iter = 2 #nombre de repetitions de la k-fold cross validation entiere
-    k = 10 #k de la k-fold cross validation
-    do_cross_validation(X_train_tfidf, y_train, scorings, num_iter, k, dataset_name)
-
-    Learning curves (du meilleur modele)
-    k = 10
-    kfold = RepeatedStratifiedKFold(n_splits=k, n_repeats=2, random_state=None)
-    cv_param = kfold
-    num_experiences = 10
-    train_sizes = np.linspace(0.1, 1.0, num_experiences)
-    n_jobs = -1
-    model = SVC()
-
-    scorings = ['accuracy', 'precision']
-    get_all_learning_curves(model, X_train_tfidf, y_train, cv_param, scorings, train_sizes, n_jobs=-1, 
-                                savefig=savefig, dataset_name=dataset_name)
-
+    select_models(filenames)
+    
+    
 main()
