@@ -10,6 +10,7 @@ pd.set_option('display.max_colwidth', 30)
 pd.set_option('display.min_rows', 20)
 pd.set_option('display.max_rows', 20)
 
+
 def preprocess_list_of_documents(list_of_documents, lemmatizer):
 	"""Nettoie tous les documents d'une liste pour creer un dataset exploitable par des modeles d'IA.
 	

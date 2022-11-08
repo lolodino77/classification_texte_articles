@@ -1,4 +1,6 @@
+import sys
 import os
+import glob
 import numpy as np
 import pandas as pd
 import seaborn as sb
@@ -20,6 +22,7 @@ from sklearn.metrics import accuracy_score
 from sklearn import metrics
 from pathlib import Path, PureWindowsPath
 pd.set_option("display.precision", 2)
+pd.set_option('display.max_colwidth', 40)
 from lib_general import *
 
 
@@ -180,9 +183,7 @@ def get_confusion_matrix(y_test, y_pred, model):
     y_test (numpy ndarray) : Les etiquettes au format int (le format string ne marche pas)
     y_pred (numpy ndarray) : Les parametres du test  
     tfidf_vectorizer (TfidfVectorizer) : La fonction tfidf (contenant entre autres le vocabulaire du train)                              
-
-    Sorties:
-    X_test_tfidf (pandas DataFrame) : Les parametres du test apres transformation tfidf    
+    """    
     # Matrice de confusion
     false_label = "0 : Bapteme"
     true_label = "1 : Philosophie"
@@ -337,6 +338,8 @@ def select_models(filenames):
         # Importer le dataset puis equilibrer ses classes
         corpus = get_dataset(filename)
         corpus = get_balanced_binary_dataset(corpus, class_col_name)
+        print("corpus.shape =", corpus.shape)
+        print(corpus.head(4))
 
         # Verifier la presence ou non de doublons
         check_duplicates(corpus, id_col_name)
@@ -359,7 +362,7 @@ def select_models(filenames):
         k = 10
         kfold = RepeatedStratifiedKFold(n_splits=k, n_repeats=2, random_state=None)
         cv_param = kfold
-        num_experiences = 10
+        num_experiences = 4
         train_sizes = np.linspace(0.1, 1.0, num_experiences)
         n_jobs = -1
         model = SVC()

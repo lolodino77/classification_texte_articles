@@ -10,11 +10,6 @@ import html2text
 # write_corpus_from_urls(bibliography_urls, filename_urls_articles, filename_corpus, file_open_mode)
 # write_corpus_dataset_from_paragraphs(filename_corpus_input, filename_corpus_output, file_open_mode)
 
-def test():
-	print("os.getcwd() =", os.getcwd())
-	os.chdir(os.path.dirname(os.path.abspath(__file__ + '/..' * 2)))
-	#  + "/data/input/"
-	print("os.getcwd() =", os.getcwd())
 
 def get_urls_on_webpage(url, filename, file_open_mode):
 	"""Ecrit dans un fichier texte la liste des urls (liens hypertextes) presents 
@@ -74,7 +69,7 @@ def write_paragraphs_of_article(article_url, output_filename, file_open_mode):
 	soup = BeautifulSoup(page.content, 'html.parser')
 	txt = str(soup) 
 
-	# Conversion des indicateurs de paragraphes et de sections /p et /li en retours a la ligne \n
+	# Conversion des indicateurs de paragraphes et de sections /p et /li en retours a la ligne \n pour le split
 	txt = txt.replace("\n", " ")
 	txt = txt.replace("</p>", "</p>\n\n")
 	txt = txt.replace("<li>", "<p>")
@@ -118,8 +113,11 @@ def write_corpus_from_urls(bibliography_urls, filename_urls_articles, filename_c
 	"""
 	# Se placer dans le bon dossier pour ecrire le resultat
 	os.chdir(os.path.dirname(os.path.abspath(__file__ + '/..' * 2)))
-
+	print("in write_corpus_from_urls")
+	print("bibliography_urls =", bibliography_urls)
+	print("type of bibliography_urls =", type(bibliography_urls))
 	for bibliography_url in bibliography_urls:
+		print("bibliography_url =", bibliography_url)
 		articles_urls = get_urls_on_webpage(bibliography_url, filename_urls_articles, "a")	
 
 		#Ecrit dans le fichier texte corpus_philosophy.txt tous les paragraphes de philosophie

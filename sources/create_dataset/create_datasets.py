@@ -1,42 +1,33 @@
-from lib_scraping import *
+import sys
+from pathlib import Path, PureWindowsPath
+sys.path.append(PureWindowsPath(r"C:\Users\eupho\OneDrive\Documents\perso\projets\classification_texte_bapteme_philo\sources").as_posix())
+from lib_general import *
+from lib_corpus_creation import *
 
-# Creation du dataframe philosophy
-# bibliography_urls = ["https://parlafoi.fr/lire/series/commentaire-de-la-summa/",
-# "https://parlafoi.fr/lire/series/notions-de-base-en-philosophie/",
-# "https://parlafoi.fr/lire/series/la-scolastique-protestante/",
-# "https://parlafoi.fr/lire/series/le-presuppositionnalisme/"]
-# filename_urls_articles = "urls_philosophy_articles.txt"
-# filename_corpus = "corpus_philosophy.txt"
+set_current_directory_to_root(root = "classification_texte_bapteme_philo")
+print("os.getcwd() at root =", os.getcwd()) 
 
-# write_corpus_from_urls(bibliography_urls, filename_urls_articles, filename_corpus, file_open_mode="a")
+# rajouter la lecture des arguments entres en ligne de commande
 
-# filename_corpus_input = "corpus_philosophy.txt"
-# filename_corpus_output = "dataset_philosophy.csv"
+# exemples de commande :
+# python create_datasets.py in_input_repertory txt
+# python create_datasets.py in_command parquet bibliography_middle_age_fr.txt bibliography_baptism_fr.txt
+sys_argv = sys.argv
+filenames = get_input_filenames(sys_argv)
 
-# write_corpus_dataset_from_paragraphs(filename_corpus_input, filename_corpus_output, file_open_mode="a")
+# filenames = ["bibliography_middle_age_fr.txt", "bibliography_baptism_fr.txt"]
+# filenames = ["bibliography_philosophy_fr.txt", "bibliography_baptism_fr.txt", "bibliography_middle_age_fr.txt"]
+for filename in filenames:
+    f = open(os.getcwd() + "\\data\\input\\bibliographies\\" + filename, "r")
+    bibliography_urls = f.read().split("\n")
+    filename = filename.split(".txt")[0]
+    topic = filename.split("_")[1:] 
+    topic = "_".join(topic)
+    filename_urls_articles = "urls_{}_articles.txt".format(topic)
+    filename_corpus = "corpus_{}.txt".format(topic)
+    filename_corpus_input = "corpus_{}.txt".format(topic)
+    filename_corpus_output = "dataset_{}.csv".format(topic)
 
+    write_corpus_from_urls(bibliography_urls, filename_urls_articles, filename_corpus, file_open_mode="a")
+    write_corpus_dataset_from_paragraphs(filename_corpus_input, filename_corpus_output, file_open_mode="a")
 
-# Creation du dataframe baptism
-# bibliography_urls = ["https://parlafoi.fr/lire/series/le-pedobapteme/"]
-# filename_urls_articles = "urls_baptism_articles.txt"
-# filename_corpus = "corpus_baptism.txt"
-
-# write_corpus_from_urls(bibliography_urls, filename_urls_articles, filename_corpus, file_open_mode="a")
-
-# filename_corpus_input = "corpus_baptism.txt"
-# filename_corpus_output = "dataset_baptism.csv"
-
-# write_corpus_dataset_from_paragraphs(filename_corpus_input, filename_corpus_output, file_open_mode="a")
-
-
-# Creation du dataframe epistemology
-bibliography_urls = ["https://parlafoi.fr/lire/series/le-presuppositionnalisme/"]
-filename_urls_articles = "urls_epistemology_articles.txt"
-filename_corpus = "corpus_epistemology.txt"
-
-write_corpus_from_urls(bibliography_urls, filename_urls_articles, filename_corpus, file_open_mode="a")
-
-filename_corpus_input = "corpus_epistemology.txt"
-filename_corpus_output = "dataset_epistemology.csv"
-
-write_corpus_dataset_from_paragraphs(filename_corpus_input, filename_corpus_output, file_open_mode="a")

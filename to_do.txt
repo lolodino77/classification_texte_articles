@@ -1,3 +1,7 @@
+rangements/structurer le code
+- moduraliser creation de corpus
+- modulariser training et testing 
+
 comprehension algo :
 - automatiser plot (creer fonction, peut etre classe dimension_reduction)
 - comprendre / reproduire le calcul de l'attribut idf_ de la classe TfidfVectorizer dans sklearn

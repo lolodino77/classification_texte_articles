@@ -1,5 +1,6 @@
 import sys
 import os
+import glob
 import numpy as np
 import pandas as pd
 import seaborn as sb
@@ -7,12 +8,11 @@ import matplotlib.pyplot as plt
 from pathlib import Path, PureWindowsPath
 
 
-def set_current_directory_to_root(root, filetype="notebook"):
+def set_current_directory_to_root(root):
     """Se place dans le root
 
     Parametres: 
     root (string) : Le nom du root auquel on veut se rendre
-    filetype (string) : Le type de fichier ou le code est execute, "notebook" ou "source"
     """    
     current_folder = PureWindowsPath(os.path.dirname(os.path.abspath(__file__))).as_posix()
     current_folder_split = current_folder.split(root) # split selon le root
@@ -31,6 +31,39 @@ def add_paths(paths):
     """
     for path in paths:
         sys.path.append(os.getcwd() + path)
+
+
+def get_input_filenames(sys_argv):
+    """Obtenir le nom des fichiers de datasets pour l'execution du script 2_model_selection.py
+
+    Parametres: 
+    sys_argv (liste de string) : Les arguments de commande pour executer 2_model_selection.py
+        Exemples : 
+        python 2_model_selection.py /data/input parquet
+        python 2_model_selection.py command parquet data_history_baptism.parquet data_philosophy_baptism.parquet
+        python create_datasets.py ./data/input/bibliographies/ txt
+        python create_datasets.py command txt bibliography_middle_age_fr.txt bibliography_baptism_fr.txt
+    Sortie:
+    filenames (liste de string) : Le nom des fichiers de datasets pour l'execution du script 2_model_selection.py
+    """
+    files_to_open = sys_argv[1] # argument du script, si files_to_open==in_command execute le script sur les 
+    # fichiers (datasets) entres en arguments dans la ligne de commande, 
+    # mais si files_to_open==in_input_repertory execute le script sur tous les fichiers du dossier ./data/input
+    
+    files_format = sys_argv[2] # format des fichiers datasets a ouvrir (parquet, csv, etc.), multiple si plusieurs formats
+    # sert quand files_to_open==in_input_repertory, pour n'importer que les parquet, ou que les csv, etc.
+    
+    if(files_to_open == "command"):
+        if(len(sys_argv) == 3): # cas quand il n'y a qu'un seul dataset => il faut creer une liste
+            filenames = [sys_argv[3]]
+        else: #cas quand il y a au moins deux datasets => pas besoin de creer de liste
+            filenames = sys_argv[3:] # ignorer les 2 premiers arguments, le nom du script et files_to_open
+    else:
+        input_repertory = files_to_open.replace("/", "\\") # "/data/input/" ==> '\\data\\input\\'
+        filenames = glob.glob(os.path.join(input_repertory + "*." + files_format))
+        filenames = [filename.split(input_repertory)[1] for filename in filenames] # enlever le path entier, garder que le nom du fichier
+
+    return(filenames)
 
 
 def get_dataset(filename, input_or_output="input"):

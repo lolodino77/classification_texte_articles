@@ -23,7 +23,7 @@ sys.path.append(PureWindowsPath(r"C:\Users\eupho\OneDrive\Documents\perso\projet
 from lib_general import *
 
 # Se rendre dans le dossier root
-set_current_directory_to_root(root = "classification_texte_bapteme_philo", filetype = "notebook")
+set_current_directory_to_root(root = "classification_texte_bapteme_philo")
 print("os.getcwd() at root =", os.getcwd()) 
 
 # Ajout des paths necessaires pour importer les librairies perso
@@ -39,22 +39,9 @@ from lib_classification import *
 def main():
     print('Number of arguments:', len(sys.argv), 'arguments.')
     print('Argument List:', str(sys.argv))
-    files_to_open = sys.argv[1] # argument du script, si files_to_open==in_command execute le script sur les 
-    # fichiers (datasets) entres en arguments dans la ligne de commande, 
-    # mais si files_to_open==in_input_repertory execute le script sur tous les fichiers du dossier ./data/input
-    
-    files_format = sys.argv[2] # format des fichiers datasets a ouvrir (parquet, csv, etc.), multiple si plusieurs formats
-    # sert quand files_to_open==in_input_repertory, pour n'importer que les parquet, ou que les csv, etc.
 
-    if(files_to_open == "in_command"):
-        if(len(sys.argv) == 3): # cas quand il n'y a qu'un seul dataset => il faut creer une liste
-            filenames = [sys.arg[3]]
-        else: #cas quand il y a au moins deux datasets => pas besoin de creer de liste
-            filenames = sys.argv[3:] # ignorer les 2 premiers arguments, le nom du script et files_to_open
-    elif(files_to_open == "in_input_repertory"):
-        filenames = glob.glob(os.path.join(os.getcwd() + "\\data\\input", "*." + files_format))
-        filenames = [filename.split("input\\")[1] for filename in filenames] # enlever le path entier, garder que le nom du fichier
-
+    sys_argv = sys.argv
+    filenames = get_intput_filenames(sys_argv)
     select_models(filenames)
     
     
