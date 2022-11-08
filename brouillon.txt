@@ -1,12 +1,38 @@
-Définition fonctionnelle de Cassandra 
-Définition technique de Cassandra 
-Les cas d'utilisation de Cassandra 
-Les différents types de Cassandra 
-Les différences de Cassandra avec le SQL 
-Les avantages et les inconvénients 
-=> tout en un jour
+def do_cross_validation(X_train, y_train, scorings, num_iter, k):
+    """Equilibre un dataset binaire non equilibre : il aura le meme nombre d'exemples de chaque classe
 
-9 chapitres = 10 chapitres environ 
-=> 10 / 2 chapitres par jour 
-=> 5 jours = environ une semaine
-https://learn.microsoft.com/fr-fr/certifications/azure-data-engineer/
+    Parametres: 
+    X_train (numpy ndarray) : Les parametres 
+    y_train (numpy ndarray int) : Les etiquettes au format int (le format string ne marche pas)
+    scorings (liste de string) : Le nom de la colonne du dataframe qui contient les classes 
+                                Exemples : 
+                                ['accuracy', 'precision', 'recall', 'f1', 'f1_macro'] 
+                                ['f1_macro', 'f1_micro']
+    num_iter (int) : Nombre d'iterations de la k-fold cross validation
+    k (int) : Nombre de decoupages du train durant chaque etape de la k-fold cross validation 
+                Exemple : k=10 en general
+    """
+    # Cross validation
+    #Methode version automatisee facile grace a la fonction RepeatedStratifiedKFold de sklearn
+    #Selection de modeles avec la k cross validation pour determiner le meilleur
+
+    models = []
+    models.append(('LR', LogisticRegression(solver='liblinear', multi_class='ovr')))
+    models.append(('AdaBoostClassifier', AdaBoostClassifier()))
+    models.append(('KNN', KNeighborsClassifier()))
+    models.append(('RandomForest', RandomForestClassifier()))
+    # models.append(('MLPClassifier', MLPClassifier(max_iter=500))) car diverge donc trop long
+    models.append(('SGDClassifier', SGDClassifier()))
+    models.append(('SVM', SVC()))
+    models.append(('DecisionTreeClassifier', DecisionTreeClassifier()))
+    
+    # evaluate each model in turn
+    results = []
+    names = []
+    print("models =", models)
+    for name, model in models:
+        kfold = RepeatedStratifiedKFold(n_splits=k, n_repeats=num_iter, random_state=None)
+        cv_results = cross_validate(model, X_train, y_train, cv=kfold, scoring=scorings)
+        for i, scores in cv_results.items():
+            cv_results[i] = round(np.mean(scores), 4) #on fait la moyenne de chaque score (rappel, precision, etc.) pour les k experiences
+        print((str(list(cv_results.items())[2:])+" ({0})").format(name)) #2: pour ignorer les info inutiles

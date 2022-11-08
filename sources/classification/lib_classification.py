@@ -127,13 +127,14 @@ def apply_tfidf_to_train_and_test(X_train, X_test):
     return(X_train_tfidf, X_test_tfidf)
 
 
-def do_cross_validation(X_train, y_train, scoring, num_iter, k):
+def do_cross_validation(X_train, y_train, scorings, num_iter, k, dataset_name=""):
     """Equilibre un dataset binaire non equilibre : il aura le meme nombre d'exemples de chaque classe
 
     Parametres: 
     X_train (numpy ndarray) : Les parametres 
     y_train (numpy ndarray int) : Les etiquettes au format int (le format string ne marche pas)
-    scoring (liste de string) : Le nom de la colonne du dataframe qui contient les classes 
+    scorings (liste de string) : Le nom des criteres (metriques) choisis pour evaluer le modele avec 
+                                 les learning curves 
                                 Exemples : 
                                 ['accuracy', 'precision', 'recall', 'f1', 'f1_macro'] 
                                 ['f1_macro', 'f1_micro']
@@ -156,15 +157,18 @@ def do_cross_validation(X_train, y_train, scoring, num_iter, k):
     models.append(('DecisionTreeClassifier', DecisionTreeClassifier()))
     
     # evaluate each model in turn
-    results = []
-    names = []
     print("models =", models)
+    path = "./data/output/{}/cross_validation_results.txt".format(dataset_name)
+    f = open(path, "w")
+
     for name, model in models:
         kfold = RepeatedStratifiedKFold(n_splits=k, n_repeats=num_iter, random_state=None)
-        cv_results = cross_validate(model, X_train, y_train, cv=kfold, scoring=scoring)
+        cv_results = cross_validate(model, X_train, y_train, cv=kfold, scoring=scorings)
         for i, scores in cv_results.items():
             cv_results[i] = round(np.mean(scores), 4) #on fait la moyenne de chaque score (rappel, precision, etc.) pour les k experiences
+        f.write((str(list(cv_results.items())[2:])+" ({0})\n").format(name))
         print((str(list(cv_results.items())[2:])+" ({0})").format(name)) #2: pour ignorer les info inutiles
+    f.close()
 
 
 def get_confusion_matrix(y_test, y_pred, model):
@@ -200,7 +204,8 @@ def get_confusion_matrix(y_test, y_pred, model):
     #train_sizes (liste de float) : tailles du train en pourcentage 
     # y_train (numpy ndarray int) : Les etiquettes au format int (le format string ne marche pas)
     #cv_param : parametres de type kfold pour la cross validation
-def get_learning_curve(model, X_train, y_train, cv_param, scoring, train_sizes, n_jobs=-1, savefig=False):
+def get_learning_curve(model, X_train, y_train, cv_param, scoring, train_sizes, n_jobs=-1, 
+                        savefig=True, dataset_name="", plotfig=True):
     """Affiche la learning curve du modele selectionne selon un critere
        Learning curve = performances du modele (selon un critere) en fonction de la taille du trainset
 
@@ -215,6 +220,8 @@ def get_learning_curve(model, X_train, y_train, cv_param, scoring, train_sizes, 
                                    Exemple : [0.2, 0.5, 0.7] = 20 % du train, 50 % du train, 70 % du train
     n_jobs (int) : Le nombre de jobs
     savefig (string) : Indique si on enregistre la learning curve dans une image
+    dataset_name (string) : Dossier des sorties du dataframe etudie
+    plotfig (string) : Indique si on affiche la learning curve sur une interface
     """
     train_sizes, train_scores, cv_scores = learning_curve(model, X_train, y_train, cv=cv_param, scoring=scoring, n_jobs=n_jobs, train_sizes=train_sizes)
     train_scores_mean = np.mean(train_scores, axis=1)
@@ -228,19 +235,21 @@ def get_learning_curve(model, X_train, y_train, cv_param, scoring, train_sizes, 
     title = scoring.capitalize() + " sur le trainset et sur le cvset en fonction de la taille du trainset pour " + model_name
     plt.plot(train_sizes, train_scores_mean, label=train_plot_label, color="b")
     plt.plot(train_sizes, cv_scores_mean, label=cv_plot_label, color="r")
+    plt.xticks(fontsize=16)
+    plt.yticks(fontsize=16)
     plt.title(title, size=19)
     plt.xlabel("Taille du trainset", fontsize=18)
     plt.ylabel(scoring.capitalize(), fontsize=18)
-    plt.legend(loc="upper right", prop={'size': 15})
+    plt.legend(loc="upper right", prop={'size': 16})
     if(savefig):
-        path = PureWindowsPath("{}\\data\\output\\learning_curve_{}_{}".format(os.getcwd(), model.__class__.__name__, scoring))
-        # path = PureWindowsPath(os.getcwd() + "\\data\\output\\learning_curve_" + model.__class__.__name__ + scoring + ".png")
-        path = path.as_posix()
+        path = "./data/output/{}/learning_curve_{}_{}".format(dataset_name, model.__class__.__name__, scoring)
         plt.savefig(path)
-    plt.show()
+    if(plotfig):
+        plt.show()
 
 
-def get_all_learning_curves(model, X_train, y_train, cv_param, scorings, train_sizes, n_jobs=-1, savefig=False):
+def get_all_learning_curves(model, X_train, y_train, cv_param, scorings, train_sizes, n_jobs=-1, 
+                            savefig=False, dataset_name="", plotfig=False):
     """Affiche les learning curves du modele selectionne selon les critere choisis par l'utilisateur
        Learning curve = performances du modele (selon un critere) en fonction de la taille du trainset
 
@@ -258,9 +267,11 @@ def get_all_learning_curves(model, X_train, y_train, cv_param, scorings, train_s
                                    Exemple : [0.2, 0.5, 0.7] = 20 % du train, 50 % du train, 70 % du train
     n_jobs (int) : Le nombre de jobs
     savefig (string) : Indique si on enregistre les learning curves dans une image
+    dataset_name (string) : Dossier des sorties du dataframe etudie
     """
     for scoring in scorings:
-        get_learning_curve(model, X_train, y_train, cv_param, scoring, train_sizes, n_jobs, savefig)
+        get_learning_curve(model, X_train, y_train, cv_param, scoring, train_sizes, n_jobs, 
+                            savefig, dataset_name, plotfig)
 
 
 def plot_roc(y_true, y_pred):
