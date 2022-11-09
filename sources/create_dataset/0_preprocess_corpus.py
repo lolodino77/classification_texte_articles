@@ -83,5 +83,3 @@ corpus.to_parquet(path, engine="fastparquet")
 corpus = pd.read_parquet(path) #engine="fastparquet"
 print(corpus)
 
-#Credit source : 
-#https://inside-machinelearning.com/preprocessing-nlp-tutoriel-pour-nettoyer-rapidement-un-texte/

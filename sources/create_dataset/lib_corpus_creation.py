@@ -332,6 +332,9 @@ def write_multiple_topics_corpus_dataset(corpus_datasets_names, final_corpus_nam
 	corpus = pd.read_parquet(path) #engine="fastparquet"
 	print(corpus)
 
+	#Credit source : 
+	#https://inside-machinelearning.com/preprocessing-nlp-tutoriel-pour-nettoyer-rapidement-un-texte/
+
 
 def create_individual_topic_corpus(bibliography_filename):
 	"""Cree un corpus d'un topic au format pandas dataframe dans un fichier (parquet, csv, etc.) 
