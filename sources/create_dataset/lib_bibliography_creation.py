@@ -90,20 +90,83 @@ def write_articles_list_from_blog_main_url(blog_name):
     sitemap_page = get_sitemap_page(blog_name)
     urls_sitemap = get_sitemap_from_main_sitemap(sitemap_page)
     urls = get_urls_from_all_sitemap_subpages(urls_sitemap)
- 
+    print("check ''", "\n" in urls)
+
+    # Ecrit la bibliographie dans un fichier texte (.txt)
+    author = get_author_from_blog_name(blog_name)
+    path_to_articles_list = "./data/input/articles_lists/articles_list_{}.txt".format(author)
+    write_list_to_txt(urls, path_to_articles_list)
+
+    return()
+
+
+def get_articles_from_webpage(url, filename, file_open_mode):
+	"""Ecrit dans un fichier texte la liste des urls (liens hypertextes) presents 
+	sur une page internet.
+	
+	Parametres:
+	url (string) : L'url de la page internet dont on veut recuperer les urls
+	filename (string) : Le nom du fichier dans lequel on ecrira la liste des urls sur url
+	file_open_mode (string) : Le mode d'ouverture du fichier ("a", "w", etc.)
+	
+	Sortie:
+	urls (liste de string) : Une liste d'urls + (ecriture du resultat dans le fichier filename)
+	"""
+	#Recupere le texte de la page web a l'aide d'un parser
+	reqs = requests.get(url)
+	soup = BeautifulSoup(reqs.text, 'html.parser')
+	
+	#Recupere un par un tous les liens url presents sur l'article
+	urls = []
+	for link in soup.find_all('a'):
+		url_i = link.get('href')
+		if(url_i[0:22] == "https://parlafoi.fr/20"): # a changer generaliser
+			urls.append(url_i)
+
+	# Se placer dans le bon dossier pour ecrire le resultat
+	# os.chdir(os.path.dirname(os.path.abspath(__file__ + '/..' * 2)))
+
+	#Ecrit le resultat dans un fichier texte
+	f = open("./data/input/" + filename, file_open_mode)
+	for url in urls:
+		f.write(url + "\n")
+	f.close()
+
+	return(urls)
+
+
+def get_all_articles_from_blog(blog_name):
+    """ Renvoie dans une liste tous les articles d'un blog (wordpress ou blogspot) a partir de sa page d'accueil
+        Exemple : "https://majestyofreason.wordpress.com/", "https://edwardfeser.blogspot.com"
+        urls = ["www.aaa.wordpress.fr\n", "www.aba.wordpress.fr\n", "www.aaa.wordpress.fr"] 
+    """
+    # Recupere dans une liste urls les adresses url de tous les articles publies d'un blog
+    sitemap_page = get_sitemap_page(blog_name)
+    urls_sitemap = get_sitemap_from_main_sitemap(sitemap_page)
+    urls = get_urls_from_all_sitemap_subpages(urls_sitemap)
+    print("check ''", "\n" in urls)
+
+    return(urls)
+
+
+def write_articles_list_from_blog(blog_name):
+    """ Renvoie tous les articles d'un blog (wordpress ou blogspot) a partir de sa page d'accueil
+        Exemple : "https://majestyofreason.wordpress.com/", "https://edwardfeser.blogspot.com" 
+    """
+    urls = get_all_articles_from_blog(blog_name)
     # Ecrit la bibliographie dans un fichier texte (.txt)
     author = get_author_from_blog_name(blog_name)
     path_to_articles_list = "./data/input/articles_lists/articles_list_{}.txt".format(author)
     write_list_to_txt(urls, path_to_articles_list)
 
 
-def write_articles_lists_from_blog_main_url(file_list_of_blogs):
-    """ Ecrit dans des fichiers textes tous les articles de plusieurs blogs respectifs listes dans le
-        fichier file_list_of_blogs (wordpress ou blogspot) a partir de leur page d'accueil
+def write_articles_lists_from_multiple_blogs(file_list_of_blogs):
+    """ Ecrit dans des fichiers textes les urls de tous les articles de plusieurs blogs respectifs listes 
+        dans le fichier file_list_of_blogs (wordpress ou blogspot) a partir de leur page d'accueil
         Exemple : file_list_of_blogs = "blogs_philosophy_eng.txt", "blogs_history_fr.txt" 
     """
     blogs = open("./data/input/blogs/{}".format(file_list_of_blogs))
     blogs = blogs.read().split("\n")
     for blog in blogs:
         print("blog =", blog)
-        write_articles_list_from_blog_main_url(blog)
+        write_articles_list_from_blog(blog)

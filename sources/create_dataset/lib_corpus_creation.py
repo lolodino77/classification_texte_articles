@@ -65,11 +65,11 @@ def get_urls_on_webpage(url, filename, file_open_mode):
 	urls = []
 	for link in soup.find_all('a'):
 		url_i = link.get('href')
-		if(url_i[0:22] == "https://parlafoi.fr/20"):
+		if(url_i[0:22] == "https://parlafoi.fr/20"): # a changer generaliser
 			urls.append(url_i)
 
 	# Se placer dans le bon dossier pour ecrire le resultat
-	os.chdir(os.path.dirname(os.path.abspath(__file__ + '/..' * 2)))
+	# os.chdir(os.path.dirname(os.path.abspath(__file__ + '/..' * 2)))
 
 	#Ecrit le resultat dans un fichier texte
 	f = open("./data/input/" + filename, file_open_mode)
@@ -146,10 +146,7 @@ def write_topic_corpus_from_urls(bibliography_urls, filename_urls_articles, file
  	None : Fichier filename_corpus qui contient le corpus, une suite de textes separes par une saut de ligne
 	"""
 	# Se placer dans le bon dossier pour ecrire le resultat
-	os.chdir(os.path.dirname(os.path.abspath(__file__ + '/..' * 2)))
-	print("in write_topic_corpus_from_urls")
-	print("bibliography_urls =", bibliography_urls)
-	print("type of bibliography_urls =", type(bibliography_urls))
+	# os.chdir(os.path.dirname(os.path.abspath(__file__ + '/..' * 2)))
 	for bibliography_url in bibliography_urls:
 		print("bibliography_url =", bibliography_url)
 		articles_urls = get_urls_on_webpage(bibliography_url, filename_urls_articles, "a")	
