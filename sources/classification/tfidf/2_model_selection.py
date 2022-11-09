@@ -34,14 +34,15 @@ from lib_classification import *
 # Les differents cas d'executions :
 # python 2_model_selection.py in_command parquet data_history_baptism.parquet data_philosophy_baptism.parquet
     # ==> Execute le script sur les datasets data_history_baptism.parquet data_philosophy_baptism.parquet
-# python 2_model_selection.py in_input_repertory parquet
+# python 2_model_selection.py ./data/input parquet
     # ==> Execute le script sur tous les datasets parquet dans ./data/input
 def main():
     print('Number of arguments:', len(sys.argv), 'arguments.')
     print('Argument List:', str(sys.argv))
 
     sys_argv = sys.argv
-    filenames = get_intput_filenames(sys_argv)
+    filenames = get_input_filenames(sys_argv)
+    print("filenames =", filenames)
     select_models(filenames)
     
     
