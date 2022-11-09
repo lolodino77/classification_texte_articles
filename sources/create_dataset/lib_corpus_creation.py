@@ -326,7 +326,6 @@ def write_multiple_topics_corpus_dataset(corpus_datasets_names, final_corpus_nam
 	#  enlever ponctuations (guillemets par exemple) 
 
 	# Enregistrer le corpus
-	print("finnnnnnn")
 	path = "./data/input/data_" + class_1 + "_" + class_0 + ".parquet"
 	corpus.to_parquet(path, engine="fastparquet")
 	corpus = pd.read_parquet(path) #engine="fastparquet"
