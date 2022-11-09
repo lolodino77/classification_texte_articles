@@ -11,52 +11,6 @@ pd.set_option('display.min_rows', 20)
 pd.set_option('display.max_rows', 20)
 
 
-def preprocess_list_of_documents(list_of_documents, lemmatizer):
-	"""Nettoie tous les documents d'une liste pour creer un dataset exploitable par des modeles d'IA.
-	
-	Parametres:
-	list_of_documents (liste de string) : Une liste de documents (les textes a classifier) a nettoyer 
-	lemmatizer (fonction) : Le lemmatizer qui servira a lemmatizer les mots des documents si possible
-	
-	Sortie:
-	preprocess_list (liste de string) : Une liste de documents nettoyes
-	"""
-# cas speciaux restants a traiter :
-# mots avec un apostrophe avant (Traite)
-# mots composes avec un ou plusieurs tirets (A traiter)
-	preprocess_list = []
-	for document in list_of_documents :
-		#remplacer les virgules bizarres
-		document = document.replace("’", "'")
-
-		# supprimer les mots avant les apostrophes (particules comme l', t', etc.)
-		document = re.sub(r"\s\w+'", " ", document, 0)
-
-		# enlever la ponctuation et met en minuscule
-		ponctuation_to_remove = string.punctuation.replace("-", "")
-		document_w_punct = "".join([i.lower() for i in document if i not in ponctuation_to_remove])
-
-		# enlever les chiffres
-		document_w_num = ''.join(i for i in document_w_punct if not i.isdigit())
-
-		# transformer les phrases en liste de tokens (en liste de mots)
-		tokenize_document = nltk.tokenize.word_tokenize(document_w_num)
-
-		# enlever les stopwords (mots n’apportant pas de sens)
-		words_w_stopwords = [i for i in tokenize_document if i not in french_stopwords]
-
-		# lemmatizer (convertir en la racine)
-		words_lemmatize = (lemmatizer.lemmatize(w) for w in words_w_stopwords) #words_lemmatize est un iterateur
-		words_lemmatize = list(words_lemmatize)
-
-		# reformer la phrase en reliant les mots precedents
-		document_clean = " ".join(words_lemmatize)
-
-		#rajouter la phrase dans la liste
-		preprocess_list.append(document_clean)
-		
-	return preprocess_list
-
 #Pas besoin si tout est deja installe
 nltk.download('stopwords')
 nltk.download('punkt')

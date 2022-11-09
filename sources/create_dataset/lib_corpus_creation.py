@@ -1,14 +1,48 @@
 import pandas as pd
+import numpy as np
 import os
 import requests
 from bs4 import BeautifulSoup
 import html2text
+import nltk
+import re
+import string
+from french_lefff_lemmatizer.french_lefff_lemmatizer import FrenchLefffLemmatizer
+from nltk.stem import WordNetLemmatizer
+from pathlib import Path, PureWindowsPath
+pd.set_option('display.max_colwidth', 30)
+
  	
 # Liste des fonctions :
 # get_urls_on_webpage(url, filename, file_open_mode)
 # write_paragraphs_of_article(article_url, output_filename, file_open_mode)
-# write_corpus_from_urls(bibliography_urls, filename_urls_articles, filename_corpus, file_open_mode)
-# write_corpus_dataset_from_paragraphs(filename_corpus_input, filename_corpus_output, file_open_mode)
+# write_topic_corpus_from_urls(bibliography_urls, filename_urls_articles, filename_corpus, file_open_mode)
+# write_topic_corpus_dataset_from_paragraphs(filename_corpus_input, filename_corpus_output, file_open_mode)
+
+
+def get_topic_from_filename(filename, keep_language):
+	"""Extrait le topic qui apparait dans le nom d'un fichier.
+	
+	Parametres:
+	filename (string) : Le nom du fichier duquel on veut extraire le topic
+						Au format : structure_de_donnees + topic + langue + extension
+						Exemple : "dataset_philosophy_fr.txt", "corpus_animals.csv"
+	keep_language (boolean) : Indique s'il garder la langue dans le topic
+						Exemples : si keep_language==True ==> philosophy_fr
+								   sinon ==> philosophy
+
+	Sortie:
+	topic (string) : Le topic (sujet/theme) extrait du nom de fichier filename
+					 Exemple : "philosophy_fr", "animals"
+	"""
+	filename = filename.split(".")[0]
+	topic = filename.split("_")[1:] 
+	if(keep_language == True):
+		topic = "_".join(topic)
+	else:
+		topic = "_".join(topic[:-1])
+	
+	return(topic)
 
 
 def get_urls_on_webpage(url, filename, file_open_mode):
@@ -96,8 +130,8 @@ def write_paragraphs_of_article(article_url, output_filename, file_open_mode):
 	f.close()
 
 
-def write_corpus_from_urls(bibliography_urls, filename_urls_articles, filename_corpus, file_open_mode="a"):
-	"""Cree un corpus (une liste de documents/textes) dans le fichier texte filename_output
+def write_topic_corpus_from_urls(bibliography_urls, filename_urls_articles, filename_corpus, file_open_mode="a"):
+	"""Cree un corpus d'un topic (au format de liste de documents/textes) dans le fichier texte filename_output
 	
 	Parametres: 
 	filename_urls_articles (string) : Le nom du fichier dans lequel on ecrira la liste des urls des articles
@@ -113,7 +147,7 @@ def write_corpus_from_urls(bibliography_urls, filename_urls_articles, filename_c
 	"""
 	# Se placer dans le bon dossier pour ecrire le resultat
 	os.chdir(os.path.dirname(os.path.abspath(__file__ + '/..' * 2)))
-	print("in write_corpus_from_urls")
+	print("in write_topic_corpus_from_urls")
 	print("bibliography_urls =", bibliography_urls)
 	print("type of bibliography_urls =", type(bibliography_urls))
 	for bibliography_url in bibliography_urls:
@@ -129,8 +163,8 @@ def write_corpus_from_urls(bibliography_urls, filename_urls_articles, filename_c
 			write_paragraphs_of_article(article_url, "./data/input/" + filename_corpus, file_open_mode)
 
 
-def write_corpus_dataset_from_paragraphs(filename_corpus_input, filename_corpus_output, file_open_mode):
-	"""Cree un corpus (une liste de documents/textes) dans le fichier texte filename_output
+def write_topic_corpus_dataset_from_paragraphs(filename_corpus_input, filename_corpus_output, file_open_mode):
+	"""Cree un corpus d'un topic au format pandas dataframe dans le fichier texte filename_output
 	
 	Parametres: 
 	filename_corpus_input (string) : Le nom du fichier dans lequel se trouve le corpus en suite de textes
@@ -160,3 +194,162 @@ def write_corpus_dataset_from_paragraphs(filename_corpus_input, filename_corpus_
 	print(df.shape)
 
 	df.to_csv("./data/input/" + filename_corpus_output, index=False, encoding="utf-8")
+
+
+def preprocess_list_of_documents(list_of_documents, lemmatizer, stopwords):
+	"""Nettoie tous les documents d'une liste pour creer un dataset exploitable par des modeles d'IA.
+	
+	Parametres:
+	list_of_documents (liste de string) : Une liste de documents (les textes a classifier) a nettoyer 
+	lemmatizer (fonction) : Le lemmatizer qui servira a lemmatizer les mots des documents si possible
+	stopwords (liste de string) : La liste des stopwords (mots frequents mais inutiles a enlever)
+
+	Sortie:
+	preprocess_list (liste de string) : Une liste de documents nettoyes
+	"""
+# cas speciaux restants a traiter :
+# mots avec un apostrophe avant (Traite)
+# mots composes avec un ou plusieurs tirets (A traiter)
+	preprocess_list = []
+	for document in list_of_documents :
+		#remplacer les virgules bizarres
+		document = document.replace("’", "'")
+
+		# supprimer les mots avant les apostrophes (particules comme l', t', etc.)
+		document = re.sub(r"\s\w+'", " ", document, 0)
+
+		# enlever la ponctuation et met en minuscule
+		ponctuation_to_remove = string.punctuation.replace("-", "")
+		document_w_punct = "".join([i.lower() for i in document if i not in ponctuation_to_remove])
+
+		# enlever les chiffres
+		document_w_num = ''.join(i for i in document_w_punct if not i.isdigit())
+
+		# transformer les phrases en liste de tokens (en liste de mots)
+		tokenize_document = nltk.tokenize.word_tokenize(document_w_num)
+
+		# enlever les stopwords (mots n’apportant pas de sens)
+		words_w_stopwords = [i for i in tokenize_document if i not in stopwords]
+
+		# lemmatizer (convertir en la racine)
+		words_lemmatize = (lemmatizer.lemmatize(w) for w in words_w_stopwords) #words_lemmatize est un iterateur
+		words_lemmatize = list(words_lemmatize)
+
+		# reformer la phrase en reliant les mots precedents
+		document_clean = " ".join(words_lemmatize)
+
+		#rajouter la phrase dans la liste
+		preprocess_list.append(document_clean)
+		
+	return preprocess_list
+
+
+def write_multiple_topics_corpus_dataset(corpus_datasets_names, final_corpus_name, topics, language):
+	"""Cree un corpus d'un topic au format pandas dataframe dans le fichier texte filename_output
+	Marche pour l'instant que pour fusionner deux corpus (deux topics differents)
+	To do : faire pour classification multiclasse
+
+	Parametres: 
+	corpus_datasets_names (liste de string) : Les noms des datasets de corpus a fusionner
+					Exemple : ["corpus_philosophy_fr.txt", "corpus_history_fr.txt", "corpus_animals_fr.txt"]
+	final_corpus_name (string) : Le nom du fichier dans lequel on ecrira le corpus sous format csv
+					Exemple : "dataset_philosophy_history_fr.txt", "dataset_philosophy_history_animals_fr.txt"
+	topics (liste de string) : Le nom des topics
+					Exemple : ["philosophy", "history"]
+	language (string) : La langue des documents
+					Valeurs possibles : "french" ou "english"
+
+	Sortie:
+ 	None : Fichier filename_corpus_output qui contient le corpus au format pandas dataframe
+	"""
+	#Pas besoin si tout est deja installe
+	nltk.download('stopwords')
+	nltk.download('punkt')
+	nltk.download('words')
+	nltk.download('wordnet')
+
+	#Lecture des fichiers csv
+	# print(os.getcwd())
+	# os.chdir(os.path.dirname(os.path.abspath(__file__ + '/..' * 2)))
+	# print(os.getcwd())
+	corpus_0 = pd.read_csv('data/input/' + corpus_datasets_names[0])
+	corpus_1 = pd.read_csv('data/input/' + corpus_datasets_names[1])
+	
+	# Annotation des documents
+	class_0 = topics[0]
+	class_1 = topics[1]
+	corpus_0["category"] = class_0
+	corpus_1["category"] = class_1
+
+	# Creation du dataset final en regroupant les documents des deux classes
+	corpus = pd.concat([corpus_1, corpus_0]) 
+
+	# Recuperation du lemmatizer
+	stopwords = nltk.corpus.stopwords.words(language)
+	print("os.getcwd() =", os.getcwd())
+	# mots = set(line.strip() for line in open('dictionnaire.txt', encoding="utf8"))
+	if(language == "french"):
+		lemmatizer = FrenchLefffLemmatizer()
+	elif(language == "english"):
+		lemmatizer = WordNetLemmatizer() #le lemmatizer WordNetLemmatizer de nltk uniquement pour l'anglais 
+
+	# Execution de la fonction principale qui fait le nettoyage
+	corpus["message_preprocessed"] = preprocess_list_of_documents(corpus['message'], lemmatizer, stopwords)
+
+	# Creation de l'id unique
+	corpus.index = list(range(len(corpus)))
+	corpus["id"] = corpus.index
+
+	# Suppression des colonnes inutiles
+	corpus = corpus[["id", "message", "message_preprocessed", "category"]]
+
+	# Creation de la taille de chaque documents (en nombre de caracteres)
+	corpus["length"] = corpus["message"].str.len()
+
+	# Annotation au format entier (necessaire pour certaines fonctions de sklearn)
+	corpus["category_bin"] = np.select([corpus["category"] == class_1], [1], default=0)
+
+	# Melange aleatoire des documents
+	corpus = corpus.sample(frac=1).reset_index(drop=True)
+
+	# Suppression des retours a la ligne \n et \r
+	corpus.replace("\\n", " ", regex=True, inplace=True)
+	corpus.replace("\\r", " ", regex=True, inplace=True)
+
+	# Suppression des doublons
+	print("corpus.shape =", corpus.shape)
+	corpus.drop_duplicates("message", inplace=True, keep="first")
+	print("corpus.shape =", corpus.shape)
+
+	#pour enlever les faux exemples, preprocessing restant =
+	#  enlever commentaires, description auteur, texte anglais, references bibliographiques
+	#  enlever ponctuations (guillemets par exemple) 
+
+	# Enregistrer le corpus
+	print("finnnnnnn")
+	path = "./data/input/data_" + class_1 + "_" + class_0 + ".parquet"
+	corpus.to_parquet(path, engine="fastparquet")
+	corpus = pd.read_parquet(path) #engine="fastparquet"
+	print(corpus)
+
+
+def create_individual_topic_corpus(bibliography_filename):
+	"""Cree un corpus d'un topic au format pandas dataframe dans un fichier (parquet, csv, etc.) 
+
+	Parametres: 
+	bibliography_filename (liste de string) : Les nom du fichier qui contient la bibliographie d'articles pour creer le corpus dataset 
+		Exemple : "bibliography_philosophy_fr.txt"
+
+	Sortie:
+ 	None : Fichier filename_corpus_output qui contient le corpus au format pandas dataframe
+	"""
+	f = open(os.getcwd() + "\\data\\input\\bibliographies\\" + bibliography_filename, "r")
+	bibliography_urls = f.read().split("\n")
+	topic = get_topic_from_filename(bibliography_filename, keep_language=True)
+	filename_urls_articles = "urls_{}_articles.txt".format(topic)
+	filename_corpus = "corpus_{}.txt".format(topic)
+	filename_corpus_input = "corpus_{}.txt".format(topic)
+	filename_corpus_output = "dataset_{}.csv".format(topic)
+
+	write_topic_corpus_from_urls(bibliography_urls, filename_urls_articles, filename_corpus, file_open_mode="a")
+	write_topic_corpus_dataset_from_paragraphs(filename_corpus_input, filename_corpus_output, file_open_mode="a")

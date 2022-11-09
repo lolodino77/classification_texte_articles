@@ -46,9 +46,10 @@ def get_input_filenames(sys_argv):
     Sortie:
     filenames (liste de string) : Le nom des fichiers de datasets pour l'execution du script 2_model_selection.py
     """
-    files_to_open = sys_argv[1] # argument du script, si files_to_open==in_command execute le script sur les 
+    #argv[0] = le nom du fichier python execute
+    files_to_open = sys_argv[1] # argument du script, si files_to_open==command execute le script sur les 
     # fichiers (datasets) entres en arguments dans la ligne de commande, 
-    # mais si files_to_open==in_input_repertory execute le script sur tous les fichiers du dossier ./data/input
+    # mais si files_to_open!=command execute le script sur tous les fichiers du dossier ./data/input
     
     files_format = sys_argv[2] # format des fichiers datasets a ouvrir (parquet, csv, etc.), multiple si plusieurs formats
     # sert quand files_to_open==in_input_repertory, pour n'importer que les parquet, ou que les csv, etc.
