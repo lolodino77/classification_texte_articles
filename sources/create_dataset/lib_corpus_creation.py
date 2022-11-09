@@ -346,7 +346,7 @@ def create_individual_topic_corpus(bibliography_filename):
  	None : Fichier filename_corpus_output qui contient le corpus au format pandas dataframe
 	"""
 	f = open(os.getcwd() + "\\data\\input\\bibliographies\\" + bibliography_filename, "r")
-	bibliography_urls = f.read().split("\n")
+	bibliography_urls = f.read().split("\n") #liste de pages web de bibliographies contenant des articles
 	topic = get_topic_from_filename(bibliography_filename, keep_language=True)
 	filename_urls_articles = "urls_{}_articles.txt".format(topic)
 	filename_corpus = "corpus_{}.txt".format(topic)
