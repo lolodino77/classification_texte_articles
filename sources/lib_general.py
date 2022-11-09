@@ -39,7 +39,7 @@ def get_input_filenames(sys_argv):
     Parametres: 
     sys_argv (liste de string) : Les arguments de commande pour executer 2_model_selection.py
         Exemples : 
-        python 2_model_selection.py /data/input parquet
+        python 2_model_selection.py ./data/input/ parquet
         python 2_model_selection.py command parquet data_history_baptism.parquet data_philosophy_baptism.parquet
         python create_datasets.py ./data/input/bibliographies/ txt
         python create_datasets.py command txt bibliography_middle_age_fr.txt bibliography_baptism_fr.txt
@@ -61,6 +61,7 @@ def get_input_filenames(sys_argv):
             filenames = sys_argv[3:] # ignorer les 2 premiers arguments, le nom du script et files_to_open
     else:
         input_repertory = files_to_open.replace("/", "\\") # "/data/input/" ==> '\\data\\input\\'
+        print("files in input : input_repertory =", input_repertory)
         filenames = glob.glob(os.path.join(input_repertory + "*." + files_format))
         filenames = [filename.split(input_repertory)[1] for filename in filenames] # enlever le path entier, garder que le nom du fichier
 

@@ -17,7 +17,7 @@ pd.set_option('display.max_colwidth', 30)
 # get_urls_on_webpage(url, filename, file_open_mode)
 # write_paragraphs_of_article(article_url, output_filename, file_open_mode)
 # write_topic_corpus_from_urls(bibliography_urls, filename_urls_articles, filename_corpus, file_open_mode)
-# write_topic_corpus_dataset_from_paragraphs(filename_corpus_input, filename_corpus_output, file_open_mode)
+# write_topic_corpus_dataset_from_paragraphs(filename_corpus_input, filename_corpus_output, file_open_mode)	
 
 
 def get_topic_from_filename(filename, keep_language):
@@ -325,7 +325,7 @@ def write_multiple_topics_corpus_dataset(corpus_datasets_names, final_corpus_nam
 	#  enlever commentaires, description auteur, texte anglais, references bibliographiques
 	#  enlever ponctuations (guillemets par exemple) 
 
-	# Enregistrer le corpus
+	# Enregistrer le corpus (au format parquet)
 	path = "./data/input/data_" + class_1 + "_" + class_0 + ".parquet"
 	corpus.to_parquet(path, engine="fastparquet")
 	corpus = pd.read_parquet(path) #engine="fastparquet"
