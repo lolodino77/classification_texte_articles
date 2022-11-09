@@ -20,64 +20,40 @@ pd.set_option('display.max_colwidth', 30)
 # write_topic_corpus_dataset_from_paragraphs(filename_corpus_input, filename_corpus_output, file_open_mode)	
 
 
-def get_topic_from_filename(filename, keep_language):
-	"""Extrait le topic qui apparait dans le nom d'un fichier.
+# def get_urls_on_webpage(url, filename, file_open_mode):
+# 	"""Ecrit dans un fichier texte la liste des urls (liens hypertextes) presents 
+# 	sur une page internet.
 	
-	Parametres:
-	filename (string) : Le nom du fichier duquel on veut extraire le topic
-						Au format : structure_de_donnees + topic + langue + extension
-						Exemple : "dataset_philosophy_fr.txt", "corpus_animals.csv"
-	keep_language (boolean) : Indique s'il garder la langue dans le topic
-						Exemples : si keep_language==True ==> philosophy_fr
-								   sinon ==> philosophy
-
-	Sortie:
-	topic (string) : Le topic (sujet/theme) extrait du nom de fichier filename
-					 Exemple : "philosophy_fr", "animals"
-	"""
-	filename = filename.split(".")[0]
-	topic = filename.split("_")[1:] 
-	if(keep_language == True):
-		topic = "_".join(topic)
-	else:
-		topic = "_".join(topic[:-1])
+# 	Parametres:
+# 	url (string) : L'url de la page internet dont on veut recuperer les urls
+# 	filename (string) : Le nom du fichier dans lequel on ecrira la liste des urls sur url
+# 	file_open_mode (string) : Le mode d'ouverture du fichier ("a", "w", etc.)
 	
-	return(topic)
-
-
-def get_urls_on_webpage(url, filename, file_open_mode):
-	"""Ecrit dans un fichier texte la liste des urls (liens hypertextes) presents 
-	sur une page internet.
+# 	Sortie:
+# 	urls (liste de string) : Une liste d'urls + (ecriture du resultat dans le fichier filename)
+# 	"""
+# 	#Recupere le texte de la page web a l'aide d'un parser
+# 	reqs = requests.get(url)
+# 	soup = BeautifulSoup(reqs.text, 'html.parser')
 	
-	Parametres:
-	url (string) : L'url de la page internet dont on veut recuperer les urls
-	filename (string) : Le nom du fichier dans lequel on ecrira la liste des urls sur url
-	file_open_mode (string) : Le mode d'ouverture du fichier ("a", "w", etc.)
-	
-	Sortie:
-	urls (liste de string) : Une liste d'urls + (ecriture du resultat dans le fichier filename)
-	"""
-	#Recupere le texte de la page web a l'aide d'un parser
-	reqs = requests.get(url)
-	soup = BeautifulSoup(reqs.text, 'html.parser')
-	
-	#Recupere un par un tous les liens url presents sur l'article
-	urls = []
-	for link in soup.find_all('a'):
-		url_i = link.get('href')
-		if(url_i[0:22] == "https://parlafoi.fr/20"): # a changer generaliser
-			urls.append(url_i)
+# 	#Recupere un par un tous les liens url presents sur l'article
+# 	urls = []
+# 	for link in soup.find_all('a'):
+# 		url_i = link.get('href')
+# 		# if(url_i[0:22] == "https://parlafoi.fr/20"): # ancienne condition a changer generaliser
+# 		if("/20" in url_i):
+# 			urls.append(url_i)
 
-	# Se placer dans le bon dossier pour ecrire le resultat
-	# os.chdir(os.path.dirname(os.path.abspath(__file__ + '/..' * 2)))
+# 	# Se placer dans le bon dossier pour ecrire le resultat
+# 	# os.chdir(os.path.dirname(os.path.abspath(__file__ + '/..' * 2)))
 
-	#Ecrit le resultat dans un fichier texte
-	f = open("./data/input/" + filename, file_open_mode)
-	for url in urls:
-		f.write(url + "\n")
-	f.close()
+# 	#Ecrit le resultat dans un fichier texte
+# 	f = open("./data/input/" + filename, file_open_mode)
+# 	for url in urls:
+# 		f.write(url + "\n")
+# 	f.close()
 
-	return(urls)
+# 	return(urls)
 
 
 def write_paragraphs_of_article(article_url, output_filename, file_open_mode):
