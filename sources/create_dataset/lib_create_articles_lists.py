@@ -36,11 +36,15 @@ def get_topic_from_filename(filename, keep_language):
 	return(topic)
 
 
-def write_list_to_txt(input_list, path_to_file, file_open_mode):
-    """ Ecrit une liste input_list (avec saut a la ligne) dans un fichier texte situe au path path_to_file"""
-    f = open(path_to_file, file_open_mode) #"w" si n'existe pas, "a" si on veut ajouter a un fichier deja existant
+def write_list_to_txt(input_list, path_to_file, file_open_mode, sep):
+    """ Ecrit une liste input_list (avec saut a la ligne) dans un fichier texte situe au path path_to_file
+    Entrees:
+        input_list (liste de string) : La liste de string a ecrire dans le fichier texte
+        sep (string) : Le separateur entre deux textes du fichier texte (\n, \n\n, etc.)
+    """
+    f = open(path_to_file, file_open_mode, encoding="utf-8") #"w" si n'existe pas, "a" si on veut ajouter a un fichier deja existant
     for line in input_list:
-        f.write(line + "\n")
+        f.write(line + sep)
     f.close()
     
 
@@ -137,7 +141,7 @@ def write_articles_list_from_blog(blog_name):
     urls = get_all_articles_from_blog(blog_name)
     author = get_author_from_blog_name(blog_name)
     path_to_articles_list = "./data/input/articles_lists/articles_list_{}.txt".format(author)
-    write_list_to_txt(urls, path_to_articles_list, file_open_mode = "w") # "w" car copie globale du blog entier
+    write_list_to_txt(urls, path_to_articles_list, file_open_mode = "w", sep = "\n") # "w" car copie globale du blog entier
 
 
 def write_articles_lists_from_multiple_blogs(file_list_of_blogs):
@@ -194,7 +198,7 @@ def write_articles_list_from_webpage(bibliography_url, filename, file_open_mode)
     #Ecrit le resultat dans un fichier texte
     articles_urls = get_all_articles_from_webpage(bibliography_url)
     path_to_file = "./data/input/articles_lists/" + filename
-    write_list_to_txt(articles_urls, path_to_file, file_open_mode)
+    write_list_to_txt(articles_urls, path_to_file, file_open_mode, sep = "\n")
 
 
 def write_articles_list_from_multiple_webpages(file_list_bibliographies, new_file=True):
@@ -241,13 +245,10 @@ def write_multiple_articles_list_from_webpages():
     """
     # input_repertory = files_to_open.replace("/", "\\") 
     bibliography_files = glob.glob(os.path.join("./data/input/bibliographies/".replace("/", "\\") + "*.txt"))
-    bibliography_files = glob.glob(os.path.join("./data/input/bibliographies/" + "*.txt"))
+    bibliography_files = glob.glob(os.path.join("./data/input/bibliographies/" + "*.txt")) #enlever le path avant les filenames
     bibliography_files = [filename.replace("\\", "/") for filename in bibliography_files]
     bibliography_files = [filename.split("./data/input/bibliographies/")[1] for filename in bibliography_files]
     print("bibliography_files =", bibliography_files)
-    # bibliography_files = [bibliography_files.split(input_repertory)[1] for filename in filenames] # enlever le path entier, garder que le nom du fichier
 
     for bibliography_file in bibliography_files:
-        # articles_list_filename = 
         write_articles_list_from_multiple_webpages(bibliography_file)
-

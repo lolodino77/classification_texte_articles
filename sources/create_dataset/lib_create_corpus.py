@@ -11,6 +11,7 @@ from french_lefff_lemmatizer.french_lefff_lemmatizer import FrenchLefffLemmatize
 from nltk.stem import WordNetLemmatizer
 from pathlib import Path, PureWindowsPath
 pd.set_option('display.max_colwidth', 30)
+from lib_create_articles_lists import *
 
  	
 # Liste des fonctions :
@@ -56,7 +57,7 @@ pd.set_option('display.max_colwidth', 30)
 # 	return(urls)
 
 
-def write_paragraphs_of_article(article_url, output_filename, file_open_mode):
+def get_paragraphs_of_article(article_url, output_filename, file_open_mode):
 	"""Ecrit les paragraphes d'un article dans un fichier texte
 	
 	Parametres: 
@@ -100,22 +101,40 @@ def write_paragraphs_of_article(article_url, output_filename, file_open_mode):
 	txt = [paragraphe for paragraphe in txt if len(paragraphe.split(" ")) > 10]
 
 	#Ecrit le resultat dans un fichier texte
-	f = open(output_filename, file_open_mode, encoding="utf-8")
-	for paragraphe in txt:
-		f.write(paragraphe + "\n\n") #saut de ligne pour pouvoir distinguer les paragraphes
-	f.close()
+	# f = open(output_filename, file_open_mode, encoding="utf-8")
+	# for paragraphe in txt:
+	# 	f.write(paragraphe + "\n\n") #saut de ligne pour pouvoir distinguer les paragraphes
+	# f.close()
+
+	return(txt)
 
 
-def write_topic_corpus_from_urls(bibliography_urls, filename_urls_articles, filename_corpus, file_open_mode="a"):
+def get_articles_from_bibliography(bibliography_url):
+	""" Recupere tous les articles presents en lien hypertexte sur une page web bibliographie
+	
+	Parametres: 
+	bibliography_url (liste de string) : L'url de la page web bibliographie dont on veut extraire les articles 
+		Ex : https://parlafoi.fr/lire/series/commentaire-de-la-summa/
+	
+	Sortie:
+ 	articles_urls (liste de string) : La liste des urls des articles presents sur une page web bibliographie
+	"""
+	print("bibliography_url =", bibliography_url)
+	# articles_urls = get_urls_on_webpage(bibliography_url, filename_urls_articles, "a")
+	articles_urls = get_all_articles_from_webpage(bibliography_url)
+
+	return(articles_urls)
+
+
+def write_topic_corpus_from_urls(bibliography_urls, filename_corpus, file_open_mode="a"):
 	"""Cree un corpus d'un topic (au format de liste de documents/textes) dans le fichier texte filename_output
 	
 	Parametres: 
-	filename_urls_articles (string) : Le nom du fichier dans lequel on ecrira la liste des urls des articles
-	filename_corpus (string) : Le nom du fichier dans lequel on ecrira le corpus
-							   Exemple : corpus_philosophy.txt
 	bibliography_urls (liste de string) : La liste des urls de bibliographies d'articles dont on veut recuperer
 										  les urls. 
 										  Ex : https://parlafoi.fr/lire/series/commentaire-de-la-summa/
+	filename_corpus (string) : Le nom du fichier dans lequel on ecrira le corpus
+							   Exemple : corpus_philosophy.txt
 	file_open_mode (string) : Le mode d'ouverture du fichier ("a", "w", etc.)
 	
 	Sortie:
@@ -123,17 +142,29 @@ def write_topic_corpus_from_urls(bibliography_urls, filename_urls_articles, file
 	"""
 	# Se placer dans le bon dossier pour ecrire le resultat
 	# os.chdir(os.path.dirname(os.path.abspath(__file__ + '/..' * 2)))
-	for bibliography_url in bibliography_urls:
-		print("bibliography_url =", bibliography_url)
-		articles_urls = get_urls_on_webpage(bibliography_url, filename_urls_articles, "a")	
 
-		#Ecrit dans le fichier texte corpus_philosophy.txt tous les paragraphes de philosophie
-		#de chaque article du corpus 
-		file_open_mode = "a"
-		for article_url in articles_urls:
+	topic = get_topic_from_filename(filename_corpus, keep_language=True)
+	path_articles_list = "./data/input/articles_lists/articles_list_{}.txt".format(topic)
+	path_corpus = "./data/input/" + filename_corpus
+
+	print("filename_corpus =", filename_corpus)
+	print("topic =", topic)
+
+	for bibliography_url in bibliography_urls:
+		articles_urls = get_articles_from_bibliography(bibliography_url)
+		articles_urls = [url for url in articles_urls if("pdf" not in url)] # enlever les articles pdf
+		write_list_to_txt(articles_urls, path_articles_list, file_open_mode="w", sep = "\n")
+		# write_articles_list_from_webpage(bibliography_url, filename, file_open_mode)
+
+		#Ecrit dans le fichier texte filename_corpus.txt tous les paragraphes de chaque article de la biblio
+		article_url = articles_urls[0]
+		paragraphs = get_paragraphs_of_article(article_url, path_corpus, file_open_mode)
+		write_list_to_txt(paragraphs, path_corpus, file_open_mode="w", sep = "\n\n") #"w" cree nouveau fichier
+		for article_url in articles_urls[1:]:
 			print("article_url =")
 			print(article_url)
-			write_paragraphs_of_article(article_url, "./data/input/" + filename_corpus, file_open_mode)
+			paragraphs = get_paragraphs_of_article(article_url, path_corpus, file_open_mode)
+			write_list_to_txt(paragraphs, path_corpus, file_open_mode="a", sep = "\n\n") #ecrit en mode append "a"
 
 
 def write_topic_corpus_dataset_from_paragraphs(filename_corpus_input, filename_corpus_output, file_open_mode):
@@ -308,12 +339,15 @@ def write_multiple_topics_corpus_dataset(corpus_datasets_names, final_corpus_nam
 	#https://inside-machinelearning.com/preprocessing-nlp-tutoriel-pour-nettoyer-rapidement-un-texte/
 
 
-def create_individual_topic_corpus(bibliography_filename):
+
+def create_individual_topic_corpus_from_bibliographies(bibliography_filename):
 	"""Cree un corpus d'un topic au format pandas dataframe dans un fichier (parquet, csv, etc.) 
+	a partir de fichiers contenant des urls de bibliographies (page web qui listent des articles)
 
 	Parametres: 
-	bibliography_filename (liste de string) : Les nom du fichier qui contient la bibliographie d'articles pour creer le corpus dataset 
-		Exemple : "bibliography_philosophy_fr.txt"
+	bibliography_filename (liste de string) : Le nom du fichier qui contient la liste d'articles 
+											   pour creer le corpus dataset 
+		Exemple : "articles_list_philosophy_fr.txt"
 
 	Sortie:
  	None : Fichier filename_corpus_output qui contient le corpus au format pandas dataframe
@@ -326,5 +360,5 @@ def create_individual_topic_corpus(bibliography_filename):
 	filename_corpus_input = "corpus_{}.txt".format(topic)
 	filename_corpus_output = "dataset_{}.csv".format(topic)
 
-	write_topic_corpus_from_urls(bibliography_urls, filename_urls_articles, filename_corpus, file_open_mode="a")
-	write_topic_corpus_dataset_from_paragraphs(filename_corpus_input, filename_corpus_output, file_open_mode="a")
+	write_topic_corpus_from_urls(bibliography_urls, filename_corpus, file_open_mode="a")
+	# write_topic_corpus_dataset_from_paragraphs(filename_corpus_input, filename_corpus_output, file_open_mode="a")
