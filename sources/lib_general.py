@@ -33,41 +33,6 @@ def add_paths(paths):
         sys.path.append(os.getcwd() + path)
 
 
-def get_input_filenames(sys_argv):
-    """Obtenir le nom des fichiers de datasets pour l'execution du script 2_model_selection.py
-
-    Parametres: 
-    sys_argv (liste de string) : Les arguments de commande pour executer 2_model_selection.py
-        Exemples : 
-        python 2_model_selection.py ./data/input/ parquet
-        python 2_model_selection.py command parquet data_history_baptism.parquet data_philosophy_baptism.parquet
-        python create_datasets.py ./data/input/bibliographies/ txt
-        python create_datasets.py command txt bibliography_middle_age_fr.txt bibliography_baptism_fr.txt
-    Sortie:
-    filenames (liste de string) : Le nom des fichiers de datasets pour l'execution du script 2_model_selection.py
-    """
-    #argv[0] = le nom du fichier python execute
-    files_to_open = sys_argv[1] # argument du script, si files_to_open==command execute le script sur les 
-    # fichiers (datasets) entres en arguments dans la ligne de commande, 
-    # mais si files_to_open!=command execute le script sur tous les fichiers du dossier ./data/input
-    
-    files_format = sys_argv[2] # format des fichiers datasets a ouvrir (parquet, csv, etc.), multiple si plusieurs formats
-    # sert quand files_to_open==in_input_repertory, pour n'importer que les parquet, ou que les csv, etc.
-    
-    if(files_to_open == "command"):
-        if(len(sys_argv) == 3): # cas quand il n'y a qu'un seul dataset => il faut creer une liste
-            filenames = [sys_argv[3]]
-        else: #cas quand il y a au moins deux datasets => pas besoin de creer de liste
-            filenames = sys_argv[3:] # ignorer les 2 premiers arguments, le nom du script et files_to_open
-    else:
-        input_repertory = files_to_open.replace("/", "\\") # "/data/input/" ==> '\\data\\input\\'
-        print("files in input : input_repertory =", input_repertory)
-        filenames = glob.glob(os.path.join(input_repertory + "*." + files_format))
-        filenames = [filename.split(input_repertory)[1] for filename in filenames] # enlever le path entier, garder que le nom du fichier
-
-    return(filenames)
-
-
 def get_dataset(filename, input_or_output="input"):
     """Equilibre un dataset binaire non equilibre : il aura le meme nombre d'exemples de chaque classe
 
@@ -86,6 +51,23 @@ def get_dataset(filename, input_or_output="input"):
     return(data)
 
 
+def get_all_files_from_a_directory(path_to_directory, files_extension=""):
+    """ Donne la liste de tous les fichiers (du meme format ou non selon ce qu'on veut) d'un dossier 
+    Exemple path_to_directory = "./data/input/corpus_txt/"
+    """
+    print("files path_to_directory ", path_to_directory)
+    path_to_directory = path_to_directory.replace("/", "\\") # "/data/input/" ==> '\\data\\input\\' format windows
+
+    if(files_extension == ""):
+        files_extension = "*"
+    else:
+        files_extension = "*." + files_extension
+    filenames = glob.glob(os.path.join(path_to_directory, files_extension))
+    filenames = [filename.split(path_to_directory)[1] for filename in filenames] # enlever le path entier, garder que le nom du fichier
+
+    return(filenames)
+
+
 def check_duplicates(data, id_col_name):
     """Verifie la presence ou non de doublons dans un dataframe
 
@@ -97,3 +79,14 @@ def check_duplicates(data, id_col_name):
     print(data[id_col_name].duplicated().any())
     print(data.index.duplicated().any())
        
+
+def save_list_to_txt(input_list, path_to_file, file_open_mode, sep):
+	""" Ecrit une liste input_list (avec saut a la ligne) dans un fichier texte situe au path path_to_file
+	Entrees:
+		input_list (liste de string) : La liste de string a ecrire dans le fichier texte
+		sep (string) : Le separateur entre deux textes du fichier texte (\n, \n\n, etc.)
+	"""
+	f = open(path_to_file, file_open_mode, encoding="utf-8") #"w" si n'existe pas, "a" si on veut ajouter a un fichier deja existant
+	for line in input_list:
+		f.write(line + sep)
+	f.close()

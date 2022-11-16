@@ -1,0 +1,148 @@
+message,length
+"As an Aristotelian who believes in individual forms, I’m puzzled about cases
+of species-level flourishing that don’t seem reducible to individual
+flourishing. On a biological level, consider how some species (e.g., social
+insects, slime molds) have individuals who do not reproduce. Nonetheless it is
+important to the flourishing of the _species_ that the species include some
+individuals that do reproduce.",407
+"We might handle this kind of a case by attributing to other individuals their
+_contribution_ to reproduction of the species. But I think this doesn’t solve
+the problem. Consider a non-biological case. There are things that are
+achievements of the human species, such as having reached the moon, having
+achieved a four minute mile, or having proved the Poincaré conjecture. It
+seems a stretch to try to individualize these goods by saying that we all
+contributed to them. (After all, many of us weren’t even alive in 1969.)",522
+"I think a good move for an Aristotelian who believes in individual forms is to
+say that “No man or bee is an island.” There is an external flourishing in
+virtue of the species at large: it is a part of _my_ flourishing that humans
+landed on the moon. Think of how members of a social group are rightly proud
+of the achievements of some famous fellow-members: we Poles are proud of
+having produced Copernicus, Russians of having launched humans into space, and
+Americans of having landed on the moon.",499
+"However, there is still a puzzle. If it is a part of every human’s good that
+“I am a member of a species that landed on the moon”, does that mean the good
+is multiplied the more humans there are, because there are more instances of
+this external flourishing? I think not. External flourishing is tricky this
+way. The goods don’t always aggregate summatively between people in the case
+of external flourishing. If external flourishing were aggregated summatively,
+then it would have been better if Russia rather than Poland produced
+Copernicus, because there are more Russians than Poles, and so there would
+have been more people with the external good of “being a citizen of a country
+that produced Copernicus.” But that’s a mistake: it is a good that each Pole
+has, but the good doesn’t multiply with the number of Poles. Similarly, if
+Belgium is facing off Brazil for the World Cup, it is not the case that it
+would be way better if the Brazilians won, just because there are a lot more
+Brazilians who would have the external good of “being a fellow citizen with
+the winners of the World Cup.”",1095
+"Consider a situation where a _finite_ number _N_ of people independently make
+a choice between _A_ and _B_ and some disastrous outcome happens if the number
+of people choosing _B_ hits a threshold _M_. Suppose further that if you fix
+whether the disaster happens, then it is better you to choose _A_ than _B_ ,
+but the disastrous outcome outweighs all the benefits from all the possible
+choices of _B_.",402
+"For instance, maybe _B_ is feeding an apple to a hungry child, and _A_ is
+refraining from doing so, but there is an evil dictator who likes children to
+be miserable, and once enough children are not hungry, he will throw all the
+children in jail.",246
+"Intuitively, you should do some sort of expected utility calculation based on
+your best estimate of the probability _p_ that among the _N_ − 1 people other
+than you, _M_ − 1 will choose _B_. For if fewer or more than _M_ − 1 of them
+choose _B_ , your choice will make no difference, and you should choose _B_.
+If _F_ is the difference between the utilities of _B_ and _A_ , e.g., the
+utility of feeding the apple to the hungry child (assumed to be fairly
+positive), and _D_ is the utility of the disaster (very negative), then you
+need to see if _p_ _D_ \+ _F_ is positive or negative or zero. Modulo some
+concerns about attitudes to risk, if _p_ _D_ \+ _F_ is positive, you should
+choose _B_ (feed the child) and if its negative, you shouldn’t.",745
+"If you have a uniform distribution over the possible number of people other
+than you choosing _B_ , the probability that this number is _M_ − 1 will be 1/
+_N_ (since the number of people other than you choosing _B_ is one of 0, 1,
+..., _N_ − 1). Now, we assumed that the benefits of _B_ are such that they
+don’t outweigh the disaster even if everyone chooses _B_ , so _D_ \+ _N_ _F_ <
+0. Therefore (1/ _N_ ) _D_ \+ _F_ < 0, and so in the uniform distribution case
+you shouldn’t choose _B_.",489
+"But you might not have a uniform distribution. You might, for instance, have a
+reasonable estimate that a proportion _p_ of other people will choose _B_
+while the threshold is _M_ ≈ _q_ _N_ for some fixed ratio _q_ between 0 and 1.
+If _q_ is not close to _p_ , then facts about the binomial distribution show
+that the probability that _M_ − 1 other people choose _B_ goes approximately
+exponentially to zero as _N_ increases. Assuming that the badness of the
+disaster is linear or at most polynomial in the number of agents, if the
+number of agents is large enough, choosing _B_ will be a good thing. Of
+course, you might have the unlucky situation that _q_ (the ratio of threshold
+to number of people) and _p_ (the probability of an agent choosing _B_ ) are
+approximately equal, in which case even for large _N_ , the risk that you’re
+near the threshold will be too high to allow you to choose _B_.",899
+"But now back to infinity. In the interpersonal moral Satan’s Apple, we have
+infinitely many agents choosing between _A_ and _B_. But now instead of the
+threshold being a finite number, the threshold is an infinite cardinality (one
+can also make a version where it’s a co-cardinality). And this threshold has
+the property that other people’s choices can _never_ be such that your choice
+will put things above the threshold—either the threshold has already been met
+without your choice, or your choice can’t make it hit the threshold. In the
+finite case, it depended on the numbers involved whether you should choose _A_
+or _B_. But the exact same reasoning as in the finite case, but now without
+_any_ statistical inputs being needed, shows that you should choose _B_. For
+it literally cannot make any difference to whether a disaster happens, no
+matter what other people choose.",878
+"In my previous post, I suggested that the interpersonal moral Satan’s Apple
+was a reason to embrace causal finitism: to deny that an outcome (say, the
+disaster) can causally depend on infinitely many inputs (the agents’ choices).
+But the finite cases make me less confident. In the case where _N_ is large,
+and our best estimate of the probability of another agent choosing _B_ is a
+value _p_ not close to the threshold ratio _q_ , it still seems
+counterintuitive that you should morally choose _B_ , and so should everyone
+else, even though that yields the disaster.",567
+"But I think in the finite case one can remove the counterintuitiveness. For
+there are mixed strategies that if adopted by everyone are better than
+everyone choosing _A_ or everyone choosing _B_. The mixed strategy will
+involve choosing some number 0 < _p_ best < _q_ (where _q_ is the threshold
+ratio at which the disaster happens) and everyone choosing _B_ with
+probability _p_ best and _A_ with probability 1 − _p_ best, where _p_ best is
+carefully optimized allow as many people to feed hungry children without a
+significant risk of disaster. The exact value of _p_ best will depend on the
+exact utilities involved, but will be close to _q_ if the number of agents is
+large, as long as the disaster doesn’t scale exponentially. Now our
+statistical reasoning shows that when your best estimate of the probability of
+other people choosing _B_ is _not_ close to the threshold ratio _q_ , you
+should just straight out choose _B_. And the worry I had is that everyone
+doing that results in the disaster. But it does not seem problematic that in a
+case where your data shows that people’s behavior is not close to optimal,
+i.e., their behavior propensities do not match _p_ best, you need to act in a
+way that doesn’t universalize very nicely. This is no more paradoxical than
+the fact that when there are criminals, we need to have a police force, even
+though ideally we wouldn’t have one.",1387
+"But in the infinite case, no matter what strategy other people adopt, whether
+pure or mixed, choosing _B_ is better.",116
+"Now, we deontologists are used to situations where a disaster happens because
+one did the right thing. That’s because consequences are not the only thing
+that counts morally, we say. But in the moral interpersonal Satan’s Apple,
+there seems to be no deontology in play. It seems weird to imagine that
+disaster could strike because everyone did what was consequentialistically
+right.",382
+"One way out is causal finitism: Satan’s Apple is impossible, because the
+disaster would have infinitely many causes.",116
+"If causal finitism is the solution, then it is at least a little interesting
+that the domain of moral obligations is smaller than the logically possible
+even though it extends beyond the physically possible. (I’m taking it as given
+that causal finitism doesn’t just follow from the PNC.)  
+  
+Actually, now that I think about it, is causal finitism a solution? Let's
+grant that it is impossible for one effect to have infinitely many causes.
+Assume I am ignorant about this fact. It surely isn’t impossible for me to
+intend to do something that I mistakenly believe to be such a cause. And won’t
+that mistaken belief generate a similar paradox?",644
+"Interesting. Mistaken belief can generate the belief that you are IN the
+paradox, but it doesn't seem to generate the paradox itself. For it's not
+going to be true that everyone doing the right thing (feeding hungry children)
+results in disaster, just that we think it will.",274
+"BTW, I suspect that there are a lot of moral paradoxes in situations which are
+metaphysically impossible. Suppose you have the power to change the past. You
+read about the Holocaust. Should you travel back in time and make sure
+Hitler's parents never meet? On the one hand, if you do that, you prevent the
+Holocaust. On the other hand, you will bring about the nonexistence of pretty
+much all the people you know and care about (and not just for you, but for
+most other people around you), because pretty much no one from the post-WWII
+generations would have existed had WWII not happened. What, then, is the
+ethics of changing past events? Moral paradoxes abound. And one can always
+make your move: What if you think you CAN change the past?",742

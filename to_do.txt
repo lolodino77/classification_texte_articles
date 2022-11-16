@@ -1,6 +1,13 @@
 rangements/structurer le code
 - moduraliser creation de corpus
 - modulariser training et testing 
+- mettre en classe tout le code
+- 
+
+depot git/installation/compatibilite sur tout environnement
+- creer un fichier requirements pour installer automatiquement toutes les dependances
+pip install git+https://github.com/ClaudeCoulombe/FrenchLefffLemmatizer.git4
+depot git : https://github.com/ClaudeCoulombe/FrenchLefffLemmatizer/tree/master/french_lefff_lemmatizer
 
 comprehension algo :
 - automatiser plot (creer fonction, peut etre classe dimension_reduction)
@@ -25,10 +32,7 @@ tests/experiences de classification
 - methode word2vec glove transfer learning
 
 
-depot git/installation/compatibilite sur tout environnement
-- creer un fichier requirements pour installer automatiquement toutes les dependances
-pip install git+https://github.com/ClaudeCoulombe/FrenchLefffLemmatizer.git4
-depot git : https://github.com/ClaudeCoulombe/FrenchLefffLemmatizer/tree/master/french_lefff_lemmatizer
+
 
 python general notions :
 - try except

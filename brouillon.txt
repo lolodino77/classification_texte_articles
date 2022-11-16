@@ -1,24 +1,24 @@
+# get_urls_on_webpage(url, filename, file_open_mode)
+# get_paragraphs_of_article(article_url, output_filename, file_open_mode)
+# write_topic_corpus_from_urls(bibliography_urls, filename_urls_articles, filename_corpus, file_open_mode)
+# write_topic_corpus_dataset_from_paragraphs(filename_corpus_input, filename_corpus_output, file_open_mode)	
+# preprocess_list_of_documents
+# write_multiple_topics_corpus_dataset(corpus_datasets_names, final_corpus_name, topics, language
+# create_individual_topic_corpus_from_bibliographies(bibliography_filename)
+# create_individual_topic_corpus_from_blog_name(blog_name, file_list_of_blogs)
 
-def create_individual_topic_corpus(bibliography_filename):
-	"""Cree un corpus d'un topic au format pandas dataframe dans un fichier (parquet, csv, etc.) 
-	a partir de fichiers contenant des urls de bibliographies (page web qui listent des articles)
+# get_topic_from_filename(filename, keep_language)
+# write_list_to_txt(input_list, path_to_file, file_open_mode, sep)
+# get_web_page_text_contents(url)
+# get_blog_robots_page(blog_name)
+# get_sitemap_page(blog_name)
+# get_sitemap_from_main_sitemap(sitemap_page)
+# get_urls_from_one_sitemap_subpage(sitemap_subpage)
+# get_urls_from_all_sitemap_subpages(sitemap_subpages)
+# get_author_from_blog_name(blog_name)
 
-	Parametres: 
-	bibliography_filename (liste de string) : Le nom du fichier qui contient la liste d'articles 
-											   pour creer le corpus dataset 
-		Exemple : "articles_list_philosophy_fr.txt"
-
-	Sortie:
- 	None : Fichier filename_corpus_output qui contient le corpus au format pandas dataframe
-	"""
-	f = open(os.getcwd() + "\\data\\input\\bibliographies\\" + bibliography_filename, "r")
-	articles_list_urls = f.read().split("\n") #liste de pages web de bibliographies contenant des articles
-	topic = get_topic_from_filename(bibliography_filename, keep_language=True)
-	filename_urls_articles = "urls_{}_articles.txt".format(topic)
-	filename_corpus = "corpus_{}.txt".format(topic)
-	filename_corpus_input = "corpus_{}.txt".format(topic)
-	filename_corpus_output = "dataset_{}.csv".format(topic)
-
-	write_topic_corpus_from_urls(bibliography_urls, filename_urls_articles, filename_corpus, file_open_mode="a"):
-	write_topic_corpus_from_urls(articles_list_urls, filename_urls_articles, filename_corpus, file_open_mode="a")
-	write_topic_corpus_dataset_from_paragraphs(filename_corpus_input, filename_corpus_output, file_open_mode="a")
+### fonctions pour le mode extract from blog_names ###
+# get_all_articles_from_blog(blog_name)
+# write_articles_list_from_blog(blog_name)
+# get_blogs_from_file(file_list_of_blogs)
+# write_articles_lists_from_multiple_blogs(file_list_of_blogs)

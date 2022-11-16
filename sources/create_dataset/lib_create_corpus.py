@@ -12,58 +12,19 @@ from nltk.stem import WordNetLemmatizer
 from pathlib import Path, PureWindowsPath
 pd.set_option('display.max_colwidth', 30)
 from lib_create_articles_lists import *
-
+from lib_general import *
+# from lib_create_corpus_method_bibliographies import *
  	
+
 # Liste des fonctions :
-# get_urls_on_webpage(url, filename, file_open_mode)
-# write_paragraphs_of_article(article_url, output_filename, file_open_mode)
-# write_topic_corpus_from_urls(bibliography_urls, filename_urls_articles, filename_corpus, file_open_mode)
-# write_topic_corpus_dataset_from_paragraphs(filename_corpus_input, filename_corpus_output, file_open_mode)	
 
 
-# def get_urls_on_webpage(url, filename, file_open_mode):
-# 	"""Ecrit dans un fichier texte la liste des urls (liens hypertextes) presents 
-# 	sur une page internet.
-	
-# 	Parametres:
-# 	url (string) : L'url de la page internet dont on veut recuperer les urls
-# 	filename (string) : Le nom du fichier dans lequel on ecrira la liste des urls sur url
-# 	file_open_mode (string) : Le mode d'ouverture du fichier ("a", "w", etc.)
-	
-# 	Sortie:
-# 	urls (liste de string) : Une liste d'urls + (ecriture du resultat dans le fichier filename)
-# 	"""
-# 	#Recupere le texte de la page web a l'aide d'un parser
-# 	reqs = requests.get(url)
-# 	soup = BeautifulSoup(reqs.text, 'html.parser')
-	
-# 	#Recupere un par un tous les liens url presents sur l'article
-# 	urls = []
-# 	for link in soup.find_all('a'):
-# 		url_i = link.get('href')
-# 		# if(url_i[0:22] == "https://parlafoi.fr/20"): # ancienne condition a changer generaliser
-# 		if("/20" in url_i):
-# 			urls.append(url_i)
 
-# 	# Se placer dans le bon dossier pour ecrire le resultat
-# 	# os.chdir(os.path.dirname(os.path.abspath(__file__ + '/..' * 2)))
-
-# 	#Ecrit le resultat dans un fichier texte
-# 	f = open("./data/input/" + filename, file_open_mode)
-# 	for url in urls:
-# 		f.write(url + "\n")
-# 	f.close()
-
-# 	return(urls)
-
-
-def get_paragraphs_of_article(article_url, output_filename, file_open_mode):
+def get_paragraphs_of_article(article_url):
 	"""Ecrit les paragraphes d'un article dans un fichier texte
 	
 	Parametres: 
 	article_url (string) : L'url de l'article a decouper en plusieurs parties
-	output_filename (string) : Le nom du fichier dans lequel on ecrira la liste des urls sur url
-	file_open_mode (string) : Le mode d'ouverture du fichier ("a", "w", etc.)
 	
 	Sortie:
  	None : Fichier output_filename qui contient les documents de l'article dont l'url est article_url
@@ -99,105 +60,59 @@ def get_paragraphs_of_article(article_url, output_filename, file_open_mode):
 	
 	#Enleve les paragraphes avec des phrases trop courtes (trop peu de mots)
 	txt = [paragraphe for paragraphe in txt if len(paragraphe.split(" ")) > 10]
-
-	#Ecrit le resultat dans un fichier texte
-	# f = open(output_filename, file_open_mode, encoding="utf-8")
-	# for paragraphe in txt:
-	# 	f.write(paragraphe + "\n\n") #saut de ligne pour pouvoir distinguer les paragraphes
-	# f.close()
-
+	
 	return(txt)
 
 
-def get_articles_from_bibliography(bibliography_url):
-	""" Recupere tous les articles presents en lien hypertexte sur une page web bibliographie
-	
-	Parametres: 
-	bibliography_url (liste de string) : L'url de la page web bibliographie dont on veut extraire les articles 
-		Ex : https://parlafoi.fr/lire/series/commentaire-de-la-summa/
-	
-	Sortie:
- 	articles_urls (liste de string) : La liste des urls des articles presents sur une page web bibliographie
-	"""
-	print("bibliography_url =", bibliography_url)
-	# articles_urls = get_urls_on_webpage(bibliography_url, filename_urls_articles, "a")
-	articles_urls = get_all_articles_from_webpage(bibliography_url)
-
-	return(articles_urls)
+def save_paragraphs(paragraphs, path_corpus, file_open_mode="w", sep = "\n\n"):
+	""" Sauvegarde les paragraphes d'un article dans un fichier texte """
+	save_list_to_txt(paragraphs, path_corpus, file_open_mode, sep)
 
 
-def write_topic_corpus_from_urls(bibliography_urls, filename_corpus, file_open_mode="a"):
+def save_corpus_from_articles_lists(articles_urls, path_corpus, all_articles, num_articles, savemode="overwrite"):
 	"""Cree un corpus d'un topic (au format de liste de documents/textes) dans le fichier texte filename_output
-	
+	a partir d'une liste d'adresses urls d'articles
+
 	Parametres: 
-	bibliography_urls (liste de string) : La liste des urls de bibliographies d'articles dont on veut recuperer
-										  les urls. 
+	articles_urls (liste de string) : La liste d'urls d'articles dont on veut extraire les paragraphes. 
 										  Ex : https://parlafoi.fr/lire/series/commentaire-de-la-summa/
-	filename_corpus (string) : Le nom du fichier dans lequel on ecrira le corpus
-							   Exemple : corpus_philosophy.txt
-	file_open_mode (string) : Le mode d'ouverture du fichier ("a", "w", etc.)
+	path_articles_list (string) : La liste des paths des listes d'articles
+	path_corpus (string) : Le path vers le corpus
+	save_mode (string) : Le mode d'ecriture du fichier ("append" = ajouter ou "overwrite" = creer un nouveau)
 	
 	Sortie:
  	None : Fichier filename_corpus qui contient le corpus, une suite de textes separes par une saut de ligne
+
+	Done : version "overwrite" recreer le corpus a chaque fois de zero 
+	To do : version "append" ajouter du texte a un corpus deja cree, version "ignore" ne fais rien si fichier existe deja
+			version "error" qui renvoie une erreur si fichier existe deja
 	"""
-	# Se placer dans le bon dossier pour ecrire le resultat
-	# os.chdir(os.path.dirname(os.path.abspath(__file__ + '/..' * 2)))
-
-	topic = get_topic_from_filename(filename_corpus, keep_language=True)
-	path_articles_list = "./data/input/articles_lists/articles_list_{}.txt".format(topic)
-	path_corpus = "./data/input/" + filename_corpus
-
-	print("filename_corpus =", filename_corpus)
-	print("topic =", topic)
-
-	for bibliography_url in bibliography_urls:
-		articles_urls = get_articles_from_bibliography(bibliography_url)
-		articles_urls = [url for url in articles_urls if("pdf" not in url)] # enlever les articles pdf
-		write_list_to_txt(articles_urls, path_articles_list, file_open_mode="w", sep = "\n")
-		# write_articles_list_from_webpage(bibliography_url, filename, file_open_mode)
-
-		#Ecrit dans le fichier texte filename_corpus.txt tous les paragraphes de chaque article de la biblio
+	#Ecrit dans le fichier texte filename_corpus.txt tous les paragraphes tous les articles d'une liste
+	if(not all_articles):
+		articles_urls = articles_urls[:num_articles] # garder que les num_articles premiers articles
+		# rajouter cas ou il n'y a qu'un seul article
+	if(savemode == "overwrite"):
+		# print("path_corpus =", path_corpus)
+		# print("articles_urls =", articles_urls)
 		article_url = articles_urls[0]
-		paragraphs = get_paragraphs_of_article(article_url, path_corpus, file_open_mode)
-		write_list_to_txt(paragraphs, path_corpus, file_open_mode="w", sep = "\n\n") #"w" cree nouveau fichier
+		print("article_url =")
+		print(article_url)
+		paragraphs = get_paragraphs_of_article(article_url)
+		save_paragraphs(paragraphs, path_corpus, file_open_mode="w", sep = "\n\n")
 		for article_url in articles_urls[1:]:
 			print("article_url =")
 			print(article_url)
-			paragraphs = get_paragraphs_of_article(article_url, path_corpus, file_open_mode)
-			write_list_to_txt(paragraphs, path_corpus, file_open_mode="a", sep = "\n\n") #ecrit en mode append "a"
+			paragraphs = get_paragraphs_of_article(article_url)
+			save_paragraphs(paragraphs, path_corpus, file_open_mode="a", sep = "\n\n")
+	elif(savemode == "append"):
+		for article_url in articles_urls:
+			print("article_url =")
+			print(article_url)
+			paragraphs = get_paragraphs_of_article(article_url)
+			save_paragraphs(paragraphs, path_corpus, file_open_mode="a", sep = "\n\n")
 
-
-def write_topic_corpus_dataset_from_paragraphs(filename_corpus_input, filename_corpus_output, file_open_mode):
-	"""Cree un corpus d'un topic au format pandas dataframe dans le fichier texte filename_output
-	
-	Parametres: 
-	filename_corpus_input (string) : Le nom du fichier dans lequel se trouve le corpus en suite de textes
-							   Exemple : corpus_philosophy.txt
-	filename_corpus_output (string) : Le nom du fichier dans lequel on ecrira le corpus sous format csv
-							   Exemple : dataset_philosophy.txt
-	file_open_mode (string) : Le mode d'ouverture du fichier ("a", "w", etc.)
-	
-	Sortie:
- 	None : Fichier filename_corpus_output qui contient le  corpus sous forme de dataframe
-	"""
-	# Se placer dans le bon dossier pour lire les entrees et ecrire le resultat
-	os.chdir(os.path.dirname(os.path.abspath(__file__ + '/..' * 2)))
-
-	# print("tonpere")
-	# res = open("./data/input/" + filename_corpus_input, "r").read().split("\n\n")
-	res = open("./data/input/" + filename_corpus_input, "r", encoding="utf-8").read().split("\n\n")
-	print(res)
-	res = [elt for elt in res if len(elt) > 1]
-
-	message = res
-	length = [len(elt) for elt in res]
-	list_of_rows = list(zip(message, length))
-
-	df = pd.DataFrame(list_of_rows, columns=["message", "length"])
-	print(df.head(20))
-	print(df.shape)
-
-	df.to_csv("./data/input/" + filename_corpus_output, index=False, encoding="utf-8")
+	# elif(savemode == "ignore"):
+	# elif(savemode == "error"):
 
 
 def preprocess_list_of_documents(list_of_documents, lemmatizer, stopwords):
@@ -248,117 +163,50 @@ def preprocess_list_of_documents(list_of_documents, lemmatizer, stopwords):
 	return preprocess_list
 
 
-def write_multiple_topics_corpus_dataset(corpus_datasets_names, final_corpus_name, topics, language):
+def get_corpus_table(filename_corpus_txt):
+	""" Renvoie le corpus pandas dataframe a partir d'un corpus au format .txt"""
+	res = open("./data/input/corpus_txt/" + filename_corpus_txt, "r", encoding="utf-8").read().split("\n\n")
+	res = [elt for elt in res if len(elt) > 1]
+	message = res
+	length = [len(elt) for elt in res]
+	list_of_rows = list(zip(message, length))
+	df = pd.DataFrame(list_of_rows, columns=["message", "length"])
+
+	return(df)
+
+
+def get_multiple_corpus_table():
+	all_corpus_txt = get_all_files_from_a_directory(path_to_directory="./data/input/corpus_txt/")
+	return(all_corpus_txt)
+
+
+def save_corpus_table(df, corpus_topic, table_extension):
+	""" Cree un corpus sous forme de table (csv ou parquet) a partir d'un corpus au format texte .txt """
+	filename_corpus_table = "corpus_{}.{}".format(corpus_topic, table_extension)
+
+	if(table_extension == "csv"):
+		if not os.path.exists("./data/input/corpus_{}/".format(table_extension)):
+			os.makedirs("./data/input/corpus_{}/".format(table_extension))
+		df.to_csv("./data/input/corpus_csv/" + filename_corpus_table, index=False, encoding="utf-8")
+	elif(table_extension == "parquet"):
+		if not os.path.exists("./data/input/corpus_{}/".format(table_extension)):
+			os.makedirs("./data/input/corpus_{}/".format(table_extension))
+		df.to_parquet("./data/input/corpus_parquet/" + filename_corpus_table)
+
+
+def save_multiple_corpus_table(corpus_list, corpus_topics, table_extension):
 	"""Cree un corpus d'un topic au format pandas dataframe dans le fichier texte filename_output
-	Marche pour l'instant que pour fusionner deux corpus (deux topics differents)
-	To do : faire pour classification multiclasse
-
-	Parametres: 
-	corpus_datasets_names (liste de string) : Les noms des datasets de corpus a fusionner
-					Exemple : ["corpus_philosophy_fr.txt", "corpus_history_fr.txt", "corpus_animals_fr.txt"]
-	final_corpus_name (string) : Le nom du fichier dans lequel on ecrira le corpus sous format csv
-					Exemple : "dataset_philosophy_history_fr.txt", "dataset_philosophy_history_animals_fr.txt"
-	topics (liste de string) : Le nom des topics
-					Exemple : ["philosophy", "history"]
-	language (string) : La langue des documents
-					Valeurs possibles : "french" ou "english"
-
-	Sortie:
- 	None : Fichier filename_corpus_output qui contient le corpus au format pandas dataframe
-	"""
-	#Pas besoin si tout est deja installe
-	nltk.download('stopwords')
-	nltk.download('punkt')
-	nltk.download('words')
-	nltk.download('wordnet')
-
-	#Lecture des fichiers csv
-	# print(os.getcwd())
-	# os.chdir(os.path.dirname(os.path.abspath(__file__ + '/..' * 2)))
-	# print(os.getcwd())
-	corpus_0 = pd.read_csv('data/input/' + corpus_datasets_names[0])
-	corpus_1 = pd.read_csv('data/input/' + corpus_datasets_names[1])
 	
-	# Annotation des documents
-	class_0 = topics[0]
-	class_1 = topics[1]
-	corpus_0["category"] = class_0
-	corpus_1["category"] = class_1
-
-	# Creation du dataset final en regroupant les documents des deux classes
-	corpus = pd.concat([corpus_1, corpus_0]) 
-
-	# Recuperation du lemmatizer
-	stopwords = nltk.corpus.stopwords.words(language)
-	print("os.getcwd() =", os.getcwd())
-	# mots = set(line.strip() for line in open('dictionnaire.txt', encoding="utf8"))
-	if(language == "french"):
-		lemmatizer = FrenchLefffLemmatizer()
-	elif(language == "english"):
-		lemmatizer = WordNetLemmatizer() #le lemmatizer WordNetLemmatizer de nltk uniquement pour l'anglais 
-
-	# Execution de la fonction principale qui fait le nettoyage
-	corpus["message_preprocessed"] = preprocess_list_of_documents(corpus['message'], lemmatizer, stopwords)
-
-	# Creation de l'id unique
-	corpus.index = list(range(len(corpus)))
-	corpus["id"] = corpus.index
-
-	# Suppression des colonnes inutiles
-	corpus = corpus[["id", "message", "message_preprocessed", "category"]]
-
-	# Creation de la taille de chaque documents (en nombre de caracteres)
-	corpus["length"] = corpus["message"].str.len()
-
-	# Annotation au format entier (necessaire pour certaines fonctions de sklearn)
-	corpus["category_bin"] = np.select([corpus["category"] == class_1], [1], default=0)
-
-	# Melange aleatoire des documents
-	corpus = corpus.sample(frac=1).reset_index(drop=True)
-
-	# Suppression des retours a la ligne \n et \r
-	corpus.replace("\\n", " ", regex=True, inplace=True)
-	corpus.replace("\\r", " ", regex=True, inplace=True)
-
-	# Suppression des doublons
-	print("corpus.shape =", corpus.shape)
-	corpus.drop_duplicates("message", inplace=True, keep="first")
-	print("corpus.shape =", corpus.shape)
-
-	#pour enlever les faux exemples, preprocessing restant =
-	#  enlever commentaires, description auteur, texte anglais, references bibliographiques
-	#  enlever ponctuations (guillemets par exemple) 
-
-	# Enregistrer le corpus (au format parquet)
-	path = "./data/input/data_" + class_1 + "_" + class_0 + ".parquet"
-	corpus.to_parquet(path, engine="fastparquet")
-	corpus = pd.read_parquet(path) #engine="fastparquet"
-	print(corpus)
-
-	#Credit source : 
-	#https://inside-machinelearning.com/preprocessing-nlp-tutoriel-pour-nettoyer-rapidement-un-texte/
-
-
-
-def create_individual_topic_corpus_from_bibliographies(bibliography_filename):
-	"""Cree un corpus d'un topic au format pandas dataframe dans un fichier (parquet, csv, etc.) 
-	a partir de fichiers contenant des urls de bibliographies (page web qui listent des articles)
-
 	Parametres: 
-	bibliography_filename (liste de string) : Le nom du fichier qui contient la liste d'articles 
-											   pour creer le corpus dataset 
-		Exemple : "articles_list_philosophy_fr.txt"
-
+	corpus_list (liste de string) : La liste des corpus txt a enregistrer au format table (csv ou parquet)
+	corpus_topics (liste de string) : Les topics de chaque corpus
+	table_extension (string) : L'extension de la table de sortie
+					Exemple : output_file_extension = "csv" ou = "parquet"
+	
 	Sortie:
- 	None : Fichier filename_corpus_output qui contient le corpus au format pandas dataframe
+ 	None : Fichier filename_corpus_output qui contient le corpus sous forme de dataframe
 	"""
-	f = open(os.getcwd() + "\\data\\input\\bibliographies\\" + bibliography_filename, "r")
-	bibliography_urls = f.read().split("\n") #liste de pages web de bibliographies contenant des articles
-	topic = get_topic_from_filename(bibliography_filename, keep_language=True)
-	filename_urls_articles = "urls_{}_articles.txt".format(topic)
-	filename_corpus = "corpus_{}.txt".format(topic)
-	filename_corpus_input = "corpus_{}.txt".format(topic)
-	filename_corpus_output = "dataset_{}.csv".format(topic)
-
-	write_topic_corpus_from_urls(bibliography_urls, filename_corpus, file_open_mode="a")
-	# write_topic_corpus_dataset_from_paragraphs(filename_corpus_input, filename_corpus_output, file_open_mode="a")
+	for i in range(len(corpus)):
+		corpus = corpus_list[i]
+		corpus_topic = corpus_topics[i]
+		save_corpus_table(corpus, corpus_topic, table_extension)
