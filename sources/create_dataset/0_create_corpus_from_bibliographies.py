@@ -14,18 +14,24 @@ print("os.getcwd() at root =", os.getcwd())
 # pattern de commande
 # all_articles, num_articles
 
-# exemples de commande :
+####### exemples de commande version bibliographies dans command #######
+# pattern : python 0_create_corpus_from_bibliographies.py num_files output_extension path input_extension 
 # exemple 1 garder tous les articles de chaque bibliographie
-# python 0_create_corpus_from_bibliographies.py ./data/input/bibliographies/ txt
+# python 0_create_corpus_from_bibliographies.py all csv ./data/input/bibliographies/ txt
+# python 0_create_corpus_from_bibliographies.py all parquet ./data/input/bibliographies/ txt
+# python 0_create_corpus_from_bibliographies.py 8 csv ./data/input/bibliographies/ txt
+# python 0_create_corpus_from_bibliographies.py 3 parquet ./data/input/bibliographies/ txt
 
 # exemple 2 avec 8 comme nombre d'articles par bibliographie :
-# python 0_create_corpus_from_bibliographies.py 8 ./data/input/bibliographies/ txt
+# python 0_create_corpus_from_bibliographies.py 8 csv ./data/input/bibliographies/ txt
 
+####### exemples de commande version bibliographies dans path #######
+# pattern : python 0_create_corpus_from_bibliographies.py num_files output_extension command input_extension biblio1 biblio2...
 # exemple 3 utiliser des bibliographies precises appelees par leur nom
-# python 0_create_corpus_from_bibliographies.py all command parquet bibliography_middle_age_fr.txt bibliography_baptism_fr.txt
+# python 0_create_corpus_from_bibliographies.py all csv command parquet bibliography_middle_age_fr.txt bibliography_baptism_fr.txt
 
 # exemple 4 utiliser des bibliographies precises appelees par leur nom et seulement 8 articles par biblio
-# python 0_create_corpus_from_bibliographies.py 8 command parquet bibliography_middle_age_fr.txt bibliography_baptism_fr.txt
+# python 0_create_corpus_from_bibliographies.py 8 csv command parquet bibliography_middle_age_fr.txt bibliography_baptism_fr.txt
 
 
 sys_argv = sys.argv
@@ -33,10 +39,14 @@ print("sys_argv =", sys_argv)
 bibliographies_filenames = get_bibliographies_filenames(sys_argv)
 all_articles = get_var_all_articles(sys_argv)
 num_articles = get_var_num_articles(sys_argv)
+table_extension = get_var_table_extension(sys_argv)
 print("all_articles =", all_articles)
 print("num_articles =", num_articles)
 print("type all_articles =", type(all_articles))
 print("type num_articles =", type(num_articles))
 
 print("\n\n\nbibliographies_filenames =", bibliographies_filenames)
-save_multiple_corpus_from_bibliographies_lists_files(bibliographies_filenames, all_articles, num_articles)
+[filenames_corpus_txt, corpus_topics] = save_multiple_corpus_from_bibliographies_lists_files(bibliographies_filenames, all_articles, num_articles)
+print("filenames_corpus_txt, corpus_topics")
+print(filenames_corpus_txt, corpus_topics)
+save_multiple_corpus_table_from_textfile(filenames_corpus_txt, corpus_topics, table_extension)

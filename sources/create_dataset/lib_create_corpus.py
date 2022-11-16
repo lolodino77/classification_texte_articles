@@ -165,6 +165,7 @@ def preprocess_list_of_documents(list_of_documents, lemmatizer, stopwords):
 
 def get_corpus_table(filename_corpus_txt):
 	""" Renvoie le corpus pandas dataframe a partir d'un corpus au format .txt"""
+	# print("type filename_corpus_txt =", type(filename_corpus_txt))
 	res = open("./data/input/corpus_txt/" + filename_corpus_txt, "r", encoding="utf-8").read().split("\n\n")
 	res = [elt for elt in res if len(elt) > 1]
 	message = res
@@ -180,21 +181,38 @@ def get_multiple_corpus_table():
 	return(all_corpus_txt)
 
 
-def save_corpus_table(df, corpus_topic, table_extension):
+# TO DO : creer une fonction generale save_corpus_table ?? pour regrouper save_corpus_table_from_textfile 
+# et save_corpus_table_from_dataframe
+def save_corpus_table_from_textfile(filename_corpus_txt, corpus_topic, table_extension):
 	""" Cree un corpus sous forme de table (csv ou parquet) a partir d'un corpus au format texte .txt """
+	corpus = get_corpus_table(filename_corpus_txt)
 	filename_corpus_table = "corpus_{}.{}".format(corpus_topic, table_extension)
 
 	if(table_extension == "csv"):
 		if not os.path.exists("./data/input/corpus_{}/".format(table_extension)):
 			os.makedirs("./data/input/corpus_{}/".format(table_extension))
-		df.to_csv("./data/input/corpus_csv/" + filename_corpus_table, index=False, encoding="utf-8")
+		corpus.to_csv("./data/input/corpus_csv/" + filename_corpus_table, index=False, encoding="utf-8")
 	elif(table_extension == "parquet"):
 		if not os.path.exists("./data/input/corpus_{}/".format(table_extension)):
 			os.makedirs("./data/input/corpus_{}/".format(table_extension))
-		df.to_parquet("./data/input/corpus_parquet/" + filename_corpus_table)
+		corpus.to_parquet("./data/input/corpus_parquet/" + filename_corpus_table)
 
 
-def save_multiple_corpus_table(corpus_list, corpus_topics, table_extension):
+def save_corpus_table_from_dataframe(corpus, corpus_topic, table_extension):
+	""" Cree un corpus sous forme de table (csv ou parquet) a partir d'un dataframe pandas """
+	filename_corpus_table = "corpus_{}.{}".format(corpus_topic, table_extension)
+
+	if(table_extension == "csv"):
+		if not os.path.exists("./data/input/corpus_{}/".format(table_extension)):
+			os.makedirs("./data/input/corpus_{}/".format(table_extension))
+		corpus.to_csv("./data/input/corpus_csv/" + filename_corpus_table, index=False, encoding="utf-8")
+	elif(table_extension == "parquet"):
+		if not os.path.exists("./data/input/corpus_{}/".format(table_extension)):
+			os.makedirs("./data/input/corpus_{}/".format(table_extension))
+		corpus.to_parquet("./data/input/corpus_parquet/" + filename_corpus_table)
+
+
+def save_multiple_corpus_table_from_textfile(filenames_corpus_txt, corpus_topics, table_extension):
 	"""Cree un corpus d'un topic au format pandas dataframe dans le fichier texte filename_output
 	
 	Parametres: 
@@ -206,7 +224,11 @@ def save_multiple_corpus_table(corpus_list, corpus_topics, table_extension):
 	Sortie:
  	None : Fichier filename_corpus_output qui contient le corpus sous forme de dataframe
 	"""
-	for i in range(len(corpus)):
-		corpus = corpus_list[i]
+	print("in save_multiple_corpus_table_from_textfile")
+	for i in range(len(filenames_corpus_txt)):
+		filename_corpus_txt = filenames_corpus_txt[i]
 		corpus_topic = corpus_topics[i]
-		save_corpus_table(corpus, corpus_topic, table_extension)
+		print("corpus_topic =", corpus_topic)
+		# print("corpus =")
+		# print(corpus)
+		save_corpus_table_from_textfile(filename_corpus_txt, corpus_topic, table_extension)
