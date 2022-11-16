@@ -6,18 +6,19 @@ from lib_create_corpus import *
 
 def get_var_num_articles(sys_argv):
 	""" Recupere la variable num_articles depuis la commande de terminal """
-	files_to_open = sys_argv[1] 
-	num_articles = 0
-	if(files_to_open != "command" and len(sys_argv) == 4):
-		num_articles = int(sys_argv[3])
+	num_articles = sys_argv[1]
+	if(num_articles != "all"):
+		num_articles = int(num_articles) 
+
 	return(num_articles)
 
 
 def get_var_all_articles(sys_argv):
 	""" Recupere la variable all_articles depuis la commande de terminal """
-	files_to_open = sys_argv[1] 
-	all_articles = True
-	if(files_to_open != "command" and len(sys_argv) == 4):
+	num_articles = sys_argv[1]
+	if(num_articles == "all"):
+		all_articles = True
+	else:
 		all_articles = False
 	return(all_articles)
 
@@ -29,27 +30,31 @@ def get_bibliographies_filenames(sys_argv):
 	Parametres: 
 	sys_argv (liste de string) : Les arguments de commande pour executer 2_model_selection.py
 		Exemples de commandes de terminal qui lancent un script appelant get_input_filenames : 
-		python 0_create_corpus_from_bibliographies.py ./data/input/bibliographies/ txt
-		python 0_create_corpus_from_bibliographies.py command parquet bibliography_middle_age_fr.txt bibliography_baptism_fr.txt
+		python 0_create_corpus_from_bibliographies.py all ./data/input/bibliographies/ txt
+		python 0_create_corpus_from_bibliographies.py 8 ./data/input/bibliographies/ txt
+		python 0_create_corpus_from_bibliographies.py all command parquet bibliography_middle_age_fr.txt
+		python 0_create_corpus_from_bibliographies.py 8 command parquet bibliography_middle_age_fr.txt
+		python 0_create_corpus_from_bibliographies.py all command parquet bibliography_middle_age_fr.txt bibliography_baptism_fr.txt
+		python 0_create_corpus_from_bibliographies.py 8 command parquet bibliography_middle_age_fr.txt bibliography_baptism_fr.txt
 	Sortie:
 	filenames (liste de string) : Le nom des fichiers de datasets pour l'execution du script 0_create_corpus_from_bibliographies.py
 		Cas 1 filenames = "command" : les fichiers sont ceux entres dans la commande
 		Cas 2 filenames = un path : les fichiers sont tous ceux d'une meme extension dans un dossier
 	"""
 	#argv[0] = le nom du fichier python execute
-	files_to_open = sys_argv[1] # argument du script, si files_to_open==command execute le script sur les 
+	files_to_open = sys_argv[2] # argument du script, si files_to_open==command execute le script sur les 
 	# fichiers (datasets) entres en arguments dans la ligne de commande, 
 	# mais si files_to_open!=command execute le script sur tous les fichiers du dossier ./data/input
 
-	files_format = sys_argv[2] # format des fichiers datasets a ouvrir (parquet, csv, etc.), multiple si plusieurs formats
+	files_format = sys_argv[3] # format des fichiers datasets a ouvrir (parquet, csv, etc.), multiple si plusieurs formats
 	print("len(sys_argv) =", len(sys_argv))
 	# sert quand files_to_open==in_input_repertory, pour n'importer que les parquet, ou que les csv, etc.
 
 	if(files_to_open == "command"):
-		if(len(sys_argv) == 3): # cas quand il n'y a qu'un seul dataset => il faut creer une liste
-			filenames = [sys_argv[3]]
+		if(len(sys_argv) == 5): # cas quand il n'y a qu'un seul dataset => il faut creer une liste
+			filenames = [sys_argv[4]]
 		else: #cas quand il y a au moins deux datasets => pas besoin de creer de liste
-			filenames = sys_argv[3:] # ignorer les 2 premiers arguments, le nom du script et files_to_open
+			filenames = sys_argv[4:] # ignorer les 4 premiers arguments, nom du script, num_artciles, files_to_open et table_extension
 	else:
 		input_repertory = files_to_open.replace("/", "\\") # "/data/input/" ==> '\\data\\input\\'
 		print("files in input : input_repertory =", input_repertory)
@@ -116,7 +121,9 @@ def save_one_corpus_from_bibliographies_lists(bibliography_urls, filename_corpus
 def save_multiple_corpus_from_bibliographies_lists_files(bibliographies_filenames, all_articles=True,
 															num_articles=0):
 	"""Cree un corpus au format texte a partir de fichiers listes de bibliographies (urls) 
-		= (pages web qui listent des articles) """
+		= (pages web qui listent des articles) 
+	TO DO : rajouter une version savemode="append" pour elargir un corpus deja existant
+	"""
 	for filename in bibliographies_filenames:
 		# Lecture des fichiers "listes de bibliographies"
 		print("filename =", filename)

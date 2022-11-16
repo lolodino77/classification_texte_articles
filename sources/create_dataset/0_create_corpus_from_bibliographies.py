@@ -15,12 +15,19 @@ print("os.getcwd() at root =", os.getcwd())
 # all_articles, num_articles
 
 # exemples de commande :
-# exemple 1 avec 8 comme nombre d'articles par bibliographie :
-# python 0_create_corpus_from_bibliographies.py ./data/input/bibliographies/ txt 8
-
-# autres exemples
+# exemple 1 garder tous les articles de chaque bibliographie
 # python 0_create_corpus_from_bibliographies.py ./data/input/bibliographies/ txt
-# python 0_create_corpus_from_bibliographies.py command parquet bibliography_middle_age_fr.txt bibliography_baptism_fr.txt
+
+# exemple 2 avec 8 comme nombre d'articles par bibliographie :
+# python 0_create_corpus_from_bibliographies.py 8 ./data/input/bibliographies/ txt
+
+# exemple 3 utiliser des bibliographies precises appelees par leur nom
+# python 0_create_corpus_from_bibliographies.py all command parquet bibliography_middle_age_fr.txt bibliography_baptism_fr.txt
+
+# exemple 4 utiliser des bibliographies precises appelees par leur nom et seulement 8 articles par biblio
+# python 0_create_corpus_from_bibliographies.py 8 command parquet bibliography_middle_age_fr.txt bibliography_baptism_fr.txt
+
+
 sys_argv = sys.argv
 print("sys_argv =", sys_argv)
 bibliographies_filenames = get_bibliographies_filenames(sys_argv)
