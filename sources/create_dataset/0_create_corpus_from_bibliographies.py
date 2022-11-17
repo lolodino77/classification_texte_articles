@@ -32,7 +32,7 @@ print("os.getcwd() at root =", os.getcwd())
 
 # exemple 4 utiliser des bibliographies precises appelees par leur nom et seulement 8 articles par biblio
 # python 0_create_corpus_from_bibliographies.py 8 csv command parquet bibliography_middle_age_fr.txt bibliography_baptism_fr.txt
-
+# python 0_create_corpus_from_bibliographies.py 2 parquet command parquet bibliography_middle_age_fr.txt bibliography_baptism_fr.txt
 
 sys_argv = sys.argv
 print("sys_argv =", sys_argv)

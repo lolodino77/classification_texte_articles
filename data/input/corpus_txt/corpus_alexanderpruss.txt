@@ -1,165 +1,110 @@
-As an Aristotelian who believes in individual forms, I’m puzzled about cases
-of species-level flourishing that don’t seem reducible to individual
-flourishing. On a biological level, consider how some species (e.g., social
-insects, slime molds) have individuals who do not reproduce. Nonetheless it is
-important to the flourishing of the _species_ that the species include some
-individuals that do reproduce.
+What about the other direction? Can we reduce goods to reasons?
 
-We might handle this kind of a case by attributing to other individuals their
-_contribution_ to reproduction of the species. But I think this doesn’t solve
-the problem. Consider a non-biological case. There are things that are
-achievements of the human species, such as having reached the moon, having
-achieved a four minute mile, or having proved the Poincaré conjecture. It
-seems a stretch to try to individualize these goods by saying that we all
-contributed to them. (After all, many of us weren’t even alive in 1969.)
+The simplest story would be that goods reduce to reasons to promote them.
 
-I think a good move for an Aristotelian who believes in individual forms is to
-say that “No man or bee is an island.” There is an external flourishing in
-virtue of the species at large: it is a part of _my_ flourishing that humans
-landed on the moon. Think of how members of a social group are rightly proud
-of the achievements of some famous fellow-members: we Poles are proud of
-having produced Copernicus, Russians of having launched humans into space, and
-Americans of having landed on the moon.
+But there seem to be goods that give no one a reason to promote them. Consider
+the good fact that there exist (in the eternalist sense: existed, exist now,
+will exist, or exist timelessly) agents. No agent can promote the fact that
+there exist agents: that good fact is part of the agent’s thrownness, to put
+it in Heideggerese.
 
-However, there is still a puzzle. If it is a part of every human’s good that
-“I am a member of a species that landed on the moon”, does that mean the good
-is multiplied the more humans there are, because there are more instances of
-this external flourishing? I think not. External flourishing is tricky this
-way. The goods don’t always aggregate summatively between people in the case
-of external flourishing. If external flourishing were aggregated summatively,
-then it would have been better if Russia rather than Poland produced
-Copernicus, because there are more Russians than Poles, and so there would
-have been more people with the external good of “being a citizen of a country
-that produced Copernicus.” But that’s a mistake: it is a good that each Pole
-has, but the good doesn’t multiply with the number of Poles. Similarly, if
-Belgium is facing off Brazil for the World Cup, it is not the case that it
-would be way better if the Brazilians won, just because there are a lot more
-Brazilians who would have the external good of “being a fellow citizen with
-the winners of the World Cup.”
+Maybe, though, this isn’t quite right. If Alice is an agent, then Alice’s
+existence is a good, but the fact that some agent or other exists isn’t a good
+as such. I’m not sure. It seems like a world with agents is better for the
+existence of agency, and not just better for the particular agents it has.
+Adding _another_ agent to the world seems a lesser value contribution than
+just ensuring that there is agency at all. But I could be wrong about that.
 
-Consider a situation where a _finite_ number _N_ of people independently make
-a choice between _A_ and _B_ and some disastrous outcome happens if the number
-of people choosing _B_ hits a threshold _M_. Suppose further that if you fix
-whether the disaster happens, then it is better you to choose _A_ than _B_ ,
-but the disastrous outcome outweighs all the benefits from all the possible
-choices of _B_.
+Another family of goods, though, are necessary goods. That God exists is good,
+but it is necessarily true. That various mathematical theorems are beautiful
+is necessarily true. Yet no one has reason to promote a necessary truth.
 
-For instance, maybe _B_ is feeding an apple to a hungry child, and _A_ is
-refraining from doing so, but there is an evil dictator who likes children to
-be miserable, and once enough children are not hungry, he will throw all the
-children in jail.
+But perhaps we could have a subtler story on which goods reduce not just to
+reasons to promote them, but to reasons to “stand for them” (taken as the
+opposite of “standing against them”), where promotion is one way of “standing
+for” a good, but there are others, such as celebration. It does not make sense
+to promote the existence of God, the existence of agents, or the Pythagorean
+theorem, but celebrating these goods makes sense.
 
-Intuitively, you should do some sort of expected utility calculation based on
-your best estimate of the probability _p_ that among the _N_ − 1 people other
-than you, _M_ − 1 will choose _B_. For if fewer or more than _M_ − 1 of them
-choose _B_ , your choice will make no difference, and you should choose _B_.
-If _F_ is the difference between the utilities of _B_ and _A_ , e.g., the
-utility of feeding the apple to the hungry child (assumed to be fairly
-positive), and _D_ is the utility of the disaster (very negative), then you
-need to see if _p_ _D_ \+ _F_ is positive or negative or zero. Modulo some
-concerns about attitudes to risk, if _p_ _D_ \+ _F_ is positive, you should
-choose _B_ (feed the child) and if its negative, you shouldn’t.
+However, while it might be the case that something is good just in case an
+agent should “stand for it”, it does not seem right to think that it is good
+_to the extent that_ an agent should “stand for it”. For the degree to which
+an agent should stand for a good is determined not just by the magnitude of
+the good, but the agent’s relationship to the good. I should celebrate my
+children’s accomplishments more than strangers’.
 
-If you have a uniform distribution over the possible number of people other
-than you choosing _B_ , the probability that this number is _M_ − 1 will be 1/
-_N_ (since the number of people other than you choosing _B_ is one of 0, 1,
-..., _N_ − 1). Now, we assumed that the benefits of _B_ are such that they
-don’t outweigh the disaster even if everyone chooses _B_ , so _D_ \+ _N_ _F_ <
-0. Therefore (1/ _N_ ) _D_ \+ _F_ < 0, and so in the uniform distribution case
-you shouldn’t choose _B_.
+Perhaps, though, we can modify the story in terms of goods-for- _x_ , and say
+that _G_ is good-for- _x_ to the extent that _x_ should stand for _G_. But
+that doesn’t seem right, either. I should stand for justice for all, and not
+merely to the degree that justice-for-all is good-for-me. Moreover, there
+goods that are good for non-agents, while a non-agent does not have a reason
+to do anything.
 
-But you might not have a uniform distribution. You might, for instance, have a
-reasonable estimate that a proportion _p_ of other people will choose _B_
-while the threshold is _M_ ≈ _q_ _N_ for some fixed ratio _q_ between 0 and 1.
-If _q_ is not close to _p_ , then facts about the binomial distribution show
-that the probability that _M_ − 1 other people choose _B_ goes approximately
-exponentially to zero as _N_ increases. Assuming that the badness of the
-disaster is linear or at most polynomial in the number of agents, if the
-number of agents is large enough, choosing _B_ will be a good thing. Of
-course, you might have the unlucky situation that _q_ (the ratio of threshold
-to number of people) and _p_ (the probability of an agent choosing _B_ ) are
-approximately equal, in which case even for large _N_ , the risk that you’re
-near the threshold will be too high to allow you to choose _B_.
+I love reductions. But alas it looks to me like reasons and goods are not
+reducible in either direction.
 
-But now back to infinity. In the interpersonal moral Satan’s Apple, we have
-infinitely many agents choosing between _A_ and _B_. But now instead of the
-threshold being a finite number, the threshold is an infinite cardinality (one
-can also make a version where it’s a co-cardinality). And this threshold has
-the property that other people’s choices can _never_ be such that your choice
-will put things above the threshold—either the threshold has already been met
-without your choice, or your choice can’t make it hit the threshold. In the
-finite case, it depended on the numbers involved whether you should choose _A_
-or _B_. But the exact same reasoning as in the finite case, but now without
-_any_ statistical inputs being needed, shows that you should choose _B_. For
-it literally cannot make any difference to whether a disaster happens, no
-matter what other people choose.
+In 2018, the Belgians beat the Brazilians 2-1 in the 2018 World Cup soccer
+quarterfinals. There are about 18 times as many Brazilians and Belgians in the
+world. This raises a number of puzzles in value theory, if for simplicity we
+ignore everyone but Belgians and Brazilians in the world.
 
-In my previous post, I suggested that the interpersonal moral Satan’s Apple
-was a reason to embrace causal finitism: to deny that an outcome (say, the
-disaster) can causally depend on infinitely many inputs (the agents’ choices).
-But the finite cases make me less confident. In the case where _N_ is large,
-and our best estimate of the probability of another agent choosing _B_ is a
-value _p_ not close to the threshold ratio _q_ , it still seems
-counterintuitive that you should morally choose _B_ , and so should everyone
-else, even though that yields the disaster.
+An order of magnitude more people _wanted_ the Brazilians to win, and getting
+what one wants is good. An order of magnitude more people would have felt
+significant and appropriate _pleasure_ had the Brazilians won, and an
+appropriate pleasure is good. And given both wishful thinking as well as
+reasonable general presumptions about there being more talent available in a
+larger population base, we can suppose that a lot more people _expected_ the
+Brazilians to win, and it’s good if what one thinks is the case is in fact the
+case.
 
-But I think in the finite case one can remove the counterintuitiveness. For
-there are mixed strategies that if adopted by everyone are better than
-everyone choosing _A_ or everyone choosing _B_. The mixed strategy will
-involve choosing some number 0 < _p_ best < _q_ (where _q_ is the threshold
-ratio at which the disaster happens) and everyone choosing _B_ with
-probability _p_ best and _A_ with probability 1 − _p_ best, where _p_ best is
-carefully optimized allow as many people to feed hungry children without a
-significant risk of disaster. The exact value of _p_ best will depend on the
-exact utilities involved, but will be close to _q_ if the number of agents is
-large, as long as the disaster doesn’t scale exponentially. Now our
-statistical reasoning shows that when your best estimate of the probability of
-other people choosing _B_ is _not_ close to the threshold ratio _q_ , you
-should just straight out choose _B_. And the worry I had is that everyone
-doing that results in the disaster. But it does not seem problematic that in a
-case where your data shows that people’s behavior is not close to optimal,
-i.e., their behavior propensities do not match _p_ best, you need to act in a
-way that doesn’t universalize very nicely. This is no more paradoxical than
-the fact that when there are criminals, we need to have a police force, even
-though ideally we wouldn’t have one.
+You might think that the good of the many outweighs the good of the few, and
+Belgians are few. But, clearly, the above facts gave very little moral reason
+to the Belgian players to lose. One might respond that the above facts gave
+lots of reason to the Belgians to lose, but these reasons were outweighed by
+the great value of victory to the Belgian players, or perhaps the significant
+intrinsic value of playing a sport as well as one can. Maybe, but if so then
+just multiply both countries’ populations by a factor of ten or a hundred, in
+which case the difference between the goods (desire satisfaction, pleasure and
+truth of belief) is equally multiplied, but still makes little or no moral
+difference to what the Belgian players should do.
 
-But in the infinite case, no matter what strategy other people adopt, whether
-pure or mixed, choosing _B_ is better.
+Or consider this from the point of view of the Brazilian players. Imagine you
+are one of them. Should the good of Brazil—around two hundred million people
+caring about the game—be a crushing weight on your shoulders, imbuing
+everything you do in practice and in the game with a great significance? No!
+It’s still “just a game”, even if the value of the good is spread through two
+hundred million people. It would be weird to think that it is a minor
+pecadillo for a Belgian to slack off in practice but a grave sin for a
+Brazilian to do so, because the Brazilian’s slacking hurts an order of
+magnitude more people.
 
-Now, we deontologists are used to situations where a disaster happens because
-one did the right thing. That’s because consequences are not the only thing
-that counts morally, we say. But in the moral interpersonal Satan’s Apple,
-there seems to be no deontology in play. It seems weird to imagine that
-disaster could strike because everyone did what was consequentialistically
-right.
+That said, I do think that the larger population of Brazil imbues the
+Brazilians’ games and practices with _some_ not insignificant additional moral
+weight than the Belgians’. It would be odd if the pleasure, desire
+satisfaction and expectations of so many counted for _nothing_. But on the
+other hand, it should make no significant difference to the Belgians whether
+they are playing Greece or Brazil: the Belgians shouldn’t practice less
+against the Greeks on the grounds that an order of magnitude fewer people will
+be saddened when the Greeks lose than when Brazilians do.
 
-One way out is causal finitism: Satan’s Apple is impossible, because the
-disaster would have infinitely many causes.
+However, these considerations seem to me to depend to some degree on which
+decisions one is making. If Daniel is on the soccer team and deciding how hard
+to work, it makes little difference whether he is on the Belgian or Brazilian
+team. But suppose instead that Daniel is has two talents: he could become an
+excellent nurse or a top soccer player. As a nurse, he would help relieve the
+suffering of a number of patients. As a soccer player, in addition to the
+intrinsic goods of the sports, he would contribute to his fellow citizens’
+pleasure and desire satisfaction. In _this_ decision, it seems that the number
+of fellow citizens _does_ matter. The number of people Daniel can help as a
+nurse is not very dependent on the total population, but the number of people
+that his soccer skills can delight varies linearly with the total population,
+and if the latter number is large enough, it seems that it would be quite
+reasonable for Daniel to opt to be a soccer player. So we could have a case
+where if Daniel is Belgian he should become a nurse but if Brazilian then a
+soccer player (unless Brazil has a significantly greater need for nurses than
+Belgium, that is). But once on the team, it doesn’t seem to matter much.
 
-If causal finitism is the solution, then it is at least a little interesting
-that the domain of moral obligations is smaller than the logically possible
-even though it extends beyond the physically possible. (I’m taking it as given
-that causal finitism doesn’t just follow from the PNC.)  
-  
-Actually, now that I think about it, is causal finitism a solution? Let's
-grant that it is impossible for one effect to have infinitely many causes.
-Assume I am ignorant about this fact. It surely isn’t impossible for me to
-intend to do something that I mistakenly believe to be such a cause. And won’t
-that mistaken belief generate a similar paradox?
-
-Interesting. Mistaken belief can generate the belief that you are IN the
-paradox, but it doesn't seem to generate the paradox itself. For it's not
-going to be true that everyone doing the right thing (feeding hungry children)
-results in disaster, just that we think it will.
-
-BTW, I suspect that there are a lot of moral paradoxes in situations which are
-metaphysically impossible. Suppose you have the power to change the past. You
-read about the Holocaust. Should you travel back in time and make sure
-Hitler's parents never meet? On the one hand, if you do that, you prevent the
-Holocaust. On the other hand, you will bring about the nonexistence of pretty
-much all the people you know and care about (and not just for you, but for
-most other people around you), because pretty much no one from the post-WWII
-generations would have existed had WWII not happened. What, then, is the
-ethics of changing past events? Moral paradoxes abound. And one can always
-make your move: What if you think you CAN change the past?
+The map from axiology to moral reasons is quite complex, contextual, and
+heavily agent-centered. The hope of reducing moral reasons to axiology is very
+slim indeed.
 
