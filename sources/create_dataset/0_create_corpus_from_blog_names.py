@@ -39,3 +39,6 @@ file_list_of_blogs = "blogs_philosophy_eng.txt"
 print("res :")
 print("filenames_corpus_txt =", filenames_corpus_txt)
 save_multiple_corpus_table_from_textfile(filenames_corpus_txt, blogs_names, table_extension=output_file_extension)
+
+
+# test

@@ -181,7 +181,7 @@ def get_multiple_corpus_table():
 	return(all_corpus_txt)
 
 
-# TO DO : creer une fonction generale save_corpus_table ?? pour regrouper save_corpus_table_from_textfile 
+# TO DO : creerr une fonction generale save_corpus_table ?? pour regrouper save_corpus_table_from_textfile 
 # et save_corpus_table_from_dataframe
 def save_corpus_table_from_textfile(filename_corpus_txt, corpus_topic, table_extension):
 	""" Cree un corpus sous forme de table (csv ou parquet) a partir d'un corpus au format texte .txt """
