@@ -23,7 +23,7 @@ set_current_directory_to_root(root = "classification_texte_bapteme_philo")
 # exemples de commande :
 # python 0_create_corpus_from_blog_names.py blogs_philosophy_eng.txt txt csv all
 # python 0_create_corpus_from_blog_names.py blogs_philosophy_eng.txt txt csv 2
-# python 0_create_corpus_from_blog_names.py blogs_philosophy_eng.txt txt parquet
+# python 0_create_corpus_from_blog_names.py blogs_philosophy_eng.txt txt parquet 2
 # python 0_create_corpus_from_blog_names.py blogs_philosophy_eng.txt txt parquet 2
 sys_argv = sys.argv
 file_list_of_blogs = sys_argv[1]
@@ -32,7 +32,7 @@ output_file_extension = sys_argv[3]
 all_articles = get_var_all_articles(sys_argv)
 num_articles = get_var_num_articles(sys_argv)
 
-file_list_of_blogs = "blogs_philosophy_eng.txt"
+# file_list_of_blogs = "blogs_philosophy_eng.txt"
 # input_file_extension = "txt"
 # output_file_extension = "csv"
 [filenames_corpus_txt, blogs_names] = save_multiple_corpus_from_blogs_urls(file_list_of_blogs, all_articles, num_articles)

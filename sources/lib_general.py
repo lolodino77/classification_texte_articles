@@ -33,22 +33,22 @@ def add_paths(paths):
         sys.path.append(os.getcwd() + path)
 
 
-def get_dataset(filename, input_or_output="input"):
-    """Equilibre un dataset binaire non equilibre : il aura le meme nombre d'exemples de chaque classe
+# def get_dataset(filename, input_or_output="input"):
+#     """ Renvoie un dataset binaire non equilibre : il aura le meme nombre d'exemples de chaque classe
 
-    Parametres: 
-    filename (string) : Le nom du dataframe a importer
-                                Exemple : dataset_voitures.parquet, data_velo.csv
-    input_or_output (string) : Precise le dossier dans lequel le dataset se trouve, input ou output 
+#     Parametres: 
+#     filename (string) : Le nom du dataframe a importer
+#                                 Exemple : dataset_voitures.parquet, data_velo.csv
+#     input_or_output (string) : Precise le dossier dans lequel le dataset se trouve, input ou output 
 
-    Sortie:
-    data (pandas DataFrame) : Le dataframe recupere a partir du nom de fichier filename
-    """
-    path = PureWindowsPath(os.getcwd() + "/data/" + input_or_output + "/" + filename) # cree un objet path 
-    path = path.as_posix() # convertir en path linux (convertir les \\ en /), renvoie une string
-    data = pd.read_parquet(path) #engine="fastparquet"
+#     Sortie:
+#     data (pandas DataFrame) : Le dataframe recupere a partir du nom de fichier filename
+#     """
+#     path = PureWindowsPath(os.getcwd() + "/data/" + input_or_output + "/" + filename) # cree un objet path 
+#     path = path.as_posix() # convertir en path linux (convertir les \\ en /), renvoie une string
+#     data = pd.read_parquet(path) #engine="fastparquet"
 
-    return(data)
+#     return(data)
 
 
 def get_all_files_from_a_directory(path_to_directory, files_extension=""):
@@ -66,6 +66,12 @@ def get_all_files_from_a_directory(path_to_directory, files_extension=""):
     filenames = [filename.split(path_to_directory)[1] for filename in filenames] # enlever le path entier, garder que le nom du fichier
 
     return(filenames)
+
+
+def get_file_extension(filename):
+    """ Donne l'extension d'un fichier """
+    extension = filename.split(".")[1]
+    return(extension)
 
 
 def check_duplicates(data, id_col_name):

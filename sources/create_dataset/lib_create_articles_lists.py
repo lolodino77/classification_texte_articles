@@ -17,8 +17,8 @@ def get_topic_from_filename(filename, keep_language):
 	
 	Parametres:
 	filename (string) : Le nom du fichier duquel on veut extraire le topic
-						Au format : structure_de_donnees + topic + langue + extension
-						Exemple : "dataset_philosophy_fr.txt", "corpus_animals.csv"
+						Au format : corpus_ + topic + langue + extension
+						Exemple : "corpus_philosophy_fr.txt", "corpus_animals.csv"
 	keep_language (boolean) : Indique s'il garder la langue dans le topic
 						Exemples : si keep_language==True ==> philosophy_fr
 								   sinon ==> philosophy
@@ -27,12 +27,16 @@ def get_topic_from_filename(filename, keep_language):
 	topic (string) : Le topic (sujet/theme) extrait du nom de fichier filename
 					 Exemple : "philosophy_fr", "animals"
 	"""
-	filename = filename.split(".")[0]
-	topic = filename.split("_")[1:] 
-	if(keep_language == True):
-		topic = "_".join(topic)
-	else:
-		topic = "_".join(topic[:-1])
+	# version sans langue ("fr", "eng") dans filename
+	topic = filename.split(".")[0].split("corpus_")[1] # corpus_beaux_arts_fr.txt => beaux_arts 
+
+	# version avec langue ("fr", "eng") dans filename
+	# filename = filename.split(".")[0]
+	# topic = filename.split("_")[1:][0] 
+	# if(keep_language == True):
+	# 	topic = "_".join(topic)
+	# else:
+	# 	topic = "_".join(topic[:-1])
 	
 	return(topic)
 

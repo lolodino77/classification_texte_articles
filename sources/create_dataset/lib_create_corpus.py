@@ -163,7 +163,7 @@ def preprocess_list_of_documents(list_of_documents, lemmatizer, stopwords):
 	return preprocess_list
 
 
-def get_corpus_table(filename_corpus_txt):
+def get_corpus_table_from_textfile(filename_corpus_txt):
 	""" Renvoie le corpus pandas dataframe a partir d'un corpus au format .txt"""
 	# print("type filename_corpus_txt =", type(filename_corpus_txt))
 	res = open("./data/input/corpus_txt/" + filename_corpus_txt, "r", encoding="utf-8").read().split("\n\n")
@@ -176,6 +176,28 @@ def get_corpus_table(filename_corpus_txt):
 	return(df)
 
 
+def get_corpus_table_from_csv(filename_corpus_csv):
+	""" Renvoie le corpus pandas dataframe a partir d'un corpus au format csv"""
+	corpus = pd.read_csv("./data/input/corpus_csv/" + filename_corpus_csv)
+	return(corpus)
+
+
+def get_corpus_table_from_parquet(filename_corpus_parquet):
+	""" Renvoie le corpus pandas dataframe a partir d'un corpus au format parquet"""
+	corpus = pd.read_parquet("./data/input/corpus_parquet/" + filename_corpus_parquet)
+	return(corpus)
+
+
+def get_corpus_table_from_filename(filename_corpus):
+	""" Renvoie le corpus pandas dataframe a partir d'un corpus au format parquet"""
+	file_extension = get_file_extension(filename_corpus)
+	if(file_extension == "csv"):
+		corpus = get_corpus_table_from_csv(filename_corpus)
+	elif(file_extension == "parquet"):
+		corpus = get_corpus_table_from_parquet(filename_corpus)
+	return(corpus)
+
+
 def get_multiple_corpus_table():
 	all_corpus_txt = get_all_files_from_a_directory(path_to_directory="./data/input/corpus_txt/")
 	return(all_corpus_txt)
@@ -186,7 +208,7 @@ def get_multiple_corpus_table():
 def save_corpus_table_from_textfile(filename_corpus_txt, corpus_topic, table_extension):
 	""" Cree un corpus sous forme de table (csv ou parquet) a partir d'un corpus au format texte .txt """
 	print("filename_corpus_txt =", filename_corpus_txt)
-	corpus = get_corpus_table(filename_corpus_txt)
+	corpus = get_corpus_table_from_textfile(filename_corpus_txt)
 	filename_corpus_table = "corpus_{}.{}".format(corpus_topic, table_extension)
 
 	if(table_extension == "csv"):
