@@ -68,7 +68,7 @@ def get_urls_from_all_sitemap_subpages(sitemap_subpages):
 	return(urls)
 
 
-def get_author_from_blog_name(blog_name):
+def get_author_from_blog_url(blog_name):
 	""" Recupere le nom de l'auteur d'un blog a partir de la page d'accueil de ce blog 
 		Exemple : blog_name = "https://edwardfeser.blogspot.com 
 	"""
@@ -113,7 +113,7 @@ def write_articles_list_from_blog(blog_name):
 			blog_name = "https://majestyofreason.wordpress.com/", "https://edwardfeser.blogspot.com" 
 	"""
 	urls = get_all_articles_from_blog(blog_name)
-	author = get_author_from_blog_name(blog_name)
+	author = get_author_from_blog_url(blog_name)
 	path_to_articles_list = "./data/input/articles_lists/articles_list_{}.txt".format(author)
 	save_list_to_txt(urls, path_to_articles_list, file_open_mode = "w", sep = "\n") # "w" car copie globale du blog entier
 

@@ -185,6 +185,7 @@ def get_multiple_corpus_table():
 # et save_corpus_table_from_dataframe
 def save_corpus_table_from_textfile(filename_corpus_txt, corpus_topic, table_extension):
 	""" Cree un corpus sous forme de table (csv ou parquet) a partir d'un corpus au format texte .txt """
+	print("filename_corpus_txt =", filename_corpus_txt)
 	corpus = get_corpus_table(filename_corpus_txt)
 	filename_corpus_table = "corpus_{}.{}".format(corpus_topic, table_extension)
 
@@ -216,7 +217,7 @@ def save_multiple_corpus_table_from_textfile(filenames_corpus_txt, corpus_topics
 	"""Cree un corpus d'un topic au format pandas dataframe dans le fichier texte filename_output
 	
 	Parametres: 
-	corpus_list (liste de string) : La liste des corpus txt a enregistrer au format table (csv ou parquet)
+	filenames_corpus_txt (liste de string) : La liste des corpus txt a enregistrer au format table (csv ou parquet)
 	corpus_topics (liste de string) : Les topics de chaque corpus
 	table_extension (string) : L'extension de la table de sortie
 					Exemple : output_file_extension = "csv" ou = "parquet"
@@ -225,8 +226,10 @@ def save_multiple_corpus_table_from_textfile(filenames_corpus_txt, corpus_topics
  	None : Fichier filename_corpus_output qui contient le corpus sous forme de dataframe
 	"""
 	print("in save_multiple_corpus_table_from_textfile")
+	print("corpus texts to save =", filenames_corpus_txt)
 	for i in range(len(filenames_corpus_txt)):
 		filename_corpus_txt = filenames_corpus_txt[i]
+		print("corpus text to save =", filename_corpus_txt)
 		corpus_topic = corpus_topics[i]
 		print("corpus_topic =", corpus_topic)
 		# print("corpus =")

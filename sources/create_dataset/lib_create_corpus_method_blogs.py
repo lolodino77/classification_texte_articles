@@ -23,7 +23,7 @@ def get_var_all_articles(sys_argv):
 	return(all_articles)
 
 
-def create_corpus_from_blogs_names(file_list_of_blogs, all_articles, num_articles):
+def save_multiple_corpus_from_blogs_urls(file_list_of_blogs, all_articles, num_articles):
 	"""Cree un corpus d'un topic au format pandas dataframe dans un fichier (parquet, csv, etc.) 
 	a partir du nom du blog blog_name
 
@@ -35,18 +35,19 @@ def create_corpus_from_blogs_names(file_list_of_blogs, all_articles, num_article
 	Sortie:
  	None : Fichier filename_corpus_output qui contient le corpus au format pandas dataframe
 	"""
-	blogs_names = get_blogs_from_file(file_list_of_blogs)
-	for blog_name in blogs_names:
-		print("blog_name =", blog_name)
-		author = get_author_from_blog_name(blog_name)
-		path_corpus = "./data/input/corpus_txt/corpus_{}.txt".format(author)
-		articles_urls = get_all_articles_from_blog(blog_name, all_articles, num_articles=num_articles)
+	blogs_names = []
+	filenames_corpus_txt = []
+	blogs_urls = get_blogs_from_file(file_list_of_blogs)
+	for blog_url in blogs_urls:
+		print("blog_url =", blog_url)
+		blog_name = get_author_from_blog_url(blog_url)
+		blogs_names.append(blog_name)
+		filename_corpus_txt = "corpus_{}.txt".format(blog_name)
+		filenames_corpus_txt.append(filename_corpus_txt)
+		path_corpus = "./data/input/corpus_txt/{}".format(filename_corpus_txt)
+		articles_urls = get_all_articles_from_blog(blog_url, all_articles, num_articles=num_articles)
 		
-		# if(all_articles):
-		# 	num_articles = len(articles_urls)
-		# articles_urls = articles_urls[:num_articles]
-
-		path_articles_list = "./data/input/articles_lists/articles_list_{}.txt".format(author)
+		path_articles_list = "./data/input/articles_lists/articles_list_{}.txt".format(blog_name)
 		save_list_to_txt(articles_urls, path_articles_list, file_open_mode="w", sep="\n")
 		
 		# print("articles_urls =", articles_urls)
@@ -65,18 +66,4 @@ def create_corpus_from_blogs_names(file_list_of_blogs, all_articles, num_article
 			# print("paragraphs =", paragraphs)
 			save_list_to_txt(paragraphs, path_corpus, file_open_mode="a", sep = "\n\n") #ecrit en mode append "a"
 
-	
-def create_corpus_csv_from_blogs_names(file_list_of_blogs, input_file_extension, output_file_extension,
-										all_articles, num_articles):
-	"""Cree un corpus csv d'un topic dans un fichier texte
-	
-	Parametres: 
-	file_list_of_blogs (string) : Le nom du fichier qui contient la liste des blogs
-					Exemple : "blogs_philosophy_eng.txt"
-	input_file_extension (string) : L'extension du fichier dans lequel se trouve le corpus en suite de textes
-					Exemple : input_file_extension = "txt"
-	output_file_extension (string) : L'extension du fichier dans lequel on ecrira le corpus sous format csv
-					Exemple : output_file_extension = "csv"
-	"""
-	create_corpus_from_blogs_names(file_list_of_blogs, all_articles, num_articles)
-	# write_all_corpus_txt_to_corpus_csv(file_list_of_blogs, input_file_extension, output_file_extension)
+	return(filenames_corpus_txt, blogs_names)

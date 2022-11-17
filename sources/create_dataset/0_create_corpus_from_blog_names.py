@@ -33,10 +33,9 @@ all_articles = get_var_all_articles(sys_argv)
 num_articles = get_var_num_articles(sys_argv)
 
 file_list_of_blogs = "blogs_philosophy_eng.txt"
-input_file_extension = "txt"
-output_file_extension = "csv"
-create_corpus_csv_from_blogs_names(file_list_of_blogs, input_file_extension, output_file_extension, 
-                                    all_articles, num_articles)
-
-# [filenames_corpus_txt, corpus_topics] = save_multiple_corpus_from_bibliographies_lists_files(bibliographies_filenames, all_articles, num_articles)
-# save_multiple_corpus_table_from_textfile(filenames_corpus_txt, corpus_topics, table_extension)
+# input_file_extension = "txt"
+# output_file_extension = "csv"
+[filenames_corpus_txt, blogs_names] = save_multiple_corpus_from_blogs_urls(file_list_of_blogs, all_articles, num_articles)
+print("res :")
+print("filenames_corpus_txt =", filenames_corpus_txt)
+save_multiple_corpus_table_from_textfile(filenames_corpus_txt, blogs_names, table_extension=output_file_extension)
