@@ -71,12 +71,8 @@ def get_balanced_binary_dataset(data, class_col_name):
     
     # On recuperer la classe minoritaire et son nombre de representants (son support)
     class_len = data[class_col_name].value_counts()
-    print("class_len =")
-    print(class_len)
     name_of_minority_class = class_len.index[class_len.argmin()] # un entier binaire (0 ou 1)
-    print("name_of_minority_class =", name_of_minority_class)
     number_of_minority_class = class_len[name_of_minority_class] #name_of_minority_class car ici index = category 
-    print("number_of_minority_class =", number_of_minority_class)
 
     # On equilibre les classes
     minority_class = data.loc[data[class_col_name] == name_of_minority_class, :]
@@ -370,17 +366,7 @@ def select_models(filenames):
 
         # Importer le dataset puis equilibrer ses classes
         corpus = get_merged_corpus_table_from_filename(filename)
-        print("corpus.columns =", corpus.columns)
-        print("corpus.shape =", corpus.shape)
-        print("type category_bin =", type(corpus.category_bin.loc[2]))
-        print("category_bin =")
-        print(corpus.category_bin)
-        print(corpus.category_bin.value_counts())
         corpus = get_balanced_binary_dataset(corpus, class_col_name)
-        print("corpus.shape =", corpus.shape)
-        print("classes count =")
-        print(corpus["category"].value_counts())
-        print(corpus.head(4))
 
         # Verifier la presence ou non de doublons
         check_duplicates(corpus, id_col_name)
@@ -410,4 +396,6 @@ def select_models(filenames):
 
         scorings = ['accuracy', 'precision']
         get_all_learning_curves(model, X_train_tfidf, y_train, cv_param, scorings, train_sizes, n_jobs=-1, 
-                                    savefig=savefig, corpus_name=corpus_name)
+                                    savefig=savefig, dataset_name=corpus_name)
+        # get_all_learning_curves(model, X_train, y_train, cv_param, scorings, train_sizes, n_jobs=-1, 
+        #                     savefig=False, dataset_name="", plotfig=False)
