@@ -24,6 +24,35 @@ from pathlib import Path, PureWindowsPath
 pd.set_option("display.precision", 2)
 pd.set_option('display.max_colwidth', 40)
 from lib_general import *
+sys.path.append(PureWindowsPath(r"C:\Users\eupho\OneDrive\Documents\perso\projets\classification_texte_bapteme_philo\sources\create_dataset").as_posix())
+from lib_create_corpus import *
+from lib_merge_corpus import *
+
+def get_merged_corpus_filenames(sys_argv):
+    # python 2_model_selection.py command parquet corpus_edwardfeser_exapologist.parquet corpus_alexanderpruss_edwardfeser.parquet
+    # python 2_model_selection.py ./data/input parquet
+    
+    #argv[0] = le nom du fichier python execute
+	files_to_open = sys_argv[1] # argument du script, si files_to_open==command execute le script sur les 
+	# fichiers (datasets) entres en arguments dans la ligne de commande, 
+	# mais si files_to_open!=command execute le script sur tous les fichiers du dossier ./data/input
+
+	files_format = sys_argv[2] # format des fichiers datasets a ouvrir (parquet, csv, etc.), multiple si plusieurs formats
+	print("len(sys_argv) =", len(sys_argv))
+	# sert quand files_to_open==in_input_repertory, pour n'importer que les parquet, ou que les csv, etc.
+
+	if(files_to_open == "command"):
+		if(len(sys_argv) == 3): # cas quand il n'y a qu'un seul dataset => il faut creer une liste
+			filenames = [sys_argv[3]]
+		else: #cas quand il y a au moins deux datasets => pas besoin de creer de liste
+			filenames = sys_argv[3:] # ignorer les 2 premiers arguments, le nom du script et files_to_open
+	else:
+		input_repertory = files_to_open.replace("/", "\\") # "/data/input/" ==> '\\data\\input\\'
+		print("files in input : input_repertory =", input_repertory)
+		filenames = glob.glob(os.path.join(input_repertory + "*." + files_format))
+		filenames = [filename.split(input_repertory)[1] for filename in filenames] # enlever le path entier, garder que le nom du fichier
+
+	return(filenames)
 
 
 def get_balanced_binary_dataset(data, class_col_name):
@@ -38,10 +67,16 @@ def get_balanced_binary_dataset(data, class_col_name):
     Sortie:
     balanced_data (pandas DataFrame) : Le dataframe pandas equilibre
     """
+    print("inside function get_balanced_binary_dataset")
+    
     # On recuperer la classe minoritaire et son nombre de representants (son support)
     class_len = data[class_col_name].value_counts()
-    name_of_minority_class = class_len.index[class_len.argmin()]
-    number_of_minority_class = class_len[class_len.argmin()]
+    print("class_len =")
+    print(class_len)
+    name_of_minority_class = class_len.index[class_len.argmin()] # un entier binaire (0 ou 1)
+    print("name_of_minority_class =", name_of_minority_class)
+    number_of_minority_class = class_len[name_of_minority_class] #name_of_minority_class car ici index = category 
+    print("number_of_minority_class =", number_of_minority_class)
 
     # On equilibre les classes
     minority_class = data.loc[data[class_col_name] == name_of_minority_class, :]
@@ -156,7 +191,7 @@ def do_cross_validation(X_train, y_train, scorings, num_iter, k, dataset_name=""
     models.append(('AdaBoostClassifier', AdaBoostClassifier()))
     models.append(('KNN', KNeighborsClassifier()))
     models.append(('RandomForest', RandomForestClassifier()))
-    # models.append(('MLPClassifier', MLPClassifier(max_iter=500))) car diverge donc trop long
+    # models.append(('MLPClassifier', MLPClassifier(max_iter=100))) car diverge donc trop long
     models.append(('SGDClassifier', SGDClassifier()))
     models.append(('SVM', SVC()))
     models.append(('DecisionTreeClassifier', DecisionTreeClassifier()))
@@ -331,14 +366,20 @@ def select_models(filenames):
     for filename in filenames:
         # Recupere le nom du dataset grace au nom du fichier du dataset filename
         print("filename =", filename)
-        filename_split = filename.split("data")
-        filename_split = filename_split[1].split(".parquet")
-        dataset_name = filename_split[0][1:]
+        corpus_name = filename.split(".")[0]
 
         # Importer le dataset puis equilibrer ses classes
-        corpus = get_dataset(filename)
+        corpus = get_merged_corpus_table_from_filename(filename)
+        print("corpus.columns =", corpus.columns)
+        print("corpus.shape =", corpus.shape)
+        print("type category_bin =", type(corpus.category_bin.loc[2]))
+        print("category_bin =")
+        print(corpus.category_bin)
+        print(corpus.category_bin.value_counts())
         corpus = get_balanced_binary_dataset(corpus, class_col_name)
         print("corpus.shape =", corpus.shape)
+        print("classes count =")
+        print(corpus["category"].value_counts())
         print(corpus.head(4))
 
         # Verifier la presence ou non de doublons
@@ -350,13 +391,13 @@ def select_models(filenames):
 
         # Creation du dossier de sorties si besoin
         if(savefig):
-            os.makedirs("./data/output/" + dataset_name, exist_ok=True)
+            os.makedirs("./data/output/" + corpus_name, exist_ok=True)
 
         # Cross validation
         scorings = ['accuracy', 'f1_macro']
         num_iter = 2 #nombre de repetitions de la k-fold cross validation entiere
         k = 10 #k de la k-fold cross validation
-        do_cross_validation(X_train_tfidf, y_train, scorings, num_iter, k, dataset_name)
+        do_cross_validation(X_train_tfidf, y_train, scorings, num_iter, k, corpus_name)
 
         ## Learning curves (du meilleur modele)
         k = 10
@@ -369,4 +410,4 @@ def select_models(filenames):
 
         scorings = ['accuracy', 'precision']
         get_all_learning_curves(model, X_train_tfidf, y_train, cv_param, scorings, train_sizes, n_jobs=-1, 
-                                    savefig=savefig, dataset_name=dataset_name)
+                                    savefig=savefig, corpus_name=corpus_name)

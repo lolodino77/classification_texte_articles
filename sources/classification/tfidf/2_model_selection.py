@@ -20,7 +20,10 @@ pd.set_option('display.max_rows', 5)
 pd.set_option('display.max_colwidth', None) #afficher texte entier dans dataframesys.path.append(PureWindowsPath(r"C:\Users\eupho\OneDrive\Documents\perso\projets\classification_texte_bapteme_philo\sources").as_posix())
 from pathlib import Path, PureWindowsPath
 sys.path.append(PureWindowsPath(r"C:\Users\eupho\OneDrive\Documents\perso\projets\classification_texte_bapteme_philo\sources").as_posix())
+sys.path.append(PureWindowsPath(r"C:\Users\eupho\OneDrive\Documents\perso\projets\classification_texte_bapteme_philo\sources\classification").as_posix())
 from lib_general import *
+from lib_classification import *
+
 
 # Se rendre dans le dossier root
 set_current_directory_to_root(root = "classification_texte_bapteme_philo")
@@ -32,8 +35,9 @@ from lib_classification import *
 
 
 # Les differents cas d'executions :
-# python 2_model_selection.py in_command parquet data_history_baptism.parquet data_philosophy_baptism.parquet
+# python 2_model_selection.py command parquet data_history_baptism.parquet data_philosophy_baptism.parquet
     # ==> Execute le script sur les datasets data_history_baptism.parquet data_philosophy_baptism.parquet
+# python 2_model_selection.py command parquet corpus_edwardfeser_exapologist.parquet corpus_alexanderpruss_edwardfeser.parquet
 # python 2_model_selection.py ./data/input parquet
     # ==> Execute le script sur tous les datasets parquet dans ./data/input
 def main():
@@ -41,7 +45,7 @@ def main():
     print('Argument List:', str(sys.argv))
 
     sys_argv = sys.argv
-    filenames = get_input_filenames(sys_argv)
+    filenames = get_merged_corpus_filenames(sys_argv)
     print("filenames =", filenames)
     select_models(filenames)
     

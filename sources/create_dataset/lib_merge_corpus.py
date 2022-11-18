@@ -3,6 +3,9 @@ from nltk.stem import WordNetLemmatizer
 from french_lefff_lemmatizer.french_lefff_lemmatizer import FrenchLefffLemmatizer
 from lib_general import *
 from lib_create_corpus import *
+sys.path.append(PureWindowsPath(r"C:\Users\eupho\OneDrive\Documents\perso\projets\classification_texte_bapteme_philo\sources").as_posix())
+from lib_general import *
+# from lib_classification import *
 
 
 def merge_two_corpus(corpus_filenames, final_corpus_name, topics, language):
@@ -19,7 +22,7 @@ def merge_two_corpus(corpus_filenames, final_corpus_name, topics, language):
 					Exemple : ["philosophy", "history"]
 	language (string) : La langue des documents
 					Valeurs possibles : "french" ou "english"
-
+	
 	Sortie:
  	None : Fichier filename_corpus_output qui contient le corpus au format pandas dataframe
 	"""
@@ -107,3 +110,25 @@ def save_merged_corpus_table(corpus, class_0, class_1, table_extension):
 		corpus.to_parquet(path, engine="fastparquet")
 		corpus = pd.read_parquet(path) #engine="fastparquet"
 		print(corpus)
+
+
+def get_merged_corpus_table_from_csv(filename_corpus_csv):
+	""" Renvoie le corpus pandas dataframe a partir d'un corpus au format csv"""
+	corpus = pd.read_csv("./data/input/merged_corpus/" + filename_corpus_csv)
+	return(corpus)
+
+
+def get_merged_corpus_table_from_parquet(filename_corpus_parquet):
+	""" Renvoie le corpus pandas dataframe a partir d'un corpus au format parquet"""
+	corpus = pd.read_parquet("./data/input/merged_corpus/" + filename_corpus_parquet)
+	return(corpus)
+
+
+def get_merged_corpus_table_from_filename(filename_corpus):
+	""" Renvoie le corpus pandas dataframe a partir d'un corpus au format parquet"""
+	file_extension = get_file_extension(filename_corpus)
+	if(file_extension == "csv"):
+		corpus = get_merged_corpus_table_from_csv(filename_corpus)
+	elif(file_extension == "parquet"):
+		corpus = get_merged_corpus_table_from_parquet(filename_corpus)
+	return(corpus)
