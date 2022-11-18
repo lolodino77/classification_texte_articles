@@ -30,7 +30,9 @@ from lib_merge_corpus import *
 
 def get_merged_corpus_filenames(sys_argv):
     # python 2_model_selection.py command parquet corpus_edwardfeser_exapologist.parquet corpus_alexanderpruss_edwardfeser.parquet
-    # python 2_model_selection.py ./data/input parquet
+    # python 2_model_selection.py ./data/input/ parquet
+    # python 2_model_selection.py ./data/input/ csv
+    # python 2_model_selection.py ./data/input/ all
     
     #argv[0] = le nom du fichier python execute
 	files_to_open = sys_argv[1] # argument du script, si files_to_open==command execute le script sur les 
@@ -387,14 +389,14 @@ def select_models(filenames):
 
         ## Learning curves (du meilleur modele)
         k = 10
-        kfold = RepeatedStratifiedKFold(n_splits=k, n_repeats=2, random_state=None)
+        kfold = RepeatedStratifiedKFold(n_splits=k, n_repeats=20, random_state=None)
         cv_param = kfold
         num_experiences = 4
         train_sizes = np.linspace(0.1, 1.0, num_experiences)
         n_jobs = -1
         model = SVC()
 
-        scorings = ['accuracy', 'precision']
+        scorings = ['accuracy', 'f1_macro', 'recall', 'precision']
         get_all_learning_curves(model, X_train_tfidf, y_train, cv_param, scorings, train_sizes, n_jobs=-1, 
                                     savefig=savefig, dataset_name=corpus_name)
         # get_all_learning_curves(model, X_train, y_train, cv_param, scorings, train_sizes, n_jobs=-1, 

@@ -38,6 +38,7 @@ from lib_classification import *
 # python 2_model_selection.py command parquet data_history_baptism.parquet data_philosophy_baptism.parquet
     # ==> Execute le script sur les datasets data_history_baptism.parquet data_philosophy_baptism.parquet
 # python 2_model_selection.py command parquet corpus_edwardfeser_exapologist.parquet corpus_alexanderpruss_edwardfeser.parquet
+# python 2_model_selection.py command parquet corpus_alexanderpruss_exapologist.parquet
 # python 2_model_selection.py ./data/input parquet
     # ==> Execute le script sur tous les datasets parquet dans ./data/input
 def main():
