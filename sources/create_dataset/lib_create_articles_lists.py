@@ -28,7 +28,11 @@ def get_topic_from_filename(filename, keep_language):
 					 Exemple : "philosophy_fr", "animals"
 	"""
 	# version sans langue ("fr", "eng") dans filename
-	topic = filename.split(".")[0].split("corpus_")[1] # corpus_beaux_arts_fr.txt => beaux_arts 
+	print("filename avant split =", filename)
+	topic = filename.split(".")[0].split("_")[1:]
+	topic = "_".join(topic)
+
+	# topic = filename.split(".")[0].split("corpus_")[1] # corpus_beaux_arts_fr.txt => beaux_arts 
 
 	# version avec langue ("fr", "eng") dans filename
 	# filename = filename.split(".")[0]
@@ -65,9 +69,13 @@ def get_all_articles_from_webpage(bibliography_url):
 	#Recupere un par un tous les liens url presents sur l'article
 	urls = []
 	for link in soup.find_all('a'):
-		url_i = link.get('href')
-		if("/20" in url_i): # condition si c'est un article (20 = 2 premiers chiffres des annees 2021, 2010...)
-			urls.append(url_i)
+		link_str = str(link)
+		# print("link =", str(link))
+		# print("type(link) =", type(link))
+		if("https" in link_str):
+			url_i = link.get('href')
+			if("/20" in url_i): # condition si c'est un article (20 = 2 premiers chiffres des annees 2021, 2010...)
+				urls.append(url_i)
 	urls = [url for url in urls if("pdf" not in url)] # enlever les articles pdf
 
 	return(urls)

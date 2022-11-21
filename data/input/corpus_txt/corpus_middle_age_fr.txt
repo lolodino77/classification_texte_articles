@@ -631,6 +631,912 @@ connaissance et sagesse.** _Justin Martyr, Dialogue avec Tryphon, §III_
 
     * [ Voir l’article dans le Lecteur ](https://wordpress.com/read/blogs/124094029/posts/3660)
 
+Article de Étienne Omnès qui est le début d’une série exposant la Somme de
+Théologie de Thomas D’Aquin. Ce livre, destiné à l’origine à la formation des
+prêcheurs dominicains, reste aujourd’hui un chef d’oeuvre titanesque de la
+théologie et de la métaphysique chrétienne, et reste un des livres
+philosophiques les plus commentés, que ce soit par des chrétiens ou des non-
+croyants, pour sa théologie proper ou pour son éthique. Nous commenterons
+chaque semaine, question par question ou article par article (selon le sujet)
+la position de Thomas d’Aquin sur le sujet, afin de faire découvrir au monde
+évangélique toute la richesse de la théologie médiévale, qui est à bien des
+égards un recours parfait face aux défaillances de notre propre théologie
+contemporaine.
+
+La méthode scholastique qui se retrouve parfaitement chez Thomas d’Aquin
+consiste avant tout à se poser des questions, puis de question en question
+progresser dans la connaissance. Et quand on veut explorer le sujet de Dieu,
+la toute première question à se poser est: que suis-je en train de faire?
+Quelle est la nature de ce que je m’apprête à dire? Est ce que c’est utile?
+
+Thomas pose donc la question: « Qu’est ce que la doctrine sacrée? Quel est son
+objet? » Il découpe ensuite en 10 articles, ou sous-questions:
+
+Mon objectif dans cet article est de vous présenter en une fois toute la
+question 1 (je ne pourrais pas toujours commenter une question entière), en
+démystifiant d’abord les questions, et éclairant autant que le Seigneur me
+permettra les réponses.
+
+Après tout, il existe déjà la philosophie pour se poser la question de Dieu et
+de ses attributs. Nous n’avons pas non plus besoin de théologie pour savoir
+comment nous devons vivre et comment, par exemple, avoir un mariage réussi.
+Considérant que la théologie chrétienne n’est pas l’étude d’un champ de savoir
+foncièrement nouveau, il apparaît inutile de rajouter la théologie quand la
+philosophie et les sciences sociales suffisent… Elle paraît superflue.
+
+Thomas défend alors l’idée que ce qui rend la théologie nécessaire n’est pas
+son sujet ou sa méthode, mais son point de départ:
+
+> Il fut nécessaire pour le salut de l’homme qu’il y eût, en dehors des
+> sciences philosophiques que scrute la raison humaine, **une doctrine
+> procédant de la révélation divine.** – Summa Ia, Q1, a1
+
+Le but ultime de l’homme n’est pas situé en l’homme, mais au delà de lui, et
+il faut donc qu’il lui soit révélé pour qu’il agisse en fonction.
+
+La révélation permet de rendre disponible au plus grand nombre un savoir vital
+qui autrement, ne serait connu que d’une minorité de joyeux philosophes.
+
+Il n’y a pas de superfluité de la théologie quant aux autres domaines de
+savoir: par exemple, la théologie du mariage ne rentre pas en concurrence ou
+en superfluité avec la sociologie du mariage, parce que ce sont deux démarches
+différentes sur un même objet, ce qui arrive couramment. Même en ce qui
+concerne la connaissance de Dieu, la philosophie part de l’homme et ce qu’il
+connaît pour décrire Dieu, quand la théologie part de la Révélation de Dieu
+pour connaître Dieu. Comme ce sont des démarches différentes, il n’y a pas de
+concurrence entre philosophie et théologie.
+
+> Une diversité de “ raisons ”, ou de points de vue, dans ce que l’on connaît,
+> détermine une diversité de sciences. **Ainsi est-ce bien une même conclusion
+> que démontrent l’astronome et le physicien, par exemple, que la terre est
+> ronde ; mais le premier utilise à cette fin un moyen terme mathématique,
+> c’est-à-dire abstrait de la matière, tandis que le second en emploie un qui
+> s’y trouve impliqué**. **Rien n’empêche donc que les objets mêmes dont
+> traitent les sciences philosophiques, selon qu’ils sont connaissables par la
+> lumière de la raison naturelle, puissent encore être envisagés dans une
+> autre science, selon qu’ils sont connus par la lumière de la révélation
+> divine.** La théologie qui relève de la doctrine sacrée est donc d’un autre
+> genre que celle qui est encore une partie de la philosophie.
+
+Ici on pose la question de l’objet de ce savoir: si ce savoir est une
+révélation divine, faite une fois pour toute, alors la théologie n’est pas une
+science, puisqu’elle n’est pas étude de quelque chose…
+
+Thomas d’Aquin se sert en fait de cette question pour expliciter la chose
+suivante: la « doctrine sacrée » n’est pas la révélation divine. Notre
+théologie n’est pas la Bible, mais notre étude de la Bible. Elle est la
+science, l’étude si vous préférez, de la révélation divine.
+
+> A coup sûr la doctrine sacrée est une science. Mais, parmi les sciences, il
+> en est de deux espèces. Certaines s’appuient sur des principes connus par la
+> lumière naturelle de l’intelligence : telles l’arithmétique, la géométrie,
+> etc **. D’autres procèdent de principes qui sont connus à la lumière d’une
+> science supérieure** : comme la perspective à partir de principes reconnus
+> en géométrie, et la musique à partir de principes connus par l’arithmétique.
+> **Et c’est de cette façon que la doctrine sacrée est une science.** Elle
+> procède en effet de principes connus à la lumière d’une science de Dieu et
+> des bienheureux. E **t comme la musique fait confiance aux principes qui lui
+> sont livrés par l’arithmétique, ainsi la doctrine sacrée accorde foi aux
+> principes révélés par Dieu.** – Summa Ia, Q1, a2
+
+Si la théologie est une, alors elle ne devrait parler que de Dieu: parler de
+l’homme, de la création etc ne serait déjà plus de la théologie.
+
+Ou alors « théologie » n’est qu’un raccourci pour parler de plein de sciences
+différentes. Par exemple, la « physique » est une science multiple: elle
+comprend l’électricité, la mécanique, le génie des matériaux etc… La théologie
+peut être ainsi, avec la théologie de l’homme, de la création etc… Problème:
+comment unifier tous ces savoir disparates? Comment unifier la doctrine de
+l’homme à la doctrine de Christ? La doctrine du mal à la doctrine de
+l’expiation? Comment unifier l’étude du livre de Jérémie à la discipline de
+l’éthique chrétienne?
+
+Thomas d’Aquin répond alors que la théologie est bel et bien une science
+unique, même quand elle étudie des savoirs très différents. En effet, ce qui
+fait l’unité d’un savoir est l’unité de ce qui est étudié. La physique est une
+science multiple, parce que l’électronicien n’étudie pas la même chose que
+l’atomiste, qui n’étudie pas la même chose que le mécanicien quantique. Il
+peut y avoir des interactions, mais aux marges de la discipline seulement…
+
+A l’inverse lorsque vous êtes un spécialiste d’exégèse ou d’histoire de
+l’église, ou d’éthique chrétienne, vous étudiez en fait tous une seule et même
+chose: la révélation divine. La diversité des disciplines ne vient que des
+variations dans les méthodes et les détails étudiés.
+
+> De même, **l’unique science sacrée est en mesure d’envisager sous une même
+> raison formelle, c’est-à-dire en tant que divinement révélables, des objets
+> traités dans des sciences philosophiques différentes** ; ce qui fait que
+> cette science peut être regardée comme une certaine impression de la science
+> de Dieu elle-même, une et simple à l’égard de tout. – _Summa Ia, Q1, a3_
+
+Reformulons: La théologie chrétienne est-elle un savoir « pur », ou bien un
+savoir en vue d’une certaine oeuvre, presque un savoir-faire?
+
+On pourrait être tenté de tout de suite dire que la théologie est un savoir
+pour le savoir, mais rappelez vous que l’apôtre Jacques lui-même disait: «
+_Mettez la parole en pratique au lieu de l’écouter seulement_ » (Jc1.22) et
+qu’un bon nombre de versets de la Bible porte sur des commandements pratiques…
+
+Néanmoins Thomas d’Aquin maintient que la théologie est « spéculative », car
+la fin de la théologie chrétienne n’est pas une vie morale ou vertueuse, mais
+de connaître et amener à la connaissance du seul vrai Dieu, face à face.
+
+> **Toutefois la science sacrée est plus spéculative que pratique** , car elle
+> concerne plus les choses divines que les actes humains **n’envisageant ceux-
+> ci que comme moyens pour parvenir à la pleine connaissance de Dieu** , en
+> laquelle consiste l’éternelle béatitude. – _Summa Ia, Q1, a4_
+
+Soit dit en passant, le but de l’éthique chrétienne n’est donc pas de former
+le parfait pharisien ou bien de donner une liste de bon comportements à
+adopter dans l’église: la théologie pratique sert à mieux connaître Dieu dans
+le domaines de nos actes.
+
+La doctrine sacrée est donc l’étude de la révélation divine en vue de
+connaître Dieu, sous tous ses angles. Maintenant, occupons nous de savoir si
+cette science devrait être première, ou bien si elle est juste un savoir comme
+un autre.
+
+A première vue, cela semble mal parti: notre théologie est composée de
+sciences du langage, de philosophie, de sciences historiques… Considérant
+qu’elle utilise toutes ces sciences, il apparaît évident que la théologie
+passe _après_ la philosophie et la connaissance du grec par exemple.
+
+Une autre objection que l’on pourrait apporter est que la théologie porte sur
+des articles de foi (la révélation divine) et est donc indigne d’être une
+science plus « noble » que les sciences physiques, qui portent sur du concret
+et de l’empiriquement vérifiable.
+
+Mais Thomas affirme sans concession que la théologie est bel et bien la reine
+des sciences:
+
+> En sens contraire, les autres sciences sont appelées ses servantes ; ainsi
+> lit-on aux Proverbes (9, 3) : la Sagesse “ a dépêché ses servantes, elle
+> appelle sur les hauteurs ”
+>
+> […] **La vérité est que cette science, à la fois spéculative et pratique,
+> dépasse sous ce double rapport toutes les autres.** – _Summa Ia, Q1, a5_
+
+Elle est plus noble que les sciences spéculatives (physique, chimie,
+sociologie…) parce qu’elle s’occupe d’un objet plus élevé. Qui osera dire
+qu’il est plus important de connaître le comportement d’un électron plutôt que
+de connaître celui qui est le chemin, la vérité et la vie?
+
+Elle est aussi plus noble parce qu’elle s’appuie sur la révélation divine, qui
+est beaucoup plus fiable que n’importe quelle expérience et observation
+physique. Certains objecteront qu’au contraire, la connaissance de la
+Révélation divine n’est pas fiable puisqu’elle n’est pas vérifiable et demande
+au contraire la foi pour s’appuyer dessus. A ceci, Thomas d’Aquin répond
+magnifiquement:
+
+> **Rien n’empêche qu’une connaissance plus certaine selon sa nature soit en
+> même temps moins certaine pour nous** ; cela tient à la **faiblesse de notre
+> esprit, qui se trouve, dit Aristote, “ devant les plus hautes évidences des
+> choses, comme l’œil du hibou en face de la lumière du soleil ”**. Le doute
+> qui peut surgir à l’égard des articles de foi ne doit donc pas être attribué
+> à une incertitude des choses mêmes, mais à la faiblesse de l’intelligence
+> humaine. **Malgré cela, la moindre connaissance touchant les choses les plus
+> hautes est plus désirable qu’une science très certaine des choses moindres,
+> dit Aristote**
+
+La théologie chrétienne est aussi la plus noble des sciences pratiques parce
+qu’elle vise à la plus haute de toutes les fins, le plus noble de tous les
+buts: la politologie sert à vous faire gagner la prochaine élection. La
+théologie sert à vous montrer le chemin de la vie éternelle. Qui osera dire
+qu’il existe un plus noble « savoir-faire » que celui qui nous mène au face à
+face avec le Père?
+
+La théologie est donc bel et bien la reine des sciences. Fin de l’histoire.
+
+L’article commencant à être long, et les questions suivantes étant moins
+importantes, je vais tâcher de faire plus rapide.
+
+Le mot « sagesse » a ici un sens très particulier, qui en langage moderne se
+retrouve en partie dans la notion de « vision du monde ». Une sagesse, au sens
+aristotélicien, c’est le « méta-savoir » autour duquel s’arrange les autres
+savoirs. Par exemple, la « sagesse » de l’architecte, c’est ce méta-savoir qui
+lui permet d’arranger ensemble ses connaissances en génie civil, dessin,
+conception, gestion de projets etc… pour concevoir un bâtiment. Est ce que la
+théologie est de ce genre?
+
+> **Cette doctrine est par excellence une sagesse** , parmi toutes les
+> sagesses humaines, et cela non **pas seulement dans un genre particulier,
+> mais absolument**. – _Summa Ia, Q1, a6_
+
+Dieu étant le créateur de l’univers et l’ordonnateur de la vie de l’homme,
+l’étude de la révélation divine est forcément une sagesse, et même la plus
+grande des sagesses, puisqu’il n’y a pas de « plans » plus grands que celui de
+Dieu. Quand on comprend et connaît le plan de Dieu, on peut arranger et
+utiliser tous les savoirs humains pour le réaliser dans nos vies et à
+l’extérieur.
+
+A l’inverse, celui qui enferme la théologie dans un bocal et se retire dans sa
+petite sphère chrétienne ne reconnaît pas la sagesse de Dieu, car il ne
+cherche pas à soummettre la création à Dieu, mais au contraire la fuit, comme
+si le monde fonctionnait selon un certain plan, une certaine « sagesse » et le
+chrétien une « sagesse différente ». C’est là l’erreur des fondamentalistes.
+
+Un livre qui parle du mariage selon Dieu, et qui ne parle que du mariage, est-
+il un livre de théologie?
+
+> **Or, dans la doctrine sacrée, on traite tout “ sous la raison de Dieu ”, ou
+> du point de vue de Dieu** , soit que l’objet d’étude soit Dieu lui-même,
+> soit qu’il ait rapport à Dieu comme à son principe ou comme à sa fin. D’où
+> il suit que Dieu est vraiment le sujet de cette science. – _Summa Ia, Q1,
+> a7_
+
+Est ce qu’il convient vraiment d’argumenter au sujet de la révélation divine?
+La théologie ne devrait-elle pas se réduire à la rédaction des confessions de
+foi, la liste de ce qu’il faut croire? Pourquoi argumente-t-on ce qui est reçu
+non par la raison, mais par la foi seule?
+
+Thomas d’Aquin dissipe ici un malentendu: Oui la théologie utilise la raison,
+la logique et l’argumentation, mais à partir de la révélation, pas contre la
+révélation. Elle prend sa base sur ce que dit la Bible, et développe dans
+toutes leurs richesses les idées implicites contenues dans l’Ecriture.
+
+> Les autres sciences n’argumentent pas en vue de démontrer leurs principes ;
+> mais elles argumentent à partir d’eux pour démontrer d’autres vérités
+> comprises dans ces sciences. **Ainsi la doctrine sacrée ne prétend pas, au
+> moyen d’une argumentation, prouver ses propres principes, qui sont les
+> vérités de foi ; mais elle les prend comme point d’appui pour manifester
+> quelque autre vérité** , comme l’Apôtre (1 Co 15,12) prend appui sur la
+> résurrection du Christ pour prouver la résurrection générale. _– Summa Ia,
+> Q1, a8_
+
+Avant de quitter cette question, je dois aborder un point très intéressant
+pour nous protestants: que penser des sources extra-bibliques et
+particulièrement des écrits des autres théologiens? C’est ici que Thomas
+d’Aquin traite la question:
+
+> Au contraire, c’est un usage propre qu’elle [=la doctrine sacrée] fait des
+> autorités de l’Écriture canonique. **Quant aux autorités des autres docteurs
+> de l’Église, elle en use aussi comme arguments propres, mais d’une manière
+> seulement probable. Cela tient à ce que notre foi repose sur la révélation
+> faite aux Apôtres et aux Prophètes, non sur d’autres révélations, s’il en
+> existe, faites à d’autres docteurs**. C’est pourquoi, écrivant à S. Jérôme,
+> S. Augustin déclare : “ Les livres des Écritures canoniques sont les seuls
+> auxquels j’accorde l’honneur de croire très fermement leurs auteurs
+> incapables d’errer en ce qu’ils écrivent. Les autres, si je les lis, ce
+> n’est point parce qu’ils ont pensé une chose ou l’ont écrite que je l’estime
+> vraie, quelque éminents qu’ils puissent être en sainteté et en doctrine. ”
+> _– Summa Ia, Q1, a8_
+
+Notre foi repose sur le Nouveau Testament et l’Ancien Testament seulement, et
+non sur des révélations orales ( _si elles existent!!_ ) faite aux successeurs
+des apôtres. Ecriture + Tradition? Hm… non, pas pour Thomas d’Aquin, et tant
+pis pour Vatican II… Le prochain catholique qui vous dira que les réformateurs
+ont inventé Sola Scriptura, dites lui que Thomas d’Aquin est un réformateur
+alors.
+
+Si le but est d’exposer la vérité, alors il apparaît peu pratiquer d’utiliser
+des analogies, des paraboles et des images… Cela engendre la confusion et
+éloigne de la vérité.
+
+> Or, il est naturel à l’homme de s’élever à l’intelligible par le sensible,
+> parce que toute notre connaissance prend son origine des sens. Il est donc
+> parfaitement convenable que dans l’Écriture sainte les choses spirituelles
+> nous soient livrées au moyen de métaphores corporelles _.- Summa Ia, Q1, a9_
+
+Il commente ensuite pourquoi la Bible utilise ainsi de telles images, mais
+passons vite.
+
+Cette question là intéressera davantage le lecteur évangélique: peut-il y
+avoir un sens allégorique attaché au sens littéral? Considérant l’emphase que
+la tradition réformée met sur le sens littéral, il se peut que vous ayez le
+poil hérissé lorsque vous lirez Thomas dire, en bon chrétien médiéval, qu’il y
+a en plus du sens littéral, un sens spirituel:
+
+> A son tour, **le sens spirituel se divise en trois sens distincts.** […]
+> Donc, lorsque les réalités de la loi ancienne signifient celles de la loi
+> nouvelle, on a le **sens allégorique** ; quand les choses réalisées dans le
+> Christ, ou dans ce qui signifie le Christ, sont le signe de ce que nous
+> devons faire, on a le **sens moral** ; pour autant, enfin que ces mêmes
+> choses signifient ce qui existe dans la gloire éternelle, on a le **sens
+> anagogique.**
+
+Argl! Que Thomas d’Aquin soit envoyé dans le septième cercle de l’enfer
+herméneutique, quelque part entre Basilide et Benny Hinn! Il ose!!
+
+Premièrement, nous ne sommes d’aussi rigides littéralistes que nous prétendons
+être. Je constate par exemple qu’il y a un consensus aujourd’hui autour de
+l’interprétation « typologique », qui dit que par dessus l’interprétation
+littérale il y a une interprétation plus allégorique centrée autour de Christ.
+David vainqueur contre Goliath est une figure du Christ vainqueur contre le
+Mal par exemple. Aucun prédicateur n’est choqué par ces interprétations, qui
+sont pourtant de nature allégoriques (à quelques nuances près).
+
+Deuxièmement, Thomas d’Aquin est très prudent dans l’utilisation de
+l’interprétation « allégorique », tout autant que n’importe quel exégète
+contemporain, voire même plus. N’oublions pas que tout scholastique du XIIe
+siècle commençait sa carrière par l’enseignement et le commentaire des
+écritures. On ne séparait pas l’exégèse de la théologie systématique comme on
+peut le faire aujourd’hui. Voici donc ce qu’il dit face aux craintes
+d’allégories foireuses et de confusion alexandrines dans les interprétations:
+
+> Il n’y aura pas non plus de confusion dans l’Écriture, **car tous les sens
+> sont fondés sur l’unique sens littéral, et l’on ne pourra argumenter qu’à
+> partir de lui, à l’exclusion des sens allégoriques** , ainsi que l’observe
+> S. Augustin contre le donatiste Vincent. Rien cependant ne sera perdu de
+> l’Ecriture sainte, car **rien de nécessaire à la foi n’est contenu dans le
+> sens spirituel sans que l’Écriture nous le livre clairement ailleurs, par le
+> sens littéral. _–_** _Summa Ia, Q1, a10_
+
+Vous remarquerez donc que Thomas d’Aquin n’est pas du tout en faveur des
+interprétations fantaisistes, il pose même deux barrières très efficace contre
+celles-ci:
+
+On ne peut argumenter qu’à partir du sens littéral. Je ne peux pas dire qu’il
+y a dix ciels au dessus de la terre parce qu’il est écrit: « L’omer est le
+dixième de l’épha » (j’aimerais pouvoir vous l’inventer…). On peut encourager,
+exhorter et fortifier à partir du sens allégorique. Mais lorsque vient le
+moment d’exposer la vérité et la doctrine, Thomas n’argumente qu’à partir du
+sens littéral.
+
+**Tout ce qui est nécessaire à la foi est contenu clairement dans le sens
+littéral.** En plus d’affirmer une doctrine réformée que les catholiques
+rejettent, Thomas insiste fortement sur le fait qu’aucune doctrine ne devrait
+être basée sur une interprétation allégorique. S’il est possible de dire «
+Jésus est mort pour mes péchés » à partir de l’épisode du serpent de bronze
+dans l’Exode, il est tout de même plus facile et plus sûr de le faire à partir
+des épîtres des apôtres, et c’est à partir de celles-ci que nous devons
+l’argumenter.
+
+Donc tout bien considéré, l’interprétation biblique telle qu’elle est
+présentée par Thomas d’Aquin n’est jamais que le système évangélique en plus
+développé. Il se permet de distinguer une variété de sens spirituel, là où
+nous restons allergiques à tout ce qui pourrait ressembler à de l’allégorie,
+mais sa démarche est la même que la nôtre, et s’oppose à celle des catholiques
+romains.
+
+Voilà qui expose tout ce que Thomas d’Aquin dit sur la doctrine sacrée.
+
+Oui car nous avons besoin d’une révélation divine pour être sauvé
+
+Oui car elle un savoir qui se développe à partir de la révélation divine
+
+Elle est une, car toutes les sciences bibliques et théologiques ne sont que
+des variations de l’étude d’un seul sujet: la révélation divine.
+
+Bien qu’elle ait des aspects pratiques, la théologie est avant tout le savoir
+de Dieu pour connaître Dieu, et non pour faire quelque chose avec.
+
+La théologie est la reine des sciences, à cause du sujet traité.
+
+Oui, elle est même la plus grande de toutes les sagesses car elle est l’étude
+du plus grand plan qui soit, celui de Dieu.
+
+Oui, mais A PARTIR de la révélation divine, et non la révélation divine elle-
+même.
+
+Oui, tant que ces sens sont strictement soumis au sens littéral.
+
+Mari, père, appartient à Christ. Les marques de mon salut sont ma confession
+de foi et les sacrements que je reçois.
+
+  1. [Notre connaissance de l'existence de Dieu selon Thomas D'Aquin - Par la foi](https://parlafoi.fr/2019/01/05/notre-connaissance-de-lexistence-de-dieu-selon-thomas-daquin/) \- […] La dernière fois, nous avons précisé ce que Thomas d’Aquin entendait faire: établir et enseigner la « doctrine sacrée » à…
+
+  2. [La simplicité de Dieu selon Thomas D'Aquin - Par la foi](https://parlafoi.fr/2019/01/19/la-simplicite-de-dieu-selon-thomas-daquin/) \- […] avons vu ce que disait Thomas d’Aquin sur la théologie, puis sur l’existence de Dieu, il est à présent temps que…
+
+  3. [Quel système économique chrétien doit-on choisir ? – Par la foi](https://parlafoi.fr/2020/02/05/quel-systeme-economique-chretien-doit-on-choisir/) \- […] la volonté du Créateur est l’objet d’étude de la Théologie. Or, comme l’enseigne Thomas d’Aquin la Théologie est la…
+
+  4. [Y-a-t-il une théologie ? Combien de sortes ? –Turretin (1.2) – Par la foi](https://parlafoi.fr/2021/02/06/y-a-t-il-une-theologie-combien-de-sortes-turretin-1-2/) \- […] théologie n’entre pas en conflit avec la philosophie, à cause d’arguments qui n’ont que changé depuis Thomas d’Aquin. Il…
+
+Votre adresse e-mail ne sera pas publiée. Les champs obligatoires sont
+indiqués avec *
+
+[La dernière fois](https://parlafoi.fr/2018/12/29/thomas-daquin-sur-la-
+theologie/), nous avons précisé ce que Thomas d’Aquin entendait faire: établir
+et enseigner la « doctrine sacrée » à partir de la révélation divine (et
+l’Écriture seulement). Mais avant de savoir ce qu’est Dieu, il nous faut
+savoir… si Dieu existe. Inutile de se tordre l’esprit à savoir comment il
+existe si au final il n’existe pas. Il pose donc la question 2: à propos de
+l’existence de Dieu. Il divise cette question en 3 articles:
+
+Pour le post d’aujourd’hui, je ne traiterai que des deux premiers articles, le
+commentaire nécessaire pour présenter et commenter les 5 voies risque d’être
+copieux, je me le réserve pour plus tard. Cela ne veut pas dire qu’il n’y a
+rien d’intéressant à voir, bien au contraire: pour un évangélique, la question
+de l’existence de Dieu est semblable au mythique éléphant dans le salon: c’est
+une question énorme qu’en général on évite avec beaucoup d’application.
+
+Demandez à n’importe quel frère et soeur dans la foi, et il vous répondra: «
+Mais bien sûr que oui! » Il semble à certain que l’existence de Dieu est aussi
+évidente que l’air que l’on respire, et qu’il suffit de dire à un athée: «
+écoute ton coeur et tu verras que Dieu existe » ou bien plus sobrement: «
+croire en Dieu (=savoir que Dieu existe) est aussi naturel que de respirer. »
+
+Ce n’est pas comme si c’était complètement faux. Il est écrit après tout: «
+_ce qu’on peut connaître de Dieu est manifeste pour eux, Dieu le leur ayant
+fait connaître_. » (Rom 1.19) La tradition réformée a pas mal élaboré sur le
+thème du _sensus divinitatis,_ le sens du divin qui existe en tout homme et
+que Dieu utilise pour témoigner de son existence. Enfin, la philosophie
+présuppositionaliste fait de cette évidence de l’existence de Dieu une pierre
+angulaire: si les hommes ne voient pas l’existence de Dieu, c’est parce qu’ils
+ont les mauvais présupposés, pas parce que cette existence est obscure.
+
+Thomas d’Aquin serait d’accord avec eux… en un sens. Mais il affirme tout de
+même que l’existence de Dieu n’est pas évidente par elle-même et voici sa
+formulation:
+
+> **Je dis donc que cette proposition : Dieu existe, est évidente de soi, car
+> le prédicat y est identique au sujet** ; Dieu, en effet, est son être même,
+> comme on le verra plus loin. **Mais comme nous ne connaissons pas l’essence
+> de Dieu, cette proposition n’est pas évidente pour nous** ; elle a besoin
+> d’être démontrée par ce qui est mieux connu de nous, même si cela est, par
+> nature, moins connu, à savoir par les œuvres de Dieu. – Ia Q2, a1
+
+Oui, l’existence de Dieu est évidente, ne serait-ce que parce que Dieu et le
+concept de Dieu sont une seule et même chose. Si donc nous avions
+naturellement une idée de ce qu’est Dieu le créateur infini, omniscient etc….
+et bien nous saurions déjà que Dieu existe (ce qui est le coeur de l’argument
+ontologique pour l’existence de Dieu). Problème: nous n’avons en réalité
+aucune idée naturelle de ce qu’est précisément l’essence de Dieu. Nous avons
+bien sûr de vagues intuitions et un sens confus du divin, mais ce n’est pas
+suffisant pour qu’on puisse qualifier ces instincts de « connaissances ». Si
+je sens confusément qu’il y a un locataire du dessus, on peut très
+difficilement dire que je sais que « Dieu » existe, surtout si je l’imagine
+sur un trône doré avec une grande barbe.
+
+La solution est donc: l’existence de Dieu est évidente, mais pas pour nous.
+
+Il y a tout de même des objections à cela: comment pouvons nous dire que
+l’existence de Dieu n’est pas évidente, alors que nous avons le sensus
+divinitatis? Thomas répond:
+
+> **Nous avons naturellement quelque connaissance générale et confuse de
+> l’existence de Dieu, à savoir en tant que Dieu est la béatitude de l’homme**
+> ; car l’homme désire naturellement la béatitude, et ce que naturellement il
+> désire, naturellement aussi il le connaît. **Mais ce n’est pas là vraiment
+> connaître que Dieu existe, pas plus que connaître que quelqu’un vient n’est
+> connaître Pierre, même si c’est Pierre qui vient**. En effet, beaucoup
+> estiment que la béatitude, ce bien parfait de l’homme, consiste dans les
+> richesses, d’autres dans les plaisirs, d’autres dans quelque autre chose.
+
+Savoir qu’il y a du divin dans l’univers, ce n’est pas savoir que Dieu existe.
+
+Autre objection: Dieu est la fondation de la vérité, de l’existence, du Bien.
+Si donc nous connaissons naturellement que la vérité, l’existence et le bien
+moral existe, c’est déjà reconnaître que Dieu, la perfection même de ces
+choses existe. A ceci Thomas répond simplement:
+
+> Que la Vérité soit, en général, cela est évident ; mais que la Vérité
+> première soit, c’est ce qui n’est pas évident pour nous.
+
+Tous reconnaissent l’existence du Bien et du mal. Mais les discours des athées
+modernes montre bien qu’ils sont très très loin de faire le lien entre le bien
+et le Bien, qu’ils ont beau utiliser en permanence des concepts qui n’ont de
+sens que si Dieu existe, ils ne réalisent pas et n’arrivent pas à comprendre
+que Dieu existe. Cette vérité est donc évidente, certes, mais pas pour nous.
+
+Voilà un thème sur lequel le consensus évangélique commun dira assurément non.
+Et auquel Thomas d’Aquin répond facilement oui. Faisons chaque objection dans
+l’ordre:
+
+> L’existence de Dieu est un article de foi ; mais les articles de foi ne se
+> démontrent pas ; car la démonstration engendre la science, mais l’objet de
+> la foi est ce dont la vérité n’apparaît pas, selon l’épître aux Hébreux (11,
+> 1) – Summa Ia, Q2, a2
+
+C’est plutôt juste: c’est par la foi que nous déclarons que Dieu existe: à
+aucun moment à notre conversion nous n’avons entendu de démonstration logique
+qui nous amenait à cette existence. On nous as dit: « Dieu a envoyé Jésus
+faire ceci et cela » et nous l’avons cru. Il n’y a donc pas lieu de démontrer,
+mais uniquement de recevoir par la foi. C’est même plutôt inconvenant de faire
+autrement.
+
+Passons sur le fait qu’il y a des personnes qui se sont converties suite
+justement à des arguments logiques sur l’existence de Dieu et concentrons nous
+sur ce que dit Thomas:
+
+> **L’existence de Dieu** et les autres vérités concernant Dieu, que la raison
+> naturelle peut connaître, comme dit l’Apôtre (Rm 1, 19), **ne sont pas des
+> articles de foi, mais des vérités préliminaires qui nous y acheminent. –**
+> Ibid
+
+Cette phrase peut paraître difficile, parce que la plupart d’entre nous
+prennent l’existence de Dieu par la foi, et la confirment plus ou moins plus
+tard. Cela ne correspond pas à la façon dont nous recevons cette information.
+Personne ne nous as prouvé ou enseigné l’existence de Dieu, on nous l’a
+proclamé, et j’y ai cru… Ecoutez alors ce que dit Thomas:
+
+> En effet, la foi présuppose la connaissance naturelle, comme la grâce
+> présuppose la nature, et la perfection le perfectible. **Toutefois, rien
+> n’empêche que ce qui est, de soi, objet de démonstration et de science ne
+> soit reçu comme objet de foi par celui qui ne peut saisir la
+> démonstration.** – Ibid
+
+Je propose une illustration: on m’a appris directement le théorème de
+pythagore: « le carré de l’hypothénuse est égal à la somme des carrés des deux
+autres côtés ». Ceci est une connaissance naturelle, elle n’est pas le fruit
+d’une révélation divine directe. Cependant, si on devait m’exposer les raisons
+pour lesquelles ce théorème est vrai, je serais à sec: ma prof de maths me l’a
+appris, et je lui fais confiance. Bien que le théorème de Pythagore soit une
+connaissance qui peut être prouvée, rien n’empêche que la plupart d’entre nous
+le recoive par la foi.
+
+De même, l’existence de Dieu est une proposition qui n’est pas révélée, mais
+prouvable par la raison, et sur laquelle s’appuie toute la révélation divine.
+Cela ne veut pas dire que la Bible s’appuie sur la Raison: en effet, il est
+tout à fait possible de sauter cette étape et admettre par la foi que Dieu
+existe. Cela ne change pas le fait que la proposition: « Dieu existe » est de
+nature rationnelle et prouvable, et c’est bien tout le travail des philosophes
+et apologètes. Inutile de dire, en effet, que si Dieu n’existe pas, alors il
+n’y a même pas de raison de parler de Jésus…
+
+Pendant que j’y suis, en dehors de l’existence de Dieu, quels sont les autres
+attributs de Dieu que l’on peut connaître par la raison seulement? Thomas
+d’Aquin nous renvoie vers Romains 1.20, aussi allons nous vers ce texte:
+
+> En effet, les perfections invisibles de Dieu, **sa puissance éternelle et sa
+> divinité** , se voient comme à l’oeil, depuis la création du monde, quand on
+> les considère dans ses ouvrages. – Paul de Tarse, Romains 1.20  
+>
+
+Les limites de ce que l’on peut connaître rationnellement de Dieu, sans
+révélation divine sont donc assez limitées: nous savons qu’il y a un quelque
+chose au dessus de nous, que ce quelque chose est divin, et qu’il est
+puissant. C’est exactement ce que Platon (que Clément d’Alexandrie appelait «
+amoureux de la vérité ») et Aristote développait dans leurs systèmes, hors de
+toute révélation divine.
+
+Cela dit, cette théologie purement naturelle n’est pas très utile ni pour le
+salut, ni pour la vie chrétienne, car il manque encore une grande quantité
+d’informations sur ce que Dieu est, ce qu’il a fait et ce qu’il veut, et voici
+pourquoi, comme on le disait au premier article, il nous faut une révélation
+divine et une « doctrine sacrée » basée dessus.
+
+Avant de savoir si Dieu existe, il nous faut savoir si cela a seulement du
+sens de se poser la question.
+
+Oui, même si nombre d’entre nous sautent cette étape et l’accepte par la foi.
+
+Mari, père, appartient à Christ. Les marques de mon salut sont ma confession
+de foi et les sacrements que je reçois.
+
+Votre adresse e-mail ne sera pas publiée. Les champs obligatoires sont
+indiqués avec *
+
+Nous arrivons dans notre commentaire à un des passages les plus cités,
+commentés, défendus ou réfutés de la Summa. Un de ceux qui sont aussi les plus
+abusés et mal compris. Les « cinq voies » pour prouver l’existence de Dieu
+sont tantôt présentées comme un archaïsme philosophique réfuté depuis les
+Lumières, tantôt comme la pierre d’angle et le chef d’oeuvre de la théologie
+naturelle chrétienne. Mon objectif dans cet article ne sera pas de défendre
+particulièrement ces arguments, mais seulement de les présenter. Cela me
+prendra trop de temps, mais ces défenses existent: je vous renvoie par exemple
+à [une défense de la première voie par David
+Haines](http://philosopherdhaines.blogspot.fr/2013/09/a-defense-of-aquinass-
+first-way.html).
+
+Nous en sommes donc à la pars I, Question 2, article 3: Dieu existe-t-il?
+Toutes les citations sont de cette référence.
+
+> La première et la plus manifeste est celle qui se prend du mouvement. Il est
+> évident, nos sens nous l’attestent, que dans ce monde certaines choses se
+> meuvent.
+
+Thomas entreprend premièrement par un argument basé sur le mouvement. Dans la
+métaphysique aristotélicienne, le mouvement est quelque chose de très très
+large, il peut englober aussi bien le mouvement d’une voiture sur la route,
+qu’une bûche de bois qui s’enflamme ou un étudiant qui acquiert une
+connaissance. Il serait peut-être mieux compris comme « changement ». Autre
+chose à savoir: chez Aristote, un changement, c’est le passage de la puissance
+(ou potentiel) à l’acte. Une bûche de bois est brûlée en puissance tant
+qu’elle est dans la cheminée sans aucune autre intervention. Elle devient
+brûlée en acte quand le feu lui a communiqué assez de chaleur pour qu’elle
+s’enflamme.
+
+> **Or, tout ce qui se meut est mû par un autre**. En effet, rien ne se meut
+> qu’autant qu’il est en puissance par rapport au terme de son mouvement,
+> tandis qu’au contraire, ce qui meut le fait pour autant qu’il est en acte ;
+> **car mouvoir, c’est faire passer de la puissance à l’acte, et rien ne peut
+> être amené à l’acte autrement que par un être en acte** , comme un corps
+> chaud en acte, tel le feu, rend chaud en acte le bois qui était auparavant
+> chaud en puissance, et par là il le meut et l’altère.
+
+Pour qu’une bûche devienne brûlante en acte, il va falloir qu’il existe une
+autre source brûlante en acte (i.e une flamme). En effet, le potentiel ne peut
+pas faire passer du potentiel à l’acte. Mettez une allumette potentiellement
+allumée à côté d’une bûche potentiellement enflammée, et vous n’obtiendrez
+jamais de flamme actuelle.
+
+D’où l’observation: pour passer de la puissance à l’acte(=changer), il faut un
+autre objet en acte. Oui mais: un objet ne peut-il pas se changer lui-même? Ne
+peut-il pas passer tout seul de la puissance à l’acte?
+
+> Or **il n’est pas possible que le même être, envisagé sous le même rapport,
+> soit à la fois en acte et en puissance** ; il ne le peut que sous des
+> rapports divers ; par exemple, ce qui est chaud en acte ne peut pas être en
+> même temps chaud en puissance ; mais il est, en même temps, froid en
+> puissance. Il est donc impossible que sous le même rapport et de la même
+> manière quelque chose soit à la fois mouvant et mû, c’est-à-dire qu’il se
+> meuve lui-même **Il faut donc que tout ce qui se meut soit mû par un
+> autre.**
+
+Pour répondre à la question d’avant: non, ce n’est pas possible, parce que
+pour que la bûche devienne chaude, il faudrait qu’elle soit chaude (pour se
+communiquer de la chaleur). Pour qu’une voiture se déplace, il faut qu’elle se
+déplace… La contradiction est assez claire: un objet immobile ne peut pas se
+mouvoir lui-même, il doit obtenir son mouvement d’autre chose.
+
+> Donc, si la chose qui meut est mue elle-même, il faut qu’elle aussi soit mue
+> par une autre, et celle-ci par une autre encore. **Or, on ne peut ainsi
+> continuer à l’infini, car dans ce cas il n’y aurait pas de moteur premier,
+> et il s’ensuivrait qu’il n’y aurait pas non plus d’autres moteurs, car les
+> moteurs seconds ne meuvent que selon qu’ils sont mûs par le moteur premier,
+> comme le bâton ne meut que s’il est mû par la main.**
+
+S’il faut quelque chose en acte pour qu’il déclenche le passage à l’acte
+d’autre chose, et que cet acte a besoin d’un autre acte pour passer… alors il
+va nous falloir un « acte premier » pour lancer toute la chaîne. Un acte pur,
+qui n’est mis en mouvement par aucun autre…
+
+> Donc il est nécessaire de parvenir à un moteur premier qui ne soit lui-même
+> mû par aucun autre, et un tel être, tout le monde comprend que c’est Dieu.
+
+> La seconde voie part de la notion de cause efficiente. Nous constatons, à
+> observer les choses sensibles, qu’il y a un ordre entre les causes
+> efficientes ; mais ce qui ne se trouve pas et qui n’est pas possible, c’est
+> qu’une chose soit la cause efficiente d’elle-même, ce qui la supposerait
+> antérieure à elle-même, chose impossible.
+
+Par cause efficiente, on entend l’objet qui cause un mouvement. Autant le
+dernier argument était à propos du mouvement, autant celui-ci est à propos de
+ce qui cause le mouvement. Il y a une parenté entre cet argument et
+[l’argument cosmologique du Kalam de William Lane
+Craig](https://www.youtube.com/watch?v=6CulBuMCLg0&list=PL3gdeV4Rk9EfL-
+NyraEGXXwSjDNeMaRoX&index=1), dans le sens où ils utilisent tous deux la
+causalité efficiente.
+
+De façon amusante, on retrouve ce problème dans une des objections contre
+l’argument du Kalam de William Lane Craig: Daniel Dennet (pourtant philosophe
+professionnel) a essayé de réfuter l’argument en disant que l’Univers s’est
+causé lui-même. William Lane Craig lui a répondu exactement la même chose que
+Thomas d’Aquin: si l’univers se cause lui-même, alors il existait avant
+d’exister… Soyons charitable et contenton-nous de dire que Daniel Dennet a dit
+une bêtise plus grosse que lui.
+
+> Or, il n’est pas possible non plus qu’on remonte à l’infini dans les causes
+> efficientes ; car, parmi toutes les causes efficientes ordonnées entre
+> elles, la première est cause des intermédiaires et les intermédiaires sont
+> causes du dernier terme, que ces intermédiaires soient nombreux ou qu’il n’y
+> en ait qu’un seul.
+
+Prenons une suite de dominos: si le dernier domino tombe, c’est parce que
+l’avant-dernier tombe. Si l’avant-dernier tombe, c’est parce que l’avant-
+avant-dernier est tombé. Mais pour que l’avant…. bref, s’il n’y a pas un
+premier domino qui est tombé tout en amont de la chaîne, et qu’il est tombé à
+cause d’une cause première (votre gros doigt graisseux par exemple) rien ne se
+passe.
+
+> D’autre part, supprimez la cause, vous supprimez aussi l’effet. Donc, s’il
+> n’y a pas de premier, dans l’ordre des causes efficientes, il n’y aura ni
+> dernier ni intermédiaire. Mais si l’on devait monter à l’infini dans la
+> série des causes efficientes, il n’y aurait pas de cause première ; en
+> conséquence, il n’y aurait ni effet dernier, ni cause efficiente
+> intermédiaire, ce qui est évidemment faux.
+
+Si toutes les causes dépendent d’une autre, si elles sont toutes à la fois
+causes de ce qui leur succède et effet de ce qui les précède, alors il va nous
+falloir une cause première, qui cause tout ce qui suit, et qui n’est l’effet
+d’absolument rien… La conclusion est donc :
+
+> Il faut donc nécessairement affirmer qu’il existe une cause efficiente
+> première, que tous appellent Dieu.
+
+> La troisième voie se prend du possible et du nécessaire, et la voici. Parmi
+> les choses, nous en trouvons qui peuvent être et ne pas être ; la preuve,
+> c’est que certaines choses naissent et disparaissent, et par conséquent ont
+> la possibilité d’exister et de ne pas exister. Mais il est impossible que
+> tout ce qui est de telle nature existe toujours ; car ce qui peut ne pas
+> exister n’existe pas à un certain moment. Si donc tout peut ne pas exister,
+> à un moment donné, rien n’a existé.
+
+La contingence, c’est la propriété pour un objet de pouvoir ne pas exister. Il
+existe, mais ce n’est pas nécessaire. Par exemple, le fait qu’Emmanuel Macron
+soit président de la république est contingent, il n’était pas nécessaire que
+ce soit lui, même si c’est le cas aujourd’hui. De nos jours, [William Lane
+Craig aussi aime bien utiliser l’argument de la contingence, mais basé sur
+Leibniz plutôt que Thomas
+d’Aquin.](https://www.youtube.com/watch?v=FPCzEP0oD7I)
+
+Si on réfléchit bien, tout dans l’univers est ainsi: notre planète n’est pas
+nécessaire, notre soleil n’est pas nécessaire, les galaxies et finalement,
+l’univers entier n’est pas nécessaire. Toutes ces choses ont eu un début à
+leur existence.
+
+Donc il fut un temps où rien, pas même l’univers n’existait.
+
+> Or, si c’était vrai, maintenant encore rien n’existerait ; car ce qui
+> n’existe pas ne commence à exister que par quelque chose qui existe. Donc,
+> s’il n’y a eu aucun être, il a été impossible que rien commençât d’exister,
+> et ainsi, aujourd’hui, il n’y aurait rien, ce qu’on voit être faux. Donc,
+> tous les êtres ne sont pas seulement possibles, et il y a du nécessaire dans
+> les choses.
+
+Ici, on peut encore se dire: ben oui, du néant est sorti un univers. Mais ce
+n’est pas possible, puisqu’il faut de l’existence pour que l’existence soit.
+Hors de rien, rien ne fut. Il faut qu’à un moment ou un autre, il y ait un
+objet nécessaire qui ait amené à l’existence tous les objets contingents.
+
+> Or, tout ce qui est nécessaire, ou bien tire sa nécessité d’ailleurs, ou
+> bien non. Et il n’est pas possible d’aller à l’infini dans la série des
+> nécessaires ayant une cause de leur nécessité, pas plus que pour les causes
+> efficientes, comme on vient de le prouver.
+
+On peut postuler un vide quantique nécessaire, mais se pose alors la question
+de: pourquoi le vide quantique est-il nécessaire? Parce que les lois physiques
+qui le justifient sont nécessaires. Et pourquoi les lois physiques sont-elles
+nécessaires? Parce qu’elles sont reliées à un autre objet nécessaire… on entre
+alors dans une régression à l’infini particulièrement absurde, à moins qu’on
+ne finisse sur un objet nécessaire en lui-même, qui ne tire son existence que
+de lui-même…
+
+> On est donc contraint d’affirmer l’existence d’un Être nécessaire par lui-
+> même, qui ne tire pas d’ailleurs sa nécessité, mais qui est cause de la
+> nécessité que l’on trouve hors de lui, et que tous appellent Dieu.
+
+CQFD3. Thomas d’Aquin vient de prouver par la Raison ce qui est écrit en Exode
+3.17: « Je suis celui qui es ».
+
+> La quatrième voie procède des degrés que l’on trouve dans les choses. On
+> voit en effet dans les choses du plus ou moins bon, du plus ou moins vrai,
+> du plus ou moins noble, etc. Or, une qualité est attribuée en plus ou en
+> moins à des choses diverses selon leur proximité différente à l’égard de la
+> chose en laquelle cette qualité est réalisée au suprême degré ; par exemple,
+> on dira plus chaud ce qui se rapproche davantage de ce qui est
+> superlativement chaud. Il y a donc quelque chose qui est souverainement
+> vrai, souverainement bon, souverainement noble, et par conséquent aussi
+> souverainement être, car, comme le fait voir Aristote dans la Métaphysique,
+> le plus haut degré du vrai coïncide avec le plus haut degré de l’être.
+> D’autre part, ce qui est au sommet de la perfection dans un genre donné, est
+> cause de cette même perfection en tous ceux qui appartiennent à ce genre :
+> ainsi le feu, qui est superlativement chaud, est cause de la chaleur de tout
+> ce qui est chaud, comme il est dit au même livre. Il y a donc un être qui
+> est, pour tous les êtres, cause d’être, de bonté et de toute perfection.
+> C’est lui que nous appelons Dieu.
+
+La quatrième voie évoque par certains côtés [l’argument moral pour l’existence
+de Dieu](https://www.youtube.com/watch?v=OxiAikEk2vU) bien qu’il s’agisse
+d’une métaphysique tout à fait différente.
+
+L’argument est assez facile à lire pour un lecteur moderne: Nous faisons
+facilement des échelles de bonté, et de sainteté: Gandhi est plus moral que
+Al-Baghdadi, parce qu’il a vécu une vie plus orientée vers le bien que le
+dernier. Mais ce dont nous ne nous rendons pas compte (et c’est toute
+l’essence de l’argument moral) c’est que cette « classification » n’a de sens
+que s’il y a un standard moral objectif et suprême, à partir duquel est
+ordonné toute manifestation de bonté et d’amour.
+
+S’il n’y a pas de Bien avec un grand B, alors la moralité de Gandhi est une
+morale, celle du calife Al-Baghdadi en est une autre, et cela n’a aucun sens
+de les comparer. Mais s’il existe un être souverainement parfait, alors cette
+expérience morale a du sens. Et ce standard ultime de bonté et d’amour, c’est
+ce que nous appelons Dieu.
+
+Je profite de l’occasion pour glisser un mot sur l’échelle d’être: dans la
+métaphysique d’Aristote, il y a une sorte de hiérarchie dans les objets
+existants, tous n’ont pas la même « valeur métaphysique »:
+
+Ce qui existe en potentiel a plus de valeur que ce qui n’existe pas du tout.
+Ce qui existe en acte a plus de valeur que ce qui n’est qu’en potentiel. Mais
+toute cette échelle n’a de sens que s’il existe un « être suprême » qui serait
+pleinement réalisé, sans aucun potentiel ou manque. Un acte pur. C’est aussi
+ce que nous appelons Dieu, qui est l’Existence même. Nous en reparlerons dans
+d’autres articles.
+
+> La cinquième voie est tirée du gouvernement des choses. **Nous voyons que
+> des êtres privés de connaissance, comme les corps naturels, agissent en vue
+> d’une fin, ce qui nous est manifesté par le fait que, toujours ou le plus
+> souvent, ils agissent de la même manière, de façon à réaliser le meilleur**
+> ; il est donc clair que ce n’est pas par hasard, mais en vertu d’une
+> intention qu’ils parviennent à leur fin. **Or, ce qui est privé de
+> connaissance ne peut tendre à une fin que dirigé par un être connaissant et
+> intelligent, comme la flèche par l’archer.** Il y a donc un être intelligent
+> par lequel toutes choses naturelles sont ordonnées à leur fin, et cet être,
+> c’est lui que nous appelons Dieu.
+
+Ce dernier argument est le premier de la famille des arguments « téléologiques
+», ce qui veut dire: basé sur l’intentionnalité de la nature. Celui qui est
+défendu par William Lane Craig porte sur un fait physique particulier: la très
+grande précision des constantes physiques de l’univers. Celui de Thomas est
+plus général et vague. Si toutes les choses sont arrangées rationnellement
+ensemble, et que ce sont des choses irrationnelles, alors c’est qu’il a fallu
+un être rationnel au dessus pour les arranger. Cette famille d’arguments a été
+plus efficacement défendue par des gens comme William Paley et ses successeurs
+que Thomas d’Aquin, qui estimait avoir quelque chose de plus solide avec les
+faits métaphysiques énoncés plus haut.
+
+Si vous lisez la Summa, vous verrez que Thomas mentionne deux objections à
+l’existence de Dieu qui sont très, très modernes. Première objection:
+
+> De deux contraires, si l’un est infini, l’autre est totalement aboli. Or,
+> quand on prononce le mot Dieu, on l’entend d’un bien infini. Donc, si Dieu
+> existait, il n’y aurait plus de mal. Or l’on trouve du mal dans le monde.
+> Donc Dieu n’existe pas.
+
+C’est une version scholastique de ce que l’on appelle: [la version logique du
+problème du mal](https://www.youtube.com/watch?v=k64YJYBUFLM) et comme vous
+pouvez le voir en suivant ce lien, elle mobilise encore aujourd’hui beaucoup
+d’énergie et d’encre du côté des apologètes chrétiens. Voici comment Thomas
+répond en deux lignes:
+
+> A l’objection du mal, S. Augustin répond : “ Dieu, souverainement bon, ne
+> permettrait aucunement que quelque mal s’introduise dans ses œuvres, s’il
+> n’était tellement puissant et bon que du mal même il puisse faire du bien. ”
+> C’est donc à l’infinie bonté de Dieu que se rattache sa volonté de permettre
+> des maux pour en tirer des biens.
+
+La réponse est substantiellement la même que celle des philosophes
+contemporains: Dieu peut avoir une bonne raison de permettre le mal, par
+exemple pour en faire un bien supérieur. Nous ne pouvons pas savoir, et donc
+affirmer le problème « logique » du mal avec certitude.
+
+Deuxième objection: le problème de la surdétermination causale de l’action
+divine… plus communément appelé: « God-of-the-gaps » « Dieu-des trous »
+
+> Ce qui peut être accompli par des principes en petit nombre ne se fait pas
+> par des principes plus nombreux. Or, il semble bien que tous les phénomènes
+> observés dans le monde puissent s’accomplir par d’autres principes, si l’on
+> suppose que Dieu n’existe pas ; car ce qui est naturel a pour principe la
+> nature, et ce qui est libre a pour principe la raison humaine ou la volonté.
+> Il n’y a donc nulle nécessité de supposer que Dieu existe.
+
+Pour reformuler de façon moderne: Pour tout phénomène naturel que l’on
+observe, on peut trouver une explication naturelle. Et pour toute action
+humaine, il y a une explication à l’échelle humaine (psychologique ou autre).
+Dès lors, pourquoi rajouter sur cette couche d’explication une explication
+divine? C’est tout à fait inutile.
+
+Ah que j’aimerais voir Dawkins s’exprimer aussi bien. Mais de toute façon ca
+ne servirait à rien car:
+
+> Puisque la nature ne peut agir en vue d’une fin déterminée que si elle est
+> dirigée par un agent supérieur, on doit nécessairement faire remonter
+> jusqu’à Dieu, première cause, cela même que la nature réalise. Et de la même
+> manière, les effets d’une libre décision humaine doivent être rapportés au-
+> delà de la raison ou de la volonté humaine, à une cause plus élevée ; car
+> ils sont variables et faillibles, et tout ce qui est variable, tout ce qui
+> peut faillir, doit dépendre d’un principe immobile et nécessaire par lui-
+> même, comme on vient de le montrer.
+
+Tous ces phénomènes, toutes ces décisions sont nécessairement liées à un agent
+supérieur, nécessaire, éternel (ne serait-ce que celui qui a créé les lois de
+la physique…). Et les décisions humaines tombent sous le coup de la quatrième
+voie: elles sont plus ou moins sages, plus ou moins bonnes, plus ou moins
+intelligentes… ce qui présuppose un standard de sagesse, de bonté
+d’intelligence. Cette objection n’est donc pas suffisante.
+
+Plutôt que de faire une synthèse, je préfère mettre en valeur l’argument
+d’autorité que Thomas invoque sur la question, car il est tiré d’un texte de
+l’écriture qui nous sert souvent de base, à nous aussi, pour affirmer
+l’existence éternelle et nécessaire de Dieu:
+
+> **En sens contraire,** Dieu lui-même dit (Ex 3, 14) : “ Je suis Celui qui
+> suis. ”
+
+Mari, père, appartient à Christ. Les marques de mon salut sont ma confession
+de foi et les sacrements que je reçois.
+
+  1. [Thomas d'Aquin sur la Puissance de Dieu - Par la foi](https://parlafoi.fr/2019/06/08/thomas-daquin-sur-la-puissance-de-dieu/) \- […] avons vu quoi est Dieu, comment est Dieu, comment Dieu sait, comment Dieu veut… nous nous rapprochons ainsi […]
+
+  2. [Une défense exégétique de la Loi Naturelle : Introduction (Andrew Fulford) - Par la foi](https://parlafoi.fr/2019/07/03/une-defense-exegetique-de-la-loi-naturelle-introduction/) \- […] >> Cet article peut vous intéresser : Les cinq voies de Thomas D’Aquin […]
+
+  3. [La raison est pour Dieu – résumé (7/12) : Les indices de l'existence d'un créateur – Par la foi](https://parlafoi.fr/2021/05/29/la-raison-est-pour-dieu-resume-7-12-les-indices-de-lexistence-dun-createur/) \- […] modernes (à part le kalâm) et aucun des arguments classiques pourtant très importants comme les cinq voies de Thomas…
+
+  4. [800 ressources gratuites en français sur l'apologétique (la défense de la foi) – Par la foi](https://parlafoi.fr/2021/04/07/800-ressources-gratuites-dapologetique-en-francais/) \- […] Les cinq voies de Thomas D’Aquin ++ […]
+
+  5. [Cinq livres simples pour découvrir le thomisme – Par la foi](https://parlafoi.fr/2022/01/14/cinq-livres-thomisme/) \- […] (Thomas d’Aquin) comme l’existence de Dieu (les première, deuxième et cinquième voies de Thomas d’Aquin), l’existence de l’âme, la…
+
+  6. [Le théisme classique – Par la foi](https://parlafoi.fr/2022/02/23/theisme-classique/) \- […] Qu’Étienne a présenté ici.[↩] […]
+
+  7. [800 ressources sur l’existence de Dieu – Par la foi](https://parlafoi.fr/2022/02/24/800-ressources-sur-lexistence-de-dieu/) \- […] Les cinq voies de Thomas d’Aquin – Etienne Omnès […]
+
+  8. [L'existence de Dieu - Turretin (3.1) – Par la foi](https://parlafoi.fr/2022/06/14/lexistence-de-dieu-turretin-3-1/) \- […] C’est une reformulation de la deuxième voie de Thomas d’Aquin. […]
+
+Votre adresse e-mail ne sera pas publiée. Les champs obligatoires sont
+indiqués avec *
+
 [Dogmatique](https://parlafoi.fr/category/dogme/) | [Haute
 orthodoxie](https://parlafoi.fr/category/histoire-de-leglise/moderne/haute-
 orthodoxie/) | [Histoire](https://parlafoi.fr/category/histoire-de-leglise/) |
@@ -687,15 +1593,6 @@ philosophie réaliste. Vous entendrez souvent dans sa bouche "Thomas d'Aquin",
 "Jean Calvin" et "Vive la scolastique". Il affirme être marié à la meilleure
 épouse du monde. Ils vivent ensemble sur Lille avec leurs deux enfants et sont
 moniteurs de la méthode Billings.
-
-[![« Je suis sous les ordres de mon Seigneur Jésus–Christ » — Frédéric le
-Pieux](https://parlafoi.fr/wp-content/uploads/2022/10/800px-
-Friedrich_der_Fromme-e1666775195693-400x250.jpg)](https://parlafoi.fr/2022/10/29/je-
-suis-sous-les-ordres-de-mon-seigneur-jesus-christ-frederic-le-pieux/)
-
-## [« Je suis sous les ordres de mon Seigneur Jésus–Christ » — Frédéric le
-Pieux](https://parlafoi.fr/2022/10/29/je-suis-sous-les-ordres-de-mon-seigneur-
-jesus-christ-frederic-le-pieux/)
 
   1. [Qu’est-ce que la Scolastique Protestante ? – Sommaire – PAR LA FOI](https://parlafoiblog.wordpress.com/2018/09/29/quest-ce-que-la-scolastique-protestante-sommaire/) \- […] Un gros mot théologique ? […]
 
@@ -769,16 +1666,256 @@ philosophie réaliste. Vous entendrez souvent dans sa bouche "Thomas d'Aquin",
 épouse du monde. Ils vivent ensemble sur Lille avec leurs deux enfants et sont
 moniteurs de la méthode Billings.
 
-[![« Je suis sous les ordres de mon Seigneur Jésus–Christ » — Frédéric le
-Pieux](https://parlafoi.fr/wp-content/uploads/2022/10/800px-
-Friedrich_der_Fromme-e1666775195693-400x250.jpg)](https://parlafoi.fr/2022/10/29/je-
-suis-sous-les-ordres-de-mon-seigneur-jesus-christ-frederic-le-pieux/)
-
-## [« Je suis sous les ordres de mon Seigneur Jésus–Christ » — Frédéric le
-Pieux](https://parlafoi.fr/2022/10/29/je-suis-sous-les-ordres-de-mon-seigneur-
-jesus-christ-frederic-le-pieux/)
-
   1. [Qu’est-ce que la Scolastique Protestante ? – Sommaire – PAR LA FOI](https://parlafoiblog.wordpress.com/2018/09/29/quest-ce-que-la-scolastique-protestante-sommaire/) \- […] Définition […]
+
+Votre adresse e-mail ne sera pas publiée. Les champs obligatoires sont
+indiqués avec *
+
+[Dogmatique](https://parlafoi.fr/category/dogme/) | [Haute
+orthodoxie](https://parlafoi.fr/category/histoire-de-leglise/moderne/haute-
+orthodoxie/) | [Histoire](https://parlafoi.fr/category/histoire-de-leglise/) |
+[Histoire moderne](https://parlafoi.fr/category/histoire-de-leglise/moderne/)
+| [Orthodoxie primitive](https://parlafoi.fr/category/histoire-de-
+leglise/moderne/orthodoxie-primitive/) | [Orthodoxie
+tardive](https://parlafoi.fr/category/histoire-de-leglise/moderne/orthodoxie-
+tardive/)
+
+La scolastique réformée se réfère à la période de l’orthodoxie des années
+1560-1750. Au cours de cette période, nous avons : 1) Orthodoxie primitive
+(vers 1560-1620) ; 2) Haute orthodoxie (vers 1620-1700) ; et 3) Orthodoxie
+tardive (vers 1700-1750). Ces dates sont, bien sûr, donnée à titre indicatif,
+comme si nous passions brutalement d’une période à l’autre. Mais elles nous
+donnent des époques qui reflètent le climat changeant du discours théologique
+dû aux événements incroyables précipités par la Réforme.
+
+Dans la période de l’orthodoxie primitive, les réformés étaient généralement
+dans une période de confessionnalisation et de codification. L’unité était au
+premier plan dans l’esprit des réformateurs et de leurs successeurs. Les
+documents confessionnels étaient un moyen d’établir l’unité au fur et à mesure
+que les églises protestantes étaient construites. Les théologiens réformés ont
+commenté les crédos œcuméniques, tels que le Credo des Apôtres, tentant ainsi
+de prouver leur catholicité. Des documents confessionnels tels que la
+Confession Gallicane (1559), la Confession Belge (1561) et le [Catéchisme de
+Heidelberg](https://parlafoi.fr/2018/01/10/le-catechisme-de-heidelberg/)
+(1563) n’étaient que quelques-unes des dizaines et dizaines de confessions
+écrites à l’époque de l’Orthodoxie primitive (note : vous pouvez consulter
+plusieurs de ces Confessions [ICI](https://parlafoi.fr/conciles-et-
+confessions/)).
+
+Les attaques catholiques romaines contre les revendications des réformateurs
+pleuvant sur les Églises protestantes, les réponses des réformés devaient être
+bien faites. En conséquence, les scolastiques réformés ont prouvé dans leurs
+écrits qu’ils avaient maîtrisé les Pères de l’Église primitive, qu’ils avaient
+une connaissance encyclopédique de la théologie médiévale et qu’ils pouvaient
+exégéter les Écritures selon des principes sains d’interprétation. Calvin
+avait certainement une mémoire formidable, mais même lui pouvait de temps en
+temps mal citer les Pères. Les idées des réformateurs n’ont été ni rejetées ni
+remplacées d’aucune façon, mais les scolastiques réformés ont développé leur
+théologie avec plus de précision en adoptant le vocabulaire philosophique de
+leurs prédécesseurs depuis l’Église primitive. Les confessions de cette époque
+sont des confessions catholiques, mais distinctement réformées dans la mesure
+où elles révèlent le fossé qui ne cesse de se creuser non seulement entre
+l’Église de Rome, mais aussi entre les réformés et les luthériens. C’était
+quelque chose que Calvin avait passé du temps à essayer d’éviter, mais
+finalement l’impasse n’allait jamais être surmontée entre ces deux grands
+groupes protestants.
+
+La Haute orthodoxie commence à l’époque du Synode de Dort (1618-19). Dort est
+le premier et le seul synode véritablement international. Ce document
+confessionnel met également en lumière une autre lacune du protestantisme :
+les différences émergentes entre les Remonstrants (« Arminiens ») et les
+théologiens orthodoxes réformés, connus sous le nom de contre-Remonstrants
+dans ce contexte. Après Dort, au lieu d’un flot continu de documents
+confessionnels – à noter cependant le contexte britannique impliquant les
+théologiens de Westminster dans les années 1640 – nous voyons un nombre
+croissant d’ouvrages dogmatiques complets, « dans lesquels les résultats des
+exégèses, formulations dogmatiques, éléments polémiques et expositions des
+implications pratiques de la doctrine étaient combinés dans un tout imposant.
+La scolastique de la haute orthodoxie se caractérisait ainsi par une précision
+croissante dans son appareil théologique. »[1]
+
+Dort rejeta les points de discorde des Remonstrants, mais la controverse était
+loin d’être terminée. La position confessionnelle de Dort devait être défendue
+au milieu de l’assaut continu des « Arminiens » et de la montée en puissance
+de leurs proches cousins, les Sociniens. C’est ainsi que les positions
+réformées complexes et défendues de manière élaborée ont été reprises par
+[Francis Turretin](https://parlafoi.fr/2018/07/12/de-quel-droit-les-
+reformateurs-pouvaient-ils-reformer-leglise-francois-turretin-1623-87/),
+Petrus van Mastricht et Gisbertus Voetius, entre autres. Suivant les traces
+d’Amandus Polanus, qui a écrit sa très célèbre Syntagma theologiae christianae
+(1609), ces théologiens ont écrit des systèmes de doctrine qui continuent
+d’influencer les théologiens réformés jusqu’à ce jour. Leur méthode était la
+méthode scolastique, ce qui signifie que nous sommes aujourd’hui très
+redevables à ces scolastiques réformés pour leur travail à l’époque de la
+haute orthodoxie. Tout lecteur anglais qui possède l’œuvre de Charles Hodge ou
+de Louis Berkhof a en sa possession un texte scolastique réformé, même si les
+traitements de Hodge et de Berkhof sont considérablement moins savants que les
+théologiens mentionnés ci-dessus.
+
+L’Orthodoxie tardive a vu l’effilochage d’une grande partie du bon travail
+accompli par les théologiens réformés. Pourquoi cela ? En partie parce que la
+méthode scolastique, dont nous parlerons plus en détail plus loin, a été
+laissée de côté, mais aussi un certain nombre de points de vue philosophiques
+(cartésianisme, pensée leibnizienne, Wolffianisme et philosophie des Lumières)
+se sont liés ensemble à la pensée réformée. Les académies ont également vu un
+changement dans leur approche de la théologie. Les Lumières amenèrent avec
+elles des courants théologiques et philosophiques changeants, et les bastions
+de l’orthodoxie réformée devinrent rapidement des bastions de l’hérésie.  
+
+  
+[1] Willem J. van Asselt, _Introduction to Reformed Scholasticism_ (Grand
+Rapids: RHB, 2011), 133.
+
+Maxime est étudiant en médecine à Lille. Fondateur du blog Parlafoi.fr, il se
+passionne pour la théologie systématique, l'histoire du dogme et la
+philosophie réaliste. Vous entendrez souvent dans sa bouche "Thomas d'Aquin",
+"Jean Calvin" et "Vive la scolastique". Il affirme être marié à la meilleure
+épouse du monde. Ils vivent ensemble sur Lille avec leurs deux enfants et sont
+moniteurs de la méthode Billings.
+
+  1. [Qu’est-ce que la Scolastique Protestante ? – Sommaire – PAR LA FOI](https://parlafoiblog.wordpress.com/2018/09/29/quest-ce-que-la-scolastique-protestante-sommaire/) \- […] Histoire de l’orthodoxie protestante […]
+
+Votre adresse e-mail ne sera pas publiée. Les champs obligatoires sont
+indiqués avec *
+
+La théologie réformée possédait beaucoup de centres d’éducation qui étaient
+chargés de former les théologiens. Comme le fait remarquer Muller, « le
+développement de l’orthodoxie scolastique réformée se trouve en grande partie
+dans la culture intellectuelle des académies et universités protestantes qui
+prospéraient alors ».[1] Dans ce contexte académique, nous trouvions un
+phénomène historique complémentaire et non pas opposé : l’humanisme. Comme
+l’explique Dolf Te Velde, « les mouvements apparemment opposés, intitulés «
+humanisme » et « scolastique », ont puisé dans les mêmes ressources et se sont
+heurtés aux mêmes questions méthodologiques et substantielles, leur donnant un
+terrain d’entente ».[2]
+
+Si le terme « scolastique » a plusieurs sens, « humanisme » n’a pas non plus
+de définition nette. Le lieu et l’époque déterminent grandement le type d'
+»humanisme » qui a émergé dans certaines parties de l’Europe. Le terme «
+humaniste » est apparu au XVe siècle, décrivant celui qui pratiquait les
+sciences humaines (umanista) (note : à ne pas confondre, donc, avec ce que
+nous appelons aujourd’hui humanisme). Une telle personne étudiait la
+grammaire, la rhétorique, la poésie, l’histoire et l’éthique. La formation
+humaniste comprenait l’étude rigoureuse du latin et souvent du grec classique.
+Le latin est la langue des éduqués, non pas du « barbare ». La connaissance du
+latin ouvre tout un monde de théologie que la plupart des pasteurs réformés
+d’aujourd’hui ne connaissent pas. La facilité avec laquelle certains diplômes
+sont décernés aujourd’hui serait une obscénité au XVIIe siècle.
+
+L’humanisme qui a influencé les réformateurs, comme Calvin, était l’humanisme
+nord-européen. Selon van Asselt, « l’humanisme de l’Europe du Nord est d’abord
+allé de pair avec la Réforme primitive et, en prêtant attention aux écrivains
+de l’antiquité classique, a tenté d’établir un lien entre l’étude des
+classiques et l’étude de la Bible ».[3]
+
+Par le passé, les universitaires ont essayé de faire de la scolastique et de
+l’humanisme des ennemis, et non des amis : Calvin l’humaniste contre De Bèze
+le scolastique. Cependant, l’humanisme chrétien n’est pas du tout un ennemi
+des méthodes scolastique médiévales. Ils ont coexisté pacifiquement dans de
+nombreuses universités à l’époque de la Réforme. En effet, la capacité
+d’utiliser la langue (le latin et le grec classique) ne peut qu’aider les
+scolastiques réformés, dont certains se réunissent (autour d’un café !) pour
+discuter de théologie en grec classique plutôt que dans leur langue maternelle
+(par exemple, le néerlandais) ou en latin (leur seconde langue).
+
+Non seulement les universités, mais aussi les académies réformées, liées aux
+Eglises, étaient des viviers pour les scolastiques réformés. Les étudiants ont
+souvent voyagé pour trouver les meilleurs professeurs dans ces académies.
+Peut-être l’académie la plus célèbre était à Genève où Théodore De Bèze
+enseignait. Caspar Olevianus, Franciscus Junius et Jacob Arminius ont tous
+fréquenté l’académie de Genève et ont reçu une éducation scolastique réformée
+approfondie. Ces deux derniers ont fini à l’Université de Leyde, avec Arminius
+satisfaisant ses examinateurs réformés sur des sujets comme le pactum salutis.
+Au moment de la mort de Calvin, plus de trois cents étudiants étaient inscrits
+à l’académie de Genève, dont quatre-vingt pour cent venaient de l’extérieur de
+Genève.[4] Des académies réformées ont été créées en Allemagne, en Angleterre,
+en Écosse, en France et aux Pays-Bas. Puisque presque tous les grands travaux
+théologiques de l’époque étaient écrits en latin, nous ignorons aujourd’hui en
+grande partie la somme impressionnante de connaissance qui est sortie de ces
+académies (note : une bonne raison de se mettre au latin 😉 !).
+
+[1] _PRRD_ , 1:34.  
+[2] “Reformed Theology of Scholasticism” in … 223.  
+[3] _Introduction to Reformed Scholasticism_ , 76.  
+[4] I _bid_., 112 .
+
+Maxime est étudiant en médecine à Lille. Fondateur du blog Parlafoi.fr, il se
+passionne pour la théologie systématique, l'histoire du dogme et la
+philosophie réaliste. Vous entendrez souvent dans sa bouche "Thomas d'Aquin",
+"Jean Calvin" et "Vive la scolastique". Il affirme être marié à la meilleure
+épouse du monde. Ils vivent ensemble sur Lille avec leurs deux enfants et sont
+moniteurs de la méthode Billings.
+
+  1. [Qu’est-ce que la Scolastique Protestante ? – Sommaire – PAR LA FOI](https://parlafoiblog.wordpress.com/2018/09/29/quest-ce-que-la-scolastique-protestante-sommaire/) \- […] Le contexte de la scolastique protestante […]
+
+Votre adresse e-mail ne sera pas publiée. Les champs obligatoires sont
+indiqués avec *
+
+Au fur et à mesure que la théologie réformée se développait, une attention
+croissante était accordée à la méthode. Pour faire de la théologie avec
+clarté, une certaine méthodologie a été utilisée pour donner de la cohérence
+au système réformé. Naturellement, il y a un éclectisme de méthode parmi les
+théologiens réformés. Tous les théologiens réformés, dans leur quête de
+vérité, ont développé leur théologie à partir des Écritures. Mais ils
+n’hésitaient pas à accepter des éléments de la tradition philosophique
+chrétienne et non chrétienne si de tels outils philosophiques pouvaient les
+aider à mieux énoncer et défendre la vérité.
+
+La dernière édition des _Loci Communes_ de Melanchthon nous offre un aperçu de
+la méthodologie qui sera utilisée par les scolastiques réformés dans leurs
+vastes travaux sur l’ensemble de la théologie. L’ordre selon la méthode du
+_locus_ a été adopté par la plupart des théologiens réformés qui passaient
+souvent de l’Écriture à Dieu, à la Trinité, etc. Sous chaque _locus_ ,
+l’auteur argumentait souvent contre ses adversaires (par exemple,
+anabaptistes, catholiques romains, sociniens) afin de faire connaître la
+vérité.
+
+Outre la méthode des _loci_ , les scolastiques réformés ont également utilisé
+la _disputatio_ (note : « controverse », ou « débat public »). Mais même les
+controverses étaient souvent organisées comme les _loci_. Les étudiants
+débattaient de théologie selon un ensemble de thèses, souvent organisées par
+le professeur pour qu’un étudiant se défende contre les attaques de ses
+adversaires. Des questions de type aristotélicien sont fréquemment utilisées
+pour ordonner la _disputatio_ (la technique de la _quaestio_ ). Ce sont donc
+ces types de questions qui structuraient les différents débats théologiques :
+
+Quelles sont les choses qui lui sont opposées ou en contradiction avec lui
+?[1]
+
+La méthode des _loci_ et la méthode de la _disputatio_ intégrèrent toutes deux
+ces types de questions énumérées ci-dessus. Comme Dolf Te Velde l’indique
+clairement dans son _Introduction to Synopsis Purioris Theologiae_ (Synopsis
+d’une théologie plus pure),
+
+> « Ces genres ont en commun des caractéristiques importantes : une
+> délimitation claire du sujet étudié ; un vif intérêt pour les définitions ;
+> un traitement exhaustif des aspects pertinents au moyen d’une structure
+> thématique ; un usage fréquent des distinctions, en partie pour anticiper un
+> traitement des différents éléments du sujet, en partie pour résoudre les
+> difficultés qui sont présentes dans la définition initiale ; des
+> déclarations explicites, des preuves et arguments qui soutiennent sa
+> position, et une réfutation correspondante des contre-arguments ». [2]
+
+De plus, les quatre « causes » (empruntées à Aristote) faisaient partie
+intégrante de la clarification de nombreuses questions théologiques épineuses.
+Les causes efficiente, formelle, matérielle et finale aident à expliquer, par
+exemple, comment et pourquoi Dieu fait ce qu’il fait (note : voir
+[ICI](https://parlafoi.fr/2018/04/26/a-t-on-le-droit-de-deduire-des-choses-de-
+la-bible/) comment Calvin utilisait ces 4 causes pour parler de notre salut).
+
+[1] Questions tirées de Dolf Te Velde’s Introduction to _Synopsis Purioris
+Theologiae, Latin Text and English Translation, Volume 1/Disputations 1-23_
+édité par Dolf Te Velde, _et al_. (Leiden: Brill, 2014), 5.  
+[2] “Introduction,” 4.  
+
+Maxime est étudiant en médecine à Lille. Fondateur du blog Parlafoi.fr, il se
+passionne pour la théologie systématique, l'histoire du dogme et la
+philosophie réaliste. Vous entendrez souvent dans sa bouche "Thomas d'Aquin",
+"Jean Calvin" et "Vive la scolastique". Il affirme être marié à la meilleure
+épouse du monde. Ils vivent ensemble sur Lille avec leurs deux enfants et sont
+moniteurs de la méthode Billings.
+
+  1. [Qu’est-ce que la Scolastique Protestante ? – Sommaire – PAR LA FOI](https://parlafoiblog.wordpress.com/2018/09/29/quest-ce-que-la-scolastique-protestante-sommaire/) \- […] La méthode scolastique […]
 
 Votre adresse e-mail ne sera pas publiée. Les champs obligatoires sont
 indiqués avec *

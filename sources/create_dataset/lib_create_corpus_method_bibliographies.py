@@ -110,7 +110,6 @@ def save_one_corpus_from_bibliographies_lists(bibliography_urls, filename_corpus
 			print("\nbibliography_url =", bibliography_url)
 			# Recupere tous les articles d'une bibliographie
 			articles_urls = get_articles_from_bibliography(bibliography_url)
-			print("articles_urls =", articles_urls[:2])
 			save_articles_lists(articles_urls, path_articles_list, file_open_mode="w", sep = "\n")
 
 			# Cree un corpus a partir d'une liste d'urls d'articles
@@ -119,7 +118,6 @@ def save_one_corpus_from_bibliographies_lists(bibliography_urls, filename_corpus
 		for bibliography_url in bibliography_urls:
 			# Recupere tous les articles d'une bibliographie
 			articles_urls = get_articles_from_bibliography(bibliography_url)
-			# print("articles_urls (get_articles_from_bibliography) =", articles_urls)
 			save_articles_lists(articles_urls, path_articles_list, file_open_mode="w", sep = "\n")
 
 			# Cree un corpus a partir d'une liste d'urls d'articles
@@ -142,7 +140,9 @@ def save_multiple_corpus_from_bibliographies_lists_files(bibliographies_filename
 		print("----------------------------------------------------------------")
 		print("\n\nbibliographies_list =", bibliographies_list)
 		corpus_topic = get_topic_from_filename(filename, keep_language=True)
+		print("corpus_topic =", corpus_topic)
 		filename_corpus_txt = "corpus_{}.txt".format(corpus_topic)
+		print("filename_corpus_txt =", filename_corpus_txt)
 
 		# Ecrire le corpus a partir des bibliographies
 		save_one_corpus_from_bibliographies_lists(bibliographies_list, filename_corpus_txt,
