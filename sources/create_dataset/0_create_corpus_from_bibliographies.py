@@ -37,6 +37,7 @@ print("os.getcwd() at root =", os.getcwd())
 sys_argv = sys.argv
 print("sys_argv =", sys_argv)
 bibliographies_filenames = get_bibliographies_filenames(sys_argv)
+print("bibliographies_filenames =", bibliographies_filenames)
 all_articles = get_var_all_articles(sys_argv)
 num_articles = get_var_num_articles(sys_argv)
 table_extension = get_var_table_extension(sys_argv)
