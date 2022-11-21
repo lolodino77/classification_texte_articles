@@ -11,7 +11,7 @@ def makedir_articles_lists():
 	if not os.path.exists("./data/input/articles_lists/"):
 		os.makedirs('./data/input/articles_lists/')
 
-save corpus.txt, biblio get_topic_from_filename updated ok
+
 def get_topic_from_filename(filename, keep_language):
 	"""Extrait le topic qui apparait dans le nom d'un fichier.
 	
