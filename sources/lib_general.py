@@ -12,7 +12,7 @@ def set_current_directory_to_root(root):
     """Se place dans le root
 
     Parametres: 
-    root (string) : Le nom du root auquel on veut se rendre
+    root (string) : Le nom du root (un dossier) auquel on veut se rendre
     """    
     current_folder = PureWindowsPath(os.path.dirname(os.path.abspath(__file__))).as_posix()
     current_folder_split = current_folder.split(root) # split selon le root
@@ -96,3 +96,36 @@ def save_list_to_txt(input_list, path_to_file, file_open_mode, sep):
 	for line in input_list:
 		f.write(line + sep)
 	f.close()
+
+
+def get_topic_from_filename(filename, keep_language):
+	"""Extrait le topic qui apparait dans le nom d'un fichier.
+	
+	Parametres:
+	filename (string) : Le nom du fichier duquel on veut extraire le topic
+						Au format : corpus_ + topic + langue + extension
+						Exemple : "corpus_philosophy_fr.txt", "corpus_animals.csv"
+	keep_language (boolean) : Indique s'il garder la langue dans le topic
+						Exemples : si keep_language==True ==> philosophy_fr
+								   sinon ==> philosophy
+
+	Sortie:
+	topic (string) : Le topic (sujet/theme) extrait du nom de fichier filename
+					 Exemple : "philosophy_fr", "animals"
+	"""
+	# version sans langue ("fr", "eng") dans filename
+	print("filename avant split =", filename)
+	topic = filename.split(".")[0].split("_")[1:]
+	topic = "_".join(topic)
+
+	# topic = filename.split(".")[0].split("corpus_")[1] # corpus_beaux_arts_fr.txt => beaux_arts 
+
+	# version avec langue ("fr", "eng") dans filename
+	# filename = filename.split(".")[0]
+	# topic = filename.split("_")[1:][0] 
+	# if(keep_language == True):
+	# 	topic = "_".join(topic)
+	# else:
+	# 	topic = "_".join(topic[:-1])
+	
+	return(topic)

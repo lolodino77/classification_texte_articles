@@ -1,0 +1,19 @@
+class Article()
+	self.articles_urls
+
+
+methodes :
+	get_articles_urls(url)
+
+
+class ArticlesUrlsWriter(articles_urls)
+	self.articles_urls = articles_urls
+
+methodes :
+	makedir_articles_lists()
+
+get_topic_from_filename(filename, keep_language)
+save_articles_lists(articles_urls, path_articles_list, file_open_mode="w", sep = "\n")
+save_articles_lists(articles_urls, path_articles_list, file_open_mode="w", sep = "\n"):
+save_list_to_txt(articles_urls, path_articles_list, file_open_mode, sep)
+get_all_articles_from_webpage(bibliography_url)

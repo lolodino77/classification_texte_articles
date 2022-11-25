@@ -17,7 +17,18 @@ from lib_general import *
  	
 
 # Liste des fonctions :
-
+# get_paragraphs_of_article
+# save_paragraphs
+# save_corpus_from_articles_lists
+# preprocess_list_of_documents
+# get_corpus_table_from_textfile
+# get_corpus_table_from_csv
+# get_corpus_table_from_parquet
+# get_corpus_table_from_filename
+# get_multiple_corpus_table
+# save_corpus_table_from_textfile
+# save_corpus_table_from_dataframe
+# save_multiple_corpus_table_from_textfile
 
 
 def get_paragraphs_of_article(article_url):
@@ -77,7 +88,7 @@ def save_corpus_from_articles_lists(articles_urls, path_corpus, all_articles, nu
 	articles_urls (liste de string) : La liste d'urls d'articles dont on veut extraire les paragraphes. 
 										  Ex : https://parlafoi.fr/lire/series/commentaire-de-la-summa/
 	path_articles_list (string) : La liste des paths des listes d'articles
-	path_corpus (string) : Le path vers le corpus
+	path_corpus (string) : Le path vers le corpus, exemple = 
 	save_mode (string) : Le mode d'ecriture du fichier ("append" = ajouter ou "overwrite" = creer un nouveau)
 	
 	Sortie:

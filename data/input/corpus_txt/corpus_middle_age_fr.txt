@@ -1537,6 +1537,742 @@ de foi et les sacrements que je reçois.
 Votre adresse e-mail ne sera pas publiée. Les champs obligatoires sont
 indiqués avec *
 
+Nous avons vu [ce que disait Thomas d’Aquin sur la
+théologie](https://parlafoi.fr/2018/12/29/thomas-daquin-sur-la-theologie/),
+puis sur l’existence de Dieu, il est à présent temps que l’on décrive Dieu,
+que _enfin_ on fasse de la théologie… Et le premier attribut qui est examiné
+est la simplicité de Dieu, c’est à dire, la fait que Dieu n’est composé de
+rien.
+
+Cette notion est généralement difficile à comprendre parce qu’elle est très
+peu enseignée. De fait, elle a été aussi le dernier sujet de controverse-
+éclair chez les théologiens américains, tant l’attribut de simplicité est
+contesté par une part importante des théologiens chrétiens contemporains
+(contre l’histoire de l’église toute entière. Pour définir de quoi je parle,
+je vais me baser sur la définition que donne [Kevin deYoung sur Gospel
+Coalition](https://www.thegospelcoalition.org/blogs/kevin-deyoung/all-that-is-
+in-god/)  
+
+> La simplicité de Dieu signifie que Dieu n’est pas fait de ses attributs. Il
+> ne consiste pas en bonté, pitié, justice et puissance. Il est la bonté, la
+> pitié, la justice, et la puissance. Tout attribut de Dieu est identique avec
+> son essence, ce qui signifie aussi que bien que les attributs de Dieu nous
+> soient révélés comme variés, ils sont (du côté de la connaissance que Dieu a
+> de lui-même) identiques les uns avec les autres.
+
+On pourrait s’étonner: de tous les attributs de Dieu, pourquoi ne pas avoir
+commencé par son amour, ou sa puissance? La simplicité semble être une
+finasserie intellectuelle inutile… A ceci je réponds que la plus ancienne des
+confessions de foi réformées, la confession de Belgique (1561) dit dès
+l’article 1: « il y a un seul être simple, que nous appelons Dieu ». Et elle a
+ce souci d’affirmer la simplicité de Dieu en premier parce qu’elle n’est pas
+seulement un attribut parmi d’autres: elle est un attribut cadre, c’est elle
+qui nous permettra de comprendre l’articulation des attributs de Dieu plus
+tard, d’où la nécessité de commencer par la simplicité.
+
+## Article 1: Dieu n’est pas une composition de particules physiques
+
+La Bible utilise tellement de langage corporel quand elle parle de Dieu qu’on
+fait bien de se poser la question. Après tout, l’idée que Dieu est une
+composition de particules est également la théologie de base d’une grande
+partie de l’humanité, sous la forme du panthéisme. Qu’est ce qui me prouve que
+Dieu n’est pas un corps?
+
+> **En sens contraire,** S. Jean (4, 24) écrit : “ Dieu est esprit. ”
+>
+> Il faut dire sans aucune réserve que Dieu n’est pas un corps. On peut le
+> démontrer de trois manières – Summa Ia, Q3, a1
+
+Allez, avouez-le: vous avez arrêté de lire après: « Jean 4.24 ». La Bible dit,
+le débat est clos, ne rajoutons pas d’arguments par dessus… Ce serait
+méconnaître le tempérament scolastique, qui n’aime pas voir des arguments
+d’autorité tenir lieu d’explication. Voici un _résumé_ des arguments: je ne
+joins pas les citations par crainte de trop rallonger l’article.
+
+Thomas rappelle d’abord sa « première voie » pour expliquer l’intégralité des
+mouvements dans le monde, il faudra qu’en bout de chaîne il y ait un Moteur
+Premier. Cela veut dire qu’il faut que Dieu soit un moteur ( _il met en
+mouvement_ ) immobile ( _il n’est pas mis en mouvement par un autre, sinon il
+n’est pas premier_ ). Or un corps par définition ne peut pas être moteur
+premier, parce qu’il reçoit toujours son mouvement d’un autre: soit d’un autre
+corps s’il est inanimé, soit d’une âme s’il est animé.
+
+Le deuxième argument part de l’idée que « l’être premier doit nécessairement
+être en acte et d’aucune manière en puissance. » Cela veut dire que Dieu n’a
+pas de potentiel à réaliser: pour créer et maintenir l’univers en existence,
+il doit être pleinement en acte lui-même. Or, un corps ne saurait être en acte
+de cette façon: si l’Univers physique est Dieu, alors quelle partie de
+l’univers est Dieu? Tout ce que nous avons c’est un nombre infini d’atomes,
+toutes parties de Dieu, mais Dieu lui-même dans toute sa plénitude n’est nulle
+part. Thomas le formule ainsi:
+
+> On a montré plus haut que Dieu est l’être premier. Il est donc impossible
+> qu’en Dieu il y ait rien en puissance. Or tout corps est en puissance, car
+> le continu, en tant que tel, est divisible à l’infini. Il est donc
+> impossible que Dieu soit un corps.
+
+Ensuite, le troisième argument part de l’idée que « Dieu est, comme on l’a
+dit, ce qu’il y a de plus noble parmi les êtres. » C’est à dire le plus
+abouti, le plus « existant ». Le problème c’est qu’un corps ne peut pas être
+le plus existant de tous les êtres: il y a des corps vivants et des corps
+inanimés, et il est évident que la vie est une forme d’existence supérieure à
+la matière inanimée. Or, la vie n’est pas dans tous les corps, il faut donc
+que les corps reçoivent cette vie de quelque chose d’autre (leur âme) et cela
+ne saurait être le cas de Dieu: il est la vie, il ne la reçoit pas.
+
+Donc, contrairement à ce que disent les panthéistes et les animistes, Dieu
+n’est pas un corps.
+
+## Article 2: Dieu n’est pas composé d’un esprit et d’un corps
+
+C’est l’idée des mormons, qui affirment que Dieu est un composé d’âme-corps
+semblable aux humains, mais beaucoup plus avancés qu’eux. C’est aussi l’idée
+qu’il y a derrière la figure commune du « vieux géant à barbe blanche » qui
+représente souvent Dieu le Père dans les caricatures. Thomas dit:
+
+> Tout composé de matière et de forme est un corps ; car l’étendue est le
+> premier attribut que revêt la matière. Or, on vient de montrer que Dieu
+> n’est pas un corps : donc il n’est pas composé de matière et de forme. –
+> Summa Ia, Q3, a2
+
+> Il est impossible qu’il y ait en Dieu aucune matière
+
+En premier, Dieu est acte pur (cf point précédent) dans lequel il n’y a rien
+de potentiel. Or un corps est par définition en puissance: il reçoit
+_potentiellement_ la vie, il est divisible à l’infini ou presque… Il ne peut
+donc pas y avoir de matière en lui.
+
+En deuxième, un composé esprit-corps, ou forme-matière, n’est parfait (
+_=pleinement conforme à ce qu’il est censé être)_ que si le corps est uni à
+l’esprit. Mais ce n’est pas de cette façon que Dieu est parfait. Dieu n’est
+pas parfait parce que son corps est uni à son esprit, il est parfait de façon
+absolue! Il est parfait parce qu’il est toute beauté, toute gloire, tout
+amour, pas parce qu’il est « bien fait ». Donc il ne peut pas y avoir de
+matière en lui.
+
+En troisième, Thomas dit: « Tout agent agit en raison de sa forme : il y a
+donc stricte corrélation entre ce que la forme est pour lui et la manière dont
+il est agent. » Cette phrase énigmatique veut dire la chose suivante. Le
+caillou a une forme inanimée, qui ne dépasse pas ses caractéristiques
+physiques. L’animal a une forme animée (= »âme-ée ») et agit comme un être
+vivant parce que son âme est de nature différente du caillou, qu’elle a des
+capacités en plus. La forme de l’homme est encore différente de celle de
+l’animal, puisqu’elle a des capacités spirituelles et rationnelles en plus, et
+les actions de l’homme sont en fonction de ce que sa forme est: il est moral
+parce que sa forme (=son esprit) est morale, il est rationnel parce que sa
+forme est rationnelle etc.
+
+Qu’en est-il de Dieu? A ce stade, on sait que Dieu est l’Agent (=celui qui
+agit) Premier, celui qui précède tout autre. Donc sa façon d’exister fait
+qu’il précède même tout corps qu’il pourrait avoir. Un homme devient un homme
+parce qu’il agit dans un corps, tandis que Dieu agit « purement ». Il n’y a
+donc pas de matière en lui.
+
+## Article 3: Dieu n’est pas composé d’un individu et de Divinité
+
+C’est à partir de ce moment qu’on rentre dans les détails techniques, puisque
+la formulation originelle de Thomas est: « Dieu est-il une composition de
+nature et de sujet? » Cette question obscure se comprend facilement quand on
+lit:
+
+> Il est dit de Dieu qu’il est la vie, et non pas seulement qu’il est vivant,
+> comme on le voit en S. Jean (14, 6) : “ Je suis la voie, la vérité et la
+> vie. ” Or la déité est dans le même rapport avec Dieu que la vie avec le
+> vivant. **Donc Dieu est la déité elle-même.**
+>
+> Dieu est identique à son essence ou nature. – Summa Ia, Q3, a3
+
+Voici comment il le soutient: Chez les composés de forme-matière, il est
+possible de distinguer les individus (Charles Ingalls) de leur nature (Nature
+humaine). Mais ce qui permet justement cette différenciation, c’est la matière
+qu’ils ont: ainsi Charles Ingalls est la composition d’un individu particulier
+et d’une nature générale parce qu’il a des cheveux bouclés, qu’il est localisé
+à Walnut Grove, et qu’il porte un chapeau fatigué… en plus des propriétés
+générales de l’être humain (sa nature).
+
+Mais nous venons de dire qu’il n’y a pas en Dieu de matière, il n’y a donc pas
+en lui quelque chose qui le distinguerait d’autres Divinités-grands D. Donc
+Dieu n’est pas composé d’un sujet et d’une nature, il est la Divinité elle-
+même.
+
+En langage thomiste, on dira: « Dieu n’est pas une composition entre essence
+et existence ». Pour expliquer cela, je vais devoir expliquer rapidement les
+deux termes, et surtout présenter une particularité du système thomiste: la
+distinction entre essence et existence.
+
+L’essence est le « quoi-est » d’une chose, sa définition formelle. L’existence
+est le _fait_ qu’elle existe.
+
+Par exemple Pikachu a une essence – animal jaune doté de capacités électriques
+– mais il n’a pas d’existence. Le Dodo de l’île maurice a une essence -gros
+oiseau incapable de voler qui habite à l’ïle Maurice- mais il n’a plus
+d’existence (il a disparu au XVIIIe siècle). A l’inverse, mon ordinateur a une
+essence et de l’existence.
+
+Il y a donc dans les objets existants une composition d’essence et
+d’existence, mais cela ne convient pas pour Dieu. Voici la thèse de Thomas:
+
+> Hilaire de Poitiers écrit : “ **L’être n’est pas en Dieu quelque chose de
+> surajouté, mais vérité subsistante**. ” Donc ce qui subsiste en Dieu, c’est
+> son être.
+>
+> Il ne suffit pas de dire que Dieu est identique à son essence, comme nous
+> venons de le montrer ; il faut ajouter qu’il est identique à son être, ce
+> qui peut se prouver de maintes manières. – Ia, Q3, a4
+
+Premièrement, quand il y a composition d’essence et d’existence, à un moment
+ou un autre il a fallu que l’essence reçoive l’existence par quelque chose.
+Ainsi, Jacob a reçu l’existence par Isaac et Rebecca. Mais il ne peut pas en
+être ainsi pour Dieu: comme on l’a vu quand on prouvait son existence, il est
+la Cause Première, il est lui-même incausé. Il ne peut donc pas être un Dieu
+qui aurait de l’existence, car sinon qu’est ce qui lui donne de l’existence?
+Il faut donc comprendre qu’il est la définition même de l’existence.
+
+Deuxièmement, par définition Dieu est acte pur, il est pleinement réalisé et
+il est impossible qu’il soit potentiellement Dieu. Or, si l’on distingue son
+essence et l’existence, alors cela voudrait dire qu’il est concevable que le
+Dieu qui ne peut pas ne pas exister puisse en fait ne pas exister. Cela est
+contradictoire. **On ne peut donc pas considérer l’existence comme quelque
+chose que Dieu** ** _a_** **, mais comme quelque chose que Dieu** _ **est**._
+
+Troisièmement, si l’on distingue Dieu d’un côté et l’Existence (absolue) de
+l’autre, alors cela voudrait dire que l’Existence précède Dieu, ce qui est
+contraire à ce qu’on a dit: Dieu est l’être premier, il n’y a rien avant ou au
+dessus de lui. Il est donc son existence même.
+
+Quand j’ai compris cela, j’ai éclaté d’admiration: Dieu n’est pas un être
+parmi tous les autres: il est l’Existence même! Si une chose existe, même une
+chaussure, cette existence qu’elle a est une chose que Dieu lui donne! C’est
+probablement la chose que j’admire le plus en Dieu. Il Est. Il est l’Être.
+
+## Article 5: Il n’y a qu’un seul Dieu possible, notre Dieu
+
+En langage thomiste on dira: « Dieu n’est pas une composition de genre et de
+différence ».
+
+Un genre est une « famille » d’espèces. Ainsi, le genre « quadrilatères »
+abritent des losanges, des carrés, des rectangles, des trapèzes… Un carré est
+une composition de genre -quadrilatères- et de différences -angles droits
+contrairement aux losanges, côtés de même longueurs contrairement aux
+rectangles etc-.
+
+Quand on parle de Dieu, on pourrait se dire qu’il y a un « genre » de
+Divinité-grand D. Il y a le Dieu Trinitaire, le Dieu Unitaire (Allah), le Dieu
+des Déistes… Mais il ne saurait en être ainsi. Dieu n’est pas une composition
+de genre (Être premier, le plus parfait qui puisse exister) et de différence
+(Trinitaire et incarné).
+
+> **En sens contraire,** pour l’esprit, le genre précède ce qui est contenu
+> dans ce genre. Mais rien n’est antérieur à Dieu, ni dans la réalité, ni pour
+> l’esprit. Dieu n’est donc pas un genre. -Ia, Q3, a5
+
+Bien entendu, Thomas soutient longuement cette affirmation, mais le temps
+manquant, je vais faire un résumé très lapidaire de ses arguments:
+
+D’une, pour faire un genre, il faut qu’il y ait des espèces variées. Mais
+quelle variation est possible avec un Dieu qui est acte pur, où si vous
+enlevez ne serait-ce qu’une propriété, il n’est plus la même chose du tout?
+
+De deux, on vient de dire que Dieu est l’Être même, l’Existence avec un grand
+E. Ceci ne peut pas être un genre: l’Existence-grand E est la base de tous les
+genres d’êtres, pas l’inverse!
+
+De trois, il y a un genre « quadrilatère » parce qu’il existe plusieurs
+espèces de quadrilatères (rectangles, losanges, carrés…). Mais ce n’est pas le
+cas pour Dieu: il n’y a qu’un seul Dieu!
+
+## Article 6: Dieu n’est pas un Dieu d’Amour qui a de la colère, ou autre
+variation
+
+La formulation thomiste est: « Dieu n’est pas une composition de sujet et
+d’accident ». Derrière cette phrase technique, c’est ce que nous exprimons
+quand nous disons: « Dieu est un Dieu d’Amour (sujet) qui a de la colère (ou
+n’en a pas = accident) ». Car oui précisons le en toute lettre: un accident
+est une propriété qu’un être se trouve avoir, mais qu’il peut ne pas avoir
+sans changer sa substance. Je peux être avoir une Ferrari, mais cette relation
+est accidentelle dans le sens où si je n’en ai pas, je suis toujours Etienne
+Omnès. Par contre, si mon père n’est pas F. Omnès, je ne suis pas le même: ma
+filiation est essentielle.
+
+On peut multiplier les exemples, et je pense que dans notre époque nous
+concevons souvent Dieu comme une composition de sujet et d’accidents: Dieu
+Juste qui a de la colère, Dieu jaloux qui a de la bonté etc… Mais une telle
+conception n’est pas vraie:
+
+> Tout accident est dans un sujet ; or Dieu ne peut pas être un sujet, car une
+> forme simple ne peut être un sujet, dit Boèce. – Ia, Q3, a6
+
+Trois raisons très faciles à comprendre, au point où nous en sommes arrivés.
+
+Un, Dieu est acte pur, il n’y a rien en lui de potentiel. Autrement dit, il
+n’est pas _potentiellement_ en colère, jaloux, ou tout autre attribut que vous
+voudriez lui attribuer: il l’a/l’est déjà.
+
+**> >Lire aussi : [7 arguments pour la simplicité de Dieu – Thomas
+D’Aquin](https://parlafoi.fr/2018/10/22/7-arguments-pour-la-simplicite-de-
+dieu-thomas-daquin/)**
+
+Deux, Dieu est l’Être même. Mais on ne peut rajouter aucun accident à l’Être-
+grand E, ou alors je vous mets au défi d’essayer. Il est possible pour un
+être-petit E d’être à la fois chaud et blanc (deux accidents). Mais l’Être-
+grand E, impossible.
+
+Trois, Dieu est la cause première. Quelle autre cause viendrait lui ajouter
+des accidents?
+
+Donc tout ce que Dieu a, il l’a de façon essentielle.
+
+Cette fois, Thomas semble vouloir résumer ce qu’il a dit et traiter de la
+simplicité non plus sous des cas particuliers de compositions, mais la
+simplicité en général. Voici ce qu’il écrit:
+
+Il semble que Dieu ne soit pas absolument simple. En effet, les choses qui
+procèdent de Dieu lui ressemblent ; ainsi du premier être dérivent tous les
+êtres, et du premier bien tous les biens. Or, parmi les choses que Dieu a
+faites, aucune n’est absolument simple. Donc Dieu n’est pas absolument simple.
+
+Tout ce qui est le meilleur doit être attribué à Dieu. Or, chez nous, les
+choses complexes sont meilleures que les simples ; ainsi les mixtes valent
+mieux que les éléments, et les éléments que leurs parties. Il ne faut donc pas
+dire que Dieu est absolument simple.
+
+**En sens contraire,** S. Augustin affirme que “ Dieu est vraiment et
+souverainement simple ”. – Ia, Q3, a7
+
+Nous venons de réfuter cinq compositions particulières: composition de
+particules physiques, composition esprit-corps, composition de sujet et de
+nature, de genre et de différence, d’essence et d’existence, de sujet et
+d’accident… quelle autre composition pourrait donc encore exister en Dieu?
+
+Un être composé est second par rapport à ses composants. Par exemple, la
+brique et le mortier sont premiers par rapport à un mur en briques. Or Dieu
+est l’être premier. Il ne peut donc pas être composé, puisque rien ne le
+précède.
+
+Un être composé a une cause unifiante. Par exemple le mur en brique a besoin
+d’un maçon pour unir les composants de briques et de mortiers. Mais Dieu est
+la cause première. Il ne peut donc pas être composé.
+
+Un être composé a forcément en lui de la puissance et de l’acte. Un mur en
+brique selon les endroits soit en brique en puissance et mortier en acte, ou
+alors brique en acte et mortier en puissance. Mais il ne saurait en être ainsi
+pour Dieu, qui est acte pur. Il ne peut pas être Dieu d’Amour en acte et de
+Justice en puissance, puis Justice en acte et Amour en puissance. Il est
+pleinement, tout le temps, Dieu d’Amour et Dieu de Justice à la fois.
+
+Si Dieu était composé, qu’est ce qui serait Dieu? Prenons le mur en brique: la
+partie en brique n’est pas un mur en brique, et la partie en mortier n’est pas
+non plus un mur en brique. Si Dieu était composé d’amour et de justice (par
+exemple), alors ni l’amour ni la justice ne serait Dieu, ce qui contredirait
+les paroles de Jean « Dieu est Amour » par exemple, ou d’autres semblables.
+
+En vrai la question est: « Dieu entre-t-il en composition avec les autres
+êtres? » Nous venons de prouver que Dieu à l’origine est absolument simple,
+mais rien ne semble l’empêcher plus tard de devenir composé avec autre chose
+par exemple… le monde crée. C’est l’idée du panenthéisme oriental.
+
+> **En sens contraire,** Denys a dit : “ Il n’y a de sa part (de Dieu) ni
+> contact, ni aucun autre mélange avec des parties. ” Il est dit aussi au
+> Livre des Causes que “ la cause première régit toutes choses sans se mêler a
+> elles ”.
+>
+> A ce sujet, il y a eu trois erreurs. Certains ont dit : Dieu est l’âme du
+> monde, comme le rapporte S. Augustin dans la Cité de Dieu, et à cela se
+> ramène ce que certains affirment, à savoir que Dieu est l’âme du premier
+> ciel. D’autres ont dit que Dieu est le principe formel de toutes choses, et
+> telle fut, dit-on, l’opinion des partisans d’Amaury. Enfin, la troisième
+> erreur fut celle de David de Dinant, qui stupidement faisait de Dieu la
+> matière première. Mais tout cela est manifestement faux, et il n’est pas
+> possible que Dieu vienne d’aucune manière en composition avec quelque chose,
+> soit comme principe formel, soit comme principe matériel. – Ia, Q3, a8
+
+Principe formel= la « matière première spirituelle » des êtres, ou plutôt de
+leurs formes  
+Principe matériel= la « base de la matière », « les êtres sont tissés de divin
+»
+
+Ce n’est pas parce que l’Univers est issu de Dieu qu’il est comme Dieu, ou
+qu’il a du divin en lui. En langage thomiste on dira:  
+Or, la cause efficiente ne coïncide pas avec la forme de son effet selon
+l’identité numérique, mais seulement selon l’identité spécifiqueAvec un
+exemple: Le sculpteur (cause efficiente) ne coïncide pas avec la statue
+(effet) selon une identité numérique ( _=le sculpteur se sculpte une extension
+de lui-même, mais en pierre_ ) mais selon identité spécifique ( _le sculpteur
+crée une forme-matière de statue distincte de lui_ ). Appliqué à la création
+et le Créateur: Oui, l’univers est un effet de Dieu, mais cela ne l’empêche
+pas d’être entièrement séparé et différent de lui.
+
+Dieu est cause première, ce qui veut dire que c’est lui qui agit, à partir de
+lui-même. Le problème c’est qu’un être composé agit en entier, par tous ses
+composants. Ce n’est pas la main qui agit, c’est l’homme + sa main. Ce n’est
+pas le feu qui réchauffe, c’est les flammes+chaleur. Si Dieu entre en
+composition avec le monde, il n’est plus la cause première, ce qui est
+impossible.
+
+Si Dieu entre en composition avec le monde, alors il n’est plus l’être
+premier. En effet, dans un composé, aucun des composants ne saurait être
+premier l’un sur l’autre. Dans un mur en briques, la brique n’est pas première
+sur le mortier. Dans l’eau (H20) l’oxygène n’est pas premier sur l’hydrogène.
+Dans le composé Dieu-Univers, Dieu ne serait plus premier sur l’univers ce qui
+est impossible.
+
+Et cela clôt tout l’enseignement de Thomas sur la simplicité. Concluons au
+plus vite par une synthèse:
+
+Non, Dieu ne peut pas être un tas de particules physiques
+
+Non, Dieu n’est pas un individu qui a de la divinité.
+
+Non, le Dieu de Jésus-Christ n’est pas un « modèle » parmi d’autres de Dieu-
+grand D possible. Il est la seule Divinité possible.
+
+Non, Dieu ne peut pas être par exemple « l’âme du Monde ».
+
+Mari, père, appartient à Christ. Les marques de mon salut sont ma confession
+de foi et les sacrements que je reçois.
+
+  1. [Thomas d'Aquin sur les relations divines – Par la foi](https://parlafoi.fr/2020/06/29/thomas-daquin-sur-les-relations-divines/) \- […] en Dieu il en va autrement. En effet, à cause de la simplicité divine, tout ce qui est en…
+
+  2. [La simplicité de Dieu — Turretin (3.7) – Par la foi](https://parlafoi.fr/2022/07/07/la-simplicite-de-dieu-turretin-3-6/) \- […] La simplicité de Dieu selon Thomas d’Aquin, de moi-même. […]
+
+Votre adresse e-mail ne sera pas publiée. Les champs obligatoires sont
+indiqués avec *
+
+Si vous suivez régulièrement notre série, vous avez peut être du mal à vous
+remettre des 3700 mots du dernier article sur la simplicité divine. Rassurez
+vous celui-ci sera plus court! Après avoir étudié l’attribut de tout les
+attributs -la simplicité de Dieu – Thomas étudie la perfection de Dieu en
+trois petits articles. Nous en sommes à la partie I, Question 4. Je vous
+rappelle que vous pouvez lire la Summa par vous-même sur le site d’Arnaud
+Dumouch
+[docteurangelique.free.fr](http://docteurangelique.free.fr/bibliotheque/sommes/1sommetheologique1apars.htm)
+
+> Il est dit en S. Matthieu (5, 48) : “ Soyez parfaits comme votre Père
+> céleste est parfait.”
+
+Ce qu’on risque d’avoir du mal à comprendre, c’est qu’on puisse seulement se
+poser la question. Il faut alors comprendre qu’on a jusqu’ici développé une
+idée de Dieu qui pouvait remettre en question l’idée qu’il était la
+perfections suprême. Notamment, nous avons dit qu’il était la Cause Première,
+et qu’il était l’Existence même, ce qui pourrait laisser entendre qu’il est
+une sorte de « matière première » à partir duquel la création, plus
+perfectionnée et sophistiquée encore que son créateur se développe. C’était
+l’opinion des pythagoriciens par exemple.
+
+Mais il n’en est pas ainsi. Si Dieu est effectivement la fondation de toute
+existence, ce n’est pas comme « matière première » de la création. En langage
+thomiste on dira: principe matériel. C’est en tant que Cause Première.
+
+La création n’est pas une « existence brute » qui est raffinée et sophistiquée
+sous des myriades de formes différentes. **C’est une perfection absolue (celle
+de Dieu) qui est divisée et répartie sous des myriades de « petites
+perfections » différentes.** Ainsi se réalise cette parole de la Bible: « Les
+cieux racontent la gloire de Dieu ».
+
+Chaque élément de la création est un tout petit morceau de gloire et de beauté
+de Dieu qui arrangée dans son ensemble forme comme un miroir, une image de la
+gloire parfaite de son créateur. Il est donc parfait, plus que la création.
+
+## Article 2: Dieu contient-il en lui les perfections de toute chose?
+
+Est ce que Dieu contient la couleur blanche de la neige? Ou la dureté du roc?
+Ce sont pourtant des perfections de ces deux objets, mais ça n’a aucun sens si
+Dieu n’est pas matériel. A ceci et d’autres objections, Thomas répond:
+
+> Denys a dit : “ Dieu, par sa seule existence, possède d’emblée tout le
+> reste. ”
+>
+> Certes les perfections de toutes choses sont en Dieu. Aussi est-il dit
+> universellement parfait, parce qu’aucune grandeur ne lui manque de toutes
+> les perfections qu’on peut découvrir dans tous les ordres, ainsi que
+> l’affirme le Commentateur – Ia, Q4, a2
+
+Il y a deux façons d’avoir la perfection des effets dans une cause efficiente.
+En langage de tous les jours ca veut dire qu’il y a deux façons d’amener à
+l’épanouissement complet une certaine chose chez celui qui la crée.
+
+La première est que la perfection de l’effet soit sous la même raison: l’homme
+engendre un homme. Je ne fais que transmettre mon humanité à un autre être en
+engendrant. Une autre façon est d’avoir la perfection de l’effet de manière
+éminente. Par exemple: le soleil a en lui la croissance du blé de façon
+éminente, parce qu’il lui transmets l’énergie nécessaire à sa croissance.
+
+C’est de cette deuxième façon que Dieu a en lui toutes les perfections. **Il
+n’a pas en lui la blancheur de la neige ou la dureté du roc, mais il a et il
+donne l’existence à la neige et au roc, qui ensuite ont leur perfections
+propres**. Sans Dieu pas de neige, pas de roc, et donc pas de blancheur ni de
+dureté ni le reste des perfections de la création.
+
+C’est ainsi qu’on dit qu’il a en lui la perfection de toutes choses.
+
+## Article 3: Peut-on dire que les créatures ressemblent à Dieu ?
+
+Cela semble être une erreur de langage: Dieu est le tout autre, il l’est
+Unique, il n’est comparable à rien. Le psalmiste le dit lui-même « _Qui est
+comme toi parmi les dieux, Seigneur?_ » A ceci Thomas répond:
+
+> En sens contraire, La Genèse (1, 26) met ces paroles dans la bouche de Dieu
+> : “ Faisons l’homme à notre image et ressemblance ”, et S. Jean écrit (1 Jn
+> 3, 2) : “ Au temps de cette manifestation, nous lui serons semblables. ”
+>
+> Toute ressemblance se prend de la communauté de forme, et pour ce motif il y
+> a diverses sortes de ressemblance, selon diverses façons de communier dans
+> la forme. – Ia, Q4, a3
+
+Autrement dit: oui nous ressemblons à Dieu, mais ca dépend de ce que vous
+entendez par « ressembler ».
+
+Il y a les ressemblances parfaites: un carré blanc ressemble à un autre carré
+blanc. Il y a les ressemblances imparfaites: un carré blanc ressemble à un
+carré blanc cassé. Et enfin, on utilise le mot ressemblance aussi pour
+désigner des choses qui ont quelque chose en commun, sans être la même chose.
+Par exemple, l’homme ressemble à un porc quand il drague lourdement une femme.
+
+Je vous épargne les détails techniques, mais **il faut comprendre que ce
+troisième type de ressemblance est basé non sur ce qu’est l’agent, mais sur ce
+que fait l’agent.** Ainsi, le feu ressemble au soleil non parce qu’il a la
+même forme que le Soleil, mais parce qu’il réchauffe comme le soleil.
+
+Les objets créés par Dieu ont la vie, le mouvement et l’être, et cela
+ressemble à Dieu qui est la Vie, le Moteur Premier et l’Être premier.
+
+Et de même **l’homme ressemble à Dieu non parce que sa nature est la même que
+celle de Dieu mais en plus petit, mais parce qu’il fait comme Dieu en divers
+points** (morale, jugement, compréhension…)
+
+Pour conclure cet article, j’aimerais citer la fin de la question, que je
+trouve très intéressante:
+
+**Si l’on concède en quelque manière, que la créature est semblable à Dieu, on
+ne peut aucunement concéder que Dieu soit semblable à la créature** ; car,
+comme l’explique Denys, “ la similitude n’est mutuelle qu’entre des êtres
+appartenant à un même ordre, non entre l’effet et la cause ”. Ainsi nous
+disons bien qu’un portrait ressemble à son modèle, mais non que le modèle
+ressemble à son portrait. -Ia, Q4,a3
+
+Oui, parce qu’elles ont et agissent selon quelque chose qu’elles ont reçu de
+Dieu. Les créatures sont semblables à Dieu sans que Dieu ne soit semblable à
+ses créatures.
+
+Mari, père, appartient à Christ. Les marques de mon salut sont ma confession
+de foi et les sacrements que je reçois.
+
+Bonjour,  
+Vous passez malheureusement totalement à côté de l’élément essentiel de
+l’argumentation thomasienne : c’est le lien entre la perfection et l’Acte. Un
+être est parfait dans la mesure où il est en acte… Tout se joue donc ici entre
+l’acte et la puissance. Dieu n’est pas simplement parfait parce que les autres
+perfection dérivent de Lui, mais parce qu’Il est Acte pur. Le premier article
+est touffu, si bien qu’on ne sait pas où vous voulez en venir ; et à la
+lecture, on a bien l’impression que Thomas se borne à dire que Dieu est
+parfait, eh bien… parce qu’il est Dieu, alors que l’argumentation est bien
+précise sur ce point. La Perfection c’est l’Acte ; dans la mesure où un être
+entre en composition (de quelque manière que ce soit) avec autre chose, on
+peut dire qu’il est acte, mais l’acte n’est pas pur… Et donc, cet être reste
+imparfait.
+
+Etienne Omnès sur 25 avril 2019 à 13 h 29 min
+
+Merci pour votre très bon commentaire.^^ La raison de ce manque est que je
+fais ce commentaire en mode « Sola Thomas » sans connaissance de la tradition
+thomiste ultérieure. Il me manque donc parfois cette clairvoyance, même si je
+soigne ce défaut depuis la première fois que cet article a été publié (il y a
+plus d’un an). Merci beaucoup pour votre retour, il est utile
+
+Votre adresse e-mail ne sera pas publiée. Les champs obligatoires sont
+indiqués avec *
+
+[Nous avons vu la simplicité de
+Dieu](https://phileosophiablog.wordpress.com/2018/01/18/thomas-daquin-sur-la-
+simplicite-de-dieu/) et [ la perfection de
+Dieu](https://phileosophiablog.wordpress.com/2018/01/25/thomas-daquin-sur-la-
+perfection-de-dieu/). Continuons notre exploration de l’essence de Dieu:
+qu’est ce que nous voulons dire par: Dieu est bon? Souvent, nous n’entendons
+par cela qu’une dimension strictement morale: « Dieu est bon » est quasiment
+équivalent à « Dieu est gentil ». Mais nous allons le voir, cette conception
+est une véritable mutilation de ce qu’est la bonté de Dieu au départ.
+
+Cette question occupe toute la question 5, que je vais atrocement résumer pour
+des questions de place et de clarté. Thomas d’Aquin, en accord avec tous les
+philosophes anciens et médiévaux, donne la définition suivante de la bonté:
+
+> Ce qui fait qu’un étant est bon, c’est qu’il est attirant ; aussi le
+> Philosophe définitif le bien : **“ Ce à quoi toutes les choses tendent. «**
+> – Ia, Q5, a1
+
+Le gland tend à être un chêne: le chêne est le bien pour le gland. Les plantes
+tendent leurs racines vers la rivière: l’eau est un bien pour la plante.
+L’homme aspire à la connaissance: la connaissance est un bien pour l’homme. Et
+ainsi de suite.
+
+La différence radicale avec la définition moderne de bonté, c’est qu’elle
+dépasse largement toute dimension strictement morale ou éthique. La bonté est
+en réalité une notion métaphysique, qui désigne le « but » des choses, ce qui
+les attire. On le comprend pour les biens extérieurs, mais Thomas développe
+aussi la notion de bien pour les choses en elle-même:
+
+> Or manifestement **une chose est attirante dans la mesure où elle est
+> parfaite ; car tous les étants aspirent à se parfaire**. – _idem_
+
+Parfait signifie: « pleinement réalisé, accompli ». Le gland est un chêne en
+potentiel, il se parfait en devenant un chêne en acte. Le chêne est la
+perfection du gland.
+
+De même, **« l’homme de bien » n’est pas seulement un homme qui a une éthique
+parfaite. C’est celui qui a pleinement réalisé sa nature humaine.** Il est
+moral, savant, sage, en paix avec tous, responsable, actif etc… Pour nous
+chrétiens qui poursuivons activement ce but, cela élargit énormément la
+définition de ce qu’est une vie chrétienne: il ne s’agit pas seulement d’obéir
+à des commandements, il s’agit aussi de développer la nature humaine jusqu’à
+sa pleine réalisation.
+
+> **Aucun étant n’est dit mauvais en tant qu’il est, mais en tant que de
+> l’être lui manque** ; ainsi un homme est dit mauvais quand il lui manque
+> d’être vertueux ; un œil est dit mauvais quand il manque d’une vue
+> pénétrante. – Ia, Q5, a2
+
+Passons à la question 6: la bonté de Dieu. D’une, avant de savoir quoi-
+que-c’est, il nous faut savoir s’il est bon… Trop facile!
+
+> il est écrit dans les Lamentations (3, 25) : “ Dieu est bon pour ceux qui
+> espèrent en lui, pour l’âme qui le cherche. ” **L’attribut “ bon ”
+> appartient à Dieu** par excellence. – Ia, Q6, a1
+
+Toute chose tend vers au moins un bien. Cette tendance forte vers le
+perfectionnement leur vient de leur cause, car tout effet ressemble à sa
+cause. Or [la Cause Première est Dieu.
+](https://phileosophiablog.wordpress.com/2018/01/11/thomas-daquin-prouve-
+lexistence-de-dieu/)Donc Dieu est bon, puisqu’il est la cause du bien des
+créatures. Vous voyez, ce n’est pas compliqué le thomisme!
+
+Bon. Nous avons prouvé qu’il y a « du » bien en Dieu. Mais ce n’est pas
+suffisant: le Dieu de la Bible nous semble être le Bien-grand B, le Bien
+suprême.
+
+En même temps, Jésus a dit: « Qui est bon, si ce n’est Dieu seul? » (Mt 19.17)
+Dieu n’a pas besoin d’être le bien suprême, il suffit de dire qu’il est bon,
+plutôt que de suggérer qu’il est au sommet d’une sorte de hiérarchie…
+
+> Augustin affirme que la Trinité des personnes divines est “ le Bien suprême,
+> que savent discerner les âmes entièrement pures ”. **On doit affirmer que
+> Dieu est suprêmement bon purement et simplement, et non pas seulement dans
+> un genre particulier dans une classe de choses**. – Ia, Q6,a2
+
+Nous venons de dire que Dieu est la cause de toute bonté. Il est la cause de
+la bonté de l’eau pour la plante (qui tend vers l’eau pour vivre) et aussi la
+cause de la bonté de la Connaissance pour l’homme (qui tend vers la
+connaissance pour être un homme accompli). Pour pouvoir être ainsi la cause de
+toute ces bontés, aussi différentes et diverses les unes des autres, il ne
+suffit pas que Dieu soit un bien parmi d’autres. Il faut qu’il soit la
+définition même du Bien. Le Bien Suprême, vers quoi toutes choses tendent.
+
+En langage thomiste on dira: « Dieu est-t-il bon par essence? »
+
+On a touché à la fin de l’article 2 à quelque chose de très intéressant: Dieu
+est le bien suprême. Est ce que cela veut vraiment dire que Dieu EST le Bien?
+
+> Boèce écrit : “ Toute chose autre que Dieu est bonne par participation ” ;
+> elle ne l’est donc point par essence. **Dieu seul est bon par son essence**.
+> – Ia, Q6, a3
+
+Et il commence son raisonnement en rappelant ce que je disais quand je parlais
+de la bonté en général: « _En effet, tout étant est dit bon dans la mesure où
+il est parfait._ » Et un objet est parfait (=pleinement réalisé) quand:
+
+Il a tous ses attributs: Un papillon sans ailes n’est pas un papillon parfait
+par ex.
+
+Il atteint pleinement son but: Un papillon qui existe, qui a tous ses
+attributs comme il faut où il faut, mais qui ne vole ni ne se reproduit n’est
+pas un papillon parfait. C’est en accomplissant sa nature que le papillon est
+perfectionné. Cet état d’accomplissement est appelé « repos » _(c’est le
+moment de rouvrir votre lettre aux hébreux et de réviser la signification de «
+repos du 7e jour »…)_
+
+Il n’a pas d’accidents, il est toujours complet en lui-même et pleinement
+réalisé dans son être.
+
+Il est son propre but, et le but ultime de toutes choses. Donc par définition
+est au Repos-grand R
+
+Il est donc parfait par essence, et dans cette même mesure, bon par essence.
+Il est le Bien-grand B
+
+## Article 4: Toute chose est-elle bonne de la Bonté Divine?
+
+Heu là! Du calme papillon! Si Dieu est le Bien, alors cela voudrait-il donc
+dire que tout ce qui est bien est divin? Plus un homme est accompli -et donc
+plus il est bon- et plus il est divin? La rivière vers laquelle tendent toutes
+les plantes est-elle donc un fragment de divinité parce qu’elle est le bien de
+ces plantes? Beurk!
+
+Ce serait comme dire que si le Soleil était la lumière par essence, alors ma
+lampe électrique serait du soleil en boîte, que la luciole est du soleil donné
+par l’astre à l’insecte, que le feu est un fait un voleur de soleil. Absurde.
+
+Heureusement que ce n’est pas le cas: Thomas affirme que le bien qui est dans
+les créatures n’est pas la Bonté de Dieu au sens propre.
+
+> Toutes les choses sont bonnes pour autant qu’elles sont. Mais les étants ne
+> sont pas dits être par l’être de Dieu, mais par leur être propre. **Donc
+> elles ne sont pas bonnes de la bonté de Dieu, mais de leur propre bonté**.
+> -Ia, Q6, a4
+
+Et pour soutenir ceci, un peu d’histoire de la philosophie. Platon soutenait
+que les qualités des choses leur provenait de leur participation à l’Idée
+parfaite (la Forme) correspondante. Ainsi, tout chien, du berger allemand au
+berger afghan, tire sa qualité de chien de l’idée du Chien Parfait, par une
+relation dite de « participation ».
+
+Mais Aristote s’est opposé aux idées de Platon: plutôt que d’imaginer un monde
+imaginaire rempli d’Idées dont on ne peut pas prouver l’existence, c’est dans
+les chiens particuliers qu’il faut chercher l’idée de « chienneté » (=ce-qui-
+fait-d’un-chien-un-chien). Rex le berger allemand a sa propre chienneté,
+Hallal le berger afghan a sa propre chienneté, et leurs caractéristiques
+communes reflètent un universel appelé « chien ». Cet universel est à part de
+tous les chiens particuliers, Médor ne fait que ressembler à l’universel «
+chien » par certains aspects, plutôt que d’y participer.
+
+Etant donné que Thomas exprime la religion chrétienne à travers les idées et
+le vocabulaire d’Aristote, cela donne:
+
+> C’est donc bien de ce premier, qui par son essence est, et est bon, que tout
+> autre tient d’être et d’être bon, en tant qu’il y participe par une certaine
+> assimilation encore que lointaine et déficiente, comme on l’a montré à
+> l’article précédent.
+>
+> Et ainsi, nous pouvons conclure que **tout être est appelé bon en raison de
+> la bonté divine, comme du premier principe exemplaire, efficient et
+> finalisateur de toute bonté**. Toutefois, **chaque réalité est dite bonne
+> encore par une ressemblance de la bonté divine qui lui est inhérente, et qui
+> est formellement sa bonté à elle, celle en raison de laquelle elle est dite
+> bonne. Ainsi donc, il y a une bonté unique de toutes choses et il y a une
+> multitude de bontés.** – Ia, Q-, a4
+
+Pour la redire en vocabulaire plus accessible: Oui, les biens-petit b tirent
+leur définition du Bien-grand B. Cependant, ils ont aussi de multiples
+différences qui font que ce sont des biens à part, qu’ils ne sont pas « le
+Bien Suprême format XXS ».
+
+Le bien est ce vers quoi tend une chose. Le processus de progrès vers le bien
+d’une chose est appelé « perfectionnement ».
+
+Oui, puisqu’il est la source et la cause de tous les autres biens.
+
+Oui, puisqu’il n’est pas simplement un bien parmi d’autre, mais le Bien qui
+définit tous les autres biens.
+
+Oui, parce qu’il possède par essence tout ce qui définit un bien.
+
+Non, elles sont dites bonnes parce qu’elles ressemblent et tirent leur
+définition de ce qu’est Dieu, tout en ayant leurs différences.
+
+Mari, père, appartient à Christ. Les marques de mon salut sont ma confession
+de foi et les sacrements que je reçois.
+
+Votre adresse e-mail ne sera pas publiée. Les champs obligatoires sont
+indiqués avec *
+
 [Dogmatique](https://parlafoi.fr/category/dogme/) | [Haute
 orthodoxie](https://parlafoi.fr/category/histoire-de-leglise/moderne/haute-
 orthodoxie/) | [Histoire](https://parlafoi.fr/category/histoire-de-leglise/) |
@@ -1916,6 +2652,228 @@ philosophie réaliste. Vous entendrez souvent dans sa bouche "Thomas d'Aquin",
 moniteurs de la méthode Billings.
 
   1. [Qu’est-ce que la Scolastique Protestante ? – Sommaire – PAR LA FOI](https://parlafoiblog.wordpress.com/2018/09/29/quest-ce-que-la-scolastique-protestante-sommaire/) \- […] La méthode scolastique […]
+
+Votre adresse e-mail ne sera pas publiée. Les champs obligatoires sont
+indiqués avec *
+
+L’une des caractéristiques de la Scolastique réformée est l’utilisation de
+distinctions. Les Réformés ont hérité de cette méthode théologique du Moyen
+Âge. Les catholiques romains, les luthériens et les théologiens remonstrants
+ont également utilisé des distinctions pour présenter leur propre théologie.
+Des mots et des termes ambigus se retrouvent souvent dans le discours
+théologique, ce qui nécessite l’utilisation de distinctions pour aider à
+clarifier précisément ce que l’on veut dire.
+
+Sinclair Ferguson fait valoir un bon point dans son livre, _The Trinitarian
+Devotion of John Owen_ (p. 47), concernant l’utilité des distinctions :
+
+> _Scolastique_ est souvent utilisé comme une insulte théologique destinée à
+> introduire une mauvaise connotation. Pourtant, les gens qui l’utilisent sont
+> parfois ceux-là mêmes qui s’enflamment au quart de tour si des étrangers
+> qualifient une balle rapide de « slider » (au baseball) ou confondent un
+> eagle avec un double bogey (au golf) ou, encore, décrivent une personne
+> vivant en Caroline comme un « Yankee » ou un Scott comme « Anglais » ! Ne
+> s’agit-il pas simplement de distinctions « scolastiques » ? Poser la
+> question, c’est y répondre. Une bonne compréhension implique toujours de
+> faire des distinctions prudentes.
+
+Au début de la période moderne, les étudiants en théologie étaient formés à
+faire des distinctions justes et correctes. Idéalement, les distinctions
+devraient aider, et non entraver, l’exégèse. Ainsi, par exemple, considérez la
+distinction entre le pouvoir absolu de Dieu (de potentia absoluta Dei) et le
+pouvoir décrété de Dieu (de potentia ordinata Dei). Le pouvoir absolu de Dieu
+est ce pouvoir de faire ce qu’il n’accomplira pas nécessairement (i.e.,
+transformer une pierre en pain). Son pouvoir décrété implique son décret de
+faire ce qu’il a ordonné d’accomplir. Très simplement, ce que Dieu est capable
+de faire n’est pas synonyme de ce qu’il a choisi de faire.
+
+Cette distinction semble avoir un fort soutien biblique. Voici un exemple de
+la puissance absolue de Dieu : « Et ne prétendez pas : ‘Nous avons Abraham
+pour père’, car je vous le dis, Dieu est capable, de ces pierres, de susciter
+des enfants d’Abraham » (Mt 3,9).
+
+Dans un autre passage, le Christ réunit le pouvoir absolu de Dieu avec son
+pouvoir décrété : « Pensez-vous que je ne puisse pas faire appel à mon Père,
+et qu’il m’enverra aussitôt plus de douze légions d’anges ? Mais comment donc
+les Écritures devraient-elles s’accomplir s’il en était ainsi ? » (Matt.
+26:53-54).
+
+Dieu aurait pu envoyer plus de douze légions d’anges pour sauver Christ de sa
+passion, mais, selon son pouvoir décrété, il ne l’a pas fait.
+
+Un indice de cette doctrine peut même être trouvé dans la tentation du Christ.
+Satan a tenté Jésus de transformer les pierres en pain pour prouver qu’il
+était le Fils de Dieu. Mais Jésus (qui aurait pu le faire selon sa puissance)
+ne l’a pas fait parce que les Écritures étaient sa règle de vie, et non le
+diable, ou même ce que Jésus lui-même aurait pu faire (Mt 4:3-4).
+
+Dans le domaine de la justification, il faut connaître la cause formelle, la
+cause matérielle et la cause instrumentale.[1]
+
+Il faut connaître la différence entre une « aestimatio » et une « secundum
+veritatem », car elle était au cœur du débat entre les Remonstrants et les
+Réformés sur la doctrine de la justification par la foi. Arminius a créé d’un
+concept, connu sous le nom d’acceptilatio. La foi imparfaite est acceptée (par
+l’estimation gracieuse de Dieu) comme justice. Ou, pour le dire autrement,
+l’acte humain de foi est par grâce compté comme justice évangélique, comme
+s’il était l’accomplissement complet de la loi entière. Cet acte humain
+authentique naît de la capacité de choisir (liberum arbitrium). Dieu a une «
+nouvelle loi » dans l’alliance évangélique, par laquelle la foi répond aux
+exigences de l’alliance. Sur la soi-disant « cause formelle », il y avait une
+différence importante entre les deux camps. Comme nous l’avons noté, pour les
+Arminiens, l’imputation est une aestimatio – Dieu considère notre Justice
+(c.-à-d. l’acte de foi) comme quelque chose qu’elle n’est pas (c.-à-d.,
+parfaite). Les réformés, cependant, considèrent l’imputation comme un secundum
+veritatem – Dieu considère la justice de Christ comme notre justice,
+précisément parce qu’elle l’est, par union avec Christ. Le verdict que Dieu
+rend à son Fils est précisément le même verdict qu’il rend à ceux qui
+appartiennent au Christ, mais seulement par imputation. Ce débat montre que
+les deux partis pouvaient utiliser des catégories scolastiques, mais c’est
+finalement l’exégèse qui a conduit à des positions différentes.
+
+Au XVIIe siècle, de nombreux théologiens réformés utilisaient la distinction
+entre le droit à la vie et la possession de la vie pour expliquer la nécessité
+des bonnes œuvres pour le salut tout en protégeant la grâce du salut par le
+Christ seul. Petrus van Mastricht utilise cette distinction de la manière
+suivante :
+
+> dans la mesure où Dieu, dont nous atteignons [les exigences] de la loi par
+> le seul mérite du Christ, ne veut pas accorder la possession de la vie
+> éternelle, à moins qu’elle ne soit précédée, au-delà de la foi, d’oeuvres
+> bonnes. Nous avons déjà reçu le droit à la vie éternelle par le mérite du
+> Christ seul. Mais Dieu ne veut pas accorder la possession de la vie
+> éternelle, à moins qu’il n’y ait, à côté de la foi, aussi de bonnes œuvres
+> qui précèdent cette possession (Heb. 12:14 ; Mt. 7:21 ; 25:34-36 ; Rom. 2:7,
+> 10).[2]
+
+La prise de conscience de ces distinctions – quelque chose que l’Église
+réformée a perdu au XXe siècle – aurait pu résoudre beaucoup de problèmes qui
+ont surgi en raison de l’imprécision des formulations doctrinales sur la
+question de la justification.[3] La scolastique n’était pas le problème, mais
+elle aurait très bien pu être la solution.
+
+En termes d’expiation, un étudiant en théologie devrait non seulement
+comprendre la distinction entre efficacité et suffisance, mais il devrait
+idéalement connaître la différence entre « acceptatio » et « acceptilatio » et
+la différence entre les moyens « d’approvisionnement » (medium impetrationis)
+et les moyens d’application (medium applicationis).
+
+La mort du Christ est une œuvre qui peut être comprise soit comme une cause
+physique, soit comme une cause morale. Selon John Owen : « Les causes
+physiques produisent leurs effets immédiatement, et le sujet doit exister pour
+que la conséquence ait lieu. Les causes morales « n’engendrent jamais
+immédiatement leurs propres effets ». [4] La mort de Christ était une cause
+morale, et non physique. Ainsi, ceux pour qui il est mort n’ont pas besoin
+d’être vivants au moment de sa mort pour recevoir les bienfaits de son
+sacrifice par substitution. Les causes physiques n’exigent pas d’actes
+humains, mais les causes morales en exigent. Soit dit en passant, la
+distinction utilisée par Owen n’était pas la sienne, mais elle a été
+mentionnée plus tôt par le jésuite Suarez (1548-1617).[5]
+
+Les distinctions théologiques nous aident aussi dans notre doctrine du péché.
+Ainsi, Maccovius soutient :
+
+> 1\. Le péché est soit le péché originel, soit le péché réel.
+>
+> Le péché originel, qui jaillit d’Adam, est le péché dans lequel et avec
+> lequel nous sommes nés et qui commence au moment où nous devenons des êtres
+> humains.
+>
+> 2\. Le péché originel est soit imputé, soit inhérent.
+>
+> Imputé à nous comme si nous l’avions commis nous-mêmes.
+>
+> Imputé à nous comme si nous l’avions commis nous-mêmes.
+>
+> Le péché inhérent est une dépravation de notre nature, et donc une
+> inclination au mal.
+>
+> 3\. L’imputation est un acte moral, pas un acte physique.
+>
+> Il n’est pas nécessaire que cette personne existe au moment de l’acte, mais
+> seulement qu’elle existe un jour.
+>
+> De plus, une distinction peut être faite entre le péché commis par faiblesse
+> et le péché commis par plein désir. Seuls ceux qui sont chrétiens peuvent
+> pécher par faiblesse.
+>
+> Les vrais croyants pèchent plus sérieusement que les incroyants.
+>
+> A) Parce que nous avons plus de connaissances.
+>
+> B) Parce que nous avons le pouvoir de résister.
+>
+> Les incroyants pèchent plus sérieusement que les croyants.
+>
+> A) Parce qu’ils se précipitent dans le péché avec un grand désir, mais les
+> croyants avec une volonté brisée.
+>
+> B) Les fidèles ressentent de la tristesse (repentance) à propos de leurs
+> péchés commis, mais les incroyants ne la ressentent pas (ils regrettent
+> seulement les conséquences).[6]
+
+Les scolastiques réformés comme Maccovius sont clairement redevables à la
+tradition thomiste. Mais ils n’ont pas non plus peur de critiquer les
+distinctions médiévales lorsqu’ils cherchent à établir une doctrine réformée.
+Parfois, comme dans le cas de Maccovius, il dira simplement d’une certaine
+distinction qu’elle est « complètement inutile ». Cette construction
+éclectique montre que les théologiens réformés doivent interagir de manière
+critique avec la tradition, même s’ils en dépendent fortement. Même Calvin
+fait l’objet de critiques dans les écrits des derniers scolastiques orthodoxes
+réformés, bien qu’il y ait souvent un ton de révérence/respect pour lui
+pendant qu’ils expliquent pourquoi et comment il avait tort ou était imprécis.
+
+La scolastique réformée a été un grand don à l’Église qui a été largement
+sous-estimé ou ignoré dans notre contexte actuel. Ceux qui veulent embrasser
+la théologie réformée ont besoin de connaître quelque chose de notre histoire
+réformée. La lecture de l’Institution de Calvin est un bon début, mais c’est
+juste un début. Même une connaissance superficielle de la scolastique, que
+cette série ne vise qu’à résumer, ne peut que nous aider à éviter de faire de
+fausses suppositions sur la scolastique réformée.
+
+Karl Barth a fait remarquer un jour, avec une certaine ironie, que « la peur
+de la scolastique est la marque d’un faux prophète » (Church Dogmatics
+I/1.279). En effet. Mais au moins, la crainte de la scolastique pourrait
+suggérer une certaine connaissance de la question ; tandis que l’ignorance est
+encore pire, surtout quand elle concerne une si grande partie de notre
+héritage réformé.
+
+[1] Chaque théologien devrait être à l’aise avec les notions suivantes :
+
+habitus et actus fidei (La distinction acte-habitus est similaire à la
+distinction acte-pouvoir. Dieu donne le pouvoir mais nous réalisons l’acte.)
+
+[2] “…in quâ vitæ æternæ jus, sub prima periodo collatum, & sub secundà
+continuatum, ad possessionem etiam promovetur: hîc bonorum operum non tantum
+prasentia requiritur; sed etiam qualiscunque efficacia, quatenus saltem Deus
+possessionem vitae aeternae, cujus jus solo dudum obtinemus Christi merito,
+non vult conferre, nisi, praeter fidem, praeviis bonis operibus Heb. xii. 14.
+Matth. vii. 21. & xxv. 34–36. Rom. ii. 7, 10.” Peter van Mastricht,
+_Theoretico-practica theologia, qua, per singula capita Theologica, pars
+exegetica, dogmatica, elenchtica & practica, perpetua successione
+conjugantur_… (Amsterdam, 1724), 704–5.
+
+[3] Voyez par exemple, Ian Hewitson, _Trust and Obey: Norman Shepherd and The
+Justification Controversy at Westminster Theological Seminary_ (Minneapolis:
+NextStep Resources, 2011); W. Stanford Reid, _An Evangelical Calvinist In The
+Academy Mcgill-Queen’s Studies in the History of Religion_ (Toronto: McGill-
+Queen’s University Press, November 2004).
+
+[5] Franciscus Suarez, _Disputationes Metaphysicae_ , 17.2.6. Ed. C. Berton,
+Opera Omnia Suaresi XXV. (Paris: L. Vives, 1861), 585.
+
+[6] _Scholastic Discourse: Johannes Maccovius (1588–1644) on Theological and
+Philosophical Distinctions and Rules_ (Apeldoorn: Instituut voor
+Reformatieonderzoek, 2009), 181-83.
+
+Maxime est étudiant en médecine à Lille. Fondateur du blog Parlafoi.fr, il se
+passionne pour la théologie systématique, l'histoire du dogme et la
+philosophie réaliste. Vous entendrez souvent dans sa bouche "Thomas d'Aquin",
+"Jean Calvin" et "Vive la scolastique". Il affirme être marié à la meilleure
+épouse du monde. Ils vivent ensemble sur Lille avec leurs deux enfants et sont
+moniteurs de la méthode Billings.
+
+  1. [Qu’est-ce que la Scolastique Protestante ? – Sommaire – PAR LA FOI](https://parlafoiblog.wordpress.com/2018/09/29/quest-ce-que-la-scolastique-protestante-sommaire/) \- […] Distinctions et Conclusion […]
 
 Votre adresse e-mail ne sera pas publiée. Les champs obligatoires sont
 indiqués avec *
