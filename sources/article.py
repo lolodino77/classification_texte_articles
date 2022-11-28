@@ -13,10 +13,7 @@ class Article:
     def __init__(self, url, topic):
         """ Constructor of Article """
         self.url = url
-        self.topic = topic
         self.paragraphs = self.create_paragraphs()
-        self.filename = self.create_filename()
-        self.path_corpus = "./data/input/corpus_txt/" + self.create_filename() #self.filename
 
 
     def __str__(self):
@@ -25,17 +22,10 @@ class Article:
         str_url = str(self.url)
         # str_articles_list = str(self.articles_list)
         str_paragraphs = str(self.paragraphs)
-        str_filename = str(self.filename)
-        str_path_corpus = str(self.path_corpus)
-        desc = "url = "+ str_url #+ "\narticles_list = " + str_articles_list + "\nparagraphs = " + str_paragraphs 
-        desc = desc + "\nfilename = " + str_filename
-        desc = desc + "\npath_corpus = " + str_path_corpus
+        desc = "url = "+ str_url
+        desc += "\nparagraphs = " + str_paragraphs 
+        # desc = desc + "\nfilename = " + str_filename
         return(desc)   
-
-
-    def create_filename(self):
-        filename = "corpus_{}.txt".format(self.topic) 
-        return(filename)
 
 
     def create_paragraphs(self):
@@ -76,8 +66,7 @@ class Article:
         return(paragraphs)
 
 
-    def save_paragraphs(self, file_open_mode="w", sep = "\n\n"):
+    def save_paragraphs(self, path_corpus, file_open_mode="w", sep = "\n\n"):
         """ Sauvegarde les paragraphes d'un article dans un fichier texte """
         print("file_open_mode =", file_open_mode)
-        save_list_to_txt(self.paragraphs, self.path_corpus, file_open_mode, sep)
-
+        save_list_to_txt(self.paragraphs, path_corpus, file_open_mode, sep)
