@@ -3,7 +3,8 @@ from datasource import *
 
 class Blog(DataSource):
     def __init__(self, url, topic, num_articles):
-        DataSource.__init__(self, url, topic)
+        DataSource.__init__(self, url, topic, num_articles)
+        print("type num_articles =", type(num_articles))
         self.name = self.topic
         self.articles_urls = self.create_articles_urls()
 
@@ -12,18 +13,15 @@ class Blog(DataSource):
         """ Renvoie une chaine de caractère décrivant la bibliographie """
         print("str :")
         str_articles_urls = str(self.articles_urls)
-        str_num_articles = str(self.num_articles)
-        str_all_articles = str(self.all_articles)
         desc = DataSource.__str__(self)
-        desc += "\narticles_urls = " + str_articles_urls
-        desc += "\nnum_articles = " + str_num_articles
-        desc += "\nall_articles = " + str_all_articles
+        # desc += "\narticles_urls = " + str_articles_urls
         return(desc)   
 
 
-    def get_web_page_text_contents(self):
+    def get_web_page_text_contents(self, url):
         """ Donne dans une string le contenu texte d'une page web simple (avec que du textec comme un fichier texte) """
-        page = requests.get(self.url) #page.text donne le contenu texte d'un page web (comme si c'etait un fichier txt)    
+        print("get contents of page web :", url)
+        page = requests.get(url) #page.text donne le contenu texte d'un page web (comme si c'etait un fichier txt)    
         text_contents = page.text
 
         return(text_contents)
@@ -33,13 +31,15 @@ class Blog(DataSource):
         """ Recupere la page robots.txt d'un blog 
             Exemple : blog_name = "http://alexanderpruss.blogspot.com"
         """
-        return(self.name + "/robots.txt")
+        return(self.url + "/robots.txt")
 
 
     def get_sitemap_page(self):
         """ Recupere la page sitemap d'un blog """
-        robots_txt_page = self.get_blog_robots_page(self.name)
-        text_contents = self.get_web_page_text_contents(self, robots_txt_page)
+        robots_txt_page = self.get_blog_robots_page()
+        print("get text_contents of robots_txt_page")
+        text_contents = self.get_web_page_text_contents(robots_txt_page)
+        print("get text_contents of robots_txt_page fini")
         text_contents = text_contents.split("\n")
         sitemap_contents = [elt for elt in text_contents if "Sitemap" in elt]
         print("sitemap_contents =", sitemap_contents)
@@ -61,7 +61,7 @@ class Blog(DataSource):
 
     def get_urls_from_one_sitemap_subpage(self, sitemap_subpage):
         """ Recupere les urls sur une seule sous-page sitemap """
-        urls = self.get_web_page_text_contents(self, sitemap_subpage)
+        urls = self.get_web_page_text_contents(sitemap_subpage)
         urls = urls.replace("""<?xml version='1.0' encoding='UTF-8'?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">""", "")
         urls = urls.replace("</lastmod></url><url><loc>", "")
         urls = urls.replace("</loc><lastmod>", "\n")
@@ -85,7 +85,8 @@ class Blog(DataSource):
     def create_articles_urls(self):
         """ Renvoie dans une liste tous les articles d'un blog (wordpress ou blogspot) a partir de sa page d'accueil
             Exemple : "https://majestyofreason.wordpress.com/", "https://edwardfeser.blogspot.com"
-            
+            Pour l'instant fonctionne que avec les blogs blogspot
+
             Entrees:
             self.name (string) : Le nom du blog
             keep_all_articles (booleen) : Indique si on recupere tous les articles ou seulement un nombre limite
@@ -101,8 +102,12 @@ class Blog(DataSource):
         urls = [url for url in urls if(len(url) > 1)] # enlever les ""
         urls = [url for url in urls if("pdf" not in url)] # enlever les articles pdf
 
-        # if(keep_all_articles):
-        #     num_articles = len(urls)
+        if(self.all_articles):
+            self.num_articles = len(urls)
+
+        print("in final function :")
+        print("self.num_articles =", self.num_articles)
+        print("type(self.num_articles) =", type(self.num_articles))
         urls = urls[:self.num_articles]
 
         print("check ''", "\n" in urls)

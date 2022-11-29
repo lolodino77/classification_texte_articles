@@ -53,20 +53,34 @@ class Article:
         txt = html2text.html2text(txt)
 
         # Decoupage en plusieurs parties avec pour separateur le retour a la ligne \n
-        txt = txt.split("\n\n") 
+        paragraphs = txt.split("\n\n") 
         # print("txt")
         # print(txt)
 
+        #Enleve les doublons
+        paragraphs = list(set(paragraphs))
+
         #Enleve les paragraphes avec trop peu de caracteres
-        paragraphs = [paragraphe for paragraphe in txt if len(paragraphe) > 12] 
+        paragraphs = [paragraphe for paragraphe in paragraphs if len(paragraphe) > 12] 
         
         #Enleve les paragraphes avec des phrases trop courtes (trop peu de mots)
-        paragraphs = [paragraphe for paragraphe in txt if len(paragraphe.split(" ")) > 10]
+        paragraphs = [paragraphe for paragraphe in paragraphs if len(paragraphe.split(" ")) > 10]
         
+        #Enleve les paragraphes qui contiennent un ou plusieurs adresses url
+        paragraphs = [paragraphe for paragraphe in paragraphs if("http" not in paragraphe)]
+
+        #Enleve les paragraphes qui contiennent # (car pas des paragraphes)
+        paragraphs = [paragraphe for paragraphe in paragraphs if("#" not in paragraphe)]
+
         return(paragraphs)
 
 
-    def save_paragraphs(self, path_corpus, file_open_mode="w", sep = "\n\n"):
+    def save_paragraphs(self, path_corpus, corpus_paragraphs="", file_open_mode="w", sep = "\n\n"):
         """ Sauvegarde les paragraphes d'un article dans un fichier texte """
         print("file_open_mode =", file_open_mode)
-        save_list_to_txt(self.paragraphs, path_corpus, file_open_mode, sep)
+        # save_list_to_txt(self.paragraphs, path_corpus, file_open_mode, sep)
+        f = open(path_corpus, file_open_mode, encoding="utf-8") #"w" si n'existe pas, "a" si on veut ajouter a un fichier deja existant
+        for paragraph in self.paragraphs:
+            if(paragraph not in corpus_paragraphs):
+                f.write(paragraph + sep)
+        f.close()
