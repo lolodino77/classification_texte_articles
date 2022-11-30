@@ -4,15 +4,21 @@ from datasource import *
 
 class Bibliography(DataSource):
     def __init__(self, url, topic, num_articles):
-        DataSource.__init__(self, url, topic, num_articles)
+        DataSource.__init__(self, url, num_articles)
+        self.topic = topic
+        self.path_corpus = "./data/input/corpus_txt/" + self.create_corpus_txt_filename() #self.filename
         self.articles_urls = self.create_articles_urls()
 
 
     def __str__(self):
         """ Renvoie une chaine de caractère décrivant la bibliographie """
         print("str :")
+        str_topic = str(self.topic)
         str_articles_urls = str(self.articles_urls)
+        str_path_corpus = str(self.path_corpus)
         desc = DataSource.__str__(self)
+        desc += "\ntopic = " + str_topic
+        desc += "\npath_corpus = " + str_path_corpus
         desc += "\narticles_urls = " + str_articles_urls
         return(desc)   
 

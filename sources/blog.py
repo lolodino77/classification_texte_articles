@@ -2,10 +2,10 @@ from datasource import *
 
 
 class Blog(DataSource):
-    def __init__(self, url, topic, num_articles):
-        DataSource.__init__(self, url, topic, num_articles)
+    def __init__(self, url, num_articles):
+        DataSource.__init__(self, url, num_articles)
         print("type num_articles =", type(num_articles))
-        self.name = self.topic
+        self.name = self.get_name()
         self.articles_urls = self.create_articles_urls()
 
 
@@ -13,9 +13,16 @@ class Blog(DataSource):
         """ Renvoie une chaine de caractère décrivant la bibliographie """
         print("str :")
         str_articles_urls = str(self.articles_urls)
+        str_name = str(self.name)
         desc = DataSource.__str__(self)
+        desc += "\nname = " + str_name
         # desc += "\narticles_urls = " + str_articles_urls
         return(desc)   
+
+
+    def get_name(self):
+        name = self.url.split("//")[1].split(".")[0]
+        return(name)
 
 
     def get_web_page_text_contents(self, url):

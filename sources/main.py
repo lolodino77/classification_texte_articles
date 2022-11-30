@@ -24,14 +24,11 @@ def test_bibliography(url, topic, num_articles):
     # print("bibliography.save_paragraphs() fini")
 
 
-def test_blog(url, topic, num_articles):
-    blog = Blog(url, topic, num_articles)
+def test_blog(url, num_articles):
+    blog = Blog(url, num_articles)
     print(blog)
-    print("blog.save_articles_urls() debut")
-    blog.save_articles_urls()
-    print("blog.save_articles_urls() fin")
-    blog.save_paragraphs(savemode="overwrite")
-    print("blog.save_paragraphs() fini")
+    # blog.save_articles_urls()
+    # blog.save_paragraphs(savemode="overwrite")
 
 
 def main():
@@ -39,17 +36,20 @@ def main():
     print("os.getcwd()")
     print(os.getcwd())
     # url = "https://parlafoi.fr/lire/series/le-pedobapteme/"
-    # url = "https://parlafoi.fr/lire/series/la-scolastique-protestante/"
-    # url = "https://parlafoi.fr/lire/series/commentaire-de-la-summa/"
+    url = "https://parlafoi.fr/lire/series/la-scolastique-protestante/"
+    url2 = "https://parlafoi.fr/lire/series/la-scolastique-protestante/"
+    url3 = "https://parlafoi.fr/lire/series/commentaire-de-la-summa/"
     url_blog = "http://exapologist.blogspot.com"
+    urls_blog = ["http://exapologist.blogspot.com", "http://alexanderpruss.blogspot.com"]
+    urls_biblio = [url2, url3]
     topic = "moyen_age"
     num_articles = 40
     # num_articles = "all"
 
     # test_article(url, topic)
     # test_datasource(url, topic, num_articles)
-    # test_bibliography(url, topic, num_articles)
-    test_blog(url_blog, topic, num_articles)
+    test_bibliography(url, topic, num_articles)
+    # test_blog(url_blog, num_articles)
 
     # bibliography.
 

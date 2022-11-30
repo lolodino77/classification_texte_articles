@@ -11,12 +11,12 @@ from article import *
 class DataSource:
     """ Define an article from a blog """
 
-    def __init__(self, url, topic, num_articles):
+    def __init__(self, url, num_articles):
         """ Constructor of DataSource """
         self.url = url
-        self.topic = topic
+        self.topic = ""
+        self.path_corpus = ""
         self.filename = self.create_corpus_txt_filename()
-        self.path_corpus = "./data/input/corpus_txt/" + self.create_corpus_txt_filename() #self.filename
         self.num_articles = num_articles
         if(type(self.num_articles) != str):
             self.num_articles = int(self.num_articles)
@@ -32,13 +32,11 @@ class DataSource:
         str_url = str(self.url)
         # str_articles_list = str(self.articles_list)
         str_filename = str(self.filename)
-        str_path_corpus = str(self.path_corpus)
         str_path_articles_urls = str(self.path_articles_urls)
         str_num_articles = str(self.num_articles)
         str_all_articles = str(self.all_articles)
         desc = "url = "+ str_url 
         desc = desc + "\nfilename = " + str_filename
-        desc = desc + "\npath_corpus = " + str_path_corpus
         desc = desc + "\npath_articles_urls = " + str_path_articles_urls
         desc += "\nnum_articles = " + str_num_articles
         desc += "\nall_articles = " + str_all_articles

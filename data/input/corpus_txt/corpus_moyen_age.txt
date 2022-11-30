@@ -1,837 +1,458 @@
-Smilansky, Saul. " Reversing Pascal's Wager: Scepticism About Religious Belief
-and Its Value ", Religious Studies (forthcomin...
+Bref, la théologie réformée n’est pas seulement la théologie catholique
+réformée ou la théologie confessionnelle réformée, mais elle est aussi la
+théologie scolastique réformée. Même ceux qui, dans la tradition réformée
+d’aujourd’hui, souhaitent éviter l’étiquette « scolastique » ne savent
+probablement pas à quel point ils sont redevables à la scolastique et aussi à
+quel point (peut-être involontairement) leur théologie reste scolastique.
 
-Pascal famously argued that practical reasoning should lead people to try to
-form within themselves a commitment to religious practice and obedience, based
-upon a belief in God. I propose to take a less ambitious argument, which I
-call the Sensible Argument, and use it to present The Puzzle. I argue that
-there is a huge puzzle here, about the radical dissonance between the beliefs
-and practices of many of the purportedly religious. There are, I will argue,
-good reasons to doubt, concerning many (clearly not all or indeed most)
-purported religious believers, whether they are indeed believers, or at least
-whether their beliefs are strong; and religion seems to greatly increase the
-risks of deception, duplicity, and hypocrisy, as well as self-deception and
-inauthenticity. By turning towards a religious form of life, one will
-therefore be adding great morality-related risks. Arguably, if there is a God
-who deeply cares about individual moral behaviour, he would punish religious
-moral transgressors more than the secular ones. One is unlikely to be saved
-from hell (or other severe divine punishment) by becoming religious. If one is
-going to wager, it seems much more sensible to wager on the secular side.
+Qu'est-ce que la Scolastique Protestante ? (Mark Jones) – Partie 1
 
-> Abstract: A prominent Thomistic cosmological argument maintains that an
-> infinite regress of causes, which exhibits a certain pattern of ontological
-> dependence among its members, would be vicious and so must terminate in a
-> first member. Interestingly, Jonathan Schaffer offers a similar argument in
-> the contemporary grounding literature for the view called metaphysical
-> foundationalism. I consider the striking similarities between both arguments
-> and conclude that both are unsuccessful for the same reason. I argue this
-> negative result gives us indirect reason to consider metaphysical infinitism
-> as a genuine possibility, the view that chains of ontological dependence or
-> ground can descend indefinitely.
->
->  
->  
->
+Maxime est étudiant en médecine à Lille. Fondateur du blog Parlafoi.fr, il se
+passionne pour la théologie systématique, l'histoire du dogme et la
+philosophie réaliste. Vous entendrez souvent dans sa bouche "Thomas d'Aquin",
+"Jean Calvin" et "Vive la scolastique". Il affirme être marié à la meilleure
+épouse du monde. Ils vivent ensemble sur Lille avec leurs deux enfants et sont
+moniteurs de la méthode Billings.
 
-Upshot: Cogent modal ontological arguments (at least ones friendly to
-classical theism) seem to have no suitable home in the metaphysics and
-epistemology of modality.
+Des recherches récentes suggèrent cependant que la « scolastique »,
+lorsqu’elle est bien définie, avec toutes ses nuances historiques et
+contextuelles, faisait partie intégrante des époques de la Réforme et de
+l’après-Réforme jusqu’au milieu du XVIIIe siècle, où elle a commencé à perdre
+sa place en théologie – même en théologie réformée. Son influence et sa place
+dans la Réforme et ses suites ne peuvent pas être petites si l’on considère
+les sources de connaissance dont disposaient les Réformateurs et leurs
+héritiers.
 
-Which view is correct: the substance-first view or the property-first view?
-This question has potentially huge implications for the disagreement between
-theists and non-theists.[1] This is because, prima facie, _orthodox monotheism
-entails the substance-first view._ And this in turn is because, prima facie,
-_God_ is a substance, and is prior to all else that exists. Therefore, if
-there are reasons to prefer the property-first view, then there are thereby
-reasons to prefer non-theism to theism.
+Cet article est traduit dans le cadre de notre partenariat avec The Calvinist
+International. Ce n’est que la partie 1, d’autres articles sont donc à suivre
+!
 
-[1] There are other views that are equally powerful threats to theism, such as
-a stuff-first view, according to which stuffs are more fundamental than
-substances. Another is Jason Turner's facts-first ontology (as well as related
-events-first ontologies). However, I leave these sort of threats to the side
-for the present post.
+Votre adresse e-mail ne sera pas publiée. Les champs obligatoires sont
+indiqués avec *
 
-My second worry is the one I want to briefly focus on in this post. The worry
-is that it fails to get at what is potentially a deeper distinction, and one
-that's potentially more illuminating than the distinction between physicalism
-and supernaturalism. The distinction I have in mind is at the level of _basic
-ontological categories_ and _categorical priority_ \-- in particular, the
-level of the ontological priority of the categories of _substance_ and
-_property_. According to a standard and historically prominent view,
-substances are more fundamental than properties (or at least: substances are
-no less fundamental than properties). Accordingly, let's call this sort of
-view _a substance-first ontology_.
+Scholasticus (signifiant « érudit » dans la culture romaine), signifiait une «
+personne instruite » dans l’église médiévale. Mais le mot « scolastique » et
+ses apparentés prennent toutes sortes de sens à l’époque de la Réforme.
+Habituellement, le contexte aide à discerner l’intention de l’auteur lorsqu’il
+fait référence à un « scolastique ».
 
-> Physicalism is the view that the physical is fundamental -- everything is
-> either physical or dependent upon/grounded in the physical. By contrast
-> supernaturalism/mentalism is the view that one or more
-> spiritual/mental/supernatural beings are more fundamental than the physical
-> -- everything is either mental or dependent upon the mental.
+Souvent, les gens ont cru que le mot » scolastique » se référait au contenu, à
+certaines croyances, mais ce n’est pas du tout le cas. En général, la
+scolastique se réfère à une méthode particulière. Il y a peut-être un peu de
+vérité dans le fait que la méthode a un impact sur le contenu, mais
+généralement la méthode n’affecte pas le contenu, sinon les catholiques
+romains, les luthériens et les théologiens réformés arriveraient tous aux
+mêmes conclusions puisqu’ils ont essentiellement adopté la même méthode dans
+leur théologie au milieu du 16e siècle et au 17e.
 
-The evidence for fine-tuning confirms both demiurgism and panentheism over
-theism, and in this way is good evidence against theism. This is because the
-intuitive and empirical evidence against creation _ex nihilo_ creates a strong
-drag on theism’s prior probability not suffered by demiurgism and panentheism,
-and so they lap the former in terms of posterior probability. _A fortiori_ ,
-the posterior probability of the inclusive disjunction of demiurgism and
-panentheism is considerably higher than that of theism given the evidence of
-fine-tuning.
+Comme le note Willem van Asselt, « presque tous les théologiens réformés
+dignes de mention ont écrit une réfutation de Bellarmin, dont le _Bellarmin
+Rendu impuissant_ de William Ames (Bellarminus enervates, 1626) est devenu le
+plus célèbre. L’attaque réalisée par Bellarmin était de nature scolastique, et
+pour le contrer, lui et d’autres théologiens catholiques romains polémiques,
+il était nécessaire d’utiliser le même appareil : la scolastique. »[3] Bien
+sûr, les réformés auraient pu adopter un biblicisme plutôt simpliste – criant,
+« nous laissons la Bible parler d’elle-même » – mais cela n’aurait convaincu
+personne, même si peut-être les Sociniens auraient été impressionnés d’avoir
+de tels alliés quant à la méthode !
 
-> The Christian and Islamic doctrine of the VIRGIN BIRTH claim God asexually
-> impregnated the Virgin Mary with Jesus, Mary's impregnation was fully
-> consensual (VIRGIN CONSENT), and God never acts immorally (DIVINE GOODNESS).
-> First, I show that God's actions and Mary's background beliefs undermine her
-> consent by virtue of coercive incentives, Mary's comparative powerlessness,
-> and the generation of moral conflicts. Second, I show that God's non-
-> disclosure of certain reasonably relevant facts undermines Mary's informed
-> consent. Third, I show that a recent attempt by Jack Mulder to rescue VIRGIN
-> CONSENT fails. As DIVINE GOODNESS and VIRGIN CONSENT are more central to
-> orthodoxy, Christians and Muslims have powerful reason to reject VIRGIN
-> BIRTH.
+[1] L.M. de Rijk, _Middeleeuwse wijsbegeerte: Traditie en vernieuwing_ , 2nd
+ed. (Assen: Van Corcum, 1988), 111. Traduction d’une citation en Néerlandais
+par Dolfe Te Velde.  
+[2] Willem J. van Asselt, _Introduction to Reformed Scholasticism_ (Grand
+Rapids: RHB, 2011), 99.  
+[3] _Ibid.,_ 109.  
 
-Why does anything exist? Because qualities exist and they're necessary beings
-that exist _a se_.
+M. de Rijk définit la scolastique comme une « méthode appliquée en théologie
+et en philosophie caractérisée par l’utilisation (pour l’enseignement et la
+recherche) d’un système de concepts, distinctions, définitions, analyse
+propositionnelle, techniques de raisonnement et de contestation ».[1] À un
+niveau plus restreint, la scolastique inclut les « concepts, les distinctions
+et les méthodes de raisonnement utilisés pour traiter un sujet particulier
+».[2] Ainsi, en utilisant les concepts aristotéliciens (hérités d’Aristote),
+les scolastiques ont utilisé des distinctions telles que la puissance et
+l’acte. Ils ont également fait usage de la logique, y compris l’utilisation
+célèbre du syllogisme. Les termes de l’ère patristique et du Moyen Âge ont été
+transmis aux réformateurs et aux scolastiques protestants. Ces termes étaient
+« monnaie courante » dans les discussions et les débats théologiques, mais
+certainement pas gravés dans la pierre. Puisque la dynamique du débat
+théologique a changé au cours du XVIe siècle, la théologie scolastique est
+devenue plus dominante à la suite de phénomènes comme la Contre-Réforme menée
+par le cardinal catholique romain Robert Bellarmin (1542-1621) et l’influence
+croissante du Socinianisme et autres erreurs ou hérésies.
 
-> According to mereological bundle theory, the world (here, I need not confine
-> myself to the physical world, so by ‘‘world’’ I mean the whole world, not
-> just the cosmos) is a vast mixture of properties, some with a single
-> location (whether in configuration space, or in spacetime, or in something
-> else), some with many locations, some located everywhere, and perhaps even
-> some without any location at all (Locations are defined by n-adic
-> properties. For simplicity, take the fundamental space to be relational, and
-> define up ‘‘points’’ in the space using these relations and properties). The
-> world is constructed from arrangements of properties and relations that are
-> fused together to make things of all sorts: concrete objects, abstract
-> objects, events, states of affairs, facts, fields, regions, and anything
-> else there is. So, according to the mereological bundle theorist, fields,
-> particles, entangled systems of particles, spaces, molecules, cells, bodies,
-> persons and societies are all constructed, most fundamentally, from fusions
-> of properties and relations. (Paul, "Building the World From Its Fundamental
-> Constituents", p. 242).
+Les attaques catholiques romaines contre les revendications des réformateurs
+pleuvant sur les Églises protestantes, les réponses des réformés devaient être
+bien faites. En conséquence, les scolastiques réformés ont prouvé dans leurs
+écrits qu’ils avaient maîtrisé les Pères de l’Église primitive, qu’ils avaient
+une connaissance encyclopédique de la théologie médiévale et qu’ils pouvaient
+exégéter les Écritures selon des principes sains d’interprétation. Calvin
+avait certainement une mémoire formidable, mais même lui pouvait de temps en
+temps mal citer les Pères. Les idées des réformateurs n’ont été ni rejetées ni
+remplacées d’aucune façon, mais les scolastiques réformés ont développé leur
+théologie avec plus de précision en adoptant le vocabulaire philosophique de
+leurs prédécesseurs depuis l’Église primitive. Les confessions de cette époque
+sont des confessions catholiques, mais distinctement réformées dans la mesure
+où elles révèlent le fossé qui ne cesse de se creuser non seulement entre
+l’Église de Rome, mais aussi entre les réformés et les luthériens. C’était
+quelque chose que Calvin avait passé du temps à essayer d’éviter, mais
+finalement l’impasse n’allait jamais être surmontée entre ces deux grands
+groupes protestants.
 
-Why does _this_ universe exist? By NMPSR, absent a good reason to think
-otherwise, we should assume _all_ possible universe quality fusions exist
-inevitably and necessarily within the world-whole of qualities, and this is
-one of them.[4]
+L’Orthodoxie tardive a vu l’effilochage d’une grande partie du bon travail
+accompli par les théologiens réformés. Pourquoi cela ? En partie parce que la
+méthode scolastique, dont nous parlerons plus en détail plus loin, a été
+laissée de côté, mais aussi un certain nombre de points de vue philosophiques
+(cartésianisme, pensée leibnizienne, Wolffianisme et philosophie des Lumières)
+se sont liés ensemble à la pensée réformée. Les académies ont également vu un
+changement dans leur approche de la théologie. Les Lumières amenèrent avec
+elles des courants théologiques et philosophiques changeants, et les bastions
+de l’orthodoxie réformée devinrent rapidement des bastions de l’hérésie.  
 
-I think a naturalist who adopts Paul's one-category ontology can exploit her
-account to explain the existence and fine-tuning of our universe. To start,
-consider that if we assume with Paul that the world-whole is just the sum of
-all qualities, and they can combine in various ways in accordance with the
-constraints of their intrinsic natures, _what prevents them from combining in
-every possible such way_? It would be mysterious why they fuse/bundle in some
-ways and not others if they didn't fuse/bundle in every way consistent with
-their natures. Paul's one-category ontology thus naturally generates pressure
-to accept a mereology-focused variant of Spinoza's negative PSR:
+La scolastique réformée se réfère à la période de l’orthodoxie des années
+1560-1750. Au cours de cette période, nous avons : 1) Orthodoxie primitive
+(vers 1560-1620) ; 2) Haute orthodoxie (vers 1620-1700) ; et 3) Orthodoxie
+tardive (vers 1700-1750). Ces dates sont, bien sûr, donnée à titre indicatif,
+comme si nous passions brutalement d’une période à l’autre. Mais elles nous
+donnent des époques qui reflètent le climat changeant du discours théologique
+dû aux événements incroyables précipités par la Réforme.
 
-> ...consider the wave-function realist who takes the world-whole to be a
-> wavefunction. On the GRW theory of the world, the world is a universal wave
-> function that evolves in accordance with the dynamical laws. Understood in
-> terms of mereological bundle theory, the wavefunction is the fusion of
-> amplitude and phase properties (along with any other properties of the
-> system) with structuring properties or relations, including the structuring
-> relations described by Schrodinger’s equation and by the collapse postulate.
-> A variant of this view can fit the Everettian approach, and one can also fit
-> David Albert’s (1996) treatment of Bohmian mechanics by adding a world-
-> particle that is simply a fusion of properties to the plurality of things. (
-> _Ibid_., p. 254).
-
-[1] On Paul's account, the relation of mereological bundling here is not a
-fundamentally spatiotemporal one of spatiotemporal parts composing a
-spatiotemporal whole. This is because contemporary physics seems to have shown
-that spacetime isn't fundamental (think, for example, of wave function realism
-with respect to quantum mechanics, theories of quantum gravity that take
-spacetime to be emergent, etc.).
-
-[3] As Paul points out, her one-category ontology is compatible with a parts-
-to-whole mosaic, as well as a holistic whole-to-parts picture. She prefers the
-latter because it's a better fit with with quantum holism/entanglement
-phenomena.
-
-Given NMPSR, then, we should assume that all possible bundles/fusions exist in
-the world-whole. If so, then we can explain everything the theist wants
-explained:
-
-Paul's one category ontology provides a nice an ontological framework for
-contemporary physics:
-
-> On my view, matter, concrete objects, abstract objects, and perhaps even
-> spacetime are constructed from mereological fusions of qualities, so the
-> world is simply a vast mixture of qualities, including polyadic properties
-> (i.e., relations). This means that everything there is, including concrete
-> objects like persons or stars, is a quality, a qualitative fusion, or a
-> portion of the extended qualitative fusion that is the world-whole. I call
-> my view _mereological bundle theory_. (Paul, "A One Category Ontology", p.
-> 2)
-
-[2] Question: How does a quality become spatiotemporally localized on Paul's
-view? Answer: By bundling with spatiotemporal properties/relations: "Objects
-may have their locations in virtue of being fused with whatever location
-properties and relations there are that define the actual space of the world,
-and many objects will have a physical structure in virtue of having location
-properties and relations as parts of their fusions, or in virtue of being part
-of a larger fusion which has location properties and relations as parts. The
-character of the space might not be what we take the character of ordinary
-spacetime to be, but the structure of the space is generated by fusing
-qualitative properties with relevant properties and relations that define the
-space as determined by modern physics. Hence, the view is consistent with (and
-explicitly accommodating of) various approaches in modern physics: it is
-friendly to structuralism, and is perfectly consistent with realist
-interpretations of the ontology of quantum mechanics, for example, with
-realism about the wavefunction." (Paul, Building the World From Its
-Fundamental Constituents", p. 242).
-
-Why does a universe exist? Because (as we know from our observations of the
-actual world) there is a compossible distribution of qualities in some
-"region" of the world-whole that comprises a universe. So by that fact and
-NMPSR, there is a presumption to think that it is _inevitable_ that there is a
-_fusion/bundle_ of those properties -- i.e., a mereological fusion of
-qualities that make up a configuration space, along with a fusion of phase and
-amplitude properties, that compose a universal wavefunction. From non-
-spatiotemporal property configurations like this, you necessarily get
-spatiotemporal universes that logically supervene upon them.[3]
-
-> _Negative Mereological PSR (NMPSR)_ : a given plurality of qualities will
-> fuse/bundle unless there is a sufficient reason for why they do not.
-
-Paul's one category ontology provides a nice ontological framework for
-contemporary physics:
-
-> On my view, matter, concrete objects, abstract objects, and perhaps even
-> spacetime are constructed from mereological fusions of qualities, so the
-> world is simply a vast mixture of qualities, including polyadic properties
-> (i.e., relations). This means that everything there is, including concrete
-> objects like persons or stars, is a quality, a qualitative fusion, or a
-> portion of the extended qualitative fusion that is the world-whole. I call
-> my view mereological bundle theory. (Paul, "A One Category Ontology", p. 2)
-
-Paul's hypothesis of a one-category ontology is much more parsimonious than
-theism's, which posits irreducible substances -- and irreducibly different
-_kinds_ of substances -- in addition to qualities. It also also has wider
-scope than theism, as it can explain God (if there is a god) in terms of a
-fusion of qualities. It can also explain the existence of God in terms of a
-derivative being that supervenes upon the modal space of qualities.
-Unfortunately, the latter two claims are incompatible with classical theism,
-as they violate the doctrine of divine simplicity and both conjuncts of the
-aseity-sovereignty doctrine (i.e., the doctrine that (i) God is an absolutely
-independent being, dependent upon/derivative of nothing and (ii) everything
-distinct from God depends upon her for their existence). All else being equal,
-then, a one-category ontology of qualities is a more plausible theory of
-ultimate reality than theism.
-
-> ...consider the wave-function realist who takes the world-whole to be a
-> wavefunction. On the GRW theory of the world, the world is a universal wave
-> function that evolves in accordance with the dynamical laws. Understood in
-> terms of mereological bundle theory, the wavefunction is the fusion of
-> amplitude and phase properties (along with any other properties of the
-> system) with structuring properties or relations, including the structuring
-> relations described by Schrodinger’s equation and by the collapse postulate.
-> A variant of this view can fit the Everettian approach, and one can also fit
-> David Albert’s (1996) treatment of Bohmian mechanics by adding a world-
-> particle that is simply a fusion of properties to the plurality of things.
-> (Ibid., p. 254).
-
-Abstract: Christian orthodoxy essentially involves the acceptance of the New
-Testament as authoritative in matters of faith and conduct. However, the New
-Testament instructs slaves and women to accept a subordinate status that
-denies their equality with other human beings. To accept such a status is to
-have the vice of servility, which involves denying the equality of all human
-beings. Therefore the New Testament asserts that slaves and women should deny
-their equality with other human beings. This is false. Moreover, these same
-passages in the New Testament implicitly assert that slavery and the
-subordination of women are morally permissible. This is also false. Therefore
-orthodox Christianity is false.
-
-There are infinitely many decohering branches of the universal wave function,
-such that infinitely many branches contain gratuitous evil.
-
-Here's a summary of the paper from the editors' introduction to the book:
-
-> John Teehan looks in more detail at the problem of evil, a classic challenge
-> to theism in philosophy of religion. This problem has received a lot of
-> attention in mainstream philosophy of religion, and according to Teehan,
-> cognitive science can further strengthen it. He shows this by considering
-> the features of our evolved morality. Traditionally, the fact that humans
-> have some unlearned (probably innate) sense of what is right and wrong has
-> been regarded as evidence for theism; see, for example, formulations of the
-> moral argument by Swinburne (2004). A crucial and often-overlooked feature
-> of evolved morality is that it is an in-group adaptation. As a result,
-> humans are more morally sensitive to those they consider in-group members,
-> and conversely, they can be indifferent or cruel to those they consider part
-> of the out-group. Teehan surveys empirical evidence for this, for instance,
-> that people are less empathetic toward people who experience pain if they
-> believe them to be out-group members (e.g., of different ethnic groups).
-> This suggests that some moral evil, such as prejudice, between-group
-> violence, and dehumanization, results from a properly working system of
-> evolved moral cognition. This presents a challenge to theism. Teehan
-> proceeds to consider some theodicies and argues that none is successful.
-
-Abstract: The challenge from religious diversity is widely thought to be one
-of the most important challenges facing religious belief. Despite this
-consensus, however, many epistemologists think that standard versions of the
-challenge fail because they threaten to implicate many seemingly reasonable
-yet highly controversial non-religious beliefs. In light of this we develop an
-alternative, less discussed, diversity challenge that does not generalize.
-This challenge concerns why so much religious diversity exists in the first
-place given common religious, and in particular theistic, views. Although
-there are some interesting scientific explanations of such diversity,
-satisfying theistic explanations of its existence are still required.
-
-Abstract: Problem one: why, if God designed the human mind, did it take so
-long for humans to develop theistic concepts and beliefs? Problem two: why
-would God use evolution to design the living world when the discovery of
-evolution would predictably contribute to so much nonbelief in God? Darwin was
-aware of such questions but failed to see their evidential significance for
-theism. This paper explores this significance. Problem one introduces
-something I call natural nonbelief, which is significant because it parallels
-and corroborates well-known worries about natural evil. Problems one and two,
-especially when combined, support naturalism over theism, intensify the
-problem of divine hiddenness, challenge Alvin Plantinga’s views about the
-naturalness of theism, and advance the discussion about whether the conflict
-between science and religion is genuine or superficial
-
-Abstract: An evolutionary by-product explanation entails that religious belief
-is an unintended consequence of a cognitive process selected for by evolution.
-In this paper, I argue that if a by-product explanation is true, then
-religious belief is unwarranted (even if God exists). In particular, I argue
-that if the cause of religious belief is the god-faculty (HADD + ToM + eToM +
-MCI), then it is likely unreliable; thus, religious belief is unwarranted.
-Plantinga argues that de jure criticisms are not independent of de facto
-criticisms: without knowing whether or not God exists, one can’t say that
-belief in God is unwarranted, since if God exists, it is possible that God has
-planned that this mechanism would lead to belief in Him. Against Plantinga, I
-show that in order for de jure criticisms to have force, it is not necessary
-to know that God does not exist. Instead, one only needs to doubt His
-existence. And if by-product explanations turn out to be supported by the
-evidence, this fact alone gives us reason to doubt God’s existence. Thus, if
-the by-product explanation is true, belief in God is not warranted; if we know
-this, then we have reason to doubt theism.
-
-Conclusion: "...the paradoxicality of divine omniscience, by the lights of
-Grim-style considerations, resides in a heretofore undertheorized feature of
-God’s knowledge: God’s status as a being of perfect rationality from a logical
-point of view."
-
-Abstract: The divine purpose theory —according to which that human life is
-meaningful to the extent that it fulfills some purpose or plan to which God
-has directed us—encounters well-known Euthyphro problems. Some theists attempt
-to avoid these problems by appealing to God’s essential goodness, à la the
-modified divine command theory of Adams and Alston. However, recent criticisms
-of the modified DCT show its conception of God’s goodness to be incoherent;
-and these criticisms can be shown to present an analogous set of problems for
-the DPT. Further, the argument can be extended to any account of
-meaningfulness according to which the value of what humans do can only be
-conferred by God. Thus, it would seem that there is no tenable version of the
-view that meaningfulness is conferred on human life by some act or attitude of
-God’s.
-
-Similarly for Stage Two cosmological arguments. A generic example of a Stage
-Two cosmological argument runs (very roughly) as follows: The necessary being
-at the foundation of reality must be an absolutely unlimited being. For
-(assuming we can show that a necessary being doesn't have essential internal
-limits that are knowable, if at all, a posteriori) the only way that a being
-could have limits is if there were some other entity that limited it, and yet
-we are talking about the foundation of reality, where (assuming we could show
-that there is only one "plank" in reality's foundation) there is nothing
-external around to limit it. So it must have unlimited attributes, where these
-include the personal attributes mentioned above (Why not also unlimited _non-
-personal_ attributes, such as infinite spatial extension? Spinoza must be
-rolling in his grave.). But as with Plantinga's modal ontological argument,
-what is left unstated yet assumed is that personal attributes are or can be
-_basic_ or _foundational_ , _ground-floor properties_ , and not _derivative_ ,
-_non-foundational properties_. But as we've seen, such an assumption is
-contrary to all experience (or at least our best theories), in which case
-there are non-trivial worries that a personal foundation of at least _that_
-sort may well be impossible. So it's completely question-begging against at
-least certain standard pictures of naturalism.
-
-A standard objection to such arguments is that it's not at all clear that such
-properties are individually possible and/or collectively compossible. But I
-want to raise a deeper problem that, so far as I've been able to tell, has
-never been put directly. The problem is that such arguments not only assume
-that such properties are compossible, but also that they are instantiable as
-_basic_ or _foundational_ properties. But of course the non-theist will have
-principled worries, based on what they take to be our best theories about the
-world, that personal attributes are not properties that can be instantiated as
-basic our foundational properties -- i.e. they're not ground-floor properties,
-but rather _derivative_ properties that are grounded (at least in part) in the
-physical. They will thus have non-trivial, substantive worries that it's
-_metaphysically impossible_ for personal attributes to exist at the
-metaphysical ground floor -- at least unaccompanied by physical properties (or
-whatever the physical is ultimately composed of).
-
-What about a liberal naturalist like myself? I'm in print as having Russellian
-monist -- indeed, priority cosmopsychist -- sympathies. But even on _that_
-view, physical characteristics are _also_ fundamental, and _essentially_ so.
-So we can't get support for the theistic picture from there, either.
-
-It's common to see arguments in philosophy of religion that aim to establish
-the existence of a perfect being, where the perfections are taken to be
-maximal expressions of a special subset of personal qualities (e.g.,
-omnipotence, omniscience, and moral perfection). Standard arguments include
-ontological arguments and so-called "Stage Two" reasoning in cosmological
-arguments.
-
-Sixth, the evidence against theism appears to be _systemic,_ comprising __
-facts about: the nature of _abstracta_ and _concreta_ ; the nature, origin,
-and general structure of the universe; the nature, origin, and history of
-life; the nature of consciousness; the nature, origin, biology, and psychology
-of human beings; the nature, origins, and dynamics of religions and religious
-experience; the existence and nature of morality; the meaning of life; the
-aesthetics of the universe; epistemic phenomena; the concept of God and the
-properties such a god would have; divine hiddenness; evil; etc. In short,
-virtually every major aspect of reality and our knowledge of it seems to point
-_away_ from theism and towards some form of naturalism. Prima facie, then,
-naturalism appears to be a comprehensive theory of reality that best embodies
-the theoretical virtues (e.g., simplicity, scope, conservatism, etc.). To
-overcome the case for atheism, therefore, theists have much more work to do
-besides attacking this or that argument against theism. In particular, theists
-need to generate a rival explanation of the data above that embodies the
-theoretical virtues better than naturalism. It's not at all clear that they
-can succeed.
-
-Some things worthy of note. First, there are very many more arguments for
-atheism than commonly supposed. Second, while categorization is inevitably
-somewhat arbitrary, there are clearly very many more _types_ of atheistic
-arguments than commonly supposed -- on my reckoning, 20 other types of
-atheistic argument besides the problem of evil. Third, about 120 atheistic
-arguments (roughly 75%) have nothing to do with the problem of evil --
-problems of evil are in the minority. Fourth, the list doesn't include
-arguments specifically against orthodox Christianity. If it did, the list
-would be considerably longer. Fifth, the case for atheism doesn't at all
-depend on the success of the problem of evil.
-
-Finally, it needs to be said that most people who care about arguments for and
-against theism are adherents of some form of orthodox religious monotheism or
-other. Among such groups, it's typically thought that the case for their faith
-must be persuasive, such that no (or almost no) mature, rational, properly
-functioning human being who appraised the relevant evidence could non-culpably
-fail to believe after assessing it (on the grounds that (i) God holds people
-morally responsible for their belief, and (ii) God would be less than
-perfectly good if he held people morally responsible for their belief if the
-evidence were less than persuasive). Thus, consider some rational, mature,
-properly functioning adult agnostic, Joe _,_ who has strongly grasped,
-internalized, and carefully appraised the above arguments, as well as all the
-arguments for theism on the other side of the ledger. Suppose further that
-after long and careful reflection, Joe finds the grounds for atheism to be
-either stronger than those for theism, or at best, counterbalanced with them.
-Finally, suppose that Joe thereby either disbelieves or suspends judgement
-about theism. According to the group of theists specified just above, there
-can be no one like Joe: The evidence for orthodox monotheism is _so_ good that
-for _any_ person _S,_ if _S_ is a rational, mature, properly functioning
-agent, and __ (after careful reflection and deliberation) _S_ fails to find
-the evidence to support theism over atheism, or if _S_ merely finds the
-evidence to be _counterbalanced_ \-- or indeed, if _S_ finds themself _unable
-to tell,_ with any confidence, which way the evidence points -- then _S_ is
-_morally culpable_ for failing to believe in the relevant version of orthodox
-monotheism. In light of the case for atheism expressed in the arguments listed
-above, this looks to be implausible, if not ridiculous.
-
-4\. _Defeasible PMC_ : Normally, individuals and stuffs with originating or
-sustaining efficient causes have originating or sustaining material causes,
-respectively.
-
-6\. _Bayesian PMC_ : Theories that conform to PMC have a much higher prior
-probability than those that fail to conform to PMC.
-
-3\. _Standard PMC_ : All individuals and stuffs that have an originating or
-sustaining efficient cause have an originating or sustaining material cause,
-respectively.
-
-2\. _Strong De Re PMC_ : All individuals and stuffs (in the _actual_ world)
-are such that, necessarily, _they_ have an originating or sustaining material
-cause whenever they have an originating or sustaining efficient cause,
-respectively.
-
-There are at least seven versions of the principle of material causality:
-
-1\. _Strong De Dicto PMC_ : Necessarily, all individuals and stuffs that have
-an originating or sustaining efficient cause have an originating or sustaining
-material cause, respectively.
-
-From each principle, one can generate a defensible version of the problem of
-creation _ex nihilo_. There are therefore at least seven defensible versions
-of the problem of creation _ex nihilo_ for theism.  
   
+[1] Willem J. van Asselt, _Introduction to Reformed Scholasticism_ (Grand
+Rapids: RHB, 2011), 133.
 
-5\. _IBE PMC_ : Theories that conform to PMC are more theoretically virtuous
-than those that fail to conform to PMC.
+La Haute orthodoxie commence à l’époque du Synode de Dort (1618-19). Dort est
+le premier et le seul synode véritablement international. Ce document
+confessionnel met également en lumière une autre lacune du protestantisme :
+les différences émergentes entre les Remonstrants (« Arminiens ») et les
+théologiens orthodoxes réformés, connus sous le nom de contre-Remonstrants
+dans ce contexte. Après Dort, au lieu d’un flot continu de documents
+confessionnels – à noter cependant le contexte britannique impliquant les
+théologiens de Westminster dans les années 1640 – nous voyons un nombre
+croissant d’ouvrages dogmatiques complets, « dans lesquels les résultats des
+exégèses, formulations dogmatiques, éléments polémiques et expositions des
+implications pratiques de la doctrine étaient combinés dans un tout imposant.
+La scolastique de la haute orthodoxie se caractérisait ainsi par une précision
+croissante dans son appareil théologique. »[1]
 
-7\. _Weak PMC_ : Possibly, all individuals and stuffs that have an originating
-or sustaining efficient cause have an originating or sustaining material
-cause, respectively.
+Non seulement les universités, mais aussi les académies réformées, liées aux
+Eglises, étaient des viviers pour les scolastiques réformés. Les étudiants ont
+souvent voyagé pour trouver les meilleurs professeurs dans ces académies.
+Peut-être l’académie la plus célèbre était à Genève où Théodore De Bèze
+enseignait. Caspar Olevianus, Franciscus Junius et Jacob Arminius ont tous
+fréquenté l’académie de Genève et ont reçu une éducation scolastique réformée
+approfondie. Ces deux derniers ont fini à l’Université de Leyde, avec Arminius
+satisfaisant ses examinateurs réformés sur des sujets comme le pactum salutis.
+Au moment de la mort de Calvin, plus de trois cents étudiants étaient inscrits
+à l’académie de Genève, dont quatre-vingt pour cent venaient de l’extérieur de
+Genève.[4] Des académies réformées ont été créées en Allemagne, en Angleterre,
+en Écosse, en France et aux Pays-Bas. Puisque presque tous les grands travaux
+théologiques de l’époque étaient écrits en latin, nous ignorons aujourd’hui en
+grande partie la somme impressionnante de connaissance qui est sortie de ces
+académies (note : une bonne raison de se mettre au latin 😉 !).
 
-> S1. The deity is not a natural object of any human passion.
+Par le passé, les universitaires ont essayé de faire de la scolastique et de
+l’humanisme des ennemis, et non des amis : Calvin l’humaniste contre De Bèze
+le scolastique. Cependant, l’humanisme chrétien n’est pas du tout un ennemi
+des méthodes scolastique médiévales. Ils ont coexisté pacifiquement dans de
+nombreuses universités à l’époque de la Réforme. En effet, la capacité
+d’utiliser la langue (le latin et le grec classique) ne peut qu’aider les
+scolastiques réformés, dont certains se réunissent (autour d’un café !) pour
+discuter de théologie en grec classique plutôt que dans leur langue maternelle
+(par exemple, le néerlandais) ou en latin (leur seconde langue).
 
-> S3. If a being is not a natural object of the moral sentiments, then it
-> cannot have moral attributes (either virtues or vices).
+La théologie réformée possédait beaucoup de centres d’éducation qui étaient
+chargés de former les théologiens. Comme le fait remarquer Muller, « le
+développement de l’orthodoxie scolastique réformée se trouve en grande partie
+dans la culture intellectuelle des académies et universités protestantes qui
+prospéraient alors ».[1] Dans ce contexte académique, nous trouvions un
+phénomène historique complémentaire et non pas opposé : l’humanisme. Comme
+l’explique Dolf Te Velde, « les mouvements apparemment opposés, intitulés «
+humanisme » et « scolastique », ont puisé dans les mêmes ressources et se sont
+heurtés aux mêmes questions méthodologiques et substantielles, leur donnant un
+terrain d’entente ».[2]
 
-> Hume has two distinct lines of argument for strong moral atheism. One
-> appeals to his account of the natural ambit of our human passions along with
-> his sentimentalist metaphysics of morals in order to conclude that the first
-> cause or designer is beyond the projected, response- dependent world of
-> moral properties. According to this argument from sentimentalism our natural
-> feelings of approval and disapproval range only so far as the outer frontier
-> of sense and imagination. The projected properties of virtue and vice are
-> thus confined to the immanent world, and cannot characterize any
-> transcendental order beyond this permanent horizon (see Chapters 3 and 4).
-> (p. 209)
+L’humanisme qui a influencé les réformateurs, comme Calvin, était l’humanisme
+nord-européen. Selon van Asselt, « l’humanisme de l’Europe du Nord est d’abord
+allé de pair avec la Réforme primitive et, en prêtant attention aux écrivains
+de l’antiquité classique, a tenté d’établir un lien entre l’étude des
+classiques et l’étude de la Bible ».[3]
 
-> Hume’s second argument also turns on facts about sentimental psychology,
-> though this time the emphasis is on the deity’s own sentiments and passions
-> (if indeed it has any). This argument from motivation appeals to Hume’s
-> account of the passions as the engines of action along with a form of
-> probabilistic reasoning about the likely character of any first cause or
-> ultimate organizing principle responsible for the ordered universe.
-> According to Hume, even though we know nothing substantive about the
-> distinctive intrinsic character of the original cause of all, we can judge
-> it highly unlikely that this being or principle has anything like our own
-> sentimental psychology. But if the deity lacks some sort of approximately
-> anthropomorphic sentimental psychology, it will not be moved by moral
-> concerns: weak moral atheism follows. Moreover, without an approximately
-> human-like system of passions, the deity’s behavior will be unintelligible
-> in human terms—and for Hume this is sufficient to place this being or
-> principle beyond the sphere of moral assessable beings: strong moral atheism
-> also follows (see Chapter 5). ( _Ibid_.)
+[1] _PRRD_ , 1:34.  
+[2] “Reformed Theology of Scholasticism” in … 223.  
+[3] _Introduction to Reformed Scholasticism_ , 76.  
+[4] I _bid_., 112 .
 
-Holden states the argument from sentimentalism a bit more carefully as
-follows:
+Si le terme « scolastique » a plusieurs sens, « humanisme » n’a pas non plus
+de définition nette. Le lieu et l’époque déterminent grandement le type d'
+»humanisme » qui a émergé dans certaines parties de l’Europe. Le terme «
+humaniste » est apparu au XVe siècle, décrivant celui qui pratiquait les
+sciences humaines (umanista) (note : à ne pas confondre, donc, avec ce que
+nous appelons aujourd’hui humanisme). Une telle personne étudiait la
+grammaire, la rhétorique, la poésie, l’histoire et l’éthique. La formation
+humaniste comprenait l’étude rigoureuse du latin et souvent du grec classique.
+Le latin est la langue des éduqués, non pas du « barbare ». La connaissance du
+latin ouvre tout un monde de théologie que la plupart des pasteurs réformés
+d’aujourd’hui ne connaissent pas. La facilité avec laquelle certains diplômes
+sont décernés aujourd’hui serait une obscénité au XVIIe siècle.
 
-> (M1) In order to be morally assessable, a being must have a sentimental
-> psychology sufficiently similar to that of human beings.
+Au fur et à mesure que la théologie réformée se développait, une attention
+croissante était accordée à la méthode. Pour faire de la théologie avec
+clarté, une certaine méthodologie a été utilisée pour donner de la cohérence
+au système réformé. Naturellement, il y a un éclectisme de méthode parmi les
+théologiens réformés. Tous les théologiens réformés, dans leur quête de
+vérité, ont développé leur théologie à partir des Écritures. Mais ils
+n’hésitaient pas à accepter des éléments de la tradition philosophique
+chrétienne et non chrétienne si de tels outils philosophiques pouvaient les
+aider à mieux énoncer et défendre la vérité.
+
+La méthode des _loci_ et la méthode de la _disputatio_ intégrèrent toutes deux
+ces types de questions énumérées ci-dessus. Comme Dolf Te Velde l’indique
+clairement dans son _Introduction to Synopsis Purioris Theologiae_ (Synopsis
+d’une théologie plus pure),
+
+> « Ces genres ont en commun des caractéristiques importantes : une
+> délimitation claire du sujet étudié ; un vif intérêt pour les définitions ;
+> un traitement exhaustif des aspects pertinents au moyen d’une structure
+> thématique ; un usage fréquent des distinctions, en partie pour anticiper un
+> traitement des différents éléments du sujet, en partie pour résoudre les
+> difficultés qui sont présentes dans la définition initiale ; des
+> déclarations explicites, des preuves et arguments qui soutiennent sa
+> position, et une réfutation correspondante des contre-arguments ». [2]
+
+Quelles sont les choses qui lui sont opposées ou en contradiction avec lui
+?[1]
+
+[1] Questions tirées de Dolf Te Velde’s Introduction to _Synopsis Purioris
+Theologiae, Latin Text and English Translation, Volume 1/Disputations 1-23_
+édité par Dolf Te Velde, _et al_. (Leiden: Brill, 2014), 5.  
+[2] “Introduction,” 4.  
+
+La dernière édition des _Loci Communes_ de Melanchthon nous offre un aperçu de
+la méthodologie qui sera utilisée par les scolastiques réformés dans leurs
+vastes travaux sur l’ensemble de la théologie. L’ordre selon la méthode du
+_locus_ a été adopté par la plupart des théologiens réformés qui passaient
+souvent de l’Écriture à Dieu, à la Trinité, etc. Sous chaque _locus_ ,
+l’auteur argumentait souvent contre ses adversaires (par exemple,
+anabaptistes, catholiques romains, sociniens) afin de faire connaître la
+vérité.
+
+Outre la méthode des _loci_ , les scolastiques réformés ont également utilisé
+la _disputatio_ (note : « controverse », ou « débat public »). Mais même les
+controverses étaient souvent organisées comme les _loci_. Les étudiants
+débattaient de théologie selon un ensemble de thèses, souvent organisées par
+le professeur pour qu’un étudiant se défende contre les attaques de ses
+adversaires. Des questions de type aristotélicien sont fréquemment utilisées
+pour ordonner la _disputatio_ (la technique de la _quaestio_ ). Ce sont donc
+ces types de questions qui structuraient les différents débats théologiques :
+
+[1] Chaque théologien devrait être à l’aise avec les notions suivantes :
+
+Sinclair Ferguson fait valoir un bon point dans son livre, _The Trinitarian
+Devotion of John Owen_ (p. 47), concernant l’utilité des distinctions :
+
+Un indice de cette doctrine peut même être trouvé dans la tentation du Christ.
+Satan a tenté Jésus de transformer les pierres en pain pour prouver qu’il
+était le Fils de Dieu. Mais Jésus (qui aurait pu le faire selon sa puissance)
+ne l’a pas fait parce que les Écritures étaient sa règle de vie, et non le
+diable, ou même ce que Jésus lui-même aurait pu faire (Mt 4:3-4).
+
+Cette distinction semble avoir un fort soutien biblique. Voici un exemple de
+la puissance absolue de Dieu : « Et ne prétendez pas : ‘Nous avons Abraham
+pour père’, car je vous le dis, Dieu est capable, de ces pierres, de susciter
+des enfants d’Abraham » (Mt 3,9).
+
+Au XVIIe siècle, de nombreux théologiens réformés utilisaient la distinction
+entre le droit à la vie et la possession de la vie pour expliquer la nécessité
+des bonnes œuvres pour le salut tout en protégeant la grâce du salut par le
+Christ seul. Petrus van Mastricht utilise cette distinction de la manière
+suivante :
+
+> dans la mesure où Dieu, dont nous atteignons [les exigences] de la loi par
+> le seul mérite du Christ, ne veut pas accorder la possession de la vie
+> éternelle, à moins qu’elle ne soit précédée, au-delà de la foi, d’oeuvres
+> bonnes. Nous avons déjà reçu le droit à la vie éternelle par le mérite du
+> Christ seul. Mais Dieu ne veut pas accorder la possession de la vie
+> éternelle, à moins qu’il n’y ait, à côté de la foi, aussi de bonnes œuvres
+> qui précèdent cette possession (Heb. 12:14 ; Mt. 7:21 ; 25:34-36 ; Rom. 2:7,
+> 10).[2]
+
+La scolastique réformée a été un grand don à l’Église qui a été largement
+sous-estimé ou ignoré dans notre contexte actuel. Ceux qui veulent embrasser
+la théologie réformée ont besoin de connaître quelque chose de notre histoire
+réformée. La lecture de l’Institution de Calvin est un bon début, mais c’est
+juste un début. Même une connaissance superficielle de la scolastique, que
+cette série ne vise qu’à résumer, ne peut que nous aider à éviter de faire de
+fausses suppositions sur la scolastique réformée.
+
+Les scolastiques réformés comme Maccovius sont clairement redevables à la
+tradition thomiste. Mais ils n’ont pas non plus peur de critiquer les
+distinctions médiévales lorsqu’ils cherchent à établir une doctrine réformée.
+Parfois, comme dans le cas de Maccovius, il dira simplement d’une certaine
+distinction qu’elle est « complètement inutile ». Cette construction
+éclectique montre que les théologiens réformés doivent interagir de manière
+critique avec la tradition, même s’ils en dépendent fortement. Même Calvin
+fait l’objet de critiques dans les écrits des derniers scolastiques orthodoxes
+réformés, bien qu’il y ait souvent un ton de révérence/respect pour lui
+pendant qu’ils expliquent pourquoi et comment il avait tort ou était imprécis.
+
+Dans le domaine de la justification, il faut connaître la cause formelle, la
+cause matérielle et la cause instrumentale.[1]
+
+En termes d’expiation, un étudiant en théologie devrait non seulement
+comprendre la distinction entre efficacité et suffisance, mais il devrait
+idéalement connaître la différence entre « acceptatio » et « acceptilatio » et
+la différence entre les moyens « d’approvisionnement » (medium impetrationis)
+et les moyens d’application (medium applicationis).
+
+> _Scolastique_ est souvent utilisé comme une insulte théologique destinée à
+> introduire une mauvaise connotation. Pourtant, les gens qui l’utilisent sont
+> parfois ceux-là mêmes qui s’enflamment au quart de tour si des étrangers
+> qualifient une balle rapide de « slider » (au baseball) ou confondent un
+> eagle avec un double bogey (au golf) ou, encore, décrivent une personne
+> vivant en Caroline comme un « Yankee » ou un Scott comme « Anglais » ! Ne
+> s’agit-il pas simplement de distinctions « scolastiques » ? Poser la
+> question, c’est y répondre. Une bonne compréhension implique toujours de
+> faire des distinctions prudentes.
+
+Karl Barth a fait remarquer un jour, avec une certaine ironie, que « la peur
+de la scolastique est la marque d’un faux prophète » (Church Dogmatics
+I/1.279). En effet. Mais au moins, la crainte de la scolastique pourrait
+suggérer une certaine connaissance de la question ; tandis que l’ignorance est
+encore pire, surtout quand elle concerne une si grande partie de notre
+héritage réformé.
+
+[3] Voyez par exemple, Ian Hewitson, _Trust and Obey: Norman Shepherd and The
+Justification Controversy at Westminster Theological Seminary_ (Minneapolis:
+NextStep Resources, 2011); W. Stanford Reid, _An Evangelical Calvinist In The
+Academy Mcgill-Queen’s Studies in the History of Religion_ (Toronto: McGill-
+Queen’s University Press, November 2004).
+
+[5] Franciscus Suarez, _Disputationes Metaphysicae_ , 17.2.6. Ed. C. Berton,
+Opera Omnia Suaresi XXV. (Paris: L. Vives, 1861), 585.
+
+La prise de conscience de ces distinctions – quelque chose que l’Église
+réformée a perdu au XXe siècle – aurait pu résoudre beaucoup de problèmes qui
+ont surgi en raison de l’imprécision des formulations doctrinales sur la
+question de la justification.[3] La scolastique n’était pas le problème, mais
+elle aurait très bien pu être la solution.
+
+Dans un autre passage, le Christ réunit le pouvoir absolu de Dieu avec son
+pouvoir décrété : « Pensez-vous que je ne puisse pas faire appel à mon Père,
+et qu’il m’enverra aussitôt plus de douze légions d’anges ? Mais comment donc
+les Écritures devraient-elles s’accomplir s’il en était ainsi ? » (Matt.
+26:53-54).
+
+[6] _Scholastic Discourse: Johannes Maccovius (1588–1644) on Theological and
+Philosophical Distinctions and Rules_ (Apeldoorn: Instituut voor
+Reformatieonderzoek, 2009), 181-83.
+
+L’une des caractéristiques de la Scolastique réformée est l’utilisation de
+distinctions. Les Réformés ont hérité de cette méthode théologique du Moyen
+Âge. Les catholiques romains, les luthériens et les théologiens remonstrants
+ont également utilisé des distinctions pour présenter leur propre théologie.
+Des mots et des termes ambigus se retrouvent souvent dans le discours
+théologique, ce qui nécessite l’utilisation de distinctions pour aider à
+clarifier précisément ce que l’on veut dire.
+
+habitus et actus fidei (La distinction acte-habitus est similaire à la
+distinction acte-pouvoir. Dieu donne le pouvoir mais nous réalisons l’acte.)
+
+Il faut connaître la différence entre une « aestimatio » et une « secundum
+veritatem », car elle était au cœur du débat entre les Remonstrants et les
+Réformés sur la doctrine de la justification par la foi. Arminius a créé d’un
+concept, connu sous le nom d’acceptilatio. La foi imparfaite est acceptée (par
+l’estimation gracieuse de Dieu) comme justice. Ou, pour le dire autrement,
+l’acte humain de foi est par grâce compté comme justice évangélique, comme
+s’il était l’accomplissement complet de la loi entière. Cet acte humain
+authentique naît de la capacité de choisir (liberum arbitrium). Dieu a une «
+nouvelle loi » dans l’alliance évangélique, par laquelle la foi répond aux
+exigences de l’alliance. Sur la soi-disant « cause formelle », il y avait une
+différence importante entre les deux camps. Comme nous l’avons noté, pour les
+Arminiens, l’imputation est une aestimatio – Dieu considère notre Justice
+(c.-à-d. l’acte de foi) comme quelque chose qu’elle n’est pas (c.-à-d.,
+parfaite). Les réformés, cependant, considèrent l’imputation comme un secundum
+veritatem – Dieu considère la justice de Christ comme notre justice,
+précisément parce qu’elle l’est, par union avec Christ. Le verdict que Dieu
+rend à son Fils est précisément le même verdict qu’il rend à ceux qui
+appartiennent au Christ, mais seulement par imputation. Ce débat montre que
+les deux partis pouvaient utiliser des catégories scolastiques, mais c’est
+finalement l’exégèse qui a conduit à des positions différentes.
+
+[2] “…in quâ vitæ æternæ jus, sub prima periodo collatum, & sub secundà
+continuatum, ad possessionem etiam promovetur: hîc bonorum operum non tantum
+prasentia requiritur; sed etiam qualiscunque efficacia, quatenus saltem Deus
+possessionem vitae aeternae, cujus jus solo dudum obtinemus Christi merito,
+non vult conferre, nisi, praeter fidem, praeviis bonis operibus Heb. xii. 14.
+Matth. vii. 21. & xxv. 34–36. Rom. ii. 7, 10.” Peter van Mastricht,
+_Theoretico-practica theologia, qua, per singula capita Theologica, pars
+exegetica, dogmatica, elenchtica & practica, perpetua successione
+conjugantur_… (Amsterdam, 1724), 704–5.
+
+> 1\. Le péché est soit le péché originel, soit le péché réel.
 >
-> Therefore,
+> Le péché originel, qui jaillit d’Adam, est le péché dans lequel et avec
+> lequel nous sommes nés et qui commence au moment où nous devenons des êtres
+> humains.
 >
-> (M2) If the first cause lacks a sentimental psychology sufficiently similar
-> to that of human beings, the first cause is not morally assessable.
+> 2\. Le péché originel est soit imputé, soit inhérent.
 >
-> (M3) The first cause does, most likely, lack a sentimental psychology
-> sufficiently similar to that of human beings.
+> Imputé à nous comme si nous l’avions commis nous-mêmes.
 >
-> Therefore,
+> Imputé à nous comme si nous l’avions commis nous-mêmes.
 >
-> (M4) The first cause is, most likely, not morally assessable.
+> Le péché inhérent est une dépravation de notre nature, et donc une
+> inclination au mal.
+>
+> 3\. L’imputation est un acte moral, pas un acte physique.
+>
+> Il n’est pas nécessaire que cette personne existe au moment de l’acte, mais
+> seulement qu’elle existe un jour.
+>
+> De plus, une distinction peut être faite entre le péché commis par faiblesse
+> et le péché commis par plein désir. Seuls ceux qui sont chrétiens peuvent
+> pécher par faiblesse.
+>
+> Les vrais croyants pèchent plus sérieusement que les incroyants.
+>
+> A) Parce que nous avons plus de connaissances.
+>
+> B) Parce que nous avons le pouvoir de résister.
+>
+> Les incroyants pèchent plus sérieusement que les croyants.
+>
+> A) Parce qu’ils se précipitent dans le péché avec un grand désir, mais les
+> croyants avec une volonté brisée.
+>
+> B) Les fidèles ressentent de la tristesse (repentance) à propos de leurs
+> péchés commis, mais les incroyants ne la ressentent pas (ils regrettent
+> seulement les conséquences).[6]
 
-> S4. The deity cannot have moral attributes (either virtues or vices). (p.
-> 51)
+La mort du Christ est une œuvre qui peut être comprise soit comme une cause
+physique, soit comme une cause morale. Selon John Owen : « Les causes
+physiques produisent leurs effets immédiatement, et le sujet doit exister pour
+que la conséquence ait lieu. Les causes morales « n’engendrent jamais
+immédiatement leurs propres effets ». [4] La mort de Christ était une cause
+morale, et non physique. Ainsi, ceux pour qui il est mort n’ont pas besoin
+d’être vivants au moment de sa mort pour recevoir les bienfaits de son
+sacrifice par substitution. Les causes physiques n’exigent pas d’actes
+humains, mais les causes morales en exigent. Soit dit en passant, la
+distinction utilisée par Owen n’était pas la sienne, mais elle a été
+mentionnée plus tôt par le jésuite Suarez (1548-1617).[5]
 
-The problem of many-over-one asks how it can be that many properties are ever
-instantiated by one object. A putative solution might, for example, claim that
-the properties are appropriately bundled, or somehow tied to a bare
-particular. In this essay, the author argues that, surprisingly, an extant
-candidate solution to this problem is at the same time an independently
-developed candidate solution to the mind-body problem. Specifically, what is
-argued here to be the best version of the relata-specific bundle theory—the
-thesis that each instance of compresence has a special intrinsic nature in
-virtue of which it necessarily bundles its specific bundle-ees—is also a
-species of Russellian monism, labeled by David Chalmers as ‘constitutive
-Russellian panprotopsychism’. The upshot of this connection is significant for
-the metaphysics of the mind-body problem: a credible theory of property
-instantiation turns out to have a built-in account of how consciousness is
-grounded in certain (broadly) physical systems.
+Au début de la période moderne, les étudiants en théologie étaient formés à
+faire des distinctions justes et correctes. Idéalement, les distinctions
+devraient aider, et non entraver, l’exégèse. Ainsi, par exemple, considérez la
+distinction entre le pouvoir absolu de Dieu (de potentia absoluta Dei) et le
+pouvoir décrété de Dieu (de potentia ordinata Dei). Le pouvoir absolu de Dieu
+est ce pouvoir de faire ce qu’il n’accomplira pas nécessairement (i.e.,
+transformer une pierre en pain). Son pouvoir décrété implique son décret de
+faire ce qu’il a ordonné d’accomplir. Très simplement, ce que Dieu est capable
+de faire n’est pas synonyme de ce qu’il a choisi de faire.
 
-There is a longstanding argument that purports to show that divine
-foreknowledge is inconsistent with human freedom to do otherwise. Proponents
-of this argument, however, have for some time been met with the following
-reply: the argument posits what would have to be a mysterious non-causal
-constraint on freedom. In this paper, I argue that this objection is misguided
-– not because after all there can indeed be non-causal constraints on freedom
-(as in Pike, Fischer, and Hunt), but because the success of the
-incompatibilist’s argument does not require the real possibility of non-causal
-constraints on freedom. I contend that the incompatibilist’s argument is best
-seen as showing that, given divine foreknowledge, something makes one unfree –
-and that this something is most plausibly identified, not with the
-foreknowledge itself, but with the causally deterministic factors that would
-have to be in place in order for there to be infallible foreknowledge in the
-first place.
+Les distinctions théologiques nous aident aussi dans notre doctrine du péché.
+Ainsi, Maccovius soutient :
 
-Here are a few snippets that give one a sense of how the story goes for
-deductive inference:
-
-I hope this is enough to get you to read the article in full.
-
-And here's a snippet that gives one a sense of how the story goes with
-(supposed) _a priori_ truths:
-
-Gendler also persuasively argues that **the rationalist can do no better**
-than the hypothetico-deductivist in explaining _a priori_ knowledge. Here’s a
-snippet from the last page or so:
-
-Abstract: The Principle of Sufficient Reason (PSR) has been linked to a
-variety of esoteric views in metaphysics. This paper explores another PSR
-trail through the metaphysical backwoods, this time a path from theistic
-idealism to substance monism. In particular, I will claim that the same style
-of argument that might be offered for a Leibnizian form of metaphysical
-idealism actually leads beyond idealism to something closer to Spinozistic
-monism. Our road begins with a set of theological commitments about the nature
-and perfection of God that were widely shared among leading early modern
-philosophers. From these commitments, there arises an interesting case for
-metaphysical idealism, roughly the thesis that only minds and mind-dependent
-states actually exist. However, I will argue, that same theistic reasoning
-also leads to an idealist form of substance monism, the view that God is the
-only actual substance and that almost everything else is merely an intentional
-object in God’s mind.
-
-1\. If we affirm sanspsychism then we should embrace moral skepticism.
-
-Step 2: If she should affirm that she has no good reason to think that our
-morality is God’s morality, then she should reject N.
-
-Second, a naturalist might object to Step 1 of Option (b). Here one can
-reiterate the ways (mentioned in Section 3) in which a naturalist might reason
-that human morality overlaps with God’s if God should turn out to exist. By
-way of reminder, they were as follows: (i) If the moral rules are those that
-any rational, autonomous agent would construct, and God is also a rational,
-autonomous agent, then prima facie, our morality overlaps with God’s; (ii) the
-moral rules we’ve discovered apply to at least humans. But if theism is true,
-then humans are made in God’s image, which presumably includes his likeness in
-rational and moral respects. There is therefore a presumption for thinking
-that our morality overlaps with God’s.
-
-4\. If we assent to C, then we should affirm sanspsychism.
-
-5\. So, if we assent to C then we should refrain from affirming N. (4,3 HS)
-
-Given this reconstruction of Coley’s argument, is there any way in which a
-naturalist might sensibly resist it? In the remainder of the paper, I will
-sketch some possible replies to the first two premises of the argument on
-behalf of the sanspsychist.
-
-Regarding Steps 1 and 5: One might be tempted to object to Step 1 on the
-grounds that there are plenty of sanspsychists who are living counterexamples
-to it, e.g., moral relativists, nihilists, and various sorts of non-
-cognitivists. However, remember that Coley can safely screen these cases off,
-as (i) he has explicitly restricted the relevant class of sanspsychists to
-those who want to advance an argument from evil or divine hiddenness, and (ii)
-(Coley argues that) such sanspsychists can only do so if they also assert both
-that there are facts about human morality and that human morality overlaps
-with God’s morality (if God exists). Having said that, however, it’s not clear
-to me that such restrictions screen off all relevant meta-ethical theories
-available to the type of sanspsychists at issue. Here I have in mind Kantian
-constructivist accounts. Versions include those articulated by Kant,
-Korsgaard, Rawls, and Scanlon. According to at least some of these versions,
-there are constitutive features of rational, autonomous agents from which a
-set of categorical imperatives necessarily flows. But if so, then if God is
-also a rational, autonomous agent, and we are supposed to be made in His
-image, then perhaps more should be said about why a sanspsychist can’t appeal
-to such meta-ethical theories to support normative premises in arguments from
-evil and divine hiddenness.
-
-I can think of four steps in this sub-argument that the non-theist might
-reject, viz., steps 1, 3, 4, and 5.
-
-What to make of this argument? I can imagine a naturalist raising concerns for
-the reasoning with both options. First, she might worry about Step 2 for both
-Option (a) and Option (b). This is because it’s prima facie constitutive of
-classical theism that God is morally perfect, that God has revealed moral
-obligations and prohibitions to humans (through special revelation,
-conscience, and perhaps other ways), and that a number of these apply to God
-as well. But if so, then to consistently assert the normative premise of the
-problem of evil, they need merely point out that theism implies that the
-states of affairs at issue are morally bad, and that God’s moral perfection
-implies that God can’t permit them without sufficient reason. It therefore
-seems that even a naturalist who is a moral nihilist could consistently affirm
-the premises of a version of the problem of evil without committing to the
-truth of the moral claims involved.
-
-2’. Therefore, If the sanspsychist should embrace moral skepticism or Railton-
-style moral realism, then she should reject N.
-
-Step 1: If the sanspsychist should embrace Railton-style moral realism, then
-she should affirm that she has no good reason to think that our morality is
-God’s morality.
-
-ii. But see Bonjour (1999), Huemer (2016), Chudnoff (2013), and Bengson (2015)
-for recent defenses.
-
-Step 3: If we should affirm that evolutionary selective pressures are
-connected to the moral facts, then we should embrace Railton-style moral
-realism.
-
-Step 3: Therefore, if the sanspsychist should embrace Railton-style moral
-realism, then she should reject N.
-
-Other (natural and) non-natural moral realists resist this horn of Street’s
-Darwinian dilemma in other ways. For example, Erik Wielenberg argues that
-while evolution didn’t select for knowledge of moral truths, it selected for
-something else that is adaptive and which correlates with moral truths. In
-particular, he argues that creatures with cognitive capacities like ours
-thereby have rights. But evolution didn’t select for this knowledge. Rather,
-it selected for our cognitive capacities, which in turn help us survive and
-reproduce. But creatures with such capacities are thereby able to grasp the
-concept of a right, and to come to believe that they have them.
-
-Step 2: If we should embrace moral realism, then we should affirm that either
-selective evolutionary pressures are connected to the moral facts or they
-aren’t.
-
-2\. If we should embrace moral skepticism then we should reject N.
-
-What to make of Coley’s argument? An initial question concerns (1) as
-currently stated. For Coley grants that at least some versions of moral
-realism are ultimately compatible with sanspsychism, viz., Peter Railton’s
-moral naturalism and those relevantly similar to it. Of course we’ve seen that
-Coley argues that Railton-style moral realism provides no help in supporting
-N. However, I’m not so sure about that, for reasons I’ll discuss below.
-Therefore, let us modify Coley’s (1) and (2) accordingly to take account of
-this other type of meta-ethical option allowed for the sanspsychist. The
-argument then runs as follows:
-
-The bulk of the paper can then be seen as a defense of premises (1’) and (2’)
-of the reconstructed argument above.
-
-For what it's worth, I was the commenter on an earlier version of Coley's
-paper at the 2018 SPR meeting. Below are the comments I presented at that
-meeting.
-
-5\. So, if we assent to C, then we should refrain from affirming N. (4,3 HS)
-
-Step 1: If the sanspsychist should embrace moral skepticism, then she should
-(thereby) doubt the reliability of human moral cognition.
-
-Step 5: If we should affirm that moral realism is defeated by Street’s
-evolutionary debunking argument, then we should embrace moral skepticism.
-
-> The levers of natural selection are random genetic mutation, fitness for
-> survival, and reproductive success. Defenders of the evolutionary debunking
-> account (EDA) hold that such mechanisms aren’t likely to produce cognitive
-> faculties that reliably form true moral beliefs. So, according to EDA, given
-> that our cognitive faculties are a product of unguided natural selection, we
-> should be in doubt about the reliability of our moral cognition. Let the
-> term ‘sanspsychism’ describe the view that no supramundane consciousness
-> exists. In arguing against theism, some sanspsychists advance a normative
-> claim about the moral significance of phenomena like sentient suffering. But
-> if no supramundane consciousness exists, our cognitive faculties are a
-> product of unguided natural selection. It follows that if EDA is correct,
-> the sanspsychist should not think that our moral cognition is reliable. So
-> unless the sanspsychist has a defeater for EDA, she should not think herself
-> justified in appealing to normative reasons for denying the existence of
-> God.
-
-Let us now turn to take a closer look at Coley’s argument.
-
-What about premise (2’)? Here is my reconstruction of Coley’s argument for it:
-Suppose the sanspsychist should embrace either (a) moral skepticism or (b)
-Railton-style moral realism. Now consider the implications of each option:
-
-1’. Therefore, if we affirm sanspsychism, then we should embrace either
-
-3\. So, if we affirm sanspsychism, then we should refrain from affirming N.
-(1, 2
-
-Perhaps at this point one will raise Benacerraf’s epistemological objection to
-knowledge of abstract objects: Knowledge requires causal contact with the
-thing known. But causal contact is impossible with respect to abstract
-objects; therefore, if moral (or mathematical, or philosophical) facts are
-abstract, then we can’t have knowledge of them. However, given the certainty
-and theoretical indispensability of many of these truths, it’s not clear why
-intuitionists can’t here pull a G.E. Moore shift: “We have reliable belief
-forming processes regarding mathematical and philosophical truths. If moral
-facts lack causal powers, then so do these other sorts of facts. Therefore, if
-moral facts lack causal powers, then our having reliable belief forming
-processes does not require the facts about which we have beliefs to have
-causal powers.” (Huemer 2016)
-
-3\. So, if we affirm sanspychism then we should refrain from affirming N. (1,
-2
-
-I want to thank Scott Coley for his stimulating paper on evolutionary
-debunking and arguments against theism. Coley’s paper argues that Sharon
-Street’s Darwinian dilemma, when combined with philosophical naturalism,
-defeats any epistemic grounds for moral realism the naturalist might have had.
-But if so, then since arguments from evil and divine hiddenness each contain a
-premise that crucially relies on the truth of moral realism, naturalists
-cannot consistently appeal to such arguments as grounds for rejecting theism.
-By bringing important recent work in contemporary meta-ethics to bear on the
-problems of evil and divine hiddenness, Coley’s argument is a welcome
-contribution to the dialogue concerning the epistemic credentials of theism
-and naturalism.
-
-Step 4: If we should affirm that selective evolutionary pressures aren’t
-connected to the moral facts, then we should affirm that moral realism is
-defeated by Street’s evolutionary debunking argument.
-
-Regarding Step 3: A number of accounts of moral realism besides Railton’s have
-been articulated and defended that allow — and sometimes insist — that
-evolution has reliably shaped our system of evaluative judgments. Perhaps the
-most relevant is neo-Aristotelian virtue theory, most notably developed and
-defended by Rosalind Hursthouse, Philippa Foot, and (most recently) Micah
-Lott. According to this version of virtue theory, moral goodness is analyzed
-in terms of what is good for members of a given species, which in turn is
-defined in terms of what allows its members to carry out their characteristic
-life-cycle, which in turn has been shaped by evolutionary factors. On this
-sort of account, moral knowledge is a kind of practical knowledge of how to
-achieve one’s species-specific goods. Given this sort of account, it is
-guaranteed that evolution will shape our evaluative judgments in a way that is
-truth-tracking. For those individuals whose evaluative judgments fail to
-reliably track the truth about what’s good for them are thereby selected out.
-
-Is an intuitionist account of moral knowledge metaphysically problematic for
-the sanspsychist? I don’t see why it would be. That view only rules out
-supramundane minds, and Platonism doesn’t obviously require that such minds
-exist.
-
-1’. If we affirm sanspsychism, then we should embrace either moral skepticism
-or
-
-Start with (1’). Why should we accept it? Here is my reconstruction of Coley’s
-argument for the premise :
-
-Step 3: Therefore, if the sanspsychist should embrace moral skepticism, then
-she should reject N.
-
-In laying out Coley’s argument, let’s follow him by letting ‘N’ denote the
-normative premise in an atheistic argument (such as in the arguments from evil
-and divine hiddenness); letting ‘C’ denote a conclusion that theism is (at
-least) probably false; and letting ‘sanspsychism’ refer to any view that
-entails that no supramundane consciousness exists (e.g., a divine person of
-some sort). Coley’s core argument then runs as follows:
-
-Regarding Step 4: A number of non-natural moral realists have rejected this
-premise. For example, moral intuitionists such as Michael Huemer argue that
-moral truths are necessary truths, known via reason. Therefore, the way we
-know moral truths is the same way we know other necessary truths (e.g. those
-of mathematics and philosophy). And while there is as of yet no complete
-account of the mechanics of a priori knowledge , this fact hasn’t led many to
-deny that we have mathematical knowledge. But if not, then by the same token,
-it shouldn’t lead one to reject moral knowledge.
-
-Step 1: If we affirm sanspsychism, then we should embrace moral realism.
-
-i. Assume throughout that ‘morality’ denotes only accounts of morality that
-lack a divine source.
-
-2’. If we should embrace either moral skepticism or Railton-style moral
-realism,
-
-4\. If we assent to C then we should affirm sanspsychism.
-
-Step 2: If she should doubt the reliability of human moral cognition, then she
-should reject N.
-
-I have offered four main replies to Coley’s argument on behalf of the
-naturalist or sanpsychist: (i) the debunking argument doesn’t rule out Kantian
-constructivist accounts of meta-ethics; (ii) some forms of moral realism
-appear to survive the debunking argument (e.g., Railton’s account, Huemer’s
-account, Wielenberg’s account, and neo-Aristotelian accounts); (iii) there are
-reasons to think that on any of the accounts above, our morality overlaps with
-God’s if he should turn out to exist; and (iv) the problems of evil and divine
-hiddenness can be seen as problems internal to theism itself, in which case
-the naturalist or sanspsychist need not have substantive moral beliefs to
-consistently raise them against theism.
-
-I know of some Calvinist necessitarians. Do you think they're vulnerable to a
-charge of contradiction between that and some other traditional theistic
-commitment?
-
-Hi Chris,  
-  
-Yes, for on the kind of necessitarianism at issue, if there is a god, then God
-had to create this particular world (where the notion of necessity in play is
-categorical necessity, and not mere hypothetical necessity (in Leibniz's sense
-of the distinction), which is contrary to the doctrines of divine freedom and
-divine sovereignty.  
-  
-Best,  
-EA
+Dieu aurait pu envoyer plus de douze légions d’anges pour sauver Christ de sa
+passion, mais, selon son pouvoir décrété, il ne l’a pas fait.
 
