@@ -54,23 +54,25 @@ class Article:
 
         # Decoupage en plusieurs parties avec pour separateur le retour a la ligne \n
         paragraphs = txt.split("\n\n") 
-        # print("txt")
-        # print(txt)
+        # print("paragraphs =", paragraphs)
+        # for p in paragraphs:
+        #     print(p)
+        #     print("\n")
 
         #Enleve les doublons
         paragraphs = list(set(paragraphs))
-
-        #Enleve les paragraphes avec trop peu de caracteres
-        paragraphs = [paragraphe for paragraphe in paragraphs if len(paragraphe) > 12] 
         
+        stop_words = ["Email", "(javascript:void\(0\))", "Creative Commons License", "Simple theme", "www.blogger", "profile"]
+        paragraphs = [paragraphe for paragraphe in paragraphs if(all(word not in paragraphe for word in stop_words))]
+
         #Enleve les paragraphes avec des phrases trop courtes (trop peu de mots)
-        paragraphs = [paragraphe for paragraphe in paragraphs if len(paragraphe.split(" ")) > 10]
+        paragraphs = [paragraphe for paragraphe in paragraphs if len(paragraphe.split(" ")) > 12]
         
-        #Enleve les paragraphes qui contiennent un ou plusieurs adresses url
-        paragraphs = [paragraphe for paragraphe in paragraphs if("http" not in paragraphe)]
-
         #Enleve les paragraphes qui contiennent # (car pas des paragraphes)
         paragraphs = [paragraphe for paragraphe in paragraphs if("#" not in paragraphe)]
+
+        #Enleve les paragraphes avec trop peu de caracteres
+        paragraphs = [paragraphe for paragraphe in paragraphs if(len(paragraphe) > 12)]
 
         return(paragraphs)
 
@@ -78,6 +80,8 @@ class Article:
     def save_paragraphs(self, path_corpus, corpus_paragraphs="", file_open_mode="w", sep = "\n\n"):
         """ Sauvegarde les paragraphes d'un article dans un fichier texte """
         print("file_open_mode =", file_open_mode)
+        print("len path_corpus =", len(path_corpus))
+        print("path_corpus =", path_corpus)
         # save_list_to_txt(self.paragraphs, path_corpus, file_open_mode, sep)
         f = open(path_corpus, file_open_mode, encoding="utf-8") #"w" si n'existe pas, "a" si on veut ajouter a un fichier deja existant
         for paragraph in self.paragraphs:

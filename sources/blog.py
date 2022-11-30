@@ -6,6 +6,9 @@ class Blog(DataSource):
         DataSource.__init__(self, url, num_articles)
         print("type num_articles =", type(num_articles))
         self.name = self.get_name()
+        self.topic = self.name
+        self.path_corpus = "./data/input/corpus_txt/" + self.create_corpus_txt_filename() #self.filename
+        self.path_articles_urls = "./data/input/articles_lists/articles_list_{}.txt".format(self.topic)
         self.articles_urls = self.create_articles_urls()
 
 
@@ -13,9 +16,11 @@ class Blog(DataSource):
         """ Renvoie une chaine de caractère décrivant la bibliographie """
         print("str :")
         str_articles_urls = str(self.articles_urls)
+        str_path_articles_urls = str(self.path_articles_urls)
         str_name = str(self.name)
         desc = DataSource.__str__(self)
         desc += "\nname = " + str_name
+        desc += "\npath_articles_urls = " + str_path_articles_urls
         # desc += "\narticles_urls = " + str_articles_urls
         return(desc)   
 
