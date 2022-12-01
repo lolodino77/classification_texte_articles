@@ -6,30 +6,30 @@ from bloglist import *
 import os
 
 
-def test_article(url, topic):
-    article = Article(url, topic)
+def test_article(url, corpus_name):
+    article = Article(url, corpus_name)
     print(article)
-    path_corpus = "./data/input/corpus_txt/corpus_{}.txt".format(topic)  #self.filename
+    path_corpus = "./data/input/corpus_txt/corpus_{}.txt".format(corpus_name)  #self.filename
     article.save_paragraphs(path_corpus, corpus_paragraphs="", file_open_mode="w", sep = "\n\n")
     print("article.save_paragraphs() fini")
 
 
-def test_datasource(url, topic, num_articles):
-    datasource = DataSource(url, topic, num_articles)
+def test_datasource(url, corpus_name, num_articles):
+    datasource = DataSource(url, corpus_name, num_articles)
     print(datasource)
 
 
-def test_bibliography(url, topic, num_articles):
-    bibliography = Bibliography(url, topic, num_articles)
+def test_bibliography(url, corpus_name, num_articles):
+    bibliography = Bibliography(url, corpus_name, num_articles)
     print(bibliography)
     bibliography.save_paragraphs(savemode="overwrite")
     # print("bibliography.save_paragraphs() fini")
 
 
-def test_bibliographylist(urls, num_articles, topic="filenames"):
-    bibliographyList = BibliographyList(urls, num_articles, topic)
+def test_bibliographylist(filename, num_articles):
+    bibliographyList = BibliographyList(filename, num_articles)
     print(bibliographyList)
-    # bibliographyList.save_articles_urls()
+    bibliographyList.save_articles_urls()
     bibliographyList.save_paragraphs()
 
 
@@ -40,10 +40,10 @@ def test_blog(url, num_articles):
     # blog.save_paragraphs(savemode="overwrite")
 
 
-def test_bloglist(urls, num_articles):
-    blogList = BlogList(urls, num_articles)
+def test_bloglist(filename, num_articles):
+    blogList = BlogList(filename, num_articles)
     print(blogList)
-    # blogList.save_articles_urls()
+    blogList.save_articles_urls()
     blogList.save_paragraphs()
 
 
@@ -55,26 +55,22 @@ def main():
     url = "https://parlafoi.fr/lire/series/la-scolastique-protestante/"
     url2 = "https://parlafoi.fr/lire/series/la-scolastique-protestante/"
     url3 = "https://parlafoi.fr/lire/series/commentaire-de-la-summa/"
-    topic = "moyen_age"
+    corpus_name = "moyen_age"
     num_articles = 40
     # num_articles = "all"
 
-    # test_article(url, topic)
-    # test_datasource(url, topic, num_articles)
-    # test_bibliography(urls_biblio, topic, num_articles)
+    # test_article(url, corpus_name)
+    # test_datasource(url, corpus_name, num_articles)
+    # test_bibliography(urls_biblio, corpus_name, num_articles)
     # test_blog(url_blog, num_articles)
 
-    # urls_biblio = [url2, url3]
-    # urls_biblio = "bibliography_middle_age_fr.txt"
-    # topic = "filenames"
-    # test_bibliographylist(urls_biblio, num_articles, topic)
-    # test_bibliographylist(urls_biblio, num_articles)
+    filename = "bibliography_middle_age_fr.txt"
+    num_articles = 6
+    test_bibliographylist(filename, num_articles)
 
-    # urls_blog = ["http://exapologist.blogspot.com", "http://alexanderpruss.blogspot.com"]
-    urls_blog = "blogs_philosophy_eng.txt"
-    # urls_blog = ["http://exapologist.blogspot.com"]
-    num_articles = 4
-    test_bloglist(urls_blog, num_articles)
+    # filename = "blogs_philosophy_eng.txt"
+    # num_articles = 10
+    # test_bloglist(filename, num_articles)
 
     # bibliography.
 

@@ -5,10 +5,9 @@ class Blog(DataSource):
     def __init__(self, url, num_articles):
         DataSource.__init__(self, url, num_articles)
         print("type num_articles =", type(num_articles))
-        self.name = self.get_name()
-        self.topic = self.name
+        self.corpus_name = self.get_corpus_name()
         self.path_corpus = "./data/input/corpus_txt/" + self.create_corpus_txt_filename() #self.filename
-        self.path_articles_urls = "./data/input/articles_lists/articles_list_{}.txt".format(self.topic)
+        self.path_articles_urls = "./data/input/articles_lists/articles_list_{}.txt".format(self.corpus_name)
         self.articles_urls = self.create_articles_urls()
 
 
@@ -17,17 +16,17 @@ class Blog(DataSource):
         print("str :")
         str_articles_urls = str(self.articles_urls)
         str_path_articles_urls = str(self.path_articles_urls)
-        str_name = str(self.name)
+        str_corpus_name = str(self.corpus_name)
         desc = DataSource.__str__(self)
-        desc += "\nname = " + str_name
+        desc += "\ncorpus_name = " + str_corpus_name
         desc += "\npath_articles_urls = " + str_path_articles_urls
         # desc += "\narticles_urls = " + str_articles_urls
         return(desc)   
 
 
-    def get_name(self):
-        name = self.url.split("//")[1].split(".")[0]
-        return(name)
+    def get_corpus_name(self):
+        corpus_name = self.url.split("//")[1].split(".")[0]
+        return(corpus_name)
 
 
     def get_web_page_text_contents(self, url):
@@ -98,14 +97,6 @@ class Blog(DataSource):
         """ Renvoie dans une liste tous les articles d'un blog (wordpress ou blogspot) a partir de sa page d'accueil
             Exemple : "https://majestyofreason.wordpress.com/", "https://edwardfeser.blogspot.com"
             Pour l'instant fonctionne que avec les blogs blogspot
-
-            Entrees:
-            self.name (string) : Le nom du blog
-            keep_all_articles (booleen) : Indique si on recupere tous les articles ou seulement un nombre limite
-            num_articles (int) : Le nombre d'articles a garder (valeur defaut 0 mais n'importe quelle valeur possible)
-                                Si keep_all_articles = True, pas besoin de preciser la nombre d'articles a garder num_articles
-            Sorties:
-            urls (liste de string) : exemple=["www.aaa.wordpress.fr\n", "www.aba.wordpress.fr\n", "www.aaa.wordpress.fr"] 
         """
         # Recupere dans une liste urls les adresses url de tous les articles publies d'un blog
         sitemap_page = self.get_sitemap_page()

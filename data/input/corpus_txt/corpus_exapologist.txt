@@ -1,3 +1,7 @@
+Smilansky, Saul. "[Reversing Pascal's Wager: Scepticism About Religious Belief
+and Its Value](https://philpapers.org/rec/SMIRPS-2)", _Religious Studies_
+(forthcoming).
+
 Pascal famously argued that practical reasoning should lead people to try to
 form within themselves a commitment to religious practice and obedience, based
 upon a belief in God. I propose to take a less ambitious argument, which I
@@ -15,17 +19,13 @@ moral transgressors more than the secular ones. One is unlikely to be saved
 from hell (or other severe divine punishment) by becoming religious. If one is
 going to wager, it seems much more sensible to wager on the secular side.
 
+Smilansky, Saul. " Reversing Pascal's Wager: Scepticism About Religious Belief
+and Its Value ", Religious Studies (forthcomin...
+
 [ ![Is God the Best Explanation of Things? A Dialogue is Now
 Out!](http://3.bp.blogspot.com/-RUJygo9ZI5s/XZKz9ZN1-tI/AAAAAAAA3BY/WcfmwPogtPIR7fHT1fgwSJxfTIiHQ_72ACK4BGAYYCw/s1600/Book%2BCover%2BIGtBEoT.png)
 ](https://www.amazon.com/God-Best-Explanation-Things-
 Dialogue/dp/3030237540/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=&sr=)  
-
-Smilansky, Saul. " Reversing Pascal's Wager: Scepticism About Religious Belief
-and Its Value ", Religious Studies (forthcomin...
-
-Smilansky, Saul. "[Reversing Pascal's Wager: Scepticism About Religious Belief
-and Its Value](https://philpapers.org/rec/SMIRPS-2)", _Religious Studies_
-(forthcoming).
 
 The fact that orthodox theists, from at least Augustine and all the way to the
 present, have seen logic as the expression of single, rational, divine Mind is
@@ -52,4 +52,127 @@ surprising on naturalism, since nature is "indifferent" to our welfare on that
 hypothesis, and since motivated reasoning is conducive to survival and
 reproduction (Mercier & Sperber 2011). Therefore, the existence of motivated
 reasoning is at least some evidence for naturalism vis-a-vis theism.
+
+Oberle, Thomas. "[Grounding, infinite regress, and the Thomistic cosmological
+argument](https://link.springer.com/article/10.1007/s11153-022-09840-3)",
+International Journal for Philosophy of Religion (July 2022).
+
+Here's a new paper making [a
+point](https://exapologist.blogspot.com/2022/06/the-argument-from-
+metaphysical.html) [I've been on about
+recently](https://exapologist.blogspot.com/2022/04/camerons-forthcoming-
+book.html): recent work on metaphysical infinitism and coherentism undercuts
+certain cosmological arguments, and the metaphysical foundationalism
+presupposed by theism.
+
+> Abstract: A prominent Thomistic cosmological argument maintains that an
+> infinite regress of causes, which exhibits a certain pattern of ontological
+> dependence among its members, would be vicious and so must terminate in a
+> first member. Interestingly, Jonathan Schaffer offers a similar argument in
+> the contemporary grounding literature for the view called metaphysical
+> foundationalism. I consider the striking similarities between both arguments
+> and conclude that both are unsuccessful for the same reason. I argue this
+> negative result gives us indirect reason to consider metaphysical infinitism
+> as a genuine possibility, the view that chains of ontological dependence or
+> ground can descend indefinitely.
+>
+>  
+>  
+>
+
+Upshot: Cogent modal ontological arguments (at least ones friendly to
+classical theism) seem to have no suitable home in the metaphysics and
+epistemology of modality.
+
+It's not clear that there's a metaphysics and epistemology of modality that
+can vindicate a cogent modal ontological argument for classical theism.
+Theistic activism and theistic conceptualism with respect to possible worlds
+are a bad fit with the modal ontological argument (circularity). But so is
+Platonism about possible worlds (runs afoul of the aseity-sovereignty
+doctrine). Perhaps a dispositionalist/powers-based account of modality is
+compatible with the modal ontological argument, but prima facie,
+dispositionalism entails moderate modal skepticism (cf.
+[Jacobs](https://philpapers.org/rec/JACAPT-2),
+[Vetter](https://philpapers.org/rec/VETPPA)), thereby undermining the
+possibility premise in the modal ontological argument. What's left? Modal
+fictionalism? That's already been shown to imply [devastating
+problems](https://exapologist.blogspot.com/2016/09/new-paper-on-modal-
+fictionalism-and.html) for the modal ontological argument.
+
+My second worry is the one I want to briefly focus on in this post. The worry
+is that it fails to get at what is potentially a deeper distinction, and one
+that's potentially more illuminating than the distinction between physicalism
+and supernaturalism. The distinction I have in mind is at the level of _basic
+ontological categories_ and _categorical priority_ \-- in particular, the
+level of the ontological priority of the categories of _substance_ and
+_property_. According to a standard and historically prominent view,
+substances are more fundamental than properties (or at least: substances are
+no less fundamental than properties). Accordingly, let's call this sort of
+view _a substance-first ontology_.
+
+Which view is correct: the substance-first view or the property-first view?
+This question has potentially huge implications for the disagreement between
+theists and non-theists.[1] This is because, prima facie, _orthodox monotheism
+entails the substance-first view._ And this in turn is because, prima facie,
+_God_ is a substance, and is prior to all else that exists. Therefore, if
+there are reasons to prefer the property-first view, then there are thereby
+reasons to prefer non-theism to theism.
+
+> Physicalism is the view that the physical is fundamental -- everything is
+> either physical or dependent upon/grounded in the physical. By contrast
+> supernaturalism/mentalism is the view that one or more
+> spiritual/mental/supernatural beings are more fundamental than the physical
+> -- everything is either mental or dependent upon the mental.
+
+[1] There are other views that are equally powerful threats to theism, such as
+a stuff-first view, according to which stuffs are more fundamental than
+substances. Another is Jason Turner's facts-first ontology (as well as related
+events-first ontologies). However, I leave these sort of threats to the side
+for the present post.
+
+I have at least two worries for this way of carving things up. I've gestured
+to the first of these on
+[previous](https://exapologist.blogspot.com/2022/04/camerons-forthcoming-
+book.html) [occasions](https://exapologist.blogspot.com/2022/06/the-argument-
+from-metaphysical.html) \-- viz., that the characterization of the distinction
+presupposes metaphysical foundationalism, and yet metaphysical foundationalism
+has recently been called into doubt (on both philosophical and scientific
+grounds), and metaphysical coherentism and metaphysical infinitism have both
+recently been vigorously defended.
+
+By contrast, a number of philosophers (e.g.,
+[Laurie](https://exapologist.blogspot.com/2022/08/the-argument-from-one-
+category-ontology.html)
+[Paul](https://exapologist.blogspot.com/2022/08/a-sketch-of-how-to-explain-
+everything.html) and [Shamik
+Dasgupta](https://shamik.net/papers/dasgupta%20individuals.pdf)) have recently
+argued that properties are more fundamental than substances, and indeed that
+substances may not even exist. Let's call this sort of view _a property-first
+ontology_.
+
+The evidence for fine-tuning confirms both demiurgism and panentheism over
+theism, and in this way is good evidence against theism. This is because the
+intuitive and empirical evidence against creation _ex nihilo_ creates a strong
+drag on theism’s prior probability not suffered by demiurgism and panentheism,
+and so they lap the former in terms of posterior probability. _A fortiori_ ,
+the posterior probability of the inclusive disjunction of demiurgism and
+panentheism is considerably higher than that of theism given the evidence of
+fine-tuning.
+
+...is the paper title of Blake Hereth's [provocative new
+paper](https://www.cambridge.org/core/journals/religious-
+studies/article/abs/mary-did-you-consent/769E09BDF29AA1FCECF2F4E8C53048C4) in
+_Religious Studies_. Here's the abstract:
+
+> The Christian and Islamic doctrine of the VIRGIN BIRTH claim God asexually
+> impregnated the Virgin Mary with Jesus, Mary's impregnation was fully
+> consensual (VIRGIN CONSENT), and God never acts immorally (DIVINE GOODNESS).
+> First, I show that God's actions and Mary's background beliefs undermine her
+> consent by virtue of coercive incentives, Mary's comparative powerlessness,
+> and the generation of moral conflicts. Second, I show that God's non-
+> disclosure of certain reasonably relevant facts undermines Mary's informed
+> consent. Third, I show that a recent attempt by Jack Mulder to rescue VIRGIN
+> CONSENT fails. As DIVINE GOODNESS and VIRGIN CONSENT are more central to
+> orthodoxy, Christians and Muslims have powerful reason to reject VIRGIN
+> BIRTH.
 

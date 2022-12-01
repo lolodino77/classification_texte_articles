@@ -14,7 +14,7 @@ class DataSource:
     def __init__(self, url, num_articles):
         """ Constructor of DataSource """
         self.url = url
-        self.topic = ""
+        self.corpus_name = ""
         self.path_corpus = ""
         self.filename = self.create_corpus_txt_filename()
         self.num_articles = num_articles
@@ -41,7 +41,7 @@ class DataSource:
 
 
     def create_corpus_txt_filename(self):
-        filename = "corpus_{}.txt".format(self.topic) 
+        filename = "corpus_{}.txt".format(self.corpus_name) 
         return(filename)
 
 
@@ -63,7 +63,7 @@ class DataSource:
 
 
     def save_paragraphs(self, savemode="overwrite"):
-        """Cree un corpus d'un topic (au format de liste de documents/textes) dans le fichier texte filename_output
+        """Cree un corpus d'un corpus_name (au format de liste de documents/textes) dans le fichier texte filename_output
         a partir d'une liste d'adresses urls d'articles
 
         Parametres: 
@@ -90,14 +90,14 @@ class DataSource:
             # print("path_corpus =", path_corpus)
             # print("articles_urls =", articles_urls)
             article_url = self.articles_urls[0] #premier article
-            article = Article(article_url, self.topic)
+            article = Article(article_url, self.corpus_name)
             print("article_url =")
             print(article_url)
             article.save_paragraphs(self.path_corpus, self.paragraphs, file_open_mode="w", sep = "\n\n")
             self.paragraphs.extend(article.paragraphs)
 
             for article_url in self.articles_urls[1:]: #tous les articles suivants
-                article = Article(article_url, self.topic)
+                article = Article(article_url, self.corpus_name)
                 article.save_paragraphs(self.path_corpus, self.paragraphs, file_open_mode="a", sep = "\n\n")
                 self.paragraphs.extend(article.paragraphs)
                 print("len self.paragraphs =", len(self.paragraphs))
@@ -107,7 +107,7 @@ class DataSource:
             for article_url in self.articles_urls:
                 print("article_url =")
                 print(article_url)
-                article = Article(article_url, self.topic)
+                article = Article(article_url, self.corpus_name)
                 article.save_paragraphs(self.path_corpus, self.paragraphs, file_open_mode="a", sep = "\n\n")
                 self.paragraphs.extend(article.paragraphs)
                 print("len self.paragraphs =", self.paragraphs)

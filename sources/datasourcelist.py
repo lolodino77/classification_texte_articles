@@ -4,8 +4,9 @@ from datasource import *
 class DataSourceList:
     """ Define a list of datasources """
 
-    def __init__(self, urls, num_articles):
+    def __init__(self, filename, num_articles):
         """ Constructor of Datasourcelist """
+        self.filename = filename
         self.urls = "" #soit liste de bibliographies soit liste de blogs
         self.dataSources = []
         self.num_articles = num_articles

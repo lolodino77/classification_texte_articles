@@ -10,7 +10,7 @@ from lib_general import *
 class Article:
     """ Define an article from a blog """
 
-    def __init__(self, url, topic):
+    def __init__(self, url, corpus_name):
         """ Constructor of Article """
         self.url = url
         self.paragraphs = self.create_paragraphs()

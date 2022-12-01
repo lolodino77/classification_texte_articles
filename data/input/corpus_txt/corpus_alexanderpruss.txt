@@ -182,3 +182,1085 @@ that there is an exact tie between the values of one side winning and the
 value of the other side winning. (Some people enjoy victory more than others,
 or have somewhat more in the way of fans, etc.)
 
+If you lose, but you tried to win, she pays you double what you lost.
+
+Is this possible? I think so. We just need to
+[distinguish](http://alexanderpruss.blogspot.com/2019/08/two-ways-to-pursue-y-
+for-sake-of-z.html) between pursuing victory for the sake of something else
+that follows from victory and pursuing victory for the sake of something that
+might follow from the pursuit of victory.
+
+Here is the oddity: you are trying to win in order to get paid, but you only
+get paid if you don’t win. Thus, you are trying to achieve something, the
+achievement of which would undercut the end you are pursuing.
+
+Clearly the prudent thing to do is to try to win. For if you don’t try to win,
+then you are guaranteed not to get any money. But if you do try, you won’t
+lose anything, and you might gain.
+
+Suppose Alice can read your mind, and you are playing poker against a set of
+people not including Alice. You don’t care about winning, just about money.
+Alice has a deal for you that you can’t refuse.
+
+Some philosophers think that sometimes norms other than moral norms—e.g.,
+prudential norms or norms of the meaningfulness of life—take precedence over
+moral norms and make permissible actions that are morally impermissible. Let
+_F_ -norms be such norms.
+
+But here is an oddity. Morality already combines _F_ -considerations and first
+order paradigmatically moral considerations. Consider two actions:
+
+Sacrifice an enormous amount of _F_ -considerations for a slight good for
+one’s children.
+
+Maybe there is a view on which the overall ones take into account not the
+first-order moral and _F_ -considerations, but only the deliverances of the
+moral and _F_ -norms of combination, but that seems needlessly complex.
+
+This view violates Ockham’s razor: Why would we have moral norms of
+combination if the overall norms of combination always override them anyway?
+
+_Morality_ says that (1) is obligatory but (2) is permitted. Thus, morality
+already weighs _F_ and paradigmatically moral concerns and provides a
+combination verdict. In other words, there already are _moral_ norms of
+combination. So the view would be that there are moral norms of combination
+and overall norms of combination, both of which take into account exactly the
+same first order considerations, but sometimes come to different conclusions
+because they weigh the very same first order considerations differently (e.g.,
+in the case where a moderate amount of _F_ -considerations needs to be
+sacrificed for a moderate amount of good for one’s children).
+
+Sacrifice a slight amount of _F_ -considerations for a great deal of good for
+one’s children.
+
+So the view has to be that sometimes _F_ -norms take precedence over moral
+norms, but not always. There must thus be norms which are neither _F_ -norms
+nor moral norms that decide whether _F_ -norms or moral norms take precedence.
+We can call these “overall norms of combination”. And it is crucial to the
+view that the norms of combination themselves be neither _F_ -norms nor moral
+norms.
+
+A view where _F_ -norms _always_ override moral norms does not seem plausible.
+In the case of prudential or meaningfulness, it would point to a fundamental
+selfishness in the normative constitution of the human being.
+
+Moreover, the view has the following difficulty: It seems that the best way to
+define a type of norm (prudential, meaningfulness, moral, etc.) is in terms of
+the types of consideration that the norm is based on. But if the overall norms
+of combination take into account the very same types of consideration as the
+moral norms of combination, then this way of distinguishing the types of norms
+is no longer available.
+
+Both competition and moral opposition are compatible with mutual love, but
+mutual enmity is not compatible with either direction of love.
+
+Woops. This was supposed to be a comment on the overriding moral reasons post.
+Sorry!
+
+Mutual enmity: _x_ and _y_ have shared knowledge that they each pursue the
+other’s ill-being for a reason other than the other’s well-being.
+
+I think loving one’s competitors could be good practice for loving one’s (then
+necessarily non-mutual) enemies.
+
+Moral opposition: _x_ and _y_ have shared knowledge that they are pursuing
+incompatible goals and each takes the other’s pursuit to be morally wrong.
+
+The reason for the qualification on reasons in 3 is that one might say that
+someone who punishes someone in the hope of their reform is pursuing their
+ill-being for the sake of their well-being. I don’t know if that is the right
+way to describe reformative punishment, but it’s safer to include the
+qualification in (3).
+
+I suspect that most cases of mutual enmity are also cases of moral opposition,
+but I am less clear on this.
+
+Note that cases of moral opposition are all cases of competition. Cases of
+mutual enmity are also cases of competition, except in rare cases, such as
+when a party suffers from depression or acedia which makes them not be opposed
+to their own ill-being.
+
+Michael Huemer advances a version of this argument in his "Ethical
+Intuitionism", somewhere around page 180 or 190 or the like (I don't have the
+book in front of me, sorry). I forget the exact details, but it may be worth
+checking out what he said.
+
+I’ve been thinking about who competitors, opponents and enemies are, and I am
+not very clear on it. But I think we can start with this:
+
+On internalist consequentalism, where the right action is defined by expected
+utilities, we would expect that if both sides are unbiased investigators, in
+most of the games, at least one side would at take the expected utility of the
+other side’s winning to be higher. For if both sides are perfect investigators
+with the same evidence and perfect priors, then they will assign the same
+expected utilities, and so at least one side will take the other’s to have
+higher expected utility, except in the rare case where the two expected
+utilities are equal. And if both sides assign expected utilities completely at
+random, but unbiasedly (i.e., are just as likely to assign a higher expected
+utility to the other side winning as to themselves), then bracketing the rare
+case where a side assigns equal expected utility to both victory options, any
+given side will have a probability of about a half of assigning higher
+expected utility to the other side’s victory, and so there will be about a 3/4
+chance that at least one side will take the other side’s victory to be more
+likely. And other cases of unbiased investigators will likely fall somewhere
+between the perfect case and the random case, and so we would expect that in
+most games, at least one side will be playing for an outcome that they think
+has lower expected utility.
+
+Given externalist consequentialism, where the right action is the one that
+actually would produce better consequences, ideal competition will be
+extremely rare, since the only time the pursuit of each of two incompatible
+goals will be right is if there is an exact tie between the values of the
+goals, and that is extremely rare.
+
+This has the odd result that on externalist consequentialism, in most sports
+and other games, at least one side is acting wrongly. For it is extremely rare
+that there is an exact tie between the values of one side winning and the
+value of the other side winning. (Some people enjoy victory more than others,
+or have somewhat more in the way of fans, etc.)
+
+So, the result is that either on externalist or internalist consequentialism,
+in most sports and other competitions, at least one side is acting morally
+wrongly or is acting in the light of an epistemic vice.
+
+In the ideal case, competitors both rightly pursue the incompatible goals, and
+each knows that they are both so doing.
+
+Yeah, I think I made a number of mistakes in my argument.  
+  
+On consequentialism what is evaluated is the action, not the end of the
+action. So even if my winning has lower utility than your winning under
+similar circumstances, it does not follow that my trying to win has lower
+utility than my not trying to win. There are two possibilities, after all,
+assuming I try to win. Either I will succeed or I won't. If I won't succeed,
+then the harder I tried, the more enjoyable the victory for you, for your fans
+and for my fans. If I do succeed, the utility is lower than if I had tried and
+you nonetheless succeeded (I am assuming your victory has higher utility), but
+it may still be higher than had I failed to try (in which case very likely I
+would not have succeeded) because then there would have been general
+disappointment. So a case can be made that my trying to win is better than my
+not trying to win, even if other things being equal my winning is worse than
+your winning. And similar things seem to hold on expected utility versions.  
+  
+Still, suppose that the utility of your winning is higher than of my winning,
+and I am about to win, but I have some subtle way of throwing the game so no
+one can tell, and everyone will enjoy the game pretty much as much. Then on
+externalist consequentialism I should throw the game in this way. Whether such
+a way of throwing the game is available depends on many factors: what the game
+is, who the audience are, what level one and one's opponent are. Still, there
+are probably a number of combinations where such throwing is available, and
+the slight loss in quality of play is outweighed by the benefits of your
+winning.
+
+I wonder if consequentialism can be salvaged from this argument with the
+following consideration:  
+  
+Suppose that the utility of winning accrues only if the victory is achieved
+against a capable opponent who is highly motivated to win. (For example, I
+have seen boxing matches where the victor is visibly disappointed or even
+enraged when he perceives that his opponent threw in the towel prematurely.)
+In this case, each competitor would be behaving morally if and only if he
+tries his hardest to win, even given consequentialism.
+
+Of course, in practice, the two sides are not unbiased. One might overestimate
+the value of oneself winning and the underestimate the value of the other
+winning. But that is likely to involve some epistemic vice.
+
+This isn’t quite enough for a defense of the strong thesis. For even if the
+success is good, it does not follow that you perceive the success as good. You
+might subscribe to an axiological action on which success is not good in
+general, but only success at something good.
+
+I think there is still reason to be sceptical of the strong version.
+
+But perhaps we can say this. We have a normative power to endow some neutral
+things with value by making them our ends. And in fact the only way to act for
+an end that does not have any independent value is by exercising that
+normative power. And exercising that normative power involves your seeing the
+thing you’re endowing with value as valuable. And maybe the only way to raise
+your arm or for Bob to bake the cake in the examples is by exercising the
+normative power, and doing so involves seeing the end as good. Maybe. This has
+some phenomenological plausibility and it would be nice if it were true,
+because the strong guise of the good thesis is pretty plausible to me.
+
+**Case 2:** Back when they were dating in high school, Bob promised to try his
+best to bake a nine-layer chocolate cake for Alice’s 40th birthday. Since
+then, Bob and Alice have had a falling out, and hate each other’s guts.
+Moreover, Alice and all her guests hate chocolate. But Alice doesn’t release
+Bob from his promise. Bob tries his best to bake the cake in order to fulfill
+his promise, and happens to succeed. In trying to bake the cake, Bob acted for
+the end of producing a cake. But producing the cake was worthless, since no
+one would eat it. The only value was in the trying, since that was the
+fulfillment of his promise.
+
+According to the guise of the good thesis, one always acts for the sake of an
+apparent good. There is a weaker and a stronger version of this:
+
+For the strong version to have any plausibility, “good” must include cases of
+purely instrumental goodness.
+
+**Weak** : Whenever you act, you act for an end that you perceive is good.
+
+**Strong** : Whenever you act, you act for an end, and every end you act for
+you perceive as good.
+
+**Case 1:** There is some device which does something useful when you trigger
+it. It is triggered by electrical activity. You strap it on to your arm, and
+raise your arm, so that the electrical activity in your muscles triggers the
+device. Your raising your arm has the arm going up as an end, but that end is
+not perceived as good, but merely neutral. All you care about is the
+electrical activity in your muscles.
+
+I was going to leave it at this. But then I thought of a way to save the
+strong guise of the good thesis. Success is valuable as such. When I try to do
+something, succeeding at it has value. So the arm going up or the cake being
+produced _are_ valuable as necessary parts of the success of one’s action. So
+perhaps every end of your action _is_ trivially good, because it is good for
+your action to succeed, and the end is a (constitutive, not causal) means to
+success.
+
+In both cases, it is still true that the agent acts for a good end—the useful
+triggering of the device and the production of the cake. But in both cases it
+seems they are also acting for a worthless end. Thus the cases seem to fit
+with the weak but not the strong guise of the good thesis.
+
+Clearly the prudent thing to do is to try to win. For if you don’t try to win,
+then you are guaranteed not to get any money. But if you do try, you won’t
+lose anything, and you might gain.
+
+Suppose Alice can read your mind, and you are playing poker against a set of
+people not including Alice. You don’t care about winning, just about money.
+Alice has a deal for you that you can’t refuse.
+
+Is this possible? I think so. We just need to
+[distinguish](http://alexanderpruss.blogspot.com/2019/08/two-ways-to-pursue-y-
+for-sake-of-z.html) between pursuing victory for the sake of something else
+that follows from victory and pursuing victory for the sake of something that
+might follow from the pursuit of victory.
+
+Here is the oddity: you are trying to win in order to get paid, but you only
+get paid if you don’t win. Thus, you are trying to achieve something, the
+achievement of which would undercut the end you are pursuing.
+
+If you lose, but you tried to win, she pays you double what you lost.
+
+So the view has to be that sometimes _F_ -norms take precedence over moral
+norms, but not always. There must thus be norms which are neither _F_ -norms
+nor moral norms that decide whether _F_ -norms or moral norms take precedence.
+We can call these “overall norms of combination”. And it is crucial to the
+view that the norms of combination themselves be neither _F_ -norms nor moral
+norms.
+
+Moreover, the view has the following difficulty: It seems that the best way to
+define a type of norm (prudential, meaningfulness, moral, etc.) is in terms of
+the types of consideration that the norm is based on. But if the overall norms
+of combination take into account the very same types of consideration as the
+moral norms of combination, then this way of distinguishing the types of norms
+is no longer available.
+
+_Morality_ says that (1) is obligatory but (2) is permitted. Thus, morality
+already weighs _F_ and paradigmatically moral concerns and provides a
+combination verdict. In other words, there already are _moral_ norms of
+combination. So the view would be that there are moral norms of combination
+and overall norms of combination, both of which take into account exactly the
+same first order considerations, but sometimes come to different conclusions
+because they weigh the very same first order considerations differently (e.g.,
+in the case where a moderate amount of _F_ -considerations needs to be
+sacrificed for a moderate amount of good for one’s children).
+
+But here is an oddity. Morality already combines _F_ -considerations and first
+order paradigmatically moral considerations. Consider two actions:
+
+Sacrifice an enormous amount of _F_ -considerations for a slight good for
+one’s children.
+
+Some philosophers think that sometimes norms other than moral norms—e.g.,
+prudential norms or norms of the meaningfulness of life—take precedence over
+moral norms and make permissible actions that are morally impermissible. Let
+_F_ -norms be such norms.
+
+This view violates Ockham’s razor: Why would we have moral norms of
+combination if the overall norms of combination always override them anyway?
+
+Sacrifice a slight amount of _F_ -considerations for a great deal of good for
+one’s children.
+
+Maybe there is a view on which the overall ones take into account not the
+first-order moral and _F_ -considerations, but only the deliverances of the
+moral and _F_ -norms of combination, but that seems needlessly complex.
+
+A view where _F_ -norms _always_ override moral norms does not seem plausible.
+In the case of prudential or meaningfulness, it would point to a fundamental
+selfishness in the normative constitution of the human being.
+
+Both competition and moral opposition are compatible with mutual love, but
+mutual enmity is not compatible with either direction of love.
+
+Moral opposition: _x_ and _y_ have shared knowledge that they are pursuing
+incompatible goals and each takes the other’s pursuit to be morally wrong.
+
+Woops. This was supposed to be a comment on the overriding moral reasons post.
+Sorry!
+
+The reason for the qualification on reasons in 3 is that one might say that
+someone who punishes someone in the hope of their reform is pursuing their
+ill-being for the sake of their well-being. I don’t know if that is the right
+way to describe reformative punishment, but it’s safer to include the
+qualification in (3).
+
+Note that cases of moral opposition are all cases of competition. Cases of
+mutual enmity are also cases of competition, except in rare cases, such as
+when a party suffers from depression or acedia which makes them not be opposed
+to their own ill-being.
+
+I suspect that most cases of mutual enmity are also cases of moral opposition,
+but I am less clear on this.
+
+Michael Huemer advances a version of this argument in his "Ethical
+Intuitionism", somewhere around page 180 or 190 or the like (I don't have the
+book in front of me, sorry). I forget the exact details, but it may be worth
+checking out what he said.
+
+I think loving one’s competitors could be good practice for loving one’s (then
+necessarily non-mutual) enemies.
+
+Mutual enmity: _x_ and _y_ have shared knowledge that they each pursue the
+other’s ill-being for a reason other than the other’s well-being.
+
+**Case 1:** There is some device which does something useful when you trigger
+it. It is triggered by electrical activity. You strap it on to your arm, and
+raise your arm, so that the electrical activity in your muscles triggers the
+device. Your raising your arm has the arm going up as an end, but that end is
+not perceived as good, but merely neutral. All you care about is the
+electrical activity in your muscles.
+
+But perhaps we can say this. We have a normative power to endow some neutral
+things with value by making them our ends. And in fact the only way to act for
+an end that does not have any independent value is by exercising that
+normative power. And exercising that normative power involves your seeing the
+thing you’re endowing with value as valuable. And maybe the only way to raise
+your arm or for Bob to bake the cake in the examples is by exercising the
+normative power, and doing so involves seeing the end as good. Maybe. This has
+some phenomenological plausibility and it would be nice if it were true,
+because the strong guise of the good thesis is pretty plausible to me.
+
+**Case 2:** Back when they were dating in high school, Bob promised to try his
+best to bake a nine-layer chocolate cake for Alice’s 40th birthday. Since
+then, Bob and Alice have had a falling out, and hate each other’s guts.
+Moreover, Alice and all her guests hate chocolate. But Alice doesn’t release
+Bob from his promise. Bob tries his best to bake the cake in order to fulfill
+his promise, and happens to succeed. In trying to bake the cake, Bob acted for
+the end of producing a cake. But producing the cake was worthless, since no
+one would eat it. The only value was in the trying, since that was the
+fulfillment of his promise.
+
+In both cases, it is still true that the agent acts for a good end—the useful
+triggering of the device and the production of the cake. But in both cases it
+seems they are also acting for a worthless end. Thus the cases seem to fit
+with the weak but not the strong guise of the good thesis.
+
+I think there is still reason to be sceptical of the strong version.
+
+**Weak** : Whenever you act, you act for an end that you perceive is good.
+
+**Strong** : Whenever you act, you act for an end, and every end you act for
+you perceive as good.
+
+This isn’t quite enough for a defense of the strong thesis. For even if the
+success is good, it does not follow that you perceive the success as good. You
+might subscribe to an axiological action on which success is not good in
+general, but only success at something good.
+
+According to the guise of the good thesis, one always acts for the sake of an
+apparent good. There is a weaker and a stronger version of this:
+
+I was going to leave it at this. But then I thought of a way to save the
+strong guise of the good thesis. Success is valuable as such. When I try to do
+something, succeeding at it has value. So the arm going up or the cake being
+produced _are_ valuable as necessary parts of the success of one’s action. So
+perhaps every end of your action _is_ trivially good, because it is good for
+your action to succeed, and the end is a (constitutive, not causal) means to
+success.
+
+For the strong version to have any plausibility, “good” must include cases of
+purely instrumental goodness.
+
+Suppose Alice can read your mind, and you are playing poker against a set of
+people not including Alice. You don’t care about winning, just about money.
+Alice has a deal for you that you can’t refuse.
+
+If you lose, but you tried to win, she pays you double what you lost.
+
+Clearly the prudent thing to do is to try to win. For if you don’t try to win,
+then you are guaranteed not to get any money. But if you do try, you won’t
+lose anything, and you might gain.
+
+Is this possible? I think so. We just need to
+[distinguish](http://alexanderpruss.blogspot.com/2019/08/two-ways-to-pursue-y-
+for-sake-of-z.html) between pursuing victory for the sake of something else
+that follows from victory and pursuing victory for the sake of something that
+might follow from the pursuit of victory.
+
+Here is the oddity: you are trying to win in order to get paid, but you only
+get paid if you don’t win. Thus, you are trying to achieve something, the
+achievement of which would undercut the end you are pursuing.
+
+Sacrifice an enormous amount of _F_ -considerations for a slight good for
+one’s children.
+
+Sacrifice a slight amount of _F_ -considerations for a great deal of good for
+one’s children.
+
+_Morality_ says that (1) is obligatory but (2) is permitted. Thus, morality
+already weighs _F_ and paradigmatically moral concerns and provides a
+combination verdict. In other words, there already are _moral_ norms of
+combination. So the view would be that there are moral norms of combination
+and overall norms of combination, both of which take into account exactly the
+same first order considerations, but sometimes come to different conclusions
+because they weigh the very same first order considerations differently (e.g.,
+in the case where a moderate amount of _F_ -considerations needs to be
+sacrificed for a moderate amount of good for one’s children).
+
+But here is an oddity. Morality already combines _F_ -considerations and first
+order paradigmatically moral considerations. Consider two actions:
+
+A view where _F_ -norms _always_ override moral norms does not seem plausible.
+In the case of prudential or meaningfulness, it would point to a fundamental
+selfishness in the normative constitution of the human being.
+
+Some philosophers think that sometimes norms other than moral norms—e.g.,
+prudential norms or norms of the meaningfulness of life—take precedence over
+moral norms and make permissible actions that are morally impermissible. Let
+_F_ -norms be such norms.
+
+This view violates Ockham’s razor: Why would we have moral norms of
+combination if the overall norms of combination always override them anyway?
+
+Moreover, the view has the following difficulty: It seems that the best way to
+define a type of norm (prudential, meaningfulness, moral, etc.) is in terms of
+the types of consideration that the norm is based on. But if the overall norms
+of combination take into account the very same types of consideration as the
+moral norms of combination, then this way of distinguishing the types of norms
+is no longer available.
+
+So the view has to be that sometimes _F_ -norms take precedence over moral
+norms, but not always. There must thus be norms which are neither _F_ -norms
+nor moral norms that decide whether _F_ -norms or moral norms take precedence.
+We can call these “overall norms of combination”. And it is crucial to the
+view that the norms of combination themselves be neither _F_ -norms nor moral
+norms.
+
+Maybe there is a view on which the overall ones take into account not the
+first-order moral and _F_ -considerations, but only the deliverances of the
+moral and _F_ -norms of combination, but that seems needlessly complex.
+
+I suspect that most cases of mutual enmity are also cases of moral opposition,
+but I am less clear on this.
+
+Michael Huemer advances a version of this argument in his "Ethical
+Intuitionism", somewhere around page 180 or 190 or the like (I don't have the
+book in front of me, sorry). I forget the exact details, but it may be worth
+checking out what he said.
+
+Note that cases of moral opposition are all cases of competition. Cases of
+mutual enmity are also cases of competition, except in rare cases, such as
+when a party suffers from depression or acedia which makes them not be opposed
+to their own ill-being.
+
+The reason for the qualification on reasons in 3 is that one might say that
+someone who punishes someone in the hope of their reform is pursuing their
+ill-being for the sake of their well-being. I don’t know if that is the right
+way to describe reformative punishment, but it’s safer to include the
+qualification in (3).
+
+Moral opposition: _x_ and _y_ have shared knowledge that they are pursuing
+incompatible goals and each takes the other’s pursuit to be morally wrong.
+
+Both competition and moral opposition are compatible with mutual love, but
+mutual enmity is not compatible with either direction of love.
+
+I think loving one’s competitors could be good practice for loving one’s (then
+necessarily non-mutual) enemies.
+
+Mutual enmity: _x_ and _y_ have shared knowledge that they each pursue the
+other’s ill-being for a reason other than the other’s well-being.
+
+Woops. This was supposed to be a comment on the overriding moral reasons post.
+Sorry!
+
+**Strong** : Whenever you act, you act for an end, and every end you act for
+you perceive as good.
+
+In both cases, it is still true that the agent acts for a good end—the useful
+triggering of the device and the production of the cake. But in both cases it
+seems they are also acting for a worthless end. Thus the cases seem to fit
+with the weak but not the strong guise of the good thesis.
+
+**Weak** : Whenever you act, you act for an end that you perceive is good.
+
+But perhaps we can say this. We have a normative power to endow some neutral
+things with value by making them our ends. And in fact the only way to act for
+an end that does not have any independent value is by exercising that
+normative power. And exercising that normative power involves your seeing the
+thing you’re endowing with value as valuable. And maybe the only way to raise
+your arm or for Bob to bake the cake in the examples is by exercising the
+normative power, and doing so involves seeing the end as good. Maybe. This has
+some phenomenological plausibility and it would be nice if it were true,
+because the strong guise of the good thesis is pretty plausible to me.
+
+I was going to leave it at this. But then I thought of a way to save the
+strong guise of the good thesis. Success is valuable as such. When I try to do
+something, succeeding at it has value. So the arm going up or the cake being
+produced _are_ valuable as necessary parts of the success of one’s action. So
+perhaps every end of your action _is_ trivially good, because it is good for
+your action to succeed, and the end is a (constitutive, not causal) means to
+success.
+
+According to the guise of the good thesis, one always acts for the sake of an
+apparent good. There is a weaker and a stronger version of this:
+
+**Case 1:** There is some device which does something useful when you trigger
+it. It is triggered by electrical activity. You strap it on to your arm, and
+raise your arm, so that the electrical activity in your muscles triggers the
+device. Your raising your arm has the arm going up as an end, but that end is
+not perceived as good, but merely neutral. All you care about is the
+electrical activity in your muscles.
+
+For the strong version to have any plausibility, “good” must include cases of
+purely instrumental goodness.
+
+I think there is still reason to be sceptical of the strong version.
+
+This isn’t quite enough for a defense of the strong thesis. For even if the
+success is good, it does not follow that you perceive the success as good. You
+might subscribe to an axiological action on which success is not good in
+general, but only success at something good.
+
+**Case 2:** Back when they were dating in high school, Bob promised to try his
+best to bake a nine-layer chocolate cake for Alice’s 40th birthday. Since
+then, Bob and Alice have had a falling out, and hate each other’s guts.
+Moreover, Alice and all her guests hate chocolate. But Alice doesn’t release
+Bob from his promise. Bob tries his best to bake the cake in order to fulfill
+his promise, and happens to succeed. In trying to bake the cake, Bob acted for
+the end of producing a cake. But producing the cake was worthless, since no
+one would eat it. The only value was in the trying, since that was the
+fulfillment of his promise.
+
+Is this possible? I think so. We just need to
+[distinguish](http://alexanderpruss.blogspot.com/2019/08/two-ways-to-pursue-y-
+for-sake-of-z.html) between pursuing victory for the sake of something else
+that follows from victory and pursuing victory for the sake of something that
+might follow from the pursuit of victory.
+
+Clearly the prudent thing to do is to try to win. For if you don’t try to win,
+then you are guaranteed not to get any money. But if you do try, you won’t
+lose anything, and you might gain.
+
+If you lose, but you tried to win, she pays you double what you lost.
+
+Suppose Alice can read your mind, and you are playing poker against a set of
+people not including Alice. You don’t care about winning, just about money.
+Alice has a deal for you that you can’t refuse.
+
+Here is the oddity: you are trying to win in order to get paid, but you only
+get paid if you don’t win. Thus, you are trying to achieve something, the
+achievement of which would undercut the end you are pursuing.
+
+So the view has to be that sometimes _F_ -norms take precedence over moral
+norms, but not always. There must thus be norms which are neither _F_ -norms
+nor moral norms that decide whether _F_ -norms or moral norms take precedence.
+We can call these “overall norms of combination”. And it is crucial to the
+view that the norms of combination themselves be neither _F_ -norms nor moral
+norms.
+
+A view where _F_ -norms _always_ override moral norms does not seem plausible.
+In the case of prudential or meaningfulness, it would point to a fundamental
+selfishness in the normative constitution of the human being.
+
+_Morality_ says that (1) is obligatory but (2) is permitted. Thus, morality
+already weighs _F_ and paradigmatically moral concerns and provides a
+combination verdict. In other words, there already are _moral_ norms of
+combination. So the view would be that there are moral norms of combination
+and overall norms of combination, both of which take into account exactly the
+same first order considerations, but sometimes come to different conclusions
+because they weigh the very same first order considerations differently (e.g.,
+in the case where a moderate amount of _F_ -considerations needs to be
+sacrificed for a moderate amount of good for one’s children).
+
+But here is an oddity. Morality already combines _F_ -considerations and first
+order paradigmatically moral considerations. Consider two actions:
+
+This view violates Ockham’s razor: Why would we have moral norms of
+combination if the overall norms of combination always override them anyway?
+
+Sacrifice an enormous amount of _F_ -considerations for a slight good for
+one’s children.
+
+Some philosophers think that sometimes norms other than moral norms—e.g.,
+prudential norms or norms of the meaningfulness of life—take precedence over
+moral norms and make permissible actions that are morally impermissible. Let
+_F_ -norms be such norms.
+
+Moreover, the view has the following difficulty: It seems that the best way to
+define a type of norm (prudential, meaningfulness, moral, etc.) is in terms of
+the types of consideration that the norm is based on. But if the overall norms
+of combination take into account the very same types of consideration as the
+moral norms of combination, then this way of distinguishing the types of norms
+is no longer available.
+
+Maybe there is a view on which the overall ones take into account not the
+first-order moral and _F_ -considerations, but only the deliverances of the
+moral and _F_ -norms of combination, but that seems needlessly complex.
+
+Sacrifice a slight amount of _F_ -considerations for a great deal of good for
+one’s children.
+
+Note that cases of moral opposition are all cases of competition. Cases of
+mutual enmity are also cases of competition, except in rare cases, such as
+when a party suffers from depression or acedia which makes them not be opposed
+to their own ill-being.
+
+Moral opposition: _x_ and _y_ have shared knowledge that they are pursuing
+incompatible goals and each takes the other’s pursuit to be morally wrong.
+
+I think loving one’s competitors could be good practice for loving one’s (then
+necessarily non-mutual) enemies.
+
+Mutual enmity: _x_ and _y_ have shared knowledge that they each pursue the
+other’s ill-being for a reason other than the other’s well-being.
+
+Both competition and moral opposition are compatible with mutual love, but
+mutual enmity is not compatible with either direction of love.
+
+I suspect that most cases of mutual enmity are also cases of moral opposition,
+but I am less clear on this.
+
+Michael Huemer advances a version of this argument in his "Ethical
+Intuitionism", somewhere around page 180 or 190 or the like (I don't have the
+book in front of me, sorry). I forget the exact details, but it may be worth
+checking out what he said.
+
+Woops. This was supposed to be a comment on the overriding moral reasons post.
+Sorry!
+
+The reason for the qualification on reasons in 3 is that one might say that
+someone who punishes someone in the hope of their reform is pursuing their
+ill-being for the sake of their well-being. I don’t know if that is the right
+way to describe reformative punishment, but it’s safer to include the
+qualification in (3).
+
+Yeah, I think I made a number of mistakes in my argument.  
+  
+On consequentialism what is evaluated is the action, not the end of the
+action. So even if my winning has lower utility than your winning under
+similar circumstances, it does not follow that my trying to win has lower
+utility than my not trying to win. There are two possibilities, after all,
+assuming I try to win. Either I will succeed or I won't. If I won't succeed,
+then the harder I tried, the more enjoyable the victory for you, for your fans
+and for my fans. If I do succeed, the utility is lower than if I had tried and
+you nonetheless succeeded (I am assuming your victory has higher utility), but
+it may still be higher than had I failed to try (in which case very likely I
+would not have succeeded) because then there would have been general
+disappointment. So a case can be made that my trying to win is better than my
+not trying to win, even if other things being equal my winning is worse than
+your winning. And similar things seem to hold on expected utility versions.  
+  
+Still, suppose that the utility of your winning is higher than of my winning,
+and I am about to win, but I have some subtle way of throwing the game so no
+one can tell, and everyone will enjoy the game pretty much as much. Then on
+externalist consequentialism I should throw the game in this way. Whether such
+a way of throwing the game is available depends on many factors: what the game
+is, who the audience are, what level one and one's opponent are. Still, there
+are probably a number of combinations where such throwing is available, and
+the slight loss in quality of play is outweighed by the benefits of your
+winning.
+
+Of course, in practice, the two sides are not unbiased. One might overestimate
+the value of oneself winning and the underestimate the value of the other
+winning. But that is likely to involve some epistemic vice.
+
+I wonder if consequentialism can be salvaged from this argument with the
+following consideration:  
+  
+Suppose that the utility of winning accrues only if the victory is achieved
+against a capable opponent who is highly motivated to win. (For example, I
+have seen boxing matches where the victor is visibly disappointed or even
+enraged when he perceives that his opponent threw in the towel prematurely.)
+In this case, each competitor would be behaving morally if and only if he
+tries his hardest to win, even given consequentialism.
+
+In the ideal case, competitors both rightly pursue the incompatible goals, and
+each knows that they are both so doing.
+
+So, the result is that either on externalist or internalist consequentialism,
+in most sports and other competitions, at least one side is acting morally
+wrongly or is acting in the light of an epistemic vice.
+
+On internalist consequentalism, where the right action is defined by expected
+utilities, we would expect that if both sides are unbiased investigators, in
+most of the games, at least one side would at take the expected utility of the
+other side’s winning to be higher. For if both sides are perfect investigators
+with the same evidence and perfect priors, then they will assign the same
+expected utilities, and so at least one side will take the other’s to have
+higher expected utility, except in the rare case where the two expected
+utilities are equal. And if both sides assign expected utilities completely at
+random, but unbiasedly (i.e., are just as likely to assign a higher expected
+utility to the other side winning as to themselves), then bracketing the rare
+case where a side assigns equal expected utility to both victory options, any
+given side will have a probability of about a half of assigning higher
+expected utility to the other side’s victory, and so there will be about a 3/4
+chance that at least one side will take the other side’s victory to be more
+likely. And other cases of unbiased investigators will likely fall somewhere
+between the perfect case and the random case, and so we would expect that in
+most games, at least one side will be playing for an outcome that they think
+has lower expected utility.
+
+Given externalist consequentialism, where the right action is the one that
+actually would produce better consequences, ideal competition will be
+extremely rare, since the only time the pursuit of each of two incompatible
+goals will be right is if there is an exact tie between the values of the
+goals, and that is extremely rare.
+
+This has the odd result that on externalist consequentialism, in most sports
+and other games, at least one side is acting wrongly. For it is extremely rare
+that there is an exact tie between the values of one side winning and the
+value of the other side winning. (Some people enjoy victory more than others,
+or have somewhat more in the way of fans, etc.)
+
+I’ve been thinking about who competitors, opponents and enemies are, and I am
+not very clear on it. But I think we can start with this:
+
+Thus at least some intervals will have lengths that aren’t real numbers: their
+length will be a real number plus or minus a (non-zero) infinitesimal.
+
+That leaves [ _a_ , _b_ ) and ( _a_ , _b_ ]. By symmetry if one has length _b_
+− _a_ , surely so does the other. And in fact Milovich gave me [a
+proof](https://mathoverflow.net/questions/108170/hyperreal-finitely-additive-
+measure-on-0-1-assigning-b-a-to-a-b-or-a-b) that there is no contradiction in
+supposing that _m_ ([ _a_ , _b_ )) = _m_ (( _b_ , _a_ ]) = _b_ − _a_.
+
+At the same time, intuitively, _some_ intervals from _a_ to _b_ should have
+length _exactly_ _b_ − _a_ , which is a real number (assuming _a_ and _b_ are
+real). Which ones? The choices are [ _a_ , _b_ ], ( _a_ , _b_ ), [ _a_ , _b_ )
+are ( _a_ , _b_ ].
+
+As usual, write [ _a_ , _b_ ] for the interval of the real line from _a_ to
+_b_ including both _a_ and _b_ , ( _a_ , _b_ ) for the interval of the real
+line from _a_ to _b_ excluding _a_ and _b_ , and [ _a_ , _b_ ) and ( _a_ , _b_
+] respectively for the intervals that include _a_ and exclude _b_ and vice
+versa.
+
+Let _α_ be the non-zero infinitesimal length of a single point. Then [ _a_ ,
+_a_ ] is a single point. Its length thus will be _α_ , and not _a_ − _a_ = 0.
+So [ _a_ , _b_ ] can’t _always_ have real-number length _b_ − _a_. But maybe
+at least it can in the case where _a_ < _b_? No. For suppose that _m_ ([ _a_ ,
+_b_ ]) = _b_ − _a_ whenever _a_ < _b_. Then _m_ (( _a_ , _b_ ]) = _b_ − _a_ −
+_α_ whenever _a_ < _b_ , since ( _a_ , _b_ ] is missing exactly one point of [
+_a_ , _b_ ]. But then let _c_ = ( _a_ + _b_ )/2 be the midpoint of [ _a_ , _b_
+]. Then:
+
+_m_ ([ _a_ , _b_ ]) = _m_ ([ _a_ , _c_ ]) + _m_ (( _c_ , _b_ ]) = ( _c_ − _a_
+) + ( _b_ − _c_ − _α_ ) = _b_ − _a_ − _α_ ,
+
+What about ( _a_ , _b_ )? Can that always have real number length _b_ − _a_ if
+_a_ < _b_? No. For if we had that, then we would absurdly have:
+
+Suppose that you want to measure the size _m_ ( _I_ ) of an interval _I_ , but
+you have the conviction that single points matter, so [ _a_ , _b_ ] is bigger
+than ( _a_ , _b_ ), and you want to use infinitesimals to model that
+difference. Thus, _m_ ([ _a_ , _b_ ]) will be infinitesimally bigger than _m_
+(( _a_ , _b_ )).
+
+_m_ (( _a_ , _b_ )) = _m_ (( _a_ , _c_ )) + _α_ \+ _m_ (( _c_ , _b_ )) = _c_ −
+_a_ \+ _α_ \+ _b_ − _c_ = _b_ − _a_ \+ _α_ ,
+
+since ( _a_ , _b_ ) is equal to the disjoint union of ( _a_ , _c_ ), the point
+_c_ and $(c,b).
+
+Now, embed _V_ in a hyperreal field _V_ 2 that contains a supremum for every
+subset of _V_ , and embed _V_ 2 in _V_ 3 which has a supremum for every subset
+of _V_ 2. Let _Ω_ be our probability space.
+
+Linearity: _E_ _p_ ( _a_ _f_ + _b_ _g_ ) = _a_ _E_ _p_ _f_ \+ _b_ _E_ _p_ _g_
+for _a_ and _b_ in _V_
+
+Probability-match: _E_ _p_ 1 _A_ = _p_ ( _A_ ) for any event _A_ , where 1 _A_
+is 1 on _A_ and 0 elsewhere
+
+How does this get around the arguments I link to in (1) and (2) that seem to
+say that this can’t be done? The trick is this: the expected value has values
+in a hyperreal field _W_ which will be larger than _V_ , while (4)–(6) only
+hold for gambles with values in _V_. The idea is that we distinguish between
+what one might call primary values, which are particular goods in the world,
+and what one might call distribution values, which specify how much a random
+distribution of primary values is worth. We do not allow the distribution
+values themselves to be the values of a gamble. This has some downsides, but
+at least we can have (4)–(6) on _all_ gambles.
+
+The apparent solution works as follows. For any gamble with values in some
+real or hyperreal field _V_ and any finitely-additive probability _p_ with
+values in _V_ , we generate a hyperreal expected value _E_ _p_ , which
+satisfies these plausible axioms:
+
+How to evaluate expected utilities of gambles whose values are hyperreal,
+where the probabilities may be real or hyperreal, which I raise in Section 4.2
+of my paper on [accuracy in infinite domains](http://philsci-
+archive.pitt.edu/21251/).
+
+I think like this. First it looks like the [Hahn-Banach dominated extension
+theorem](https://en.wikipedia.org/wiki/Hahn%E2%80%93Banach_theorem) holds for
+_V_ 2-valued _V_ 1-linear functionals on _V_ 1-vector spaces _V_ 1 ⊆ _V_ 2 are
+real or hyperreal field, except that our extending functional may need to take
+values in a field of hyperreals even larger than _V_ 2. The crucial thing to
+note is that any subset of a real or hyperreal field has a supremum in a
+larger hyperreal field. Then where the proof of the Hahn-Banach theorem uses
+infima and suprema, you move to a larger hyperreal field to get them.
+
+How to value gambles on a countably infinite fair lottery where the gamble is
+positive and asymptotically approaches zero at infinity. The
+[problem](http://alexanderpruss.blogspot.com/2022/11/dominance-and-countably-
+infinite-fair.html) is that any positive non-infinitesimal value is too big
+and any infinitesimal value violates strict dominance.
+
+Dominance: if _f_ ≤ _g_ everywhere, then _E_ _p_ _f_ ≤ _E_ _p_ _g_ , and if
+_f_ < _g_ everywhere, then _E_ _p_ _f_ < _E_ _p_ _g_.
+
+The problem of how to value the St Petersburg paradox. The particular version
+that interests me is one from [Russell and
+Isaacs](https://philarchive.org/rec/RUSINP-2) which says that any finite value
+is too small, but any infinite value violates strict dominance (since, no
+matter what, the payoff will be less than infinity).
+
+Let _X_ be the space of bounded _V_ 2-valued functions on _Ω_ and let _M_ ⊆
+_X_ be the subspace of simple functions (with respect to the algebra of sets
+that _Ω_ is defined on). For _f_ ∈ _M_ , let _ϕ_ ( _f_ ) be the integral of
+_f_ with respect to _p_ , defined in the obvious way. The supremum on _V_ 2
+(which has values in _V_ 3) is then a seminorm dominating _ϕ_. Extend _ϕ_ to a
+_V_ -linear function _ϕ_ on _X_ dominated by _V_ 2. Note that if _f_ > 0
+everywhere for _f_ with values in _V_ , then _f_ > _α_ > 0 everywhere for some
+_α_ ∈ _V_ 2, and hence _ϕ_ (− _f_ ) ≤ − _α_ by seminorm domination, hence 0 <
+_α_ ≤ _ϕ_ ( _f_ ). Letting _E_ _p_ be _ϕ_ restricted to the _V_ -valued
+functions, our construction is complete.
+
+Binary Wagers: If _U_ is 0 outside _A_ and _c_ on _A_ , then _E_ _p_ _U_ = _c_
+_P_ ( _A_ ).
+
+You could restrict previsions to real-valued wagers. (This is not entirely
+arbitrary. What would it mean to win $β?) Then the wager ‘constant β’ would
+have no prevision. So there would be no contradiction. The best you could do
+would be ‘constant zero’. This has prevision zero, which is strictly less than
+β, as expected.
+
+Suppose we have a finitely-additive probability assignment _p_ (perhaps real,
+perhaps hyperreal) for a countably infinite lottery with tickets 1, 2, ... in
+such a way that each ticket has infinitesimal probability (where zero counts
+as an infinitesimal). Now suppose we want to calculate the expected value or
+previsio _E_ _p_ _U_ of any bounded wager _U_ on the outcome of the lottery,
+where we think of the wager as assigning a value to each ticket, and the wager
+is bounded if there is a finite _M_ such that | _U_ ( _n_ )| < _M_ for all
+_n_.
+
+Yeah. I have a more general solution along the same lines. Will post soon.
+
+But we can’t. For suppose we have it. Let _U_ ( _n_ ) = 1/(2 _n_ ). Fix a
+positive integer _m_. Let _U_ 1( _n_ ) be 2 for _n_ ≤ _m_ \+ 1 and 0
+otherwise. Let _U_ 2( _n_ ) be 1/ _m_ for _n_ > _m_ \+ 1 and 0 for _n_ ≤ _m_
+\+ 1. Then by Binary Wagers and by the fact that each ticket has infinitesimal
+probability, _E_ _p_ _U_ 1 is an infinitesimal _α_ (since the probability of
+any finite set will be infinitesimal). By Binary Wagers and Dominance, _E_ _p_
+_U_ 2 ≤ 1/( _m_ +1). Thus by Disjoint Additivity, _E_ _p_ ( _U_ 1+ _U_ 2) ≤
+_α_ \+ 1/( _m_ +1) < 1/ _m_. But _U_ < _U_ 1 \+ _U_ 2 everywhere, so by
+Dominance we have _E_ _p_ _U_ < 1/ _m_. Since 0 < _U_ everywhere, by Dominance
+and Binary Wagers we have 0 < _E_ _p_ _U_.
+
+Dominance: If _U_ 1 < _U_ 2 everywhere, then _E_ _p_ _U_ 1 < _E_ _p_ _U_ 2.
+
+Disjoint Additivity: If _U_ 1 and _U_ 2 are wagers supported on disjoint
+events (i.e., there is no _n_ such  
+that _U_ 1( _n_ ) and _U_ 2( _n_ ) are both non-zero), then _E_ _p_ ( _U_ 1+
+_U_ 2) = _E_ _p_ _U_ 1 \+ _E_ _p_ _U_ 2.
+
+Thus, _E_ _p_ _U_ is a non-zero infinitesimal _β_. But then _β_ < _U_ ( _n_ )
+for all _n_ , and so by Binary Wagers and Dominance, _β_ < _E_ _p_ _U_ , a
+contradiction.
+
+According to Catholic corruptionists, when I die, my soul will continue to
+exist, but I won’t; then at the Resurrection, I will come back into existence,
+receiving my soul back. In the interim, however, it is my soul, not I, who
+will enjoy heaven, struggle in purgatory or suffer in hell.
+
+Isn't the reason that you wouldn't care what happens to your body after you
+die is not just that it's not a part of you when it happens but also that the
+part of you that would normally feel the pain (if you were
+burned/decayed/dissected) doesn't.  
+  
+With the soul you (run with me for a little on this) would
+suffer/struggle/enjoy the afterlife. Now obviously you on curroptionism
+wouldn't suffer/struggle/enjoy but the part of you that normally would feel
+the pain does. And so the special care may still be applied under
+curroptionism.
+
+But clearly heaven, purgatory and hell in the interim state is something we
+should care about.
+
+First, the soul isn't the part of me that normally feels pain. The soul is the
+part of me by virtue of which *I* feel pain. When I feel pain, there is only
+one thing that feels pain--me, not me and my soul.  
+  
+Second, imagine that materialism is true, and the pain center of your brain is
+removed from your head and put in a vat. Then that pain center is stimulated.
+Should you specially care? Not at all! It's formerly your pain center--it was
+that by which you feel pain--but it's not connected in the right way to the
+whole, so what happens to it is irrelevant. Or suppose that we have a version
+of materialism on which during a cerebrum transplant you stay with the
+cerebrumless body (e.g., some versions of animalism). Your cerebrum is removed
+and pain-stimulated in a vat. In terms of special care, this is surely
+irrelevant.
+
+Of course, for any thing that enjoys heaven, strugges in purgatory or suffers
+in hell, I should care that it does so. But should I have that kind of special
+care that we have about things that happen to ourselves for what happens to
+the soul? I say not, or at most slightly. For suppose that it turned out on
+the correct metaphysics that my matter continues to exist after death. Should
+I care whether it burns, decays, or is dissected, with that special care with
+which we care about what happens to ourselves? Surely not, or at most
+slightly. Why not? Because the matter won’t be a part of me when this happens.
+(The “at most slightly” flags the fact that we can care about “dignitary
+harms”, such as nobody showing up at our funeral, or us being defamed, etc.)
+
+**Theorem:** Assume the Axiom of Choice. Suppose ≤ on _V_ is reflexive,
+transitive and non-trivial in the sense that it contains two values _v_ and
+_w_ such that _v_ < _w_. There exists a reflexive, transitive preference
+ordering ≼ on the value distributions satisfying (4)–(6) if and only if there
+is such an ordering that is total if and only if _G_ has locally finite action
+on _X_.
+
+A group of symmetries _G_ has locally finite action a set _X_ provided that
+for each finite subset _H_ of _G_ and each _x_ ∈ _X_ , applying finite
+combinations of members of _G_ to _x_ generates only a finite subset of _X_.
+(More precisely, if ⟨ _H_ ⟩ is the subgroup generated by _G_ , then ⟨ _H_ ⟩
+_x_ is finite.)
+
+Sameness independence: if _f_ 1, _f_ 2, _g_ 1, _g_ 2 are value distributions
+and _A_ ⊆ _X_ is such that (a) _f_ 1 ≼ _f_ 2, (b) _f_ 1( _x_ ) = _f_ 2( _x_ )
+and _g_ 1( _x_ ) = _g_ 2( _x_ ) if _x_ ∉ _A_ , (c) _f_ 1( _x_ ) = _g_ 1( _x_ )
+and _f_ 2( _x_ ) = _g_ 2( _x_ ) if _x_ ∈ _A_.
+
+Finally, we want to have some sort of symmetries on the population. The most
+radical would be that the value distributions don’t care about permutations of
+people, but more moderate symmetries may be required. For this we need a group
+_G_ of permutations acting on _X_.
+
+The trick to the proof of the Theorem is to reduce preferences between
+distributions to comparisons of subsets of _X_ × _V_ and to reduce comparisons
+of subsets of _X_ to preferences between binary distributions.
+
+Write _f_ ≈ _g_ when _f_ ≼ _g_ and _g_ ≼ _f_ , and _f_ ≺ _g_ when _f_ ≼ _g_
+but not _g_ ≼ _f_. Similarly for values _v_ and _w_ , write _v_ < _w_ if _v_ ≤
+_w_ but not _w_ ≤ _v_.
+
+For instance, in the past I’ve proved theorems on qualitative probabilities. A
+qualitative probability is a relation ≼ on the subsets of some sample space
+_Ω_ such that:
+
+if _A_ ∩ _C_ = _B_ ∩ _C_ = ⌀, then _A_ ≼ _B_ iff _A_ ∩ _C_ ≼ _B_ ∩ _C_
+(additivity).
+
+Pareto: If _f_ ( _x_ ) ≤ _g_ ( _x_ ) for all _x_ with _f_ ( _x_ ) < _g_ ( _x_
+) for some _x_ , then _f_ ≺ _g_.
+
+I forgot to say that G acts on X x V by acting on the first component in the
+proof.
+
+**Proof of Therem:** Suppose that _G_ has locally finite action. Define _Ω_ =
+_X_ × _V_. By Theorem 2 of my invariance of [non-classical probabilities
+paper](https://arxiv.org/abs/2010.07366), there is a strongly _G_ -invariant
+regular (i.e., ⌀ ≺ _A_ if _A_ is non-empty) qualitative probability ≼ on _Ω_.
+Given a value distribution _f_ , let _f_ * = {( _x_ , _v_ ) : _v_ ≤ _f_ ( _x_
+)} be a subset of _Ω_. Define _f_ ≼ _g_ iff _f_ * ≼ _g_.
+
+But need not think of _Ω_ as a space of possibilities and of ≼ as a
+probability comparison. We could instead think of it as a set of people who
+are candidates for getting some good thing, with _A_ ≼ _B_ meaning that it’s
+at least as good for the good thing to be distributed to the members of _B_ as
+to the members of _A_. Axioms (1) and (2) are then obvious. And axiom (3) is
+an independence axiom: whether it is at least as good to give the good thing
+to the members of _B_ as to the members of _A_ doesn’t depend on whether we
+give it to the members of a disjoint set _C_ at the same time.
+
+A comment by a referee of a recent paper of mine that one of my results in
+decision theory didn’t actually depend on numerical probabilities and hence
+could extend to social choice principles made me realize that this may be true
+for some other things I’ve done.
+
+Here, _f_ ∘ _g_ is the value distribution where site _x_ gets _f_ ( _g_ ( _x_
+)).
+
+Now suppose there is a (not necessarily total) strongly _G_ -invariant
+reflexive and transitive preference ordering ≼ on the value distributions
+satisfying (4)–(6). Given a subset _A_ of _X_ , define _A_ † to be the value
+distribution that gives _w_ to all the members of _A_ and _v_ to all the non-
+members, where _v_ < _w_. Define _A_ ≼ _B_ iff _A_ † ≼ _B_ †. This will be a
+strongly _G_ -invariant reflexive and transitive relation on the subsets of
+_X_. It will be regular by the Pareto condition. Finally, additivity follows
+from the sameness independence condition. Local finiteness of action of _G_
+then follows from Theorem 2 of my paper. ⋄
+
+We want to generate a reflexive and transitive preference ordering ≼ on the
+set _V_ _X_ of value distributions.
+
+Of course, for a general social choice principle we need more than just a
+decision whether to give one and the same good to the members of some set. But
+we can still formalize those questions in terms of something pretty close to
+qualitative probabilities. For a general framework, suppose a population set
+_X_ (a set of people or places in spacetime or some other sites of value) and
+a set of values _V_ (this could be a set of types of good, or the set of real
+numbers representing values). We will suppose that _V_ comes with a transitive
+and reflexive (preorder) preference relation ≤. Now let _Ω_ = _X_ × _V_. A
+value distribution is a function _f_ from _X_ to _V_ , where _f_ ( _x_ ) = _v_
+means that _x_ gets something of value _v_.
+
+In other words, the mutual ranking between two value distributions does not
+depend on what the two distributions do to the people on whom the
+distributions agree. If it’s better to give $4 to Jones than to give $2 to
+Smith when Kowalski is getting $7, it’s still better to give $4 to Jones than
+to give $2 to Smith when Kowalski is getting $3. There is probably some other
+name in the literature for this property, but I know next to nothing about
+social choice literature.
+
+If _X_ is finite, then local finiteness of action is trivial. If _X_ is
+infinite, then it will be satisfies in some cases but not others. For
+instance, it will be satisfied if _G_ is permutations that only move a finite
+number of members of _X_ at a time. It will on the other hand fail if _X_ is a
+infinite bunch of people regularly spaced in a line and _G_ is shifts.
+
+Totality, reflexivity, transitivity and strong _G_ -invariance for value
+distributions follows from the same conditions for subsets of _Ω_. Regularity
+of ≼ on the subsets of _Ω_ and additivity implies that if _A_ ⊂ _B_ then _A_ ≺
+_B_. The Pareto condition for ≼ on the value distributions follows since if
+_f_ and _g_ satisfy are such that _f_ ( _x_ ) ≤ _g_ ( _x_ ) for all _x_ with
+strict inequality for some _x_ , then _f_ * ⊂ _g_ *. Finally, the complicated
+sameness independence condition follows from additivity.
+
+Strong _G_ -invariance: if _g_ ∈ _G_ and _f_ is a value distribution, then _f_
+∘ _g_ ≈ _f_.
+
+Note that while it is natural to think of _X_ has just a set of people or of
+locations, [inspired by Kenny
+Easwaran](https://www.google.com/url?q=https%3A%2F%2Fwww.dropbox.com%2Fs%2Fdklfwsl2ql1rt6s%2FAggregation.pdf%3Fraw%3D1&sa=D&sntz=1&usg=AOvVaw2nfKx0sldlPHYVX-
+lddt22) one can also think of it as a set _Q_ × _Ω_ where _Ω_ is a probability
+space and _Q_ is a population, so that _f_ ( _x_ , _ω_ ) represents the value
+_x_ gets at location _ω_. In that case, _G_ might be defined by symmetries of
+the population and/or symmetries of the probability space. In such a setting,
+we might want a weaker Pareto principle that supposes additionally that _f_ (
+_x_ , _ω_ ) < _g_ ( _x_ , _ω_ ) for some _x_ and _all_ _ω_. With that weaker
+Pareto principle, the proof that the existence of a _G_ -invariant preference
+of the right sort on the distributions implies local finiteness of action does
+not work. However, I think we can still prove local finiteness of action in
+that case if the symmetries in _G_ act only on the population (i.e., for all
+_x_ and _ω_ there is an _y_ such that _g_ ( _x_ , _ω_ ) = ( _y_ , _ω_ )). In
+that case, given a subset _A_ of the population _Q_ , we define _A_ † to be
+the distribution that gives _w_ to all the persons in _A_ with certainty
+(i.e., everywhere on _Ω_ ) and gives _v_ to everyone else, and the rest of the
+proof should go through, but I haven’t checked the details.
+
