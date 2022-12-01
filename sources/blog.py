@@ -26,34 +26,34 @@ class Blog(DataSource):
         return(corpus_name)
 
 
-    # def get_web_page_text_contents(self, url):
-    #     """ Donne dans une string le contenu texte d'une page web simple (avec que du textec comme un fichier texte) """
-    #     print("get contents of page web :", url)
-    #     page = requests.get(url) #page.text donne le contenu texte d'un page web (comme si c'etait un fichier txt)    
-    #     text_contents = page.text
+    def get_web_page_text_contents(self, url):
+        """ Donne dans une string le contenu texte d'une page web simple (avec que du textec comme un fichier texte) """
+        print("get contents of page web :", url)
+        page = requests.get(url) #page.text donne le contenu texte d'un page web (comme si c'etait un fichier txt)    
+        text_contents = page.text
 
-    #     return(text_contents)
-
-
-    # def get_blog_robots_page(self):
-    #     """ Recupere la page robots.txt d'un blog 
-    #         Exemple : blog_name = "http://alexanderpruss.blogspot.com"
-    #     """
-    #     return(self.url + "/robots.txt")
+        return(text_contents)
 
 
-    # def get_sitemap_page(self):
-    #     """ Recupere la page sitemap d'un blog """
-    #     robots_txt_page = self.get_blog_robots_page()
-    #     print("get text_contents of robots_txt_page")
-    #     text_contents = self.get_web_page_text_contents(robots_txt_page)
-    #     print("get text_contents of robots_txt_page fini")
-    #     text_contents = text_contents.split("\n")
-    #     sitemap_contents = [elt for elt in text_contents if "Sitemap" in elt]
-    #     print("sitemap_contents =", sitemap_contents)
-    #     sitemap_page = sitemap_contents[0].split(" ")[1]
+    def get_blog_robots_page(self):
+        """ Recupere la page robots.txt d'un blog 
+            Exemple : blog_name = "http://alexanderpruss.blogspot.com"
+        """
+        return(self.url + "/robots.txt")
 
-    #     return(sitemap_page)
+
+    def get_sitemap_page(self):
+        """ Recupere la page sitemap d'un blog """
+        robots_txt_page = self.get_blog_robots_page()
+        print("get text_contents of robots_txt_page")
+        text_contents = self.get_web_page_text_contents(robots_txt_page)
+        print("get text_contents of robots_txt_page fini")
+        text_contents = text_contents.split("\n")
+        sitemap_contents = [elt for elt in text_contents if "Sitemap" in elt]
+        print("sitemap_contents =", sitemap_contents)
+        sitemap_page = sitemap_contents[0].split(" ")[1]
+
+        return(sitemap_page)
 
 
     # def get_sitemap_from_main_sitemap(self, sitemap_page):

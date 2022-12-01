@@ -2,6 +2,7 @@ from article import *
 from bibliography import *
 from blog import *
 from blogspot import *
+from wordpress import *
 from bibliographylist import *
 from bloglist import *
 import os
@@ -44,7 +45,7 @@ def test_blog(url, num_articles):
 def test_bloglist(filename, num_articles):
     blogList = BlogList(filename, num_articles)
     print(blogList)
-    blogList.save_articles_urls()
+    # blogList.save_articles_urls()
     blogList.save_paragraphs()
 
 
@@ -53,6 +54,13 @@ def test_blogspot(url, num_articles):
     print(blogspot)
     blogspot.save_articles_urls()
     blogspot.save_paragraphs()
+
+
+def test_wordpress(url, num_articles):
+    wordpress = Wordpress(url, num_articles)
+    print(wordpress)
+    wordpress.save_articles_urls()
+    wordpress.save_paragraphs()
 
 
 def main():
@@ -76,12 +84,16 @@ def main():
     # num_articles = 6
     # test_bibliographylist(filename, num_articles)
 
-    filename = "blogs_philosophy_eng.txt"
-    num_articles = 5
-    test_bloglist(filename, num_articles)
-
     # url = "https://edwardfeser.blogspot.com"
     # num_articles = 3
     # test_blogspot(url, num_articles)
+
+    # url = "https://majestyofreason.wordpress.com"
+    # num_articles = 3
+    # test_wordpress(url, num_articles)
+
+    filename = "blogs_philosophy.txt"
+    num_articles = 5
+    test_bloglist(filename, num_articles)
 
 main()

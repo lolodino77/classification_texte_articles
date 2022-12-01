@@ -110,7 +110,7 @@ class DataSource:
                 article = Article(article_url, self.corpus_name)
                 article.save_paragraphs(self.path_corpus, self.paragraphs, file_open_mode="a", sep = "\n\n")
                 self.paragraphs.extend(article.paragraphs)
-                print("len self.paragraphs =", self.paragraphs)
+                print("len self.paragraphs =", len(self.paragraphs))
         #Enleve les doublons        
         paragraphs = open(self.path_corpus, "r", encoding="utf-8").read().split("\n\n")
         print("avant retirer doublons =", len(paragraphs))
