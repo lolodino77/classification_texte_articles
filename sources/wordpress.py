@@ -1,7 +1,7 @@
 from blog import *
 
 
-class Blogspot(Blog):
+class Wordpress(Blog):
 
     def __init__(self, url, num_articles):
         Blog.__init__(self, url, num_articles)

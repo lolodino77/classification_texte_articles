@@ -1,6 +1,7 @@
 from article import *
 from bibliography import *
 from blog import *
+from blogspot import *
 from bibliographylist import *
 from bloglist import *
 import os
@@ -47,6 +48,13 @@ def test_bloglist(filename, num_articles):
     blogList.save_paragraphs()
 
 
+def test_blogspot(url, num_articles):
+    blogspot = Blogspot(url, num_articles)
+    print(blogspot)
+    blogspot.save_articles_urls()
+    blogspot.save_paragraphs()
+
+
 def main():
     set_current_directory_to_root(root = "classification_texte_articles_version_objet")
     print("os.getcwd()")
@@ -64,14 +72,16 @@ def main():
     # test_bibliography(urls_biblio, corpus_name, num_articles)
     # test_blog(url_blog, num_articles)
 
-    filename = "bibliography_middle_age_fr.txt"
-    num_articles = 6
-    test_bibliographylist(filename, num_articles)
+    # filename = "bibliography_middle_age_fr.txt"
+    # num_articles = 6
+    # test_bibliographylist(filename, num_articles)
 
-    # filename = "blogs_philosophy_eng.txt"
-    # num_articles = 10
-    # test_bloglist(filename, num_articles)
+    filename = "blogs_philosophy_eng.txt"
+    num_articles = 5
+    test_bloglist(filename, num_articles)
 
-    # bibliography.
+    # url = "https://edwardfeser.blogspot.com"
+    # num_articles = 3
+    # test_blogspot(url, num_articles)
 
 main()

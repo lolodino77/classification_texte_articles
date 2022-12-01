@@ -1,5 +1,6 @@
 from datasourcelist import *
 from blog import *
+from blogspot import *
 
 class BlogList(DataSourceList):
     def __init__(self, filename, num_articles):
@@ -19,8 +20,14 @@ class BlogList(DataSourceList):
     def define_datasources(self):
         """ Definit la liste d'objets DataSources (liste de Bibliography ou de Blog """
         for url in self.urls:
-            blog = Blog(url, self.num_articles)
-            self.dataSources.append(blog)
+            if("blogspot" in url):
+                print("c'est blogspot")
+                blog = Blogspot(url, self.num_articles)
+                self.dataSources.append(blog)
+            elif("wordpress" in url):
+                print("c'est wordpress")
+                blog = Blogspot(url, self.num_articles)
+                self.dataSources.append(blog)
             print("self.dataSources =", self.dataSources)
 
     def save_articles_urls(self):

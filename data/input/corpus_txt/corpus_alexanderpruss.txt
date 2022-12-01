@@ -1264,3 +1264,487 @@ the distribution that gives _w_ to all the persons in _A_ with certainty
 (i.e., everywhere on _Ω_ ) and gives _v_ to everyone else, and the rest of the
 proof should go through, but I haven’t checked the details.
 
+In both cases, it is still true that the agent acts for a good end—the useful
+triggering of the device and the production of the cake. But in both cases it
+seems they are also acting for a worthless end. Thus the cases seem to fit
+with the weak but not the strong guise of the good thesis.
+
+According to the guise of the good thesis, one always acts for the sake of an
+apparent good. There is a weaker and a stronger version of this:
+
+For the strong version to have any plausibility, “good” must include cases of
+purely instrumental goodness.
+
+I think there is still reason to be sceptical of the strong version.
+
+**Strong** : Whenever you act, you act for an end, and every end you act for
+you perceive as good.
+
+This isn’t quite enough for a defense of the strong thesis. For even if the
+success is good, it does not follow that you perceive the success as good. You
+might subscribe to an axiological action on which success is not good in
+general, but only success at something good.
+
+**Weak** : Whenever you act, you act for an end that you perceive is good.
+
+**Case 1:** There is some device which does something useful when you trigger
+it. It is triggered by electrical activity. You strap it on to your arm, and
+raise your arm, so that the electrical activity in your muscles triggers the
+device. Your raising your arm has the arm going up as an end, but that end is
+not perceived as good, but merely neutral. All you care about is the
+electrical activity in your muscles.
+
+But perhaps we can say this. We have a normative power to endow some neutral
+things with value by making them our ends. And in fact the only way to act for
+an end that does not have any independent value is by exercising that
+normative power. And exercising that normative power involves your seeing the
+thing you’re endowing with value as valuable. And maybe the only way to raise
+your arm or for Bob to bake the cake in the examples is by exercising the
+normative power, and doing so involves seeing the end as good. Maybe. This has
+some phenomenological plausibility and it would be nice if it were true,
+because the strong guise of the good thesis is pretty plausible to me.
+
+**Case 2:** Back when they were dating in high school, Bob promised to try his
+best to bake a nine-layer chocolate cake for Alice’s 40th birthday. Since
+then, Bob and Alice have had a falling out, and hate each other’s guts.
+Moreover, Alice and all her guests hate chocolate. But Alice doesn’t release
+Bob from his promise. Bob tries his best to bake the cake in order to fulfill
+his promise, and happens to succeed. In trying to bake the cake, Bob acted for
+the end of producing a cake. But producing the cake was worthless, since no
+one would eat it. The only value was in the trying, since that was the
+fulfillment of his promise.
+
+I was going to leave it at this. But then I thought of a way to save the
+strong guise of the good thesis. Success is valuable as such. When I try to do
+something, succeeding at it has value. So the arm going up or the cake being
+produced _are_ valuable as necessary parts of the success of one’s action. So
+perhaps every end of your action _is_ trivially good, because it is good for
+your action to succeed, and the end is a (constitutive, not causal) means to
+success.
+
+Clearly the prudent thing to do is to try to win. For if you don’t try to win,
+then you are guaranteed not to get any money. But if you do try, you won’t
+lose anything, and you might gain.
+
+Here is the oddity: you are trying to win in order to get paid, but you only
+get paid if you don’t win. Thus, you are trying to achieve something, the
+achievement of which would undercut the end you are pursuing.
+
+Suppose Alice can read your mind, and you are playing poker against a set of
+people not including Alice. You don’t care about winning, just about money.
+Alice has a deal for you that you can’t refuse.
+
+If you lose, but you tried to win, she pays you double what you lost.
+
+Is this possible? I think so. We just need to
+[distinguish](http://alexanderpruss.blogspot.com/2019/08/two-ways-to-pursue-y-
+for-sake-of-z.html) between pursuing victory for the sake of something else
+that follows from victory and pursuing victory for the sake of something that
+might follow from the pursuit of victory.
+
+A view where _F_ -norms _always_ override moral norms does not seem plausible.
+In the case of prudential or meaningfulness, it would point to a fundamental
+selfishness in the normative constitution of the human being.
+
+Maybe there is a view on which the overall ones take into account not the
+first-order moral and _F_ -considerations, but only the deliverances of the
+moral and _F_ -norms of combination, but that seems needlessly complex.
+
+But here is an oddity. Morality already combines _F_ -considerations and first
+order paradigmatically moral considerations. Consider two actions:
+
+This view violates Ockham’s razor: Why would we have moral norms of
+combination if the overall norms of combination always override them anyway?
+
+Sacrifice a slight amount of _F_ -considerations for a great deal of good for
+one’s children.
+
+Some philosophers think that sometimes norms other than moral norms—e.g.,
+prudential norms or norms of the meaningfulness of life—take precedence over
+moral norms and make permissible actions that are morally impermissible. Let
+_F_ -norms be such norms.
+
+Sacrifice an enormous amount of _F_ -considerations for a slight good for
+one’s children.
+
+_Morality_ says that (1) is obligatory but (2) is permitted. Thus, morality
+already weighs _F_ and paradigmatically moral concerns and provides a
+combination verdict. In other words, there already are _moral_ norms of
+combination. So the view would be that there are moral norms of combination
+and overall norms of combination, both of which take into account exactly the
+same first order considerations, but sometimes come to different conclusions
+because they weigh the very same first order considerations differently (e.g.,
+in the case where a moderate amount of _F_ -considerations needs to be
+sacrificed for a moderate amount of good for one’s children).
+
+Moreover, the view has the following difficulty: It seems that the best way to
+define a type of norm (prudential, meaningfulness, moral, etc.) is in terms of
+the types of consideration that the norm is based on. But if the overall norms
+of combination take into account the very same types of consideration as the
+moral norms of combination, then this way of distinguishing the types of norms
+is no longer available.
+
+So the view has to be that sometimes _F_ -norms take precedence over moral
+norms, but not always. There must thus be norms which are neither _F_ -norms
+nor moral norms that decide whether _F_ -norms or moral norms take precedence.
+We can call these “overall norms of combination”. And it is crucial to the
+view that the norms of combination themselves be neither _F_ -norms nor moral
+norms.
+
+Both competition and moral opposition are compatible with mutual love, but
+mutual enmity is not compatible with either direction of love.
+
+Mutual enmity: _x_ and _y_ have shared knowledge that they each pursue the
+other’s ill-being for a reason other than the other’s well-being.
+
+The reason for the qualification on reasons in 3 is that one might say that
+someone who punishes someone in the hope of their reform is pursuing their
+ill-being for the sake of their well-being. I don’t know if that is the right
+way to describe reformative punishment, but it’s safer to include the
+qualification in (3).
+
+Woops. This was supposed to be a comment on the overriding moral reasons post.
+Sorry!
+
+I suspect that most cases of mutual enmity are also cases of moral opposition,
+but I am less clear on this.
+
+Moral opposition: _x_ and _y_ have shared knowledge that they are pursuing
+incompatible goals and each takes the other’s pursuit to be morally wrong.
+
+I think loving one’s competitors could be good practice for loving one’s (then
+necessarily non-mutual) enemies.
+
+Note that cases of moral opposition are all cases of competition. Cases of
+mutual enmity are also cases of competition, except in rare cases, such as
+when a party suffers from depression or acedia which makes them not be opposed
+to their own ill-being.
+
+Michael Huemer advances a version of this argument in his "Ethical
+Intuitionism", somewhere around page 180 or 190 or the like (I don't have the
+book in front of me, sorry). I forget the exact details, but it may be worth
+checking out what he said.
+
+Yeah, I think I made a number of mistakes in my argument.  
+  
+On consequentialism what is evaluated is the action, not the end of the
+action. So even if my winning has lower utility than your winning under
+similar circumstances, it does not follow that my trying to win has lower
+utility than my not trying to win. There are two possibilities, after all,
+assuming I try to win. Either I will succeed or I won't. If I won't succeed,
+then the harder I tried, the more enjoyable the victory for you, for your fans
+and for my fans. If I do succeed, the utility is lower than if I had tried and
+you nonetheless succeeded (I am assuming your victory has higher utility), but
+it may still be higher than had I failed to try (in which case very likely I
+would not have succeeded) because then there would have been general
+disappointment. So a case can be made that my trying to win is better than my
+not trying to win, even if other things being equal my winning is worse than
+your winning. And similar things seem to hold on expected utility versions.  
+  
+Still, suppose that the utility of your winning is higher than of my winning,
+and I am about to win, but I have some subtle way of throwing the game so no
+one can tell, and everyone will enjoy the game pretty much as much. Then on
+externalist consequentialism I should throw the game in this way. Whether such
+a way of throwing the game is available depends on many factors: what the game
+is, who the audience are, what level one and one's opponent are. Still, there
+are probably a number of combinations where such throwing is available, and
+the slight loss in quality of play is outweighed by the benefits of your
+winning.
+
+This has the odd result that on externalist consequentialism, in most sports
+and other games, at least one side is acting wrongly. For it is extremely rare
+that there is an exact tie between the values of one side winning and the
+value of the other side winning. (Some people enjoy victory more than others,
+or have somewhat more in the way of fans, etc.)
+
+So, the result is that either on externalist or internalist consequentialism,
+in most sports and other competitions, at least one side is acting morally
+wrongly or is acting in the light of an epistemic vice.
+
+In the ideal case, competitors both rightly pursue the incompatible goals, and
+each knows that they are both so doing.
+
+I wonder if consequentialism can be salvaged from this argument with the
+following consideration:  
+  
+Suppose that the utility of winning accrues only if the victory is achieved
+against a capable opponent who is highly motivated to win. (For example, I
+have seen boxing matches where the victor is visibly disappointed or even
+enraged when he perceives that his opponent threw in the towel prematurely.)
+In this case, each competitor would be behaving morally if and only if he
+tries his hardest to win, even given consequentialism.
+
+Of course, in practice, the two sides are not unbiased. One might overestimate
+the value of oneself winning and the underestimate the value of the other
+winning. But that is likely to involve some epistemic vice.
+
+Given externalist consequentialism, where the right action is the one that
+actually would produce better consequences, ideal competition will be
+extremely rare, since the only time the pursuit of each of two incompatible
+goals will be right is if there is an exact tie between the values of the
+goals, and that is extremely rare.
+
+I’ve been thinking about who competitors, opponents and enemies are, and I am
+not very clear on it. But I think we can start with this:
+
+On internalist consequentalism, where the right action is defined by expected
+utilities, we would expect that if both sides are unbiased investigators, in
+most of the games, at least one side would at take the expected utility of the
+other side’s winning to be higher. For if both sides are perfect investigators
+with the same evidence and perfect priors, then they will assign the same
+expected utilities, and so at least one side will take the other’s to have
+higher expected utility, except in the rare case where the two expected
+utilities are equal. And if both sides assign expected utilities completely at
+random, but unbiasedly (i.e., are just as likely to assign a higher expected
+utility to the other side winning as to themselves), then bracketing the rare
+case where a side assigns equal expected utility to both victory options, any
+given side will have a probability of about a half of assigning higher
+expected utility to the other side’s victory, and so there will be about a 3/4
+chance that at least one side will take the other side’s victory to be more
+likely. And other cases of unbiased investigators will likely fall somewhere
+between the perfect case and the random case, and so we would expect that in
+most games, at least one side will be playing for an outcome that they think
+has lower expected utility.
+
+**Case 1:** There is some device which does something useful when you trigger
+it. It is triggered by electrical activity. You strap it on to your arm, and
+raise your arm, so that the electrical activity in your muscles triggers the
+device. Your raising your arm has the arm going up as an end, but that end is
+not perceived as good, but merely neutral. All you care about is the
+electrical activity in your muscles.
+
+In both cases, it is still true that the agent acts for a good end—the useful
+triggering of the device and the production of the cake. But in both cases it
+seems they are also acting for a worthless end. Thus the cases seem to fit
+with the weak but not the strong guise of the good thesis.
+
+For the strong version to have any plausibility, “good” must include cases of
+purely instrumental goodness.
+
+**Case 2:** Back when they were dating in high school, Bob promised to try his
+best to bake a nine-layer chocolate cake for Alice’s 40th birthday. Since
+then, Bob and Alice have had a falling out, and hate each other’s guts.
+Moreover, Alice and all her guests hate chocolate. But Alice doesn’t release
+Bob from his promise. Bob tries his best to bake the cake in order to fulfill
+his promise, and happens to succeed. In trying to bake the cake, Bob acted for
+the end of producing a cake. But producing the cake was worthless, since no
+one would eat it. The only value was in the trying, since that was the
+fulfillment of his promise.
+
+This isn’t quite enough for a defense of the strong thesis. For even if the
+success is good, it does not follow that you perceive the success as good. You
+might subscribe to an axiological action on which success is not good in
+general, but only success at something good.
+
+**Weak** : Whenever you act, you act for an end that you perceive is good.
+
+**Strong** : Whenever you act, you act for an end, and every end you act for
+you perceive as good.
+
+According to the guise of the good thesis, one always acts for the sake of an
+apparent good. There is a weaker and a stronger version of this:
+
+I was going to leave it at this. But then I thought of a way to save the
+strong guise of the good thesis. Success is valuable as such. When I try to do
+something, succeeding at it has value. So the arm going up or the cake being
+produced _are_ valuable as necessary parts of the success of one’s action. So
+perhaps every end of your action _is_ trivially good, because it is good for
+your action to succeed, and the end is a (constitutive, not causal) means to
+success.
+
+I think there is still reason to be sceptical of the strong version.
+
+But perhaps we can say this. We have a normative power to endow some neutral
+things with value by making them our ends. And in fact the only way to act for
+an end that does not have any independent value is by exercising that
+normative power. And exercising that normative power involves your seeing the
+thing you’re endowing with value as valuable. And maybe the only way to raise
+your arm or for Bob to bake the cake in the examples is by exercising the
+normative power, and doing so involves seeing the end as good. Maybe. This has
+some phenomenological plausibility and it would be nice if it were true,
+because the strong guise of the good thesis is pretty plausible to me.
+
+Here is the oddity: you are trying to win in order to get paid, but you only
+get paid if you don’t win. Thus, you are trying to achieve something, the
+achievement of which would undercut the end you are pursuing.
+
+Is this possible? I think so. We just need to
+[distinguish](http://alexanderpruss.blogspot.com/2019/08/two-ways-to-pursue-y-
+for-sake-of-z.html) between pursuing victory for the sake of something else
+that follows from victory and pursuing victory for the sake of something that
+might follow from the pursuit of victory.
+
+If you lose, but you tried to win, she pays you double what you lost.
+
+Clearly the prudent thing to do is to try to win. For if you don’t try to win,
+then you are guaranteed not to get any money. But if you do try, you won’t
+lose anything, and you might gain.
+
+Suppose Alice can read your mind, and you are playing poker against a set of
+people not including Alice. You don’t care about winning, just about money.
+Alice has a deal for you that you can’t refuse.
+
+So the view has to be that sometimes _F_ -norms take precedence over moral
+norms, but not always. There must thus be norms which are neither _F_ -norms
+nor moral norms that decide whether _F_ -norms or moral norms take precedence.
+We can call these “overall norms of combination”. And it is crucial to the
+view that the norms of combination themselves be neither _F_ -norms nor moral
+norms.
+
+_Morality_ says that (1) is obligatory but (2) is permitted. Thus, morality
+already weighs _F_ and paradigmatically moral concerns and provides a
+combination verdict. In other words, there already are _moral_ norms of
+combination. So the view would be that there are moral norms of combination
+and overall norms of combination, both of which take into account exactly the
+same first order considerations, but sometimes come to different conclusions
+because they weigh the very same first order considerations differently (e.g.,
+in the case where a moderate amount of _F_ -considerations needs to be
+sacrificed for a moderate amount of good for one’s children).
+
+Sacrifice a slight amount of _F_ -considerations for a great deal of good for
+one’s children.
+
+Some philosophers think that sometimes norms other than moral norms—e.g.,
+prudential norms or norms of the meaningfulness of life—take precedence over
+moral norms and make permissible actions that are morally impermissible. Let
+_F_ -norms be such norms.
+
+A view where _F_ -norms _always_ override moral norms does not seem plausible.
+In the case of prudential or meaningfulness, it would point to a fundamental
+selfishness in the normative constitution of the human being.
+
+But here is an oddity. Morality already combines _F_ -considerations and first
+order paradigmatically moral considerations. Consider two actions:
+
+Maybe there is a view on which the overall ones take into account not the
+first-order moral and _F_ -considerations, but only the deliverances of the
+moral and _F_ -norms of combination, but that seems needlessly complex.
+
+Sacrifice an enormous amount of _F_ -considerations for a slight good for
+one’s children.
+
+Moreover, the view has the following difficulty: It seems that the best way to
+define a type of norm (prudential, meaningfulness, moral, etc.) is in terms of
+the types of consideration that the norm is based on. But if the overall norms
+of combination take into account the very same types of consideration as the
+moral norms of combination, then this way of distinguishing the types of norms
+is no longer available.
+
+This view violates Ockham’s razor: Why would we have moral norms of
+combination if the overall norms of combination always override them anyway?
+
+I think loving one’s competitors could be good practice for loving one’s (then
+necessarily non-mutual) enemies.
+
+Michael Huemer advances a version of this argument in his "Ethical
+Intuitionism", somewhere around page 180 or 190 or the like (I don't have the
+book in front of me, sorry). I forget the exact details, but it may be worth
+checking out what he said.
+
+I suspect that most cases of mutual enmity are also cases of moral opposition,
+but I am less clear on this.
+
+Mutual enmity: _x_ and _y_ have shared knowledge that they each pursue the
+other’s ill-being for a reason other than the other’s well-being.
+
+Both competition and moral opposition are compatible with mutual love, but
+mutual enmity is not compatible with either direction of love.
+
+Moral opposition: _x_ and _y_ have shared knowledge that they are pursuing
+incompatible goals and each takes the other’s pursuit to be morally wrong.
+
+Note that cases of moral opposition are all cases of competition. Cases of
+mutual enmity are also cases of competition, except in rare cases, such as
+when a party suffers from depression or acedia which makes them not be opposed
+to their own ill-being.
+
+Woops. This was supposed to be a comment on the overriding moral reasons post.
+Sorry!
+
+The reason for the qualification on reasons in 3 is that one might say that
+someone who punishes someone in the hope of their reform is pursuing their
+ill-being for the sake of their well-being. I don’t know if that is the right
+way to describe reformative punishment, but it’s safer to include the
+qualification in (3).
+
+I wonder if consequentialism can be salvaged from this argument with the
+following consideration:  
+  
+Suppose that the utility of winning accrues only if the victory is achieved
+against a capable opponent who is highly motivated to win. (For example, I
+have seen boxing matches where the victor is visibly disappointed or even
+enraged when he perceives that his opponent threw in the towel prematurely.)
+In this case, each competitor would be behaving morally if and only if he
+tries his hardest to win, even given consequentialism.
+
+I’ve been thinking about who competitors, opponents and enemies are, and I am
+not very clear on it. But I think we can start with this:
+
+In the ideal case, competitors both rightly pursue the incompatible goals, and
+each knows that they are both so doing.
+
+Of course, in practice, the two sides are not unbiased. One might overestimate
+the value of oneself winning and the underestimate the value of the other
+winning. But that is likely to involve some epistemic vice.
+
+Yeah, I think I made a number of mistakes in my argument.  
+  
+On consequentialism what is evaluated is the action, not the end of the
+action. So even if my winning has lower utility than your winning under
+similar circumstances, it does not follow that my trying to win has lower
+utility than my not trying to win. There are two possibilities, after all,
+assuming I try to win. Either I will succeed or I won't. If I won't succeed,
+then the harder I tried, the more enjoyable the victory for you, for your fans
+and for my fans. If I do succeed, the utility is lower than if I had tried and
+you nonetheless succeeded (I am assuming your victory has higher utility), but
+it may still be higher than had I failed to try (in which case very likely I
+would not have succeeded) because then there would have been general
+disappointment. So a case can be made that my trying to win is better than my
+not trying to win, even if other things being equal my winning is worse than
+your winning. And similar things seem to hold on expected utility versions.  
+  
+Still, suppose that the utility of your winning is higher than of my winning,
+and I am about to win, but I have some subtle way of throwing the game so no
+one can tell, and everyone will enjoy the game pretty much as much. Then on
+externalist consequentialism I should throw the game in this way. Whether such
+a way of throwing the game is available depends on many factors: what the game
+is, who the audience are, what level one and one's opponent are. Still, there
+are probably a number of combinations where such throwing is available, and
+the slight loss in quality of play is outweighed by the benefits of your
+winning.
+
+So, the result is that either on externalist or internalist consequentialism,
+in most sports and other competitions, at least one side is acting morally
+wrongly or is acting in the light of an epistemic vice.
+
+This has the odd result that on externalist consequentialism, in most sports
+and other games, at least one side is acting wrongly. For it is extremely rare
+that there is an exact tie between the values of one side winning and the
+value of the other side winning. (Some people enjoy victory more than others,
+or have somewhat more in the way of fans, etc.)
+
+On internalist consequentalism, where the right action is defined by expected
+utilities, we would expect that if both sides are unbiased investigators, in
+most of the games, at least one side would at take the expected utility of the
+other side’s winning to be higher. For if both sides are perfect investigators
+with the same evidence and perfect priors, then they will assign the same
+expected utilities, and so at least one side will take the other’s to have
+higher expected utility, except in the rare case where the two expected
+utilities are equal. And if both sides assign expected utilities completely at
+random, but unbiasedly (i.e., are just as likely to assign a higher expected
+utility to the other side winning as to themselves), then bracketing the rare
+case where a side assigns equal expected utility to both victory options, any
+given side will have a probability of about a half of assigning higher
+expected utility to the other side’s victory, and so there will be about a 3/4
+chance that at least one side will take the other side’s victory to be more
+likely. And other cases of unbiased investigators will likely fall somewhere
+between the perfect case and the random case, and so we would expect that in
+most games, at least one side will be playing for an outcome that they think
+has lower expected utility.
+
+Given externalist consequentialism, where the right action is the one that
+actually would produce better consequences, ideal competition will be
+extremely rare, since the only time the pursuit of each of two incompatible
+goals will be right is if there is an exact tie between the values of the
+goals, and that is extremely rare.
+
