@@ -2474,3 +2474,443 @@ between the perfect case and the random case, and so we would expect that in
 most games, at least one side will be playing for an outcome that they think
 has lower expected utility.
 
+Very well. Now consider this on a national level. Suppose there are a million
+enemy soldiers ordered to commit genocide against ten million, and you have
+two ways to stop them:
+
+So maybe our choice is between tasing a million, thereby non-intentionally
+killing 250 soldiers, and intentionally killing one general. It seems to me
+that (2) is morally preferable, even though our moderate pacifist has to allow
+(1) and forbid (2).
+
+Imagine a moderate pacifist who rejects lethal self-defense, but allows non-
+lethal self-defense when appropriate, say by use of tasers.
+
+Note that a version of this argument goes through even if the moderate
+pacifist backs up and says that tasers are too lethal. For suppose instead of
+tasers we have drones that destroy the dominant hand of an enemy soldier while
+guaranteeing survival (with science fictional medical technology). It’s
+clearly right to release such a drone on a soldier who is about to kill ten
+innocents. But now compare:
+
+These may seem to be consequentialist arguments. I don't think so. I don't
+have the same intuitions if we replace the general by the general's innocent
+child in (2) and (4), even if killing the child were to stop the war (e.g., by
+making the general afraid that their other children would be murdered).
+
+If you can tase one person to stop the murder of ten, then (1) should be
+permissible if it’s the only option. But tasers occasionally kill people. We
+don’t know how often. Apparently it’s [less than 1 in
+400](https://www.usatoday.com/in-depth/news/investigations/2021/04/23/police-
+use-tasers-ends-hundreds-deaths-like-daunte-wright/7221153002/) uses. Suppose
+it’s 1 in 4000. Then option (1) results in 250 enemy deaths.
+
+Now, imagine that one person is attacking you and nine other innocents, with
+the intent of killing the ten of you, and you can stop them with a taser.
+Surely you should, and surely the moderate pacifist will say that this is an
+appropriate use case for the taser.
+
+I think (4) is still morally preferable to causing the kind of disruption to
+the lives of a million people that plan (3) would involve.
+
+Maybe the answer to both questions is that I could, but only metaphysically
+and not causally. In other words, it could be that the laws of nature, or of
+human nature, make it impossible for me to exercise one of the powers without
+the other, just as I cannot wiggle my ring finger without wiggling my middle
+finger as well. On this view, if there is a God, he could cause me to acquire
+promissory-type obligations without my promising, and he could let me engage
+in the natural act of promising while blocking the exercise of normative power
+and leaving me normatively unbound. This doesn’t seem particularly
+problematic.
+
+But why not allow for a causal model? Why not suppose that a normative power
+is a causal power to make an irreducible normative property come to be
+instantiated in someone? Thus, my power to promise is the power to cause
+myself to be obligated to do what I have promised.
+
+Here is a picture on which this is correct. We exercise a normative power by
+exercising a natural power in such a context that the successful exercise of
+the natural power is partly constitutive of a normative fact. For instance, we
+utter a promise, thereby exercising a natural power to engage in a certain
+kind of speech act, and our exercise of that speech act is partly constitutive
+of, rather than causal of, the state of affairs of our being obligated to
+carry out the promised action.
+
+A normative power is a power to change a normative condition.
+[Raz](https://core.ac.uk/download/pdf/230182259.pdf) says the change is not
+produced “causally” but “normatively”.
+
+I think the difficulty with a causal model is the fact that in paradigm cases
+of normative power, there is a natural power that _is_ being exercised, and we
+have the intuition that the exercise of the natural power is necessary and
+sufficient for the normative effect. But on a causal model, why couldn’t I
+cause a promissory-type obligation without promising, simply causing the
+relevant property of being obligated to come to be instantiated in me? And why
+couldn’t I engage in the speech act while yet remaining normatively unbound,
+because my normative power wasn’t exercised in parallel with the natural
+power?
+
+Perhaps the real problem for a lot of people with a causal view of normative
+powers is that it tends to lead to a violation of supervenience. For if it is
+metaphysically possble to have the exercise of the normative power without the
+exercise of the natural power, or vice versa, then it seems we don’t have
+supervenience of the normative on the non-normative. But supervenience does
+not seem to me to be inescapable.
+
+There are two versions of the above model. On one version, there is an
+underlying fundamental conditional normative fact _C_ , such as that if I have
+promised something then I should do it, and my exercise of normative power
+supplies the antecedent _A_ of that conditional, and then the normative
+consequent of _C_ comes to be grounded in _C_ and _A_. On another version,
+there there are some natural acts that are directly constitutive of a
+normative state of affairs, not merely by supplying the antecedent of a
+conditional normative fact. I think the first version of the model is the more
+plausible in paradigmatic cases.
+
+**Strong** : Whenever you act, you act for an end, and every end you act for
+you perceive as good.
+
+According to the guise of the good thesis, one always acts for the sake of an
+apparent good. There is a weaker and a stronger version of this:
+
+For the strong version to have any plausibility, “good” must include cases of
+purely instrumental goodness.
+
+**Case 2:** Back when they were dating in high school, Bob promised to try his
+best to bake a nine-layer chocolate cake for Alice’s 40th birthday. Since
+then, Bob and Alice have had a falling out, and hate each other’s guts.
+Moreover, Alice and all her guests hate chocolate. But Alice doesn’t release
+Bob from his promise. Bob tries his best to bake the cake in order to fulfill
+his promise, and happens to succeed. In trying to bake the cake, Bob acted for
+the end of producing a cake. But producing the cake was worthless, since no
+one would eat it. The only value was in the trying, since that was the
+fulfillment of his promise.
+
+**Case 1:** There is some device which does something useful when you trigger
+it. It is triggered by electrical activity. You strap it on to your arm, and
+raise your arm, so that the electrical activity in your muscles triggers the
+device. Your raising your arm has the arm going up as an end, but that end is
+not perceived as good, but merely neutral. All you care about is the
+electrical activity in your muscles.
+
+I think there is still reason to be sceptical of the strong version.
+
+I was going to leave it at this. But then I thought of a way to save the
+strong guise of the good thesis. Success is valuable as such. When I try to do
+something, succeeding at it has value. So the arm going up or the cake being
+produced _are_ valuable as necessary parts of the success of one’s action. So
+perhaps every end of your action _is_ trivially good, because it is good for
+your action to succeed, and the end is a (constitutive, not causal) means to
+success.
+
+This isn’t quite enough for a defense of the strong thesis. For even if the
+success is good, it does not follow that you perceive the success as good. You
+might subscribe to an axiological theory on which success is not good in
+general, but only success at something good.
+
+But perhaps we can say this. We have a normative power to endow some neutral
+things with value by making them our ends. And in fact the only way to act for
+an end that does not have any independent value is by exercising that
+normative power. And exercising that normative power involves your seeing the
+thing you’re endowing with value as valuable. And maybe the only way to raise
+your arm or for Bob to bake the cake in the examples is by exercising the
+normative power, and doing so involves seeing the end as good. Maybe. This has
+some phenomenological plausibility and it would be nice if it were true,
+because the strong guise of the good thesis is pretty plausible to me.
+
+In both cases, it is still true that the agent acts for a good end—the useful
+triggering of the device and the production of the cake. But in both cases it
+seems they are also acting for a worthless end. Thus the cases seem to fit
+with the weak but not the strong guise of the good thesis.
+
+**Weak** : Whenever you act, you act for an end that you perceive is good.
+
+If you lose, but you tried to win, she pays you double what you lost.
+
+Here is the oddity: you are trying to win in order to get paid, but you only
+get paid if you don’t win. Thus, you are trying to achieve something, the
+achievement of which would undercut the end you are pursuing.
+
+Suppose Alice can read your mind, and you are playing poker against a set of
+people not including Alice. You don’t care about winning, just about money.
+Alice has a deal for you that you can’t refuse.
+
+Is this possible? I think so. We just need to
+[distinguish](http://alexanderpruss.blogspot.com/2019/08/two-ways-to-pursue-y-
+for-sake-of-z.html) between pursuing victory for the sake of something else
+that follows from victory and pursuing victory for the sake of something that
+might follow from the pursuit of victory.
+
+Clearly the prudent thing to do is to try to win. For if you don’t try to win,
+then you are guaranteed not to get any money. But if you do try, you won’t
+lose anything, and you might gain.
+
+Maybe there is a view on which the overall ones take into account not the
+first-order moral and _F_ -considerations, but only the deliverances of the
+moral and _F_ -norms of combination, but that seems needlessly complex.
+
+But here is an oddity. Morality already combines _F_ -considerations and first
+order paradigmatically moral considerations. Consider two actions:
+
+A view where _F_ -norms _always_ override moral norms does not seem plausible.
+In the case of prudential or meaningfulness, it would point to a fundamental
+selfishness in the normative constitution of the human being.
+
+Sacrifice a slight amount of _F_ -considerations for a great deal of good for
+one’s children.
+
+So the view has to be that sometimes _F_ -norms take precedence over moral
+norms, but not always. There must thus be norms which are neither _F_ -norms
+nor moral norms that decide whether _F_ -norms or moral norms take precedence.
+We can call these “overall norms of combination”. And it is crucial to the
+view that the norms of combination themselves be neither _F_ -norms nor moral
+norms.
+
+Some philosophers think that sometimes norms other than moral norms—e.g.,
+prudential norms or norms of the meaningfulness of life—take precedence over
+moral norms and make permissible actions that are morally impermissible. Let
+_F_ -norms be such norms.
+
+This view violates Ockham’s razor: Why would we have moral norms of
+combination if the overall norms of combination always override them anyway?
+
+Sacrifice an enormous amount of _F_ -considerations for a slight good for
+one’s children.
+
+Moreover, the view has the following difficulty: It seems that the best way to
+define a type of norm (prudential, meaningfulness, moral, etc.) is in terms of
+the types of consideration that the norm is based on. But if the overall norms
+of combination take into account the very same types of consideration as the
+moral norms of combination, then this way of distinguishing the types of norms
+is no longer available.
+
+_Morality_ says that (1) is obligatory but (2) is permitted. Thus, morality
+already weighs _F_ and paradigmatically moral concerns and provides a
+combination verdict. In other words, there already are _moral_ norms of
+combination. So the view would be that there are moral norms of combination
+and overall norms of combination, both of which take into account exactly the
+same first order considerations, but sometimes come to different conclusions
+because they weigh the very same first order considerations differently (e.g.,
+in the case where a moderate amount of _F_ -considerations needs to be
+sacrificed for a moderate amount of good for one’s children).
+
+Now, imagine that one person is attacking you and nine other innocents, with
+the intent of killing the ten of you, and you can stop them with a taser.
+Surely you should, and surely the moderate pacifist will say that this is an
+appropriate use case for the taser.
+
+Note that a version of this argument goes through even if the moderate
+pacifist backs up and says that tasers are too lethal. For suppose instead of
+tasers we have drones that destroy the dominant hand of an enemy soldier while
+guaranteeing survival (with science fictional medical technology). It’s
+clearly right to release such a drone on a soldier who is about to kill ten
+innocents. But now compare:
+
+Very well. Now consider this on a national level. Suppose there are a million
+enemy soldiers ordered to commit genocide against ten million, and you have
+two ways to stop them:
+
+Imagine a moderate pacifist who rejects lethal self-defense, but allows non-
+lethal self-defense when appropriate, say by use of tasers.
+
+If you can tase one person to stop the murder of ten, then (1) should be
+permissible if it’s the only option. But tasers occasionally kill people. We
+don’t know how often. Apparently it’s [less than 1 in
+400](https://www.usatoday.com/in-depth/news/investigations/2021/04/23/police-
+use-tasers-ends-hundreds-deaths-like-daunte-wright/7221153002/) uses. Suppose
+it’s 1 in 4000. Then option (1) results in 250 enemy deaths.
+
+So maybe our choice is between tasing a million, thereby non-intentionally
+killing 250 soldiers, and intentionally killing one general. It seems to me
+that (2) is morally preferable, even though our moderate pacifist has to allow
+(1) and forbid (2).
+
+These may seem to be consequentialist arguments. I don't think so. I don't
+have the same intuitions if we replace the general by the general's innocent
+child in (2) and (4), even if killing the child were to stop the war (e.g., by
+making the general afraid that their other children would be murdered).
+
+I think (4) is still morally preferable to causing the kind of disruption to
+the lives of a million people that plan (3) would involve.
+
+There are two versions of the above model. On one version, there is an
+underlying fundamental conditional normative fact _C_ , such as that if I have
+promised something then I should do it, and my exercise of normative power
+supplies the antecedent _A_ of that conditional, and then the normative
+consequent of _C_ comes to be grounded in _C_ and _A_. On another version,
+there there are some natural acts that are directly constitutive of a
+normative state of affairs, not merely by supplying the antecedent of a
+conditional normative fact. I think the first version of the model is the more
+plausible in paradigmatic cases.
+
+But why not allow for a causal model? Why not suppose that a normative power
+is a causal power to make an irreducible normative property come to be
+instantiated in someone? Thus, my power to promise is the power to cause
+myself to be obligated to do what I have promised.
+
+Here is a picture on which this is correct. We exercise a normative power by
+exercising a natural power in such a context that the successful exercise of
+the natural power is partly constitutive of a normative fact. For instance, we
+utter a promise, thereby exercising a natural power to engage in a certain
+kind of speech act, and our exercise of that speech act is partly constitutive
+of, rather than causal of, the state of affairs of our being obligated to
+carry out the promised action.
+
+Maybe the answer to both questions is that I could, but only metaphysically
+and not causally. In other words, it could be that the laws of nature, or of
+human nature, make it impossible for me to exercise one of the powers without
+the other, just as I cannot wiggle my ring finger without wiggling my middle
+finger as well. On this view, if there is a God, he could cause me to acquire
+promissory-type obligations without my promising, and he could let me engage
+in the natural act of promising while blocking the exercise of normative power
+and leaving me normatively unbound. This doesn’t seem particularly
+problematic.
+
+A normative power is a power to change a normative condition.
+[Raz](https://core.ac.uk/download/pdf/230182259.pdf) says the change is not
+produced “causally” but “normatively”.
+
+Perhaps the real problem for a lot of people with a causal view of normative
+powers is that it tends to lead to a violation of supervenience. For if it is
+metaphysically possble to have the exercise of the normative power without the
+exercise of the natural power, or vice versa, then it seems we don’t have
+supervenience of the normative on the non-normative. But supervenience does
+not seem to me to be inescapable.
+
+I think the difficulty with a causal model is the fact that in paradigm cases
+of normative power, there is a natural power that _is_ being exercised, and we
+have the intuition that the exercise of the natural power is necessary and
+sufficient for the normative effect. But on a causal model, why couldn’t I
+cause a promissory-type obligation without promising, simply causing the
+relevant property of being obligated to come to be instantiated in me? And why
+couldn’t I engage in the speech act while yet remaining normatively unbound,
+because my normative power wasn’t exercised in parallel with the natural
+power?
+
+I was going to leave it at this. But then I thought of a way to save the
+strong guise of the good thesis. Success is valuable as such. When I try to do
+something, succeeding at it has value. So the arm going up or the cake being
+produced _are_ valuable as necessary parts of the success of one’s action. So
+perhaps every end of your action _is_ trivially good, because it is good for
+your action to succeed, and the end is a (constitutive, not causal) means to
+success.
+
+I think there is still reason to be sceptical of the strong version.
+
+**Strong** : Whenever you act, you act for an end, and every end you act for
+you perceive as good.
+
+**Weak** : Whenever you act, you act for an end that you perceive is good.
+
+This isn’t quite enough for a defense of the strong thesis. For even if the
+success is good, it does not follow that you perceive the success as good. You
+might subscribe to an axiological theory on which success is not good in
+general, but only success at something good.
+
+For the strong version to have any plausibility, “good” must include cases of
+purely instrumental goodness.
+
+**Case 2:** Back when they were dating in high school, Bob promised to try his
+best to bake a nine-layer chocolate cake for Alice’s 40th birthday. Since
+then, Bob and Alice have had a falling out, and hate each other’s guts.
+Moreover, Alice and all her guests hate chocolate. But Alice doesn’t release
+Bob from his promise. Bob tries his best to bake the cake in order to fulfill
+his promise, and happens to succeed. In trying to bake the cake, Bob acted for
+the end of producing a cake. But producing the cake was worthless, since no
+one would eat it. The only value was in the trying, since that was the
+fulfillment of his promise.
+
+In both cases, it is still true that the agent acts for a good end—the useful
+triggering of the device and the production of the cake. But in both cases it
+seems they are also acting for a worthless end. Thus the cases seem to fit
+with the weak but not the strong guise of the good thesis.
+
+According to the guise of the good thesis, one always acts for the sake of an
+apparent good. There is a weaker and a stronger version of this:
+
+But perhaps we can say this. We have a normative power to endow some neutral
+things with value by making them our ends. And in fact the only way to act for
+an end that does not have any independent value is by exercising that
+normative power. And exercising that normative power involves your seeing the
+thing you’re endowing with value as valuable. And maybe the only way to raise
+your arm or for Bob to bake the cake in the examples is by exercising the
+normative power, and doing so involves seeing the end as good. Maybe. This has
+some phenomenological plausibility and it would be nice if it were true,
+because the strong guise of the good thesis is pretty plausible to me.
+
+**Case 1:** There is some device which does something useful when you trigger
+it. It is triggered by electrical activity. You strap it on to your arm, and
+raise your arm, so that the electrical activity in your muscles triggers the
+device. Your raising your arm has the arm going up as an end, but that end is
+not perceived as good, but merely neutral. All you care about is the
+electrical activity in your muscles.
+
+If you lose, but you tried to win, she pays you double what you lost.
+
+Suppose Alice can read your mind, and you are playing poker against a set of
+people not including Alice. You don’t care about winning, just about money.
+Alice has a deal for you that you can’t refuse.
+
+Clearly the prudent thing to do is to try to win. For if you don’t try to win,
+then you are guaranteed not to get any money. But if you do try, you won’t
+lose anything, and you might gain.
+
+Is this possible? I think so. We just need to
+[distinguish](http://alexanderpruss.blogspot.com/2019/08/two-ways-to-pursue-y-
+for-sake-of-z.html) between pursuing victory for the sake of something else
+that follows from victory and pursuing victory for the sake of something that
+might follow from the pursuit of victory.
+
+Here is the oddity: you are trying to win in order to get paid, but you only
+get paid if you don’t win. Thus, you are trying to achieve something, the
+achievement of which would undercut the end you are pursuing.
+
+Moreover, the view has the following difficulty: It seems that the best way to
+define a type of norm (prudential, meaningfulness, moral, etc.) is in terms of
+the types of consideration that the norm is based on. But if the overall norms
+of combination take into account the very same types of consideration as the
+moral norms of combination, then this way of distinguishing the types of norms
+is no longer available.
+
+Sacrifice a slight amount of _F_ -considerations for a great deal of good for
+one’s children.
+
+But here is an oddity. Morality already combines _F_ -considerations and first
+order paradigmatically moral considerations. Consider two actions:
+
+Some philosophers think that sometimes norms other than moral norms—e.g.,
+prudential norms or norms of the meaningfulness of life—take precedence over
+moral norms and make permissible actions that are morally impermissible. Let
+_F_ -norms be such norms.
+
+Maybe there is a view on which the overall ones take into account not the
+first-order moral and _F_ -considerations, but only the deliverances of the
+moral and _F_ -norms of combination, but that seems needlessly complex.
+
+A view where _F_ -norms _always_ override moral norms does not seem plausible.
+In the case of prudential or meaningfulness, it would point to a fundamental
+selfishness in the normative constitution of the human being.
+
+So the view has to be that sometimes _F_ -norms take precedence over moral
+norms, but not always. There must thus be norms which are neither _F_ -norms
+nor moral norms that decide whether _F_ -norms or moral norms take precedence.
+We can call these “overall norms of combination”. And it is crucial to the
+view that the norms of combination themselves be neither _F_ -norms nor moral
+norms.
+
+_Morality_ says that (1) is obligatory but (2) is permitted. Thus, morality
+already weighs _F_ and paradigmatically moral concerns and provides a
+combination verdict. In other words, there already are _moral_ norms of
+combination. So the view would be that there are moral norms of combination
+and overall norms of combination, both of which take into account exactly the
+same first order considerations, but sometimes come to different conclusions
+because they weigh the very same first order considerations differently (e.g.,
+in the case where a moderate amount of _F_ -considerations needs to be
+sacrificed for a moderate amount of good for one’s children).
+
+This view violates Ockham’s razor: Why would we have moral norms of
+combination if the overall norms of combination always override them anyway?
+
+Sacrifice an enormous amount of _F_ -considerations for a slight good for
+one’s children.
+
