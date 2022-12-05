@@ -12,14 +12,14 @@ def test_bibliographylist(filename, num_articles):
     bibliographyList = BibliographyList(filename, num_articles)
     print(bibliographyList)
     bibliographyList.save_articles_urls()
-    bibliographyList.save_paragraphs()
+    bibliographyList.save_corpus_txt()
 
 
 def test_bloglist(filename, num_articles):
     blogList = BlogList(filename, num_articles)
     print(blogList)
     # blogList.save_articles_urls()
-    blogList.save_paragraphs()
+    blogList.save_corpus_txt()
 
 
 

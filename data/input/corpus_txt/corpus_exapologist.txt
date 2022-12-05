@@ -1,3 +1,26 @@
+Here’s an another argument that to add to the list. It proceeds from a
+principle about absences that several able philosophers defend (E.g., Kris
+McDaniel):
+
+Suppose the principle is true. Now go to a possible world in which God
+refrains from creating (assume, as traditional theism does, that God has
+leeway freedom in creating). In that world, there are contingent things
+uncreated by God (namely, absences of creatures). But according to traditional
+theism's aseity-sovereignty doctrine, there can be no contingent things that
+are not created by God. Therefore, traditional theism is false.
+
+[ ![Is God the Best Explanation of Things? A Dialogue is Now
+Out!](http://3.bp.blogspot.com/-RUJygo9ZI5s/XZKz9ZN1-tI/AAAAAAAA3BY/WcfmwPogtPIR7fHT1fgwSJxfTIiHQ_72ACK4BGAYYCw/s1600/Book%2BCover%2BIGtBEoT.png)
+](https://www.amazon.com/God-Best-Explanation-Things-
+Dialogue/dp/3030237540/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=&sr=)  
+
+(This argument was suggested to me by Joe Schmid.) Here’s an another argument
+that to add to the list. It proceeds from a principle about ab...
+
+Smilansky, Saul. "[Reversing Pascal's Wager: Scepticism About Religious Belief
+and Its Value](https://philpapers.org/rec/SMIRPS-2)", _Religious Studies_
+(forthcoming).
+
 Pascal famously argued that practical reasoning should lead people to try to
 form within themselves a commitment to religious practice and obedience, based
 upon a belief in God. I propose to take a less ambitious argument, which I
@@ -15,18 +38,6 @@ moral transgressors more than the secular ones. One is unlikely to be saved
 from hell (or other severe divine punishment) by becoming religious. If one is
 going to wager, it seems much more sensible to wager on the secular side.
 
-Smilansky, Saul. "[Reversing Pascal's Wager: Scepticism About Religious Belief
-and Its Value](https://philpapers.org/rec/SMIRPS-2)", _Religious Studies_
-(forthcoming).
-
-Smilansky, Saul. " Reversing Pascal's Wager: Scepticism About Religious Belief
-and Its Value ", Religious Studies (forthcomin...
-
-[ ![Is God the Best Explanation of Things? A Dialogue is Now
-Out!](http://3.bp.blogspot.com/-RUJygo9ZI5s/XZKz9ZN1-tI/AAAAAAAA3BY/WcfmwPogtPIR7fHT1fgwSJxfTIiHQ_72ACK4BGAYYCw/s1600/Book%2BCover%2BIGtBEoT.png)
-](https://www.amazon.com/God-Best-Explanation-Things-
-Dialogue/dp/3030237540/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=&sr=)  
-
 The fact that orthodox theists, from at least Augustine and all the way to the
 present, have seen logic as the expression of single, rational, divine Mind is
 at least some evidence that theism expects and predicts logical monism. But
@@ -38,45 +49,4 @@ for logical monism. But the truth of the disjunction of logical pluralism and
 logical nihilism is prima facie more surprising on theism than on naturalism.
 Therefore, the case for the disjunction of logical pluralism and logical
 nihilism provides at least some evidence against theism.
-
-Recent empirical work on [motivated
-reasoning](https://compass.onlinelibrary.wiley.com/doi/full/10.1111/phc3.12828)
-indicates that it is strongly resistant to detection, even despite our best
-efforts (Ballantyne 2015; Pronin et al. 2002). Perhaps worse, other work shows
-that attempts to preempt motivated reasoning reinforce its impact (Ehrlinger
-et al. 2005; Schwitzgebel & Ellis 2017). This is surprising on theism, given
-that it's surprising that God would design our cognitive faculties in a way
-that's highly disposed to unreliability -- and likely without remedy --
-especially in ways that can be morally pernicious. By contrast, it's not
-surprising on naturalism, since nature is "indifferent" to our welfare on that
-hypothesis, and since motivated reasoning is conducive to survival and
-reproduction (Mercier & Sperber 2011). Therefore, the existence of motivated
-reasoning is at least some evidence for naturalism vis-a-vis theism.
-
-Oberle, Thomas. "[Grounding, infinite regress, and the Thomistic cosmological
-argument](https://link.springer.com/article/10.1007/s11153-022-09840-3)",
-International Journal for Philosophy of Religion (July 2022).
-
-> Abstract: A prominent Thomistic cosmological argument maintains that an
-> infinite regress of causes, which exhibits a certain pattern of ontological
-> dependence among its members, would be vicious and so must terminate in a
-> first member. Interestingly, Jonathan Schaffer offers a similar argument in
-> the contemporary grounding literature for the view called metaphysical
-> foundationalism. I consider the striking similarities between both arguments
-> and conclude that both are unsuccessful for the same reason. I argue this
-> negative result gives us indirect reason to consider metaphysical infinitism
-> as a genuine possibility, the view that chains of ontological dependence or
-> ground can descend indefinitely.
->
->  
->  
->
-
-Here's a new paper making [a
-point](https://exapologist.blogspot.com/2022/06/the-argument-from-
-metaphysical.html) [I've been on about
-recently](https://exapologist.blogspot.com/2022/04/camerons-forthcoming-
-book.html): recent work on metaphysical infinitism and coherentism undercuts
-certain cosmological arguments, and the metaphysical foundationalism
-presupposed by theism.
 

@@ -1453,3 +1453,862 @@ is the current
 ![B](https://s0.wp.com/latex.php?latex=B&bg=ffffff&fg=333333&s=0&c=20201002)
 plus a symmetric rank-one matrix, i.e.
 
+I came across your post because I was wondering how rare it is to see a
+4-4-4-4- outcome like if each team wins one match draws one and loses one. is
+there a way to add in actual results from competitions (or say World Cups) so
+as to get the chances in real life of each outcome?
+
+First place’s average points would be 6.62 points with a range between 3 and
+9.  
+Second place’s average points would be 4.7 points with a range between 2 and
+7.  
+Third place’s average points would be 3.21 points with a range between 1 and
+6.  
+Fourth place’s average would be 1.47 points with a range between 0 and 4.
+
+This entry was posted in
+[Uncategorized](https://statisticaloddsandends.wordpress.com/category/uncategorized/)
+and tagged [soccer](https://statisticaloddsandends.wordpress.com/tag/soccer/),
+[sport](https://statisticaloddsandends.wordpress.com/tag/sport/) by
+[kjytay](https://statisticaloddsandends.wordpress.com/author/kjytay/).
+Bookmark the
+[permalink](https://statisticaloddsandends.wordpress.com/2018/06/27/world-cup-
+group-stage-outcomes/ "Permalink to World cup group stage outcomes").
+
+(A 4-4-4-4 has happened on one occasion, in the 1994 World Cup, in the “group
+of death” between Italy, Mexico, Ireland and Norway)
+
+I forgot to catch for the 4,4,4,3 ; 4,4,4,4 ; and 3,3,3,3 which are the
+missing 2% : )
+
+  *     * [ ![](https://statisticaloddsandends.files.wordpress.com/2021/04/cropped-header-icon.png?w=50) Statistical Odds & Ends ](https://statisticaloddsandends.wordpress.com)
+
+Score configuration | No. of permutations | WC 2022 | WC 2018 | WC 2014 | WC
+2010  
+---|---|---|---|---|---  
+7, 4, 4, 1 | 36 (4.9%) |  |  | 1 | 1  
+6, 4, 4, 3 | 36 (4.9%) | 3 | 1 |  | 1  
+9, 6, 3, 0 | 24 (3.3%) |  | 2 | 1 | 1  
+9, 4, 3, 1 | 24 (3.3%) |  | 1 | 2 | 1  
+9, 4, 2, 1 | 24 (3.3%) |  |  | 1 |  
+7, 6, 4, 0 | 24 (3.3%) | 1 |  | 1 |  
+7, 6, 3, 1 | 24 (3.3%) |  |  | 1 |  
+7, 6, 2, 1 | 24 (3.3%) |  |  |  |  
+7, 5, 4, 0 | 24 (3.3%) | 1 |  |  | 1  
+7, 5, 3, 1 | 24 (3.3%) | 1 | 2 |  |  
+7, 5, 2, 1 | 24 (3.3%) |  |  |  |  
+7, 4, 3, 3 | 24 (3.3%) |  |  |  |  
+7, 4, 3, 2 | 24 (3.3%) |  |  |  |  
+7, 4, 3, 1 | 24 (3.3%) |  |  |  |  
+7, 4, 2, 2 | 24 (3.3%) |  |  |  |  
+6, 6, 4, 1 | 24 (3.3%) | 2 |  |  | 1  
+6, 6, 3, 3 | 24 (3.3%) |  | 1 |  |  
+6, 5, 4, 1 | 24 (3.3%) |  |  |  |  
+6, 4, 4, 2 | 24 (3.3%) |  |  |  |  
+5, 5, 4, 1 | 24 (3.3%) |  | 1 |  | 1  
+5, 4, 4, 3 | 24 (3.3%) |  |  |  |  
+5, 4, 4, 2 | 24 (3.3%) |  |  |  |  
+5, 4, 3, 2 | 24 (3.3%) |  |  |  | 1  
+9, 6, 1, 1 | 12 (1.6%) |  |  |  |  
+9, 4, 4, 0 | 12 (1.6%) |  |  |  |  
+7, 7, 3, 0 | 12 (1.6%) |  |  | 1 |  
+7, 3, 2, 2 | 12 (1.6%) |  |  |  |  
+6, 5, 2, 2 | 12 (1.6%) |  |  |  |  
+5, 5, 3, 2 | 12 (1.6%) |  |  |  |  
+5, 5, 3, 1 | 12 (1.6%) |  |  |  |  
+5, 5, 2, 2 | 12 (1.6%) |  |  |  |  
+5, 3, 3, 2 | 12 (1.6%) |  |  |  |  
+9, 3, 3, 3 | 8 (1.1%) |  |  |  |  
+6, 6, 6, 0 | 8 (1.1%) |  |  |  |  
+4, 4, 4, 3 | 8 (1.1%) |  |  |  |  
+7, 7, 1, 1 | 6 (0.8%) |  |  |  |  
+4, 4, 4, 4 | 6 (0.8%) |  |  |  |  
+9, 2, 2, 2 | 4 (0.5%) |  |  |  |  
+5, 5, 5, 0 | 4 (0.5%) |  |  |  |  
+3, 3, 3, 3 | 1 (0.1%) |  |  |  |  
+  
+The code I used to produce the table above is below:
+
+I found this post while wondering about the same thing and just compiled all
+the data from world cups and European Championships going back to 1994 –
+before that it was 2 points for a win so the maths was different. The most
+prevalent outcome is 9-6-3-0 with 10 occurrences followed by 7-5-3-1 with 8.
+
+There are **40** different possible group score configurations, with **7, 4,
+4, 1** and **6, 4, 4, 3** being the most “common”, in the sense that they are
+the most common result if each of “win”, “draw” and “loss” was equally likely
+for each game. The table below shows the full list.  
+( _ **Update 2022-11-26:**_ I’ve added the actual distribution of score
+configurations for the last 3 world cups. Would be interesting if someone
+could do it for the entire history of the world cup.)  
+( _ **Update 2022-12-02:**_ I’ve added the actual distribution of score
+configurations for world cup 2022.)
+
+At 3 points, the team is 4.53% likely to advance.  
+At 4 points, the team is 46.4% likely to advance.  
+At 5 points or more, the team is 97.9% likely to advance to the knockout
+stage.
+
+If the team scores 2 points in 3 matches, they are 0.5% likely to advance out
+of the group stage.
+
+With the group stages of [World Cup 2018](https://www.fifa.com/worldcup/)
+drawing to a close, I was wondering what the possible scores were attainable
+in each group (e.g. 9, 6, 3, 0 for Group A), and how many different match
+outcomes resulted in each score configuration. With just ![3^6 =
+729](https://s0.wp.com/latex.php?latex=3%5E6+%3D+729&bg=ffffff&fg=333333&s=0&c=20201002)
+possibilities (“win”, “draw” or “loss” for each of 6 games), this was easy to
+code up.
+
+Update: I’ve just added the distribution for the last 3 world cups (tabulated
+by hand).
+
+“At 5 points or more, the team is 97.9% likely to advance to the knockout
+stage.” should be at 100%.
+
+That’s certainly possible… The data is all out there, the hard part is
+tabulating it (either by hand or via some script).
+
+****You are commenting using your Facebook account. ( [Log
+Out](javascript:HighlanderComments.doExternalLogout\( 'facebook' \);) / Change
+)
+
+    * Already have a WordPress.com account? [Log in now.](https://wordpress.com/log-in?redirect_to=https%3A%2F%2Fstatisticaloddsandends.wordpress.com%2F2018%2F06%2F27%2Fworld-cup-group-stage-outcomes%2F&signup_flow=account)
+
+****You are commenting using your WordPress.com account. ( [Log
+Out](javascript:HighlanderComments.doExternalLogout\( 'wordpress' \);) /
+Change )
+
+****You are commenting using your Twitter account. ( [Log
+Out](javascript:HighlanderComments.doExternalLogout\( 'twitter' \);) / Change
+)
+
+Peña, J. (2016). [Quasi-Newton
+Methods](https://www.stat.cmu.edu/~ryantibs/convexopt-F16/lectures/quasi-
+newton.pdf). (CMU Convex Optimization: Fall 2016, Lecture on Nov 2.)
+
+For ![i = k-1, \\dots,
+0](https://s0.wp.com/latex.php?latex=i+%3D+k-1%2C+%5Cdots%2C+0&bg=ffffff&fg=333333&s=0&c=20201002),
+set ![\\alpha_i \\leftarrow \\dfrac{s_i^\\top q}{y_i^\\top
+s_i}](https://s0.wp.com/latex.php?latex=%5Calpha_i+%5Cleftarrow+%5Cdfrac%7Bs_i%5E%5Ctop+q%7D%7By_i%5E%5Ctop+s_i%7D&bg=ffffff&fg=333333&s=0&c=20201002),
+and ![q \\leftarrow q - \\alpha
+y_i](https://s0.wp.com/latex.php?latex=q+%5Cleftarrow+q+-+%5Calpha+y_i&bg=ffffff&fg=333333&s=0&c=20201002).
+
+![\\begin{aligned} H_{k+1}&= \\left\( I - \\dfrac{s_k y_k^\\top}{y_k^\\top
+s_k}\\right\) H_k \\left\( I - \\dfrac{y_k s_k^\\top}{y_k^\\top s_k}
+\\right\)  + \\dfrac{s_k s_k^\\top}{y_k^\\top s_k},
+\\end{aligned}](https://s0.wp.com/latex.php?latex=%5Cbegin%7Baligned%7D+H_%7Bk%2B1%7D%26%3D+%5Cleft%28+I+-+%5Cdfrac%7Bs_k+y_k%5E%5Ctop%7D%7By_k%5E%5Ctop+s_k%7D%5Cright%29+H_k+%5Cleft%28+I+-+%5Cdfrac%7By_k+s_k%5E%5Ctop%7D%7By_k%5E%5Ctop+s_k%7D+%5Cright%29%C2%A0+%2B+%5Cdfrac%7Bs_k+s_k%5E%5Ctop%7D%7By_k%5E%5Ctop+s_k%7D%2C+%5Cend%7Baligned%7D&bg=ffffff&fg=333333&s=0&c=20201002)
+
+The issue with BFGS is that we have to maintain the ![n \\times
+n](https://s0.wp.com/latex.php?latex=n+%5Ctimes+n&bg=ffffff&fg=333333&s=0&c=20201002)
+matrix
+![H_k](https://s0.wp.com/latex.php?latex=H_k&bg=ffffff&fg=333333&s=0&c=20201002),
+which is too costly when
+![n](https://s0.wp.com/latex.php?latex=n&bg=ffffff&fg=333333&s=0&c=20201002)
+is large. The main idea behind _**limited memory BFGS (L-BFGS)**_ is that we
+don’t really need
+![H_k](https://s0.wp.com/latex.php?latex=H_k&bg=ffffff&fg=333333&s=0&c=20201002):
+what we really want is ![p_k = - H_k \\nabla
+f\(x_k\)](https://s0.wp.com/latex.php?latex=p_k+%3D+-+H_k+%5Cnabla+f%28x_k%29&bg=ffffff&fg=333333&s=0&c=20201002).
+If we can compute ![H_k \\nabla
+f\(x_k\)](https://s0.wp.com/latex.php?latex=H_k+%5Cnabla+f%28x_k%29&bg=ffffff&fg=333333&s=0&c=20201002)
+implicitly by maintaining a few ![n \\times
+1](https://s0.wp.com/latex.php?latex=n+%5Ctimes+1&bg=ffffff&fg=333333&s=0&c=20201002)
+vectors, then we never have to deal with an ![n \\times
+n](https://s0.wp.com/latex.php?latex=n+%5Ctimes+n&bg=ffffff&fg=333333&s=0&c=20201002)
+matrix.
+
+![\\begin{aligned} H_{k+1} g &= \\left\( I - \\dfrac{s_k y_k^\\top}{y_k^\\top
+s_k}\\right\) H_k \\left\( I - \\dfrac{y_k s_k^\\top}{y_k^\\top s_k} \\right\)
+g  + \\dfrac{s_k s_k^\\top g}{y_k^\\top s_k}  \\\\  &= \\left\( I -
+\\dfrac{s_k y_k^\\top}{y_k^\\top s_k}\\right\) H_k \\left\( g -
+\\dfrac{s_k^\\top g}{y_k^\\top s_k} y_k \\right\)  + \\dfrac{s_k^\\top
+g}{y_k^\\top s_k} s_k \\\\  &= \\left\( I - \\dfrac{s_k y_k^\\top}{y_k^\\top
+s_k}\\right\) H_k \\left\( g - \\alpha_k y_k \\right\)  + \\alpha_k s_k
+&\(\\alpha_k = \\dfrac{s_k^\\top g}{y_k^\\top s_k}\) \\\\  &= \\left\( I -
+\\dfrac{s_k y_k^\\top}{y_k^\\top s_k}\\right\) H_k q_k  + \\alpha_k s_k &\(q_k
+= g - \\alpha_k y_k\) \\\\  &= p_k - \\dfrac{s_k y_k^\\top p_k}{y_k^\\top s_k}
++ \\alpha_k s_k &\(p_k = H_k q_k\) \\\\  &= p_k - \(\\alpha_k - \\beta_k\)
+s_k. &\(\\beta_k = \\dfrac{y_k^\\top p_k}{y_k^\\top s_k}\).
+\\end{aligned}](https://s0.wp.com/latex.php?latex=%5Cbegin%7Baligned%7D+H_%7Bk%2B1%7D+g+%26%3D+%5Cleft%28+I+-+%5Cdfrac%7Bs_k+y_k%5E%5Ctop%7D%7By_k%5E%5Ctop+s_k%7D%5Cright%29+H_k+%5Cleft%28+I+-+%5Cdfrac%7By_k+s_k%5E%5Ctop%7D%7By_k%5E%5Ctop+s_k%7D+%5Cright%29+g%C2%A0+%2B+%5Cdfrac%7Bs_k+s_k%5E%5Ctop+g%7D%7By_k%5E%5Ctop+s_k%7D%C2%A0+%5C%5C++%26%3D+%5Cleft%28+I+-+%5Cdfrac%7Bs_k+y_k%5E%5Ctop%7D%7By_k%5E%5Ctop+s_k%7D%5Cright%29+H_k+%5Cleft%28+g+-+%5Cdfrac%7Bs_k%5E%5Ctop+g%7D%7By_k%5E%5Ctop+s_k%7D+y_k+%5Cright%29%C2%A0+%2B+%5Cdfrac%7Bs_k%5E%5Ctop+g%7D%7By_k%5E%5Ctop+s_k%7D+s_k+%5C%5C++%26%3D+%5Cleft%28+I+-+%5Cdfrac%7Bs_k+y_k%5E%5Ctop%7D%7By_k%5E%5Ctop+s_k%7D%5Cright%29+H_k+%5Cleft%28+g+-+%5Calpha_k+y_k+%5Cright%29%C2%A0+%2B+%5Calpha_k+s_k+%26%28%5Calpha_k+%3D+%5Cdfrac%7Bs_k%5E%5Ctop+g%7D%7By_k%5E%5Ctop+s_k%7D%29+%5C%5C++%26%3D+%5Cleft%28+I+-+%5Cdfrac%7Bs_k+y_k%5E%5Ctop%7D%7By_k%5E%5Ctop+s_k%7D%5Cright%29+H_k+q_k%C2%A0+%2B+%5Calpha_k+s_k+%26%28q_k+%3D+g+-+%5Calpha_k+y_k%29+%5C%5C++%26%3D+p_k+-+%5Cdfrac%7Bs_k+y_k%5E%5Ctop+p_k%7D%7By_k%5E%5Ctop+s_k%7D+%2B+%5Calpha_k+s_k+%26%28p_k+%3D+H_k+q_k%29+%5C%5C++%26%3D+p_k+-+%28%5Calpha_k+-+%5Cbeta_k%29+s_k.+%26%28%5Cbeta_k+%3D+%5Cdfrac%7By_k%5E%5Ctop+p_k%7D%7By_k%5E%5Ctop+s_k%7D%29.+%5Cend%7Baligned%7D&bg=ffffff&fg=333333&s=0&c=20201002)
+
+This entry was posted in
+[Uncategorized](https://statisticaloddsandends.wordpress.com/category/uncategorized/)
+and tagged [BFGS](https://statisticaloddsandends.wordpress.com/tag/bfgs/),
+[L-BFGS](https://statisticaloddsandends.wordpress.com/tag/l-bfgs/),
+[optimization](https://statisticaloddsandends.wordpress.com/tag/optimization/),
+[quasi-newton](https://statisticaloddsandends.wordpress.com/tag/quasi-newton/)
+by [kjytay](https://statisticaloddsandends.wordpress.com/author/kjytay/).
+Bookmark the
+[permalink](https://statisticaloddsandends.wordpress.com/2022/11/26/quasi-
+newton-methods-l-bfgs/ "Permalink to Quasi-Newton methods: L-BFGS").
+
+Limited memory BFGS goes one step further: instead of doing 2 loops of length
+![k](https://s0.wp.com/latex.php?latex=k&bg=ffffff&fg=333333&s=0&c=20201002)
+for the
+![k](https://s0.wp.com/latex.php?latex=k&bg=ffffff&fg=333333&s=0&c=20201002)th
+iteration, do 2 loops of length ![\\min \(m,
+k\)](https://s0.wp.com/latex.php?latex=%5Cmin+%28m%2C+k%29&bg=ffffff&fg=333333&s=0&c=20201002)
+instead, where
+![m](https://s0.wp.com/latex.php?latex=m&bg=ffffff&fg=333333&s=0&c=20201002)
+is usually set to 5 or 10. Here is the appropriately modified update:
+
+    * Already have a WordPress.com account? [Log in now.](https://wordpress.com/log-in?redirect_to=https%3A%2F%2Fstatisticaloddsandends.wordpress.com%2F2022%2F11%2F26%2Fquasi-newton-methods-l-bfgs%2F&signup_flow=account)
+
+Thus, if we had an efficient way to compute ![p_k = H_k
+q_k](https://s0.wp.com/latex.php?latex=p_k+%3D+H_k+q_k&bg=ffffff&fg=333333&s=0&c=20201002),
+we have an efficient way to compute ![H_{k+1}
+g](https://s0.wp.com/latex.php?latex=H_%7Bk%2B1%7D+g&bg=ffffff&fg=333333&s=0&c=20201002)
+involving just ![n \\times
+1](https://s0.wp.com/latex.php?latex=n+%5Ctimes+1&bg=ffffff&fg=333333&s=0&c=20201002)
+vectors:
+
+In [this previous
+post](https://statisticaloddsandends.wordpress.com/2022/11/24/quasi-newton-
+methods-in-optimization/), we described how _**Quasi-Newton methods**_ can be
+used to minimize a twice-differentiable function
+![f](https://s0.wp.com/latex.php?latex=f&bg=ffffff&fg=333333&s=0&c=20201002)
+whose domain is all of
+![\\mathbb{R}^n](https://s0.wp.com/latex.php?latex=%5Cmathbb%7BR%7D%5En&bg=ffffff&fg=333333&s=0&c=20201002).
+[_**BFGS**_](https://statisticaloddsandends.wordpress.com/2022/11/26/quasi-
+newton-methods-dfp-and-bfgs/) is a popular quasi-Newton method. At each
+iteration, we take the following steps:
+
+For ![i = 0, \\dots,
+k-1](https://s0.wp.com/latex.php?latex=i+%3D+0%2C+%5Cdots%2C+k-1&bg=ffffff&fg=333333&s=0&c=20201002),
+set ![\\beta \\leftarrow \\dfrac{y_i^\\top p}{y_i^\\top
+s_i}](https://s0.wp.com/latex.php?latex=%5Cbeta+%5Cleftarrow+%5Cdfrac%7By_i%5E%5Ctop+p%7D%7By_i%5E%5Ctop+s_i%7D&bg=ffffff&fg=333333&s=0&c=20201002),
+and ![p \\leftarrow p + \(\\alpha_i - \\beta\)
+s_i](https://s0.wp.com/latex.php?latex=p+%5Cleftarrow+p+%2B+%28%5Calpha_i+-+%5Cbeta%29+s_i&bg=ffffff&fg=333333&s=0&c=20201002).
+
+For ![i = k-1, \\dots, \\min \(k-m\),
+0](https://s0.wp.com/latex.php?latex=i+%3D+k-1%2C+%5Cdots%2C+%5Cmin+%28k-m%29%2C+0&bg=ffffff&fg=333333&s=0&c=20201002),
+set ![\\alpha_i \\leftarrow \\dfrac{s_i^\\top q}{y_i^\\top
+s_i}](https://s0.wp.com/latex.php?latex=%5Calpha_i+%5Cleftarrow+%5Cdfrac%7Bs_i%5E%5Ctop+q%7D%7By_i%5E%5Ctop+s_i%7D&bg=ffffff&fg=333333&s=0&c=20201002),
+and ![q \\leftarrow q - \\alpha
+y_i](https://s0.wp.com/latex.php?latex=q+%5Cleftarrow+q+-+%5Calpha+y_i&bg=ffffff&fg=333333&s=0&c=20201002).
+
+For ![i = \\min \(k-m, 0\), \\dots,
+k-1](https://s0.wp.com/latex.php?latex=i+%3D+%5Cmin+%28k-m%2C+0%29%2C+%5Cdots%2C+k-1&bg=ffffff&fg=333333&s=0&c=20201002),
+set ![\\beta \\leftarrow \\dfrac{y_i^\\top p}{y_i^\\top
+s_i}](https://s0.wp.com/latex.php?latex=%5Cbeta+%5Cleftarrow+%5Cdfrac%7By_i%5E%5Ctop+p%7D%7By_i%5E%5Ctop+s_i%7D&bg=ffffff&fg=333333&s=0&c=20201002),
+and ![p \\leftarrow p + \(\\alpha_i - \\beta\)
+s_i](https://s0.wp.com/latex.php?latex=p+%5Cleftarrow+p+%2B+%28%5Calpha_i+-+%5Cbeta%29+s_i&bg=ffffff&fg=333333&s=0&c=20201002).
+
+But we do have an efficient way to computing ![p_k = H_k
+q_k](https://s0.wp.com/latex.php?latex=p_k+%3D+H_k+q_k&bg=ffffff&fg=333333&s=0&c=20201002):
+simply replace
+![k+1](https://s0.wp.com/latex.php?latex=k%2B1&bg=ffffff&fg=333333&s=0&c=20201002)
+with
+![k](https://s0.wp.com/latex.php?latex=k&bg=ffffff&fg=333333&s=0&c=20201002)
+and
+![g](https://s0.wp.com/latex.php?latex=g&bg=ffffff&fg=333333&s=0&c=20201002)
+with
+![q_k](https://s0.wp.com/latex.php?latex=q_k&bg=ffffff&fg=333333&s=0&c=20201002)
+above! By recursively unfolding Step 3, we get the quasi-Newton update for
+iteration
+![k](https://s0.wp.com/latex.php?latex=k&bg=ffffff&fg=333333&s=0&c=20201002)
+(computation of ![p_k = -H_k \\nabla
+f\(x_k\)](https://s0.wp.com/latex.php?latex=p_k+%3D+-H_k+%5Cnabla+f%28x_k%29&bg=ffffff&fg=333333&s=0&c=20201002)):
+
+where ![s_k = x_{k+1} -
+x_k](https://s0.wp.com/latex.php?latex=s_k+%3D+x_%7Bk%2B1%7D+-+x_k&bg=ffffff&fg=333333&s=0&c=20201002)
+and ![y_k = \\nabla f\(x_{k+1}\) - \\nabla
+f\(x_k\)](https://s0.wp.com/latex.php?latex=y_k+%3D+%5Cnabla+f%28x_%7Bk%2B1%7D%29+-+%5Cnabla+f%28x_k%29&bg=ffffff&fg=333333&s=0&c=20201002).
+This is often written as ![B^+ s =
+y](https://s0.wp.com/latex.php?latex=B%5E%2B+s+%3D+y&bg=ffffff&fg=333333&s=0&c=20201002)
+for brevity. If we let
+![H](https://s0.wp.com/latex.php?latex=H&bg=ffffff&fg=333333&s=0&c=20201002)
+denote the inverse of
+![B](https://s0.wp.com/latex.php?latex=B&bg=ffffff&fg=333333&s=0&c=20201002),
+then the secant equation is equivalent to ![H^+ y =
+s](https://s0.wp.com/latex.php?latex=H%5E%2B+y+%3D+s&bg=ffffff&fg=333333&s=0&c=20201002).
+
+This entry was posted in
+[Uncategorized](https://statisticaloddsandends.wordpress.com/category/uncategorized/)
+and tagged [BFGS](https://statisticaloddsandends.wordpress.com/tag/bfgs/),
+[DFP](https://statisticaloddsandends.wordpress.com/tag/dfp/),
+[optimization](https://statisticaloddsandends.wordpress.com/tag/optimization/),
+[quasi-newton](https://statisticaloddsandends.wordpress.com/tag/quasi-newton/)
+by [kjytay](https://statisticaloddsandends.wordpress.com/author/kjytay/).
+Bookmark the
+[permalink](https://statisticaloddsandends.wordpress.com/2022/11/26/quasi-
+newton-methods-dfp-and-bfgs/ "Permalink to Quasi-Newton methods: DFP
+and BFGS").
+
+In [this previous
+post](https://statisticaloddsandends.wordpress.com/2022/11/24/quasi-newton-
+methods-in-optimization/), we described how _**Quasi-Newton methods**_ can be
+used to minimize a twice-differentiable function
+![f](https://s0.wp.com/latex.php?latex=f&bg=ffffff&fg=333333&s=0&c=20201002)
+whose domain is all of
+![\\mathbb{R}^n](https://s0.wp.com/latex.php?latex=%5Cmathbb%7BR%7D%5En&bg=ffffff&fg=333333&s=0&c=20201002).
+At each iteration of the method, we take the following steps:
+
+Set ![H_{k+1} = H_k - \\dfrac{H_k y_k y_k^\\top H_k}{y_k^\\top H_k y_k} +
+\\dfrac{s_k s_k^\\top}{y_k^\\top
+s_k}](https://s0.wp.com/latex.php?latex=H_%7Bk%2B1%7D+%3D+H_k+-+%5Cdfrac%7BH_k+y_k+y_k%5E%5Ctop+H_k%7D%7By_k%5E%5Ctop+H_k+y_k%7D+%2B+%5Cdfrac%7Bs_k+s_k%5E%5Ctop%7D%7By_k%5E%5Ctop+s_k%7D&bg=ffffff&fg=333333&s=0&c=20201002).
+
+Whereas DFP assumes
+![H^+](https://s0.wp.com/latex.php?latex=H%5E%2B&bg=ffffff&fg=333333&s=0&c=20201002)
+is
+![H](https://s0.wp.com/latex.php?latex=H&bg=ffffff&fg=333333&s=0&c=20201002)
+plus a symmetric rank-two matrix, the _**BFGS update**_ (Broyden-Fletcher-
+Goldfarb-Shanno) assumes that
+![B^+](https://s0.wp.com/latex.php?latex=B%5E%2B&bg=ffffff&fg=333333&s=0&c=20201002)
+is
+![B](https://s0.wp.com/latex.php?latex=B&bg=ffffff&fg=333333&s=0&c=20201002)
+plus a symmetric rank-two matrix. Going through the same chain of reasoning as
+the DFP update but with
+![B](https://s0.wp.com/latex.php?latex=B&bg=ffffff&fg=333333&s=0&c=20201002)
+replacing
+![H](https://s0.wp.com/latex.php?latex=H&bg=ffffff&fg=333333&s=0&c=20201002)
+and
+![y](https://s0.wp.com/latex.php?latex=y&bg=ffffff&fg=333333&s=0&c=20201002)
+and
+![s](https://s0.wp.com/latex.php?latex=s&bg=ffffff&fg=333333&s=0&c=20201002)
+switching roles, we get the updates
+
+    * Already have a WordPress.com account? [Log in now.](https://wordpress.com/log-in?redirect_to=https%3A%2F%2Fstatisticaloddsandends.wordpress.com%2F2022%2F11%2F26%2Fquasi-newton-methods-dfp-and-bfgs%2F&signup_flow=account)
+
+Like the DFP update, the BFGS update maintains the positive definiteness of
+![B](https://s0.wp.com/latex.php?latex=B&bg=ffffff&fg=333333&s=0&c=20201002).
+In addition, BFGS also has a self-correcting property that makes it attractive
+in practice (see Nocedal 1992, Reference 2). The BFGS update is the most
+popular quasi-Newton update in practice.
+
+Recall that the _**[SR1
+update](https://statisticaloddsandends.wordpress.com/2022/11/24/quasi-newton-
+methods-sr1/)**_ assumes that the next
+![B](https://s0.wp.com/latex.php?latex=B&bg=ffffff&fg=333333&s=0&c=20201002)
+is the current
+![B](https://s0.wp.com/latex.php?latex=B&bg=ffffff&fg=333333&s=0&c=20201002)
+plus a symmetric rank-one matrix. The _**DFP update**_ (Davidon-Fletcher-
+Powell) assumes that the next
+![H](https://s0.wp.com/latex.php?latex=H&bg=ffffff&fg=333333&s=0&c=20201002)
+is the current
+![H](https://s0.wp.com/latex.php?latex=H&bg=ffffff&fg=333333&s=0&c=20201002)
+plus a symmetric rank-two matrix, i.e.
+
+One advantage that the DFP update has over the SR1 update is that
+![B](https://s0.wp.com/latex.php?latex=B&bg=ffffff&fg=333333&s=0&c=20201002)
+being positive definite implies that
+![B^+](https://s0.wp.com/latex.php?latex=B%5E%2B&bg=ffffff&fg=333333&s=0&c=20201002)
+is also positive definite.
+
+![\\begin{aligned} B+ &= B - \\dfrac{Bss^\\top B}{s^\\top Bs} +
+\\dfrac{yy^\\top}{y^\\top s}, \\\\  H^+ &= \\left\( I -
+\\dfrac{sy^\\top}{y^\\top s}\\right\) H \\left\( I - \\dfrac{ys^\\top}{y^\\top
+s} \\right\)  + \\dfrac{ss^\\top}{y^\\top s}.
+\\end{aligned}](https://s0.wp.com/latex.php?latex=%5Cbegin%7Baligned%7D+B%2B+%26%3D+B+-+%5Cdfrac%7BBss%5E%5Ctop+B%7D%7Bs%5E%5Ctop+Bs%7D+%2B+%5Cdfrac%7Byy%5E%5Ctop%7D%7By%5E%5Ctop+s%7D%2C+%5C%5C++H%5E%2B+%26%3D+%5Cleft%28+I+-+%5Cdfrac%7Bsy%5E%5Ctop%7D%7By%5E%5Ctop+s%7D%5Cright%29+H+%5Cleft%28+I+-+%5Cdfrac%7Bys%5E%5Ctop%7D%7By%5E%5Ctop+s%7D+%5Cright%29%C2%A0+%2B+%5Cdfrac%7Bss%5E%5Ctop%7D%7By%5E%5Ctop+s%7D.+%5Cend%7Baligned%7D&bg=ffffff&fg=333333&s=0&c=20201002)
+
+Update
+![B](https://s0.wp.com/latex.php?latex=B&bg=ffffff&fg=333333&s=0&c=20201002)
+according to some procedure so that the secant equation (and other conditions)
+are satisfied.
+
+![\\begin{aligned} \\nabla^2 f\(x_k\) p_k &= - \\nabla f\(x_k\), \\\\  x_{k+1}
+&= x_k + t_k p_k.
+\\end{aligned}](https://s0.wp.com/latex.php?latex=%5Cbegin%7Baligned%7D+%5Cnabla%5E2+f%28x_k%29+p_k+%26%3D+-+%5Cnabla+f%28x_k%29%2C+%5C%5C++x_%7Bk%2B1%7D+%26%3D+x_k+%2B+t_k+p_k.+%5Cend%7Baligned%7D&bg=ffffff&fg=333333&s=0&c=20201002)
+
+This entry was posted in
+[Uncategorized](https://statisticaloddsandends.wordpress.com/category/uncategorized/)
+and tagged
+[optimization](https://statisticaloddsandends.wordpress.com/tag/optimization/),
+[quasi-newton](https://statisticaloddsandends.wordpress.com/tag/quasi-
+newton/), [secant
+equation](https://statisticaloddsandends.wordpress.com/tag/secant-equation/)
+by [kjytay](https://statisticaloddsandends.wordpress.com/author/kjytay/).
+Bookmark the
+[permalink](https://statisticaloddsandends.wordpress.com/2022/11/24/quasi-
+newton-methods-in-optimization/ "Permalink to Quasi-Newton methods
+in optimization").
+
+That is, we (i) compute the gradient and Hessian of
+![f](https://s0.wp.com/latex.php?latex=f&bg=ffffff&fg=333333&s=0&c=20201002)
+at
+![x_k](https://s0.wp.com/latex.php?latex=x_k&bg=ffffff&fg=333333&s=0&c=20201002),
+(ii) solve for
+![p_k](https://s0.wp.com/latex.php?latex=p_k&bg=ffffff&fg=333333&s=0&c=20201002),
+then (iii) update
+![x_{k+1}](https://s0.wp.com/latex.php?latex=x_%7Bk%2B1%7D&bg=ffffff&fg=333333&s=0&c=20201002)
+according to the second line.
+
+    * Already have a WordPress.com account? [Log in now.](https://wordpress.com/log-in?redirect_to=https%3A%2F%2Fstatisticaloddsandends.wordpress.com%2F2022%2F11%2F24%2Fquasi-newton-methods-in-optimization%2F&signup_flow=account)
+
+where ![\\nabla
+f](https://s0.wp.com/latex.php?latex=%5Cnabla+f&bg=ffffff&fg=333333&s=0&c=20201002)
+and ![\\nabla^2
+f](https://s0.wp.com/latex.php?latex=%5Cnabla%5E2+f&bg=ffffff&fg=333333&s=0&c=20201002)
+are the gradient and Hessian of
+![f](https://s0.wp.com/latex.php?latex=f&bg=ffffff&fg=333333&s=0&c=20201002)
+respectively, and
+![t_k](https://s0.wp.com/latex.php?latex=t_k&bg=ffffff&fg=333333&s=0&c=20201002)
+is a step size chosen appropriately (e.g. with [backtracking line
+search](https://statisticaloddsandends.wordpress.com/2022/11/19/exact-line-
+search-and-backtracking-line-search/)). Another way to write the update is
+
+where ![f : \\mathbb{R}^n \\mapsto
+\\mathbb{R}](https://s0.wp.com/latex.php?latex=f+%3A+%5Cmathbb%7BR%7D%5En+%5Cmapsto+%5Cmathbb%7BR%7D&bg=ffffff&fg=333333&s=0&c=20201002)
+is twice differentiable and ![\\text{dom}\(f\) =
+\\mathbb{R}^n](https://s0.wp.com/latex.php?latex=%5Ctext%7Bdom%7D%28f%29+%3D+%5Cmathbb%7BR%7D%5En&bg=ffffff&fg=333333&s=0&c=20201002).
+[_**Newton’s
+method**_](https://en.wikipedia.org/wiki/Newton%27s_method_in_optimization) is
+a second-order descent method for finding the minimum. Starting at some
+initial point, at the
+![k](https://s0.wp.com/latex.php?latex=k&bg=ffffff&fg=333333&s=0&c=20201002)th
+iteration we update the candidate solution with the formula
+
+A big drawback of Newton’s method is that computing the Hessian can be very
+expensive. _**Quasi-Newton methods**_ address this problem: update
+![x_{k+1}](https://s0.wp.com/latex.php?latex=x_%7Bk%2B1%7D&bg=ffffff&fg=333333&s=0&c=20201002)
+with
+
+Reblogged this on [Statistical Methods, Paradigms and
+Application](https://ibiloyeacresearch.wordpress.com/2022/11/24/quasi-newton-
+methods-in-optimization/) and commented:  
+Interesting and Really good explanation here:
+
+![\\begin{aligned} B_k p_k &= - \\nabla f\(x_k\), \\\\  x_{k+1} &= x_k + t_k
+p_k,
+\\end{aligned}](https://s0.wp.com/latex.php?latex=%5Cbegin%7Baligned%7D+B_k+p_k+%26%3D+-+%5Cnabla+f%28x_k%29%2C+%5C%5C++x_%7Bk%2B1%7D+%26%3D+x_k+%2B+t_k+p_k%2C+%5Cend%7Baligned%7D&bg=ffffff&fg=333333&s=0&c=20201002)
+
+where ![s_k = x_{k+1} -
+x_k](https://s0.wp.com/latex.php?latex=s_k+%3D+x_%7Bk%2B1%7D+-+x_k&bg=ffffff&fg=333333&s=0&c=20201002)
+and ![y_k = \\nabla f\(x_{k+1}\) - \\nabla
+f\(x_k\)](https://s0.wp.com/latex.php?latex=y_k+%3D+%5Cnabla+f%28x_%7Bk%2B1%7D%29+-+%5Cnabla+f%28x_k%29&bg=ffffff&fg=333333&s=0&c=20201002).
+This last equation is known as the _**secant equation**_ , and is sometimes
+written as ![B^+ s =
+y](https://s0.wp.com/latex.php?latex=B%5E%2B+s+%3D+y&bg=ffffff&fg=333333&s=0&c=20201002)
+for brevity. Note that this equation involves
+![n](https://s0.wp.com/latex.php?latex=n&bg=ffffff&fg=333333&s=0&c=20201002)
+equations in ![n \\times
+n](https://s0.wp.com/latex.php?latex=n+%5Ctimes+n&bg=ffffff&fg=333333&s=0&c=20201002)
+unknowns, so there is a lot of freedom in how to choose the
+![B_k](https://s0.wp.com/latex.php?latex=B_k&bg=ffffff&fg=333333&s=0&c=20201002)‘s.
+On top of satisfying the secant equation, we often require 3 other conditions:
+
+Quasi-Newton methods include SR1, DFP, BFGS and L-BFGS, which I hope to
+describe in future posts.
+
+    * Already have a WordPress.com account? [Log in now.](https://wordpress.com/log-in?redirect_to=https%3A%2F%2Fstatisticaloddsandends.wordpress.com%2F2022%2F11%2F24%2Fquasi-newton-methods-sr1%2F&signup_flow=account)
+
+for some ![a \\in
+\\mathbb{R}](https://s0.wp.com/latex.php?latex=a+%5Cin+%5Cmathbb%7BR%7D&bg=ffffff&fg=333333&s=0&c=20201002)
+and ![u \\in
+\\mathbb{R}^n](https://s0.wp.com/latex.php?latex=u+%5Cin+%5Cmathbb%7BR%7D%5En&bg=ffffff&fg=333333&s=0&c=20201002).
+Plugging this update into the secant equation and rearranging, we get
+
+This entry was posted in
+[Uncategorized](https://statisticaloddsandends.wordpress.com/category/uncategorized/)
+and tagged
+[optimization](https://statisticaloddsandends.wordpress.com/tag/optimization/),
+[quasi-newton](https://statisticaloddsandends.wordpress.com/tag/quasi-
+newton/), [SR1](https://statisticaloddsandends.wordpress.com/tag/sr1/) by
+[kjytay](https://statisticaloddsandends.wordpress.com/author/kjytay/).
+Bookmark the
+[permalink](https://statisticaloddsandends.wordpress.com/2022/11/24/quasi-
+newton-methods-sr1/ "Permalink to Quasi-Newton methods: SR1").
+
+where ![s_k = x_{k+1} -
+x_k](https://s0.wp.com/latex.php?latex=s_k+%3D+x_%7Bk%2B1%7D+-+x_k&bg=ffffff&fg=333333&s=0&c=20201002)
+and ![y_k = \\nabla f\(x_{k+1}\) - \\nabla
+f\(x_k\)](https://s0.wp.com/latex.php?latex=y_k+%3D+%5Cnabla+f%28x_%7Bk%2B1%7D%29+-+%5Cnabla+f%28x_k%29&bg=ffffff&fg=333333&s=0&c=20201002).
+This is often written as ![B^+ s =
+y](https://s0.wp.com/latex.php?latex=B%5E%2B+s+%3D+y&bg=ffffff&fg=333333&s=0&c=20201002)
+for brevity. Because this is a system of
+![n](https://s0.wp.com/latex.php?latex=n&bg=ffffff&fg=333333&s=0&c=20201002)
+equations with ![n \\times
+n](https://s0.wp.com/latex.php?latex=n+%5Ctimes+n&bg=ffffff&fg=333333&s=0&c=20201002)
+unknowns, there are many ways to update
+![B](https://s0.wp.com/latex.php?latex=B&bg=ffffff&fg=333333&s=0&c=20201002).
+
+Recall from the quasi-Newton updates that we need to solve the equation ![B p
+= - \\nabla
+f\(x\)](https://s0.wp.com/latex.php?latex=B+p+%3D+-+%5Cnabla+f%28x%29&bg=ffffff&fg=333333&s=0&c=20201002)
+for
+![p](https://s0.wp.com/latex.php?latex=p&bg=ffffff&fg=333333&s=0&c=20201002),
+which means that we need to compute the inverse ![H =
+B^{-1}](https://s0.wp.com/latex.php?latex=H+%3D+B%5E%7B-1%7D&bg=ffffff&fg=333333&s=0&c=20201002)
+to get ![p = - H \\nabla
+f\(x\)](https://s0.wp.com/latex.php?latex=p+%3D+-+H+%5Cnabla+f%28x%29&bg=ffffff&fg=333333&s=0&c=20201002).
+Because of the [Sherman-Morrison-Woodbury
+formula](https://en.wikipedia.org/wiki/Sherman%E2%80%93Morrison_formula), we
+can use the update to
+![B](https://s0.wp.com/latex.php?latex=B&bg=ffffff&fg=333333&s=0&c=20201002)
+to derive an update for
+![H](https://s0.wp.com/latex.php?latex=H&bg=ffffff&fg=333333&s=0&c=20201002):
+
+This is known as the _**SR1 update**_. SR1 is simple to understand and
+implement, but has two shortcomings. First, the denominator in the update for
+![B](https://s0.wp.com/latex.php?latex=B&bg=ffffff&fg=333333&s=0&c=20201002),
+![\(y - Bs\)^\\top
+s](https://s0.wp.com/latex.php?latex=%28y+-+Bs%29%5E%5Ctop+s&bg=ffffff&fg=333333&s=0&c=20201002),
+might be approximately zero, causing numerical issues. Second, it does not
+preserve positive definiteness.
+
+which implies that
+![u](https://s0.wp.com/latex.php?latex=u&bg=ffffff&fg=333333&s=0&c=20201002)
+must be a multiple of ![y -
+Bs](https://s0.wp.com/latex.php?latex=y+-+Bs&bg=ffffff&fg=333333&s=0&c=20201002).
+Plugging this into the equation and solving for
+![a](https://s0.wp.com/latex.php?latex=a&bg=ffffff&fg=333333&s=0&c=20201002),
+we obtain the update
+
+One way to update
+![B](https://s0.wp.com/latex.php?latex=B&bg=ffffff&fg=333333&s=0&c=20201002)
+easily is to assume that the next
+![B](https://s0.wp.com/latex.php?latex=B&bg=ffffff&fg=333333&s=0&c=20201002)
+is the current
+![B](https://s0.wp.com/latex.php?latex=B&bg=ffffff&fg=333333&s=0&c=20201002)
+plus a symmetric rank-one matrix, i.e.
+
+****You are commenting using your Facebook account. ( [Log
+Out](javascript:HighlanderComments.doExternalLogout\( 'facebook' \);) / Change
+)
+
+    * Already have a WordPress.com account? [Log in now.](https://wordpress.com/log-in?redirect_to=https%3A%2F%2Fstatisticaloddsandends.wordpress.com%2F2018%2F06%2F27%2Fworld-cup-group-stage-outcomes%2F&signup_flow=account)
+
+(A 4-4-4-4 has happened on one occasion, in the 1994 World Cup, in the “group
+of death” between Italy, Mexico, Ireland and Norway)
+
+This entry was posted in
+[Uncategorized](https://statisticaloddsandends.wordpress.com/category/uncategorized/)
+and tagged [soccer](https://statisticaloddsandends.wordpress.com/tag/soccer/),
+[sport](https://statisticaloddsandends.wordpress.com/tag/sport/) by
+[kjytay](https://statisticaloddsandends.wordpress.com/author/kjytay/).
+Bookmark the
+[permalink](https://statisticaloddsandends.wordpress.com/2018/06/27/world-cup-
+group-stage-outcomes/ "Permalink to World cup group stage outcomes").
+
+****You are commenting using your Twitter account. ( [Log
+Out](javascript:HighlanderComments.doExternalLogout\( 'twitter' \);) / Change
+)
+
+Score configuration | No. of permutations | WC 2022 | WC 2018 | WC 2014 | WC
+2010  
+---|---|---|---|---|---  
+7, 4, 4, 1 | 36 (4.9%) |  |  | 1 | 1  
+6, 4, 4, 3 | 36 (4.9%) | 3 | 1 |  | 1  
+9, 6, 3, 0 | 24 (3.3%) |  | 2 | 1 | 1  
+9, 4, 3, 1 | 24 (3.3%) |  | 1 | 2 | 1  
+9, 4, 2, 1 | 24 (3.3%) |  |  | 1 |  
+7, 6, 4, 0 | 24 (3.3%) | 1 |  | 1 |  
+7, 6, 3, 1 | 24 (3.3%) |  |  | 1 |  
+7, 6, 2, 1 | 24 (3.3%) |  |  |  |  
+7, 5, 4, 0 | 24 (3.3%) | 1 |  |  | 1  
+7, 5, 3, 1 | 24 (3.3%) | 1 | 2 |  |  
+7, 5, 2, 1 | 24 (3.3%) |  |  |  |  
+7, 4, 3, 3 | 24 (3.3%) |  |  |  |  
+7, 4, 3, 2 | 24 (3.3%) |  |  |  |  
+7, 4, 3, 1 | 24 (3.3%) |  |  |  |  
+7, 4, 2, 2 | 24 (3.3%) |  |  |  |  
+6, 6, 4, 1 | 24 (3.3%) | 2 |  |  | 1  
+6, 6, 3, 3 | 24 (3.3%) |  | 1 |  |  
+6, 5, 4, 1 | 24 (3.3%) |  |  |  |  
+6, 4, 4, 2 | 24 (3.3%) |  |  |  |  
+5, 5, 4, 1 | 24 (3.3%) |  | 1 |  | 1  
+5, 4, 4, 3 | 24 (3.3%) |  |  |  |  
+5, 4, 4, 2 | 24 (3.3%) |  |  |  |  
+5, 4, 3, 2 | 24 (3.3%) |  |  |  | 1  
+9, 6, 1, 1 | 12 (1.6%) |  |  |  |  
+9, 4, 4, 0 | 12 (1.6%) |  |  |  |  
+7, 7, 3, 0 | 12 (1.6%) |  |  | 1 |  
+7, 3, 2, 2 | 12 (1.6%) |  |  |  |  
+6, 5, 2, 2 | 12 (1.6%) |  |  |  |  
+5, 5, 3, 2 | 12 (1.6%) |  |  |  |  
+5, 5, 3, 1 | 12 (1.6%) |  |  |  |  
+5, 5, 2, 2 | 12 (1.6%) |  |  |  |  
+5, 3, 3, 2 | 12 (1.6%) |  |  |  |  
+9, 3, 3, 3 | 8 (1.1%) |  |  |  |  
+6, 6, 6, 0 | 8 (1.1%) |  |  |  |  
+4, 4, 4, 3 | 8 (1.1%) |  |  |  |  
+7, 7, 1, 1 | 6 (0.8%) |  |  |  |  
+4, 4, 4, 4 | 6 (0.8%) |  |  |  |  
+9, 2, 2, 2 | 4 (0.5%) |  |  |  |  
+5, 5, 5, 0 | 4 (0.5%) |  |  |  |  
+3, 3, 3, 3 | 1 (0.1%) |  |  |  |  
+  
+The code I used to produce the table above is below:
+
+First place’s average points would be 6.62 points with a range between 3 and
+9.  
+Second place’s average points would be 4.7 points with a range between 2 and
+7.  
+Third place’s average points would be 3.21 points with a range between 1 and
+6.  
+Fourth place’s average would be 1.47 points with a range between 0 and 4.
+
+That’s certainly possible… The data is all out there, the hard part is
+tabulating it (either by hand or via some script).
+
+If the team scores 2 points in 3 matches, they are 0.5% likely to advance out
+of the group stage.
+
+****You are commenting using your WordPress.com account. ( [Log
+Out](javascript:HighlanderComments.doExternalLogout\( 'wordpress' \);) /
+Change )
+
+Update: I’ve just added the distribution for the last 3 world cups (tabulated
+by hand).
+
+I came across your post because I was wondering how rare it is to see a
+4-4-4-4- outcome like if each team wins one match draws one and loses one. is
+there a way to add in actual results from competitions (or say World Cups) so
+as to get the chances in real life of each outcome?
+
+At 3 points, the team is 4.53% likely to advance.  
+At 4 points, the team is 46.4% likely to advance.  
+At 5 points or more, the team is 97.9% likely to advance to the knockout
+stage.
+
+There are **40** different possible group score configurations, with **7, 4,
+4, 1** and **6, 4, 4, 3** being the most “common”, in the sense that they are
+the most common result if each of “win”, “draw” and “loss” was equally likely
+for each game. The table below shows the full list.  
+( _ **Update 2022-11-26:**_ I’ve added the actual distribution of score
+configurations for the last 3 world cups. Would be interesting if someone
+could do it for the entire history of the world cup.)  
+( _ **Update 2022-12-02:**_ I’ve added the actual distribution of score
+configurations for world cup 2022.)
+
+I forgot to catch for the 4,4,4,3 ; 4,4,4,4 ; and 3,3,3,3 which are the
+missing 2% : )
+
+“At 5 points or more, the team is 97.9% likely to advance to the knockout
+stage.” should be at 100%.
+
+I found this post while wondering about the same thing and just compiled all
+the data from world cups and European Championships going back to 1994 –
+before that it was 2 points for a win so the maths was different. The most
+prevalent outcome is 9-6-3-0 with 10 occurrences followed by 7-5-3-1 with 8.
+
+With the group stages of [World Cup 2018](https://www.fifa.com/worldcup/)
+drawing to a close, I was wondering what the possible scores were attainable
+in each group (e.g. 9, 6, 3, 0 for Group A), and how many different match
+outcomes resulted in each score configuration. With just ![3^6 =
+729](https://s0.wp.com/latex.php?latex=3%5E6+%3D+729&bg=ffffff&fg=333333&s=0&c=20201002)
+possibilities (“win”, “draw” or “loss” for each of 6 games), this was easy to
+code up.
+
+  *     * [ ![](https://statisticaloddsandends.files.wordpress.com/2021/04/cropped-header-icon.png?w=50) Statistical Odds & Ends ](https://statisticaloddsandends.wordpress.com)
+
+For ![i = k-1, \\dots,
+0](https://s0.wp.com/latex.php?latex=i+%3D+k-1%2C+%5Cdots%2C+0&bg=ffffff&fg=333333&s=0&c=20201002),
+set ![\\alpha_i \\leftarrow \\dfrac{s_i^\\top q}{y_i^\\top
+s_i}](https://s0.wp.com/latex.php?latex=%5Calpha_i+%5Cleftarrow+%5Cdfrac%7Bs_i%5E%5Ctop+q%7D%7By_i%5E%5Ctop+s_i%7D&bg=ffffff&fg=333333&s=0&c=20201002),
+and ![q \\leftarrow q - \\alpha
+y_i](https://s0.wp.com/latex.php?latex=q+%5Cleftarrow+q+-+%5Calpha+y_i&bg=ffffff&fg=333333&s=0&c=20201002).
+
+For ![i = \\min \(k-m, 0\), \\dots,
+k-1](https://s0.wp.com/latex.php?latex=i+%3D+%5Cmin+%28k-m%2C+0%29%2C+%5Cdots%2C+k-1&bg=ffffff&fg=333333&s=0&c=20201002),
+set ![\\beta \\leftarrow \\dfrac{y_i^\\top p}{y_i^\\top
+s_i}](https://s0.wp.com/latex.php?latex=%5Cbeta+%5Cleftarrow+%5Cdfrac%7By_i%5E%5Ctop+p%7D%7By_i%5E%5Ctop+s_i%7D&bg=ffffff&fg=333333&s=0&c=20201002),
+and ![p \\leftarrow p + \(\\alpha_i - \\beta\)
+s_i](https://s0.wp.com/latex.php?latex=p+%5Cleftarrow+p+%2B+%28%5Calpha_i+-+%5Cbeta%29+s_i&bg=ffffff&fg=333333&s=0&c=20201002).
+
+But we do have an efficient way to computing ![p_k = H_k
+q_k](https://s0.wp.com/latex.php?latex=p_k+%3D+H_k+q_k&bg=ffffff&fg=333333&s=0&c=20201002):
+simply replace
+![k+1](https://s0.wp.com/latex.php?latex=k%2B1&bg=ffffff&fg=333333&s=0&c=20201002)
+with
+![k](https://s0.wp.com/latex.php?latex=k&bg=ffffff&fg=333333&s=0&c=20201002)
+and
+![g](https://s0.wp.com/latex.php?latex=g&bg=ffffff&fg=333333&s=0&c=20201002)
+with
+![q_k](https://s0.wp.com/latex.php?latex=q_k&bg=ffffff&fg=333333&s=0&c=20201002)
+above! By recursively unfolding Step 3, we get the quasi-Newton update for
+iteration
+![k](https://s0.wp.com/latex.php?latex=k&bg=ffffff&fg=333333&s=0&c=20201002)
+(computation of ![p_k = -H_k \\nabla
+f\(x_k\)](https://s0.wp.com/latex.php?latex=p_k+%3D+-H_k+%5Cnabla+f%28x_k%29&bg=ffffff&fg=333333&s=0&c=20201002)):
+
+![\\begin{aligned} H_{k+1}&= \\left\( I - \\dfrac{s_k y_k^\\top}{y_k^\\top
+s_k}\\right\) H_k \\left\( I - \\dfrac{y_k s_k^\\top}{y_k^\\top s_k}
+\\right\)  + \\dfrac{s_k s_k^\\top}{y_k^\\top s_k},
+\\end{aligned}](https://s0.wp.com/latex.php?latex=%5Cbegin%7Baligned%7D+H_%7Bk%2B1%7D%26%3D+%5Cleft%28+I+-+%5Cdfrac%7Bs_k+y_k%5E%5Ctop%7D%7By_k%5E%5Ctop+s_k%7D%5Cright%29+H_k+%5Cleft%28+I+-+%5Cdfrac%7By_k+s_k%5E%5Ctop%7D%7By_k%5E%5Ctop+s_k%7D+%5Cright%29%C2%A0+%2B+%5Cdfrac%7Bs_k+s_k%5E%5Ctop%7D%7By_k%5E%5Ctop+s_k%7D%2C+%5Cend%7Baligned%7D&bg=ffffff&fg=333333&s=0&c=20201002)
+
+In [this previous
+post](https://statisticaloddsandends.wordpress.com/2022/11/24/quasi-newton-
+methods-in-optimization/), we described how _**Quasi-Newton methods**_ can be
+used to minimize a twice-differentiable function
+![f](https://s0.wp.com/latex.php?latex=f&bg=ffffff&fg=333333&s=0&c=20201002)
+whose domain is all of
+![\\mathbb{R}^n](https://s0.wp.com/latex.php?latex=%5Cmathbb%7BR%7D%5En&bg=ffffff&fg=333333&s=0&c=20201002).
+[_**BFGS**_](https://statisticaloddsandends.wordpress.com/2022/11/26/quasi-
+newton-methods-dfp-and-bfgs/) is a popular quasi-Newton method. At each
+iteration, we take the following steps:
+
+Peña, J. (2016). [Quasi-Newton
+Methods](https://www.stat.cmu.edu/~ryantibs/convexopt-F16/lectures/quasi-
+newton.pdf). (CMU Convex Optimization: Fall 2016, Lecture on Nov 2.)
+
+Limited memory BFGS goes one step further: instead of doing 2 loops of length
+![k](https://s0.wp.com/latex.php?latex=k&bg=ffffff&fg=333333&s=0&c=20201002)
+for the
+![k](https://s0.wp.com/latex.php?latex=k&bg=ffffff&fg=333333&s=0&c=20201002)th
+iteration, do 2 loops of length ![\\min \(m,
+k\)](https://s0.wp.com/latex.php?latex=%5Cmin+%28m%2C+k%29&bg=ffffff&fg=333333&s=0&c=20201002)
+instead, where
+![m](https://s0.wp.com/latex.php?latex=m&bg=ffffff&fg=333333&s=0&c=20201002)
+is usually set to 5 or 10. Here is the appropriately modified update:
+
+For ![i = 0, \\dots,
+k-1](https://s0.wp.com/latex.php?latex=i+%3D+0%2C+%5Cdots%2C+k-1&bg=ffffff&fg=333333&s=0&c=20201002),
+set ![\\beta \\leftarrow \\dfrac{y_i^\\top p}{y_i^\\top
+s_i}](https://s0.wp.com/latex.php?latex=%5Cbeta+%5Cleftarrow+%5Cdfrac%7By_i%5E%5Ctop+p%7D%7By_i%5E%5Ctop+s_i%7D&bg=ffffff&fg=333333&s=0&c=20201002),
+and ![p \\leftarrow p + \(\\alpha_i - \\beta\)
+s_i](https://s0.wp.com/latex.php?latex=p+%5Cleftarrow+p+%2B+%28%5Calpha_i+-+%5Cbeta%29+s_i&bg=ffffff&fg=333333&s=0&c=20201002).
+
+    * Already have a WordPress.com account? [Log in now.](https://wordpress.com/log-in?redirect_to=https%3A%2F%2Fstatisticaloddsandends.wordpress.com%2F2022%2F11%2F26%2Fquasi-newton-methods-l-bfgs%2F&signup_flow=account)
+
+For ![i = k-1, \\dots, \\min \(k-m\),
+0](https://s0.wp.com/latex.php?latex=i+%3D+k-1%2C+%5Cdots%2C+%5Cmin+%28k-m%29%2C+0&bg=ffffff&fg=333333&s=0&c=20201002),
+set ![\\alpha_i \\leftarrow \\dfrac{s_i^\\top q}{y_i^\\top
+s_i}](https://s0.wp.com/latex.php?latex=%5Calpha_i+%5Cleftarrow+%5Cdfrac%7Bs_i%5E%5Ctop+q%7D%7By_i%5E%5Ctop+s_i%7D&bg=ffffff&fg=333333&s=0&c=20201002),
+and ![q \\leftarrow q - \\alpha
+y_i](https://s0.wp.com/latex.php?latex=q+%5Cleftarrow+q+-+%5Calpha+y_i&bg=ffffff&fg=333333&s=0&c=20201002).
+
+![\\begin{aligned} H_{k+1} g &= \\left\( I - \\dfrac{s_k y_k^\\top}{y_k^\\top
+s_k}\\right\) H_k \\left\( I - \\dfrac{y_k s_k^\\top}{y_k^\\top s_k} \\right\)
+g  + \\dfrac{s_k s_k^\\top g}{y_k^\\top s_k}  \\\\  &= \\left\( I -
+\\dfrac{s_k y_k^\\top}{y_k^\\top s_k}\\right\) H_k \\left\( g -
+\\dfrac{s_k^\\top g}{y_k^\\top s_k} y_k \\right\)  + \\dfrac{s_k^\\top
+g}{y_k^\\top s_k} s_k \\\\  &= \\left\( I - \\dfrac{s_k y_k^\\top}{y_k^\\top
+s_k}\\right\) H_k \\left\( g - \\alpha_k y_k \\right\)  + \\alpha_k s_k
+&\(\\alpha_k = \\dfrac{s_k^\\top g}{y_k^\\top s_k}\) \\\\  &= \\left\( I -
+\\dfrac{s_k y_k^\\top}{y_k^\\top s_k}\\right\) H_k q_k  + \\alpha_k s_k &\(q_k
+= g - \\alpha_k y_k\) \\\\  &= p_k - \\dfrac{s_k y_k^\\top p_k}{y_k^\\top s_k}
++ \\alpha_k s_k &\(p_k = H_k q_k\) \\\\  &= p_k - \(\\alpha_k - \\beta_k\)
+s_k. &\(\\beta_k = \\dfrac{y_k^\\top p_k}{y_k^\\top s_k}\).
+\\end{aligned}](https://s0.wp.com/latex.php?latex=%5Cbegin%7Baligned%7D+H_%7Bk%2B1%7D+g+%26%3D+%5Cleft%28+I+-+%5Cdfrac%7Bs_k+y_k%5E%5Ctop%7D%7By_k%5E%5Ctop+s_k%7D%5Cright%29+H_k+%5Cleft%28+I+-+%5Cdfrac%7By_k+s_k%5E%5Ctop%7D%7By_k%5E%5Ctop+s_k%7D+%5Cright%29+g%C2%A0+%2B+%5Cdfrac%7Bs_k+s_k%5E%5Ctop+g%7D%7By_k%5E%5Ctop+s_k%7D%C2%A0+%5C%5C++%26%3D+%5Cleft%28+I+-+%5Cdfrac%7Bs_k+y_k%5E%5Ctop%7D%7By_k%5E%5Ctop+s_k%7D%5Cright%29+H_k+%5Cleft%28+g+-+%5Cdfrac%7Bs_k%5E%5Ctop+g%7D%7By_k%5E%5Ctop+s_k%7D+y_k+%5Cright%29%C2%A0+%2B+%5Cdfrac%7Bs_k%5E%5Ctop+g%7D%7By_k%5E%5Ctop+s_k%7D+s_k+%5C%5C++%26%3D+%5Cleft%28+I+-+%5Cdfrac%7Bs_k+y_k%5E%5Ctop%7D%7By_k%5E%5Ctop+s_k%7D%5Cright%29+H_k+%5Cleft%28+g+-+%5Calpha_k+y_k+%5Cright%29%C2%A0+%2B+%5Calpha_k+s_k+%26%28%5Calpha_k+%3D+%5Cdfrac%7Bs_k%5E%5Ctop+g%7D%7By_k%5E%5Ctop+s_k%7D%29+%5C%5C++%26%3D+%5Cleft%28+I+-+%5Cdfrac%7Bs_k+y_k%5E%5Ctop%7D%7By_k%5E%5Ctop+s_k%7D%5Cright%29+H_k+q_k%C2%A0+%2B+%5Calpha_k+s_k+%26%28q_k+%3D+g+-+%5Calpha_k+y_k%29+%5C%5C++%26%3D+p_k+-+%5Cdfrac%7Bs_k+y_k%5E%5Ctop+p_k%7D%7By_k%5E%5Ctop+s_k%7D+%2B+%5Calpha_k+s_k+%26%28p_k+%3D+H_k+q_k%29+%5C%5C++%26%3D+p_k+-+%28%5Calpha_k+-+%5Cbeta_k%29+s_k.+%26%28%5Cbeta_k+%3D+%5Cdfrac%7By_k%5E%5Ctop+p_k%7D%7By_k%5E%5Ctop+s_k%7D%29.+%5Cend%7Baligned%7D&bg=ffffff&fg=333333&s=0&c=20201002)
+
+Thus, if we had an efficient way to compute ![p_k = H_k
+q_k](https://s0.wp.com/latex.php?latex=p_k+%3D+H_k+q_k&bg=ffffff&fg=333333&s=0&c=20201002),
+we have an efficient way to compute ![H_{k+1}
+g](https://s0.wp.com/latex.php?latex=H_%7Bk%2B1%7D+g&bg=ffffff&fg=333333&s=0&c=20201002)
+involving just ![n \\times
+1](https://s0.wp.com/latex.php?latex=n+%5Ctimes+1&bg=ffffff&fg=333333&s=0&c=20201002)
+vectors:
+
+The issue with BFGS is that we have to maintain the ![n \\times
+n](https://s0.wp.com/latex.php?latex=n+%5Ctimes+n&bg=ffffff&fg=333333&s=0&c=20201002)
+matrix
+![H_k](https://s0.wp.com/latex.php?latex=H_k&bg=ffffff&fg=333333&s=0&c=20201002),
+which is too costly when
+![n](https://s0.wp.com/latex.php?latex=n&bg=ffffff&fg=333333&s=0&c=20201002)
+is large. The main idea behind _**limited memory BFGS (L-BFGS)**_ is that we
+don’t really need
+![H_k](https://s0.wp.com/latex.php?latex=H_k&bg=ffffff&fg=333333&s=0&c=20201002):
+what we really want is ![p_k = - H_k \\nabla
+f\(x_k\)](https://s0.wp.com/latex.php?latex=p_k+%3D+-+H_k+%5Cnabla+f%28x_k%29&bg=ffffff&fg=333333&s=0&c=20201002).
+If we can compute ![H_k \\nabla
+f\(x_k\)](https://s0.wp.com/latex.php?latex=H_k+%5Cnabla+f%28x_k%29&bg=ffffff&fg=333333&s=0&c=20201002)
+implicitly by maintaining a few ![n \\times
+1](https://s0.wp.com/latex.php?latex=n+%5Ctimes+1&bg=ffffff&fg=333333&s=0&c=20201002)
+vectors, then we never have to deal with an ![n \\times
+n](https://s0.wp.com/latex.php?latex=n+%5Ctimes+n&bg=ffffff&fg=333333&s=0&c=20201002)
+matrix.
+
+This entry was posted in
+[Uncategorized](https://statisticaloddsandends.wordpress.com/category/uncategorized/)
+and tagged [BFGS](https://statisticaloddsandends.wordpress.com/tag/bfgs/),
+[L-BFGS](https://statisticaloddsandends.wordpress.com/tag/l-bfgs/),
+[optimization](https://statisticaloddsandends.wordpress.com/tag/optimization/),
+[quasi-newton](https://statisticaloddsandends.wordpress.com/tag/quasi-newton/)
+by [kjytay](https://statisticaloddsandends.wordpress.com/author/kjytay/).
+Bookmark the
+[permalink](https://statisticaloddsandends.wordpress.com/2022/11/26/quasi-
+newton-methods-l-bfgs/ "Permalink to Quasi-Newton methods: L-BFGS").
+
+In [this previous
+post](https://statisticaloddsandends.wordpress.com/2022/11/24/quasi-newton-
+methods-in-optimization/), we described how _**Quasi-Newton methods**_ can be
+used to minimize a twice-differentiable function
+![f](https://s0.wp.com/latex.php?latex=f&bg=ffffff&fg=333333&s=0&c=20201002)
+whose domain is all of
+![\\mathbb{R}^n](https://s0.wp.com/latex.php?latex=%5Cmathbb%7BR%7D%5En&bg=ffffff&fg=333333&s=0&c=20201002).
+At each iteration of the method, we take the following steps:
+
+Recall that the _**[SR1
+update](https://statisticaloddsandends.wordpress.com/2022/11/24/quasi-newton-
+methods-sr1/)**_ assumes that the next
+![B](https://s0.wp.com/latex.php?latex=B&bg=ffffff&fg=333333&s=0&c=20201002)
+is the current
+![B](https://s0.wp.com/latex.php?latex=B&bg=ffffff&fg=333333&s=0&c=20201002)
+plus a symmetric rank-one matrix. The _**DFP update**_ (Davidon-Fletcher-
+Powell) assumes that the next
+![H](https://s0.wp.com/latex.php?latex=H&bg=ffffff&fg=333333&s=0&c=20201002)
+is the current
+![H](https://s0.wp.com/latex.php?latex=H&bg=ffffff&fg=333333&s=0&c=20201002)
+plus a symmetric rank-two matrix, i.e.
+
+Set ![H_{k+1} = H_k - \\dfrac{H_k y_k y_k^\\top H_k}{y_k^\\top H_k y_k} +
+\\dfrac{s_k s_k^\\top}{y_k^\\top
+s_k}](https://s0.wp.com/latex.php?latex=H_%7Bk%2B1%7D+%3D+H_k+-+%5Cdfrac%7BH_k+y_k+y_k%5E%5Ctop+H_k%7D%7By_k%5E%5Ctop+H_k+y_k%7D+%2B+%5Cdfrac%7Bs_k+s_k%5E%5Ctop%7D%7By_k%5E%5Ctop+s_k%7D&bg=ffffff&fg=333333&s=0&c=20201002).
+
+One advantage that the DFP update has over the SR1 update is that
+![B](https://s0.wp.com/latex.php?latex=B&bg=ffffff&fg=333333&s=0&c=20201002)
+being positive definite implies that
+![B^+](https://s0.wp.com/latex.php?latex=B%5E%2B&bg=ffffff&fg=333333&s=0&c=20201002)
+is also positive definite.
+
+![\\begin{aligned} B+ &= B - \\dfrac{Bss^\\top B}{s^\\top Bs} +
+\\dfrac{yy^\\top}{y^\\top s}, \\\\  H^+ &= \\left\( I -
+\\dfrac{sy^\\top}{y^\\top s}\\right\) H \\left\( I - \\dfrac{ys^\\top}{y^\\top
+s} \\right\)  + \\dfrac{ss^\\top}{y^\\top s}.
+\\end{aligned}](https://s0.wp.com/latex.php?latex=%5Cbegin%7Baligned%7D+B%2B+%26%3D+B+-+%5Cdfrac%7BBss%5E%5Ctop+B%7D%7Bs%5E%5Ctop+Bs%7D+%2B+%5Cdfrac%7Byy%5E%5Ctop%7D%7By%5E%5Ctop+s%7D%2C+%5C%5C++H%5E%2B+%26%3D+%5Cleft%28+I+-+%5Cdfrac%7Bsy%5E%5Ctop%7D%7By%5E%5Ctop+s%7D%5Cright%29+H+%5Cleft%28+I+-+%5Cdfrac%7Bys%5E%5Ctop%7D%7By%5E%5Ctop+s%7D+%5Cright%29%C2%A0+%2B+%5Cdfrac%7Bss%5E%5Ctop%7D%7By%5E%5Ctop+s%7D.+%5Cend%7Baligned%7D&bg=ffffff&fg=333333&s=0&c=20201002)
+
+where ![s_k = x_{k+1} -
+x_k](https://s0.wp.com/latex.php?latex=s_k+%3D+x_%7Bk%2B1%7D+-+x_k&bg=ffffff&fg=333333&s=0&c=20201002)
+and ![y_k = \\nabla f\(x_{k+1}\) - \\nabla
+f\(x_k\)](https://s0.wp.com/latex.php?latex=y_k+%3D+%5Cnabla+f%28x_%7Bk%2B1%7D%29+-+%5Cnabla+f%28x_k%29&bg=ffffff&fg=333333&s=0&c=20201002).
+This is often written as ![B^+ s =
+y](https://s0.wp.com/latex.php?latex=B%5E%2B+s+%3D+y&bg=ffffff&fg=333333&s=0&c=20201002)
+for brevity. If we let
+![H](https://s0.wp.com/latex.php?latex=H&bg=ffffff&fg=333333&s=0&c=20201002)
+denote the inverse of
+![B](https://s0.wp.com/latex.php?latex=B&bg=ffffff&fg=333333&s=0&c=20201002),
+then the secant equation is equivalent to ![H^+ y =
+s](https://s0.wp.com/latex.php?latex=H%5E%2B+y+%3D+s&bg=ffffff&fg=333333&s=0&c=20201002).
+
+    * Already have a WordPress.com account? [Log in now.](https://wordpress.com/log-in?redirect_to=https%3A%2F%2Fstatisticaloddsandends.wordpress.com%2F2022%2F11%2F26%2Fquasi-newton-methods-dfp-and-bfgs%2F&signup_flow=account)
+
+Whereas DFP assumes
+![H^+](https://s0.wp.com/latex.php?latex=H%5E%2B&bg=ffffff&fg=333333&s=0&c=20201002)
+is
+![H](https://s0.wp.com/latex.php?latex=H&bg=ffffff&fg=333333&s=0&c=20201002)
+plus a symmetric rank-two matrix, the _**BFGS update**_ (Broyden-Fletcher-
+Goldfarb-Shanno) assumes that
+![B^+](https://s0.wp.com/latex.php?latex=B%5E%2B&bg=ffffff&fg=333333&s=0&c=20201002)
+is
+![B](https://s0.wp.com/latex.php?latex=B&bg=ffffff&fg=333333&s=0&c=20201002)
+plus a symmetric rank-two matrix. Going through the same chain of reasoning as
+the DFP update but with
+![B](https://s0.wp.com/latex.php?latex=B&bg=ffffff&fg=333333&s=0&c=20201002)
+replacing
+![H](https://s0.wp.com/latex.php?latex=H&bg=ffffff&fg=333333&s=0&c=20201002)
+and
+![y](https://s0.wp.com/latex.php?latex=y&bg=ffffff&fg=333333&s=0&c=20201002)
+and
+![s](https://s0.wp.com/latex.php?latex=s&bg=ffffff&fg=333333&s=0&c=20201002)
+switching roles, we get the updates
+
+This entry was posted in
+[Uncategorized](https://statisticaloddsandends.wordpress.com/category/uncategorized/)
+and tagged [BFGS](https://statisticaloddsandends.wordpress.com/tag/bfgs/),
+[DFP](https://statisticaloddsandends.wordpress.com/tag/dfp/),
+[optimization](https://statisticaloddsandends.wordpress.com/tag/optimization/),
+[quasi-newton](https://statisticaloddsandends.wordpress.com/tag/quasi-newton/)
+by [kjytay](https://statisticaloddsandends.wordpress.com/author/kjytay/).
+Bookmark the
+[permalink](https://statisticaloddsandends.wordpress.com/2022/11/26/quasi-
+newton-methods-dfp-and-bfgs/ "Permalink to Quasi-Newton methods: DFP
+and BFGS").
+
+Like the DFP update, the BFGS update maintains the positive definiteness of
+![B](https://s0.wp.com/latex.php?latex=B&bg=ffffff&fg=333333&s=0&c=20201002).
+In addition, BFGS also has a self-correcting property that makes it attractive
+in practice (see Nocedal 1992, Reference 2). The BFGS update is the most
+popular quasi-Newton update in practice.
+

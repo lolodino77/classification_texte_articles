@@ -29,6 +29,7 @@ class Blogspot(Blog):
 
     def get_urls_from_one_sitemap_subpage(self, sitemap_subpage):
         """ Recupere les urls sur une seule sous-page sitemap """
+        print("in get_urls_from_one_sitemap_subpage")
         urls = self.get_web_page_text_contents(sitemap_subpage)
         urls = urls.replace("""<?xml version='1.0' encoding='UTF-8'?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">""", "")
         urls = urls.replace("</lastmod></url><url><loc>", "")
@@ -57,12 +58,23 @@ class Blogspot(Blog):
         """
         # Recupere dans une liste urls les adresses url de tous les articles publies d'un blog
         sitemap_page = self.get_sitemap_page()
+        print("in create_articles_urls")
+        print("sitemap_page =", sitemap_page)
         sitemap_subpages = self.get_sitemap_from_main_sitemap(sitemap_page)
-        urls = self.get_urls_from_all_sitemap_subpages(sitemap_subpages)
+        print("len sitemap_subpages =", len(sitemap_subpages))
+
+        # Cas 1 : ou il y a des sous-pages sitemap
+        if(len(sitemap_subpages) > 1):
+            urls = self.get_urls_from_all_sitemap_subpages(sitemap_subpages)
+                    
+        # Cas 2 : ou il n'y qu'une seule page sitemap (pas de sous-pages)
+        else:
+            urls = self.get_urls_from_one_sitemap_subpage(sitemap_page)
+
         urls = [url for url in urls if(len(url) > 1)] # enlever les ""
         urls = [url for url in urls if("pdf" not in url)] # enlever les articles pdf
 
-        if(self.all_articles):
+        if(self.all_articles): #definit le nombre d'articles a "scraper"
             self.num_articles = len(urls)
 
         print("in final function :")

@@ -15,7 +15,7 @@ class DataSource:
         """ Constructor of DataSource """
         self.url = url
         self.corpus_name = ""
-        self.path_corpus = ""
+        self.path_corpus_txt = ""
         self.filename = self.create_corpus_txt_filename()
         self.num_articles = num_articles
         if(type(self.num_articles) != str):
@@ -45,6 +45,13 @@ class DataSource:
         return(filename)
 
 
+    def save_articles_urls(self, file_open_mode="w", sep = "\n"):
+        """ # Enregistrer la liste des urls d'articles """
+        print("in save_articles_urls debut")
+        save_list_to_txt(self.articles_urls, self.path_articles_urls, file_open_mode, sep)
+        print("in save_articles_urls fin")
+
+
     def create_all_articles(self):
         """ Recupere la variable all_articles depuis la commande de terminal """
         if(self.num_articles == "all"):
@@ -53,16 +60,9 @@ class DataSource:
             all_articles = False
 
         return(all_articles)
-        
-
-    def save_articles_urls(self, file_open_mode="w", sep = "\n"):
-        """ # Enregistrer la liste des urls d'articles """
-        print("in save_articles_urls debut")
-        save_list_to_txt(self.articles_urls, self.path_articles_urls, file_open_mode, sep)
-        print("in save_articles_urls fin")
 
 
-    def save_paragraphs(self, savemode="overwrite"):
+    def save_corpus_txt(self, savemode="overwrite"):
         """Cree un corpus d'un corpus_name (au format de liste de documents/textes) dans le fichier texte filename_output
         a partir d'une liste d'adresses urls d'articles
 
@@ -70,7 +70,7 @@ class DataSource:
         articles_urls (liste de string) : La liste d'urls d'articles dont on veut extraire les paragraphes. 
                                             Ex : https://parlafoi.fr/lire/series/commentaire-de-la-summa/
         path_articles_urls (string) : La liste des paths des listes d'articles
-        path_corpus (string) : Le path vers le corpus, exemple = 
+        path_corpus_txt (string) : Le path vers le corpus, exemple = 
         save_mode (string) : Le mode d'ecriture du fichier ("append" = ajouter ou "overwrite" = creer un nouveau)
         
         Sortie:
@@ -87,18 +87,18 @@ class DataSource:
         
         #Ecrit dans le fichier texte filename_corpus.txt tous les paragraphes tous les articles d'une liste
         if(savemode == "overwrite"):
-            # print("path_corpus =", path_corpus)
+            # print("path_corpus_txt =", path_corpus_txt)
             # print("articles_urls =", articles_urls)
             article_url = self.articles_urls[0] #premier article
             article = Article(article_url, self.corpus_name)
             print("article_url =")
             print(article_url)
-            article.save_paragraphs(self.path_corpus, self.paragraphs, file_open_mode="w", sep = "\n\n")
+            article.save_corpus_txt(self.path_corpus_txt, self.paragraphs, file_open_mode="w", sep = "\n\n")
             self.paragraphs.extend(article.paragraphs)
 
             for article_url in self.articles_urls[1:]: #tous les articles suivants
                 article = Article(article_url, self.corpus_name)
-                article.save_paragraphs(self.path_corpus, self.paragraphs, file_open_mode="a", sep = "\n\n")
+                article.save_corpus_txt(self.path_corpus_txt, self.paragraphs, file_open_mode="a", sep = "\n\n")
                 self.paragraphs.extend(article.paragraphs)
                 print("len self.paragraphs =", len(self.paragraphs))
                 print("article_url =")
@@ -108,12 +108,15 @@ class DataSource:
                 print("article_url =")
                 print(article_url)
                 article = Article(article_url, self.corpus_name)
-                article.save_paragraphs(self.path_corpus, self.paragraphs, file_open_mode="a", sep = "\n\n")
+                article.save_corpus_txt(self.path_corpus_txt, self.paragraphs, file_open_mode="a", sep = "\n\n")
                 self.paragraphs.extend(article.paragraphs)
                 print("len self.paragraphs =", len(self.paragraphs))
         #Enleve les doublons        
-        paragraphs = open(self.path_corpus, "r", encoding="utf-8").read().split("\n\n")
+        paragraphs = open(self.path_corpus_txt, "r", encoding="utf-8").read().split("\n\n")
         print("avant retirer doublons =", len(paragraphs))
         paragraphs = list(set(paragraphs))
         print("apres retirer doublons =", len(paragraphs))
 
+
+    def save_corpus_dataframe(self):
+        """ Sauvegarde un corpus dans un dataframe (csv ou parquet) """

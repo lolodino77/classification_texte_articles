@@ -77,13 +77,13 @@ class Article:
         return(paragraphs)
 
 
-    def save_paragraphs(self, path_corpus, corpus_paragraphs="", file_open_mode="w", sep = "\n\n"):
+    def save_corpus_txt(self, path_corpus_txt, corpus_paragraphs="", file_open_mode="w", sep = "\n\n"):
         """ Sauvegarde les paragraphes d'un article dans un fichier texte """
         # print("file_open_mode =", file_open_mode)
-        # print("len path_corpus =", len(path_corpus))
-        # print("path_corpus =", path_corpus)
-        # save_list_to_txt(self.paragraphs, path_corpus, file_open_mode, sep)
-        f = open(path_corpus, file_open_mode, encoding="utf-8") #"w" si n'existe pas, "a" si on veut ajouter a un fichier deja existant
+        # print("len path_corpus_txt =", len(path_corpus_txt))
+        # print("path_corpus_txt =", path_corpus_txt)
+        # save_list_to_txt(self.paragraphs, path_corpus_txt, file_open_mode, sep)
+        f = open(path_corpus_txt, file_open_mode, encoding="utf-8") #"w" si n'existe pas, "a" si on veut ajouter a un fichier deja existant
         for paragraph in self.paragraphs:
             if(paragraph not in corpus_paragraphs):
                 f.write(paragraph + sep)

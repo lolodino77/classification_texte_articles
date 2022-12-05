@@ -11,9 +11,9 @@ import os
 def test_article(url, corpus_name):
     article = Article(url, corpus_name)
     print(article)
-    path_corpus = "./data/input/corpus_txt/corpus_{}.txt".format(corpus_name)  #self.filename
-    article.save_paragraphs(path_corpus, corpus_paragraphs="", file_open_mode="w", sep = "\n\n")
-    print("article.save_paragraphs() fini")
+    path_corpus_txt = "./data/input/corpus_txt/corpus_{}.txt".format(corpus_name)  #self.filename
+    article.save_corpus_txt(path_corpus_txt, corpus_paragraphs="", file_open_mode="w", sep = "\n\n")
+    print("article.save_corpus_txt() fini")
 
 
 def test_datasource(url, corpus_name, num_articles):
@@ -24,43 +24,43 @@ def test_datasource(url, corpus_name, num_articles):
 def test_bibliography(url, corpus_name, num_articles):
     bibliography = Bibliography(url, corpus_name, num_articles)
     print(bibliography)
-    bibliography.save_paragraphs(savemode="overwrite")
-    # print("bibliography.save_paragraphs() fini")
+    bibliography.save_corpus_txt(savemode="overwrite")
+    # print("bibliography.save_corpus_txt() fini")
 
 
 def test_bibliographylist(filename, num_articles):
     bibliographyList = BibliographyList(filename, num_articles)
     print(bibliographyList)
     bibliographyList.save_articles_urls()
-    bibliographyList.save_paragraphs()
+    bibliographyList.save_corpus_txt()
 
 
 def test_blog(url, num_articles):
     blog = Blog(url, num_articles)
     print(blog)
     # blog.save_articles_urls()
-    # blog.save_paragraphs(savemode="overwrite")
+    # blog.save_corpus_txt(savemode="overwrite")
 
 
 def test_bloglist(filename, num_articles):
     blogList = BlogList(filename, num_articles)
     print(blogList)
     # blogList.save_articles_urls()
-    blogList.save_paragraphs()
+    blogList.save_corpus_txt()
 
 
 def test_blogspot(url, num_articles):
     blogspot = Blogspot(url, num_articles)
     print(blogspot)
     blogspot.save_articles_urls()
-    blogspot.save_paragraphs()
+    blogspot.save_corpus_txt()
 
 
 def test_wordpress(url, num_articles):
     wordpress = Wordpress(url, num_articles)
     print(wordpress)
     wordpress.save_articles_urls()
-    wordpress.save_paragraphs()
+    wordpress.save_corpus_txt()
 
 
 def main():

@@ -12,21 +12,23 @@ def test_bibliographylist(filename, num_articles):
     bibliographyList = BibliographyList(filename, num_articles)
     print(bibliographyList)
     bibliographyList.save_articles_urls()
-    bibliographyList.save_paragraphs()
+    bibliographyList.save_corpus_txt()
 
 
 def test_bloglist(filename, num_articles):
     blogList = BlogList(filename, num_articles)
     print(blogList)
     blogList.save_articles_urls()
-    blogList.save_paragraphs()
+    blogList.save_corpus_txt()
 
 
 
 def main():
     # args : python main.py blogs_ou_biblio.txt num_articles
-    # ex : python main.py blogs_philosophy.txt 5
-    # ex : python main.py bliblio_philosophy.txt 5
+    # ex : 
+    # python main.py blogs_philosophy.txt 5
+    # python main.py blogs_all_articles.txt all
+    # python main.py bibliography_philosophy.txt 5
 
     set_current_directory_to_root(root = "classification_texte_articles_version_objet")
     print("os.getcwd()")
@@ -34,11 +36,13 @@ def main():
     
     sys_argv = sys.argv
     filename = sys_argv[1]
-    num_articles = int(sys_argv[2])
+    num_articles = sys_argv[2]
+    if(num_articles != "all"):
+        num_articles = int(num_articles)
     # filename = "blogs_philosophy.txt"
     # num_articles = 5
     
-    # test_bloglist(filename, num_articles)
-    test_bibliographylist(filename, num_articles)
+    test_bloglist(filename, num_articles)
+    # test_bibliographylist(filename, num_articles)
 
 main()

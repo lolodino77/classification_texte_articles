@@ -28,13 +28,15 @@ class DataSourceList:
             print(dataSource)
         print("\n")
 
-    def save_paragraphs(self):
+    def save_corpus_txt(self):
         """ Ecrit les paragraphes de chaque DataSource de la liste dans un fichier texte"""
         dataSource = self.dataSources[0]
         print("dataSource =", dataSource)
-        # dataSource.save_articles_urls()
-        dataSource.save_paragraphs(savemode="overwrite")        
+        dataSource.save_corpus_txt(savemode="overwrite")        
         for dataSource in self.dataSources[1:]:
             print("dataSource =", dataSource)
             # dataSource.save_articles_urls()
-            dataSource.save_paragraphs(savemode="append")
+            dataSource.save_corpus_txt(savemode="append")
+
+    # def save_corpus_dataframe(self):
+    #     """ Sauvegarde un corpus dans un dataframe (csv ou parquet) """

@@ -6,7 +6,7 @@ class Blog(DataSource):
         DataSource.__init__(self, url, num_articles)
         print("type num_articles =", type(num_articles))
         self.corpus_name = self.get_corpus_name()
-        self.path_corpus = "./data/input/corpus_txt/" + self.create_corpus_txt_filename() #self.filename
+        self.path_corpus_txt = "./data/input/corpus_txt/" + self.create_corpus_txt_filename() #self.filename
         self.path_articles_urls = "./data/input/articles_lists/articles_list_{}.txt".format(self.corpus_name)
 
 
@@ -45,10 +45,13 @@ class Blog(DataSource):
     def get_sitemap_page(self):
         """ Recupere la page sitemap d'un blog """
         robots_txt_page = self.get_blog_robots_page()
+        print("robots_txt_page =", robots_txt_page)
         print("get text_contents of robots_txt_page")
         text_contents = self.get_web_page_text_contents(robots_txt_page)
         print("get text_contents of robots_txt_page fini")
+        print("0 text_contents =", text_contents)
         text_contents = text_contents.split("\n")
+        print("1 text_contents =", text_contents)
         sitemap_contents = [elt for elt in text_contents if "Sitemap" in elt]
         print("sitemap_contents =", sitemap_contents)
         sitemap_page = sitemap_contents[0].split(" ")[1]
