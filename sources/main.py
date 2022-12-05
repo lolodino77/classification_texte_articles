@@ -7,7 +7,7 @@ from bibliographylist import *
 from bloglist import *
 import os
 
-# test
+# test2
 def test_bibliographylist(filename, num_articles):
     bibliographyList = BibliographyList(filename, num_articles)
     print(bibliographyList)
@@ -26,6 +26,7 @@ def test_bloglist(filename, num_articles):
 def main():
     # args : python main.py blogs_ou_biblio.txt num_articles
     # ex : python main.py blogs_philosophy.txt 5
+    # ex : python main.py bliblio_philosophy.txt 5
 
     set_current_directory_to_root(root = "classification_texte_articles_version_objet")
     print("os.getcwd()")
