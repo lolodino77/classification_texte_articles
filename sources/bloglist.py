@@ -5,9 +5,9 @@ from wordpress import *
 
 
 class BlogList(DataSourceList):
-    def __init__(self, filename, num_articles):
+    def __init__(self, filename, num_articles, table_format):
         """ Constructor of Bloglist """
-        DataSourceList.__init__(self, filename, num_articles)
+        DataSourceList.__init__(self, filename, num_articles, table_format)
         self.urls = self.define_urls()
         self.define_datasources()
 

@@ -3,3 +3,4 @@ https://statisticaloddsandends.wordpress.com/2022/11/26/quasi-newton-methods-l-b
 https://statisticaloddsandends.wordpress.com/2022/11/26/quasi-newton-methods-dfp-and-bfgs/
 https://statisticaloddsandends.wordpress.com/2022/11/24/quasi-newton-methods-in-optimization/
 https://statisticaloddsandends.wordpress.com/2022/11/24/quasi-newton-methods-sr1/
+https://statisticaloddsandends.wordpress.com/2022/11/19/exact-line-search-and-backtracking-line-search/

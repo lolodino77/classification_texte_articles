@@ -2,9 +2,9 @@ from datasourcelist import *
 from bibliography import *
 
 class BibliographyList(DataSourceList):
-    def __init__(self, filename, num_articles):
+    def __init__(self, filename, num_articles, table_format):
         """ Constructor of Bibliographylist """
-        DataSourceList.__init__(self, filename, num_articles)
+        DataSourceList.__init__(self, filename, num_articles, table_format)
         # self.dataSources = self.define_datasources()
         self.urls = self.define_urls()
         self.corpus_name = self.define_corpus_name()

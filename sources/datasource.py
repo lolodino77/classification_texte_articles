@@ -16,7 +16,7 @@ class DataSource:
         self.url = url
         self.corpus_name = ""
         self.path_corpus_txt = ""
-        self.filename = self.create_corpus_txt_filename()
+        self.filename_corpus_txt = ""
         self.num_articles = num_articles
         if(type(self.num_articles) != str):
             self.num_articles = int(self.num_articles)
@@ -30,11 +30,9 @@ class DataSource:
         print("str :")
         str_url = str(self.url)
         # str_articles_list = str(self.articles_list)
-        str_filename = str(self.filename)
         str_num_articles = str(self.num_articles)
         str_all_articles = str(self.all_articles)
         desc = "url = "+ str_url 
-        desc = desc + "\nfilename = " + str_filename
         desc += "\nnum_articles = " + str_num_articles
         desc += "\nall_articles = " + str_all_articles
         return(desc)
@@ -118,5 +116,30 @@ class DataSource:
         print("apres retirer doublons =", len(paragraphs))
 
 
-    def save_corpus_dataframe(self):
-        """ Sauvegarde un corpus dans un dataframe (csv ou parquet) """
+    def save_corpus_csv(self, df):
+        """ Sauvegarde le corpus pandas dataframe dans un fichier csv """
+        filename_corpus_csv = self.filename_corpus_txt.split(".txt")[0] + ".csv"
+        df.to_csv("./data/input/corpus_csv/" + filename_corpus_csv, index=False)
+
+
+    def save_corpus_parquet(self, df):
+        """ Sauvegarde le corpus pandas dataframe dans un fichier parquet"""
+        filename_corpus_parquet = self.filename_corpus_txt.split(".txt")[0] + ".parquet"
+        df.to_parquet("./data/input/corpus_parquet/" + filename_corpus_parquet)
+
+
+    def save_corpus_dataframe(self, format):
+        """ Sauvegarde un corpus dans un dataframe (csv ou parquet) a partir d'un corpus dans un .txt """
+        print("in save_corpus_dataframe")
+        print("filename_corpus_txt =", self.filename_corpus_txt)
+        res = open("./data/input/corpus_txt/" + self.filename_corpus_txt, "r", encoding="utf-8").read().split("\n\n")
+        res = [elt for elt in res if len(elt) > 1]
+        message = res
+        length = [len(elt) for elt in res]
+        list_of_rows = list(zip(message, length))
+        df = pd.DataFrame(list_of_rows, columns=["message", "length"])
+
+        if(format == "csv"):
+            self.save_corpus_csv(df)
+        elif(format == "parquet"):
+            self.save_corpus_parquet(df)

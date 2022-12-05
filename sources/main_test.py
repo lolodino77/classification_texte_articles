@@ -11,7 +11,7 @@ import os
 def test_article(url, corpus_name):
     article = Article(url, corpus_name)
     print(article)
-    path_corpus_txt = "./data/input/corpus_txt/corpus_{}.txt".format(corpus_name)  #self.filename
+    path_corpus_txt = "./data/input/corpus_txt/corpus_{}.txt".format(corpus_name)
     article.save_corpus_txt(path_corpus_txt, corpus_paragraphs="", file_open_mode="w", sep = "\n\n")
     print("article.save_corpus_txt() fini")
 

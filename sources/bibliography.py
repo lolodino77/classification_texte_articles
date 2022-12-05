@@ -6,7 +6,8 @@ class Bibliography(DataSource):
     def __init__(self, url, corpus_name, num_articles):
         DataSource.__init__(self, url, num_articles)
         self.corpus_name = corpus_name
-        self.path_corpus_txt = "./data/input/corpus_txt/" + self.create_corpus_txt_filename() #self.filename
+        self.filename_corpus_txt = self.create_corpus_txt_filename()
+        self.path_corpus_txt = "./data/input/corpus_txt/" + self.filename_corpus_txt 
         self.path_articles_urls = "./data/input/articles_lists/articles_list_{}.txt".format(self.corpus_name)
         self.articles_urls = self.create_articles_urls()
 

@@ -504,3 +504,2159 @@ the end of producing a cake. But producing the cake was worthless, since no
 one would eat it. The only value was in the trying, since that was the
 fulfillment of his promise.
 
+I climbed in sets of 10. The planned pace was 8:18 per set and a 44-45 second
+rest between sets (clock runs during rests,), averaging at 49.8 seconds per
+climb including descent. I was always ahead of pace, and I occasionally took a
+mini break at the mid-point time if I was too far ahead.
+
+Most of my practice was with an auto-belay, and at a shorter distance per
+climb (and hence greater number of climbs needed) since the auto-belay makes
+it impossible to get to the top of the wall. The auto-belay is also spring
+loaded so it effectively decreases body weight (by 7 lbs at the bottom
+according to my measurement). Then a couple of weeks ago the auto-belay was
+closed by management due to a maintenance issue, and I had a break in training
+until the Wednesday before the official attempt when I trained with a manual
+belay.
+
+And now for something not very philosophical. Today, in front of two witnesses
+and two timekeepers and with the help of Levi Durham doing an amazing feat of
+belaying me for an hour, I beat the [Guinness World
+Record](https://www.guinnessworldrecords.com/world-records/438677-greatest-
+vertical-distance-climbed-on-an-artificial-climbing-wall-in-1-hour-indi) in
+greatest vertical distance climbed in one hour on an indoor climbing wall. The
+previous record was 928.5m and I did 1013.7m (with about half a minute to
+spare). On Baylor's climbing wall, this involved 67 climbs divided into sets
+of 10 (the last was 7), with about a minute of rest between sets (the clock
+kept on running during the rest).
+
+On the ground there was a sheet of paper with the start and end times of each
+break printed in large letters (calculated by [this
+script](https://gist.github.com/arpruss/10e364904dfcc19b043a594232e0acde)), as
+well as the mid-point time for each set of 10 to keep me better on pace.
+
+The top of the wall is 15.13 meters vertically from the ground (as measured by
+a geology grad student), at 3.5 degree slab.
+
+I wore moderately worn (one small hole) and comfortable 5.10 Anasazi shoes, a
+Camp USA Energy harness, shorts and a T-shirt. (I have not received any
+sponsorship.) My belayer used a tube-style device and wore belay gloves.
+
+You should make a living out of that, Alex.  
+Would give you a lot less stress.
+
+About half-way through, I ducked into the storage area inside the rock and
+changed to a dry shirt.
+
+I was actually really stressed yesterday. I had already beaten the record
+unofficially in practice, but with lots of people coming to watch (local
+climbers, grad students and colleagues), I didn't want to disappoint.
+Contributing to the stress was that the conditions changed from my practice
+runs (the auto-belay was down from maintenance and I had to use a manual
+belay; this involved lengthening the route slightly, increasing the length of
+each set and decreasing the total count, as well as an effective increase in
+my weight since the auto-belay subtracts a few pounds due to its spring-
+loading), and that I hadn't been able to train on the particular route for
+several weeks prior to Wednesday due to the auto-belay being down for
+maintenance while on Wednesday's approximately half-distance-at-half-time
+practice I was more tired at the end than I should have been due to poor
+pacing.
+
+Since Guinness requires video proof in addition to human witnesses, in the
+interests of redundancy, I had three cameras pointed at the attempt. The best
+footage (above) is from a Sony A7R2 with a zoom lens at 16mm, producing 1080P
+at 59.94 fps. Video was processed with Adobe Premiere Rush. The processing
+consisted of trimming the start and end, and adding a timing video track I
+generated with a [Python OpenCV2
+script](https://gist.github.com/arpruss/3a705c859d4ea4a482c4e47e96a08f79),
+synchronized with single-frame precision at the 1:00:00 point with the footage
+of Giant Stopwatch (barely visible under the table towards the end of the
+video; early in the video, glare hides it). For the unofficial version I link
+above, I accelerated the middle climbs 10X in Premiere Rush.
+
+The route was a standard 5.7 grade for most of my training (including when I
+unofficially beat the records), with Rock management kindly agreeing to keep
+the route up for several months for me. For the final attempt, we added holds
+to make the finish at the top of the wall, and changed three other holds to
+easier ones. (Guinness has no route grade requirements.)
+
+In the morning I stress-baked pumpkin muffins for myself and the volunteers. I
+had the muffins, water and loose chalk on a table for use during breaks.
+
+A Kindle Fire running a pre-release version of my [Giant
+Stopwatch](https://play.google.com/store/apps/details?id=omegacentauri.mobi.simplestopwatch&hl=en_US&gl=US)
+app provided unofficial timing for audience to see and for my pacing. I had to
+modify the app to have a periodic beep to meet Guinness's requirements of an
+audible stop signal.
+
+I trained for about three months, not very heavily. In training did two
+unofficial full-length practice runs, and in each I beat the previous record:
+in the first one I got 947.1 meters and in the second I got 1004.5, so I was
+pretty confident I could beat the 928.5 meters on the official attempt (though
+I was still pretty nervous). I also trained by doing a small number of
+approximately 1/2 or 1/3 sized practices (maybe three or so), and more regular
+shorter runs (1-10 climbs) at fast pace.
+
+Whether such a limited way of waging war could be successful probably depends
+on the case. If one combined the non-lethal (or not intentionally lethal)
+means with technological and numerical superiority, it wouldn’t be surprising
+to me if one could win.
+
+Second, “lethal” weapons can be used less than lethally. For instance, with
+modern medicine, abdominal gunshot wounds are only 10% fatal, yet they are no
+doubt very effective at stopping an attacker. While it may seem weird to
+imagine a pacifist shooting someone in the stomach, when the chance of
+survival is 90%, it does not seem unreasonable to say that the pacifist could
+be aiming to stop the attacker non-lethally. After all, tasers sometimes kill,
+too. They do so less than 0.25% of the time, but that’s a difference of degree
+rather than of principle.
+
+Third, we might subdivide moderate pacifists based on whether they prohibit
+all violence that foreseeably leads to death or just violence that
+intentionally leads to death. If it is only intentionally lethal violence that
+is forbidden, then quite a bit of modern warfare can stand. If the enemy is
+attacking with tanks or planes, one can intentionally destroy the tank or
+plane as a weapon, while only foreseeing, without intending, the death of the
+crew. (I don’t know how far one can take this line without sophistry. Can one
+drop a bomb on an infantry unit intending to smash up their rifles without
+intending to kill the soldiers?) Similarly, one can bomb enemy weapons
+factories.
+
+I’ve been wondering whether it is possible for a country to count as pacifist
+and yet wage a defensive war. I think the answer is positive, as long as one
+has a moderate pacifism that is opposed to lethal violence but not to all
+violence. I think that a prohibition of all violence is untenable. It seems
+obvious that if you see someone about to shoot an innocent person, and you can
+give the shooter a shove to make them miss, you presumptively should.
+
+First, we have “officially” non-lethal weapons: tasers, gas, etc. Some of
+these might violate current international law, but it seems that a pacifist
+country could modify its commitment to some accords.
+
+These may seem to be consequentialist arguments. I don't think so. I don't
+have the same intuitions if we replace the general by the general's innocent
+child in (2) and (4), even if killing the child were to stop the war (e.g., by
+making the general afraid that their other children would be murdered).
+
+Alex  
+  
+Doesn't you post here entail that we should murder Putin?
+
+Imagine a moderate pacifist who rejects lethal self-defense, but allows non-
+lethal self-defense when appropriate, say by use of tasers.
+
+I think (4) is still morally preferable to causing the kind of disruption to
+the lives of a million people that plan (3) would involve.
+
+So maybe our choice is between tasing a million, thereby non-intentionally
+killing 250 soldiers, and intentionally killing one general. It seems to me
+that (2) is morally preferable, even though our moderate pacifist has to allow
+(1) and forbid (2).
+
+Very well. Now consider this on a national level. Suppose there are a million
+enemy soldiers ordered to commit genocide against ten million, and you have
+two ways to stop them:
+
+Alex  
+  
+Of course one should never murder anyone, but the question is: would killing
+Putin be murder?
+
+Note that a version of this argument goes through even if the moderate
+pacifist backs up and says that tasers are too lethal. For suppose instead of
+tasers we have drones that destroy the dominant hand of an enemy soldier while
+guaranteeing survival (with science fictional medical technology). It’s
+clearly right to release such a drone on a soldier who is about to kill ten
+innocents. But now compare:
+
+Now, imagine that one person is attacking you and nine other innocents, with
+the intent of killing the ten of you, and you can stop them with a taser.
+Surely you should, and surely the moderate pacifist will say that this is an
+appropriate use case for the taser.
+
+One should never murder anyone. Killing, on the other hand, can sometimes be
+justified.  
+  
+One question about killing the leader of an invading country is whether the
+leader counts as a civilian, since the killing of civilians is forbidden by
+the Geneva Convention. There is also some worry about the Geneva Convention's
+killing by "perfidy", which is taken to rule out at least some assassinations.
+So, as a matter of positive international law, it seems a difficult question.  
+  
+Were there no international law on the matter, I wouldn't see a significant
+difference between killing a political leader and killing a general, if both
+are giving orders to fight. Morally speaking, but not necessarily in
+international law, both seem to me to be equally combatants.  
+  
+Besides the moral and legal questions, there is also a prudential question. In
+my post I assumed that killing the general would stop the invasion. I got to
+assume that because I was making up the case. Whether in actual fact killing a
+leader would stop an invasion is less clear. Indeed such a thing might be seen
+as such a serious attack on the country that the retaliation might be really
+horrific.
+
+If you can tase one person to stop the murder of ten, then (1) should be
+permissible if it’s the only option. But tasers occasionally kill people. We
+don’t know how often. Apparently it’s [less than 1 in
+400](https://www.usatoday.com/in-depth/news/investigations/2021/04/23/police-
+use-tasers-ends-hundreds-deaths-like-daunte-wright/7221153002/) uses. Suppose
+it’s 1 in 4000. Then option (1) results in 250 enemy deaths.
+
+On the ground there was a sheet of paper with the start and end times of each
+break printed in large letters (calculated by [this
+script](https://gist.github.com/arpruss/10e364904dfcc19b043a594232e0acde)), as
+well as the mid-point time for each set of 10 to keep me better on pace.
+
+Since Guinness requires video proof in addition to human witnesses, in the
+interests of redundancy, I had three cameras pointed at the attempt. The best
+footage (above) is from a Sony A7R2 with a zoom lens at 16mm, producing 1080P
+at 59.94 fps. Video was processed with Adobe Premiere Rush. The processing
+consisted of trimming the start and end, and adding a timing video track I
+generated with a [Python OpenCV2
+script](https://gist.github.com/arpruss/3a705c859d4ea4a482c4e47e96a08f79),
+synchronized with single-frame precision at the 1:00:00 point with the footage
+of Giant Stopwatch (barely visible under the table towards the end of the
+video; early in the video, glare hides it). For the unofficial version I link
+above, I accelerated the middle climbs 10X in Premiere Rush.
+
+I climbed in sets of 10. The planned pace was 8:18 per set and a 44-45 second
+rest between sets (clock runs during rests,), averaging at 49.8 seconds per
+climb including descent. I was always ahead of pace, and I occasionally took a
+mini break at the mid-point time if I was too far ahead.
+
+About half-way through, I ducked into the storage area inside the rock and
+changed to a dry shirt.
+
+A Kindle Fire running a pre-release version of my [Giant
+Stopwatch](https://play.google.com/store/apps/details?id=omegacentauri.mobi.simplestopwatch&hl=en_US&gl=US)
+app provided unofficial timing for audience to see and for my pacing. I had to
+modify the app to have a periodic beep to meet Guinness's requirements of an
+audible stop signal.
+
+In the morning I stress-baked pumpkin muffins for myself and the volunteers. I
+had the muffins, water and loose chalk on a table for use during breaks.
+
+And now for something not very philosophical. Today, in front of two witnesses
+and two timekeepers and with the help of Levi Durham doing an amazing feat of
+belaying me for an hour, I beat the [Guinness World
+Record](https://www.guinnessworldrecords.com/world-records/438677-greatest-
+vertical-distance-climbed-on-an-artificial-climbing-wall-in-1-hour-indi) in
+greatest vertical distance climbed in one hour on an indoor climbing wall. The
+previous record was 928.5m and I did 1013.7m (with about half a minute to
+spare). On Baylor's climbing wall, this involved 67 climbs divided into sets
+of 10 (the last was 7), with about a minute of rest between sets (the clock
+kept on running during the rest).
+
+Most of my practice was with an auto-belay, and at a shorter distance per
+climb (and hence greater number of climbs needed) since the auto-belay makes
+it impossible to get to the top of the wall. The auto-belay is also spring
+loaded so it effectively decreases body weight (by 7 lbs at the bottom
+according to my measurement). Then a couple of weeks ago the auto-belay was
+closed by management due to a maintenance issue, and I had a break in training
+until the Wednesday before the official attempt when I trained with a manual
+belay.
+
+I was actually really stressed yesterday. I had already beaten the record
+unofficially in practice, but with lots of people coming to watch (local
+climbers, grad students and colleagues), I didn't want to disappoint.
+Contributing to the stress was that the conditions changed from my practice
+runs (the auto-belay was down from maintenance and I had to use a manual
+belay; this involved lengthening the route slightly, increasing the length of
+each set and decreasing the total count, as well as an effective increase in
+my weight since the auto-belay subtracts a few pounds due to its spring-
+loading), and that I hadn't been able to train on the particular route for
+several weeks prior to Wednesday due to the auto-belay being down for
+maintenance while on Wednesday's approximately half-distance-at-half-time
+practice I was more tired at the end than I should have been due to poor
+pacing.
+
+The top of the wall is 15.13 meters vertically from the ground (as measured by
+a geology grad student), at 3.5 degree slab.
+
+You should make a living out of that, Alex.  
+Would give you a lot less stress.
+
+I trained for about three months, not very heavily. In training did two
+unofficial full-length practice runs, and in each I beat the previous record:
+in the first one I got 947.1 meters and in the second I got 1004.5, so I was
+pretty confident I could beat the 928.5 meters on the official attempt (though
+I was still pretty nervous). I also trained by doing a small number of
+approximately 1/2 or 1/3 sized practices (maybe three or so), and more regular
+shorter runs (1-10 climbs) at fast pace.
+
+The route was a standard 5.7 grade for most of my training (including when I
+unofficially beat the records), with Rock management kindly agreeing to keep
+the route up for several months for me. For the final attempt, we added holds
+to make the finish at the top of the wall, and changed three other holds to
+easier ones. (Guinness has no route grade requirements.)
+
+I wore moderately worn (one small hole) and comfortable 5.10 Anasazi shoes, a
+Camp USA Energy harness, shorts and a T-shirt. (I have not received any
+sponsorship.) My belayer used a tube-style device and wore belay gloves.
+
+First, we have “officially” non-lethal weapons: tasers, gas, etc. Some of
+these might violate current international law, but it seems that a pacifist
+country could modify its commitment to some accords.
+
+Second, “lethal” weapons can be used less than lethally. For instance, with
+modern medicine, abdominal gunshot wounds are only 10% fatal, yet they are no
+doubt very effective at stopping an attacker. While it may seem weird to
+imagine a pacifist shooting someone in the stomach, when the chance of
+survival is 90%, it does not seem unreasonable to say that the pacifist could
+be aiming to stop the attacker non-lethally. After all, tasers sometimes kill,
+too. They do so less than 0.25% of the time, but that’s a difference of degree
+rather than of principle.
+
+Third, we might subdivide moderate pacifists based on whether they prohibit
+all violence that foreseeably leads to death or just violence that
+intentionally leads to death. If it is only intentionally lethal violence that
+is forbidden, then quite a bit of modern warfare can stand. If the enemy is
+attacking with tanks or planes, one can intentionally destroy the tank or
+plane as a weapon, while only foreseeing, without intending, the death of the
+crew. (I don’t know how far one can take this line without sophistry. Can one
+drop a bomb on an infantry unit intending to smash up their rifles without
+intending to kill the soldiers?) Similarly, one can bomb enemy weapons
+factories.
+
+I’ve been wondering whether it is possible for a country to count as pacifist
+and yet wage a defensive war. I think the answer is positive, as long as one
+has a moderate pacifism that is opposed to lethal violence but not to all
+violence. I think that a prohibition of all violence is untenable. It seems
+obvious that if you see someone about to shoot an innocent person, and you can
+give the shooter a shove to make them miss, you presumptively should.
+
+Whether such a limited way of waging war could be successful probably depends
+on the case. If one combined the non-lethal (or not intentionally lethal)
+means with technological and numerical superiority, it wouldn’t be surprising
+to me if one could win.
+
+Very well. Now consider this on a national level. Suppose there are a million
+enemy soldiers ordered to commit genocide against ten million, and you have
+two ways to stop them:
+
+So maybe our choice is between tasing a million, thereby non-intentionally
+killing 250 soldiers, and intentionally killing one general. It seems to me
+that (2) is morally preferable, even though our moderate pacifist has to allow
+(1) and forbid (2).
+
+Note that a version of this argument goes through even if the moderate
+pacifist backs up and says that tasers are too lethal. For suppose instead of
+tasers we have drones that destroy the dominant hand of an enemy soldier while
+guaranteeing survival (with science fictional medical technology). It’s
+clearly right to release such a drone on a soldier who is about to kill ten
+innocents. But now compare:
+
+I think (4) is still morally preferable to causing the kind of disruption to
+the lives of a million people that plan (3) would involve.
+
+Now, imagine that one person is attacking you and nine other innocents, with
+the intent of killing the ten of you, and you can stop them with a taser.
+Surely you should, and surely the moderate pacifist will say that this is an
+appropriate use case for the taser.
+
+If you can tase one person to stop the murder of ten, then (1) should be
+permissible if it’s the only option. But tasers occasionally kill people. We
+don’t know how often. Apparently it’s [less than 1 in
+400](https://www.usatoday.com/in-depth/news/investigations/2021/04/23/police-
+use-tasers-ends-hundreds-deaths-like-daunte-wright/7221153002/) uses. Suppose
+it’s 1 in 4000. Then option (1) results in 250 enemy deaths.
+
+These may seem to be consequentialist arguments. I don't think so. I don't
+have the same intuitions if we replace the general by the general's innocent
+child in (2) and (4), even if killing the child were to stop the war (e.g., by
+making the general afraid that their other children would be murdered).
+
+Alex  
+  
+Doesn't you post here entail that we should murder Putin?
+
+Imagine a moderate pacifist who rejects lethal self-defense, but allows non-
+lethal self-defense when appropriate, say by use of tasers.
+
+One should never murder anyone. Killing, on the other hand, can sometimes be
+justified.  
+  
+One question about killing the leader of an invading country is whether the
+leader counts as a civilian, since the killing of civilians is forbidden by
+the Geneva Convention. There is also some worry about the Geneva Convention's
+killing by "perfidy", which is taken to rule out at least some assassinations.
+So, as a matter of positive international law, it seems a difficult question.  
+  
+Were there no international law on the matter, I wouldn't see a significant
+difference between killing a political leader and killing a general, if both
+are giving orders to fight. Morally speaking, but not necessarily in
+international law, both seem to me to be equally combatants.  
+  
+Besides the moral and legal questions, there is also a prudential question. In
+my post I assumed that killing the general would stop the invasion. I got to
+assume that because I was making up the case. Whether in actual fact killing a
+leader would stop an invasion is less clear. Indeed such a thing might be seen
+as such a serious attack on the country that the retaliation might be really
+horrific.
+
+Alex  
+  
+Of course one should never murder anyone, but the question is: would killing
+Putin be murder?
+
+I think the difficulty with a causal model is the fact that in paradigm cases
+of normative power, there is a natural power that _is_ being exercised, and we
+have the intuition that the exercise of the natural power is necessary and
+sufficient for the normative effect. But on a causal model, why couldn’t I
+cause a promissory-type obligation without promising, simply causing the
+relevant property of being obligated to come to be instantiated in me? And why
+couldn’t I engage in the speech act while yet remaining normatively unbound,
+because my normative power wasn’t exercised in parallel with the natural
+power?
+
+Here is a picture on which this is correct. We exercise a normative power by
+exercising a natural power in such a context that the successful exercise of
+the natural power is partly constitutive of a normative fact. For instance, we
+utter a promise, thereby exercising a natural power to engage in a certain
+kind of speech act, and our exercise of that speech act is partly constitutive
+of, rather than causal of, the state of affairs of our being obligated to
+carry out the promised action.
+
+A normative power is a power to change a normative condition.
+[Raz](https://core.ac.uk/download/pdf/230182259.pdf) says the change is not
+produced “causally” but “normatively”.
+
+There are two versions of the above model. On one version, there is an
+underlying fundamental conditional normative fact _C_ , such as that if I have
+promised something then I should do it, and my exercise of normative power
+supplies the antecedent _A_ of that conditional, and then the normative
+consequent of _C_ comes to be grounded in _C_ and _A_. On another version,
+there there are some natural acts that are directly constitutive of a
+normative state of affairs, not merely by supplying the antecedent of a
+conditional normative fact. I think the first version of the model is the more
+plausible in paradigmatic cases.
+
+But why not allow for a causal model? Why not suppose that a normative power
+is a causal power to make an irreducible normative property come to be
+instantiated in someone? Thus, my power to promise is the power to cause
+myself to be obligated to do what I have promised.
+
+Perhaps the real problem for a lot of people with a causal view of normative
+powers is that it tends to lead to a violation of supervenience. For if it is
+metaphysically possble to have the exercise of the normative power without the
+exercise of the natural power, or vice versa, then it seems we don’t have
+supervenience of the normative on the non-normative. But supervenience does
+not seem to me to be inescapable.
+
+Maybe the answer to both questions is that I could, but only metaphysically
+and not causally. In other words, it could be that the laws of nature, or of
+human nature, make it impossible for me to exercise one of the powers without
+the other, just as I cannot wiggle my ring finger without wiggling my middle
+finger as well. On this view, if there is a God, he could cause me to acquire
+promissory-type obligations without my promising, and he could let me engage
+in the natural act of promising while blocking the exercise of normative power
+and leaving me normatively unbound. This doesn’t seem particularly
+problematic.
+
+**Weak** : Whenever you act, you act for an end that you perceive is good.
+
+But perhaps we can say this. We have a normative power to endow some neutral
+things with value by making them our ends. And in fact the only way to act for
+an end that does not have any independent value is by exercising that
+normative power. And exercising that normative power involves your seeing the
+thing you’re endowing with value as valuable. And maybe the only way to raise
+your arm or for Bob to bake the cake in the examples is by exercising the
+normative power, and doing so involves seeing the end as good. Maybe. This has
+some phenomenological plausibility and it would be nice if it were true,
+because the strong guise of the good thesis is pretty plausible to me.
+
+**Case 1:** There is some device which does something useful when you trigger
+it. It is triggered by electrical activity. You strap it on to your arm, and
+raise your arm, so that the electrical activity in your muscles triggers the
+device. Your raising your arm has the arm going up as an end, but that end is
+not perceived as good, but merely neutral. All you care about is the
+electrical activity in your muscles.
+
+I was going to leave it at this. But then I thought of a way to save the
+strong guise of the good thesis. Success is valuable as such. When I try to do
+something, succeeding at it has value. So the arm going up or the cake being
+produced _are_ valuable as necessary parts of the success of one’s action. So
+perhaps every end of your action _is_ trivially good, because it is good for
+your action to succeed, and the end is a (constitutive, not causal) means to
+success.
+
+According to the guise of the good thesis, one always acts for the sake of an
+apparent good. There is a weaker and a stronger version of this:
+
+This isn’t quite enough for a defense of the strong thesis. For even if the
+success is good, it does not follow that you perceive the success as good. You
+might subscribe to an axiological theory on which success is not good in
+general, but only success at something good.
+
+I think there is still reason to be sceptical of the strong version.
+
+**Strong** : Whenever you act, you act for an end, and every end you act for
+you perceive as good.
+
+For the strong version to have any plausibility, “good” must include cases of
+purely instrumental goodness.
+
+**Case 2:** Back when they were dating in high school, Bob promised to try his
+best to bake a nine-layer chocolate cake for Alice’s 40th birthday. Since
+then, Bob and Alice have had a falling out, and hate each other’s guts.
+Moreover, Alice and all her guests hate chocolate. But Alice doesn’t release
+Bob from his promise. Bob tries his best to bake the cake in order to fulfill
+his promise, and happens to succeed. In trying to bake the cake, Bob acted for
+the end of producing a cake. But producing the cake was worthless, since no
+one would eat it. The only value was in the trying, since that was the
+fulfillment of his promise.
+
+In both cases, it is still true that the agent acts for a good end—the useful
+triggering of the device and the production of the cake. But in both cases it
+seems they are also acting for a worthless end. Thus the cases seem to fit
+with the weak but not the strong guise of the good thesis.
+
+Since Guinness requires video proof in addition to human witnesses, in the
+interests of redundancy, I had three cameras pointed at the attempt. The best
+footage (above) is from a Sony A7R2 with a zoom lens at 16mm, producing 1080P
+at 59.94 fps. Video was processed with Adobe Premiere Rush. The processing
+consisted of trimming the start and end, and adding a timing video track I
+generated with a [Python OpenCV2
+script](https://gist.github.com/arpruss/3a705c859d4ea4a482c4e47e96a08f79),
+synchronized with single-frame precision at the 1:00:00 point with the footage
+of Giant Stopwatch (barely visible under the table towards the end of the
+video; early in the video, glare hides it). For the unofficial version I link
+above, I accelerated the middle climbs 10X in Premiere Rush.
+
+About half-way through, I ducked into the storage area inside the rock and
+changed to a dry shirt.
+
+The route was a standard 5.7 grade for most of my training (including when I
+unofficially beat the records), with Rock management kindly agreeing to keep
+the route up for several months for me. For the final attempt, we added holds
+to make the finish at the top of the wall, and changed three other holds to
+easier ones. (Guinness has no route grade requirements.)
+
+I wore moderately worn (one small hole) and comfortable 5.10 Anasazi shoes, a
+Camp USA Energy harness, shorts and a T-shirt. (I have not received any
+sponsorship.) My belayer used a tube-style device and wore belay gloves.
+
+You should make a living out of that, Alex.  
+Would give you a lot less stress.
+
+And now for something not very philosophical. Today, in front of two witnesses
+and two timekeepers and with the help of Levi Durham doing an amazing feat of
+belaying me for an hour, I beat the [Guinness World
+Record](https://www.guinnessworldrecords.com/world-records/438677-greatest-
+vertical-distance-climbed-on-an-artificial-climbing-wall-in-1-hour-indi) in
+greatest vertical distance climbed in one hour on an indoor climbing wall. The
+previous record was 928.5m and I did 1013.7m (with about half a minute to
+spare). On Baylor's climbing wall, this involved 67 climbs divided into sets
+of 10 (the last was 7), with about a minute of rest between sets (the clock
+kept on running during the rest).
+
+I was actually really stressed yesterday. I had already beaten the record
+unofficially in practice, but with lots of people coming to watch (local
+climbers, grad students and colleagues), I didn't want to disappoint.
+Contributing to the stress was that the conditions changed from my practice
+runs (the auto-belay was down from maintenance and I had to use a manual
+belay; this involved lengthening the route slightly, increasing the length of
+each set and decreasing the total count, as well as an effective increase in
+my weight since the auto-belay subtracts a few pounds due to its spring-
+loading), and that I hadn't been able to train on the particular route for
+several weeks prior to Wednesday due to the auto-belay being down for
+maintenance while on Wednesday's approximately half-distance-at-half-time
+practice I was more tired at the end than I should have been due to poor
+pacing.
+
+Most of my practice was with an auto-belay, and at a shorter distance per
+climb (and hence greater number of climbs needed) since the auto-belay makes
+it impossible to get to the top of the wall. The auto-belay is also spring
+loaded so it effectively decreases body weight (by 7 lbs at the bottom
+according to my measurement). Then a couple of weeks ago the auto-belay was
+closed by management due to a maintenance issue, and I had a break in training
+until the Wednesday before the official attempt when I trained with a manual
+belay.
+
+I trained for about three months, not very heavily. In training did two
+unofficial full-length practice runs, and in each I beat the previous record:
+in the first one I got 947.1 meters and in the second I got 1004.5, so I was
+pretty confident I could beat the 928.5 meters on the official attempt (though
+I was still pretty nervous). I also trained by doing a small number of
+approximately 1/2 or 1/3 sized practices (maybe three or so), and more regular
+shorter runs (1-10 climbs) at fast pace.
+
+A Kindle Fire running a pre-release version of my [Giant
+Stopwatch](https://play.google.com/store/apps/details?id=omegacentauri.mobi.simplestopwatch&hl=en_US&gl=US)
+app provided unofficial timing for audience to see and for my pacing. I had to
+modify the app to have a periodic beep to meet Guinness's requirements of an
+audible stop signal.
+
+In the morning I stress-baked pumpkin muffins for myself and the volunteers. I
+had the muffins, water and loose chalk on a table for use during breaks.
+
+On the ground there was a sheet of paper with the start and end times of each
+break printed in large letters (calculated by [this
+script](https://gist.github.com/arpruss/10e364904dfcc19b043a594232e0acde)), as
+well as the mid-point time for each set of 10 to keep me better on pace.
+
+The top of the wall is 15.13 meters vertically from the ground (as measured by
+a geology grad student), at 3.5 degree slab.
+
+I climbed in sets of 10. The planned pace was 8:18 per set and a 44-45 second
+rest between sets (clock runs during rests,), averaging at 49.8 seconds per
+climb including descent. I was always ahead of pace, and I occasionally took a
+mini break at the mid-point time if I was too far ahead.
+
+I’ve been wondering whether it is possible for a country to count as pacifist
+and yet wage a defensive war. I think the answer is positive, as long as one
+has a moderate pacifism that is opposed to lethal violence but not to all
+violence. I think that a prohibition of all violence is untenable. It seems
+obvious that if you see someone about to shoot an innocent person, and you can
+give the shooter a shove to make them miss, you presumptively should.
+
+Third, we might subdivide moderate pacifists based on whether they prohibit
+all violence that foreseeably leads to death or just violence that
+intentionally leads to death. If it is only intentionally lethal violence that
+is forbidden, then quite a bit of modern warfare can stand. If the enemy is
+attacking with tanks or planes, one can intentionally destroy the tank or
+plane as a weapon, while only foreseeing, without intending, the death of the
+crew. (I don’t know how far one can take this line without sophistry. Can one
+drop a bomb on an infantry unit intending to smash up their rifles without
+intending to kill the soldiers?) Similarly, one can bomb enemy weapons
+factories.
+
+First, we have “officially” non-lethal weapons: tasers, gas, etc. Some of
+these might violate current international law, but it seems that a pacifist
+country could modify its commitment to some accords.
+
+Whether such a limited way of waging war could be successful probably depends
+on the case. If one combined the non-lethal (or not intentionally lethal)
+means with technological and numerical superiority, it wouldn’t be surprising
+to me if one could win.
+
+Second, “lethal” weapons can be used less than lethally. For instance, with
+modern medicine, abdominal gunshot wounds are only 10% fatal, yet they are no
+doubt very effective at stopping an attacker. While it may seem weird to
+imagine a pacifist shooting someone in the stomach, when the chance of
+survival is 90%, it does not seem unreasonable to say that the pacifist could
+be aiming to stop the attacker non-lethally. After all, tasers sometimes kill,
+too. They do so less than 0.25% of the time, but that’s a difference of degree
+rather than of principle.
+
+I think (4) is still morally preferable to causing the kind of disruption to
+the lives of a million people that plan (3) would involve.
+
+Now, imagine that one person is attacking you and nine other innocents, with
+the intent of killing the ten of you, and you can stop them with a taser.
+Surely you should, and surely the moderate pacifist will say that this is an
+appropriate use case for the taser.
+
+Alex  
+  
+Doesn't you post here entail that we should murder Putin?
+
+Note that a version of this argument goes through even if the moderate
+pacifist backs up and says that tasers are too lethal. For suppose instead of
+tasers we have drones that destroy the dominant hand of an enemy soldier while
+guaranteeing survival (with science fictional medical technology). It’s
+clearly right to release such a drone on a soldier who is about to kill ten
+innocents. But now compare:
+
+Very well. Now consider this on a national level. Suppose there are a million
+enemy soldiers ordered to commit genocide against ten million, and you have
+two ways to stop them:
+
+One should never murder anyone. Killing, on the other hand, can sometimes be
+justified.  
+  
+One question about killing the leader of an invading country is whether the
+leader counts as a civilian, since the killing of civilians is forbidden by
+the Geneva Convention. There is also some worry about the Geneva Convention's
+killing by "perfidy", which is taken to rule out at least some assassinations.
+So, as a matter of positive international law, it seems a difficult question.  
+  
+Were there no international law on the matter, I wouldn't see a significant
+difference between killing a political leader and killing a general, if both
+are giving orders to fight. Morally speaking, but not necessarily in
+international law, both seem to me to be equally combatants.  
+  
+Besides the moral and legal questions, there is also a prudential question. In
+my post I assumed that killing the general would stop the invasion. I got to
+assume that because I was making up the case. Whether in actual fact killing a
+leader would stop an invasion is less clear. Indeed such a thing might be seen
+as such a serious attack on the country that the retaliation might be really
+horrific.
+
+Imagine a moderate pacifist who rejects lethal self-defense, but allows non-
+lethal self-defense when appropriate, say by use of tasers.
+
+These may seem to be consequentialist arguments. I don't think so. I don't
+have the same intuitions if we replace the general by the general's innocent
+child in (2) and (4), even if killing the child were to stop the war (e.g., by
+making the general afraid that their other children would be murdered).
+
+So maybe our choice is between tasing a million, thereby non-intentionally
+killing 250 soldiers, and intentionally killing one general. It seems to me
+that (2) is morally preferable, even though our moderate pacifist has to allow
+(1) and forbid (2).
+
+If you can tase one person to stop the murder of ten, then (1) should be
+permissible if it’s the only option. But tasers occasionally kill people. We
+don’t know how often. Apparently it’s [less than 1 in
+400](https://www.usatoday.com/in-depth/news/investigations/2021/04/23/police-
+use-tasers-ends-hundreds-deaths-like-daunte-wright/7221153002/) uses. Suppose
+it’s 1 in 4000. Then option (1) results in 250 enemy deaths.
+
+Alex  
+  
+Of course one should never murder anyone, but the question is: would killing
+Putin be murder?
+
+But why not allow for a causal model? Why not suppose that a normative power
+is a causal power to make an irreducible normative property come to be
+instantiated in someone? Thus, my power to promise is the power to cause
+myself to be obligated to do what I have promised.
+
+Perhaps the real problem for a lot of people with a causal view of normative
+powers is that it tends to lead to a violation of supervenience. For if it is
+metaphysically possble to have the exercise of the normative power without the
+exercise of the natural power, or vice versa, then it seems we don’t have
+supervenience of the normative on the non-normative. But supervenience does
+not seem to me to be inescapable.
+
+Maybe the answer to both questions is that I could, but only metaphysically
+and not causally. In other words, it could be that the laws of nature, or of
+human nature, make it impossible for me to exercise one of the powers without
+the other, just as I cannot wiggle my ring finger without wiggling my middle
+finger as well. On this view, if there is a God, he could cause me to acquire
+promissory-type obligations without my promising, and he could let me engage
+in the natural act of promising while blocking the exercise of normative power
+and leaving me normatively unbound. This doesn’t seem particularly
+problematic.
+
+A normative power is a power to change a normative condition.
+[Raz](https://core.ac.uk/download/pdf/230182259.pdf) says the change is not
+produced “causally” but “normatively”.
+
+I think the difficulty with a causal model is the fact that in paradigm cases
+of normative power, there is a natural power that _is_ being exercised, and we
+have the intuition that the exercise of the natural power is necessary and
+sufficient for the normative effect. But on a causal model, why couldn’t I
+cause a promissory-type obligation without promising, simply causing the
+relevant property of being obligated to come to be instantiated in me? And why
+couldn’t I engage in the speech act while yet remaining normatively unbound,
+because my normative power wasn’t exercised in parallel with the natural
+power?
+
+Here is a picture on which this is correct. We exercise a normative power by
+exercising a natural power in such a context that the successful exercise of
+the natural power is partly constitutive of a normative fact. For instance, we
+utter a promise, thereby exercising a natural power to engage in a certain
+kind of speech act, and our exercise of that speech act is partly constitutive
+of, rather than causal of, the state of affairs of our being obligated to
+carry out the promised action.
+
+There are two versions of the above model. On one version, there is an
+underlying fundamental conditional normative fact _C_ , such as that if I have
+promised something then I should do it, and my exercise of normative power
+supplies the antecedent _A_ of that conditional, and then the normative
+consequent of _C_ comes to be grounded in _C_ and _A_. On another version,
+there there are some natural acts that are directly constitutive of a
+normative state of affairs, not merely by supplying the antecedent of a
+conditional normative fact. I think the first version of the model is the more
+plausible in paradigmatic cases.
+
+In both cases, it is still true that the agent acts for a good end—the useful
+triggering of the device and the production of the cake. But in both cases it
+seems they are also acting for a worthless end. Thus the cases seem to fit
+with the weak but not the strong guise of the good thesis.
+
+But perhaps we can say this. We have a normative power to endow some neutral
+things with value by making them our ends. And in fact the only way to act for
+an end that does not have any independent value is by exercising that
+normative power. And exercising that normative power involves your seeing the
+thing you’re endowing with value as valuable. And maybe the only way to raise
+your arm or for Bob to bake the cake in the examples is by exercising the
+normative power, and doing so involves seeing the end as good. Maybe. This has
+some phenomenological plausibility and it would be nice if it were true,
+because the strong guise of the good thesis is pretty plausible to me.
+
+**Case 1:** There is some device which does something useful when you trigger
+it. It is triggered by electrical activity. You strap it on to your arm, and
+raise your arm, so that the electrical activity in your muscles triggers the
+device. Your raising your arm has the arm going up as an end, but that end is
+not perceived as good, but merely neutral. All you care about is the
+electrical activity in your muscles.
+
+This isn’t quite enough for a defense of the strong thesis. For even if the
+success is good, it does not follow that you perceive the success as good. You
+might subscribe to an axiological theory on which success is not good in
+general, but only success at something good.
+
+**Strong** : Whenever you act, you act for an end, and every end you act for
+you perceive as good.
+
+For the strong version to have any plausibility, “good” must include cases of
+purely instrumental goodness.
+
+**Weak** : Whenever you act, you act for an end that you perceive is good.
+
+I think there is still reason to be sceptical of the strong version.
+
+According to the guise of the good thesis, one always acts for the sake of an
+apparent good. There is a weaker and a stronger version of this:
+
+I was going to leave it at this. But then I thought of a way to save the
+strong guise of the good thesis. Success is valuable as such. When I try to do
+something, succeeding at it has value. So the arm going up or the cake being
+produced _are_ valuable as necessary parts of the success of one’s action. So
+perhaps every end of your action _is_ trivially good, because it is good for
+your action to succeed, and the end is a (constitutive, not causal) means to
+success.
+
+**Case 2:** Back when they were dating in high school, Bob promised to try his
+best to bake a nine-layer chocolate cake for Alice’s 40th birthday. Since
+then, Bob and Alice have had a falling out, and hate each other’s guts.
+Moreover, Alice and all her guests hate chocolate. But Alice doesn’t release
+Bob from his promise. Bob tries his best to bake the cake in order to fulfill
+his promise, and happens to succeed. In trying to bake the cake, Bob acted for
+the end of producing a cake. But producing the cake was worthless, since no
+one would eat it. The only value was in the trying, since that was the
+fulfillment of his promise.
+
+I wore moderately worn (one small hole) and comfortable 5.10 Anasazi shoes, a
+Camp USA Energy harness, shorts and a T-shirt. (I have not received any
+sponsorship.) My belayer used a tube-style device and wore belay gloves.
+
+Most of my practice was with an auto-belay, and at a shorter distance per
+climb (and hence greater number of climbs needed) since the auto-belay makes
+it impossible to get to the top of the wall. The auto-belay is also spring
+loaded so it effectively decreases body weight (by 7 lbs at the bottom
+according to my measurement). Then a couple of weeks ago the auto-belay was
+closed by management due to a maintenance issue, and I had a break in training
+until the Wednesday before the official attempt when I trained with a manual
+belay.
+
+I climbed in sets of 10. The planned pace was 8:18 per set and a 44-45 second
+rest between sets (clock runs during rests,), averaging at 49.8 seconds per
+climb including descent. I was always ahead of pace, and I occasionally took a
+mini break at the mid-point time if I was too far ahead.
+
+In the morning I stress-baked pumpkin muffins for myself and the volunteers. I
+had the muffins, water and loose chalk on a table for use during breaks.
+
+The top of the wall is 15.13 meters vertically from the ground (as measured by
+a geology grad student), at 3.5 degree slab.
+
+About half-way through, I ducked into the storage area inside the rock and
+changed to a dry shirt.
+
+On the ground there was a sheet of paper with the start and end times of each
+break printed in large letters (calculated by [this
+script](https://gist.github.com/arpruss/10e364904dfcc19b043a594232e0acde)), as
+well as the mid-point time for each set of 10 to keep me better on pace.
+
+I trained for about three months, not very heavily. In training did two
+unofficial full-length practice runs, and in each I beat the previous record:
+in the first one I got 947.1 meters and in the second I got 1004.5, so I was
+pretty confident I could beat the 928.5 meters on the official attempt (though
+I was still pretty nervous). I also trained by doing a small number of
+approximately 1/2 or 1/3 sized practices (maybe three or so), and more regular
+shorter runs (1-10 climbs) at fast pace.
+
+And now for something not very philosophical. Today, in front of two witnesses
+and two timekeepers and with the help of Levi Durham doing an amazing feat of
+belaying me for an hour, I beat the [Guinness World
+Record](https://www.guinnessworldrecords.com/world-records/438677-greatest-
+vertical-distance-climbed-on-an-artificial-climbing-wall-in-1-hour-indi) in
+greatest vertical distance climbed in one hour on an indoor climbing wall. The
+previous record was 928.5m and I did 1013.7m (with about half a minute to
+spare). On Baylor's climbing wall, this involved 67 climbs divided into sets
+of 10 (the last was 7), with about a minute of rest between sets (the clock
+kept on running during the rest).
+
+A Kindle Fire running a pre-release version of my [Giant
+Stopwatch](https://play.google.com/store/apps/details?id=omegacentauri.mobi.simplestopwatch&hl=en_US&gl=US)
+app provided unofficial timing for audience to see and for my pacing. I had to
+modify the app to have a periodic beep to meet Guinness's requirements of an
+audible stop signal.
+
+I was actually really stressed yesterday. I had already beaten the record
+unofficially in practice, but with lots of people coming to watch (local
+climbers, grad students and colleagues), I didn't want to disappoint.
+Contributing to the stress was that the conditions changed from my practice
+runs (the auto-belay was down from maintenance and I had to use a manual
+belay; this involved lengthening the route slightly, increasing the length of
+each set and decreasing the total count, as well as an effective increase in
+my weight since the auto-belay subtracts a few pounds due to its spring-
+loading), and that I hadn't been able to train on the particular route for
+several weeks prior to Wednesday due to the auto-belay being down for
+maintenance while on Wednesday's approximately half-distance-at-half-time
+practice I was more tired at the end than I should have been due to poor
+pacing.
+
+Since Guinness requires video proof in addition to human witnesses, in the
+interests of redundancy, I had three cameras pointed at the attempt. The best
+footage (above) is from a Sony A7R2 with a zoom lens at 16mm, producing 1080P
+at 59.94 fps. Video was processed with Adobe Premiere Rush. The processing
+consisted of trimming the start and end, and adding a timing video track I
+generated with a [Python OpenCV2
+script](https://gist.github.com/arpruss/3a705c859d4ea4a482c4e47e96a08f79),
+synchronized with single-frame precision at the 1:00:00 point with the footage
+of Giant Stopwatch (barely visible under the table towards the end of the
+video; early in the video, glare hides it). For the unofficial version I link
+above, I accelerated the middle climbs 10X in Premiere Rush.
+
+The route was a standard 5.7 grade for most of my training (including when I
+unofficially beat the records), with Rock management kindly agreeing to keep
+the route up for several months for me. For the final attempt, we added holds
+to make the finish at the top of the wall, and changed three other holds to
+easier ones. (Guinness has no route grade requirements.)
+
+You should make a living out of that, Alex.  
+Would give you a lot less stress.
+
+Whether such a limited way of waging war could be successful probably depends
+on the case. If one combined the non-lethal (or not intentionally lethal)
+means with technological and numerical superiority, it wouldn’t be surprising
+to me if one could win.
+
+Third, we might subdivide moderate pacifists based on whether they prohibit
+all violence that foreseeably leads to death or just violence that
+intentionally leads to death. If it is only intentionally lethal violence that
+is forbidden, then quite a bit of modern warfare can stand. If the enemy is
+attacking with tanks or planes, one can intentionally destroy the tank or
+plane as a weapon, while only foreseeing, without intending, the death of the
+crew. (I don’t know how far one can take this line without sophistry. Can one
+drop a bomb on an infantry unit intending to smash up their rifles without
+intending to kill the soldiers?) Similarly, one can bomb enemy weapons
+factories.
+
+I’ve been wondering whether it is possible for a country to count as pacifist
+and yet wage a defensive war. I think the answer is positive, as long as one
+has a moderate pacifism that is opposed to lethal violence but not to all
+violence. I think that a prohibition of all violence is untenable. It seems
+obvious that if you see someone about to shoot an innocent person, and you can
+give the shooter a shove to make them miss, you presumptively should.
+
+Second, “lethal” weapons can be used less than lethally. For instance, with
+modern medicine, abdominal gunshot wounds are only 10% fatal, yet they are no
+doubt very effective at stopping an attacker. While it may seem weird to
+imagine a pacifist shooting someone in the stomach, when the chance of
+survival is 90%, it does not seem unreasonable to say that the pacifist could
+be aiming to stop the attacker non-lethally. After all, tasers sometimes kill,
+too. They do so less than 0.25% of the time, but that’s a difference of degree
+rather than of principle.
+
+First, we have “officially” non-lethal weapons: tasers, gas, etc. Some of
+these might violate current international law, but it seems that a pacifist
+country could modify its commitment to some accords.
+
+These may seem to be consequentialist arguments. I don't think so. I don't
+have the same intuitions if we replace the general by the general's innocent
+child in (2) and (4), even if killing the child were to stop the war (e.g., by
+making the general afraid that their other children would be murdered).
+
+If you can tase one person to stop the murder of ten, then (1) should be
+permissible if it’s the only option. But tasers occasionally kill people. We
+don’t know how often. Apparently it’s [less than 1 in
+400](https://www.usatoday.com/in-depth/news/investigations/2021/04/23/police-
+use-tasers-ends-hundreds-deaths-like-daunte-wright/7221153002/) uses. Suppose
+it’s 1 in 4000. Then option (1) results in 250 enemy deaths.
+
+Alex  
+  
+Doesn't you post here entail that we should murder Putin?
+
+Now, imagine that one person is attacking you and nine other innocents, with
+the intent of killing the ten of you, and you can stop them with a taser.
+Surely you should, and surely the moderate pacifist will say that this is an
+appropriate use case for the taser.
+
+Alex  
+  
+Of course one should never murder anyone, but the question is: would killing
+Putin be murder?
+
+I think (4) is still morally preferable to causing the kind of disruption to
+the lives of a million people that plan (3) would involve.
+
+So maybe our choice is between tasing a million, thereby non-intentionally
+killing 250 soldiers, and intentionally killing one general. It seems to me
+that (2) is morally preferable, even though our moderate pacifist has to allow
+(1) and forbid (2).
+
+Very well. Now consider this on a national level. Suppose there are a million
+enemy soldiers ordered to commit genocide against ten million, and you have
+two ways to stop them:
+
+One should never murder anyone. Killing, on the other hand, can sometimes be
+justified.  
+  
+One question about killing the leader of an invading country is whether the
+leader counts as a civilian, since the killing of civilians is forbidden by
+the Geneva Convention. There is also some worry about the Geneva Convention's
+killing by "perfidy", which is taken to rule out at least some assassinations.
+So, as a matter of positive international law, it seems a difficult question.  
+  
+Were there no international law on the matter, I wouldn't see a significant
+difference between killing a political leader and killing a general, if both
+are giving orders to fight. Morally speaking, but not necessarily in
+international law, both seem to me to be equally combatants.  
+  
+Besides the moral and legal questions, there is also a prudential question. In
+my post I assumed that killing the general would stop the invasion. I got to
+assume that because I was making up the case. Whether in actual fact killing a
+leader would stop an invasion is less clear. Indeed such a thing might be seen
+as such a serious attack on the country that the retaliation might be really
+horrific.
+
+Imagine a moderate pacifist who rejects lethal self-defense, but allows non-
+lethal self-defense when appropriate, say by use of tasers.
+
+Note that a version of this argument goes through even if the moderate
+pacifist backs up and says that tasers are too lethal. For suppose instead of
+tasers we have drones that destroy the dominant hand of an enemy soldier while
+guaranteeing survival (with science fictional medical technology). It’s
+clearly right to release such a drone on a soldier who is about to kill ten
+innocents. But now compare:
+
+A normative power is a power to change a normative condition.
+[Raz](https://core.ac.uk/download/pdf/230182259.pdf) says the change is not
+produced “causally” but “normatively”.
+
+Perhaps the real problem for a lot of people with a causal view of normative
+powers is that it tends to lead to a violation of supervenience. For if it is
+metaphysically possble to have the exercise of the normative power without the
+exercise of the natural power, or vice versa, then it seems we don’t have
+supervenience of the normative on the non-normative. But supervenience does
+not seem to me to be inescapable.
+
+I think the difficulty with a causal model is the fact that in paradigm cases
+of normative power, there is a natural power that _is_ being exercised, and we
+have the intuition that the exercise of the natural power is necessary and
+sufficient for the normative effect. But on a causal model, why couldn’t I
+cause a promissory-type obligation without promising, simply causing the
+relevant property of being obligated to come to be instantiated in me? And why
+couldn’t I engage in the speech act while yet remaining normatively unbound,
+because my normative power wasn’t exercised in parallel with the natural
+power?
+
+Maybe the answer to both questions is that I could, but only metaphysically
+and not causally. In other words, it could be that the laws of nature, or of
+human nature, make it impossible for me to exercise one of the powers without
+the other, just as I cannot wiggle my ring finger without wiggling my middle
+finger as well. On this view, if there is a God, he could cause me to acquire
+promissory-type obligations without my promising, and he could let me engage
+in the natural act of promising while blocking the exercise of normative power
+and leaving me normatively unbound. This doesn’t seem particularly
+problematic.
+
+There are two versions of the above model. On one version, there is an
+underlying fundamental conditional normative fact _C_ , such as that if I have
+promised something then I should do it, and my exercise of normative power
+supplies the antecedent _A_ of that conditional, and then the normative
+consequent of _C_ comes to be grounded in _C_ and _A_. On another version,
+there there are some natural acts that are directly constitutive of a
+normative state of affairs, not merely by supplying the antecedent of a
+conditional normative fact. I think the first version of the model is the more
+plausible in paradigmatic cases.
+
+But why not allow for a causal model? Why not suppose that a normative power
+is a causal power to make an irreducible normative property come to be
+instantiated in someone? Thus, my power to promise is the power to cause
+myself to be obligated to do what I have promised.
+
+Here is a picture on which this is correct. We exercise a normative power by
+exercising a natural power in such a context that the successful exercise of
+the natural power is partly constitutive of a normative fact. For instance, we
+utter a promise, thereby exercising a natural power to engage in a certain
+kind of speech act, and our exercise of that speech act is partly constitutive
+of, rather than causal of, the state of affairs of our being obligated to
+carry out the promised action.
+
+I was going to leave it at this. But then I thought of a way to save the
+strong guise of the good thesis. Success is valuable as such. When I try to do
+something, succeeding at it has value. So the arm going up or the cake being
+produced _are_ valuable as necessary parts of the success of one’s action. So
+perhaps every end of your action _is_ trivially good, because it is good for
+your action to succeed, and the end is a (constitutive, not causal) means to
+success.
+
+**Strong** : Whenever you act, you act for an end, and every end you act for
+you perceive as good.
+
+**Case 2:** Back when they were dating in high school, Bob promised to try his
+best to bake a nine-layer chocolate cake for Alice’s 40th birthday. Since
+then, Bob and Alice have had a falling out, and hate each other’s guts.
+Moreover, Alice and all her guests hate chocolate. But Alice doesn’t release
+Bob from his promise. Bob tries his best to bake the cake in order to fulfill
+his promise, and happens to succeed. In trying to bake the cake, Bob acted for
+the end of producing a cake. But producing the cake was worthless, since no
+one would eat it. The only value was in the trying, since that was the
+fulfillment of his promise.
+
+According to the guise of the good thesis, one always acts for the sake of an
+apparent good. There is a weaker and a stronger version of this:
+
+But perhaps we can say this. We have a normative power to endow some neutral
+things with value by making them our ends. And in fact the only way to act for
+an end that does not have any independent value is by exercising that
+normative power. And exercising that normative power involves your seeing the
+thing you’re endowing with value as valuable. And maybe the only way to raise
+your arm or for Bob to bake the cake in the examples is by exercising the
+normative power, and doing so involves seeing the end as good. Maybe. This has
+some phenomenological plausibility and it would be nice if it were true,
+because the strong guise of the good thesis is pretty plausible to me.
+
+I think there is still reason to be sceptical of the strong version.
+
+This isn’t quite enough for a defense of the strong thesis. For even if the
+success is good, it does not follow that you perceive the success as good. You
+might subscribe to an axiological theory on which success is not good in
+general, but only success at something good.
+
+**Case 1:** There is some device which does something useful when you trigger
+it. It is triggered by electrical activity. You strap it on to your arm, and
+raise your arm, so that the electrical activity in your muscles triggers the
+device. Your raising your arm has the arm going up as an end, but that end is
+not perceived as good, but merely neutral. All you care about is the
+electrical activity in your muscles.
+
+In both cases, it is still true that the agent acts for a good end—the useful
+triggering of the device and the production of the cake. But in both cases it
+seems they are also acting for a worthless end. Thus the cases seem to fit
+with the weak but not the strong guise of the good thesis.
+
+**Weak** : Whenever you act, you act for an end that you perceive is good.
+
+For the strong version to have any plausibility, “good” must include cases of
+purely instrumental goodness.
+
+And now for something not very philosophical. Today, in front of two witnesses
+and two timekeepers and with the help of Levi Durham doing an amazing feat of
+belaying me for an hour, I beat the [Guinness World
+Record](https://www.guinnessworldrecords.com/world-records/438677-greatest-
+vertical-distance-climbed-on-an-artificial-climbing-wall-in-1-hour-indi) in
+greatest vertical distance climbed in one hour on an indoor climbing wall. The
+previous record was 928.5m and I did 1013.7m (with about half a minute to
+spare). On Baylor's climbing wall, this involved 67 climbs divided into sets
+of 10 (the last was 7), with about a minute of rest between sets (the clock
+kept on running during the rest).
+
+I was actually really stressed yesterday. I had already beaten the record
+unofficially in practice, but with lots of people coming to watch (local
+climbers, grad students and colleagues), I didn't want to disappoint.
+Contributing to the stress was that the conditions changed from my practice
+runs (the auto-belay was down from maintenance and I had to use a manual
+belay; this involved lengthening the route slightly, increasing the length of
+each set and decreasing the total count, as well as an effective increase in
+my weight since the auto-belay subtracts a few pounds due to its spring-
+loading), and that I hadn't been able to train on the particular route for
+several weeks prior to Wednesday due to the auto-belay being down for
+maintenance while on Wednesday's approximately half-distance-at-half-time
+practice I was more tired at the end than I should have been due to poor
+pacing.
+
+About half-way through, I ducked into the storage area inside the rock and
+changed to a dry shirt.
+
+The top of the wall is 15.13 meters vertically from the ground (as measured by
+a geology grad student), at 3.5 degree slab.
+
+Since Guinness requires video proof in addition to human witnesses, in the
+interests of redundancy, I had three cameras pointed at the attempt. The best
+footage (above) is from a Sony A7R2 with a zoom lens at 16mm, producing 1080P
+at 59.94 fps. Video was processed with Adobe Premiere Rush. The processing
+consisted of trimming the start and end, and adding a timing video track I
+generated with a [Python OpenCV2
+script](https://gist.github.com/arpruss/3a705c859d4ea4a482c4e47e96a08f79),
+synchronized with single-frame precision at the 1:00:00 point with the footage
+of Giant Stopwatch (barely visible under the table towards the end of the
+video; early in the video, glare hides it). For the unofficial version I link
+above, I accelerated the middle climbs 10X in Premiere Rush.
+
+On the ground there was a sheet of paper with the start and end times of each
+break printed in large letters (calculated by [this
+script](https://gist.github.com/arpruss/10e364904dfcc19b043a594232e0acde)), as
+well as the mid-point time for each set of 10 to keep me better on pace.
+
+Most of my practice was with an auto-belay, and at a shorter distance per
+climb (and hence greater number of climbs needed) since the auto-belay makes
+it impossible to get to the top of the wall. The auto-belay is also spring
+loaded so it effectively decreases body weight (by 7 lbs at the bottom
+according to my measurement). Then a couple of weeks ago the auto-belay was
+closed by management due to a maintenance issue, and I had a break in training
+until the Wednesday before the official attempt when I trained with a manual
+belay.
+
+I climbed in sets of 10. The planned pace was 8:18 per set and a 44-45 second
+rest between sets (clock runs during rests,), averaging at 49.8 seconds per
+climb including descent. I was always ahead of pace, and I occasionally took a
+mini break at the mid-point time if I was too far ahead.
+
+A Kindle Fire running a pre-release version of my [Giant
+Stopwatch](https://play.google.com/store/apps/details?id=omegacentauri.mobi.simplestopwatch&hl=en_US&gl=US)
+app provided unofficial timing for audience to see and for my pacing. I had to
+modify the app to have a periodic beep to meet Guinness's requirements of an
+audible stop signal.
+
+The route was a standard 5.7 grade for most of my training (including when I
+unofficially beat the records), with Rock management kindly agreeing to keep
+the route up for several months for me. For the final attempt, we added holds
+to make the finish at the top of the wall, and changed three other holds to
+easier ones. (Guinness has no route grade requirements.)
+
+I wore moderately worn (one small hole) and comfortable 5.10 Anasazi shoes, a
+Camp USA Energy harness, shorts and a T-shirt. (I have not received any
+sponsorship.) My belayer used a tube-style device and wore belay gloves.
+
+In the morning I stress-baked pumpkin muffins for myself and the volunteers. I
+had the muffins, water and loose chalk on a table for use during breaks.
+
+I trained for about three months, not very heavily. In training did two
+unofficial full-length practice runs, and in each I beat the previous record:
+in the first one I got 947.1 meters and in the second I got 1004.5, so I was
+pretty confident I could beat the 928.5 meters on the official attempt (though
+I was still pretty nervous). I also trained by doing a small number of
+approximately 1/2 or 1/3 sized practices (maybe three or so), and more regular
+shorter runs (1-10 climbs) at fast pace.
+
+You should make a living out of that, Alex.  
+Would give you a lot less stress.
+
+Whether such a limited way of waging war could be successful probably depends
+on the case. If one combined the non-lethal (or not intentionally lethal)
+means with technological and numerical superiority, it wouldn’t be surprising
+to me if one could win.
+
+I’ve been wondering whether it is possible for a country to count as pacifist
+and yet wage a defensive war. I think the answer is positive, as long as one
+has a moderate pacifism that is opposed to lethal violence but not to all
+violence. I think that a prohibition of all violence is untenable. It seems
+obvious that if you see someone about to shoot an innocent person, and you can
+give the shooter a shove to make them miss, you presumptively should.
+
+Third, we might subdivide moderate pacifists based on whether they prohibit
+all violence that foreseeably leads to death or just violence that
+intentionally leads to death. If it is only intentionally lethal violence that
+is forbidden, then quite a bit of modern warfare can stand. If the enemy is
+attacking with tanks or planes, one can intentionally destroy the tank or
+plane as a weapon, while only foreseeing, without intending, the death of the
+crew. (I don’t know how far one can take this line without sophistry. Can one
+drop a bomb on an infantry unit intending to smash up their rifles without
+intending to kill the soldiers?) Similarly, one can bomb enemy weapons
+factories.
+
+Second, “lethal” weapons can be used less than lethally. For instance, with
+modern medicine, abdominal gunshot wounds are only 10% fatal, yet they are no
+doubt very effective at stopping an attacker. While it may seem weird to
+imagine a pacifist shooting someone in the stomach, when the chance of
+survival is 90%, it does not seem unreasonable to say that the pacifist could
+be aiming to stop the attacker non-lethally. After all, tasers sometimes kill,
+too. They do so less than 0.25% of the time, but that’s a difference of degree
+rather than of principle.
+
+First, we have “officially” non-lethal weapons: tasers, gas, etc. Some of
+these might violate current international law, but it seems that a pacifist
+country could modify its commitment to some accords.
+
+These may seem to be consequentialist arguments. I don't think so. I don't
+have the same intuitions if we replace the general by the general's innocent
+child in (2) and (4), even if killing the child were to stop the war (e.g., by
+making the general afraid that their other children would be murdered).
+
+So maybe our choice is between tasing a million, thereby non-intentionally
+killing 250 soldiers, and intentionally killing one general. It seems to me
+that (2) is morally preferable, even though our moderate pacifist has to allow
+(1) and forbid (2).
+
+If you can tase one person to stop the murder of ten, then (1) should be
+permissible if it’s the only option. But tasers occasionally kill people. We
+don’t know how often. Apparently it’s [less than 1 in
+400](https://www.usatoday.com/in-depth/news/investigations/2021/04/23/police-
+use-tasers-ends-hundreds-deaths-like-daunte-wright/7221153002/) uses. Suppose
+it’s 1 in 4000. Then option (1) results in 250 enemy deaths.
+
+I think (4) is still morally preferable to causing the kind of disruption to
+the lives of a million people that plan (3) would involve.
+
+Alex  
+  
+Doesn't you post here entail that we should murder Putin?
+
+Very well. Now consider this on a national level. Suppose there are a million
+enemy soldiers ordered to commit genocide against ten million, and you have
+two ways to stop them:
+
+One should never murder anyone. Killing, on the other hand, can sometimes be
+justified.  
+  
+One question about killing the leader of an invading country is whether the
+leader counts as a civilian, since the killing of civilians is forbidden by
+the Geneva Convention. There is also some worry about the Geneva Convention's
+killing by "perfidy", which is taken to rule out at least some assassinations.
+So, as a matter of positive international law, it seems a difficult question.  
+  
+Were there no international law on the matter, I wouldn't see a significant
+difference between killing a political leader and killing a general, if both
+are giving orders to fight. Morally speaking, but not necessarily in
+international law, both seem to me to be equally combatants.  
+  
+Besides the moral and legal questions, there is also a prudential question. In
+my post I assumed that killing the general would stop the invasion. I got to
+assume that because I was making up the case. Whether in actual fact killing a
+leader would stop an invasion is less clear. Indeed such a thing might be seen
+as such a serious attack on the country that the retaliation might be really
+horrific.
+
+Alex  
+  
+Of course one should never murder anyone, but the question is: would killing
+Putin be murder?
+
+Now, imagine that one person is attacking you and nine other innocents, with
+the intent of killing the ten of you, and you can stop them with a taser.
+Surely you should, and surely the moderate pacifist will say that this is an
+appropriate use case for the taser.
+
+Imagine a moderate pacifist who rejects lethal self-defense, but allows non-
+lethal self-defense when appropriate, say by use of tasers.
+
+Note that a version of this argument goes through even if the moderate
+pacifist backs up and says that tasers are too lethal. For suppose instead of
+tasers we have drones that destroy the dominant hand of an enemy soldier while
+guaranteeing survival (with science fictional medical technology). It’s
+clearly right to release such a drone on a soldier who is about to kill ten
+innocents. But now compare:
+
+Here is a picture on which this is correct. We exercise a normative power by
+exercising a natural power in such a context that the successful exercise of
+the natural power is partly constitutive of a normative fact. For instance, we
+utter a promise, thereby exercising a natural power to engage in a certain
+kind of speech act, and our exercise of that speech act is partly constitutive
+of, rather than causal of, the state of affairs of our being obligated to
+carry out the promised action.
+
+There are two versions of the above model. On one version, there is an
+underlying fundamental conditional normative fact _C_ , such as that if I have
+promised something then I should do it, and my exercise of normative power
+supplies the antecedent _A_ of that conditional, and then the normative
+consequent of _C_ comes to be grounded in _C_ and _A_. On another version,
+there there are some natural acts that are directly constitutive of a
+normative state of affairs, not merely by supplying the antecedent of a
+conditional normative fact. I think the first version of the model is the more
+plausible in paradigmatic cases.
+
+A normative power is a power to change a normative condition.
+[Raz](https://core.ac.uk/download/pdf/230182259.pdf) says the change is not
+produced “causally” but “normatively”.
+
+I think the difficulty with a causal model is the fact that in paradigm cases
+of normative power, there is a natural power that _is_ being exercised, and we
+have the intuition that the exercise of the natural power is necessary and
+sufficient for the normative effect. But on a causal model, why couldn’t I
+cause a promissory-type obligation without promising, simply causing the
+relevant property of being obligated to come to be instantiated in me? And why
+couldn’t I engage in the speech act while yet remaining normatively unbound,
+because my normative power wasn’t exercised in parallel with the natural
+power?
+
+Perhaps the real problem for a lot of people with a causal view of normative
+powers is that it tends to lead to a violation of supervenience. For if it is
+metaphysically possble to have the exercise of the normative power without the
+exercise of the natural power, or vice versa, then it seems we don’t have
+supervenience of the normative on the non-normative. But supervenience does
+not seem to me to be inescapable.
+
+But why not allow for a causal model? Why not suppose that a normative power
+is a causal power to make an irreducible normative property come to be
+instantiated in someone? Thus, my power to promise is the power to cause
+myself to be obligated to do what I have promised.
+
+Maybe the answer to both questions is that I could, but only metaphysically
+and not causally. In other words, it could be that the laws of nature, or of
+human nature, make it impossible for me to exercise one of the powers without
+the other, just as I cannot wiggle my ring finger without wiggling my middle
+finger as well. On this view, if there is a God, he could cause me to acquire
+promissory-type obligations without my promising, and he could let me engage
+in the natural act of promising while blocking the exercise of normative power
+and leaving me normatively unbound. This doesn’t seem particularly
+problematic.
+
+I think there is still reason to be sceptical of the strong version.
+
+For the strong version to have any plausibility, “good” must include cases of
+purely instrumental goodness.
+
+This isn’t quite enough for a defense of the strong thesis. For even if the
+success is good, it does not follow that you perceive the success as good. You
+might subscribe to an axiological theory on which success is not good in
+general, but only success at something good.
+
+**Weak** : Whenever you act, you act for an end that you perceive is good.
+
+I was going to leave it at this. But then I thought of a way to save the
+strong guise of the good thesis. Success is valuable as such. When I try to do
+something, succeeding at it has value. So the arm going up or the cake being
+produced _are_ valuable as necessary parts of the success of one’s action. So
+perhaps every end of your action _is_ trivially good, because it is good for
+your action to succeed, and the end is a (constitutive, not causal) means to
+success.
+
+But perhaps we can say this. We have a normative power to endow some neutral
+things with value by making them our ends. And in fact the only way to act for
+an end that does not have any independent value is by exercising that
+normative power. And exercising that normative power involves your seeing the
+thing you’re endowing with value as valuable. And maybe the only way to raise
+your arm or for Bob to bake the cake in the examples is by exercising the
+normative power, and doing so involves seeing the end as good. Maybe. This has
+some phenomenological plausibility and it would be nice if it were true,
+because the strong guise of the good thesis is pretty plausible to me.
+
+**Case 1:** There is some device which does something useful when you trigger
+it. It is triggered by electrical activity. You strap it on to your arm, and
+raise your arm, so that the electrical activity in your muscles triggers the
+device. Your raising your arm has the arm going up as an end, but that end is
+not perceived as good, but merely neutral. All you care about is the
+electrical activity in your muscles.
+
+According to the guise of the good thesis, one always acts for the sake of an
+apparent good. There is a weaker and a stronger version of this:
+
+**Case 2:** Back when they were dating in high school, Bob promised to try his
+best to bake a nine-layer chocolate cake for Alice’s 40th birthday. Since
+then, Bob and Alice have had a falling out, and hate each other’s guts.
+Moreover, Alice and all her guests hate chocolate. But Alice doesn’t release
+Bob from his promise. Bob tries his best to bake the cake in order to fulfill
+his promise, and happens to succeed. In trying to bake the cake, Bob acted for
+the end of producing a cake. But producing the cake was worthless, since no
+one would eat it. The only value was in the trying, since that was the
+fulfillment of his promise.
+
+**Strong** : Whenever you act, you act for an end, and every end you act for
+you perceive as good.
+
+In both cases, it is still true that the agent acts for a good end—the useful
+triggering of the device and the production of the cake. But in both cases it
+seems they are also acting for a worthless end. Thus the cases seem to fit
+with the weak but not the strong guise of the good thesis.
+
+I trained for about three months, not very heavily. In training did two
+unofficial full-length practice runs, and in each I beat the previous record:
+in the first one I got 947.1 meters and in the second I got 1004.5, so I was
+pretty confident I could beat the 928.5 meters on the official attempt (though
+I was still pretty nervous). I also trained by doing a small number of
+approximately 1/2 or 1/3 sized practices (maybe three or so), and more regular
+shorter runs (1-10 climbs) at fast pace.
+
+I wore moderately worn (one small hole) and comfortable 5.10 Anasazi shoes, a
+Camp USA Energy harness, shorts and a T-shirt. (I have not received any
+sponsorship.) My belayer used a tube-style device and wore belay gloves.
+
+The route was a standard 5.7 grade for most of my training (including when I
+unofficially beat the records), with Rock management kindly agreeing to keep
+the route up for several months for me. For the final attempt, we added holds
+to make the finish at the top of the wall, and changed three other holds to
+easier ones. (Guinness has no route grade requirements.)
+
+You should make a living out of that, Alex.  
+Would give you a lot less stress.
+
+Most of my practice was with an auto-belay, and at a shorter distance per
+climb (and hence greater number of climbs needed) since the auto-belay makes
+it impossible to get to the top of the wall. The auto-belay is also spring
+loaded so it effectively decreases body weight (by 7 lbs at the bottom
+according to my measurement). Then a couple of weeks ago the auto-belay was
+closed by management due to a maintenance issue, and I had a break in training
+until the Wednesday before the official attempt when I trained with a manual
+belay.
+
+And now for something not very philosophical. Today, in front of two witnesses
+and two timekeepers and with the help of Levi Durham doing an amazing feat of
+belaying me for an hour, I beat the [Guinness World
+Record](https://www.guinnessworldrecords.com/world-records/438677-greatest-
+vertical-distance-climbed-on-an-artificial-climbing-wall-in-1-hour-indi) in
+greatest vertical distance climbed in one hour on an indoor climbing wall. The
+previous record was 928.5m and I did 1013.7m (with about half a minute to
+spare). On Baylor's climbing wall, this involved 67 climbs divided into sets
+of 10 (the last was 7), with about a minute of rest between sets (the clock
+kept on running during the rest).
+
+I climbed in sets of 10. The planned pace was 8:18 per set and a 44-45 second
+rest between sets (clock runs during rests,), averaging at 49.8 seconds per
+climb including descent. I was always ahead of pace, and I occasionally took a
+mini break at the mid-point time if I was too far ahead.
+
+About half-way through, I ducked into the storage area inside the rock and
+changed to a dry shirt.
+
+In the morning I stress-baked pumpkin muffins for myself and the volunteers. I
+had the muffins, water and loose chalk on a table for use during breaks.
+
+On the ground there was a sheet of paper with the start and end times of each
+break printed in large letters (calculated by [this
+script](https://gist.github.com/arpruss/10e364904dfcc19b043a594232e0acde)), as
+well as the mid-point time for each set of 10 to keep me better on pace.
+
+The top of the wall is 15.13 meters vertically from the ground (as measured by
+a geology grad student), at 3.5 degree slab.
+
+I was actually really stressed yesterday. I had already beaten the record
+unofficially in practice, but with lots of people coming to watch (local
+climbers, grad students and colleagues), I didn't want to disappoint.
+Contributing to the stress was that the conditions changed from my practice
+runs (the auto-belay was down from maintenance and I had to use a manual
+belay; this involved lengthening the route slightly, increasing the length of
+each set and decreasing the total count, as well as an effective increase in
+my weight since the auto-belay subtracts a few pounds due to its spring-
+loading), and that I hadn't been able to train on the particular route for
+several weeks prior to Wednesday due to the auto-belay being down for
+maintenance while on Wednesday's approximately half-distance-at-half-time
+practice I was more tired at the end than I should have been due to poor
+pacing.
+
+A Kindle Fire running a pre-release version of my [Giant
+Stopwatch](https://play.google.com/store/apps/details?id=omegacentauri.mobi.simplestopwatch&hl=en_US&gl=US)
+app provided unofficial timing for audience to see and for my pacing. I had to
+modify the app to have a periodic beep to meet Guinness's requirements of an
+audible stop signal.
+
+Since Guinness requires video proof in addition to human witnesses, in the
+interests of redundancy, I had three cameras pointed at the attempt. The best
+footage (above) is from a Sony A7R2 with a zoom lens at 16mm, producing 1080P
+at 59.94 fps. Video was processed with Adobe Premiere Rush. The processing
+consisted of trimming the start and end, and adding a timing video track I
+generated with a [Python OpenCV2
+script](https://gist.github.com/arpruss/3a705c859d4ea4a482c4e47e96a08f79),
+synchronized with single-frame precision at the 1:00:00 point with the footage
+of Giant Stopwatch (barely visible under the table towards the end of the
+video; early in the video, glare hides it). For the unofficial version I link
+above, I accelerated the middle climbs 10X in Premiere Rush.
+
+Second, “lethal” weapons can be used less than lethally. For instance, with
+modern medicine, abdominal gunshot wounds are only 10% fatal, yet they are no
+doubt very effective at stopping an attacker. While it may seem weird to
+imagine a pacifist shooting someone in the stomach, when the chance of
+survival is 90%, it does not seem unreasonable to say that the pacifist could
+be aiming to stop the attacker non-lethally. After all, tasers sometimes kill,
+too. They do so less than 0.25% of the time, but that’s a difference of degree
+rather than of principle.
+
+I’ve been wondering whether it is possible for a country to count as pacifist
+and yet wage a defensive war. I think the answer is positive, as long as one
+has a moderate pacifism that is opposed to lethal violence but not to all
+violence. I think that a prohibition of all violence is untenable. It seems
+obvious that if you see someone about to shoot an innocent person, and you can
+give the shooter a shove to make them miss, you presumptively should.
+
+First, we have “officially” non-lethal weapons: tasers, gas, etc. Some of
+these might violate current international law, but it seems that a pacifist
+country could modify its commitment to some accords.
+
+Third, we might subdivide moderate pacifists based on whether they prohibit
+all violence that foreseeably leads to death or just violence that
+intentionally leads to death. If it is only intentionally lethal violence that
+is forbidden, then quite a bit of modern warfare can stand. If the enemy is
+attacking with tanks or planes, one can intentionally destroy the tank or
+plane as a weapon, while only foreseeing, without intending, the death of the
+crew. (I don’t know how far one can take this line without sophistry. Can one
+drop a bomb on an infantry unit intending to smash up their rifles without
+intending to kill the soldiers?) Similarly, one can bomb enemy weapons
+factories.
+
+Whether such a limited way of waging war could be successful probably depends
+on the case. If one combined the non-lethal (or not intentionally lethal)
+means with technological and numerical superiority, it wouldn’t be surprising
+to me if one could win.
+
+Alex  
+  
+Doesn't you post here entail that we should murder Putin?
+
+Imagine a moderate pacifist who rejects lethal self-defense, but allows non-
+lethal self-defense when appropriate, say by use of tasers.
+
+Note that a version of this argument goes through even if the moderate
+pacifist backs up and says that tasers are too lethal. For suppose instead of
+tasers we have drones that destroy the dominant hand of an enemy soldier while
+guaranteeing survival (with science fictional medical technology). It’s
+clearly right to release such a drone on a soldier who is about to kill ten
+innocents. But now compare:
+
+So maybe our choice is between tasing a million, thereby non-intentionally
+killing 250 soldiers, and intentionally killing one general. It seems to me
+that (2) is morally preferable, even though our moderate pacifist has to allow
+(1) and forbid (2).
+
+Very well. Now consider this on a national level. Suppose there are a million
+enemy soldiers ordered to commit genocide against ten million, and you have
+two ways to stop them:
+
+Alex  
+  
+Of course one should never murder anyone, but the question is: would killing
+Putin be murder?
+
+Now, imagine that one person is attacking you and nine other innocents, with
+the intent of killing the ten of you, and you can stop them with a taser.
+Surely you should, and surely the moderate pacifist will say that this is an
+appropriate use case for the taser.
+
+I think (4) is still morally preferable to causing the kind of disruption to
+the lives of a million people that plan (3) would involve.
+
+If you can tase one person to stop the murder of ten, then (1) should be
+permissible if it’s the only option. But tasers occasionally kill people. We
+don’t know how often. Apparently it’s [less than 1 in
+400](https://www.usatoday.com/in-depth/news/investigations/2021/04/23/police-
+use-tasers-ends-hundreds-deaths-like-daunte-wright/7221153002/) uses. Suppose
+it’s 1 in 4000. Then option (1) results in 250 enemy deaths.
+
+One should never murder anyone. Killing, on the other hand, can sometimes be
+justified.  
+  
+One question about killing the leader of an invading country is whether the
+leader counts as a civilian, since the killing of civilians is forbidden by
+the Geneva Convention. There is also some worry about the Geneva Convention's
+killing by "perfidy", which is taken to rule out at least some assassinations.
+So, as a matter of positive international law, it seems a difficult question.  
+  
+Were there no international law on the matter, I wouldn't see a significant
+difference between killing a political leader and killing a general, if both
+are giving orders to fight. Morally speaking, but not necessarily in
+international law, both seem to me to be equally combatants.  
+  
+Besides the moral and legal questions, there is also a prudential question. In
+my post I assumed that killing the general would stop the invasion. I got to
+assume that because I was making up the case. Whether in actual fact killing a
+leader would stop an invasion is less clear. Indeed such a thing might be seen
+as such a serious attack on the country that the retaliation might be really
+horrific.
+
+These may seem to be consequentialist arguments. I don't think so. I don't
+have the same intuitions if we replace the general by the general's innocent
+child in (2) and (4), even if killing the child were to stop the war (e.g., by
+making the general afraid that their other children would be murdered).
+
+Since Guinness requires video proof in addition to human witnesses, in the
+interests of redundancy, I had three cameras pointed at the attempt. The best
+footage (above) is from a Sony A7R2 with a zoom lens at 16mm, producing 1080P
+at 59.94 fps. Video was processed with Adobe Premiere Rush. The processing
+consisted of trimming the start and end, and adding a timing video track I
+generated with a [Python OpenCV2
+script](https://gist.github.com/arpruss/3a705c859d4ea4a482c4e47e96a08f79),
+synchronized with single-frame precision at the 1:00:00 point with the footage
+of Giant Stopwatch (barely visible under the table towards the end of the
+video; early in the video, glare hides it). For the unofficial version I link
+above, I accelerated the middle climbs 10X in Premiere Rush.
+
+Most of my practice was with an auto-belay, and at a shorter distance per
+climb (and hence greater number of climbs needed) since the auto-belay makes
+it impossible to get to the top of the wall. The auto-belay is also spring
+loaded so it effectively decreases body weight (by 7 lbs at the bottom
+according to my measurement). Then a couple of weeks ago the auto-belay was
+closed by management due to a maintenance issue, and I had a break in training
+until the Wednesday before the official attempt when I trained with a manual
+belay.
+
+About half-way through, I ducked into the storage area inside the rock and
+changed to a dry shirt.
+
+And now for something not very philosophical. Today, in front of two witnesses
+and two timekeepers and with the help of Levi Durham doing an amazing feat of
+belaying me for an hour, I beat the [Guinness World
+Record](https://www.guinnessworldrecords.com/world-records/438677-greatest-
+vertical-distance-climbed-on-an-artificial-climbing-wall-in-1-hour-indi) in
+greatest vertical distance climbed in one hour on an indoor climbing wall. The
+previous record was 928.5m and I did 1013.7m (with about half a minute to
+spare). On Baylor's climbing wall, this involved 67 climbs divided into sets
+of 10 (the last was 7), with about a minute of rest between sets (the clock
+kept on running during the rest).
+
+You should make a living out of that, Alex.  
+Would give you a lot less stress.
+
+I was actually really stressed yesterday. I had already beaten the record
+unofficially in practice, but with lots of people coming to watch (local
+climbers, grad students and colleagues), I didn't want to disappoint.
+Contributing to the stress was that the conditions changed from my practice
+runs (the auto-belay was down from maintenance and I had to use a manual
+belay; this involved lengthening the route slightly, increasing the length of
+each set and decreasing the total count, as well as an effective increase in
+my weight since the auto-belay subtracts a few pounds due to its spring-
+loading), and that I hadn't been able to train on the particular route for
+several weeks prior to Wednesday due to the auto-belay being down for
+maintenance while on Wednesday's approximately half-distance-at-half-time
+practice I was more tired at the end than I should have been due to poor
+pacing.
+
+The route was a standard 5.7 grade for most of my training (including when I
+unofficially beat the records), with Rock management kindly agreeing to keep
+the route up for several months for me. For the final attempt, we added holds
+to make the finish at the top of the wall, and changed three other holds to
+easier ones. (Guinness has no route grade requirements.)
+
+I trained for about three months, not very heavily. In training did two
+unofficial full-length practice runs, and in each I beat the previous record:
+in the first one I got 947.1 meters and in the second I got 1004.5, so I was
+pretty confident I could beat the 928.5 meters on the official attempt (though
+I was still pretty nervous). I also trained by doing a small number of
+approximately 1/2 or 1/3 sized practices (maybe three or so), and more regular
+shorter runs (1-10 climbs) at fast pace.
+
+A Kindle Fire running a pre-release version of my [Giant
+Stopwatch](https://play.google.com/store/apps/details?id=omegacentauri.mobi.simplestopwatch&hl=en_US&gl=US)
+app provided unofficial timing for audience to see and for my pacing. I had to
+modify the app to have a periodic beep to meet Guinness's requirements of an
+audible stop signal.
+
+I climbed in sets of 10. The planned pace was 8:18 per set and a 44-45 second
+rest between sets (clock runs during rests,), averaging at 49.8 seconds per
+climb including descent. I was always ahead of pace, and I occasionally took a
+mini break at the mid-point time if I was too far ahead.
+
+On the ground there was a sheet of paper with the start and end times of each
+break printed in large letters (calculated by [this
+script](https://gist.github.com/arpruss/10e364904dfcc19b043a594232e0acde)), as
+well as the mid-point time for each set of 10 to keep me better on pace.
+
+The top of the wall is 15.13 meters vertically from the ground (as measured by
+a geology grad student), at 3.5 degree slab.
+
+In the morning I stress-baked pumpkin muffins for myself and the volunteers. I
+had the muffins, water and loose chalk on a table for use during breaks.
+
+I wore moderately worn (one small hole) and comfortable 5.10 Anasazi shoes, a
+Camp USA Energy harness, shorts and a T-shirt. (I have not received any
+sponsorship.) My belayer used a tube-style device and wore belay gloves.
+
+I’ve been wondering whether it is possible for a country to count as pacifist
+and yet wage a defensive war. I think the answer is positive, as long as one
+has a moderate pacifism that is opposed to lethal violence but not to all
+violence. I think that a prohibition of all violence is untenable. It seems
+obvious that if you see someone about to shoot an innocent person, and you can
+give the shooter a shove to make them miss, you presumptively should.
+
+First, we have “officially” non-lethal weapons: tasers, gas, etc. Some of
+these might violate current international law, but it seems that a pacifist
+country could modify its commitment to some accords.
+
+Second, “lethal” weapons can be used less than lethally. For instance, with
+modern medicine, abdominal gunshot wounds are only 10% fatal, yet they are no
+doubt very effective at stopping an attacker. While it may seem weird to
+imagine a pacifist shooting someone in the stomach, when the chance of
+survival is 90%, it does not seem unreasonable to say that the pacifist could
+be aiming to stop the attacker non-lethally. After all, tasers sometimes kill,
+too. They do so less than 0.25% of the time, but that’s a difference of degree
+rather than of principle.
+
+Third, we might subdivide moderate pacifists based on whether they prohibit
+all violence that foreseeably leads to death or just violence that
+intentionally leads to death. If it is only intentionally lethal violence that
+is forbidden, then quite a bit of modern warfare can stand. If the enemy is
+attacking with tanks or planes, one can intentionally destroy the tank or
+plane as a weapon, while only foreseeing, without intending, the death of the
+crew. (I don’t know how far one can take this line without sophistry. Can one
+drop a bomb on an infantry unit intending to smash up their rifles without
+intending to kill the soldiers?) Similarly, one can bomb enemy weapons
+factories.
+
+Whether such a limited way of waging war could be successful probably depends
+on the case. If one combined the non-lethal (or not intentionally lethal)
+means with technological and numerical superiority, it wouldn’t be surprising
+to me if one could win.
+
+So maybe our choice is between tasing a million, thereby non-intentionally
+killing 250 soldiers, and intentionally killing one general. It seems to me
+that (2) is morally preferable, even though our moderate pacifist has to allow
+(1) and forbid (2).
+
+Alex  
+  
+Doesn't you post here entail that we should murder Putin?
+
+Now, imagine that one person is attacking you and nine other innocents, with
+the intent of killing the ten of you, and you can stop them with a taser.
+Surely you should, and surely the moderate pacifist will say that this is an
+appropriate use case for the taser.
+
+These may seem to be consequentialist arguments. I don't think so. I don't
+have the same intuitions if we replace the general by the general's innocent
+child in (2) and (4), even if killing the child were to stop the war (e.g., by
+making the general afraid that their other children would be murdered).
+
+If you can tase one person to stop the murder of ten, then (1) should be
+permissible if it’s the only option. But tasers occasionally kill people. We
+don’t know how often. Apparently it’s [less than 1 in
+400](https://www.usatoday.com/in-depth/news/investigations/2021/04/23/police-
+use-tasers-ends-hundreds-deaths-like-daunte-wright/7221153002/) uses. Suppose
+it’s 1 in 4000. Then option (1) results in 250 enemy deaths.
+
+Note that a version of this argument goes through even if the moderate
+pacifist backs up and says that tasers are too lethal. For suppose instead of
+tasers we have drones that destroy the dominant hand of an enemy soldier while
+guaranteeing survival (with science fictional medical technology). It’s
+clearly right to release such a drone on a soldier who is about to kill ten
+innocents. But now compare:
+
+Alex  
+  
+Of course one should never murder anyone, but the question is: would killing
+Putin be murder?
+
+Imagine a moderate pacifist who rejects lethal self-defense, but allows non-
+lethal self-defense when appropriate, say by use of tasers.
+
+Very well. Now consider this on a national level. Suppose there are a million
+enemy soldiers ordered to commit genocide against ten million, and you have
+two ways to stop them:
+
+I think (4) is still morally preferable to causing the kind of disruption to
+the lives of a million people that plan (3) would involve.
+
+One should never murder anyone. Killing, on the other hand, can sometimes be
+justified.  
+  
+One question about killing the leader of an invading country is whether the
+leader counts as a civilian, since the killing of civilians is forbidden by
+the Geneva Convention. There is also some worry about the Geneva Convention's
+killing by "perfidy", which is taken to rule out at least some assassinations.
+So, as a matter of positive international law, it seems a difficult question.  
+  
+Were there no international law on the matter, I wouldn't see a significant
+difference between killing a political leader and killing a general, if both
+are giving orders to fight. Morally speaking, but not necessarily in
+international law, both seem to me to be equally combatants.  
+  
+Besides the moral and legal questions, there is also a prudential question. In
+my post I assumed that killing the general would stop the invasion. I got to
+assume that because I was making up the case. Whether in actual fact killing a
+leader would stop an invasion is less clear. Indeed such a thing might be seen
+as such a serious attack on the country that the retaliation might be really
+horrific.
+
+In the morning I stress-baked pumpkin muffins for myself and the volunteers. I
+had the muffins, water and loose chalk on a table for use during breaks.
+
+I wore moderately worn (one small hole) and comfortable 5.10 Anasazi shoes, a
+Camp USA Energy harness, shorts and a T-shirt. (I have not received any
+sponsorship.) My belayer used a tube-style device and wore belay gloves.
+
+The route was a standard 5.7 grade for most of my training (including when I
+unofficially beat the records), with Rock management kindly agreeing to keep
+the route up for several months for me. For the final attempt, we added holds
+to make the finish at the top of the wall, and changed three other holds to
+easier ones. (Guinness has no route grade requirements.)
+
+Most of my practice was with an auto-belay, and at a shorter distance per
+climb (and hence greater number of climbs needed) since the auto-belay makes
+it impossible to get to the top of the wall. The auto-belay is also spring
+loaded so it effectively decreases body weight (by 7 lbs at the bottom
+according to my measurement). Then a couple of weeks ago the auto-belay was
+closed by management due to a maintenance issue, and I had a break in training
+until the Wednesday before the official attempt when I trained with a manual
+belay.
+
+You should make a living out of that, Alex.  
+Would give you a lot less stress.
+
+I trained for about three months, not very heavily. In training did two
+unofficial full-length practice runs, and in each I beat the previous record:
+in the first one I got 947.1 meters and in the second I got 1004.5, so I was
+pretty confident I could beat the 928.5 meters on the official attempt (though
+I was still pretty nervous). I also trained by doing a small number of
+approximately 1/2 or 1/3 sized practices (maybe three or so), and more regular
+shorter runs (1-10 climbs) at fast pace.
+
+The top of the wall is 15.13 meters vertically from the ground (as measured by
+a geology grad student), at 3.5 degree slab.
+
+On the ground there was a sheet of paper with the start and end times of each
+break printed in large letters (calculated by [this
+script](https://gist.github.com/arpruss/10e364904dfcc19b043a594232e0acde)), as
+well as the mid-point time for each set of 10 to keep me better on pace.
+
+A Kindle Fire running a pre-release version of my [Giant
+Stopwatch](https://play.google.com/store/apps/details?id=omegacentauri.mobi.simplestopwatch&hl=en_US&gl=US)
+app provided unofficial timing for audience to see and for my pacing. I had to
+modify the app to have a periodic beep to meet Guinness's requirements of an
+audible stop signal.
+
+I was actually really stressed yesterday. I had already beaten the record
+unofficially in practice, but with lots of people coming to watch (local
+climbers, grad students and colleagues), I didn't want to disappoint.
+Contributing to the stress was that the conditions changed from my practice
+runs (the auto-belay was down from maintenance and I had to use a manual
+belay; this involved lengthening the route slightly, increasing the length of
+each set and decreasing the total count, as well as an effective increase in
+my weight since the auto-belay subtracts a few pounds due to its spring-
+loading), and that I hadn't been able to train on the particular route for
+several weeks prior to Wednesday due to the auto-belay being down for
+maintenance while on Wednesday's approximately half-distance-at-half-time
+practice I was more tired at the end than I should have been due to poor
+pacing.
+
+And now for something not very philosophical. Today, in front of two witnesses
+and two timekeepers and with the help of Levi Durham doing an amazing feat of
+belaying me for an hour, I beat the [Guinness World
+Record](https://www.guinnessworldrecords.com/world-records/438677-greatest-
+vertical-distance-climbed-on-an-artificial-climbing-wall-in-1-hour-indi) in
+greatest vertical distance climbed in one hour on an indoor climbing wall. The
+previous record was 928.5m and I did 1013.7m (with about half a minute to
+spare). On Baylor's climbing wall, this involved 67 climbs divided into sets
+of 10 (the last was 7), with about a minute of rest between sets (the clock
+kept on running during the rest).
+
+About half-way through, I ducked into the storage area inside the rock and
+changed to a dry shirt.
+
+I climbed in sets of 10. The planned pace was 8:18 per set and a 44-45 second
+rest between sets (clock runs during rests,), averaging at 49.8 seconds per
+climb including descent. I was always ahead of pace, and I occasionally took a
+mini break at the mid-point time if I was too far ahead.
+
+Since Guinness requires video proof in addition to human witnesses, in the
+interests of redundancy, I had three cameras pointed at the attempt. The best
+footage (above) is from a Sony A7R2 with a zoom lens at 16mm, producing 1080P
+at 59.94 fps. Video was processed with Adobe Premiere Rush. The processing
+consisted of trimming the start and end, and adding a timing video track I
+generated with a [Python OpenCV2
+script](https://gist.github.com/arpruss/3a705c859d4ea4a482c4e47e96a08f79),
+synchronized with single-frame precision at the 1:00:00 point with the footage
+of Giant Stopwatch (barely visible under the table towards the end of the
+video; early in the video, glare hides it). For the unofficial version I link
+above, I accelerated the middle climbs 10X in Premiere Rush.
+
+I’ve been wondering whether it is possible for a country to count as pacifist
+and yet wage a defensive war. I think the answer is positive, as long as one
+has a moderate pacifism that is opposed to lethal violence but not to all
+violence. I think that a prohibition of all violence is untenable. It seems
+obvious that if you see someone about to shoot an innocent person, and you can
+give the shooter a shove to make them miss, you presumptively should.
+
+Third, we might subdivide moderate pacifists based on whether they prohibit
+all violence that foreseeably leads to death or just violence that
+intentionally leads to death. If it is only intentionally lethal violence that
+is forbidden, then quite a bit of modern warfare can stand. If the enemy is
+attacking with tanks or planes, one can intentionally destroy the tank or
+plane as a weapon, while only foreseeing, without intending, the death of the
+crew. (I don’t know how far one can take this line without sophistry. Can one
+drop a bomb on an infantry unit intending to smash up their rifles without
+intending to kill the soldiers?) Similarly, one can bomb enemy weapons
+factories.
+
+Whether such a limited way of waging war could be successful probably depends
+on the case. If one combined the non-lethal (or not intentionally lethal)
+means with technological and numerical superiority, it wouldn’t be surprising
+to me if one could win.
+
+Second, “lethal” weapons can be used less than lethally. For instance, with
+modern medicine, abdominal gunshot wounds are only 10% fatal, yet they are no
+doubt very effective at stopping an attacker. While it may seem weird to
+imagine a pacifist shooting someone in the stomach, when the chance of
+survival is 90%, it does not seem unreasonable to say that the pacifist could
+be aiming to stop the attacker non-lethally. After all, tasers sometimes kill,
+too. They do so less than 0.25% of the time, but that’s a difference of degree
+rather than of principle.
+
+First, we have “officially” non-lethal weapons: tasers, gas, etc. Some of
+these might violate current international law, but it seems that a pacifist
+country could modify its commitment to some accords.
+
+If you can tase one person to stop the murder of ten, then (1) should be
+permissible if it’s the only option. But tasers occasionally kill people. We
+don’t know how often. Apparently it’s [less than 1 in
+400](https://www.usatoday.com/in-depth/news/investigations/2021/04/23/police-
+use-tasers-ends-hundreds-deaths-like-daunte-wright/7221153002/) uses. Suppose
+it’s 1 in 4000. Then option (1) results in 250 enemy deaths.
+
+Alex  
+  
+Doesn't you post here entail that we should murder Putin?
+
+Now, imagine that one person is attacking you and nine other innocents, with
+the intent of killing the ten of you, and you can stop them with a taser.
+Surely you should, and surely the moderate pacifist will say that this is an
+appropriate use case for the taser.
+
+Note that a version of this argument goes through even if the moderate
+pacifist backs up and says that tasers are too lethal. For suppose instead of
+tasers we have drones that destroy the dominant hand of an enemy soldier while
+guaranteeing survival (with science fictional medical technology). It’s
+clearly right to release such a drone on a soldier who is about to kill ten
+innocents. But now compare:
+
+One should never murder anyone. Killing, on the other hand, can sometimes be
+justified.  
+  
+One question about killing the leader of an invading country is whether the
+leader counts as a civilian, since the killing of civilians is forbidden by
+the Geneva Convention. There is also some worry about the Geneva Convention's
+killing by "perfidy", which is taken to rule out at least some assassinations.
+So, as a matter of positive international law, it seems a difficult question.  
+  
+Were there no international law on the matter, I wouldn't see a significant
+difference between killing a political leader and killing a general, if both
+are giving orders to fight. Morally speaking, but not necessarily in
+international law, both seem to me to be equally combatants.  
+  
+Besides the moral and legal questions, there is also a prudential question. In
+my post I assumed that killing the general would stop the invasion. I got to
+assume that because I was making up the case. Whether in actual fact killing a
+leader would stop an invasion is less clear. Indeed such a thing might be seen
+as such a serious attack on the country that the retaliation might be really
+horrific.
+
+These may seem to be consequentialist arguments. I don't think so. I don't
+have the same intuitions if we replace the general by the general's innocent
+child in (2) and (4), even if killing the child were to stop the war (e.g., by
+making the general afraid that their other children would be murdered).
+
+Alex  
+  
+Of course one should never murder anyone, but the question is: would killing
+Putin be murder?
+
+Very well. Now consider this on a national level. Suppose there are a million
+enemy soldiers ordered to commit genocide against ten million, and you have
+two ways to stop them:
+
+I think (4) is still morally preferable to causing the kind of disruption to
+the lives of a million people that plan (3) would involve.
+
+So maybe our choice is between tasing a million, thereby non-intentionally
+killing 250 soldiers, and intentionally killing one general. It seems to me
+that (2) is morally preferable, even though our moderate pacifist has to allow
+(1) and forbid (2).
+
+Imagine a moderate pacifist who rejects lethal self-defense, but allows non-
+lethal self-defense when appropriate, say by use of tasers.
+
+Maybe the answer to both questions is that I could, but only metaphysically
+and not causally. In other words, it could be that the laws of nature, or of
+human nature, make it impossible for me to exercise one of the powers without
+the other, just as I cannot wiggle my ring finger without wiggling my middle
+finger as well. On this view, if there is a God, he could cause me to acquire
+promissory-type obligations without my promising, and he could let me engage
+in the natural act of promising while blocking the exercise of normative power
+and leaving me normatively unbound. This doesn’t seem particularly
+problematic.
+
+A normative power is a power to change a normative condition.
+[Raz](https://core.ac.uk/download/pdf/230182259.pdf) says the change is not
+produced “causally” but “normatively”.
+
+Here is a picture on which this is correct. We exercise a normative power by
+exercising a natural power in such a context that the successful exercise of
+the natural power is partly constitutive of a normative fact. For instance, we
+utter a promise, thereby exercising a natural power to engage in a certain
+kind of speech act, and our exercise of that speech act is partly constitutive
+of, rather than causal of, the state of affairs of our being obligated to
+carry out the promised action.
+
+There are two versions of the above model. On one version, there is an
+underlying fundamental conditional normative fact _C_ , such as that if I have
+promised something then I should do it, and my exercise of normative power
+supplies the antecedent _A_ of that conditional, and then the normative
+consequent of _C_ comes to be grounded in _C_ and _A_. On another version,
+there there are some natural acts that are directly constitutive of a
+normative state of affairs, not merely by supplying the antecedent of a
+conditional normative fact. I think the first version of the model is the more
+plausible in paradigmatic cases.
+
+Perhaps the real problem for a lot of people with a causal view of normative
+powers is that it tends to lead to a violation of supervenience. For if it is
+metaphysically possble to have the exercise of the normative power without the
+exercise of the natural power, or vice versa, then it seems we don’t have
+supervenience of the normative on the non-normative. But supervenience does
+not seem to me to be inescapable.
+
+But why not allow for a causal model? Why not suppose that a normative power
+is a causal power to make an irreducible normative property come to be
+instantiated in someone? Thus, my power to promise is the power to cause
+myself to be obligated to do what I have promised.
+
+I think the difficulty with a causal model is the fact that in paradigm cases
+of normative power, there is a natural power that _is_ being exercised, and we
+have the intuition that the exercise of the natural power is necessary and
+sufficient for the normative effect. But on a causal model, why couldn’t I
+cause a promissory-type obligation without promising, simply causing the
+relevant property of being obligated to come to be instantiated in me? And why
+couldn’t I engage in the speech act while yet remaining normatively unbound,
+because my normative power wasn’t exercised in parallel with the natural
+power?
+
+But perhaps we can say this. We have a normative power to endow some neutral
+things with value by making them our ends. And in fact the only way to act for
+an end that does not have any independent value is by exercising that
+normative power. And exercising that normative power involves your seeing the
+thing you’re endowing with value as valuable. And maybe the only way to raise
+your arm or for Bob to bake the cake in the examples is by exercising the
+normative power, and doing so involves seeing the end as good. Maybe. This has
+some phenomenological plausibility and it would be nice if it were true,
+because the strong guise of the good thesis is pretty plausible to me.
+
+This isn’t quite enough for a defense of the strong thesis. For even if the
+success is good, it does not follow that you perceive the success as good. You
+might subscribe to an axiological theory on which success is not good in
+general, but only success at something good.
+
+For the strong version to have any plausibility, “good” must include cases of
+purely instrumental goodness.
+
+**Strong** : Whenever you act, you act for an end, and every end you act for
+you perceive as good.
+
+In both cases, it is still true that the agent acts for a good end—the useful
+triggering of the device and the production of the cake. But in both cases it
+seems they are also acting for a worthless end. Thus the cases seem to fit
+with the weak but not the strong guise of the good thesis.
+
+**Case 1:** There is some device which does something useful when you trigger
+it. It is triggered by electrical activity. You strap it on to your arm, and
+raise your arm, so that the electrical activity in your muscles triggers the
+device. Your raising your arm has the arm going up as an end, but that end is
+not perceived as good, but merely neutral. All you care about is the
+electrical activity in your muscles.
+
+I was going to leave it at this. But then I thought of a way to save the
+strong guise of the good thesis. Success is valuable as such. When I try to do
+something, succeeding at it has value. So the arm going up or the cake being
+produced _are_ valuable as necessary parts of the success of one’s action. So
+perhaps every end of your action _is_ trivially good, because it is good for
+your action to succeed, and the end is a (constitutive, not causal) means to
+success.
+
+**Case 2:** Back when they were dating in high school, Bob promised to try his
+best to bake a nine-layer chocolate cake for Alice’s 40th birthday. Since
+then, Bob and Alice have had a falling out, and hate each other’s guts.
+Moreover, Alice and all her guests hate chocolate. But Alice doesn’t release
+Bob from his promise. Bob tries his best to bake the cake in order to fulfill
+his promise, and happens to succeed. In trying to bake the cake, Bob acted for
+the end of producing a cake. But producing the cake was worthless, since no
+one would eat it. The only value was in the trying, since that was the
+fulfillment of his promise.
+
+**Weak** : Whenever you act, you act for an end that you perceive is good.
+
+I think there is still reason to be sceptical of the strong version.
+
+According to the guise of the good thesis, one always acts for the sake of an
+apparent good. There is a weaker and a stronger version of this:
+
+Suppose Alice can read your mind, and you are playing poker against a set of
+people not including Alice. You don’t care about winning, just about money.
+Alice has a deal for you that you can’t refuse.
+
+Here is the oddity: you are trying to win in order to get paid, but you only
+get paid if you don’t win. Thus, you are trying to achieve something, the
+achievement of which would undercut the end you are pursuing.
+
+Is this possible? I think so. We just need to
+[distinguish](http://alexanderpruss.blogspot.com/2019/08/two-ways-to-pursue-y-
+for-sake-of-z.html) between pursuing victory for the sake of something else
+that follows from victory and pursuing victory for the sake of something that
+might follow from the pursuit of victory.
+
+If you lose, but you tried to win, she pays you double what you lost.
+
+Clearly the prudent thing to do is to try to win. For if you don’t try to win,
+then you are guaranteed not to get any money. But if you do try, you won’t
+lose anything, and you might gain.
+

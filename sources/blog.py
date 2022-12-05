@@ -6,7 +6,9 @@ class Blog(DataSource):
         DataSource.__init__(self, url, num_articles)
         print("type num_articles =", type(num_articles))
         self.corpus_name = self.get_corpus_name()
-        self.path_corpus_txt = "./data/input/corpus_txt/" + self.create_corpus_txt_filename() #self.filename
+        print("corpus_name ==", self.corpus_name)
+        self.filename_corpus_txt = self.create_corpus_txt_filename()
+        self.path_corpus_txt = "./data/input/corpus_txt/" + self.filename_corpus_txt 
         self.path_articles_urls = "./data/input/articles_lists/articles_list_{}.txt".format(self.corpus_name)
 
 
