@@ -1,6 +1,5 @@
-Here’s an another argument that to add to the list. It proceeds from a
-principle about absences that several able philosophers defend (E.g., Kris
-McDaniel):
+(This argument was suggested to me by Joe Schmid.) Here’s an another argument
+that to add to the list. It proceeds from a principle about ab...
 
 Suppose the principle is true. Now go to a possible world in which God
 refrains from creating (assume, as traditional theism does, that God has
@@ -14,8 +13,9 @@ Out!](http://3.bp.blogspot.com/-RUJygo9ZI5s/XZKz9ZN1-tI/AAAAAAAA3BY/WcfmwPogtPIR
 ](https://www.amazon.com/God-Best-Explanation-Things-
 Dialogue/dp/3030237540/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=&sr=)  
 
-(This argument was suggested to me by Joe Schmid.) Here’s an another argument
-that to add to the list. It proceeds from a principle about ab...
+Here’s an another argument that to add to the list. It proceeds from a
+principle about absences that several able philosophers defend (E.g., Kris
+McDaniel):
 
 Smilansky, Saul. "[Reversing Pascal's Wager: Scepticism About Religious Belief
 and Its Value](https://philpapers.org/rec/SMIRPS-2)", _Religious Studies_
@@ -49,4 +49,18 @@ for logical monism. But the truth of the disjunction of logical pluralism and
 logical nihilism is prima facie more surprising on theism than on naturalism.
 Therefore, the case for the disjunction of logical pluralism and logical
 nihilism provides at least some evidence against theism.
+
+Recent empirical work on [motivated
+reasoning](https://compass.onlinelibrary.wiley.com/doi/full/10.1111/phc3.12828)
+indicates that it is strongly resistant to detection, even despite our best
+efforts (Ballantyne 2015; Pronin et al. 2002). Perhaps worse, other work shows
+that attempts to preempt motivated reasoning reinforce its impact (Ehrlinger
+et al. 2005; Schwitzgebel & Ellis 2017). This is surprising on theism, given
+that it's surprising that God would design our cognitive faculties in a way
+that's highly disposed to unreliability -- and likely without remedy --
+especially in ways that can be morally pernicious. By contrast, it's not
+surprising on naturalism, since nature is "indifferent" to our welfare on that
+hypothesis, and since motivated reasoning is conducive to survival and
+reproduction (Mercier & Sperber 2011). Therefore, the existence of motivated
+reasoning is at least some evidence for naturalism vis-a-vis theism.
 

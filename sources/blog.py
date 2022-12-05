@@ -45,16 +45,17 @@ class Blog(DataSource):
     def get_sitemap_page(self):
         """ Recupere la page sitemap d'un blog """
         robots_txt_page = self.get_blog_robots_page()
-        print("robots_txt_page =", robots_txt_page)
-        print("get text_contents of robots_txt_page")
-        text_contents = self.get_web_page_text_contents(robots_txt_page)
-        print("get text_contents of robots_txt_page fini")
-        print("0 text_contents =", text_contents)
-        text_contents = text_contents.split("\n")
-        print("1 text_contents =", text_contents)
-        sitemap_contents = [elt for elt in text_contents if "Sitemap" in elt]
-        print("sitemap_contents =", sitemap_contents)
-        sitemap_page = sitemap_contents[0].split(" ")[1]
+        robots_txt_contents = self.get_web_page_text_contents(robots_txt_page)
+
+        # Cas 1 : il y a une page robots.txt sur le blog (liste des "pages autorisees")
+        if(robots_txt_contents != ""):
+            robots_txt_contents = robots_txt_contents.split("\n")
+            sitemap_contents = [elt for elt in robots_txt_contents if "Sitemap" in elt]
+            sitemap_page = sitemap_contents[0].split(" ")[1]
+
+        # Cas 2 : pas de page robots.txt sur le blog (liste des "pages autorisees")
+        else:
+            sitemap_page = self.url + "/sitemap.xml"
 
         return(sitemap_page)
 

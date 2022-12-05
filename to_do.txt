@@ -39,3 +39,13 @@ python general notions :
 - differences \n et \r
 - comprendre : current_folder = globals()['_dh'][0]
 - 
+
+
+
+
+
+cas de blogs traites
+I. blogspot
+1) blogs avec un seul article
+2) blogs avec une seule page sitemap (pas de sous-pages sitemap)
+3) blogs sans page robots.txt
