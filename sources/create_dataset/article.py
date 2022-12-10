@@ -1,7 +1,7 @@
-import os
-import glob
+import sys
+sys.path.append("../")
+
 import requests
-import re
 from bs4 import BeautifulSoup
 import html2text
 from lib_general import *
@@ -10,7 +10,7 @@ from lib_general import *
 class Article:
     """ Define an article from a blog """
 
-    def __init__(self, url, corpus_name):
+    def __init__(self, url):
         """ Constructor of Article """
         self.url = url
         self.paragraphs = self.create_paragraphs()
@@ -25,7 +25,7 @@ class Article:
         desc = "url = "+ str_url
         desc += "\nparagraphs = " + str_paragraphs 
         # desc = desc + "\nfilename = " + str_filename
-        return(desc)   
+        return(desc)
 
 
     def create_paragraphs(self):

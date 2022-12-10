@@ -88,14 +88,14 @@ class DataSource:
             # print("path_corpus_txt =", path_corpus_txt)
             # print("articles_urls =", articles_urls)
             article_url = self.articles_urls[0] #premier article
-            article = Article(article_url, self.corpus_name)
+            article = Article(article_url)
             print("article_url =")
             print(article_url)
             article.save_corpus_txt(self.path_corpus_txt, self.paragraphs, file_open_mode="w", sep = "\n\n")
             self.paragraphs.extend(article.paragraphs)
 
             for article_url in self.articles_urls[1:]: #tous les articles suivants
-                article = Article(article_url, self.corpus_name)
+                article = Article(article_url)
                 article.save_corpus_txt(self.path_corpus_txt, self.paragraphs, file_open_mode="a", sep = "\n\n")
                 self.paragraphs.extend(article.paragraphs)
                 print("len self.paragraphs =", len(self.paragraphs))
@@ -105,7 +105,7 @@ class DataSource:
             for article_url in self.articles_urls:
                 print("article_url =")
                 print(article_url)
-                article = Article(article_url, self.corpus_name)
+                article = Article(article_url)
                 article.save_corpus_txt(self.path_corpus_txt, self.paragraphs, file_open_mode="a", sep = "\n\n")
                 self.paragraphs.extend(article.paragraphs)
                 print("len self.paragraphs =", len(self.paragraphs))

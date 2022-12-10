@@ -2,27 +2,77 @@ from lib_general import *
 import nltk
 import re
 import string
+import pandas as pd
 
 
-class Corpus:
-    """ Define an article from a blog """
+class OneTopicCorpus:
+    """ Definit un corpus qui contient des documents d'un seul topic """
 
-    def __init__(self, corpus_filenames):
-        """ Constructor of Article """
-        self.corpus_filenames = corpus_filenames
-        self.paragraphs = self.create_paragraphs()
+    def __init__(self, filename_input, topic):
+        """ Constructor of Article 
+        filename_input (string) : nom du fichier qui contient les noms des fichiers .txt des corpus a fusionner
+        corpus_txt_filenames (liste de string) : liste des fichiers .txt des corpus a fusionner
+        corpus_dataframes (liste de pandas dataframes) : liste de pandas dataframes 
+        """
+        self.topic = topic
+        self.filename_input = filename_input
+        self.corpus_txt_filenames = self.create_corpus_txt_filenames()
+        self.corpus_dataframes = self.create_corpus_dataframes()
+        self.corpus_merged_dataframe = self.create_corpus_merged_dataframe()
 
 
     def __str__(self):
         """ Renvoie une chaine de caractère décrivant l'article """
         print("str :")
-        # str_url = str(self.url)
-        # # str_articles_list = str(self.articles_list)
-        # str_paragraphs = str(self.paragraphs)
-        # desc = "url = "+ str_url
-        # desc += "\nparagraphs = " + str_paragraphs 
-        # # desc = desc + "\nfilename = " + str_filename
-        # return(desc)  
+        str_filename_input = str(self.filename_input)
+        str_corpus_txt_filenames = str(self.corpus_txt_filenames)
+        str_corpus_dataframes = str(self.corpus_dataframes)
+        str_corpus_merged_dataframe = str(self.corpus_merged_dataframe)
+        str_topic = str(self.topic)
+        desc = "str_filename_input = " + str_filename_input
+        desc += "\nstr_topic = " + str_topic
+        desc += "\nstr_corpus_txt_filenames = " + str_corpus_txt_filenames
+        desc += "\ncorpus_dataframes = " + str_corpus_dataframes
+        desc += "\n\ncorpus_merged_dataframe = " + str_corpus_merged_dataframe
+        return(desc)
+
+
+    def get_corpus_dataframe(self, filename_corpus_txt):
+        """ Renvoie le corpus pandas dataframe a partir d'un corpus au format .txt"""
+        res = open("./data/input/corpus_txt/" + filename_corpus_txt, "r", encoding="utf-8").read().split("\n\n")
+        res = [elt for elt in res if len(elt) > 1]
+        message = res
+        length = [len(elt) for elt in res]
+        list_of_rows = list(zip(message, length))
+        corpus_dataframe = pd.DataFrame(list_of_rows, columns=["message", "length"])
+
+        return(corpus_dataframe)
+
+
+    def create_corpus_txt_filenames(self):
+        corpus_txt_filenames = open("./data/input/corpus_txt/" + self.filename_input, "r", encoding="utf-8").read().split("\n")
+        return(corpus_txt_filenames)
+
+
+    def create_corpus_dataframes(self):
+        """ Renvoie une liste de dataframes (chaque corpus) a partir des fichiers .txt """
+        all_corpus_dataframes = []
+        for filename in self.corpus_txt_filenames:
+            corpus_dataframe = self.get_corpus_dataframe(filename)
+            all_corpus_dataframes.append(corpus_dataframe)
+        
+        return(all_corpus_dataframes)
+
+
+    def create_corpus_merged_dataframe(self):
+        """ Renvoie le dataframe final qui est la fusion de tous les dataframes """
+        if(len(self.corpus_dataframes) > 1):
+            corpus_merged = pd.concat(self.corpus_dataframes) 
+        else:
+            corpus_merged = self.corpus_dataframes[0]
+        corpus_merged["category"] = self.topic
+        
+        return(corpus_merged)
 
 
     def preprocess_list_of_documents(list_of_documents, lemmatizer, stopwords):

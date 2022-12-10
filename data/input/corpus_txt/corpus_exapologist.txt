@@ -1,22 +1,22 @@
-[ ![Is God the Best Explanation of Things? A Dialogue is Now
-Out!](http://3.bp.blogspot.com/-RUJygo9ZI5s/XZKz9ZN1-tI/AAAAAAAA3BY/WcfmwPogtPIR7fHT1fgwSJxfTIiHQ_72ACK4BGAYYCw/s1600/Book%2BCover%2BIGtBEoT.png)
-](https://www.amazon.com/God-Best-Explanation-Things-
-Dialogue/dp/3030237540/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=&sr=)  
-
-(This argument was suggested to me by Joe Schmid.) Here’s an another argument
-to add to the list . It proceeds from a principle about absenc...
-
-Here’s an another argument to add to [the
-list](https://exapologist.blogspot.com/2022/06/120-or-so-arguments-for-
-atheism.html). It proceeds from a principle about absences that several able
-philosophers defend (E.g., Kris McDaniel):
-
 Suppose the principle is true. Now go to a possible world in which God
 refrains from creating (assume, as traditional theism does, that God has
 leeway freedom in creating). In that world, there are contingent things
 uncreated by God (namely, absences of creatures). But according to traditional
 theism's aseity-sovereignty doctrine, there can be no contingent things that
 are not created by God. Therefore, traditional theism is false.
+
+(This argument was suggested to me by Joe Schmid.) Here’s an another argument
+to add to the list . It proceeds from a principle about absenc...
+
+[ ![Is God the Best Explanation of Things? A Dialogue is Now
+Out!](http://3.bp.blogspot.com/-RUJygo9ZI5s/XZKz9ZN1-tI/AAAAAAAA3BY/WcfmwPogtPIR7fHT1fgwSJxfTIiHQ_72ACK4BGAYYCw/s1600/Book%2BCover%2BIGtBEoT.png)
+](https://www.amazon.com/God-Best-Explanation-Things-
+Dialogue/dp/3030237540/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=&sr=)  
+
+Here’s an another argument to add to [the
+list](https://exapologist.blogspot.com/2022/06/120-or-so-arguments-for-
+atheism.html). It proceeds from a principle about absences that several able
+philosophers defend (E.g., Kris McDaniel):
 
 Pascal famously argued that practical reasoning should lead people to try to
 form within themselves a commitment to religious practice and obedience, based
@@ -64,31 +64,4 @@ surprising on naturalism, since nature is "indifferent" to our welfare on that
 hypothesis, and since motivated reasoning is conducive to survival and
 reproduction (Mercier & Sperber 2011). Therefore, the existence of motivated
 reasoning is at least some evidence for naturalism vis-a-vis theism.
-
-> Abstract: A prominent Thomistic cosmological argument maintains that an
-> infinite regress of causes, which exhibits a certain pattern of ontological
-> dependence among its members, would be vicious and so must terminate in a
-> first member. Interestingly, Jonathan Schaffer offers a similar argument in
-> the contemporary grounding literature for the view called metaphysical
-> foundationalism. I consider the striking similarities between both arguments
-> and conclude that both are unsuccessful for the same reason. I argue this
-> negative result gives us indirect reason to consider metaphysical infinitism
-> as a genuine possibility, the view that chains of ontological dependence or
-> ground can descend indefinitely.
->
->  
->  
->
-
-Here's a new paper making [a
-point](https://exapologist.blogspot.com/2022/06/the-argument-from-
-metaphysical.html) [I've been on about
-recently](https://exapologist.blogspot.com/2022/04/camerons-forthcoming-
-book.html): recent work on metaphysical infinitism and coherentism undercuts
-certain cosmological arguments, and the metaphysical foundationalism
-presupposed by theism.
-
-Oberle, Thomas. "[Grounding, infinite regress, and the Thomistic cosmological
-argument](https://link.springer.com/article/10.1007/s11153-022-09840-3)",
-International Journal for Philosophy of Religion (July 2022).
 

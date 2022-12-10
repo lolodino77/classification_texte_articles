@@ -1,0 +1,2 @@
+corpus_list_theism.txt
+corpus_list_scepticism.txt

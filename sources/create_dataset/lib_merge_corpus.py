@@ -2,11 +2,9 @@ import nltk
 from nltk.stem import WordNetLemmatizer
 from french_lefff_lemmatizer.french_lefff_lemmatizer import FrenchLefffLemmatizer
 from lib_general import *
-from lib_create_corpus import *
 sys.path.append(PureWindowsPath(r"C:\Users\eupho\OneDrive\Documents\perso\projets\classification_texte_bapteme_philo\sources").as_posix())
 from lib_general import *
 import numpy as np
-# from lib_classification import *
 
 
 def merge_two_corpus(corpus_filenames, final_corpus_name, topics, language):
@@ -60,6 +58,7 @@ def merge_two_corpus(corpus_filenames, final_corpus_name, topics, language):
 	elif(language == "english"):
 		lemmatizer = WordNetLemmatizer() #le lemmatizer WordNetLemmatizer de nltk uniquement pour l'anglais 
 
+	#### actions seulement dans le corpus definitif de fusion
 	# Execution de la fonction principale qui fait le nettoyage
 	merged_corpus["message_preprocessed"] = preprocess_list_of_documents(merged_corpus['message'], lemmatizer, stopwords)
 

@@ -28,6 +28,9 @@ sys.path.append(PureWindowsPath(r"C:\Users\eupho\OneDrive\Documents\perso\projet
 from lib_create_corpus import *
 from lib_merge_corpus import *
 
+import sys
+sys.path.append("../")
+
 def get_merged_corpus_filenames(sys_argv):
     # python 2_model_selection.py command parquet corpus_edwardfeser_exapologist.parquet corpus_alexanderpruss_edwardfeser.parquet
     # python 2_model_selection.py ./data/input/ parquet
