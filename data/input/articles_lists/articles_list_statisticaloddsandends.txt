@@ -1,5 +1,15 @@
+https://statisticaloddsandends.wordpress.com/2022/12/10/optimality-condition-for-euclidean-projection-onto-a-convex-polytope/
 https://statisticaloddsandends.wordpress.com/2018/06/27/world-cup-group-stage-outcomes/
 https://statisticaloddsandends.wordpress.com/2022/11/26/quasi-newton-methods-l-bfgs/
 https://statisticaloddsandends.wordpress.com/2022/11/26/quasi-newton-methods-dfp-and-bfgs/
 https://statisticaloddsandends.wordpress.com/2022/11/24/quasi-newton-methods-in-optimization/
 https://statisticaloddsandends.wordpress.com/2022/11/24/quasi-newton-methods-sr1/
+https://statisticaloddsandends.wordpress.com/2022/11/19/exact-line-search-and-backtracking-line-search/
+https://statisticaloddsandends.wordpress.com/2022/11/18/affine-hull-vs-convex-hull/
+https://statisticaloddsandends.wordpress.com/2020/04/07/git-references/
+https://statisticaloddsandends.wordpress.com/2022/11/15/what-are-the-kkt-conditions/
+https://statisticaloddsandends.wordpress.com/2022/11/12/lagrange-dual-weak-duality-and-strong-duality/
+https://statisticaloddsandends.wordpress.com/2022/11/11/the-lagrange-dual-function-is-always-concave/
+https://statisticaloddsandends.wordpress.com/2018/03/27/matrix-expansions/
+https://statisticaloddsandends.wordpress.com/2021/07/29/getting-predictions-from-an-isotonic-regression-model/
+https://statisticaloddsandends.wordpress.com/2018/03/11/sylvesters-determinant-identity/

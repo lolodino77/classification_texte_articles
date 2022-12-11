@@ -17,21 +17,23 @@ from sklearn.model_selection import RepeatedStratifiedKFold
 pd.set_option('display.max_colwidth', 30)
 pd.set_option('display.min_rows', 5)
 pd.set_option('display.max_rows', 5)
-pd.set_option('display.max_colwidth', None) #afficher texte entier dans dataframesys.path.append(PureWindowsPath(r"C:\Users\eupho\OneDrive\Documents\perso\projets\classification_texte_bapteme_philo\sources").as_posix())
+pd.set_option('display.max_colwidth', None) #afficher texte entier dans dataframesys.path.append(PureWindowsPath(r"C:\Users\eupho\OneDrive\Documents\perso\projets\classification_texte_articles_version_objet\sources").as_posix())
 from pathlib import Path, PureWindowsPath
-sys.path.append(PureWindowsPath(r"C:\Users\eupho\OneDrive\Documents\perso\projets\classification_texte_bapteme_philo\sources").as_posix())
-sys.path.append(PureWindowsPath(r"C:\Users\eupho\OneDrive\Documents\perso\projets\classification_texte_bapteme_philo\sources\classification").as_posix())
+sys.path.append("../..") # sources
+sys.path.append("../") # sources\classification
+# sys.path.append(PureWindowsPath(r"C:\Users\eupho\OneDrive\Documents\perso\projets\classification_texte_articles_version_objet\sources").as_posix())
+# sys.path.append(PureWindowsPath(r"C:\Users\eupho\OneDrive\Documents\perso\projets\classification_texte_articles_version_objet\sources\classification").as_posix())
 from lib_general import *
 from lib_classification import *
 
 
 # Se rendre dans le dossier root
-set_current_directory_to_root(root = "classification_texte_bapteme_philo")
+set_current_directory_to_root(root = "classification_texte_articles_version_objet")
 print("os.getcwd() at root =", os.getcwd()) 
 
 # Ajout des paths necessaires pour importer les librairies perso
-add_paths(paths = ["/sources/classification/"])
-from lib_classification import *
+# add_paths(paths = ["/sources/classification/"])
+# from lib_classification import *
 
 
 # Les differents cas d'executions :
@@ -46,9 +48,10 @@ def main():
     print('Argument List:', str(sys.argv))
 
     sys_argv = sys.argv
+    format_input = sys_argv[2]
     filenames = get_merged_corpus_filenames(sys_argv)
     print("filenames =", filenames)
-    select_models(filenames)
+    select_models(filenames, format_input)
     
     
 main()

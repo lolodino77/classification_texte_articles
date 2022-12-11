@@ -6,7 +6,7 @@ from bs4 import BeautifulSoup
 import html2text
 from lib_general import *
 from article import *
-
+import pandas as pd
 
 class DataSource:
     """ Define an article from a blog """

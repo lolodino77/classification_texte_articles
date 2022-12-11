@@ -1,7 +1,0 @@
-[('test_accuracy', 0.9254), ('test_f1_macro', 0.9254)] (LR)
-[('test_accuracy', 0.8196), ('test_f1_macro', 0.8194)] (AdaBoostClassifier)
-[('test_accuracy', 0.8627), ('test_f1_macro', 0.8619)] (KNN)
-[('test_accuracy', 0.8518), ('test_f1_macro', 0.8516)] (RandomForest)
-[('test_accuracy', 0.9235), ('test_f1_macro', 0.9234)] (SGDClassifier)
-[('test_accuracy', 0.9315), ('test_f1_macro', 0.9314)] (SVM)
-[('test_accuracy', 0.7872), ('test_f1_macro', 0.7868)] (DecisionTreeClassifier)

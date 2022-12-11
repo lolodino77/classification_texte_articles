@@ -6,6 +6,7 @@ import re
 import nltk
 from nltk.stem import WordNetLemmatizer
 from french_lefff_lemmatizer.french_lefff_lemmatizer import FrenchLefffLemmatizer
+from sklearn.preprocessing import LabelEncoder
 
 
 class CorpusMerger:
@@ -158,6 +159,8 @@ class CorpusMerger:
 
         # Annotation au format entier (necessaire pour certaines fonctions de sklearn)
         # self.merged_corpus_dataframe["category_bin"] = np.select([self.merged_corpus_dataframe["category"] == class_1], [1], default=0)
+        LE = LabelEncoder()
+        self.merged_corpus_dataframe["category_bin"] = LE.fit_transform(self.merged_corpus_dataframe["category"]) 
 
         # Melange aleatoire des documents
         self.merged_corpus_dataframe = self.merged_corpus_dataframe.sample(frac=1).reset_index(drop=True)
@@ -185,7 +188,7 @@ class CorpusMerger:
         # Enregistrer le corpus (au format csv ou parquet)
         if not os.path.exists("./data/input/merged_corpus/"):
             os.makedirs("./data/input/merged_corpus/")
-        topics_names = "_".join(set(self.topics))
+        topics_names = "_".join(sorted(set(self.topics)))
         path = "./data/input/merged_corpus/corpus_" + topics_names + "." + output_format
         if(output_format == "csv"):
             self.merged_corpus_dataframe.to_csv(path, index=False, encoding="utf-8")

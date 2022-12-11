@@ -24,9 +24,8 @@ from pathlib import Path, PureWindowsPath
 pd.set_option("display.precision", 2)
 pd.set_option('display.max_colwidth', 40)
 from lib_general import *
-sys.path.append(PureWindowsPath(r"C:\Users\eupho\OneDrive\Documents\perso\projets\classification_texte_bapteme_philo\sources\create_dataset").as_posix())
-from lib_create_corpus import *
-from lib_merge_corpus import *
+# sys.path.append(PureWindowsPath(r"C:\Users\eupho\OneDrive\Documents\perso\projets\classification_texte_bapteme_philo\sources\create_dataset").as_posix())
+sys.path.append("../..")
 
 import sys
 sys.path.append("../")
@@ -58,6 +57,14 @@ def get_merged_corpus_filenames(sys_argv):
 		filenames = [filename.split(input_repertory)[1] for filename in filenames] # enlever le path entier, garder que le nom du fichier
 
 	return(filenames)
+
+
+def get_merged_corpus_dataframe_from_filename(filename, format):
+	if(format == "csv"):
+		df = pd.read_csv("./data/input/merged_corpus/" + filename, encoding="utf-8")
+	elif(format == "parquet"):
+		df = pd.read_parquet("./data/input/merged_corpus/" + filename)
+	return(df)
 
 
 def get_balanced_binary_dataset(data, class_col_name):
@@ -318,6 +325,7 @@ def get_all_learning_curves(model, X_train, y_train, cv_param, scorings, train_s
     dataset_name (string) : Dossier des sorties du dataframe etudie
     """
     for scoring in scorings:
+        print("scoring = ", scoring)
         get_learning_curve(model, X_train, y_train, cv_param, scoring, train_sizes, n_jobs, 
                             savefig, dataset_name, plotfig)
 
@@ -350,19 +358,20 @@ def plot_roc(y_true, y_pred):
     plt.show()
 
 
-def select_models(filenames):
+def select_models(filenames, format_input):
     """Lance la selection de modeles (cross validation et learning curves)
 
     Parametres: 
     filenames (liste des string) : Les fichiers des differents datasets sur lesquels on execute cette fonction 
     """
     # Initialisation des variables necessaires
-    input_or_output = "input"
     id_col_name = "id"
     features_col_names = "message_preprocessed" 
     # class_col_name = "category"
     class_col_name = "category_bin"
     savefig = True
+    print("in select_models()")
+    print("current dir = ", os.getcwd())
 
     for filename in filenames:
         # Recupere le nom du dataset grace au nom du fichier du dataset filename
@@ -370,8 +379,10 @@ def select_models(filenames):
         corpus_name = filename.split(".")[0]
 
         # Importer le dataset puis equilibrer ses classes
-        corpus = get_merged_corpus_table_from_filename(filename)
+        corpus = get_merged_corpus_dataframe_from_filename(filename, format_input)
+        print(corpus["category_bin"].value_counts())
         corpus = get_balanced_binary_dataset(corpus, class_col_name)
+        print(corpus["category_bin"].value_counts())
 
         # Verifier la presence ou non de doublons
         check_duplicates(corpus, id_col_name)
@@ -385,22 +396,23 @@ def select_models(filenames):
             os.makedirs("./data/output/" + corpus_name, exist_ok=True)
 
         # Cross validation
-        scorings = ['accuracy', 'f1_macro']
-        num_iter = 2 #nombre de repetitions de la k-fold cross validation entiere
-        k = 10 #k de la k-fold cross validation
-        do_cross_validation(X_train_tfidf, y_train, scorings, num_iter, k, corpus_name)
+        # scorings = ['accuracy', 'f1_macro', "recall", "precision"]
+        # num_iter = 2 #nombre de repetitions de la k-fold cross validation entiere
+        # k = 10 #k de la k-fold cross validation
+        # do_cross_validation(X_train_tfidf, y_train, scorings, num_iter, k, corpus_name)
 
         ## Learning curves (du meilleur modele)
         k = 10
         kfold = RepeatedStratifiedKFold(n_splits=k, n_repeats=20, random_state=None)
         cv_param = kfold
         num_experiences = 4
-        train_sizes = np.linspace(0.1, 1.0, num_experiences)
-        n_jobs = -1
+        train_sizes = np.linspace(0.2, 1.0, num_experiences)
+        # n_jobs = -1
         model = SVC()
 
         scorings = ['accuracy', 'f1_macro', 'recall', 'precision']
         get_all_learning_curves(model, X_train_tfidf, y_train, cv_param, scorings, train_sizes, n_jobs=-1, 
                                     savefig=savefig, dataset_name=corpus_name)
+        
         # get_all_learning_curves(model, X_train, y_train, cv_param, scorings, train_sizes, n_jobs=-1, 
         #                     savefig=False, dataset_name="", plotfig=False)
