@@ -219,7 +219,7 @@ def do_cross_validation(X_train, y_train, scorings, num_iter, k, dataset_name=""
     f.close()
 
 
-def get_confusion_matrix(y_test, y_pred, model):
+def get_confusion_matrix(y_test, y_pred, model, savefig=True, dataset_name="", plotfig=True):
     """Affiche la matrice de confusion
 
     Parametres: 
@@ -253,6 +253,11 @@ def get_confusion_matrix(y_test, y_pred, model):
     # xlabel = 'Catégories prédites\n\n Exactitude (bien classés) = {:0.2f} % ; Inexactitude (mal classés) = {:0.2f} %\n Précision (bonnes prédictions de robots / qualité) = {:0.2f} %\n Rappel (nombre de robots détectés / quantité) = {:0.2f} %\n F1 (synthèse de précision + rappel) = {:0.2f} %'.format(accuracy, (100 - accuracy), precision, recall, f1_score)
     plt.xlabel("Catégories prédites", fontsize=font_size + 3)
     plt.ylabel("Catégories réelles", fontsize=font_size + 3)
+    if(savefig):
+        path = "./data/output/{}/confusion_matrix_{}_{}".format(dataset_name, model.__class__.__name__)
+        plt.savefig(path)
+    if(plotfig):
+        plt.show()
 
 
 #Entrees
@@ -330,7 +335,7 @@ def get_all_learning_curves(model, X_train, y_train, cv_param, scorings, train_s
                             savefig, dataset_name, plotfig)
 
 
-def plot_roc(y_true, y_pred):
+def plot_roc(model, y_true, y_pred, savefig=True, dataset_name="", plotfig=True):
     """Affiche la courbe roc
 
     Parametres: 
@@ -355,7 +360,14 @@ def plot_roc(y_true, y_pred):
     plt.ylabel("True Positive Rate")
     plt.title("Receiver operating characteristic example")
     plt.legend(loc="lower right")
-    plt.show()
+    if(savefig):
+        path = "./data/output/{}/roc_{}_{}".format(dataset_name, model.__class__.__name__)
+        plt.savefig(path)
+    if(plotfig):
+        plt.show()
+
+
+def get_classification_report()
 
 
 def select_models(filenames, format_input):
