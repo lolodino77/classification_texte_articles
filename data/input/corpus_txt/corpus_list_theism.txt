@@ -1,2 +1,0 @@
-corpus_alexanderpruss.txt
-corpus_edwardfeser.txt

@@ -216,7 +216,12 @@ def do_cross_validation(X_train, y_train, scorings, num_iter, k, dataset_name=""
     f.close()
 
 
-def get_confusion_matrix(y_test, y_pred, class_names, model, savefig=True, dataset_name="", plotfig=False):
+def make_output_dir(dataset_name):
+    if not os.path.exists("./data/output/{}".format(dataset_name)):
+        os.makedirs("./data/output/{}".format(dataset_name)) 
+
+
+def save_confusion_matrix(y_test, y_pred, class_names, model, dataset_name=""):
     """Affiche la matrice de confusion
 
     Parametres: 
@@ -255,21 +260,17 @@ def get_confusion_matrix(y_test, y_pred, class_names, model, savefig=True, datas
     plt.xlabel("Catégories prédites", fontsize=font_size + 3)
     plt.ylabel("Catégories réelles", fontsize=font_size + 3)
     print("dataset_name =", dataset_name)
-    if(savefig):
-        if not os.path.exists("./data/output/{}".format(dataset_name)):
-            os.makedirs("./data/output/{}".format(dataset_name)) 
-        path = "./data/output/{}/confusion_matrix_{}".format(dataset_name, model.__class__.__name__)
-        plt.savefig(path)
-    if(plotfig):
-        plt.show()
+
+    path = "./data/output/{}/confusion_matrix_{}".format(dataset_name, model.__class__.__name__)
+    plt.savefig(path)
 
 
 #Entrees
     #train_sizes (liste de float) : tailles du train en pourcentage 
     # y_train (numpy ndarray int) : Les etiquettes au format int (le format string ne marche pas)
     #cv_param : parametres de type kfold pour la cross validation
-def get_learning_curve(model, X_train, y_train, cv_param, scoring, train_sizes, n_jobs=-1, 
-                        savefig=True, dataset_name="", plotfig=True):
+def save_learning_curve(model, X_train, y_train, cv_param, scoring, train_sizes, n_jobs=-1, 
+                        dataset_name=""):
     """Affiche la learning curve du modele selectionne selon un critere
        Learning curve = performances du modele (selon un critere) en fonction de la taille du trainset
 
@@ -305,15 +306,14 @@ def get_learning_curve(model, X_train, y_train, cv_param, scoring, train_sizes, 
     plt.xlabel("Taille du trainset", fontsize=18)
     plt.ylabel(scoring.capitalize(), fontsize=18)
     plt.legend(loc="upper right", prop={'size': 16})
-    if(savefig):
-        path = "./data/output/{}/learning_curve_{}_{}".format(dataset_name, model.__class__.__name__, scoring)
-        plt.savefig(path)
-    if(plotfig):
-        plt.show()
+    
+    path = "./data/output/{}/learning_curve_{}_{}".format(dataset_name, model.__class__.__name__, scoring)
+    plt.savefig(path)
 
 
-def get_all_learning_curves(model, X_train, y_train, cv_param, scorings, train_sizes, n_jobs=-1, 
-                            savefig=False, dataset_name="", plotfig=False):
+
+def save_all_learning_curves(model, X_train, y_train, cv_param, scorings, train_sizes, n_jobs=-1, 
+                            dataset_name=""):
     """Affiche les learning curves du modele selectionne selon les critere choisis par l'utilisateur
        Learning curve = performances du modele (selon un critere) en fonction de la taille du trainset
 
@@ -330,16 +330,15 @@ def get_all_learning_curves(model, X_train, y_train, cv_param, scorings, train_s
     train_sizes (liste de float) : La liste des tailles des train (en pourcentage du train total original)
                                    Exemple : [0.2, 0.5, 0.7] = 20 % du train, 50 % du train, 70 % du train
     n_jobs (int) : Le nombre de jobs
-    savefig (string) : Indique si on enregistre les learning curves dans une image
     dataset_name (string) : Dossier des sorties du dataframe etudie
     """
     for scoring in scorings:
-        print("scoring = ", scoring)
-        get_learning_curve(model, X_train, y_train, cv_param, scoring, train_sizes, n_jobs, 
-                            savefig, dataset_name, plotfig)
+        print("scoring =", scoring)
+        save_learning_curve(model, X_train, y_train, cv_param, scoring, train_sizes, n_jobs, 
+                            dataset_name)
 
 
-def get_roc(model, y_true, y_pred, savefig=True, dataset_name="", plotfig=False):
+def save_roc(model, y_true, y_pred, dataset_name=""):
     """Affiche la courbe roc
 
     Parametres: 
@@ -364,17 +363,55 @@ def get_roc(model, y_true, y_pred, savefig=True, dataset_name="", plotfig=False)
     plt.ylabel("True Positive Rate", fontsize=18)
     plt.title("Receiver operating characteristic example", fontsize=19)
     plt.legend(loc="lower right", prop={'size': 16})
-    if(savefig):
-        path = "./data/output/{}/roc_{}".format(dataset_name, model.__class__.__name__)
-        plt.savefig(path)
-    if(plotfig):
-        plt.show()
 
-
-def get_classification_report(y_test, y_pred, dataset_name, model):
-    report = classification_report(y_test, y_pred)
     path = "./data/output/{}/roc_{}".format(dataset_name, model.__class__.__name__)
-    
+    plt.savefig(path)
+
+
+def save_classification_report(y_test, y_pred, dataset_name, model):
+    report = classification_report(y_test, y_pred)
+    print("type report = ", type(report))
+    print("report =", report)
+    path = "./data/output/{}/classification_report_{}.txt".format(dataset_name, model.__class__.__name__)
+    f = open(path, "w")
+    f.write(report)
+    f.close()
+
+
+def save_false_predictions(corpus, dataset_name, indices_test, y_test, y_pred, class_names):
+    # On enregistre les messages a propos desquels le modele s'est trompe
+    corpus_test = pd.DataFrame({"id":corpus.iloc[indices_test].id, "message": corpus.iloc[indices_test].message, "truth":y_test, "pred":y_pred})
+    corpus_test_errors = corpus_test.query("truth != pred")
+    corpus_test_errors = corpus_test_errors[["id", "truth", "pred", "message"]]
+    corpus_test_errors["truth"] = np.select([corpus_test_errors["truth"] == 0], [class_names["0"]], default=class_names["1"])
+    corpus_test_errors["pred"] = np.select([corpus_test_errors["pred"] == 0], [class_names["0"]], default=class_names["1"])
+    corpus_test_errors.to_csv("./data/output/{}/false_predictions.csv".format(dataset_name), index=False, header=True)
+
+
+def save_model_diagnostics(corpus, X_train, y_train, y_test, y_pred, indices_test, class_names, model, 
+                            dataset_name):
+    # Classification report
+    save_classification_report(y_test, y_pred, dataset_name, model)
+
+    # Matrice de confusion
+    save_confusion_matrix(y_test, y_pred, class_names, model, dataset_name)
+
+    # Courbe ROC
+    save_roc(model, y_test, y_pred, dataset_name)
+
+    # Learning curves
+    k = 10
+    kfold = RepeatedStratifiedKFold(n_splits=k, n_repeats=20, random_state=None)
+    cv_param = kfold
+    num_experiences = 4
+    train_sizes = np.linspace(0.2, 1.0, num_experiences)
+    n_jobs = -1
+    scorings = ['accuracy', 'f1_macro', 'recall', 'precision']
+    save_all_learning_curves(model, X_train, y_train, cv_param, scorings, train_sizes, n_jobs, 
+                                dataset_name)
+
+    # False predictions
+    save_false_predictions(corpus, dataset_name, indices_test, y_test, y_pred, class_names)
 
 
 def select_models(filenames, format_input):
@@ -410,10 +447,6 @@ def select_models(filenames, format_input):
         X_train, X_test, y_train, y_test, indices_train, indices_test = get_train_and_test(corpus, features_col_names, class_col_name, id_col_name)
         X_train_tfidf, X_test_tfidf = apply_tfidf_to_train_and_test(X_train, X_test)
 
-        # Creation du dossier de sorties si besoin
-        if(savefig):
-            os.makedirs("./data/output/" + corpus_name, exist_ok=True)
-
         # Cross validation
         # scorings = ['accuracy', 'f1_macro', "recall", "precision"]
         # num_iter = 2 #nombre de repetitions de la k-fold cross validation entiere
@@ -421,17 +454,14 @@ def select_models(filenames, format_input):
         # do_cross_validation(X_train_tfidf, y_train, scorings, num_iter, k, corpus_name)
 
         ## Learning curves (du meilleur modele)
-        k = 10
-        kfold = RepeatedStratifiedKFold(n_splits=k, n_repeats=20, random_state=None)
-        cv_param = kfold
-        num_experiences = 4
-        train_sizes = np.linspace(0.2, 1.0, num_experiences)
-        # n_jobs = -1
-        model = SVC()
+        # k = 10
+        # kfold = RepeatedStratifiedKFold(n_splits=k, n_repeats=20, random_state=None)
+        # cv_param = kfold
+        # num_experiences = 4
+        # train_sizes = np.linspace(0.2, 1.0, num_experiences)
+        # # n_jobs = -1
+        # model = SVC()
 
-        scorings = ['accuracy', 'f1_macro', 'recall', 'precision']
-        get_all_learning_curves(model, X_train_tfidf, y_train, cv_param, scorings, train_sizes, n_jobs=-1, 
-                                    savefig=savefig, dataset_name=corpus_name)
-        
-        # get_all_learning_curves(model, X_train, y_train, cv_param, scorings, train_sizes, n_jobs=-1, 
-        #                     savefig=False, dataset_name="", plotfig=False)
+        # scorings = ['accuracy', 'f1_macro', 'recall', 'precision']
+        # save_all_learning_curves(model, X_train_tfidf, y_train, cv_param, scorings, train_sizes, n_jobs=-1, 
+        #                             dataset_name=corpus_name)

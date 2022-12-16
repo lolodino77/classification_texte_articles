@@ -14,11 +14,8 @@ sys.path.append("../")
 
 def test_corpusMerger(corpus_txt_list_filename, output_format, language):
     corpusMerger = CorpusMerger(corpus_txt_list_filename, language)
-    # print(corpusMerger)
-    # print(corpusMerger.merged_corpus_dataframe.value_counts("category"))
     corpusMerger.preprocess_merged_corpus_dataframe()
     corpusMerger.save_merged_corpus_dataframe(output_format)
-    # print(corpusMerger)
 
 
 def main():
