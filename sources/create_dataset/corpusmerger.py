@@ -1,3 +1,7 @@
+import os
+import sys
+sys.path.insert(0, "..")
+from lib_general import *
 import pandas as pd
 import numpy as np
 import os
@@ -7,7 +11,7 @@ import nltk
 from nltk.stem import WordNetLemmatizer
 from french_lefff_lemmatizer.french_lefff_lemmatizer import FrenchLefffLemmatizer
 from sklearn.preprocessing import LabelEncoder
-
+import joblib
 
 class CorpusMerger:
     """ Classe pour fusionner plusieurs corpus en un seul corpus
@@ -19,7 +23,9 @@ class CorpusMerger:
         self.language = language
         self.corpus_txt_list_filename = corpus_txt_list_filename
         self.corpus_txt_filenames, self.topics = self.create_corpus_txt_filenames_and_topics() 
+        self.topics_names_concat = "_".join(sorted(set(self.topics)))
         self.corpus_dataframes = self.create_corpus_dataframes()
+        self.merged_corpus_name = self.create_merged_corpus_name()
         self.merged_corpus_dataframe = self.create_merged_corpus_dataframe()
 
 
@@ -38,7 +44,16 @@ class CorpusMerger:
         return(desc)
 
 
+    def create_merged_corpus_name(self):
+        corpus_txt_names = []
+        for filename in self.corpus_txt_filenames:
+            corpus_txt_names.append(get_corpus_name_from_filename(filename))
+        merged_corpus_name = "_".join(corpus_txt_names)
+        return(merged_corpus_name)
+
+
     def create_corpus_txt_filenames_and_topics(self):
+        """ Topics definis a partir du fichier corpus_txt_list_filename """
         f = open("./data/input/corpus_txt/" + self.corpus_txt_list_filename, "r",
                     encoding="utf-8")
         corpus_txt_filenames = []
@@ -161,6 +176,8 @@ class CorpusMerger:
         # self.merged_corpus_dataframe["category_bin"] = np.select([self.merged_corpus_dataframe["category"] == class_1], [1], default=0)
         LE = LabelEncoder()
         self.merged_corpus_dataframe["category_bin"] = LE.fit_transform(self.merged_corpus_dataframe["category"]) 
+        joblib.dump(LE, "./data/input/merged_corpus/labelEncoder_category_{}.joblib".format(self.topics_names_concat), 
+                    compress=9)
 
         # Melange aleatoire des documents
         self.merged_corpus_dataframe = self.merged_corpus_dataframe.sample(frac=1).reset_index(drop=True)
@@ -188,8 +205,7 @@ class CorpusMerger:
         # Enregistrer le corpus (au format csv ou parquet)
         if not os.path.exists("./data/input/merged_corpus/"):
             os.makedirs("./data/input/merged_corpus/")
-        topics_names = "_".join(sorted(set(self.topics)))
-        path = "./data/input/merged_corpus/corpus_" + topics_names + "." + output_format
+        path = "./data/input/merged_corpus/corpus_" + self.topics_names_concat + "." + output_format
         if(output_format == "csv"):
             self.merged_corpus_dataframe.to_csv(path, index=False, encoding="utf-8")
             corpus = pd.read_csv(path)

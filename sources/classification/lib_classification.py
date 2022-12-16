@@ -1,5 +1,6 @@
 import sys
 import os
+sys.path.insert(0, "..\..")
 import glob
 import numpy as np
 import pandas as pd
@@ -25,10 +26,6 @@ pd.set_option("display.precision", 2)
 pd.set_option('display.max_colwidth', 40)
 from lib_general import *
 # sys.path.append(PureWindowsPath(r"C:\Users\eupho\OneDrive\Documents\perso\projets\classification_texte_bapteme_philo\sources\create_dataset").as_posix())
-sys.path.append("../..")
-
-import sys
-sys.path.append("../")
 
 def get_merged_corpus_filenames(sys_argv):
     # python 2_model_selection.py command parquet corpus_edwardfeser_exapologist.parquet corpus_alexanderpruss_edwardfeser.parquet
@@ -219,19 +216,23 @@ def do_cross_validation(X_train, y_train, scorings, num_iter, k, dataset_name=""
     f.close()
 
 
-def get_confusion_matrix(y_test, y_pred, model, savefig=True, dataset_name="", plotfig=True):
+def get_confusion_matrix(y_test, y_pred, class_names, model, savefig=True, dataset_name="", plotfig=False):
     """Affiche la matrice de confusion
 
     Parametres: 
     y_test (numpy ndarray) : Les etiquettes au format int (le format string ne marche pas)
-    y_pred (numpy ndarray) : Les parametres du test  
+    y_pred (numpy ndarray) : Les parametres du test
+    class_names (dictionary) : {"0":class_zero_name_map, "1":class_one_name_map}
     tfidf_vectorizer (TfidfVectorizer) : La fonction tfidf (contenant entre autres le vocabulaire du train)                              
-    """    
+    """
     # Matrice de confusion
-    false_label = "0 : Bapteme"
-    true_label = "1 : Philosophie"
+    class_zero_name = class_names["0"]
+    class_one_name = class_names["1"]
+    class_zero_name_map = "0 : {}".format(class_zero_name) #"0 : Philosophie"
+    class_one_name_map = "1 : {}".format(class_one_name) #"1 : Philosophie"
     confusion_matrix_var = confusion_matrix(y_test, y_pred, labels=model.classes_)
-    group_names = ["Vrais baptême", "Faux philosophie", "Faux baptême", "Vrais philosophie"]
+    group_names = ["Vrais {}".format(class_zero_name), "Faux {}".format(class_one_name), 
+                    "Faux {}".format(class_zero_name), "Vrais {}".format(class_one_name)]
     group_counts = ["{0:0.0f}".format(value) for value in
                     confusion_matrix_var.flatten()]
     group_percentages = ["{0:.2%}".format(value) for value in
@@ -245,16 +246,19 @@ def get_confusion_matrix(y_test, y_pred, model, savefig=True, dataset_name="", p
                     annot=labels, fmt="", cmap='Blues',
                     annot_kws={"size": font_size}, 
                     cbar_kws={'label': 'Nombre de sessions'})
-    ax.set_xticklabels([false_label, true_label], Fontsize=font_size + 3)
-    ax.set_yticklabels([false_label, true_label], Fontsize=font_size + 3)
+    ax.set_xticklabels([class_zero_name_map, class_one_name_map], Fontsize=font_size + 3)
+    ax.set_yticklabels([class_zero_name_map, class_one_name_map], Fontsize=font_size + 3)
     ax.figure.axes[-1].yaxis.label.set_size(font_size + 1)
     ax.figure.axes[-1].tick_params(labelsize=font_size - 2) 
     plt.title("Matrice de confusion", fontsize = font_size + 5)
     # xlabel = 'Catégories prédites\n\n Exactitude (bien classés) = {:0.2f} % ; Inexactitude (mal classés) = {:0.2f} %\n Précision (bonnes prédictions de robots / qualité) = {:0.2f} %\n Rappel (nombre de robots détectés / quantité) = {:0.2f} %\n F1 (synthèse de précision + rappel) = {:0.2f} %'.format(accuracy, (100 - accuracy), precision, recall, f1_score)
     plt.xlabel("Catégories prédites", fontsize=font_size + 3)
     plt.ylabel("Catégories réelles", fontsize=font_size + 3)
+    print("dataset_name =", dataset_name)
     if(savefig):
-        path = "./data/output/{}/confusion_matrix_{}_{}".format(dataset_name, model.__class__.__name__)
+        if not os.path.exists("./data/output/{}".format(dataset_name)):
+            os.makedirs("./data/output/{}".format(dataset_name)) 
+        path = "./data/output/{}/confusion_matrix_{}".format(dataset_name, model.__class__.__name__)
         plt.savefig(path)
     if(plotfig):
         plt.show()
@@ -335,7 +339,7 @@ def get_all_learning_curves(model, X_train, y_train, cv_param, scorings, train_s
                             savefig, dataset_name, plotfig)
 
 
-def plot_roc(model, y_true, y_pred, savefig=True, dataset_name="", plotfig=True):
+def get_roc(model, y_true, y_pred, savefig=True, dataset_name="", plotfig=False):
     """Affiche la courbe roc
 
     Parametres: 
@@ -356,18 +360,21 @@ def plot_roc(model, y_true, y_pred, savefig=True, dataset_name="", plotfig=True)
     plt.plot([0, 1], [0, 1], color="navy", lw=lw, linestyle="--")
     plt.xlim([0.0, 1.0])
     plt.ylim([0.0, 1.05])
-    plt.xlabel("False Positive Rate")
-    plt.ylabel("True Positive Rate")
-    plt.title("Receiver operating characteristic example")
-    plt.legend(loc="lower right")
+    plt.xlabel("False Positive Rate", fontsize=18)
+    plt.ylabel("True Positive Rate", fontsize=18)
+    plt.title("Receiver operating characteristic example", fontsize=19)
+    plt.legend(loc="lower right", prop={'size': 16})
     if(savefig):
-        path = "./data/output/{}/roc_{}_{}".format(dataset_name, model.__class__.__name__)
+        path = "./data/output/{}/roc_{}".format(dataset_name, model.__class__.__name__)
         plt.savefig(path)
     if(plotfig):
         plt.show()
 
 
-def get_classification_report()
+def get_classification_report(y_test, y_pred, dataset_name, model):
+    report = classification_report(y_test, y_pred)
+    path = "./data/output/{}/roc_{}".format(dataset_name, model.__class__.__name__)
+    
 
 
 def select_models(filenames, format_input):

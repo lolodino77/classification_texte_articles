@@ -52,6 +52,12 @@ def get_file_extension(filename):
 	return(extension)
 
 
+def get_corpus_name_from_filename(filename):
+	""" input : corpus_chat_chien.csv ==> output : chat_chien"""
+	corpus_name = filename.split(".")[0].split("corpus_")[1]
+	return(corpus_name)
+
+
 def check_duplicates(data, id_col_name):
 	"""Verifie la presence ou non de doublons dans un dataframe
 
