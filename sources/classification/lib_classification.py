@@ -27,41 +27,36 @@ pd.set_option('display.max_colwidth', 40)
 from lib_general import *
 # sys.path.append(PureWindowsPath(r"C:\Users\eupho\OneDrive\Documents\perso\projets\classification_texte_bapteme_philo\sources\create_dataset").as_posix())
 
-def get_merged_corpus_filenames(sys_argv):
-    # python 2_model_selection.py command parquet corpus_edwardfeser_exapologist.parquet corpus_alexanderpruss_edwardfeser.parquet
-    # python 2_model_selection.py ./data/input/ parquet
-    # python 2_model_selection.py ./data/input/ csv
-    # python 2_model_selection.py ./data/input/ all
-    
-    #argv[0] = le nom du fichier python execute
-	files_to_open = sys_argv[1] # argument du script, si files_to_open==command execute le script sur les 
-	# fichiers (datasets) entres en arguments dans la ligne de commande, 
-	# mais si files_to_open!=command execute le script sur tous les fichiers du dossier ./data/input
+def get_merged_corpus_filenames(argv):
+    # python 2_model_selection.py corpus_edwardfeser_exapologist.parquet
+    # python 2_model_selection.py corpus_edwardfeser_exapologist.csv
+    # python 2_model_selection.py all : model selection on all files (csv and parquet)
+    # python 2_model_selection.py all csv : model selection on all csv files
+    # python 2_model_selection.py all parquet : model selection on all parquet files
 
-	files_format = sys_argv[2] # format des fichiers datasets a ouvrir (parquet, csv, etc.), multiple si plusieurs formats
-	print("len(sys_argv) =", len(sys_argv))
-	# sert quand files_to_open==in_input_repertory, pour n'importer que les parquet, ou que les csv, etc.
+    # argv[1] = input files : "all" or "corpus_name.csv" or "corpus_name.parquet"
+    # argv[2] = input files format : only if argv[1] == "all", equals "csv" or "parquet"
 
-	if(files_to_open == "command"):
-		if(len(sys_argv) == 3): # cas quand il n'y a qu'un seul dataset => il faut creer une liste
-			filenames = [sys_argv[3]]
-		else: #cas quand il y a au moins deux datasets => pas besoin de creer de liste
-			filenames = sys_argv[3:] # ignorer les 2 premiers arguments, le nom du script et files_to_open
-	else:
-		input_repertory = files_to_open.replace("/", "\\") # "/data/input/" ==> '\\data\\input\\'
-		print("files in input : input_repertory =", input_repertory)
-		filenames = glob.glob(os.path.join(input_repertory + "*." + files_format))
-		filenames = [filename.split(input_repertory)[1] for filename in filenames] # enlever le path entier, garder que le nom du fichier
-
-	return(filenames)
+    input_files = argv[1]
+    filenames = input_files
+    output = [filenames]
+    if(input_files == "all"):
+        input_files_format = argv[2]
+        input_repertory = ".\\data\\input\\merged_corpus\\" #\\ et pas / car os renvoie \\
+        filenames = glob.glob(os.path.join(input_repertory + "*." + input_files_format))
+        print("filenames =", filenames)
+        filenames = [filename.split(input_repertory)[1] for filename in filenames] # enlever le path entier, garder que le nom du fichier
+        output = [filenames, input_files_format]
+    return(output)
 
 
-def get_merged_corpus_dataframe_from_filename(filename, format):
-	if(format == "csv"):
-		df = pd.read_csv("./data/input/merged_corpus/" + filename, encoding="utf-8")
-	elif(format == "parquet"):
-		df = pd.read_parquet("./data/input/merged_corpus/" + filename)
-	return(df)
+def get_merged_corpus_dataframe_from_filename(filename):
+    format = filename.split(".")[1]
+    if(format == "csv"):
+       df = pd.read_csv("./data/input/merged_corpus/" + filename, encoding="utf-8")
+    elif(format == "parquet"):
+        df = pd.read_parquet("./data/input/merged_corpus/" + filename)
+    return(df)
 
 
 def get_balanced_binary_dataset(data, class_col_name):
@@ -171,7 +166,7 @@ def apply_tfidf_to_train_and_test(X_train, X_test):
     return(X_train_tfidf, X_test_tfidf)
 
 
-def do_cross_validation(X_train, y_train, scorings, num_iter, k, dataset_name=""):
+def save_cross_validation(X_train, y_train, scorings, num_iter, k, dataset_name=""):
     """Equilibre un dataset binaire non equilibre : il aura le meme nombre d'exemples de chaque classe
 
     Parametres: 
@@ -192,18 +187,19 @@ def do_cross_validation(X_train, y_train, scorings, num_iter, k, dataset_name=""
     #Selection de modeles avec la k cross validation pour determiner le meilleur
 
     models = []
-    models.append(('LR', LogisticRegression(solver='liblinear', multi_class='ovr')))
+    # models.append(('LR', LogisticRegression(solver='liblinear', multi_class='ovr')))
     models.append(('AdaBoostClassifier', AdaBoostClassifier()))
-    models.append(('KNN', KNeighborsClassifier()))
+    # models.append(('KNN', KNeighborsClassifier()))
     models.append(('RandomForest', RandomForestClassifier()))
     # models.append(('MLPClassifier', MLPClassifier(max_iter=100))) car diverge donc trop long
-    models.append(('SGDClassifier', SGDClassifier()))
-    models.append(('SVM', SVC()))
-    models.append(('DecisionTreeClassifier', DecisionTreeClassifier()))
+    # models.append(('SGDClassifier', SGDClassifier()))
+    # models.append(('SVM', SVC()))
+    # models.append(('DecisionTreeClassifier', DecisionTreeClassifier()))
     
     # evaluate each model in turn
     print("models =", models)
     path = "./data/output/{}/cross_validation_results.txt".format(dataset_name)
+    print("\n\nos.getcwd() =", os.getcwd())
     f = open(path, "w")
 
     for name, model in models:
@@ -311,7 +307,6 @@ def save_learning_curve(model, X_train, y_train, cv_param, scoring, train_sizes,
     plt.savefig(path)
 
 
-
 def save_all_learning_curves(model, X_train, y_train, cv_param, scorings, train_sizes, n_jobs=-1, 
                             dataset_name=""):
     """Affiche les learning curves du modele selectionne selon les critere choisis par l'utilisateur
@@ -414,54 +409,43 @@ def save_model_diagnostics(corpus, X_train, y_train, y_test, y_pred, indices_tes
     save_false_predictions(corpus, dataset_name, indices_test, y_test, y_pred, class_names)
 
 
-def select_models(filenames, format_input):
+def select_models(corpus, corpus_name, id_col_name, class_col_name, features_col_names):
+    print(corpus["category_bin"].value_counts())
+    corpus = get_balanced_binary_dataset(corpus, class_col_name)
+    print(corpus["category_bin"].value_counts())
+
+    # Verifier la presence ou non de doublons
+    check_duplicates(corpus, id_col_name)
+
+    # Creation du train et du test
+    X_train, X_test, y_train, y_test, indices_train, indices_test = get_train_and_test(corpus, features_col_names, class_col_name, id_col_name)
+    X_train_tfidf, X_test_tfidf = apply_tfidf_to_train_and_test(X_train, X_test)
+
+    # Cross validation
+    scorings = ['accuracy', 'f1_macro', "recall", "precision"]
+    num_iter = 2 #nombre de repetitions de la k-fold cross validation entiere
+    k = 10 #k de la k-fold cross validation
+    print("corpus_name =", corpus_name)
+    save_cross_validation(X_train_tfidf, y_train, scorings, num_iter, k, corpus_name)
+
+    ## Learning curves (du meilleur modele)
+    # k = 10
+    # kfold = RepeatedStratifiedKFold(n_splits=k, n_repeats=20, random_state=None)
+    # cv_param = kfold
+    # num_experiences = 4
+    # train_sizes = np.linspace(0.2, 1.0, num_experiences)
+    # # n_jobs = -1
+    # model = SVC()
+
+    # scorings = ['accuracy', 'f1_macro', 'recall', 'precision']
+    # save_all_learning_curves(model, X_train_tfidf, y_train, cv_param, scorings, train_sizes, n_jobs=-1, 
+    #                             dataset_name=corpus_name)
+
+
+def select_models_on_multiple_corpus(filenames, format_input):
     """Lance la selection de modeles (cross validation et learning curves)
 
     Parametres: 
     filenames (liste des string) : Les fichiers des differents datasets sur lesquels on execute cette fonction 
+    input_type : "file" or "dataframe"
     """
-    # Initialisation des variables necessaires
-    id_col_name = "id"
-    features_col_names = "message_preprocessed" 
-    # class_col_name = "category"
-    class_col_name = "category_bin"
-    savefig = True
-    print("in select_models()")
-    print("current dir = ", os.getcwd())
-
-    for filename in filenames:
-        # Recupere le nom du dataset grace au nom du fichier du dataset filename
-        print("filename =", filename)
-        corpus_name = filename.split(".")[0]
-
-        # Importer le dataset puis equilibrer ses classes
-        corpus = get_merged_corpus_dataframe_from_filename(filename, format_input)
-        print(corpus["category_bin"].value_counts())
-        corpus = get_balanced_binary_dataset(corpus, class_col_name)
-        print(corpus["category_bin"].value_counts())
-
-        # Verifier la presence ou non de doublons
-        check_duplicates(corpus, id_col_name)
-
-        # Creation du train et du test
-        X_train, X_test, y_train, y_test, indices_train, indices_test = get_train_and_test(corpus, features_col_names, class_col_name, id_col_name)
-        X_train_tfidf, X_test_tfidf = apply_tfidf_to_train_and_test(X_train, X_test)
-
-        # Cross validation
-        # scorings = ['accuracy', 'f1_macro', "recall", "precision"]
-        # num_iter = 2 #nombre de repetitions de la k-fold cross validation entiere
-        # k = 10 #k de la k-fold cross validation
-        # do_cross_validation(X_train_tfidf, y_train, scorings, num_iter, k, corpus_name)
-
-        ## Learning curves (du meilleur modele)
-        # k = 10
-        # kfold = RepeatedStratifiedKFold(n_splits=k, n_repeats=20, random_state=None)
-        # cv_param = kfold
-        # num_experiences = 4
-        # train_sizes = np.linspace(0.2, 1.0, num_experiences)
-        # # n_jobs = -1
-        # model = SVC()
-
-        # scorings = ['accuracy', 'f1_macro', 'recall', 'precision']
-        # save_all_learning_curves(model, X_train_tfidf, y_train, cv_param, scorings, train_sizes, n_jobs=-1, 
-        #                             dataset_name=corpus_name)

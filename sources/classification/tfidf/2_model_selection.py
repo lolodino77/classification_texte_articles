@@ -27,32 +27,49 @@ from lib_general import *
 from lib_classification import *
 
 
+# python 2_model_selection.py corpus_edwardfeser_exapologist.parquet
+# python 2_model_selection.py corpus_edwardfeser_exapologist.csv
+# python 2_model_selection.py corpus_feser_pruss.csv
+# python 2_model_selection.py all : model selection on all files (csv and parquet)
+# python 2_model_selection.py all csv : model selection on all csv files
+# python 2_model_selection.py all parquet : model selection on all parquet files
+
+# argv[1] = input files : "all" or "corpus_name.csv" or "corpus_name.parquet"
+# argv[2] = input files format : only if argv[1] == "all", equals "csv" or "parquet"
+
 # Se rendre dans le dossier root
 set_current_directory_to_root(root = "classification_texte_articles_version_objet")
 print("os.getcwd() at root =", os.getcwd()) 
 
-# Ajout des paths necessaires pour importer les librairies perso
-# add_paths(paths = ["/sources/classification/"])
-# from lib_classification import *
-
-
-# Les differents cas d'executions :
-# python 2_model_selection.py command parquet data_history_baptism.parquet data_philosophy_baptism.parquet
-    # ==> Execute le script sur les datasets data_history_baptism.parquet data_philosophy_baptism.parquet
-# python 2_model_selection.py command parquet corpus_edwardfeser_exapologist.parquet corpus_alexanderpruss_edwardfeser.parquet
-# python 2_model_selection.py command parquet corpus_alexanderpruss_exapologist.parquet
-# python 2_model_selection.py ./data/input/merged_corpus/ parquet
-    # ==> Execute le script sur tous les datasets parquet dans ./data/input
 def main():
     print('Number of arguments:', len(sys.argv), 'arguments.')
     print('Argument List:', str(sys.argv))
 
-    sys_argv = sys.argv
-    format_input = sys_argv[2]
-    filenames = get_merged_corpus_filenames(sys_argv)
+    output = get_merged_corpus_filenames(sys.argv)
+    if(len(output) == 2):
+        print("len(output) == 2")
+        filenames, format_input = output
+        select_models_on_multiple_corpus(filenames, format_input)
+    elif(len(output) == 1):
+        filenames = output
     print("filenames =", filenames)
-    select_models(filenames, format_input)
-    
-    
+
+    # Initialisation des variables necessaires
+    id_col_name = "id"
+    class_col_name = "category_bin"
+    features_col_names = "message_preprocessed"
+
+    for filename in filenames:
+        # Recupere le nom du dataset grace au nom du fichier du dataset filename
+        print("filename =", filename)
+        corpus_name = get_corpus_name_from_filename(filename)
+        
+        # Creation du dossier de sorties si besoin
+        make_output_dir(corpus_name)
+
+        # Importer le dataset puis equilibrer ses classes
+        corpus = get_merged_corpus_dataframe_from_filename(filename)
+        select_models(corpus, corpus_name, id_col_name, class_col_name, features_col_names)
+
     
 main()
