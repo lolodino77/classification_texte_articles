@@ -499,11 +499,17 @@ def select_models(corpus, corpus_name, id_col_name, class_col_name, features_col
     models.append(('SVM', SVC()))
     models.append(('DecisionTreeClassifier', DecisionTreeClassifier()))
 
+    # scoring = 'precision'
+    # print("scoring =", scoring)
+    # save_learning_curves_multiple_models(models, X_train_tfidf, y_train, cv_param, scoring, train_sizes, n_jobs=-1, 
+    #                                     dataset_name=corpus_name)
+
     # scorings = ['accuracy', 'f1_macro', 'recall', 'precision']
-    scoring = 'precision'
-    print("scoring =", scoring)
-    save_learning_curves_multiple_models(models, X_train_tfidf, y_train, cv_param, scoring, train_sizes, n_jobs=-1, 
-                                        dataset_name=corpus_name)
+    scorings = ['accuracy', 'f1_macro', 'recall']
+    for scoring in scorings:
+        save_learning_curves_multiple_models(models, X_train_tfidf, y_train, cv_param, scoring, train_sizes, n_jobs=-1, 
+                                            dataset_name=corpus_name)
+
 
 
 def select_models_on_multiple_corpus(filenames, format_input):
