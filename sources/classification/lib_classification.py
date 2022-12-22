@@ -260,6 +260,63 @@ def save_confusion_matrix(y_test, y_pred, class_names, model, dataset_name=""):
     path = "./data/output/{}/confusion_matrix_{}".format(dataset_name, model.__class__.__name__)
     plt.savefig(path)
 
+from matplotlib.pyplot import cm
+import matplotlib.transforms as mtrans
+
+def save_learning_curves_multiple_models(models, X_train, y_train, cv_param, scoring, train_sizes, n_jobs=-1, 
+                                        dataset_name=""):
+    colors = iter(cm.rainbow(np.linspace(0, 1, len(models))))
+    fig, ax = plt.subplots(figsize=(14, 9))
+    linewidth = 3
+    trans_y = -4
+    # tr = mtrans.offset_copy(ax.transData, fig=fig, x=0.0, y=-(-3*i), units='points')
+
+    # plt.figure(figsize=(14, 9))
+    zip_list = list(zip(models, colors))
+    model_tuple, color = zip_list[0]
+    name, model = model_tuple
+    print("model =", name)
+    print("shape X_train =", len(y_train))
+    train_sizes, train_scores, cv_scores = learning_curve(model, X_train, y_train, cv=cv_param, scoring=scoring, n_jobs=n_jobs, train_sizes=train_sizes)
+    train_scores_mean = np.mean(train_scores, axis=1)
+    cv_scores_mean = np.mean(cv_scores, axis=1)
+    model_name = str(model)
+    ax.plot(train_sizes, train_scores_mean, label=model_name, color=color, linewidth=linewidth)
+    ax.plot(train_sizes, cv_scores_mean, color=color, linewidth=linewidth)
+    for i in range(1, len(zip_list)):
+        model_tuple, color = zip_list[i]
+        name, model = model_tuple
+        print("model =", name)
+        print("shape X_train =", len(y_train))
+        train_sizes, train_scores, cv_scores = learning_curve(model, X_train, y_train, cv=cv_param, scoring=scoring, n_jobs=n_jobs, train_sizes=train_sizes)
+        train_scores_mean = np.mean(train_scores, axis=1)
+        cv_scores_mean = np.mean(cv_scores, axis=1)
+        model_name = str(model)
+        # train_plot_label = scoring.capitalize() + " sur le trainset"
+        # cv_plot_label = scoring.capitalize() + " sur le cvset"
+        title = scoring.capitalize() + " sur le trainset et sur le cvset \n en fonction de la taille du trainset pour "
+        print("train_scores_mean =", train_scores_mean)
+        tr = mtrans.offset_copy(ax.transData, fig=fig, x=0.0, y=-(trans_y*i), units='points')
+        ax.plot(train_sizes, train_scores_mean, label=model_name, color=color, linewidth=linewidth, transform=tr)
+        # ax.plot(train_sizes, train_scores_mean, label=model_name, color=color, linewidth=linewidth)
+        ax.plot(train_sizes, cv_scores_mean, color=color, linewidth=linewidth)
+       
+        # plt.plot(train_sizes, train_scores_mean, label=model_name, color=color, alpha=0.3)
+        # plt.plot(train_sizes, cv_scores_mean, color=color)
+        # plt.plot(train_sizes, cv_scores_mean, label=model_name, color=color)
+        # plt.plot(train_sizes, train_scores_mean, label=train_plot_label, color=color)
+        # plt.plot(train_sizes, cv_scores_mean, label=cv_plot_label, color=color)
+        plt.xticks(fontsize=16)
+        plt.yticks(fontsize=16)
+        plt.title(title, size=19)
+        plt.xlabel("Taille du trainset", fontsize=18)
+        plt.ylabel(scoring.capitalize(), fontsize=18)
+        plt.legend(loc="best", prop={'size': 16})
+    # plt.show()    
+    # model.__class__.__name__
+    path = "./data/output/{}/learning_curve_{}".format(dataset_name, scoring)
+    plt.savefig(path)
+
 
 #Entrees
     #train_sizes (liste de float) : tailles du train en pourcentage 
@@ -422,24 +479,31 @@ def select_models(corpus, corpus_name, id_col_name, class_col_name, features_col
     X_train_tfidf, X_test_tfidf = apply_tfidf_to_train_and_test(X_train, X_test)
 
     # Cross validation
-    scorings = ['accuracy', 'f1_macro', "recall", "precision"]
-    num_iter = 2 #nombre de repetitions de la k-fold cross validation entiere
+    # scorings = ['accuracy', 'f1_macro', "recall", "precision"]
+    # num_iter = 2 #nombre de repetitions de la k-fold cross validation entiere
     k = 10 #k de la k-fold cross validation
-    print("corpus_name =", corpus_name)
-    save_cross_validation(X_train_tfidf, y_train, scorings, num_iter, k, corpus_name)
+    # print("corpus_name =", corpus_name)
+    # save_cross_validation(X_train_tfidf, y_train, scorings, num_iter, k, corpus_name)
 
     ## Learning curves (du meilleur modele)
-    # k = 10
-    # kfold = RepeatedStratifiedKFold(n_splits=k, n_repeats=20, random_state=None)
-    # cv_param = kfold
-    # num_experiences = 4
-    # train_sizes = np.linspace(0.2, 1.0, num_experiences)
-    # # n_jobs = -1
-    # model = SVC()
+    k = 10
+    kfold = RepeatedStratifiedKFold(n_splits=k, n_repeats=20, random_state=None)
+    cv_param = kfold
+    num_experiences = 4
+    train_sizes = np.linspace(0.2, 1.0, num_experiences)
+    # n_jobs = -1
+    models = []
+    models.append(('AdaBoostClassifier', AdaBoostClassifier()))
+    models.append(('RandomForest', RandomForestClassifier()))
+    models.append(('SGDClassifier', SGDClassifier()))
+    models.append(('SVM', SVC()))
+    models.append(('DecisionTreeClassifier', DecisionTreeClassifier()))
 
     # scorings = ['accuracy', 'f1_macro', 'recall', 'precision']
-    # save_all_learning_curves(model, X_train_tfidf, y_train, cv_param, scorings, train_sizes, n_jobs=-1, 
-    #                             dataset_name=corpus_name)
+    scoring = 'precision'
+    print("scoring =", scoring)
+    save_learning_curves_multiple_models(models, X_train_tfidf, y_train, cv_param, scoring, train_sizes, n_jobs=-1, 
+                                        dataset_name=corpus_name)
 
 
 def select_models_on_multiple_corpus(filenames, format_input):

@@ -70,6 +70,6 @@ def main():
         # Importer le dataset puis equilibrer ses classes
         corpus = get_merged_corpus_dataframe_from_filename(filename)
         select_models(corpus, corpus_name, id_col_name, class_col_name, features_col_names)
-
     
+        
 main()
