@@ -1,6 +1,8 @@
 import sys
 import os
 sys.path.insert(0, "..\..")
+sys.path.insert(0, "../..")
+print("(lib_classification.py : sys.path =", sys.path)
 import glob
 import numpy as np
 import pandas as pd
@@ -247,8 +249,8 @@ def save_confusion_matrix(y_test, y_pred, class_names, model, dataset_name=""):
                     annot=labels, fmt="", cmap='Blues',
                     annot_kws={"size": font_size}, 
                     cbar_kws={'label': 'Nombre de sessions'})
-    ax.set_xticklabels([class_zero_name_map, class_one_name_map], Fontsize=font_size + 3)
-    ax.set_yticklabels([class_zero_name_map, class_one_name_map], Fontsize=font_size + 3)
+    ax.set_xticklabels([class_zero_name_map, class_one_name_map], fontsize=font_size + 3)
+    ax.set_yticklabels([class_zero_name_map, class_one_name_map], fontsize=font_size + 3)
     ax.figure.axes[-1].yaxis.label.set_size(font_size + 1)
     ax.figure.axes[-1].tick_params(labelsize=font_size - 2) 
     plt.title("Matrice de confusion", fontsize = font_size + 5)
@@ -259,6 +261,7 @@ def save_confusion_matrix(y_test, y_pred, class_names, model, dataset_name=""):
 
     path = "./data/output/{}/confusion_matrix_{}".format(dataset_name, model.__class__.__name__)
     plt.savefig(path)
+
 
 from matplotlib.pyplot import cm
 import matplotlib.transforms as mtrans
@@ -312,8 +315,6 @@ def save_learning_curves_multiple_models(models, X_train, y_train, cv_param, sco
         plt.xlabel("Taille du trainset", fontsize=18)
         plt.ylabel(scoring.capitalize(), fontsize=18)
         plt.legend(loc="best", prop={'size': 16})
-    # plt.show()    
-    # model.__class__.__name__
     path = "./data/output/{}/learning_curve_{}".format(dataset_name, scoring)
     plt.savefig(path)
 
@@ -342,6 +343,8 @@ def save_learning_curve(model, X_train, y_train, cv_param, scoring, train_sizes,
     plotfig (string) : Indique si on affiche la learning curve sur une interface
     """
     train_sizes, train_scores, cv_scores = learning_curve(model, X_train, y_train, cv=cv_param, scoring=scoring, n_jobs=n_jobs, train_sizes=train_sizes)
+    print("train_scores =", train_scores)
+    print("cv_scores =", cv_scores)
     train_scores_mean = np.mean(train_scores, axis=1)
     train_scores_std = np.std(train_scores, axis=1)
     cv_scores_mean = np.mean(cv_scores, axis=1)
@@ -351,6 +354,10 @@ def save_learning_curve(model, X_train, y_train, cv_param, scoring, train_sizes,
     train_plot_label = scoring.capitalize() + " sur le trainset"
     cv_plot_label = scoring.capitalize() + " sur le cvset"
     title = scoring.capitalize() + " sur le trainset et sur le cvset en fonction de la taille du trainset pour " + model_name
+    print("train_sizes =", train_sizes)
+    print("train_scores_mean =", train_scores_mean)
+    print("cv_scores_mean =", cv_scores_mean)
+    
     plt.plot(train_sizes, train_scores_mean, label=train_plot_label, color="b")
     plt.plot(train_sizes, cv_scores_mean, label=cv_plot_label, color="r")
     plt.xticks(fontsize=16)
@@ -425,6 +432,7 @@ def save_classification_report(y_test, y_pred, dataset_name, model):
     print("type report = ", type(report))
     print("report =", report)
     path = "./data/output/{}/classification_report_{}.txt".format(dataset_name, model.__class__.__name__)
+    print("path =", path)
     f = open(path, "w")
     f.write(report)
     f.close()
@@ -479,11 +487,11 @@ def select_models(corpus, corpus_name, id_col_name, class_col_name, features_col
     X_train_tfidf, X_test_tfidf = apply_tfidf_to_train_and_test(X_train, X_test)
 
     # Cross validation
-    # scorings = ['accuracy', 'f1_macro', "recall", "precision"]
-    # num_iter = 2 #nombre de repetitions de la k-fold cross validation entiere
+    scorings = ['accuracy', 'f1_macro', "recall", "precision"]
+    num_iter = 2 #nombre de repetitions de la k-fold cross validation entiere
     k = 10 #k de la k-fold cross validation
-    # print("corpus_name =", corpus_name)
-    # save_cross_validation(X_train_tfidf, y_train, scorings, num_iter, k, corpus_name)
+    print("corpus_name =", corpus_name)
+    save_cross_validation(X_train_tfidf, y_train, scorings, num_iter, k, corpus_name)
 
     ## Learning curves (du meilleur modele)
     k = 10

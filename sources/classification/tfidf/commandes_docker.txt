@@ -1,0 +1,8 @@
+cd C:\Users\eupho\OneDrive\Documents\perso\projets\classification_texte_articles_version_objet
+docker rm -f conteneur_tfidf_classif
+docker image rm image_tfidf_classif
+docker build -t image_tfidf_classif -f sources/classification/tfidf/Dockerfile .
+docker run --name=conteneur_tfidf_classif -d -v %cd%\data\output\sceptic_theist:/classification_texte_articles_version_objet/data/output/sceptic_theist/ image_tfidf_classif
+docker start -i conteneur_tfidf_classif
+
+docker build --no-cache -t image_tfidf_classif -f sources/classification/tfidf/Dockerfile .

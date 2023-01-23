@@ -11,7 +11,9 @@ def set_current_directory_to_root(root):
 	root (string) : Le nom du root (un dossier) auquel on veut se rendre
 	"""    
 	current_folder = PureWindowsPath(os.path.dirname(os.path.abspath(__file__))).as_posix()
+	print("current_folder =", current_folder)
 	current_folder_split = current_folder.split(root) # split selon le root
+	# path_sep = "/"
 	current_folder_split = current_folder_split[1].split("/")
 	dist_to_root = len(current_folder_split) - 1 # nombre de dossier a remonter pour arriver au dossier root
 	path_root = "/".join(current_folder.split("/")[:-dist_to_root]) #remonter au dossier root du projet

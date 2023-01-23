@@ -1,3 +1,0 @@
-[('test_accuracy', 0.8466), ('test_f1_macro', 0.8464), ('test_recall', 0.8866), ('test_precision', 0.8194)] (AdaBoostClassifier)
-[('test_accuracy', 0.9304), ('test_f1_macro', 0.9303), ('test_recall', 0.9137), ('test_precision', 0.9446)] (KNN)
-[('test_accuracy', 0.9044), ('test_f1_macro', 0.9043), ('test_recall', 0.9446), ('test_precision', 0.8739)] (RandomForest)

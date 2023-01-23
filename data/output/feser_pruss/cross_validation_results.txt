@@ -1,3 +1,2 @@
-[('test_accuracy', 0.8256), ('test_f1_macro', 0.8226), ('test_recall', 0.9003), ('test_precision', 0.7964)] (AdaBoostClassifier)
-[('test_accuracy', 0.8539), ('test_f1_macro', 0.8481), ('test_recall', 0.9764), ('test_precision', 0.798)] (KNN)
-[('test_accuracy', 0.8589), ('test_f1_macro', 0.8556), ('test_recall', 0.9487), ('test_precision', 0.8165)] (RandomForest)
+[('test_accuracy', 0.8089), ('test_f1_macro', 0.8081), ('test_recall', 0.8518), ('test_precision', 0.79)] (AdaBoostClassifier)
+[('test_accuracy', 0.8524), ('test_f1_macro', 0.8506), ('test_recall', 0.933), ('test_precision', 0.8093)] (RandomForest)

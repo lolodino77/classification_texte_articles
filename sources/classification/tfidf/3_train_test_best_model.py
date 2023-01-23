@@ -1,6 +1,7 @@
 import sys
 import os
 sys.path.insert(0, "..")
+print("(3_train...py : sys.path =", sys.path)
 import numpy as np
 import pandas as pd
 import seaborn as sb
@@ -37,7 +38,9 @@ print("os.getcwd() at root =", os.getcwd())
 # path = PureWindowsPath(os.getcwd() + "/data/input/merged_corpus/{}".format(filename_corpus))
 # path = path.as_posix() #convertir en path linux (convertir les \\ en /)
 # corpus = pd.read_parquet("./data/input/merged_corpus/{}".format(filename_corpus)) #engine="fastparquet"
-corpus = pd.read_csv("./data/input/merged_corpus/{}".format(filename_corpus)) #engine="fastparquet"
+# corpus = pd.read_csv("./data/input/merged_corpus/{}".format(filename_corpus)) #engine="fastparquet"
+
+corpus = get_merged_corpus_dataframe_from_filename(filename_corpus)
 corpus = get_balanced_binary_dataset(corpus, class_col_name="category")
 corpus_name = get_corpus_name_from_filename(filename_corpus)
 print("corpus_name =", corpus_name)
@@ -75,27 +78,8 @@ print(X_test_tfidf.shape)
 ### Obtenir les resultats (sauvegarde sur disque)
 # Creation du dossier de sorties si besoin
 make_output_dir(corpus_name)
-# save_model_diagnostics(X_train_tfidf, y_train, y_test, y_pred, class_names, model, corpus_name)
-save_model_diagnostics(corpus, X_train, y_train, y_test, y_pred, indices_test, class_names, model, 
+
+# Evaluation du modele (matrice de confusion, courbe ROC et learning curves)
+save_model_diagnostics(corpus, X_train_tfidf, y_train, y_test, y_pred, indices_test, class_names, model, 
                             corpus_name)
-# save_false_predictions(corpus, corpus_name, indices_test, y_test, y_pred, class_names)
-
-# Classification report
-# save_classification_report(y_test, y_pred, corpus_name, model)
-
-# Matrice de confusion
-# save_confusion_matrix(y_test, y_pred, class_names, model, dataset_name=corpus_name)
-
-# Courbe ROC
-# save_roc(model, y_test, y_pred, dataset_name=corpus_name)
-
-# Learning curves
-# k = 10
-# kfold = RepeatedStratifiedKFold(n_splits=k, n_repeats=20, random_state=None)
-# cv_param = kfold
-# num_experiences = 4
-# train_sizes = np.linspace(0.2, 1.0, num_experiences)
-# # n_jobs = -1
-# scorings = ['accuracy', 'f1_macro', 'recall', 'precision']
-# save_all_learning_curves(model, X_train_tfidf, y_train, cv_param, scorings, train_sizes, n_jobs=-1, 
-#                             dataset_name=corpus_name)
+print("au revoir")
