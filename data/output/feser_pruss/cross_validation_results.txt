@@ -1,2 +1,0 @@
-[('test_accuracy', 0.8089), ('test_f1_macro', 0.8081), ('test_recall', 0.8518), ('test_precision', 0.79)] (AdaBoostClassifier)
-[('test_accuracy', 0.8524), ('test_f1_macro', 0.8506), ('test_recall', 0.933), ('test_precision', 0.8093)] (RandomForest)
