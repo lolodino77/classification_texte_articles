@@ -21,6 +21,7 @@ class CorpusMerger:
     """
 
     def __init__(self, corpus_txt_list_filename, language):
+        """ Constructeur de la classe CorpusMerger """
         self.language = language
         self.corpus_txt_list_filename = corpus_txt_list_filename
         self.corpus_txt_filenames, self.topics = self.create_corpus_txt_filenames_and_topics() 
@@ -31,6 +32,7 @@ class CorpusMerger:
 
 
     def __str__(self):
+        """ Descripteur de la classe CorpusMerger """
         str_corpus_txt_list_filename = str(self.corpus_txt_list_filename)
         str_corpus_txt_filenames = str(self.corpus_txt_filenames)
         str_topics = str(self.topics)
@@ -46,10 +48,15 @@ class CorpusMerger:
 
 
     def create_merged_corpus_name(self):
+        """ Renvoie le nom de merged_corpus a partir des noms des corpus fusionnes 
+        Sortie :
+            merged_corpus_name (str) : le nom du merged_corpus
+        """
         corpus_txt_names = []
         for filename in self.corpus_txt_filenames:
             corpus_txt_names.append(get_corpus_name_from_filename(filename))
         merged_corpus_name = "_".join(corpus_txt_names)
+
         return(merged_corpus_name)
 
 
@@ -69,7 +76,13 @@ class CorpusMerger:
         
 
     def get_corpus_dataframe(self, corpus_txt_filename, topic):
-        """ Renvoie le corpus pandas dataframe a partir d'un corpus au format .txt"""
+        """ Renvoie un pandas dataframe a partir d'un corpus au format .txt 
+        Entrees : 
+            corpus_txt_filename (str) : nom du fichier du corpus au format .txt
+            topic (str) : nom de la classe qu'on annotera a chaque message du corpus corpus_txt_filename
+        Sortie :
+            corpus_dataframe : le pandas dataframe correspondant
+        """
         res = open("./data/input/corpus_txt/" + corpus_txt_filename, "r", encoding="utf-8").read().split("\n\n")
         res = [elt for elt in res if len(elt) > 1]
         message = res
@@ -82,7 +95,10 @@ class CorpusMerger:
 
 
     def create_corpus_dataframes(self):
-        """ Renvoie une liste de dataframes (chaque corpus) a partir des fichiers .txt """
+        """ Renvoie une liste de dataframes (chaque corpus) a partir des fichiers .txt 
+        Sortie :
+            all_corpus_dataframes (list of pandas dataframe) : la liste des pandas dataframe correspondants
+        """
         all_corpus_dataframes = []
         for filename, topic in zip(self.corpus_txt_filenames, self.topics):
             corpus_dataframe = self.get_corpus_dataframe(filename, topic)
@@ -92,7 +108,10 @@ class CorpusMerger:
 
 
     def create_merged_corpus_dataframe(self):
-        """ Renvoie le dataframe final qui est la fusion de tous les dataframes """
+        """ Renvoie le dataframe final qui est la fusion de tous les dataframes 
+        Sortie :
+            merged_corpus (pandas dataframe) : la fusion de tous les dataframes
+        """
         if(len(self.corpus_dataframes) > 1):
             merged_corpus = pd.concat(self.corpus_dataframes) 
         else:
@@ -103,7 +122,7 @@ class CorpusMerger:
 
     def get_preprocessed_messages(self, list_of_documents, lemmatizer, stopwords):
         """Nettoie tous les documents d'une liste pour creer un dataset exploitable par des modeles d'IA.
-        Renvoie une liste avec tous les messages nettoyes
+        Renvoie une liste avec tous les messages nettoyes (principalement pour des messages en francais)
 
         Parametres:
         list_of_documents (liste de string) : Une liste de documents (les textes a classifier) a nettoyer 
@@ -152,13 +171,13 @@ class CorpusMerger:
 
     def preprocess_merged_corpus_dataframe(self):
         """ Nettoie le merged_corpus :
-        1. Cree l'id unique
-        2. Supprimme les colonnes inutiles
-        3. Cree la colonne "len" taille de chaque document
-        4. Cree la colonne "category_bin" annotations au format entier binaire (0, 1)
-        5. Melange les lignes aleatoirement
-        6. Supprime les retours a la ligne \n et \r
-        7. Supprime les doublons (lignes qui ont le meme message)
+            1. Cree l'id unique
+            2. Supprimme les colonnes inutiles
+            3. Cree la colonne "len" taille de chaque document
+            4. Cree la colonne "category_bin" annotations au format entier binaire (0, 1)
+            5. Melange les lignes aleatoirement
+            6. Supprime les retours a la ligne \n et \r
+            7. Supprime les doublons (lignes qui ont le meme message)
         """
         # Recuperation du lemmatizer
         stopwords = nltk.corpus.stopwords.words(self.language)
