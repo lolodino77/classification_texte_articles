@@ -151,6 +151,15 @@ class CorpusMerger:
 
 
     def preprocess_merged_corpus_dataframe(self):
+        """ Nettoie le merged_corpus :
+        1. Cree l'id unique
+        2. Supprimme les colonnes inutiles
+        3. Cree la colonne "len" taille de chaque document
+        4. Cree la colonne "category_bin" annotations au format entier binaire (0, 1)
+        5. Melange les lignes aleatoirement
+        6. Supprime les retours a la ligne \n et \r
+        7. Supprime les doublons (lignes qui ont le meme message)
+        """
         # Recuperation du lemmatizer
         stopwords = nltk.corpus.stopwords.words(self.language)
         print("os.getcwd() =", os.getcwd())
@@ -164,36 +173,38 @@ class CorpusMerger:
         self.merged_corpus_dataframe["message_preprocessed"] = self.get_preprocessed_messages(self.merged_corpus_dataframe['message'], 
                                                                         lemmatizer, stopwords)
 
-        # Creation de l'id unique
+        # 1. Creation de l'id unique
         self.merged_corpus_dataframe.index = list(range(len(self.merged_corpus_dataframe)))
         self.merged_corpus_dataframe["id"] = self.merged_corpus_dataframe.index
 
-        # Suppression des colonnes inutiles
+        # 2. Suppression des colonnes inutiles
         self.merged_corpus_dataframe = self.merged_corpus_dataframe[["id", "message", "message_preprocessed", "category"]]
 
-        # Creation de la taille de chaque documents (en nombre de caracteres)
+        # 3. Creation de la taille de chaque documents (en nombre de caracteres)
         self.merged_corpus_dataframe["length"] = self.merged_corpus_dataframe["message"].str.len()
 
-        # Annotation au format entier (necessaire pour certaines fonctions de sklearn)
-        # Enregistrer les labels et leur numero correspondant dans un dictionnaire
+        # 4. Annotation au format entier (necessaire pour certaines fonctions de sklearn)
+        # a. Cree une colonne category_bin avec les annotations au format entier binaire (0, 1)
+        # b. Enregistre les labels et leur numero correspondant dans un dictionnaire
         # self.merged_corpus_dataframe["category_bin"] = np.select([self.merged_corpus_dataframe["category"] == class_1], [1], default=0)
         LE = LabelEncoder()
         self.merged_corpus_dataframe["category_bin"] = LE.fit_transform(self.merged_corpus_dataframe["category"]) 
         joblib.dump(LE, "./data/input/merged_corpus/labelEncoder_category_{}.joblib".format(self.topics_names_concat), 
                     compress=9)
 
-        # Melange aleatoire des documents
+        # 5. Melange aleatoire des documents
         self.merged_corpus_dataframe = self.merged_corpus_dataframe.sample(frac=1).reset_index(drop=True)
 
-        # Suppression des retours a la ligne \n et \r
+        # 6. Suppression des retours a la ligne \n et \r
         self.merged_corpus_dataframe.replace("\\n", " ", regex=True, inplace=True)
         self.merged_corpus_dataframe.replace("\\r", " ", regex=True, inplace=True)
 
-        # Suppression des doublons
+        # 7. Suppression des doublons
         print("self.merged_corpus_dataframe.shape =", self.merged_corpus_dataframe.shape)
         self.merged_corpus_dataframe.drop_duplicates("message", inplace=True, keep="first")
         print("self.merged_corpus_dataframe.shape =", self.merged_corpus_dataframe.shape)
 
+        # Nettoyages restants a rajouter plus tard : 
         #pour enlever les faux exemples, preprocessing restant =
         #  enlever commentaires en bas d'article, description auteur, texte anglais, references bibliographiques
         #  enlever ponctuations (guillemets par exemple) 
@@ -201,11 +212,9 @@ class CorpusMerger:
         #Credit source : 
         #https://inside-machinelearning.com/preprocessing-nlp-tutoriel-pour-nettoyer-rapidement-un-texte/
 
-        print("message_preprocessed =", self.merged_corpus_dataframe["message_preprocessed"])
-
 
     def save_merged_corpus_dataframe(self, output_format):
-        # Enregistrer le corpus (au format csv ou parquet)
+        """ Enregistre le corpus dans un fichier (au format csv ou parquet) """
         if not os.path.exists("./data/input/merged_corpus/"):
             os.makedirs("./data/input/merged_corpus/")
         path = "./data/input/merged_corpus/corpus_" + self.topics_names_concat + "." + output_format
