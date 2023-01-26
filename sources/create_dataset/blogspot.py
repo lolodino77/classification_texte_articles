@@ -75,10 +75,7 @@ class Blogspot(Blog):
         """
         # Recupere dans une liste urls les adresses url de tous les articles publies d'un blog
         sitemap_page = self.get_sitemap_page()
-        print("in create_articles_urls")
-        print("sitemap_page =", sitemap_page)
         sitemap_subpages = self.get_sitemap_from_main_sitemap(sitemap_page)
-        print("len sitemap_subpages =", len(sitemap_subpages))
 
         # Cas 1 : ou il y a des sous-pages sitemap
         if(len(sitemap_subpages) > 1):
@@ -94,9 +91,6 @@ class Blogspot(Blog):
         if(self.all_articles): #definit le nombre d'articles a "scraper"
             self.num_articles = len(urls)
 
-        print("in final function :")
-        print("self.num_articles =", self.num_articles)
-        print("type(self.num_articles) =", type(self.num_articles))
         urls = urls[:self.num_articles]
 
         print("check ''", "\n" in urls)
