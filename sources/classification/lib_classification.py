@@ -224,7 +224,7 @@ def save_cross_validation(X_train, y_train, scorings, num_iter, k, dataset_name,
     # models.append(('RandomForest', RandomForestClassifier()))
     # models.append(('SGDClassifier', SGDClassifier()))
     # models.append(('SVM', SVC()))
-    models.append(('DecisionTreeClassifier', DecisionTreeClassifier()))
+    # models.append(('DecisionTreeClassifier', DecisionTreeClassifier()))
     # models.append(('MLPClassifier', MLPClassifier(max_iter=100))) car diverge donc trop long
      
     # evaluate each model in turn
@@ -309,12 +309,12 @@ def save_learning_curves_multiple_models(models, X_train, y_train, cv_param, sco
                                     Exemples : 'accuracy', 'precision', 'recall', 'f1', 'f1_macro'
         train_sizes (liste de float) : La liste des tailles des train (en pourcentage du train total original)
                                     Exemple : [0.2, 0.5, 0.7] = 20 % du train, 50 % du train, 70 % du train
-        dataset_name (string) : Dossier des sorties du dataframe etudie
+        dataset_name (string) : Le nom du dataset qui sera le dossier des fichiers de sorties
     """
     colors = iter(cm.rainbow(np.linspace(0, 1, len(models))))
     fig, ax = plt.subplots(figsize=(14, 9))
     linewidth = 3
-    trans_y = -4
+    trans_y = -2
 
     zip_list = list(zip(models, colors))
     model_tuple, color = zip_list[0]
@@ -335,9 +335,10 @@ def save_learning_curves_multiple_models(models, X_train, y_train, cv_param, sco
         train_scores_mean = np.mean(train_scores, axis=1)
         cv_scores_mean = np.mean(cv_scores, axis=1)
         model_name = str(model)
-        title = scoring.capitalize() + " sur le trainset et sur le cvset \n en fonction de la taille du trainset pour "
+        title = scoring.capitalize() + " sur le trainset et sur le cvset \n en fonction de la taille du trainset"
         tr = mtrans.offset_copy(ax.transData, fig=fig, x=0.0, y=-(trans_y*i), units='points')
         ax.plot(train_sizes, train_scores_mean, label=model_name, color=color, linewidth=linewidth, transform=tr)
+        # ax.plot(train_sizes, train_scores_mean, label=model_name, color=color, linewidth=linewidth)
         ax.plot(train_sizes, cv_scores_mean, color=color, linewidth=linewidth)
         
         plt.xticks(fontsize=16)
@@ -497,7 +498,7 @@ def save_false_predictions(corpus, dataset_name, indices_test, y_test, y_pred, c
     corpus_test_errors = corpus_test_errors[["id", "truth", "pred", "message"]]
     corpus_test_errors["truth"] = np.select([corpus_test_errors["truth"] == 0], [class_names["0"]], default=class_names["1"])
     corpus_test_errors["pred"] = np.select([corpus_test_errors["pred"] == 0], [class_names["0"]], default=class_names["1"])
-    corpus_test_errors.to_csv("./data/output/{}/false_predictions.csv".format(dataset_name), index=False, header=True)
+    corpus_test_errors.to_csv("./data/output/{}/best_model/false_predictions.csv".format(dataset_name), index=False, header=True)
 
 
 def save_model_diagnostics(corpus, X_train, y_train, y_test, y_pred, indices_test, class_names, model, 
@@ -581,12 +582,12 @@ def select_models(corpus, corpus_name, id_col_name, class_col_name, features_col
     models = []
     # models.append(('AdaBoostClassifier', AdaBoostClassifier()))
     # models.append(('RandomForest', RandomForestClassifier()))
-    models.append(('SGDClassifier', SGDClassifier()))
-    models.append(('SVM', SVC()))
+    # models.append(('SGDClassifier', SGDClassifier()))
+    # models.append(('SVM', SVC()))
     models.append(('DecisionTreeClassifier', DecisionTreeClassifier()))
 
     # scorings = ['accuracy', 'f1_macro', 'recall', 'precision']
-    scorings = ['accuracy', 'f1_macro', 'recall']
+    # scorings = ['accuracy', 'f1_macro', 'recall']
     scorings = ["accuracy"]
     for scoring in scorings:
         save_learning_curves_multiple_models(models, X_train_tfidf, y_train, cv_param, scoring, train_sizes, 
