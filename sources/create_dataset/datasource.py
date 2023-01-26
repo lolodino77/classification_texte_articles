@@ -12,7 +12,7 @@ class DataSource:
     """ Define an article from a blog """
 
     def __init__(self, url, num_articles):
-        """ Constructor of DataSource """
+        """ Constructeur de la classe DataSource """
         self.url = url
         self.corpus_name = ""
         self.path_corpus_txt = ""
@@ -26,7 +26,7 @@ class DataSource:
 
 
     def __str__(self):
-        """ Renvoie une chaine de caractère décrivant l'article """
+        """ Descripteur de la classe DataSource """
         print("str :")
         str_url = str(self.url)
         # str_articles_list = str(self.articles_list)
@@ -39,19 +39,25 @@ class DataSource:
 
 
     def create_corpus_txt_filename(self):
+        """ Retourne le nom du fichier .txt d'un corpus 
+        Sortie :
+            filename (string) : Le nom du fichier .txt d'un corpus
+        """
         filename = "corpus_{}.txt".format(self.corpus_name) 
         return(filename)
 
 
     def save_articles_urls(self, file_open_mode="w", sep = "\n"):
-        """ # Enregistrer la liste des urls d'articles """
-        print("in save_articles_urls debut")
+        """ Enregistrer la liste des urls d'articles
+        Entrees :
+            file_open_mode (string) : Le mode d'ecriture du fichier .txt ("w", "a", etc.)
+            sep (string) : Le separateur entre chaque ligne ecrite (url) dans le fichier .txt
+        """
         save_list_to_txt(self.articles_urls, self.path_articles_urls, file_open_mode, sep)
-        print("in save_articles_urls fin")
 
 
     def create_all_articles(self):
-        """ Recupere la variable all_articles depuis la commande de terminal """
+        """ Recupere et renvoie la variable all_articles entree dans une commande de terminal """
         if(self.num_articles == "all"):
             all_articles = True
         else:
@@ -61,19 +67,15 @@ class DataSource:
 
 
     def save_corpus_txt(self, savemode="overwrite"):
-        """Cree un corpus d'un corpus_name (au format de liste de documents/textes) dans le fichier texte filename_output
-        a partir d'une liste d'adresses urls d'articles
+        """ Sauvegarde un corpus dans le fichier texte filename_output a partir 
+        d'une liste d'adresses urls d'articles
 
-        Parametres: 
-        articles_urls (liste de string) : La liste d'urls d'articles dont on veut extraire les paragraphes. 
-                                            Ex : https://parlafoi.fr/lire/series/commentaire-de-la-summa/
-        path_articles_urls (string) : La liste des paths des listes d'articles
-        path_corpus_txt (string) : Le path vers le corpus, exemple = 
-        save_mode (string) : Le mode d'ecriture du fichier ("append" = ajouter ou "overwrite" = creer un nouveau)
-        
-        Sortie:
-        None : Fichier filename_corpus qui contient le corpus, une suite de textes separes par une saut de ligne
+        Entrees : 
+            savemode (string) : Le mode d'ecriture du fichier ("append" = ajouter ou "overwrite" = creer un nouveau)
+        Sortie :
+            None : Fichier filename_corpus qui contient le corpus, une suite de textes separes par une saut de ligne
 
+        Futures ameliorations possibles
         Done : version "overwrite" recreer le corpus a chaque fois de zero 
         To do : version "append" ajouter du texte a un corpus deja cree, version "ignore" ne fais rien si fichier existe deja
                 version "error" qui renvoie une erreur si fichier existe deja
@@ -123,7 +125,7 @@ class DataSource:
 
 
     def save_corpus_parquet(self, df):
-        """ Sauvegarde le corpus pandas dataframe dans un fichier parquet"""
+        """ Sauvegarde le corpus pandas dataframe dans un fichier parquet """
         filename_corpus_parquet = self.filename_corpus_txt.split(".txt")[0] + ".parquet"
         df.to_parquet("./data/input/corpus_parquet/" + filename_corpus_parquet)
 

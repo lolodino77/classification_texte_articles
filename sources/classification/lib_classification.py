@@ -528,7 +528,7 @@ def save_model_diagnostics(corpus, X_train, y_train, y_test, y_pred, indices_tes
 
     # Learning curves
     k = 10
-    kfold = RepeatedStratifiedKFold(n_splits=k, n_repeats=20, random_state=None)
+    kfold = RepeatedStratifiedKFold(n_splits=k, n_repeats=3, random_state=None)
     cv_param = kfold
     num_experiences = 4
     train_sizes = np.linspace(0.2, 1.0, num_experiences)
@@ -574,14 +574,14 @@ def select_models(corpus, corpus_name, id_col_name, class_col_name, features_col
 
     ## Learning curves (du meilleur modele)
     k = 10
-    kfold = RepeatedStratifiedKFold(n_splits=k, n_repeats=20, random_state=None)
+    kfold = RepeatedStratifiedKFold(n_splits=k, n_repeats=2, random_state=None)
     cv_param = kfold
     num_experiences = 2
     train_sizes = np.linspace(0.2, 1.0, num_experiences)
     # n_jobs = -1
     models = []
     # models.append(('AdaBoostClassifier', AdaBoostClassifier()))
-    # models.append(('RandomForest', RandomForestClassifier()))
+    models.append(('RandomForest', RandomForestClassifier()))
     # models.append(('SGDClassifier', SGDClassifier()))
     # models.append(('SVM', SVC()))
     models.append(('DecisionTreeClassifier', DecisionTreeClassifier()))
