@@ -67,8 +67,7 @@ class Blogspot(Blog):
 
     def create_articles_urls(self):
         """ Renvoie dans une liste des articles du blog a partir de sa page d'accueil
-            Exemple : "https://majestyofreason.wordpress.com/", "https://edwardfeser.blogspot.com"
-            Pour l'instant fonctionne que avec les blogs blogspot
+            Exemple : "https://edwardfeser.blogspot.com"
         
         Sortie:
             urls (liste de string) : Une liste d'urls + (ecriture du resultat dans le fichier filename)
