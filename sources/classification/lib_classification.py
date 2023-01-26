@@ -46,9 +46,24 @@ def get_merged_corpus_filenames(argv):
         input_files_format = argv[2]
         input_repertory = ".\\data\\input\\merged_corpus\\" #\\ et pas / car os renvoie \\
         filenames = glob.glob(os.path.join(input_repertory + "*." + input_files_format))
+
+        # input_repertory = "./data/input/merged_corpus/"        
+        # filenames = glob.glob(os.path.join(input_repertory + "*." + input_files_format))
+        # filenames = [filename.split(input_repertory)[1] for filename in filenames] # enlever le path entier, garder que le nom du fichier
+
         print("filenames =", filenames)
-        filenames = [filename.split(input_repertory)[1] for filename in filenames] # enlever le path entier, garder que le nom du fichier
         output = [filenames, input_files_format]
+
+        if(len(filenames) != 0): #si os windows => chemin windows
+            print("windows")
+            filenames = [filename.split(input_repertory)[1] for filename in filenames] # enlever le path entier, garder que le nom du fichier
+            output = [filenames, input_files_format]
+        else: #si os unix => chemin unix
+            print("unix")
+            input_repertory = "./data/input/merged_corpus/"   
+            filenames = glob.glob(os.path.join(input_repertory + "*." + input_files_format))
+            filenames = [filename.split(input_repertory)[1] for filename in filenames] # enlever le path entier, garder que le nom du fichier
+            output = [filenames, input_files_format]
     return(output)
 
 
@@ -192,11 +207,11 @@ def save_cross_validation(X_train, y_train, scorings, num_iter, k, dataset_name=
     # models.append(('LR', LogisticRegression(solver='liblinear', multi_class='ovr')))
     models.append(('AdaBoostClassifier', AdaBoostClassifier()))
     # models.append(('KNN', KNeighborsClassifier()))
-    models.append(('RandomForest', RandomForestClassifier()))
+    # models.append(('RandomForest', RandomForestClassifier()))
     # models.append(('MLPClassifier', MLPClassifier(max_iter=100))) car diverge donc trop long
     # models.append(('SGDClassifier', SGDClassifier()))
     # models.append(('SVM', SVC()))
-    # models.append(('DecisionTreeClassifier', DecisionTreeClassifier()))
+    models.append(('DecisionTreeClassifier', DecisionTreeClassifier()))
     
     # evaluate each model in turn
     print("models =", models)
@@ -501,8 +516,8 @@ def select_models(corpus, corpus_name, id_col_name, class_col_name, features_col
     train_sizes = np.linspace(0.2, 1.0, num_experiences)
     # n_jobs = -1
     models = []
-    models.append(('AdaBoostClassifier', AdaBoostClassifier()))
-    models.append(('RandomForest', RandomForestClassifier()))
+    # models.append(('AdaBoostClassifier', AdaBoostClassifier()))
+    # models.append(('RandomForest', RandomForestClassifier()))
     models.append(('SGDClassifier', SGDClassifier()))
     models.append(('SVM', SVC()))
     models.append(('DecisionTreeClassifier', DecisionTreeClassifier()))
@@ -514,9 +529,9 @@ def select_models(corpus, corpus_name, id_col_name, class_col_name, features_col
 
     # scorings = ['accuracy', 'f1_macro', 'recall', 'precision']
     scorings = ['accuracy', 'f1_macro', 'recall']
-    for scoring in scorings:
-        save_learning_curves_multiple_models(models, X_train_tfidf, y_train, cv_param, scoring, train_sizes, n_jobs=-1, 
-                                            dataset_name=corpus_name)
+    # for scoring in scorings:
+    #     save_learning_curves_multiple_models(models, X_train_tfidf, y_train, cv_param, scoring, train_sizes, n_jobs=-1, 
+    #                                         dataset_name=corpus_name)
 
 
 

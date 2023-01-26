@@ -1,0 +1,18 @@
+FROM python:3.8-slim
+ARG corpus_name
+ARG corpus_extension
+
+WORKDIR /classification_texte_articles_version_objet
+
+COPY sources/classification/tfidf/requirements.txt sources/classification/tfidf/requirements.txt
+RUN python -m pip install --upgrade pip
+RUN pip install --no-cache-dir -r ./sources/classification/tfidf/requirements.txt
+
+COPY data/input/merged_corpus/corpus_${corpus_name}.${corpus_extension} data/input/merged_corpus/corpus_${corpus_name}.${corpus_extension}
+COPY sources/lib_general.py sources/lib_general.py
+COPY sources/classification/lib_classification.py sources/classification/lib_classification.py
+COPY sources/classification/tfidf/2_model_selection.py sources/classification/tfidf/2_model_selection.py
+RUN mkdir -p data/output/${corpus_name}/
+
+WORKDIR ./sources/classification/tfidf
+ENTRYPOINT ["python", "-u", "2_model_selection.py"]

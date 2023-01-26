@@ -56,6 +56,10 @@ def get_file_extension(filename):
 
 def get_corpus_name_from_filename(filename):
 	""" input : corpus_chat_chien.csv ==> output : chat_chien"""
+	print("in get_corpus_name_from_filename")
+	print("filename =", filename)
+	print("filename.split('.') =", filename.split("."))
+	print("filename.split('.')[0] =", filename.split(".")[0])
 	corpus_name = filename.split(".")[0].split("corpus_")[1]
 	return(corpus_name)
 

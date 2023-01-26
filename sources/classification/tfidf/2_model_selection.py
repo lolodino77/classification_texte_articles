@@ -46,6 +46,8 @@ def main():
     print('Argument List:', str(sys.argv))
 
     output = get_merged_corpus_filenames(sys.argv)
+    print("output =", output)
+
     if(len(output) == 2):
         print("len(output) == 2")
         filenames, format_input = output
