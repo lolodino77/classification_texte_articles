@@ -13,6 +13,7 @@ from french_lefff_lemmatizer.french_lefff_lemmatizer import FrenchLefffLemmatize
 from sklearn.preprocessing import LabelEncoder
 import joblib
 
+
 class CorpusMerger:
     """ Classe pour fusionner plusieurs corpus en un seul corpus
     1. Soit un corpus final avec un seul et unique topic
@@ -102,7 +103,8 @@ class CorpusMerger:
 
     def get_preprocessed_messages(self, list_of_documents, lemmatizer, stopwords):
         """Nettoie tous les documents d'une liste pour creer un dataset exploitable par des modeles d'IA.
-        
+        Renvoie une liste avec tous les messages nettoyes
+
         Parametres:
         list_of_documents (liste de string) : Une liste de documents (les textes a classifier) a nettoyer 
         lemmatizer (fonction) : Le lemmatizer qui servira a lemmatizer les mots des documents si possible
@@ -173,6 +175,7 @@ class CorpusMerger:
         self.merged_corpus_dataframe["length"] = self.merged_corpus_dataframe["message"].str.len()
 
         # Annotation au format entier (necessaire pour certaines fonctions de sklearn)
+        # Enregistrer les labels et leur numero correspondant dans un dictionnaire
         # self.merged_corpus_dataframe["category_bin"] = np.select([self.merged_corpus_dataframe["category"] == class_1], [1], default=0)
         LE = LabelEncoder()
         self.merged_corpus_dataframe["category_bin"] = LE.fit_transform(self.merged_corpus_dataframe["category"]) 

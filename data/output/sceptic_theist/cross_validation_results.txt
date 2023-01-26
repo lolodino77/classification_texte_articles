@@ -1,2 +1,2 @@
-[('test_accuracy', 0.8743), ('test_f1_macro', 0.874), ('test_recall', 0.9089), ('test_precision', 0.8514)] (AdaBoostClassifier)
-[('test_accuracy', 0.8286), ('test_f1_macro', 0.8284), ('test_recall', 0.8318), ('test_precision', 0.8291)] (DecisionTreeClassifier)
+[('test_accuracy', 0.8629), ('test_f1_macro', 0.8624), ('test_recall', 0.906), ('test_precision', 0.8362)] (AdaBoostClassifier)
+[('test_accuracy', 0.8148), ('test_f1_macro', 0.8145), ('test_recall', 0.8043), ('test_precision', 0.8241)] (DecisionTreeClassifier)
