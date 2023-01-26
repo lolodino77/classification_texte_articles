@@ -8,7 +8,7 @@ from lib_general import *
 
 
 class Article:
-    """ Define an article from a blog """
+    """ Define an article/a post from a blog """
 
     def __init__(self, url):
         """ Constructeur de la classe Article """
@@ -17,25 +17,21 @@ class Article:
 
 
     def __str__(self):
-        """ Renvoie une chaine de caractère décrivant l'article """
+        """ Descripteur de la classe Article """
         print("str :")
         str_url = str(self.url)
-        # str_articles_list = str(self.articles_list)
         str_paragraphs = str(self.paragraphs)
         desc = "url = "+ str_url
         desc += "\nparagraphs = " + str_paragraphs 
-        # desc = desc + "\nfilename = " + str_filename
+
         return(desc)
 
 
     def create_paragraphs(self):
         """ Renvoie les paragraphes d'un article dans une liste
-        
-        Parametres: 
-        article_url (string) : L'url de l'article a decouper en plusieurs parties
-        
+    
         Sortie:
-        None : Fichier output_filename qui contient les documents de l'article dont l'url est article_url
+            paragraphs (list of str) : Tous les paragraphes d'un article
         """
         # Recupere le texte de la page web a l'aide d'un parser
         # Recupere le texte d'un article mais avec des balises html (<\p><p> par exemple)
@@ -54,10 +50,6 @@ class Article:
 
         # Decoupage en plusieurs parties avec pour separateur le retour a la ligne \n
         paragraphs = txt.split("\n\n") 
-        # print("paragraphs =", paragraphs)
-        # for p in paragraphs:
-        #     print(p)
-        #     print("\n")
 
         #Enleve les doublons
         paragraphs = list(set(paragraphs))
@@ -79,10 +71,6 @@ class Article:
 
     def save_corpus_txt(self, path_corpus_txt, corpus_paragraphs="", file_open_mode="w", sep = "\n\n"):
         """ Sauvegarde les paragraphes d'un article dans un fichier texte """
-        # print("file_open_mode =", file_open_mode)
-        # print("len path_corpus_txt =", len(path_corpus_txt))
-        # print("path_corpus_txt =", path_corpus_txt)
-        # save_list_to_txt(self.paragraphs, path_corpus_txt, file_open_mode, sep)
         f = open(path_corpus_txt, file_open_mode, encoding="utf-8") #"w" si n'existe pas, "a" si on veut ajouter a un fichier deja existant
         for paragraph in self.paragraphs:
             if(paragraph not in corpus_paragraphs):
