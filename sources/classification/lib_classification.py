@@ -68,6 +68,7 @@ def get_merged_corpus_filenames(argv):
 
 
 def get_merged_corpus_dataframe_from_filename(filename):
+    print("filename =", filename)
     format = filename.split(".")[1]
     if(format == "csv"):
        df = pd.read_csv("./data/input/merged_corpus/" + filename, encoding="utf-8")
@@ -204,13 +205,13 @@ def save_cross_validation(X_train, y_train, scorings, num_iter, k, dataset_name=
     #Selection de modeles avec la k cross validation pour determiner le meilleur
 
     models = []
-    # models.append(('LR', LogisticRegression(solver='liblinear', multi_class='ovr')))
+    models.append(('LR', LogisticRegression(solver='liblinear', multi_class='ovr')))
     models.append(('AdaBoostClassifier', AdaBoostClassifier()))
-    # models.append(('KNN', KNeighborsClassifier()))
-    # models.append(('RandomForest', RandomForestClassifier()))
+    models.append(('KNN', KNeighborsClassifier()))
+    models.append(('RandomForest', RandomForestClassifier()))
     # models.append(('MLPClassifier', MLPClassifier(max_iter=100))) car diverge donc trop long
-    # models.append(('SGDClassifier', SGDClassifier()))
-    # models.append(('SVM', SVC()))
+    models.append(('SGDClassifier', SGDClassifier()))
+    models.append(('SVM', SVC()))
     models.append(('DecisionTreeClassifier', DecisionTreeClassifier()))
     
     # evaluate each model in turn
@@ -413,9 +414,10 @@ def save_all_learning_curves(model, X_train, y_train, cv_param, scorings, train_
 
 
 def save_roc(model, y_true, y_pred, dataset_name=""):
-    """Affiche la courbe roc
+    """ Enregistre la courbe roc dans un fichier image
 
     Parametres: 
+    model : 
     y_true (numpy ndarray) : Les etiquettes correctes 
     y_pred (numpy ndarray) : Les etiquettes devinees par le modele
     """
@@ -501,7 +503,7 @@ def select_models(corpus, corpus_name, id_col_name, class_col_name, features_col
     X_train, X_test, y_train, y_test, indices_train, indices_test = get_train_and_test(corpus, features_col_names, class_col_name, id_col_name)
     X_train_tfidf, X_test_tfidf = apply_tfidf_to_train_and_test(X_train, X_test)
 
-    # Cross validation
+    # K-fold cross validation
     scorings = ['accuracy', 'f1_macro', "recall", "precision"]
     num_iter = 2 #nombre de repetitions de la k-fold cross validation entiere
     k = 10 #k de la k-fold cross validation

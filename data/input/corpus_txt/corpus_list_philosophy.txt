@@ -1,4 +1,0 @@
-corpus_alexanderpruss.txt theist
-corpus_edwardfeser.txt theist
-corpus_majestyofreason.txt sceptic
-corpus_exapologist.txt sceptic

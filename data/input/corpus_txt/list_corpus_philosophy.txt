@@ -1,0 +1,8 @@
+corpus_alexanderpruss.txt theist
+corpus_edwardfeser.txt theist
+corpus_lyfaber.txt theist
+corpus_afkimel.txt theist
+corpus_majestyofreason.txt sceptic
+corpus_exapologist.txt sceptic
+corpus_naturalistphilosophy.txt sceptic
+corpus_emersongreenblog.txt sceptic

@@ -1,15 +1,56 @@
-Here’s an another argument to add to [the
-list](https://exapologist.blogspot.com/2022/06/120-or-so-arguments-for-
-atheism.html). It proceeds from a principle about absences that several able
-philosophers defend (E.g., Kris McDaniel):
-
-(This argument was suggested to me by Joe Schmid.) Here’s an another argument
-to add to the list . It proceeds from a principle about absenc...
-
 [ ![Is God the Best Explanation of Things? A Dialogue is Now
 Out!](http://3.bp.blogspot.com/-RUJygo9ZI5s/XZKz9ZN1-tI/AAAAAAAA3BY/WcfmwPogtPIR7fHT1fgwSJxfTIiHQ_72ACK4BGAYYCw/s1600/Book%2BCover%2BIGtBEoT.png)
 ](https://www.amazon.com/God-Best-Explanation-Things-
 Dialogue/dp/3030237540/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=&sr=)  
+
+...which is also the winner of the 2022 APA Journal of Value Inquiry Prize ,
+is now out , Here's the abstract to whet your appetite: Re...
+
+> Recent divine command theorists make a serious and impressive case that a
+> sophisticated divine command theory has significant metaethical advantages
+> and can adequately meet traditional objections, such as the Euthyphro
+> problem. I survey the attempt sympathetically with a view to explaining how
+> the divine command theory can deal with traditional objections while
+> delivering on metaethical desiderata, such as providing an account of
+> ethical objectivity. I argue, however, that to the extent that a divine
+> command theory succeeds, an ideal observer theory can do equally well. Once
+> the divine command theory is rendered immune to Euthyphro-related
+> objections, we will have all the machinery needed to show that an ideal
+> observer theory can provide the same metaethical advantages, without
+> supposing the existence of a divine commander. Other things being equal,
+> ontological simplicity favors the ideal observer theory.
+
+...which is also the winner of the 2022 APA _Journal of Value Inquiry Prize_ ,
+is [now
+out](https://link.springer.com/epdf/10.1007/s10790-022-09923-4?sharing_token=p2T6MdSzb98s7mstuXzD-
+_e4RwlQNchNByi7wbcMAY4omGVWt-
+pCQNjoExd_SvtXgEGj3c1y8EGlTK0h-fNtRreLiTwaWdNqAS6X-S_oF3xd-
+noZTAYHdShTSmiCbQnE32IQjXjIl63VUcSbd8gnXCun5qLLIPb_mRTlLgGzq_o%3D), Here's the
+abstract to whet your appetite:
+
+Excited to see that Eric Steinhart's book, _[Atheistic Platonism: A
+Manifesto](https://www.amazon.com/dp/3031177517/)_ is now out with Palgrave
+MacMillan. Here's the blurb to whet your appetite:
+
+> Atheistic Platonism is an alternative to both theism and nihilistic atheism.
+> It shows how any jobs allegedly done by God are better done by impersonal
+> Platonic objects. Without Platonic objects, atheism degenerates into an
+> illogical nihilism. Atheistic Platonism instead provides reality with
+> foundations that are eternal, necessary, rational, beautiful, and utterly
+> mindless. It argues for a plenitude of mathematical objects, and an infinite
+> plurality of possible universes. It provides mindless rational grounds for
+> objective values, and for objective moral laws for the persons who evolve in
+> universes. It defines a meaningful way of life, which facilitates self-
+> improvement. Atheistic Platonists argue for computational theories of life
+> after death. Atheistic Platonism includes a rich system of spiritual
+> symbols. It values transformational practices and ecstatic experiences.
+> Where atheisms based on materialism fail, atheisms based on Platonism
+> succeed.
+
+Here’s an another argument to add to [the
+list](https://exapologist.blogspot.com/2022/06/120-or-so-arguments-for-
+atheism.html). It proceeds from a principle about absences that several able
+philosophers defend (E.g., Kris McDaniel):
 
 Suppose the principle is true. Now go to a possible world in which God
 refrains from creating (assume, as traditional theism does, that God has
@@ -111,17 +152,25 @@ Upshot: Cogent modal ontological arguments (at least ones friendly to
 classical theism) seem to have no suitable home in the metaphysics and
 epistemology of modality.
 
+[1] There are other views that are equally powerful threats to theism, such as
+a stuff-first view, according to which stuffs are more fundamental than
+substances. Another is Jason Turner's facts-first ontology (as well as related
+events-first ontologies). However, I leave these sort of threats to the side
+for the present post.
+
 > Physicalism is the view that the physical is fundamental -- everything is
 > either physical or dependent upon/grounded in the physical. By contrast
 > supernaturalism/mentalism is the view that one or more
 > spiritual/mental/supernatural beings are more fundamental than the physical
 > -- everything is either mental or dependent upon the mental.
 
-[1] There are other views that are equally powerful threats to theism, such as
-a stuff-first view, according to which stuffs are more fundamental than
-substances. Another is Jason Turner's facts-first ontology (as well as related
-events-first ontologies). However, I leave these sort of threats to the side
-for the present post.
+Which view is correct: the substance-first view or the property-first view?
+This question has potentially huge implications for the disagreement between
+theists and non-theists.[1] This is because, prima facie, _orthodox monotheism
+entails the substance-first view._ And this in turn is because, prima facie,
+_God_ is a substance, and is prior to all else that exists. Therefore, if
+there are reasons to prefer the property-first view, then there are thereby
+reasons to prefer non-theism to theism.
 
 My second worry is the one I want to briefly focus on in this post. The worry
 is that it fails to get at what is potentially a deeper distinction, and one
@@ -134,24 +183,6 @@ substances are more fundamental than properties (or at least: substances are
 no less fundamental than properties). Accordingly, let's call this sort of
 view _a substance-first ontology_.
 
-By contrast, a number of philosophers (e.g.,
-[Laurie](https://exapologist.blogspot.com/2022/08/the-argument-from-one-
-category-ontology.html)
-[Paul](https://exapologist.blogspot.com/2022/08/a-sketch-of-how-to-explain-
-everything.html) and [Shamik
-Dasgupta](https://shamik.net/papers/dasgupta%20individuals.pdf)) have recently
-argued that properties are more fundamental than substances, and indeed that
-substances may not even exist. Let's call this sort of view _a property-first
-ontology_.
-
-Which view is correct: the substance-first view or the property-first view?
-This question has potentially huge implications for the disagreement between
-theists and non-theists.[1] This is because, prima facie, _orthodox monotheism
-entails the substance-first view._ And this in turn is because, prima facie,
-_God_ is a substance, and is prior to all else that exists. Therefore, if
-there are reasons to prefer the property-first view, then there are thereby
-reasons to prefer non-theism to theism.
-
 I have at least two worries for this way of carving things up. I've gestured
 to the first of these on
 [previous](https://exapologist.blogspot.com/2022/04/camerons-forthcoming-
@@ -161,6 +192,16 @@ presupposes metaphysical foundationalism, and yet metaphysical foundationalism
 has recently been called into doubt (on both philosophical and scientific
 grounds), and metaphysical coherentism and metaphysical infinitism have both
 recently been vigorously defended.
+
+By contrast, a number of philosophers (e.g.,
+[Laurie](https://exapologist.blogspot.com/2022/08/the-argument-from-one-
+category-ontology.html)
+[Paul](https://exapologist.blogspot.com/2022/08/a-sketch-of-how-to-explain-
+everything.html) and [Shamik
+Dasgupta](https://shamik.net/papers/dasgupta%20individuals.pdf)) have recently
+argued that properties are more fundamental than substances, and indeed that
+substances may not even exist. Let's call this sort of view _a property-first
+ontology_.
 
 The evidence for fine-tuning confirms both demiurgism and panentheism over
 theism, and in this way is good evidence against theism. This is because the
@@ -203,34 +244,15 @@ amplitude properties, that compose a universal wavefunction. From non-
 spatiotemporal property configurations like this, you necessarily get
 spatiotemporal universes that logically supervene upon them.[3]
 
+Why does _this_ universe exist? By NMPSR, absent a good reason to think
+otherwise, we should assume _all_ possible universe quality fusions exist
+inevitably and necessarily within the world-whole of qualities, and this is
+one of them.[4]
+
 [3] As Paul points out, her one-category ontology is compatible with a parts-
 to-whole mosaic, as well as a holistic whole-to-parts picture. She prefers the
 latter because it's a better fit with with quantum holism/entanglement
 phenomena.
-
-> _Negative Mereological PSR (NMPSR)_ : a given plurality of qualities will
-> fuse/bundle unless there is a sufficient reason for why they do not.
-
-> ...consider the wave-function realist who takes the world-whole to be a
-> wavefunction. On the GRW theory of the world, the world is a universal wave
-> function that evolves in accordance with the dynamical laws. Understood in
-> terms of mereological bundle theory, the wavefunction is the fusion of
-> amplitude and phase properties (along with any other properties of the
-> system) with structuring properties or relations, including the structuring
-> relations described by Schrodinger’s equation and by the collapse postulate.
-> A variant of this view can fit the Everettian approach, and one can also fit
-> David Albert’s (1996) treatment of Bohmian mechanics by adding a world-
-> particle that is simply a fusion of properties to the plurality of things. (
-> _Ibid_., p. 254).
-
-> On my view, matter, concrete objects, abstract objects, and perhaps even
-> spacetime are constructed from mereological fusions of qualities, so the
-> world is simply a vast mixture of qualities, including polyadic properties
-> (i.e., relations). This means that everything there is, including concrete
-> objects like persons or stars, is a quality, a qualitative fusion, or a
-> portion of the extended qualitative fusion that is the world-whole. I call
-> my view _mereological bundle theory_. (Paul, "A One Category Ontology", p.
-> 2)
 
 [1] On Paul's account, the relation of mereological bundling here is not a
 fundamentally spatiotemporal one of spatiotemporal parts composing a
@@ -238,70 +260,6 @@ spatiotemporal whole. This is because contemporary physics seems to have shown
 that spacetime isn't fundamental (think, for example, of wave function realism
 with respect to quantum mechanics, theories of quantum gravity that take
 spacetime to be emergent, etc.).
-
-Why does _this_ universe exist? By NMPSR, absent a good reason to think
-otherwise, we should assume _all_ possible universe quality fusions exist
-inevitably and necessarily within the world-whole of qualities, and this is
-one of them.[4]
-
-[4] We might not even have to appeal to NMPSR here. For [there are good
-grounds for thinking Everettian QM (EQM) is
-true](https://www.amazon.com/Something-Deeply-Hidden-Emergence-
-Spacetime/dp/1524743011), and [as Alastair Wilson points
-out](https://www.amazon.com/Nature-Contingency-Quantum-Physics-
-Realism/dp/0198846215), EQM allows for different fundamental parameters within
-the universal wavefunction (indeed, it allows for all possible parameter
-variations). If so, then (given this fact plus the decoherence mechanism of
-EQM) EQM can generate something akin to a level-5 multiverse, where every
-possible universe exists in some branch or other of the universal
-wavefunction.
-
-According to [L.A. Paul's](https://lapaul.org/papers/Paul-Logical-Parts.pdf)
-[one](https://lapaul.org/papers/Paul-Building-the-world-from-its-fundamental-
-constituents.pdf)-[category](https://lapaul.org/papers/Paul-OneCategory.pdf)
-[ontology](https://lapaul.org/papers/Paul-Categorical-Priority-and-
-Collapse.pdf), there is just one kind of thing: qualities (i.e., properties).
-Qualities are universals -- i.e., repeatable entities -- that (arguably) exist
-necessarily and _a se_ , and have a nature closer to Aristotle's immanent
-(non-substantial) forms than Plato's transcendent forms (there are no
-uninstantiated qualities). All the rest of reality is ultimately explained in
-terms of mereological fusions of n-adic qualities.[1] The fusion relation is a
-composition relation, and so derivative entities are composed of basic
-qualities.[2] The resultant picture is _mereological bundle theory_ :
-
-> According to mereological bundle theory, the world (here, I need not confine
-> myself to the physical world, so by ‘‘world’’ I mean the whole world, not
-> just the cosmos) is a vast mixture of properties, some with a single
-> location (whether in configuration space, or in spacetime, or in something
-> else), some with many locations, some located everywhere, and perhaps even
-> some without any location at all (Locations are defined by n-adic
-> properties. For simplicity, take the fundamental space to be relational, and
-> define up ‘‘points’’ in the space using these relations and properties). The
-> world is constructed from arrangements of properties and relations that are
-> fused together to make things of all sorts: concrete objects, abstract
-> objects, events, states of affairs, facts, fields, regions, and anything
-> else there is. So, according to the mereological bundle theorist, fields,
-> particles, entangled systems of particles, spaces, molecules, cells, bodies,
-> persons and societies are all constructed, most fundamentally, from fusions
-> of properties and relations. (Paul, "Building the World From Its Fundamental
-> Constituents", p. 242).
-
-Given NMPSR, then, we should assume that all possible bundles/fusions exist in
-the world-whole. If so, then we can explain everything the theist wants
-explained:
-
-I think a naturalist who adopts Paul's one-category ontology can exploit her
-account to explain the existence and fine-tuning of our universe. To start,
-consider that if we assume with Paul that the world-whole is just the sum of
-all qualities, and they can combine in various ways in accordance with the
-constraints of their intrinsic natures, _what prevents them from combining in
-every possible such way_? It would be mysterious why they fuse/bundle in some
-ways and not others if they didn't fuse/bundle in every way consistent with
-their natures. Paul's one-category ontology thus naturally generates pressure
-to accept a mereology-focused variant of Spinoza's negative PSR:
-
-Why does anything exist? Because qualities exist and they're necessary beings
-that exist _a se_.
 
 [2] Question: How does a quality become spatiotemporally localized on Paul's
 view? Answer: By bundling with spatiotemporal properties/relations: "Objects
@@ -320,6 +278,13 @@ interpretations of the ontology of quantum mechanics, for example, with
 realism about the wavefunction." (Paul, Building the World From Its
 Fundamental Constituents", p. 242).
 
+Given NMPSR, then, we should assume that all possible bundles/fusions exist in
+the world-whole. If so, then we can explain everything the theist wants
+explained:
+
+> _Negative Mereological PSR (NMPSR)_ : a given plurality of qualities will
+> fuse/bundle unless there is a sufficient reason for why they do not.
+
 > ...consider the wave-function realist who takes the world-whole to be a
 > wavefunction. On the GRW theory of the world, the world is a universal wave
 > function that evolves in accordance with the dynamical laws. Understood in
@@ -329,8 +294,30 @@ Fundamental Constituents", p. 242).
 > relations described by Schrodinger’s equation and by the collapse postulate.
 > A variant of this view can fit the Everettian approach, and one can also fit
 > David Albert’s (1996) treatment of Bohmian mechanics by adding a world-
-> particle that is simply a fusion of properties to the plurality of things.
-> (Ibid., p. 254).
+> particle that is simply a fusion of properties to the plurality of things. (
+> _Ibid_., p. 254).
+
+I think a naturalist who adopts Paul's one-category ontology can exploit her
+account to explain the existence and fine-tuning of our universe. To start,
+consider that if we assume with Paul that the world-whole is just the sum of
+all qualities, and they can combine in various ways in accordance with the
+constraints of their intrinsic natures, _what prevents them from combining in
+every possible such way_? It would be mysterious why they fuse/bundle in some
+ways and not others if they didn't fuse/bundle in every way consistent with
+their natures. Paul's one-category ontology thus naturally generates pressure
+to accept a mereology-focused variant of Spinoza's negative PSR:
+
+[4] We might not even have to appeal to NMPSR here. For [there are good
+grounds for thinking Everettian QM (EQM) is
+true](https://www.amazon.com/Something-Deeply-Hidden-Emergence-
+Spacetime/dp/1524743011), and [as Alastair Wilson points
+out](https://www.amazon.com/Nature-Contingency-Quantum-Physics-
+Realism/dp/0198846215), EQM allows for different fundamental parameters within
+the universal wavefunction (indeed, it allows for all possible parameter
+variations). If so, then (given this fact plus the decoherence mechanism of
+EQM) EQM can generate something akin to a level-5 multiverse, where every
+possible universe exists in some branch or other of the universal
+wavefunction.
 
 > On my view, matter, concrete objects, abstract objects, and perhaps even
 > spacetime are constructed from mereological fusions of qualities, so the
@@ -338,21 +325,25 @@ Fundamental Constituents", p. 242).
 > (i.e., relations). This means that everything there is, including concrete
 > objects like persons or stars, is a quality, a qualitative fusion, or a
 > portion of the extended qualitative fusion that is the world-whole. I call
-> my view mereological bundle theory. (Paul, "A One Category Ontology", p. 2)
+> my view _mereological bundle theory_. (Paul, "A One Category Ontology", p.
+> 2)
 
-Paul's hypothesis of a one-category ontology is much more parsimonious than
-theism's, which posits irreducible substances -- and irreducibly different
-_kinds_ of substances -- in addition to qualities. It also also has wider
-scope than theism, as it can explain God (if there is a god) in terms of a
-fusion of qualities. It can also explain the existence of God in terms of a
-derivative being that supervenes upon the modal space of qualities.
-Unfortunately, the latter two claims are incompatible with classical theism,
-as they violate the doctrine of divine simplicity and both conjuncts of the
-aseity-sovereignty doctrine (i.e., the doctrine that (i) God is an absolutely
-independent being, dependent upon/derivative of nothing and (ii) everything
-distinct from God depends upon her for their existence). All else being equal,
-then, a one-category ontology of qualities is a more plausible theory of
-ultimate reality than theism.
+> According to mereological bundle theory, the world (here, I need not confine
+> myself to the physical world, so by ‘‘world’’ I mean the whole world, not
+> just the cosmos) is a vast mixture of properties, some with a single
+> location (whether in configuration space, or in spacetime, or in something
+> else), some with many locations, some located everywhere, and perhaps even
+> some without any location at all (Locations are defined by n-adic
+> properties. For simplicity, take the fundamental space to be relational, and
+> define up ‘‘points’’ in the space using these relations and properties). The
+> world is constructed from arrangements of properties and relations that are
+> fused together to make things of all sorts: concrete objects, abstract
+> objects, events, states of affairs, facts, fields, regions, and anything
+> else there is. So, according to the mereological bundle theorist, fields,
+> particles, entangled systems of particles, spaces, molecules, cells, bodies,
+> persons and societies are all constructed, most fundamentally, from fusions
+> of properties and relations. (Paul, "Building the World From Its Fundamental
+> Constituents", p. 242).
 
 According to [L.A. Paul's](https://lapaul.org/papers/Paul-Logical-Parts.pdf)
 [one](https://lapaul.org/papers/Paul-Building-the-world-from-its-fundamental-
@@ -360,16 +351,13 @@ constituents.pdf)-[category](https://lapaul.org/papers/Paul-OneCategory.pdf)
 [ontology](https://lapaul.org/papers/Paul-Categorical-Priority-and-
 Collapse.pdf), there is just one kind of thing: qualities (i.e., properties).
 Qualities are universals -- i.e., repeatable entities -- that (arguably) exist
-necessarily and a se, and have a nature closer to Aristotle's immanent (non-
-substantial) forms than Plato's transcendent forms (there are no
+necessarily and _a se_ , and have a nature closer to Aristotle's immanent
+(non-substantial) forms than Plato's transcendent forms (there are no
 uninstantiated qualities). All the rest of reality is ultimately explained in
 terms of mereological fusions of n-adic qualities.[1] The fusion relation is a
 composition relation, and so derivative entities are composed of basic
-qualities.[2], [3] The resultant picture is mereological bundle theory:
+qualities.[2] The resultant picture is _mereological bundle theory_ :
 
-King, Nathan. "The Apologist's Dilemma", in Matthew A. Benton and Jonathan L.
-Kvanvig, eds. _[Religious Disagreement and
-Pluralism](https://global.oup.com/academic/product/religious-disagreement-and-
-pluralism-9780198849865?cc=us&lang=en&)_. Oxford University Press, 2022.
-Here's a few snippets to whet your appetite:
+Why does anything exist? Because qualities exist and they're necessary beings
+that exist _a se_.
 
