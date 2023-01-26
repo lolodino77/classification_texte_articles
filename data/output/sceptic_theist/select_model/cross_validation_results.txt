@@ -1,0 +1,2 @@
+[('test_accuracy', 0.8802), ('test_f1_macro', 0.8801), ('test_recall', 0.903), ('test_precision', 0.8627)] (LR)
+[('test_accuracy', 0.7551), ('test_f1_macro', 0.7549), ('test_recall', 0.7542), ('test_precision', 0.7542)] (DecisionTreeClassifier)

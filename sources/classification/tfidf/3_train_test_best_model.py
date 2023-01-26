@@ -82,4 +82,3 @@ make_output_dir(corpus_name)
 # Evaluation du modele (matrice de confusion, courbe ROC et learning curves)
 save_model_diagnostics(corpus, X_train_tfidf, y_train, y_test, y_pred, indices_test, class_names, model, 
                             corpus_name)
-print("au revoir")

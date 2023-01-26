@@ -184,7 +184,7 @@ def apply_tfidf_to_train_and_test(X_train, X_test):
     return(X_train_tfidf, X_test_tfidf)
 
 
-def save_cross_validation(X_train, y_train, scorings, num_iter, k, dataset_name=""):
+def save_cross_validation(X_train, y_train, scorings, num_iter, k, dataset_name, stage):
     """Equilibre un dataset binaire non equilibre : il aura le meme nombre d'exemples de chaque classe
 
     Parametres: 
@@ -206,23 +206,23 @@ def save_cross_validation(X_train, y_train, scorings, num_iter, k, dataset_name=
 
     models = []
     models.append(('LR', LogisticRegression(solver='liblinear', multi_class='ovr')))
-    models.append(('AdaBoostClassifier', AdaBoostClassifier()))
-    models.append(('KNN', KNeighborsClassifier()))
-    models.append(('RandomForest', RandomForestClassifier()))
-    # models.append(('MLPClassifier', MLPClassifier(max_iter=100))) car diverge donc trop long
-    models.append(('SGDClassifier', SGDClassifier()))
-    models.append(('SVM', SVC()))
+    # models.append(('AdaBoostClassifier', AdaBoostClassifier()))
+    # models.append(('KNN', KNeighborsClassifier()))
+    # models.append(('RandomForest', RandomForestClassifier()))
+    # models.append(('SGDClassifier', SGDClassifier()))
+    # models.append(('SVM', SVC()))
     models.append(('DecisionTreeClassifier', DecisionTreeClassifier()))
-    
+    # models.append(('MLPClassifier', MLPClassifier(max_iter=100))) car diverge donc trop long
+     
     # evaluate each model in turn
     print("models =", models)
-    path = "./data/output/{}/cross_validation_results.txt".format(dataset_name)
+    path = "./data/output/{}/{}/cross_validation_results.txt".format(dataset_name, stage)
     print("\n\nos.getcwd() =", os.getcwd())
     f = open(path, "w")
 
     for name, model in models:
         kfold = RepeatedStratifiedKFold(n_splits=k, n_repeats=num_iter, random_state=None)
-        cv_results = cross_validate(model, X_train, y_train, cv=kfold, scoring=scorings)
+        cv_results = cross_validate(model, X_train, y_train, cv=kfold, scoring=scorings, n_jobs=-1)
         for i, scores in cv_results.items():
             cv_results[i] = round(np.mean(scores), 4) #on fait la moyenne de chaque score (rappel, precision, etc.) pour les k experiences
         f.write((str(list(cv_results.items())[2:])+" ({0})\n").format(name))
@@ -232,10 +232,14 @@ def save_cross_validation(X_train, y_train, scorings, num_iter, k, dataset_name=
 
 def make_output_dir(dataset_name):
     if not os.path.exists("./data/output/{}".format(dataset_name)):
-        os.makedirs("./data/output/{}".format(dataset_name)) 
+        os.makedirs("./data/output/{}".format(dataset_name))
+    if not os.path.exists("./data/output/{}/select_model".format(dataset_name)):
+        os.makedirs("./data/output/{}/select_model".format(dataset_name))
+    if not os.path.exists("./data/output/{}/best_model".format(dataset_name)):
+        os.makedirs("./data/output/{}/best_model".format(dataset_name)) 
 
 
-def save_confusion_matrix(y_test, y_pred, class_names, model, dataset_name=""):
+def save_confusion_matrix(y_test, y_pred, class_names, model, dataset_name):
     """Affiche la matrice de confusion
 
     Parametres: 
@@ -275,15 +279,14 @@ def save_confusion_matrix(y_test, y_pred, class_names, model, dataset_name=""):
     plt.ylabel("Catégories réelles", fontsize=font_size + 3)
     print("dataset_name =", dataset_name)
 
-    path = "./data/output/{}/confusion_matrix_{}".format(dataset_name, model.__class__.__name__)
+    path = "./data/output/{}/best_model/confusion_matrix_{}".format(dataset_name, model.__class__.__name__)
     plt.savefig(path)
 
 
 from matplotlib.pyplot import cm
 import matplotlib.transforms as mtrans
 
-def save_learning_curves_multiple_models(models, X_train, y_train, cv_param, scoring, train_sizes, n_jobs=-1, 
-                                        dataset_name=""):
+def save_learning_curves_multiple_models(models, X_train, y_train, cv_param, scoring, train_sizes, dataset_name):
     colors = iter(cm.rainbow(np.linspace(0, 1, len(models))))
     fig, ax = plt.subplots(figsize=(14, 9))
     linewidth = 3
@@ -296,6 +299,7 @@ def save_learning_curves_multiple_models(models, X_train, y_train, cv_param, sco
     name, model = model_tuple
     print("model =", name)
     print("shape X_train =", len(y_train))
+    n_jobs = -1
     train_sizes, train_scores, cv_scores = learning_curve(model, X_train, y_train, cv=cv_param, scoring=scoring, n_jobs=n_jobs, train_sizes=train_sizes)
     train_scores_mean = np.mean(train_scores, axis=1)
     cv_scores_mean = np.mean(cv_scores, axis=1)
@@ -331,7 +335,7 @@ def save_learning_curves_multiple_models(models, X_train, y_train, cv_param, sco
         plt.xlabel("Taille du trainset", fontsize=18)
         plt.ylabel(scoring.capitalize(), fontsize=18)
         plt.legend(loc="best", prop={'size': 16})
-    path = "./data/output/{}/learning_curve_{}".format(dataset_name, scoring)
+    path = "./data/output/{}/select_model/learning_curve_{}".format(dataset_name, scoring)
     plt.savefig(path)
 
 
@@ -339,24 +343,25 @@ def save_learning_curves_multiple_models(models, X_train, y_train, cv_param, sco
     #train_sizes (liste de float) : tailles du train en pourcentage 
     # y_train (numpy ndarray int) : Les etiquettes au format int (le format string ne marche pas)
     #cv_param : parametres de type kfold pour la cross validation
-def save_learning_curve(model, X_train, y_train, cv_param, scoring, train_sizes, n_jobs=-1, 
-                        dataset_name=""):
+def save_learning_curve(model, X_train, y_train, cv_param, scoring, train_sizes, dataset_name, stage, n_jobs=-1):
     """Affiche la learning curve du modele selectionne selon un critere
        Learning curve = performances du modele (selon un critere) en fonction de la taille du trainset
 
     Parametres: 
-    model (modele sklearn) : Le modele de classification
-    X_train (numpy ndarray) : Les parametres 
-    y_train (numpy ndarray int) : Les etiquettes au format int (le format string ne marche pas)
-    cv_param (liste) : Les parametres de la k-fold cross validation
-    scoring (string) : Le nom du critere (metrique) choisi pour evaluer le modele avec les learning curves
-                                Exemples : 'accuracy', 'precision', 'recall', 'f1', 'f1_macro'
-    train_sizes (liste de float) : La liste des tailles des train (en pourcentage du train total original)
-                                   Exemple : [0.2, 0.5, 0.7] = 20 % du train, 50 % du train, 70 % du train
-    n_jobs (int) : Le nombre de jobs
-    savefig (string) : Indique si on enregistre la learning curve dans une image
-    dataset_name (string) : Dossier des sorties du dataframe etudie
-    plotfig (string) : Indique si on affiche la learning curve sur une interface
+        model (modele sklearn) : Le modele de classification
+        X_train (numpy ndarray) : Les parametres 
+        y_train (numpy ndarray int) : Les etiquettes au format int (le format string ne marche pas)
+        cv_param (liste) : Les parametres de la k-fold cross validation
+        scoring (string) : Le nom du critere (metrique) choisi pour evaluer le modele avec les learning curves
+                                    Exemples : 'accuracy', 'precision', 'recall', 'f1', 'f1_macro'
+        train_sizes (liste de float) : La liste des tailles des train (en pourcentage du train total original)
+                                    Exemple : [0.2, 0.5, 0.7] = 20 % du train, 50 % du train, 70 % du train
+        n_jobs (int) : Le nombre de jobs
+        savefig (string) : Indique si on enregistre la learning curve dans une image
+        dataset_name (string) : Dossier des sorties du dataframe etudie
+        plotfig (string) : Indique si on affiche la learning curve sur une interface
+        stage (string) : Etape a laquelle on se trouve, soit "select_model" (selection de modeles)
+                            soit "best_model" (modele final garde apres a la fin de la selection de modeles)
     """
     train_sizes, train_scores, cv_scores = learning_curve(model, X_train, y_train, cv=cv_param, scoring=scoring, n_jobs=n_jobs, train_sizes=train_sizes)
     print("train_scores =", train_scores)
@@ -383,43 +388,43 @@ def save_learning_curve(model, X_train, y_train, cv_param, scoring, train_sizes,
     plt.ylabel(scoring.capitalize(), fontsize=18)
     plt.legend(loc="upper right", prop={'size': 16})
     
-    path = "./data/output/{}/learning_curve_{}_{}".format(dataset_name, model.__class__.__name__, scoring)
+    path = "./data/output/{}/{}/learning_curve_{}_{}".format(dataset_name, stage, model.__class__.__name__, scoring)
     plt.savefig(path)
 
 
-def save_all_learning_curves(model, X_train, y_train, cv_param, scorings, train_sizes, n_jobs=-1, 
-                            dataset_name=""):
-    """Affiche les learning curves du modele selectionne selon les critere choisis par l'utilisateur
-       Learning curve = performances du modele (selon un critere) en fonction de la taille du trainset
+def save_all_learning_curves(model, X_train, y_train, cv_param, scorings, train_sizes, dataset_name, stage, n_jobs=-1):
+    """Sauvegarde en fichiers images les learning curves du modele selectionne selon les critere choisis 
+    par l'utilisateur.
+    Learning curve = performances du modele (selon un critere) en fonction de la taille du trainset
 
     Parametres: 
-    model (modele sklearn) : Le modele de classification
-    X_train (numpy ndarray) : Les parametres 
-    y_train (numpy ndarray int) : Les etiquettes au format int (le format string ne marche pas)
-    cv_param (liste) : Les parametres de la k-fold cross validation
-    scorings (liste de string) : Le nom des criteres (metriques) choisis pour evaluer le modele avec 
-                                 les learning curves 
-                                Exemples : 
-                                ['accuracy', 'precision', 'recall', 'f1', 'f1_macro'] 
-                                ['f1_macro', 'f1_micro']
-    train_sizes (liste de float) : La liste des tailles des train (en pourcentage du train total original)
-                                   Exemple : [0.2, 0.5, 0.7] = 20 % du train, 50 % du train, 70 % du train
-    n_jobs (int) : Le nombre de jobs
-    dataset_name (string) : Dossier des sorties du dataframe etudie
+        model (modele sklearn) : Le modele de classification
+        X_train (numpy ndarray) : Les parametres 
+        y_train (numpy ndarray int) : Les etiquettes au format int (le format string ne marche pas)
+        cv_param (liste) : Les parametres de la k-fold cross validation
+        scorings (liste de string) : Le nom des criteres (metriques) choisis pour evaluer le modele avec 
+                                    les learning curves 
+                                    Exemples : 
+                                    ['accuracy', 'precision', 'recall', 'f1', 'f1_macro'] 
+                                    ['f1_macro', 'f1_micro']
+        train_sizes (liste de float) : La liste des tailles des train (en pourcentage du train total original)
+                                    Exemple : [0.2, 0.5, 0.7] = 20 % du train, 50 % du train, 70 % du train
+        n_jobs (int) : Le nombre de jobs
+        dataset_name (string) : Dossier des sorties du dataframe etudie
     """
     for scoring in scorings:
         print("scoring =", scoring)
-        save_learning_curve(model, X_train, y_train, cv_param, scoring, train_sizes, n_jobs, 
-                            dataset_name)
+        save_learning_curve(model, X_train, y_train, cv_param, scoring, train_sizes, dataset_name, stage, n_jobs)
 
 
-def save_roc(model, y_true, y_pred, dataset_name=""):
+def save_roc(model, y_true, y_pred, dataset_name):
     """ Enregistre la courbe roc dans un fichier image
 
     Parametres: 
-    model : 
-    y_true (numpy ndarray) : Les etiquettes correctes 
-    y_pred (numpy ndarray) : Les etiquettes devinees par le modele
+        model (sklearn model) : Le modele supervise entraine 
+        y_true (numpy ndarray) : Les etiquettes correctes 
+        y_pred (numpy ndarray) : Les etiquettes devinees par le modele
+        dataset_name (str) : Le nom du dataset, ex : chat_chien, pomme_poire
     """
     fpr, tpr, thresholds = metrics.roc_curve(y_true, y_pred)
     auc = metrics.auc(fpr, tpr)
@@ -440,15 +445,16 @@ def save_roc(model, y_true, y_pred, dataset_name=""):
     plt.title("Receiver operating characteristic example", fontsize=19)
     plt.legend(loc="lower right", prop={'size': 16})
 
-    path = "./data/output/{}/roc_{}".format(dataset_name, model.__class__.__name__)
+    path = "./data/output/{}/best_model/roc_{}".format(dataset_name, model.__class__.__name__)
     plt.savefig(path)
 
 
 def save_classification_report(y_test, y_pred, dataset_name, model):
+    """ Sauvegarde dans un fichier .txt le classification report (metriques pour chaque classe"""
     report = classification_report(y_test, y_pred)
     print("type report = ", type(report))
     print("report =", report)
-    path = "./data/output/{}/classification_report_{}.txt".format(dataset_name, model.__class__.__name__)
+    path = "./data/output/{}/best_model/classification_report_{}.txt".format(dataset_name, model.__class__.__name__)
     print("path =", path)
     f = open(path, "w")
     f.write(report)
@@ -484,10 +490,10 @@ def save_model_diagnostics(corpus, X_train, y_train, y_test, y_pred, indices_tes
     train_sizes = np.linspace(0.2, 1.0, num_experiences)
     n_jobs = -1
     scorings = ['accuracy', 'f1_macro', 'recall', 'precision']
-    save_all_learning_curves(model, X_train, y_train, cv_param, scorings, train_sizes, n_jobs, 
-                                dataset_name)
+    save_all_learning_curves(model, X_train, y_train, cv_param, scorings, train_sizes, 
+                                dataset_name, "best_model", n_jobs)
 
-    # False predictions
+    # Fausses predictions
     save_false_predictions(corpus, dataset_name, indices_test, y_test, y_pred, class_names)
 
 
@@ -508,13 +514,13 @@ def select_models(corpus, corpus_name, id_col_name, class_col_name, features_col
     num_iter = 2 #nombre de repetitions de la k-fold cross validation entiere
     k = 10 #k de la k-fold cross validation
     print("corpus_name =", corpus_name)
-    save_cross_validation(X_train_tfidf, y_train, scorings, num_iter, k, corpus_name)
+    save_cross_validation(X_train_tfidf, y_train, scorings, num_iter, k, corpus_name, stage="select_model")
 
     ## Learning curves (du meilleur modele)
     k = 10
     kfold = RepeatedStratifiedKFold(n_splits=k, n_repeats=20, random_state=None)
     cv_param = kfold
-    num_experiences = 4
+    num_experiences = 2
     train_sizes = np.linspace(0.2, 1.0, num_experiences)
     # n_jobs = -1
     models = []
@@ -524,16 +530,12 @@ def select_models(corpus, corpus_name, id_col_name, class_col_name, features_col
     models.append(('SVM', SVC()))
     models.append(('DecisionTreeClassifier', DecisionTreeClassifier()))
 
-    # scoring = 'precision'
-    # print("scoring =", scoring)
-    # save_learning_curves_multiple_models(models, X_train_tfidf, y_train, cv_param, scoring, train_sizes, n_jobs=-1, 
-    #                                     dataset_name=corpus_name)
-
     # scorings = ['accuracy', 'f1_macro', 'recall', 'precision']
     scorings = ['accuracy', 'f1_macro', 'recall']
-    # for scoring in scorings:
-    #     save_learning_curves_multiple_models(models, X_train_tfidf, y_train, cv_param, scoring, train_sizes, n_jobs=-1, 
-    #                                         dataset_name=corpus_name)
+    scorings = ["accuracy"]
+    for scoring in scorings:
+        save_learning_curves_multiple_models(models, X_train_tfidf, y_train, cv_param, scoring, train_sizes, 
+                                            corpus_name)
 
 
 

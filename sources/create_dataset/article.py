@@ -11,7 +11,7 @@ class Article:
     """ Define an article from a blog """
 
     def __init__(self, url):
-        """ Constructor of Article """
+        """ Constructeur de la classe Article """
         self.url = url
         self.paragraphs = self.create_paragraphs()
 
