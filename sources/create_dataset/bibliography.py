@@ -3,6 +3,7 @@ from datasource import *
 
 
 class Bibliography(DataSource):
+    """ Represente une page de blog de type bibliographie (avec de nombreux urls dessus) """
     def __init__(self, url, corpus_name, num_articles):
         """ Constructeur de la classe Bibliography """
         DataSource.__init__(self, url, num_articles)
@@ -15,7 +16,6 @@ class Bibliography(DataSource):
 
     def __str__(self):
         """ Descripteur de la classe Bibliography """
-        print("str :")
         str_corpus_name = str(self.corpus_name)
         str_path_articles_urls = str(self.path_articles_urls)
         str_articles_urls = str(self.articles_urls)

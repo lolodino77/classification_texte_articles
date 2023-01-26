@@ -2,6 +2,7 @@ from datasource import *
 
 
 class Blog(DataSource):
+    """ Represente un blog avec son nom, ses articles, etc. """
     def __init__(self, url, num_articles):
         DataSource.__init__(self, url, num_articles)
         print("type num_articles =", type(num_articles))
