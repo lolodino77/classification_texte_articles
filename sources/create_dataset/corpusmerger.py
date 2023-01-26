@@ -15,7 +15,7 @@ import joblib
 
 
 class CorpusMerger:
-    """ Classe pour fusionner plusieurs corpus en un seul corpus
+    """ Classe pour fusionner plusieurs corpus (a un seul topic) en un seul corpus (a plusieurs topics)
     1. Soit un corpus final avec un seul et unique topic
     2. Soit un corpus final avec plusieurs topics
     """

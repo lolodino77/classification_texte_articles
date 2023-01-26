@@ -8,6 +8,8 @@ import numpy as np
 import pandas as pd
 import seaborn as sb
 import matplotlib.pyplot as plt
+from matplotlib.pyplot import cm
+import matplotlib.transforms as mtrans
 from sklearn.feature_extraction.text import TfidfTransformer, TfidfVectorizer
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import classification_report, confusion_matrix
@@ -30,14 +32,24 @@ from lib_general import *
 # sys.path.append(PureWindowsPath(r"C:\Users\eupho\OneDrive\Documents\perso\projets\classification_texte_bapteme_philo\sources\create_dataset").as_posix())
 
 def get_merged_corpus_filenames(argv):
-    # python 2_model_selection.py corpus_edwardfeser_exapologist.parquet
-    # python 2_model_selection.py corpus_edwardfeser_exapologist.csv
-    # python 2_model_selection.py all : model selection on all files (csv and parquet)
-    # python 2_model_selection.py all csv : model selection on all csv files
-    # python 2_model_selection.py all parquet : model selection on all parquet files
+    """ Retourne tous les noms de fichiers des corpus dont on a besoin
+    a partir des arguments de commande pour lancer le script python 2_model_selection.py
+    
+    Entree :
+        argv (list of str) : Un a deux arguments (hormis l'argument python)            
+            argv[1] = input files : "all" or "corpus_name.csv" or "corpus_name.parquet"
+            argv[2] = input files format : only if argv[1] == "all", equals "csv" or "parquet"
 
-    # argv[1] = input files : "all" or "corpus_name.csv" or "corpus_name.parquet"
-    # argv[2] = input files format : only if argv[1] == "all", equals "csv" or "parquet"
+    Sortie :
+        output (list of str) : Tous les fichiers de corpus demandes par la commande de terminal
+    
+    # Exemples de commandes de terminal :
+        # python 2_model_selection.py corpus_edwardfeser_exapologist.parquet
+        # python 2_model_selection.py corpus_edwardfeser_exapologist.csv
+        # python 2_model_selection.py all : model selection on all files (csv and parquet)
+        # python 2_model_selection.py all csv : model selection on all csv files
+        # python 2_model_selection.py all parquet : model selection on all parquet files
+    """
 
     input_files = argv[1]
     filenames = input_files
@@ -46,10 +58,6 @@ def get_merged_corpus_filenames(argv):
         input_files_format = argv[2]
         input_repertory = ".\\data\\input\\merged_corpus\\" #\\ et pas / car os renvoie \\
         filenames = glob.glob(os.path.join(input_repertory + "*." + input_files_format))
-
-        # input_repertory = "./data/input/merged_corpus/"        
-        # filenames = glob.glob(os.path.join(input_repertory + "*." + input_files_format))
-        # filenames = [filename.split(input_repertory)[1] for filename in filenames] # enlever le path entier, garder que le nom du fichier
 
         print("filenames =", filenames)
         output = [filenames, input_files_format]
@@ -64,30 +72,33 @@ def get_merged_corpus_filenames(argv):
             filenames = glob.glob(os.path.join(input_repertory + "*." + input_files_format))
             filenames = [filename.split(input_repertory)[1] for filename in filenames] # enlever le path entier, garder que le nom du fichier
             output = [filenames, input_files_format]
+
     return(output)
 
 
 def get_merged_corpus_dataframe_from_filename(filename):
-    print("filename =", filename)
+    """ Retourne un dataframe pandas cree a partir d'un fichier de corpus (.csv ou .parquet) """
     format = filename.split(".")[1]
+
     if(format == "csv"):
        df = pd.read_csv("./data/input/merged_corpus/" + filename, encoding="utf-8")
     elif(format == "parquet"):
         df = pd.read_parquet("./data/input/merged_corpus/" + filename)
+
     return(df)
 
 
 def get_balanced_binary_dataset(data, class_col_name):
-    """Equilibre un dataset binaire non equilibre : il aura le meme nombre d'exemples de chaque classe
+    """ Equilibre un dataset binaire non equilibre : il aura le meme nombre d'exemples de chaque classe
 
-    Parametres: 
-    data (pandas DataFrame) : Le dataframe pandas a deux classes (binaire)
-                                Exemple : dataset_voitures
-    class_col_name (string) : Le nom de la colonne du dataframe qui contient les classes 
-                                Exemple : "categorie"
+    Entrees : 
+        data (pandas DataFrame) : Le dataframe pandas a deux classes (binaire)
+                                    Exemple : dataset_voitures
+        class_col_name (string) : Le nom de la colonne du dataframe qui contient les classes 
+                                    Exemple : "categorie"
 
-    Sortie:
-    balanced_data (pandas DataFrame) : Le dataframe pandas equilibre
+    Sortie :
+        balanced_data (pandas DataFrame) : Le dataframe pandas equilibre
     """
     print("inside function get_balanced_binary_dataset")
     
@@ -111,39 +122,39 @@ def get_balanced_binary_dataset(data, class_col_name):
 
 
 def get_train_and_test(data, features_col_names, class_col_name, id_col_name):
-    """Separe les donnees en train et en test
+    """ Separe les donnees en train et en test (reprend la fonction train_test_split de sklearn)
 
-    Parametres: 
-    data (pandas DataFrame) : Le dataframe pandas a deux classes (binaire)
-                                Exemple : dataset_voitures
-    features_col_names (string) : Le nom de la colonne du dataframe qui contient les documents (messages) 
-                                Exemple : "message_preprocessed"
-    class_col_name (string) : Le nom de la colonne du dataframe qui contient les classes 
-                                Exemple : "categorie"
-    id_col_name (string) : Le nom de la colonne du dataframe qui contient les id uniques (cle primaire) 
-                                Exemple : "categorie"
+    Entrees : 
+        data (pandas DataFrame) : Le dataframe pandas a deux classes (binaire)
+                                    Exemple : dataset_voitures
+        features_col_names (string) : Le nom de la colonne du dataframe qui contient les documents (messages) 
+                                    Exemple : "message_preprocessed"
+        class_col_name (string) : Le nom de la colonne du dataframe qui contient les classes 
+                                    Exemple : "categorie"
+        id_col_name (string) : Le nom de la colonne du dataframe qui contient les id uniques (cle primaire) 
+                                    Exemple : "categorie"
 
-
-    Sortie:
-    balanced_data (pandas DataFrame) : Le dataframe pandas equilibre
+    Sortie :
+        balanced_data (pandas DataFrame) : Le dataframe pandas equilibre
     """
     X = data[features_col_names]
     y = data[class_col_name]
     indices = data[id_col_name]
     X_train, X_test, y_train, y_test, indices_train, indices_test = train_test_split(X, y, indices, test_size=0.33, random_state=42)
+    
     return(X_train, X_test, y_train, y_test, indices_train, indices_test)
 
 
 def apply_tfidf_to_train(X_train):
-    """Applique la transformation tfidf aux parametres du train
+    """ Applique la transformation tfidf aux parametres du train
     (cree le vocabulaire a partir du train), implicitement transformation count puis tfidf 
 
-    Parametres: 
-    X_train (pandas DataFrame) : Les parametres du train
+    Entrees : 
+        X_train (pandas DataFrame) : Les parametres du train
 
     Sorties:
-    X_train_tfidf (pandas DataFrame) : Les parametres du train apres transformation tfidf
-    tfidf_vectorizer (TfidfVectorizer) : La fonction tfidf (contenant entre autres le vocabulaire du train)                              
+        X_train_tfidf (pandas DataFrame) : Les parametres du train apres transformation tfidf
+        tfidf_vectorizer (TfidfVectorizer) : La fonction tfidf (contenant entre autres le vocabulaire du train)                              
     """
     tfidf_vectorizer = TfidfVectorizer()
     X_train_tfidf = tfidf_vectorizer.fit_transform(X_train)
@@ -152,14 +163,14 @@ def apply_tfidf_to_train(X_train):
 
 
 def apply_tfidf_to_test(X_test, tfidf_vectorizer):
-    """Applique la transformation tfidf aux parametres du test en se basant sur le vocabulaire du train
+    """ Applique la transformation tfidf aux parametres du test en se basant sur le vocabulaire du train
 
-    Parametres: 
-    X_test (pandas DataFrame) : Les parametres du test  
-    tfidf_vectorizer (TfidfVectorizer) : La fonction tfidf (contenant entre autres le vocabulaire du train)                              
+    Entrees : 
+        X_test (pandas DataFrame) : Les parametres du test  
+        tfidf_vectorizer (TfidfVectorizer) : La fonction tfidf (contenant entre autres le vocabulaire du train)                              
 
-    Sorties:
-    X_test_tfidf (pandas DataFrame) : Les parametres du test apres transformation tfidf         
+    Sorties :
+        X_test_tfidf (pandas DataFrame) : Les parametres du test apres transformation tfidf         
     """
     X_test_tfidf = tfidf_vectorizer.transform(X_test)
 
@@ -167,16 +178,16 @@ def apply_tfidf_to_test(X_test, tfidf_vectorizer):
 
 
 def apply_tfidf_to_train_and_test(X_train, X_test):
-    """Applique la transformation tfidf aux parametres du train et du test 
+    """ Applique la transformation tfidf aux parametres du train et du test 
     (en se basant sur le vocabulaire du train), implicitement transformation count puis tfidf 
 
-    Parametres: 
-    X_train (pandas DataFrame) : Les parametres du train
-    X_test (pandas DataFrame) : Les parametres du test                                
+    Entrees : 
+        X_train (pandas DataFrame) : Les parametres du train
+        X_test (pandas DataFrame) : Les parametres du test                                
 
-    Sorties:
-    X_train_tfidf (pandas DataFrame) : Les parametres du train apres transformation tfidf
-    X_test_tfidf (pandas DataFrame) : Les parametres du test apres transformation tfidf         
+    Sorties :
+        X_train_tfidf (pandas DataFrame) : Les parametres du train apres transformation tfidf
+        X_test_tfidf (pandas DataFrame) : Les parametres du test apres transformation tfidf         
     """
     X_train_tfidf, tfidf_vectorizer = apply_tfidf_to_train(X_train)
     X_test_tfidf = apply_tfidf_to_test(X_test, tfidf_vectorizer)
@@ -185,20 +196,22 @@ def apply_tfidf_to_train_and_test(X_train, X_test):
 
 
 def save_cross_validation(X_train, y_train, scorings, num_iter, k, dataset_name, stage):
-    """Equilibre un dataset binaire non equilibre : il aura le meme nombre d'exemples de chaque classe
+    """ Lance une k-fold cross validation et enregistre les resultats dans un fichier .txt
 
-    Parametres: 
-    X_train (numpy ndarray) : Les parametres 
-    y_train (numpy ndarray int) : Les etiquettes au format int (le format string ne marche pas)
-    scorings (liste de string) : Le nom des criteres (metriques) choisis pour evaluer le modele avec 
-                                 les learning curves 
-                                Exemples : 
-                                ['accuracy', 'precision', 'recall', 'f1', 'f1_macro'] 
-                                ['f1_macro', 'f1_micro']
-    num_iter (int) : Nombre d'iterations de la k-fold cross validation
-    k (int) : Nombre de decoupages du train durant chaque etape de la k-fold cross validation 
-                Exemple : k=10 en general
-    dataset_name (string) : Le nom du dataset pour creer un fichier de sortie avec le bon nom
+    Entrees : 
+        X_train (numpy ndarray) : Les parametres 
+        y_train (numpy ndarray int) : Les etiquettes au format int (le format string ne marche pas)
+        scorings (liste de string) : Le nom des criteres (metriques) choisis pour evaluer le modele avec 
+                                    les learning curves 
+                                    Exemples : 
+                                    ['accuracy', 'precision', 'recall', 'f1', 'f1_macro'] 
+                                    ['f1_macro', 'f1_micro']
+        num_iter (int) : Nombre d'iterations de la k-fold cross validation
+        k (int) : Nombre de decoupages du train durant chaque etape de la k-fold cross validation 
+                    Exemple : k=10 en general
+        dataset_name (string) : Le nom du dataset pour creer un fichier de sortie avec le bon nom
+        stage (string) : L'etape a laquelle on fait la cross-validation (select_model pour selection de modeles
+                            ou best_model si on lance sur un seul modele)
     """
     # Cross validation
     #Methode version automatisee facile grace a la fonction RepeatedStratifiedKFold de sklearn
@@ -240,13 +253,13 @@ def make_output_dir(dataset_name):
 
 
 def save_confusion_matrix(y_test, y_pred, class_names, model, dataset_name):
-    """Affiche la matrice de confusion
+    """ Cree et enregistre la matrice de confusion d'un modele au format .png 
 
-    Parametres: 
-    y_test (numpy ndarray) : Les etiquettes au format int (le format string ne marche pas)
-    y_pred (numpy ndarray) : Les parametres du test
-    class_names (dictionary) : {"0":class_zero_name_map, "1":class_one_name_map}
-    tfidf_vectorizer (TfidfVectorizer) : La fonction tfidf (contenant entre autres le vocabulaire du train)                              
+    Entrees : 
+        y_test (numpy ndarray) : Les etiquettes au format int (le format string ne marche pas)
+        y_pred (numpy ndarray) : Les parametres du test
+        class_names (dictionary) : {"0":class_zero_name_map, "1":class_one_name_map}
+        tfidf_vectorizer (TfidfVectorizer) : La fonction tfidf (contenant entre autres le vocabulaire du train)                              
     """
     # Matrice de confusion
     class_zero_name = class_names["0"]
@@ -283,17 +296,26 @@ def save_confusion_matrix(y_test, y_pred, class_names, model, dataset_name):
     plt.savefig(path)
 
 
-from matplotlib.pyplot import cm
-import matplotlib.transforms as mtrans
-
 def save_learning_curves_multiple_models(models, X_train, y_train, cv_param, scoring, train_sizes, dataset_name):
+    """ Enregistre au format .png plusieurs learning curves selon plusieurs metriques pour plusieurs modeles
+    (Par exemple, sur un graph de learning curve selon l'accuracy, on aura les courbes de chaque modele) 
+    
+    Entrees :
+        models (modele sklearn) : Les modeles de classification
+        X_train (numpy ndarray) : Les parametres du trainset 
+        y_train (numpy ndarray int) : Les etiquettes du trainset au format int (le format string ne marche pas)
+        cv_param (liste) : Les parametres de la k-fold cross validation
+        scoring (string) : Le nom du critere (metrique) choisi pour evaluer le modele avec les learning curves
+                                    Exemples : 'accuracy', 'precision', 'recall', 'f1', 'f1_macro'
+        train_sizes (liste de float) : La liste des tailles des train (en pourcentage du train total original)
+                                    Exemple : [0.2, 0.5, 0.7] = 20 % du train, 50 % du train, 70 % du train
+        dataset_name (string) : Dossier des sorties du dataframe etudie
+    """
     colors = iter(cm.rainbow(np.linspace(0, 1, len(models))))
     fig, ax = plt.subplots(figsize=(14, 9))
     linewidth = 3
     trans_y = -4
-    # tr = mtrans.offset_copy(ax.transData, fig=fig, x=0.0, y=-(-3*i), units='points')
 
-    # plt.figure(figsize=(14, 9))
     zip_list = list(zip(models, colors))
     model_tuple, color = zip_list[0]
     name, model = model_tuple
@@ -309,26 +331,15 @@ def save_learning_curves_multiple_models(models, X_train, y_train, cv_param, sco
     for i in range(1, len(zip_list)):
         model_tuple, color = zip_list[i]
         name, model = model_tuple
-        print("model =", name)
-        print("shape X_train =", len(y_train))
         train_sizes, train_scores, cv_scores = learning_curve(model, X_train, y_train, cv=cv_param, scoring=scoring, n_jobs=n_jobs, train_sizes=train_sizes)
         train_scores_mean = np.mean(train_scores, axis=1)
         cv_scores_mean = np.mean(cv_scores, axis=1)
         model_name = str(model)
-        # train_plot_label = scoring.capitalize() + " sur le trainset"
-        # cv_plot_label = scoring.capitalize() + " sur le cvset"
         title = scoring.capitalize() + " sur le trainset et sur le cvset \n en fonction de la taille du trainset pour "
-        print("train_scores_mean =", train_scores_mean)
         tr = mtrans.offset_copy(ax.transData, fig=fig, x=0.0, y=-(trans_y*i), units='points')
         ax.plot(train_sizes, train_scores_mean, label=model_name, color=color, linewidth=linewidth, transform=tr)
-        # ax.plot(train_sizes, train_scores_mean, label=model_name, color=color, linewidth=linewidth)
         ax.plot(train_sizes, cv_scores_mean, color=color, linewidth=linewidth)
-       
-        # plt.plot(train_sizes, train_scores_mean, label=model_name, color=color, alpha=0.3)
-        # plt.plot(train_sizes, cv_scores_mean, color=color)
-        # plt.plot(train_sizes, cv_scores_mean, label=model_name, color=color)
-        # plt.plot(train_sizes, train_scores_mean, label=train_plot_label, color=color)
-        # plt.plot(train_sizes, cv_scores_mean, label=cv_plot_label, color=color)
+        
         plt.xticks(fontsize=16)
         plt.yticks(fontsize=16)
         plt.title(title, size=19)
@@ -347,7 +358,7 @@ def save_learning_curve(model, X_train, y_train, cv_param, scoring, train_sizes,
     """Affiche la learning curve du modele selectionne selon un critere
        Learning curve = performances du modele (selon un critere) en fonction de la taille du trainset
 
-    Parametres: 
+    Entrees : 
         model (modele sklearn) : Le modele de classification
         X_train (numpy ndarray) : Les parametres 
         y_train (numpy ndarray int) : Les etiquettes au format int (le format string ne marche pas)
@@ -397,7 +408,7 @@ def save_all_learning_curves(model, X_train, y_train, cv_param, scorings, train_
     par l'utilisateur.
     Learning curve = performances du modele (selon un critere) en fonction de la taille du trainset
 
-    Parametres: 
+    Entrees : 
         model (modele sklearn) : Le modele de classification
         X_train (numpy ndarray) : Les parametres 
         y_train (numpy ndarray int) : Les etiquettes au format int (le format string ne marche pas)
@@ -418,9 +429,9 @@ def save_all_learning_curves(model, X_train, y_train, cv_param, scorings, train_
 
 
 def save_roc(model, y_true, y_pred, dataset_name):
-    """ Enregistre la courbe roc dans un fichier image
+    """ Enregistre la courbe roc dans un fichier .png
 
-    Parametres: 
+    Entrees : 
         model (sklearn model) : Le modele supervise entraine 
         y_true (numpy ndarray) : Les etiquettes correctes 
         y_pred (numpy ndarray) : Les etiquettes devinees par le modele
@@ -450,7 +461,14 @@ def save_roc(model, y_true, y_pred, dataset_name):
 
 
 def save_classification_report(y_test, y_pred, dataset_name, model):
-    """ Sauvegarde dans un fichier .txt le classification report (metriques pour chaque classe"""
+    """ Sauvegarde .txt le classification report de sklearn (metriques pour chaque classe) dans un fichier
+    
+    Entrees :
+        y_test (numpy ndarray) : Les etiquettes au format int (le format string ne marche pas)
+        y_pred (numpy ndarray) : Les parametres du test
+        dataset_name (string) : Le nom du corpus
+        model (sklearn model) : Le modele evalue
+    """
     report = classification_report(y_test, y_pred)
     print("type report = ", type(report))
     print("report =", report)
@@ -462,7 +480,18 @@ def save_classification_report(y_test, y_pred, dataset_name, model):
 
 
 def save_false_predictions(corpus, dataset_name, indices_test, y_test, y_pred, class_names):
-    # On enregistre les messages a propos desquels le modele s'est trompe
+    """ Enregistre dans un fichier .csv les exemples a propos desquels le modele s'est trompe 
+    
+    Entrees :
+        corpus (pandas DataFrame) : Le corpus
+        dataset_name (string) : Le nom du corpus
+        indices_test (list of string or pandas Series of string) : Les id du testset 
+        y_test (numpy ndarray) : Les etiquettes au format int (le format string ne marche pas)
+        y_pred (numpy ndarray) : Les parametres du test
+        class_names (dictionary) : Le dictionnaire qui fait la correspondance entre les noms des classes en string
+                                    avec les noms des classes en int
+                                    Exemple : {"0":chien, "1":chat}
+    """
     corpus_test = pd.DataFrame({"id":corpus.iloc[indices_test].id, "message": corpus.iloc[indices_test].message, "truth":y_test, "pred":y_pred})
     corpus_test_errors = corpus_test.query("truth != pred")
     corpus_test_errors = corpus_test_errors[["id", "truth", "pred", "message"]]
@@ -473,6 +502,20 @@ def save_false_predictions(corpus, dataset_name, indices_test, y_test, y_pred, c
 
 def save_model_diagnostics(corpus, X_train, y_train, y_test, y_pred, indices_test, class_names, model, 
                             dataset_name):
+    """ Evalue les performances d'un modele et sauvegarde les resultats (dans des fichiers .txt et .png)
+    
+    Entrees :
+        X_train (numpy ndarray) : Les parametres 
+        y_train (numpy ndarray int) : Les etiquettes au format int (le format string ne marche pas)
+        y_test (numpy ndarray) : Les etiquettes au format int (le format string ne marche pas)
+        y_pred (numpy ndarray) : Les parametres du test
+        indices_test (list of string or pandas Series of string) : Les id du testset 
+        class_names (dictionary) : Le dictionnaire qui fait la correspondance entre les noms des classes en string
+                                    avec les noms des classes en int
+                                    Exemple : {"0":chien, "1":chat}
+        model (sklearn model) : Le modele a evaluer
+        dataset_name (string) : Le nom du dataset
+    """
     # Classification report
     save_classification_report(y_test, y_pred, dataset_name, model)
 
@@ -498,6 +541,18 @@ def save_model_diagnostics(corpus, X_train, y_train, y_test, y_pred, indices_tes
 
 
 def select_models(corpus, corpus_name, id_col_name, class_col_name, features_col_names):
+    """ Lance la selection de modeles par k-fold cross-validation et par learning curves sur plusieurs modeles
+    
+    Entrees :
+        corpus (pandas DataFrame) : Le corpus
+        corpus_name (string) : Le nom du corpus
+        id_col_name (string) : Le nom de la colonne du dataframe qui contient les id uniques (cle primaire) 
+                                Exemple : "categorie"
+        class_col_name (string) : Le nom de la colonne du dataframe qui contient les classes 
+                                Exemple : "categorie"
+        features_col_names (string) : Le nom de la colonne du dataframe qui contient les documents (messages) 
+                                Exemple : "message_preprocessed"
+    """
     print(corpus["category_bin"].value_counts())
     corpus = get_balanced_binary_dataset(corpus, class_col_name)
     print(corpus["category_bin"].value_counts())
@@ -536,13 +591,3 @@ def select_models(corpus, corpus_name, id_col_name, class_col_name, features_col
     for scoring in scorings:
         save_learning_curves_multiple_models(models, X_train_tfidf, y_train, cv_param, scoring, train_sizes, 
                                             corpus_name)
-
-
-
-def select_models_on_multiple_corpus(filenames, format_input):
-    """Lance la selection de modeles (cross validation et learning curves)
-
-    Parametres: 
-    filenames (liste des string) : Les fichiers des differents datasets sur lesquels on execute cette fonction 
-    input_type : "file" or "dataframe"
-    """
