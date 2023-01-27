@@ -2,18 +2,19 @@ from datasource import *
 
 
 class DataSourceList:
-    """ Define a list of datasources """
+    """ Represente une liste d'objets DdataSources """
 
     def __init__(self, filename, num_articles, table_format):
-        """ Constructor of Datasourcelist """
+        """ Constructeur de la classe Datasourcelist """
         self.filename = filename
-        self.urls = "" #soit liste de bibliographies soit liste de blogs
+        self.urls = "" #soit une liste d'urls bibliographies soit liste de blogs
         self.dataSources = []
         self.num_articles = num_articles
         self.table_format = table_format
 
 
     def __str__(self):
+        """ Descripteur de la classe Datasourcelist """
         str_urls = str(self.urls)
         str_dataSources = str(self.dataSources)
         str_num_articles = str(self.num_articles)  
@@ -26,6 +27,7 @@ class DataSourceList:
 
 
     def print_datasources(self):
+        """ Affiche la liste d'objets DataSource (soit une liste de blogs soit une liste de bibliographies) """
         for dataSource in self.dataSources:
             print("\n")
             print(dataSource)
@@ -33,18 +35,16 @@ class DataSourceList:
 
 
     def save_corpus_txt(self):
-        """ Ecrit les paragraphes de chaque DataSource de la liste dans un fichier texte"""
+        """ Ecrit dans un fichier .txt les paragraphes de chaque DataSource de la liste """
         dataSource = self.dataSources[0]
-        print("dataSource =", dataSource)
         dataSource.save_corpus_txt(savemode="overwrite")        
         for dataSource in self.dataSources[1:]:
-            print("dataSource =", dataSource)
-            # dataSource.save_articles_urls()
             dataSource.save_corpus_txt(savemode="append")
 
 
     def save_corpus_dataframe(self):
-        # , format
-        """ Sauvegarde un corpus dans un dataframe (csv ou parquet) a partir d'un corpus dans un .txt """
+        """ Sauvegarde un corpus dans un dataframe (csv ou parquet) a partir d'un corpus au format .txt (
+            une liste de messages
+        ) """
         for dataSource in self.dataSources:
             dataSource.save_corpus_dataframe(self.table_format)
