@@ -22,11 +22,11 @@ Nous testerons au fur et à mesure les principales méthodes de classification e
 * Création de scripts windows .bat pour tester facilement l'ensemble projet
 * Conteneurisation du code avec Docker pour faciliter le déploiement et l’utilisation de tiers
 
-## Dossiers
-### **data** : contient toutes les données du projet (entrées et sorties)
-	* input : contient les données d'entrées (initiales et intermédiaires, c'est-à-dire des transformations des données initiales)
-	* output : contient les sorties des codes de machine learning (des mesures de performance des modèles comme des matrices de confusion, des performances de k-fold cross-validation, des learning curves, etc.)
-### **sources** : les codes du projet
+# Dossiers
+## data : contient toutes les données du projet (entrées et sorties)
+	* **input** : contient les données d'entrées (initiales et intermédiaires, c'est-à-dire des transformations des données initiales)
+	* **output** : contient les sorties des codes de machine learning (des mesures de performance des modèles comme des matrices de confusion, des performances de k-fold cross-validation, des learning curves, etc.)
+## sources : les codes du projet
 	* **create_dataset** : les codes pour créer les datasets (des corpus à plusieurs topics, appelés dans ce projet "merged_corpus") donnés en entrée aux modèles de classification
 	* **dimension_reduction_visualisation** : les codes réduire les dimensions des corpus et les visualiser en 2D/3D
 	* **classification** : les codes pour implémenter les modèles de classification
