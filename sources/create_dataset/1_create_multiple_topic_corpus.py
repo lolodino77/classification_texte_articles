@@ -32,6 +32,8 @@ def main():
     print(os.getcwd())
     
     sys_argv = sys.argv
+    print("in 1_create_multiple_topic_corpus.py")
+    print("sys_argv =", sys_argv)
     corpus_txt_list_filename = sys_argv[1]
     language = sys_argv[2]
     output_format = sys_argv[3]

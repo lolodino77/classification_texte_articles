@@ -22,7 +22,9 @@ def from_bibliographylist(filename, num_articles, table_format):
 
 
 def from_bloglist(filename, num_articles, table_format):
+    print("in from_bloglist")
     blogList = BlogList(filename, num_articles, table_format)
+    print("prout")
     print(blogList)
     blogList.save_articles_urls()
     blogList.save_corpus_txt()
@@ -53,6 +55,9 @@ def main():
     filename = sys_argv[1]
     num_articles = sys_argv[2]
     table_format = sys_argv[3]
+    print("in 0_create_one_topic_corpus.py")
+    print("sys_argv =", sys_argv)
+
     print("filename = ", filename)
     print("num_articles = ", num_articles)
     print("table_format = ", table_format)

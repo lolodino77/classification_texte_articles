@@ -30,6 +30,7 @@ from lib_classification import *
 # python 2_model_selection.py corpus_edwardfeser_exapologist.parquet
 # python 2_model_selection.py corpus_edwardfeser_exapologist.csv
 # python 2_model_selection.py corpus_feser_pruss.csv
+# python 2_model_selection.py
 # python 2_model_selection.py all : model selection on all files (csv and parquet)
 # python 2_model_selection.py all csv : model selection on all csv files
 # python 2_model_selection.py all parquet : model selection on all parquet files
