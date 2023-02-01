@@ -1,3 +1,4 @@
+
 # Classification binaire de textes (articles de blogs wordpress et blogspot)
 
 ## Problème : classer des articles de blog dans des catégories (soit des auteurs, soit des thèmes/topics)
@@ -21,22 +22,22 @@ Nous testerons au fur et à mesure les principales méthodes de classification e
 * **Création de scripts windows .bat** pour tester facilement l'ensemble projet
 * **Conteneurisation du code avec Docker** pour faciliter le déploiement et l’utilisation de tiers
 
-# Dossiers
-## data : contient toutes les données du projet (entrées et sorties)
+## Dossiers
+### data : contient toutes les données du projet (entrées et sorties)
 * **input** : contient les données d'entrées (initiales et intermédiaires, c'est-à-dire des transformations des données initiales)
 * **output** : contient les sorties des codes de machine learning (des mesures de performance des modèles comme des matrices de confusion, des performances de k-fold cross-validation, des learning curves, etc.)
-## sources : les codes du projet
-* **create_dataset** : les codes pour créer les datasets (des corpus à plusieurs topics, appelés dans ce projet "merged_corpus") donnés en entrée aux modèles de classification
-* **dimension_reduction_visualisation** : les codes réduire les dimensions des corpus et les visualiser en 2D/3D
-* **classification** : les codes pour implémenter les modèles de classification
-	* **count_matrix** : le code qui implémente la méthode du nombre d'occurrences de chaque terme
-		* 1_count_matrix.ipynb : le notebook pour visualiser et analyser la matrice tfidf 
-	* **tfidf** : le code qui implémente la méthode tfidf
-		* 1_tfidf.ipynb : le notebook pour visualiser et analyser la matrice tfidf 
-	* **word2vec** le code qui implémente les méthodes de type word2vec (cbow et skip-gram)  
-	* Dans chacun de ces sous-dossiers :
-		* 2_model_selection.py : script qui implémente la sélection des modèles par k-fold cross-validation et learning curves
-		* 3_train_test_best_model.py : script qui entraîne et évalue le meilleur modèle sélectionné suite à la sélection de modèles
+### sources : les codes du projet
+#### create_dataset : les codes pour créer les datasets (des corpus à plusieurs topics, appelés dans ce projet "merged_corpus") donnés en entrée aux modèles de classification
+#### dimension_reduction_visualisation : les codes réduire les dimensions des corpus et les visualiser en 2D/3D
+#### classification : les codes pour implémenter les modèles de classification
+* **count_matrix** : le code qui implémente la méthode du nombre d'occurrences de chaque terme
+	* *1_count_matrix.ipynb* : le notebook pour visualiser et analyser la matrice tfidf 
+* **tfidf** : le code qui implémente la méthode tfidf
+	* *1_tfidf.ipynb* : le notebook pour visualiser et analyser la matrice tfidf 
+* **word2vec** le code qui implémente les méthodes de type word2vec (cbow et skip-gram)  
+* Dans chacun de ces sous-dossiers :
+	* *2_model_selection.py* : script qui implémente la sélection des modèles par k-fold cross-validation et learning curves
+	* *3_train_test_best_model.py* : script qui entraîne et évalue le meilleur modèle sélectionné suite à la sélection de modèles
 
 
 ## Environnement Technique
