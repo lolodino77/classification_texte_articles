@@ -2,12 +2,17 @@
 # Classification binaire de textes (articles de blogs wordpress et blogspot)
 
 ## Résumé
-Il s'agit d'un projet personnel de NLP qui vise à implémenter un classifier binaire (à deux classes) de textes d'articles de blogs. Son but sera de reconnaître à partir d'un article de blog soit son auteur (nom prénom, pseudo ou nom du blog d'origine), soit de reconnaître son topic (par exemple science ou littérature). Dans le premier cas les classes sont des auteurs, dans le second des topics.  
+Il s'agit d'un projet personnel de NLP qui vise à implémenter un classifier binaire (à deux classes) de textes d'articles de blogs. Son but sera de reconnaître à partir d'un article de blog :
+<ol>	
+<li>Soit son auteur (nom prénom, pseudo ou nom du blog d'origine). Dans ce cas les classes sont des auteurs Exemple : Edward Feser ou Joe Schmid, Alexander Pruss ou Felipe Leon.</li>
+<li>Soit son topic (par exemple science ou littérature). Dans ce cas les classes sont des topics. Exemple : science ou littérature, actualités ou cuisine.</li>  
+</ol>	
+
 ## Méthodes de classification en NLP utilisées
 Nous testerons au fur et à mesure les principales méthodes de classification en NLP (pour chacune nous indiquons les étapes achevées) :
-	* Méthodes basées sur la fréquence des mots (tfidf, observed-expected, PMI, etc.) / modularisation du code & dockeurisation finie
-	* Méthodes basées sur la représentation des mots dans un espace vectoriel (word2vec : cbow et skip-gram) / notebook fini
-	* Méthodes basées sur des réseaux de neurones (transformers, etc.) / à commencer
+* Méthodes basées sur la fréquence des mots (tfidf, observed-expected, PMI, etc.) / modularisation du code & dockeurisation finie
+* Méthodes basées sur la représentation des mots dans un espace vectoriel (word2vec : cbow et skip-gram) / notebook fini
+* Méthodes basées sur des réseaux de neurones (transformers, etc.) / à commencer
 
 ## Etapes du projet du web-scraping à la mise en prod
 * **Web-scraping** avec beautifulSoup des articles de blogs wordpress et blogspot
@@ -60,6 +65,7 @@ Nous testerons au fur et à mesure les principales méthodes de classification e
 * **Logique de programmation** : Programmation orientée objet (POO)
 * **Langage** : Python
 * **Librairies** : BeautifulSoup, NLTK, Sklearn, Matplotlib, Seaborn, Numpy, Pandas
+* **Mise en production** : Docker
 
 <!-- 
 -------------------------------codes dans l'ordre d'execution-----------------------------------
