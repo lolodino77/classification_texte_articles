@@ -21,13 +21,19 @@ Nous testerons au fur et à mesure les principales méthodes de classification e
 * **Réduction de dimension** (svd, tsne, umap avec sklearn) et **visualisation** (matplotlib et seaborn)
 * **Feature engineering** (tfidf, observed-expected, PMI et word2vec – sklearn et nltk)
 * **Sélection de modèles** par cross-validation et learning curves
-* **Version de départ** en notebooks .ipynb
+* **Version de tests** en notebooks .ipynb
 * **Version de mise en production** en scripts python .py
 * **Modularisation** et création de classes (**programmation orientée objet)** des scripts pour une meilleure maintenance et reproductibilité (pratiques de "software engineering")
 * **Création de scripts windows .bat** pour tester facilement l'ensemble projet
 * **Conteneurisation du code avec Docker** pour faciliter le déploiement et l’utilisation de tiers
 
 ## Dossiers et codes
+Les fichiers .py sont les versions de mise en production (a minima modularise en packages pour une meilleure reproductivité et facilité d'utilisation).
+Les fichiers .ipynb sont 
+<ol>
+<li>Soit des codes qui font de l'analyse exploratoire/statistique des données (étape préliminaire)</li>
+<li>Soit des versions de tests avant mise en prod (scripts .py).</li>
+</ol> 
 ### data : les données du projet
 * **input** : les données d'entrées (initiales et intermédiaires, c'est-à-dire des transformations des données initiales)
 * **output** : les sorties des codes de machine learning (des mesures de performance des modèles comme des matrices de confusion, des performances de k-fold cross-validation, des learning curves, etc.)
