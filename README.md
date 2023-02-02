@@ -33,7 +33,7 @@ Nous testerons au fur et à mesure les principales méthodes de classification e
 * *1_create_multiple_topic_corpus* : crée un corpus à plusieurs topics (en fusionnant deux corpus à un topic) appelé "merged_corpus" donné en entrée aux modèles de classification
 #### dimension_reduction_visualisation : réduit les dimensions des corpus et les visualise en 2D/3D
 * *dimension_reduction.ipynb*
-#### classification : les codes pour implémenter les modèles de classification
+#### classification : modèles de classification
 * **count_matrix** : la méthode basée sur le nombre d'occurrences de chaque terme
 	* *1_count_matrix.ipynb* : le notebook pour visualiser et analyser la matrice tfidf 
 * **tfidf** : méthode tfidf
