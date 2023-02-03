@@ -1,18 +1,40 @@
-
 # Classification binaire de textes (articles de blogs wordpress et blogspot)
 
 ## Résumé
-Il s'agit d'un projet personnel de NLP qui vise à implémenter un classifier binaire (à deux classes) de textes d'articles de blogs. Son but sera de reconnaître à partir d'un article de blog :
+Il s'agit d'un projet personnel de NLP en python qui vise à implémenter un classifier binaire (à deux classes) de textes d'articles de blogs. Son but sera de reconnaître à partir d'un paragraphe d'un article de blog :
 <ol>	
-<li>Soit son auteur (nom prénom, pseudo ou nom du blog d'origine). Dans ce cas les classes sont des auteurs Exemple : Edward Feser ou Joe Schmid, Alexander Pruss ou Felipe Leon.</li>
-<li>Soit son topic (par exemple science ou littérature). Dans ce cas les classes sont des topics. Exemple : science ou littérature, actualités ou cuisine.</li>  
-</ol>	
+<li>Soit son auteur (nom prénom, pseudo ou nom du blog d'origine). Dans ce cas les classes sont des auteurs. Par exemple : Edward Feser ou Joe Schmid, Alexander Pruss ou Felipe Leon.</li>
+<li>Soit son topic (par exemple science ou littérature). Dans ce cas les classes sont des topics. Par exemple : science ou littérature, actualités ou cuisine.</li>  
+</ol>
+
+Autrement dit, dans notre application, un document sera un paragraphe d'un article de blog.
+
+Le but était aussi d'avoir un outil qui crée rapidement, automatiquement et facilement des datasets à partir d'articles de blogs wordpress ou blogspot pour de la classification binaire NLP. Il suffit pour cela de donner en entrées des url de pages d'accueil de blogs (par exemple www.blog.wordpress.com) ou des url de pages "bibliographies" qui listent des urls (des articles de blogs wordpress ou blogspot).
+
+## Enjeux du projet : pourquoi des blogs ?
+* Mon objectif personnel était de travailler sur des datasets de philosophie.
+* A notre époque, l'effervescence se concentre désormais principalement sur les réseaux sociaux (instagram, TikTok, Facebook, Discord) au détriment des supports majeurs de mon adolescence qu'étaient les blogs et les forums (ex : xooit, forumactif). Pourquoi alors réaliser un projet de NLP porté sur les blogs ?
+* Si beaucoup de jeunes des génération Y et Z ne partagent leur contenu que sur les réseaux sociaux, ce n'est pas le cas des débuts génération Z et de tous les Y, et encore moins pour les moins jeunes.
+* Les blogs restent notamment une plateforme de vulgarisation privilégiée pour les chercheurs en philosophie dans le milieu anglo-saxon et pour les amateurs de philosophie. Ils demeurent donc une source gratuite idéale pour créer des datasets de philosophie. Par exemple voir les blogs d'Edward Feser, d'Alexander Pruss, de Felipe Leon et de Joe Schmid (quatre de mes philosophes préférés) :
+	* http://edwardfeser.blogspot.com/
+	* http://alexanderpruss.blogspot.com/
+	* http://exapologist.blogspot.com/ (Felipe Leon)
+	* https://majestyofreason.wordpress.com/ (Joe Schmid)
+
+## Environnement Technique
+* **Editeurs de texte/IDE** : Sublime Text, VS Code
+* **Logique de programmation** : Programmation orientée objet (POO)
+* **Langage** : Python
+* **Librairies** : BeautifulSoup, NLTK, Sklearn, Matplotlib, Seaborn, Numpy, Pandas
+* **Mise en production** : Docker
 
 ## Méthodes de classification en NLP utilisées
 Nous testerons au fur et à mesure les principales méthodes de classification en NLP (pour chacune nous indiquons les étapes achevées) :
-* Méthodes basées sur la fréquence des mots (tfidf, observed-expected, PMI, etc.) / modularisation du code & dockeurisation finie
-* Méthodes basées sur la représentation des mots dans un espace vectoriel (word2vec : cbow et skip-gram) / notebook fini
-* Méthodes basées sur des réseaux de neurones (transformers, etc.) / à commencer
+<ol>
+<li>Méthodes basées sur la fréquence des mots (tfidf, observed-expected, PMI, etc.) / modularisation du code & dockeurisation finie</li>
+<li>Méthodes basées sur la représentation des mots dans un espace vectoriel (word2vec : cbow et skip-gram) / notebook fini</li>
+<li>Méthodes basées sur des réseaux de neurones (transformers, etc.) / à commencer</li>
+</ol>
 
 ## Etapes du projet du web-scraping à la mise en prod
 * **Web-scraping** avec beautifulSoup des articles de blogs wordpress et blogspot
@@ -25,73 +47,72 @@ Nous testerons au fur et à mesure les principales méthodes de classification e
 * **Version de mise en production** en scripts python .py
 * **Modularisation** et création de classes (**programmation orientée objet)** des scripts pour une meilleure maintenance et reproductibilité (pratiques de "software engineering")
 * **Création de scripts windows .bat** pour tester facilement l'ensemble projet
-* **Conteneurisation du code avec Docker** pour faciliter le déploiement et l’utilisation de tiers
+* **Conteneurisation du code avec Docker** pour faciliter le déploiement et l’utilisation de tiers (avec utilisation de la notion de volume pour persister les fichiers de sortie des conteneurs)
 
 ## Dossiers et codes
-Les fichiers .py sont les versions de mise en production (a minima modularise en packages pour une meilleure reproductivité et facilité d'utilisation).
-Les fichiers .ipynb sont 
+Les fichiers .py sont les versions de mise en production. Ils sont donc a minima structurés en module ou en classe (programmation orientée objet) pour une meilleure reproductivité et facilité d'utilisation.
+
+Les fichiers .ipynb sont :
 <ol>
 <li>Soit des codes qui font de l'analyse exploratoire/statistique des données (étape préliminaire)</li>
 <li>Soit des versions de tests avant mise en prod (scripts .py).</li>
-</ol> 
+</ol>
+
+De façon générale, pour exécuter le projet dans des conditions réelles, on utilisera les scripts de terminaux (soit avec des commandes python du type "python file.py ...", soit avec Docker). Pour voir plus rapidement des exemples et résultats du projet, on pourra consulter directement les notebooks.
+
 ### data : les données du projet
 * **input** : les données d'entrées (initiales et intermédiaires, c'est-à-dire des transformations des données initiales)
+	* **blogs** : dossier avec les fichiers .txt listes de blogs
+	* **bibliographies** : dossier avec les fichiers .txt bibliographies
+	* **articles_lists** : dossier avec les fichiers .txt liste d'articles (sortie du script *0_create_one_topic_corpus.py*)
+	* **corpus_txt** : dossier avec les fichiers .txt de corpus, une suite de messages/paragraphes (sortie du script *0_create_one_topic_corpus.py*)
+	* **corpus_csv** : dossier avec les corpus à un topic au format .csv (avec comme colonnes : id + message + topic)
+	* **corpus_parquet** : dossier avec les corpus à un topic au format .parquet (avec comme colonnes : id + message + topic)
+	* **merged_corpus** : dossier avec les corpus à deux topics au format .csv ou .parquet (colonnes : id + message + topic)
+
 * **output** : les sorties des codes de machine learning (des mesures de performance des modèles comme des matrices de confusion, des performances de k-fold cross-validation, des learning curves, etc.)
+	* **<dataset_name>** : crée un sous-dossier pour chaque dataset sur lequel on effectue la classification (le nom du dossier <dataset_name> est le même que le nom du fichier qui stocke le dataset, <dataset_name> dans <dataset_name>.csv ou <dataset_name>.parquet)
+		* **select_model** : dossier avec les sorties de la sélection de modèles (résultats de la k-fold cross-validation et learning curves)
+		* **best_model** : dossier avec les sorties de l'évaluation des performances du meilleur modèle retenu après sélection des modèles (matrice de confusion, classification_report de sklearn, learning curves et ) 
+
 ### sources : les codes du projet
-#### create_dataset : création des datasets
-* *datasource.py*, *bibliography.py*, *blog.py*, *wordpress.py*, *blogspot.py*, *datasourcelist.py*, *bloglist.py*, *bibliographylist.py*, *article.py* : définition des classes (un script par classe), POO
-* *0_create_one_topic_corpus.py* : crée un corpus à un topic
-* *1_create_multiple_topic_corpus* : crée un corpus à plusieurs topics (en fusionnant deux corpus à un topic) appelé "merged_corpus" donné en entrée aux modèles de classification
-#### dimension_reduction_visualisation : réduit les dimensions des corpus et les visualise en 2D/3D
-* *dimension_reduction.ipynb*
-#### classification : modèles de classification
-* **count_matrix** : la méthode basée sur le nombre d'occurrences de chaque terme
-	* *1_count_matrix.ipynb* : le notebook pour visualiser et analyser la matrice tfidf 
-* **tfidf** : méthode tfidf
-	* *1_tfidf.ipynb* : le notebook pour visualiser et analyser la matrice tfidf
-	* *requirements.txt* : dépendances python à installer
-	* *Dockerfile_2_model_selection* : Dockerfile pour lancer le script 2_model_selection.py 
-	* *Dockerfile_3_train_test* : Dockerfile pour lancer le script 3_train_test_best_model.py
-	* *run_docker_2_model_selection.bat* : Executable windows qui crée l'image et le conteneur qui execute 2_model_selection.py a partir de Dockerfile_2_model_selection
-	* *run_docker_3_train_test.bat* : Executable windows qui crée l'image et le conteneur qui execute 3_train_test_best_model.py a partir de Dockerfile_3_train_test
-	* *run_all_with_blogs.bat* : Executable windows qui lance tous les scripts de la création des corpus à la classification
-	* *run_classification.bat* : Executable windows qui lance les scripts de classification (*2_model_selection.py* et *3_train_test_best_model.py*)
-* **word2vec** : méthodes de type word2vec (cbow et skip-gram)  
-	* *0_word2vec_cbow_feature_extraction.ipynb* :  
-	* *0_word2vec_skip_gram_feature_extraction.ipynb* :  
-	* *1_word2vec_cbow_classification.ipynb* : classification cbow
-	* *1_word2vec_skip_gram_classification.ipynb* : classification skip-gram  
-	* *1_word2vec_glove.ipynb* : classification glove
-* Dans chacun de ces sous-dossiers :
-	* *2_model_selection.py* : script qui implémente la sélection des modèles par k-fold cross-validation et learning curves
-	* *3_train_test_best_model.py* : script qui entraîne et évalue le meilleur modèle sélectionné suite à la sélection de modèles
+* *lib_general.py* : module qui contient des fonctions "générales" utiles durant différentes étapes du projet
+	#### create_dataset : création des datasets
+	* *datasource.py*, *bibliography.py*, *blog.py*, *wordpress.py*, *blogspot.py*, *datasourcelist.py*, *bloglist.py*, *bibliographylist.py*, *article.py* : définition des classes (un script par classe), POO
+	* *0_create_one_topic_corpus.py* : crée un corpus à un topic
+	* *1_create_multiple_topic_corpus* : crée un corpus à plusieurs topics (en fusionnant deux corpus à un topic) appelé "merged_corpus" donné en entrée aux modèles de classification
+	* 	*run_0_create_one_topic_corpus.bat* : exécutable windows qui lance le script *0_create_one_topic_corpus.py*
+	* *run_1_create_multiple_topic_corpus.bat* : exécutable windows qui lance tous le script *1_create_multiple_topic_corpus*
+	#### dimension_reduction_visualisation : réduit les dimensions des corpus et les visualise en 2D/3D
+	* *dimension_reduction.ipynb*
+	#### classification : modèles de classification
+	* *lib_classification.py* : module qui contient des fonctions pour classification (ex : fonction pour la sélection des modèles, fonction pour la matrice de confusion, fonction pour les learning curves, etc.) 
+	* **count_matrix** : dossier pour la méthode basée sur le nombre d'occurrences de chaque terme
+		* *1_count_matrix.ipynb* : le notebook pour visualiser et analyser la matrice tfidf 
+	* **tfidf** : méthode tfidf
+		* *1_tfidf.ipynb* : notebook pour visualiser et analyser la matrice tfidf
+		* *requirements.txt* : dépendances python à installer
+		* *Dockerfile_2_model_selection* : Dockerfile pour lancer le script 2_model_selection.py 
+		* *Dockerfile_3_train_test* : Dockerfile pour lancer le script 3_train_test_best_model.py
+		* *run_docker_2_model_selection.bat* : exécutable windows qui crée l'image et le conteneur qui execute 2_model_selection.py a partir de Dockerfile_2_model_selection
+		* *run_docker_3_train_test.bat* : exécutable windows qui crée l'image et le conteneur qui execute 3_train_test_best_model.py a partir de Dockerfile_3_train_test
+		* *run_all_with_blogs.bat* : exécutable windows qui lance tous les scripts de la création des corpus à la classification
+		* *run_classification.bat* : exécutable windows qui lance les scripts de classification (*2_model_selection.py* et *3_train_test_best_model.py*)
+	* **word2vec** : méthodes de type word2vec (cbow et skip-gram)  
+		* *0_word2vec_cbow_feature_extraction.ipynb* :  
+		* *0_word2vec_skip_gram_feature_extraction.ipynb* :  
+		* *1_word2vec_cbow_classification.ipynb* : classification cbow
+		* *1_word2vec_skip_gram_classification.ipynb* : classification skip-gram  
+		* *1_word2vec_glove.ipynb* : classification glove
+	* Dans chacun de ces sous-dossiers :
+		* *2_model_selection.py* : script qui implémente la sélection des modèles par k-fold cross-validation et learning curves
+		* *3_train_test_best_model.py* : script qui entraîne et évalue le meilleur modèle sélectionné suite à la sélection de modèles
 
-## Environnement Technique
-* **Editeurs de texte/IDE** : Sublime Text, VS Code
-* **Logique de programmation** : Programmation orientée objet (POO)
-* **Langage** : Python
-* **Librairies** : BeautifulSoup, NLTK, Sklearn, Matplotlib, Seaborn, Numpy, Pandas
-* **Mise en production** : Docker
-
-<!-- 
--------------------------------codes dans l'ordre d'execution-----------------------------------
-lib_scraping.py :
-N'est pas execute dans le terminal mais contient la librarie avec toutes les fonctions utilisees par les autres fichiers .py
-
-get_corpus_philosophy.py :
-Ecrit dans le fichier texte corpus_philosophy.txt les parties de chaque texte du corpus de philosophie apres l'avoir decoupe
-
-get_corpus_baptism.py :
-Ecrit dans un fichier texte corpus_baptism.txt les parties de chaque texte du corpus sur le bapteme apres l'avoir decoupe
-
-create_dataset_philosophy.py :
-Cree le dataframe pour l'algorithme d'apprentissage automatique stocke dans le fichier dataset_philosophy.csv
-
-create_dataset_baptism.py :
-Cree le dataframe pour l'algorithme d'apprentissage automatique stocke dans le fichier dataset_baptism.csv
-
-0_preprocess_corpus.py :
-Pretraite les messages du corpus pour les renvoyer dans un format exploitable par les algo d'IA
-
-1_feature_engineering.py :
-Cree les parametres du modele d'apprentissage supervise -->
+## Améliorations possibles à venir
+* Elargir le type de blogs possibles (ex : skyblog, overblog, e-monsite, eklablog, etc.)
+* Prétraitements restants : dans les datasets de documents, enlever les commentaires d'articles, enlever la description de l'auteur, enlever les références bibliographiques en notes de bas de page
+* Implémenter les méthodes de classification du type réseaux de neurones (ex : transfomers, etc.)
+* Version mise en prod de la partie réduction de dimension et visualisation
+* Version mise en prod de la partie classification word2vec
+* Pour tfidf, retourner pour chaque message les termes qui ont les scores les plus élevés
+* Comprendre en détails l'implémentation de tfidf de sklearn
