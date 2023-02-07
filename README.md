@@ -12,10 +12,10 @@ Autrement dit, dans notre application, un document sera un paragraphe d'un artic
 Le but était aussi d'avoir un outil qui crée rapidement, automatiquement et facilement des datasets à partir d'articles de blogs wordpress ou blogspot pour de la classification binaire NLP. Il suffit pour cela de donner en entrées des url de pages d'accueil de blogs (par exemple www.blog.wordpress.com) ou des url de pages "bibliographies" qui listent des urls (des articles de blogs wordpress ou blogspot).
 
 ## Enjeux du projet : pourquoi des blogs ?
-* Mon objectif personnel était de travailler sur des datasets de philosophie.
 * A notre époque, l'effervescence se concentre désormais principalement sur les réseaux sociaux (instagram, TikTok, Facebook, Discord) au détriment des supports majeurs de mon adolescence qu'étaient les blogs et les forums (ex : xooit, forumactif). Pourquoi alors réaliser un projet de NLP porté sur les blogs ?
 * Si beaucoup de jeunes des génération Y et Z ne partagent leur contenu que sur les réseaux sociaux, ce n'est pas le cas des débuts génération Z et de tous les Y, et encore moins pour les moins jeunes.
-* Les blogs restent notamment une plateforme de vulgarisation privilégiée pour les chercheurs en philosophie dans le milieu anglo-saxon et pour les amateurs de philosophie. Ils demeurent donc une source gratuite idéale pour créer des datasets de philosophie. Par exemple voir les blogs d'Edward Feser, d'Alexander Pruss, de Felipe Leon et de Joe Schmid (quatre de mes philosophes préférés) :
+* Les blogs restent notamment une plateforme de vulgarisation privilégiée pour les personnes passionées par un sujet. Par exemple : l'histoire, l'actualité, la politique, la philosophie ou encore la data science ! C'est parce qu'ils permettent à la fois de partager un contenu à la fois plus poussé que les publications sur des réseaux sociaux et youtube, et gratuit contrairement aux livres et aux articles de recherche. 
+* Dans mon cas, mon objectif personnel était de travailler sur des datasets de philosophie. Les blogs s'y prêtaient bien : on y trouve beaucoup de chercheurs et d'étudiants en philosophie dans le milieu anglo-saxon. En cela, ils demeurent donc une source gratuite idéale pour créer des datasets de philosophie. Par exemple voir les blogs d'Edward Feser, d'Alexander Pruss, de Felipe Leon et de Joe Schmid (quatre de mes philosophes préférés que je suis régulièrement) :
 	* http://edwardfeser.blogspot.com/
 	* http://alexanderpruss.blogspot.com/
 	* http://exapologist.blogspot.com/ (Felipe Leon)
