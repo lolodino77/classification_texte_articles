@@ -1,18 +1,31 @@
-# Classification binaire de textes (articles de blogs wordpress et blogspot)
+# Classification binaire de textes
 
 ## Résumé
-Il s'agit d'un projet personnel de NLP en python qui vise à implémenter un classifier binaire (à deux classes) de textes d'articles de blogs. Son but sera de reconnaître à partir d'un paragraphe d'un article de blog :
+Il s'agit d'un projet personnel en deux parties de NLP en python qui vise à implémenter un classifier binaire (à deux classes) de textes.
+
+### Partie 1 : Classification d'articles de blogs wordpress et blogspot
+en particulier d'articles de blogs. Mais il reste adaptable à tout corpus binaire. Son but sera de reconnaître à partir d'un paragraphe d'un article de blog :
 <ol>	
 <li>Soit son auteur (nom prénom, pseudo ou nom du blog d'origine). Dans ce cas les classes sont des auteurs. Par exemple : Edward Feser ou Joe Schmid, Alexander Pruss ou Felipe Leon.</li>
 <li>Soit son topic (par exemple science ou littérature). Dans ce cas les classes sont des topics. Par exemple : science ou littérature, actualités ou cuisine.</li>  
+<li>Soit sa prise de position (par exemple vegan ou non vegan, pro apple ou pro android). Dans ce cas les classes sont des prises de position.
 </ol>
 
-Autrement dit, dans notre application, un document sera un paragraphe d'un article de blog.
+Autrement dit, dans cette première partie, un document (ou message à classer dans une catégorie) sera un paragraphe d'un article de blog.
 
 Le but était aussi d'avoir un outil qui crée rapidement, automatiquement et facilement des datasets à partir d'articles de blogs wordpress ou blogspot pour de la classification binaire NLP. Il suffit pour cela de donner en entrées des url de pages d'accueil de blogs (par exemple www.blog.wordpress.com) ou des url de pages "bibliographies" qui listent des urls (des articles de blogs wordpress ou blogspot).
 
+### Partie 2 : Application sur un business case
+Dans cette seconde partie, nous appliquons notre solution à un cas pratique de business. Ici, classer des avis sur des produits Amazon soit dans la classe positive (en cas de satisfaction du client), soit la classe négative (en cas de déception du client). En effet, l'application est codée de façon à aussi pouvoir prendre en entrée des corpus à deux classes déjà prétraités (avec des messages bruts ou déjà nettoyés).
+Les différentes étapes :
+<ol>	
+<li>Le choix du corpus : le corpus amazon_reviews_us_Electronics_v1_00 (des avis et des notes de 1 à 5 étoiles sur des produits d'électronique) téléchargeable à ce lien : https://s3.amazonaws.com/amazon-reviews-pds/tsv/index.txt</li>
+<li>Le prétraitement du corpus d'origine : enlever les colonnes inutiles, sélection des lignes à garder (lignes avec une note égale à 1 ou 5), création des annotations (annotation positive pour les notes à 5, négative pour celles à 1).</li>  
+<li>La partie IA : sélection du meilleur modèle par cross-validation & learning curves, entraînement et évaluation de ce modèle, interprétation des résultats.
+</ol>
+
 ## Enjeux du projet : pourquoi des blogs ?
-* A notre époque, l'effervescence se concentre désormais principalement sur les réseaux sociaux (instagram, TikTok, Facebook, Discord) au détriment des supports majeurs de mon adolescence qu'étaient les blogs et les forums (ex : xooit, forumactif). Pourquoi alors réaliser un projet de NLP porté sur les blogs ?
+* A notre époque, l'effervescence se concentre désormais principalement sur les réseaux sociaux (instagram, TikTok, Facebook, Discord) au détriment des supports majeurs de mon adolescence qu'étaient les blogs (Skyblog, OverBlog, Eklablog, E-monsite) et les forums (ex : Xooit, Forumactif). Pourquoi alors réaliser un projet de NLP porté sur les blogs ?
 * Si beaucoup de jeunes des génération Y et Z ne partagent leur contenu que sur les réseaux sociaux, ce n'est pas le cas des débuts génération Z et de tous les Y, et encore moins pour les moins jeunes.
 * Les blogs restent notamment une plateforme de vulgarisation privilégiée pour les personnes passionées par un sujet. Par exemple : l'histoire, l'actualité, la politique, la philosophie ou encore la data science ! C'est parce qu'ils permettent à la fois de partager un contenu à la fois plus poussé que les publications sur des réseaux sociaux et youtube, et gratuit contrairement aux livres et aux articles de recherche. 
 * Dans mon cas, mon objectif personnel était de travailler sur des datasets de philosophie. Les blogs s'y prêtaient bien : on y trouve beaucoup de chercheurs et d'étudiants en philosophie dans le milieu anglo-saxon. En cela, ils demeurent donc une source gratuite idéale pour créer des datasets de philosophie. Par exemple voir les blogs d'Edward Feser, d'Alexander Pruss, de Felipe Leon et de Joe Schmid (quatre de mes philosophes préférés que je suis régulièrement) :

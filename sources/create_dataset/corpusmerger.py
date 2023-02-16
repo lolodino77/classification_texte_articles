@@ -22,9 +22,9 @@ class CorpusMerger:
 
     def __init__(self, filename, language):
         """ Constructeur de la classe CorpusMerger 
-        1er constructeur : prend plusieurs corpus à un seul topic (au moins 2 fichiers different)
+        1er constructeur : prend plusieurs corpus à un seul topic (au moins 2 fichiers .txt differents)
             corpus_txt_list_filename : un fichier .txt dans ce cas 
-        2eme constructeur : prend un seul corpus à deux topics (1 seul fichier)
+        2eme constructeur : prend un seul corpus à deux topics (1 seul fichier .csv ou .parquet)
             corpus_txt_list_filename : un fichier .csv ou .parquet dans ce cas 
         """
         self.input_file_extension = get_file_extension(filename)
@@ -41,7 +41,6 @@ class CorpusMerger:
             print("input_file_extension =", self.input_file_extension)
             two_classes_input = True 
             self.language = language
-            # self.topics_names_concat = "_".join(sorted(set(self.topics)))
             self.merged_corpus_name = self.create_merged_corpus_name(two_classes_input, filename)
             self.merged_corpus_dataframe = get_raw_merged_corpus_from_filename(filename)
 
