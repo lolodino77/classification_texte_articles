@@ -15,7 +15,7 @@ Autrement dit, dans cette première partie, un document (ou message à classer d
 
 Le but était aussi d'avoir un outil qui crée rapidement, automatiquement et facilement des datasets à partir d'articles de blogs wordpress ou blogspot pour de la classification binaire NLP. Il suffit pour cela de donner en entrées des url de pages d'accueil de blogs (par exemple www.blog.wordpress.com) ou des url de pages "bibliographies" qui listent des urls (des articles de blogs wordpress ou blogspot).
 
-### Partie 2 : Application sur un business case
+### Partie 2 : Application sur un business case (classification de reviews Amazon)
 Dans cette seconde partie, nous appliquons notre solution à un cas pratique de business. Ici, classer des avis sur des produits Amazon soit dans la classe positive (en cas de satisfaction du client), soit la classe négative (en cas de déception du client). En effet, l'application est codée de façon à aussi pouvoir prendre en entrée des corpus à deux classes déjà prétraités (avec des messages bruts ou déjà nettoyés).
 Les différentes étapes :
 <ol>	

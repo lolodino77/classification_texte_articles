@@ -179,8 +179,6 @@ class CorpusMerger:
         return message_preprocessed 
 
 
-    # preprocess_merged_corpus_dataframe vectorized, input two topics corpus for corpusmerger constructor
-
     def preprocess_merged_corpus_dataframe(self):
         """ Nettoie le merged_corpus :
             1. Cree l'id unique
