@@ -2,6 +2,19 @@ import sys
 import os
 import glob
 from pathlib import PureWindowsPath
+import pandas as pd
+
+""" 
+set_current_directory_to_root(root)
+add_paths(paths)
+get_all_files_from_a_directory(path_to_directory, files_extension="")
+get_file_extension(filename)
+get_corpus_name_from_filename(filename)
+check_duplicates(data, id_col_name)
+save_list_to_txt(input_list, path_to_file, file_open_mode, sep)
+read_csv(filename, path_to_directory)
+read_parquet(filename, path_to_directory)
+"""
 
 
 def set_current_directory_to_root(root):
@@ -65,7 +78,9 @@ def get_file_extension(filename):
 
 def get_corpus_name_from_filename(filename):
 	""" Donne le nom d'un corpus a partir de son fichier 
-	Exemple : corpus_chat_chien.csv ==> corpus_name : chat_chien
+	Exemples : 
+		corpus_chat_chien.csv ==> corpus_name : chat_chien
+		corpus_mythologie.parquet ==> corpus_name : mythologie
 
 	Entree : 
 		filename (string) : Le nom du fichier du corpus dont on veut le nom
@@ -102,3 +117,38 @@ def save_list_to_txt(input_list, path_to_file, file_open_mode, sep):
 	for line in input_list:
 		f.write(line + sep)
 	f.close()
+
+
+def read_csv(filename, path_to_directory):
+	""" Lit un fichier .csv """
+	df = pd.read_csv(path_to_directory + "/" + filename)
+	return(df)
+
+
+def read_parquet(filename, path_to_directory):
+	""" Lit un fichier .parquet """
+	df = pd.read_parquet(path_to_directory + "/" + filename)
+	return(df)
+
+
+def get_raw_merged_corpus_from_filename(filename):
+    """ Retourne un dataframe pandas a partir d'un fichier de corpus a deux topics (.csv ou .parquet) """
+    format = filename.split(".")[1]
+
+    if(format == "csv"):
+       df = pd.read_csv("./data/input/raws_merged_corpus/" + filename, encoding="utf-8")
+    elif(format == "parquet"):
+        df = pd.read_parquet("./data/input/raws_merged_corpus/" + filename)
+
+    return(df)
+
+def get_merged_corpus_dataframe_from_filename(filename):
+    """ Retourne un dataframe pandas cree a partir d'un fichier de corpus (.csv ou .parquet) """
+    format = filename.split(".")[1]
+
+    if(format == "csv"):
+       df = pd.read_csv("./data/input/merged_corpus/" + filename, encoding="utf-8")
+    elif(format == "parquet"):
+        df = pd.read_parquet("./data/input/merged_corpus/" + filename)
+
+    return(df)

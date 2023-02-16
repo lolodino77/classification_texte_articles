@@ -1,0 +1,1 @@
+[('test_accuracy', 0.9266), ('test_f1_macro', 0.9266), ('test_recall', 0.926), ('test_precision', 0.9272)] (LR)

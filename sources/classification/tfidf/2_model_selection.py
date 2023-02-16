@@ -30,6 +30,7 @@ from lib_classification import *
 # python 2_model_selection.py corpus_edwardfeser_exapologist.parquet
 # python 2_model_selection.py corpus_edwardfeser_exapologist.csv
 # python 2_model_selection.py corpus_feser_pruss.csv
+# python 2_model_selection.py corpus_amazon.parquet
 # python 2_model_selection.py
 # python 2_model_selection.py all : model selection on all files (csv and parquet)
 # python 2_model_selection.py all csv : model selection on all csv files
@@ -66,12 +67,17 @@ def main():
         # Recupere le nom du dataset grace au nom du fichier du dataset filename
         print("filename =", filename)
         corpus_name = get_corpus_name_from_filename(filename)
-        
+        print("corpus_name =", corpus_name)
+
         # Creation du dossier de sorties si besoin
         make_output_dir(corpus_name)
+        print("make_output_dir(corpus_name)")
 
         # Importer le dataset puis equilibrer ses classes
         corpus = get_merged_corpus_dataframe_from_filename(filename)
+        print("corpus :")
+        print(corpus)
+
         select_models(corpus, corpus_name, id_col_name, class_col_name, features_col_names)
     
         

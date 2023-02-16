@@ -76,18 +76,6 @@ def get_merged_corpus_filenames(argv):
     return(output)
 
 
-def get_merged_corpus_dataframe_from_filename(filename):
-    """ Retourne un dataframe pandas cree a partir d'un fichier de corpus (.csv ou .parquet) """
-    format = filename.split(".")[1]
-
-    if(format == "csv"):
-       df = pd.read_csv("./data/input/merged_corpus/" + filename, encoding="utf-8")
-    elif(format == "parquet"):
-        df = pd.read_parquet("./data/input/merged_corpus/" + filename)
-
-    return(df)
-
-
 def get_balanced_binary_dataset(data, class_col_name):
     """ Equilibre un dataset binaire non equilibre : il aura le meme nombre d'exemples de chaque classe
 

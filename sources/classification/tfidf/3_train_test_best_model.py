@@ -28,6 +28,7 @@ pd.set_option('display.max_colwidth', None) #afficher texte entier dans datafram
 # python 3_train_test_best_model.py corpus_alexanderpruss_edwardfeser.csv
 # python 3_train_test_best_model.py corpus_sceptic_theist.csv
 # python 3_train_test_best_model.py corpus_feser_pruss.csv
+# python 3_train_test_best_model.py corpus_amazon_raw.parquet
 
 filename_corpus = sys.argv[1]
 
