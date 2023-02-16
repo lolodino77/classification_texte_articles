@@ -1,7 +1,7 @@
 # Classification binaire de textes
 
 ## Résumé
-Il s'agit d'un projet personnel en deux parties de NLP en python qui vise à implémenter un classifier binaire (à deux classes) de textes. On fera aussi du web scraping, du nettoyage de données (ici du texte) et on déploiera la solution avec Docker.
+Il s'agit d'un projet personnel en deux parties de NLP en python qui vise à implémenter un classifier binaire (à deux classes) de textes. D'abord sur des paragraphes d'articles de blogs puis sur un cas business concret : des avis de produits Amazon. On fera aussi du web scraping, du nettoyage de données (ici du texte) et on déploiera la solution avec Docker.
 
 ### Partie 1 : Classification d'articles de blogs wordpress et blogspot
 en particulier d'articles de blogs. Mais il reste adaptable à tout corpus binaire. Son but sera de reconnaître à partir d'un paragraphe d'un article de blog :
