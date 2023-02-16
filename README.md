@@ -4,7 +4,7 @@
 Il s'agit d'un projet personnel en deux parties de NLP en python qui vise à implémenter un classifier binaire (à deux classes) de textes. D'abord sur des paragraphes d'articles de blogs puis sur un cas business concret : des avis de produits Amazon. On fera aussi du web scraping, du nettoyage de données (ici du texte) et on déploiera la solution avec Docker.
 
 ### Partie 1 : Classification d'articles de blogs wordpress et blogspot
-en particulier d'articles de blogs. Mais il reste adaptable à tout corpus binaire. Son but sera de reconnaître à partir d'un paragraphe d'un article de blog :
+Dans cette première partie, le but sera de reconnaître à partir d'un paragraphe d'un article de blog :
 <ol>	
 <li>Soit son auteur (nom prénom, pseudo ou nom du blog d'origine). Dans ce cas les classes sont des auteurs. Par exemple : Edward Feser ou Joe Schmid, Alexander Pruss ou Felipe Leon.</li>
 <li>Soit son topic (par exemple science ou littérature). Dans ce cas les classes sont des topics. Par exemple : science ou littérature, actualités ou cuisine.</li>  
