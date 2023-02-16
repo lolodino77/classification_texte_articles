@@ -99,7 +99,8 @@ De façon générale, pour exécuter le projet dans des conditions réelles, on 
 	#### dimension_reduction_visualisation : réduit les dimensions des corpus et les visualise en 2D/3D
 	* *dimension_reduction.ipynb*
 	#### classification : modèles de classification
-	* *lib_classification.py* : module qui contient des fonctions pour classification (ex : fonction pour la sélection des modèles, fonction pour la matrice de confusion, fonction pour les learning curves, etc.) 
+	* *lib_classification.py* : module qui contient des fonctions pour classification (ex : fonction pour la sélection des modèles, fonction pour la matrice de confusion, fonction pour les learning curves, etc.)
+	* *test_transformations_matrice_count.ipynb* : notebook d'exploration qui teste et compare les differentes méthodes transformations de matrices de fréquences (tfidf, observed-expected, PMI, etc.), le but étant d'en trouver une qui donne une matrice "riches en valeurs", avec une distribution plus riche en valeurs possibles et au mieux une distribution gaussienne   
 	* **count_matrix** : dossier pour la méthode basée sur le nombre d'occurrences de chaque terme
 		* *1_count_matrix.ipynb* : le notebook pour visualiser et analyser la matrice tfidf 
 	* **tfidf** : méthode tfidf
