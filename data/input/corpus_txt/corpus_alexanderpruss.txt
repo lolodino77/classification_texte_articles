@@ -14669,3 +14669,218 @@ goods—goods qualitatively and not just quantitatively much greter—that it
 would be easy to suppose that God’s permitting the trivial evil could promote
 or enhance one of these goods to a degree sufficient to yield justification.
 
+It’s pretty easy to see that this score does not satisfy the necessary
+condition of the main theorem of my
+[paper](\(https://arxiv.org/abs/2103.00085\)) on the necessary and sufficient
+conditions for the domination property, and hence can be extended to a
+strictly proper score on all credences without having the domination property.
+We can also see this pretty easily directly. Let _z_ be a point on the axis of
+the donut whose distance to the origin is slightly closer than that of the
+intersection of this axis with _H_ (1,1,0). If the ``slightly closer’’ is
+small enough, then there won’t be any point _w_ on _D_ such that _z_ _i_ < _w_
+_i_ for all _i_ , but nonetheless _v_ ⋅ _z_ < _v_ ⋅ _s_ ′( _v_ ) for every
+non-zero vector _v_. Letting _s_ ( _c_ )( _i_ ) = _z_ _i_ for a non-
+probability _c_ , then _s_ is a strictly proper scoring rule but where no non-
+probability is even weakly _s_ -dominated by any probability.
+
+Furthermore, the only times when we have _s_ ′( _v_ ) = _s_ ′( _w_ ) is when
+_v_ and _w_ point in the same direction.
+
+An interesting question is how far one can weaken the continuity assumption.
+While I gave [necessary and sufficient
+conditions](https://arxiv.org/abs/2103.00085), those conditions are rather
+complicated and hard to work with. So here is an interesting question: Is it
+sufficient for the domination property that the scoring rule be continuous at
+all the regular probabilities, those that assign non-zero values to every
+point, and bounded?
+
+This is just a technical note. Pettigrew claimed, and Nielsen and I
+independently proved (my proof is [here](https://arxiv.org/abs/2102.02260))
+that any strictly proper scoring rule on a finite space that is continuous on
+the probabilities has the domination property that any non-probability is
+strictly dominated in score by some probability.
+
+Geometrically, for any non-zero vector _v_ , the torus _D_ is contained
+between two planes perpendicular to _v_. One of these two planes is found by
+going from the origin in the positive _v_ direction and the other in the
+negative _v_ direction. Let _H_ ( _v_ ) be the plane that is in the positive
+_v_ direction from the origin. The intersection of _H_ ( _v_ ) with _D_ will
+be a single point, unless _v_ is parallel to the axis of the donut (i.e., _v_
+= ( _t_ , _t_ ,0) for some _t_ ), in which case the intersection will be a
+circle (this case is illustrated below).
+
+The answer is negative. It took me a number of days to see this, because I
+felt I was very close to a proof of a positive answer, but I wasn’t. Here’s a
+sketch of the counterexample. Start with a torus (i.e., the solid you get by
+revolving a circle about a line in the same plane that does not intersect it).
+Put the center of the torus at the origin of three dimensional Euclidean
+space, and arrange the torus so that its central axis (the one that the circle
+that generated it was rotated about) lies in the direction of the vector
+(1,1,0). Let _D_ be the surface of the torus.
+
+Let _s_ ′( _v_ ) be a point in the intersection of _H_ ( _v_ ) with _D_. Then,
+_s_ ′ is continuous everywhere except at those vectors parallel to the donut
+axis. Moreover, for any _z_ in _D_ , we will have _v_ ⋅ _z_ ≤ _v_ ⋅ _s_ ′( _v_
+). Furthermore, if we have _v_ ⋅ _s_ ′( _w_ ) = _v_ ⋅ _s_ ′( _v_ ), then the
+plane _H_ ( _v_ ) would need to intersect _D_ at both _s_ ′( _w_ ) and _s_ ′(
+_v_ ). But it is geometrically clear that this cannot happen unless _v_ and
+_w_ point in the same direction. Thus, unless _v_ and _w_ point in the same
+direction, _v_ ⋅ _s_ ′( _w_ ) < _v_ ⋅ _s_ ′( _v_ ).
+
+Given a probability _p_ on the space _Ω_ = {1, 2, 3}, let _p_ ′ be the vector
+( _p_ ({1}), _p_ ({2}), _p_ ({3})). Define the value of the score _s_ ( _p_ )(
+_i_ ) of _p_ at _i_ ∈ _Ω_ to be equal to the _i_ th component of _s_ ′( _p_
+′). Then _E_ _p_ _s_ ( _q_ ) = _p_ ′ ⋅ _s_ ′( _q_ ′), and our earlier
+observations about dot products show that _E_ _p_ _s_ ( _q_ ) < _E_ _p_ _s_ (
+_p_ ) when _p_ ≠ _q_ are both probabilities. Thus we have strict propriety. We
+clearly also have continuity except when _p_ ′ is parallel to the axis of the
+donut, i.e., when _p_ assigns 1/2, 1/2 and 0 respectively to the three points
+of _Ω_. And obviously we have boundedness.
+
+In hindsight, I could have just downloaded something from Thingiverse. But it
+was fun to design, and I like the knurling (based on an arcade spinner I'm
+making for Tempest).
+
+I suppose there is an environmental benefit from using less plastic, but it
+needs to be offset against the environmental cost of repair and replacement.
+Adding ten grams of plastic would have easily made the knob way, way stronger,
+and that's about 0.01 gallons of crude oil, which is probably an order of
+magnitude less than the crude oil someone might use to drive to the store for
+a replacement (or a repair person being called in; in our case, it wasn't
+obvious that the knob was the problem; I suspected the timer at first, and
+disassembled it, before finally realizing that the knob had an internal crack
+that made it impossible for it to exert the needed torque).
+
+The most recent is our GE dryer where the timer knob always felt flimsy, and
+finally the plastic holding the timer shaft cracked. The underside revealed
+thin-walled plastic holding the timer shaft, reinforced with some more
+chambers made of thin-walled plastic. Perhaps over-reacting, I ended up
+[designing](https://www.thingiverse.com/thing:5860464) a very chunky
+3D-printed one.
+
+One of the standard gripes about modern manufacturing is how many items break
+down because the manufacturer saved a very small fraction of the price,
+sometimes only a few cents. I find myself frequently resoldering mice and
+headphones, presumably because the wires were too thin, but there at least
+there is a functionality benefit from thin wires.
+
+**Corollary:** In the setting of the Theorem, if _E_ _p_ is a _V_ -valued
+prevision from _V_ -valued measurable functions to _V_ such that (a) _E_ _p_ (
+_c_ ⋅1 _A_ ) = _c_ _p_ ( _A_ ) always, (b) if _f_ and _g_ are equal outside of
+a set with _p_ -measure zero, then _E_ _p_ _f_ = _E_ _p_ _g_ , and (c) _E_ _p_
+_s_ ( _q_ ) is always defined for extreme singleton-concentrated _p_ and _q_ ,
+then the strict propriety inequality _E_ _r_ _s_ ( _r_ ) > _E_ _r_ _s_ ( _q_ )
+fails for some distinct extreme singleton-concentrated _p_ and _q_.
+
+**Proof of Corollary:** Suppose _p_ is concentrated at _α_ and _E_ _p_ _f_ is
+defined. Let _Z_ = { _ω_ : _f_ ( _ω_ ) = _f_ ( _α_ )}. Then _p_ ( _Z_ ) = 1
+and _p_ ( _Z_ _c_ ) = 0. Hence _f_ is _p_ -almost surely equal to _f_ ( _α_ )
+⋅ 1 _Z_. Thus, _E_ _p_ _f_ = _f_ ( _α_ ). Thus if _r_ and _q_ are as in the
+Theorem, _E_ _r_ _s_ ( _r_ ) = _s_ ( _r_ )( _α_ ) and _E_ _r_ _s_ ( _q_ ) =
+_s_ ( _q_ )( _α_ ), and our result follows from the Theorem.
+
+**Theorem** : Assume Choice. If 2 _κ_ > _κ_ _ω_ and _V_ is a topological space
+with the _T_ 1 property and ≤ is a total pre-order on _V_. Let _s_ be a
+function _s_ from the extreme probabilities on _Ω_ = 2 _κ_ , with the product
+_σ_ -algebra, concentrated on points to the set of measurable functions from
+_Ω_ to _V_. Then there exist extreme probabilities _r_ and _q_ concentrated at
+distinct points _α_ and _β_ respectively such that _s_ ( _r_ )( _α_ ) ≤ _s_ (
+_q_ )( _α_ ).
+
+**Proof of Theorem:** Given an extreme probability _p_ and _z_ ∈ _V_ , the
+inverse image of _z_ under _s_ ( _p_ ), namely _L_ _p_ , _z_ = { _ω_ : _s_ (
+_p_ ) = _z_ }, is measurable. A measurable set _A_ depends only on a countable
+number of factors of 2 _κ_ : i.e., there is a countable set _C_ ⊆ _κ_ such
+that if _ω_ , _ω_ ′ ∈ _κ_ agree on _C_ , and one is in _A_ , so is the other.
+Let _C_ _p_ ⊂ _κ_ be a countable set such that _L_ _p_ , _s_ ( _p_ )( _ω_ )
+depends only on _C_ _p_ , where _ω_ is the point _p_ is concentrated on (to
+get all the _C_ _p_ we need the Axiom of Choice). The set of all the countable
+subsets of _κ_ has cardinality at most _κ_ _ω_ , and hence so does the set of
+all the _C_ _p_. Let _Z_ _p_ = { _q_ : _C_ _q_ = _C_ _p_ }. The union of the
+_Z_ _p_ is all the extreme point-concentrated probabilities and hence has
+cardinality 2 _κ_. There are at most _κ_ _ω_ different _Z_ _p_. Thus for some
+_p_ , the set _Z_ _p_ has cardinality bigger than _κ_ _ω_ (here we used the
+assmption that 2 _ω_ > _κ_ _ω_ ).
+
+A space is _T_ 1 iff singletons are closed.  
+Extreme probabilities only have 0 and 1 values. An extreme probability _p_ is
+concentrated at _α_ provided that _p_ ( _A_ ) = 1 if _α_ ∈ _A_ and _p_ ( _A_ )
+= 0 otherwise. (We can identify extreme probabilities with the points at which
+they are concentrated, as long as the _σ_ -algebra separates points.) Note
+that in the product _σ_ -lagebra on 2 _κ_ singletons are not measurable.
+
+In a [recent paper](http://philsci-archive.pitt.edu/21251/), I prove that
+there is no strictly proper score _s_ on the countably additive probabilities
+on the product space 2 _κ_ where we require _s_ ( _p_ ) to be measurable for
+every probability _p_ and where _κ_ is a cardinal such that 2 _κ_ > _κ_ _ω_
+(e.g., the continuum). But here I am taking strictly proper scores to be real-
+or extended-real valued. What if we relax this requirement? The answer is
+negative.
+
+**Note:** Towards the end of my paper, I suggested that the unavailability of
+proper scores in certain contexts is due to the limited size of the set of
+values—normally assumed to be real. But the above shows that sometimes it’s
+due to measurability constraints instead, as we still won’t have proper scores
+even if we let the values be some gigantic collection of surreals.
+
+There are _q_ and _r_ in _Z_ _p_ concentrated at _α_ and _β_ , respectively,
+such that _α_ ∣ _C_ _p_ = _β_ ∣ _C_ _p_ (i.e., _α_ and _β_ agree on _C_ _p_ ).
+For the function (⋅)∣ _C_ _p_ on the concentration points of the probabilities
+in _Z_ _p_ has an image of cardinality at most 2 _ω_ ≤ _κ_ _ω_ but _Z_ _p_ has
+cardinality bigger than _κ_ _ω_. Since _α_ ∣ _C_ _p_ = _β_ ∣ _C_ _p_ , and _L_
+_q_ , _s_ ( _q_ )( _α_ ) and _L_ _r_ , _s_ ( _r_ )( _β_ ) both depend only on
+the factors in _C_ _p_ , it follows that _s_ ( _q_ )( _β_ ) = _s_ ( _q_ )( _α_
+) and _s_ ( _r_ )( _α_ ) = _s_ ( _r_ )( _β_ ). Now either _s_ ( _q_ )( _β_ ) ≥
+_s_ ( _r_ )( _α_ ) or _s_ ( _q_ )( _β_ ) ≤ _s_ ( _r_ )( _α_ ) by totality.
+Swapping ( _q_ , _α_ ) with ( _r_ , _β_ ) if necessary, assume _s_ ( _q_ )(
+_α_ ) = _s_ ( _q_ )( _β_ ) ≤ _s_ ( _r_ )( _α_ ).
+
+A plausible story about the relevant difference between “green” and “grue” is
+that “green” is significantly closer to being a “perfectly natural” or
+“fundamental” property than “grue” is. If we try to define “green” and “grue”
+in fundamental scientific vocabulary, the definition of “grue” will be about
+twice as long. Thus, “green” is projectible but “grue” is not, to use
+Goodman’s term.
+
+Another move would be to say that projectibility is not about distance to
+fundamentality, but is legitimately anthropocentric. I think kind of
+anthropocentrism is only plausible on the hypothesis that the world is made
+for us humans.
+
+Say an object is grue if it is observed before the year 2100 and green, or it
+is blue but not observed before 2100. Then it is reasonable to do induction
+with “green” but not with “grue”: our observations of emerald color fit
+equally well with the hypotheses that emeralds are green and that they are
+grue, but it is the green hypothesis that is reasonable.
+
+Perhaps the universe is made for us humans, but mainly for the humans who
+don’t have strongly reductive tendencies.
+
+This requires two kinds of non-contingent relations: mathematical relations
+between the values and the determinable–determinate relation. One may worry
+that these are just as puzzling as the contingent ones. I don't know. I've
+always found contingent relations really puzzling.
+
+| Alice | Bob | Carl  
+---|---|---|---  
+**Personal number** | 2 | 3 | 5  
+**Love number** | 10 | 6 | 1  
+  
+While of course my illustration of this in terms of love is unserious, and
+only really works assuming love-finitism (each person can only love finitely
+many people), the point generalizes: we can replace non-mathematical relations
+with mathematizable determinables and mathematical relations. For instance,
+spatial relations can be analyzed by supposing that objects have a location
+determinable whose possible values are regions of a mathematical manifold.
+
+Here’s a Pythagorean way to eliminate contingent relations from a theory.
+Let’s say that we want to eliminate the relation of love from a theory of
+persons. We suppose instead that each person has two fundamental contingent
+numerical determinables: personal number and love number, both of which are
+positive integers, with each individual’s personal number being prime and an
+essential property of theirs. Then we say that _x_ loves _y_ iff _x_ ’s love
+number is divisible by _y_ ’s personal number. For instance suppose we have
+three people: Alice, Bob and Carl, and Alice loves herself and Carl, Bob loves
+himself and Alice, and Carl loves no one. This can be made true by the
+following setup:
+

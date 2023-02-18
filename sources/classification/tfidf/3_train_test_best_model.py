@@ -33,7 +33,7 @@ pd.set_option('display.max_colwidth', None) #afficher texte entier dans datafram
 filename_corpus = sys.argv[1]
 
 # Se rendre dans le dossier root
-set_current_directory_to_root(root = "classification_texte_articles_version_objet")
+set_current_directory_to_root(root = "classification_texte_articles")
 print("os.getcwd() at root =", os.getcwd()) 
 
 # path = PureWindowsPath(os.getcwd() + "/data/input/merged_corpus/{}".format(filename_corpus))
@@ -78,7 +78,7 @@ print(X_test_tfidf.shape)
 
 ### Obtenir les resultats (sauvegarde sur disque)
 # Creation du dossier de sorties si besoin
-make_output_dir(corpus_name)
+make_classif_output_dir(corpus_name)
 
 # Evaluation du modele (matrice de confusion, courbe ROC et learning curves)
 save_model_diagnostics(corpus, X_train_tfidf, y_train, y_test, y_pred, indices_test, class_names, model, 

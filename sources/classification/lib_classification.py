@@ -1,7 +1,7 @@
 import sys
 import os
-sys.path.insert(0, "..\..")
 sys.path.insert(0, "../..")
+sys.path.insert(0, "..")
 print("(lib_classification.py : sys.path =", sys.path)
 import glob
 import numpy as np
@@ -231,7 +231,7 @@ def save_cross_validation(X_train, y_train, scorings, num_iter, k, dataset_name,
     f.close()
 
 
-def make_output_dir(dataset_name):
+def make_classif_output_dir(dataset_name):
     if not os.path.exists("./data/output/{}".format(dataset_name)):
         os.makedirs("./data/output/{}".format(dataset_name))
     if not os.path.exists("./data/output/{}/select_model".format(dataset_name)):

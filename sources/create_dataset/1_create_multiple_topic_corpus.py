@@ -47,12 +47,12 @@ def main():
     ### corpus_lists.txt : un fichier .txt qui contient chaque corpus a fusionner et son topic
 
     # ex : 
-    # python 1_create_multiple_topic_corpus.py corpus_list_philosophy.txt english csv
-    # python 1_create_multiple_topic_corpus.py corpus_list_philosophy.txt english parquet
+    # python 1_create_multiple_topic_corpus.py list_corpus_philosophy.txt english csv
+    # python 1_create_multiple_topic_corpus.py list_corpus_philosophy.txt english parquet
     # python 1_create_multiple_topic_corpus.py list_corpus_feser_pruss.txt english csv
     # python 1_create_multiple_topic_corpus.py corpus_amazon.parquet english parquet
 
-    set_current_directory_to_root(root = "classification_texte_articles_version_objet")
+    set_current_directory_to_root(root = "classification_texte_articles")
     print("os.getcwd()")
     print(os.getcwd())
     

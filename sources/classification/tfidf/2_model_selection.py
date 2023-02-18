@@ -17,12 +17,12 @@ from sklearn.model_selection import RepeatedStratifiedKFold
 pd.set_option('display.max_colwidth', 30)
 pd.set_option('display.min_rows', 5)
 pd.set_option('display.max_rows', 5)
-pd.set_option('display.max_colwidth', None) #afficher texte entier dans dataframesys.path.append(PureWindowsPath(r"C:\Users\eupho\OneDrive\Documents\perso\projets\classification_texte_articles_version_objet\sources").as_posix())
+pd.set_option('display.max_colwidth', None) #afficher texte entier dans dataframesys.path.append(PureWindowsPath(r"C:\Users\eupho\OneDrive\Documents\perso\projets\classification_texte_articles\sources").as_posix())
 from pathlib import Path, PureWindowsPath
 sys.path.append("../..") # sources
 sys.path.append("../") # sources\classification
-# sys.path.append(PureWindowsPath(r"C:\Users\eupho\OneDrive\Documents\perso\projets\classification_texte_articles_version_objet\sources").as_posix())
-# sys.path.append(PureWindowsPath(r"C:\Users\eupho\OneDrive\Documents\perso\projets\classification_texte_articles_version_objet\sources\classification").as_posix())
+# sys.path.append(PureWindowsPath(r"C:\Users\eupho\OneDrive\Documents\perso\projets\classification_texte_articles\sources").as_posix())
+# sys.path.append(PureWindowsPath(r"C:\Users\eupho\OneDrive\Documents\perso\projets\classification_texte_articles\sources\classification").as_posix())
 from lib_general import *
 from lib_classification import *
 
@@ -31,6 +31,7 @@ from lib_classification import *
 # python 2_model_selection.py corpus_edwardfeser_exapologist.csv
 # python 2_model_selection.py corpus_feser_pruss.csv
 # python 2_model_selection.py corpus_amazon.parquet
+# python 2_model_selection.py corpus_sceptic_theist.csv
 # python 2_model_selection.py
 # python 2_model_selection.py all : model selection on all files (csv and parquet)
 # python 2_model_selection.py all csv : model selection on all csv files
@@ -40,7 +41,7 @@ from lib_classification import *
 # argv[2] = input files format : only if argv[1] == "all", equals "csv" or "parquet"
 
 # Se rendre dans le dossier root
-set_current_directory_to_root(root = "classification_texte_articles_version_objet")
+set_current_directory_to_root(root = "classification_texte_articles")
 print("os.getcwd() at root =", os.getcwd()) 
 
 def main():
@@ -70,8 +71,8 @@ def main():
         print("corpus_name =", corpus_name)
 
         # Creation du dossier de sorties si besoin
-        make_output_dir(corpus_name)
-        print("make_output_dir(corpus_name)")
+        make_classif_output_dir(corpus_name)
+        print("make_classif_output_dir(corpus_name)")
 
         # Importer le dataset puis equilibrer ses classes
         corpus = get_merged_corpus_dataframe_from_filename(filename)

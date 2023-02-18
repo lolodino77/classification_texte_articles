@@ -47,7 +47,7 @@ def main():
     # python 0_create_one_topic_corpus.py bibliography_philosophy.txt 5 csv
     # python 0_create_one_topic_corpus.py bibliography_philosophy.txt 5 parquet
 
-    set_current_directory_to_root(root = "classification_texte_articles_version_objet")
+    set_current_directory_to_root(root = "classification_texte_articles")
     print("os.getcwd()")
     print(os.getcwd())
     
