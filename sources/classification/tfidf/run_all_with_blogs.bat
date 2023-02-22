@@ -16,17 +16,17 @@ echo %merged_corpus_extension%
 echo %language%
 
 @REM Partie pretraitement des donnees
-cd C:\Users\eupho\OneDrive\Documents\perso\projets\classification_texte_articles_version_objet\sources\create_dataset
+cd C:\Users\eupho\OneDrive\Documents\perso\projets\classification_texte_articles\sources\create_dataset
 python 0_create_one_topic_corpus.py %list_of_blogs% %num_articles% %corpus_extension%
 python 1_create_multiple_topic_corpus.py %list_corpus_topic% %language% %merged_corpus_extension%
 
 @REM Partie modele 
-@REM cd C:\Users\eupho\OneDrive\Documents\perso\projets\classification_texte_articles_version_objet\sources\classification\tfidf
+@REM cd C:\Users\eupho\OneDrive\Documents\perso\projets\classification_texte_articles\sources\classification\tfidf
 python 2_model_selection.py corpus_sceptic_theist.%merged_corpus_extension%
 python 3_train_test_best_model.py corpus_sceptic_theist.%merged_corpus_extension%
 
-@REM cd C:\Users\eupho\OneDrive\Documents\perso\projets\classification_texte_articles_version_objet\sources
-cd C:\Users\eupho\OneDrive\Documents\perso\projets\classification_texte_articles_version_objet\sources\classification\tfidf
+@REM cd C:\Users\eupho\OneDrive\Documents\perso\projets\classification_texte_articles\sources
+cd C:\Users\eupho\OneDrive\Documents\perso\projets\classification_texte_articles\sources\classification\tfidf
 rem Fin
 
 @REM Exemple de valeurs pour les parametres

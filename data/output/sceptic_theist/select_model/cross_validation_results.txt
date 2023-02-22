@@ -1,1 +1,7 @@
-[('test_accuracy', 0.8799), ('test_f1_macro', 0.8799), ('test_recall', 0.9009), ('test_precision', 0.8644)] (LR)
+[('test_accuracy', 0.8828), ('test_f1_macro', 0.8827), ('test_recall', 0.9059), ('test_precision', 0.867)] (LR)
+[('test_accuracy', 0.7661), ('test_f1_macro', 0.7632), ('test_recall', 0.8455), ('test_precision', 0.7362)] (AdaBoostClassifier)
+[('test_accuracy', 0.6055), ('test_f1_macro', 0.4994), ('test_recall', 0.9839), ('test_precision', 0.5847)] (KNN)
+[('test_accuracy', 0.85), ('test_f1_macro', 0.8497), ('test_recall', 0.888), ('test_precision', 0.8273)] (RandomForest)
+[('test_accuracy', 0.8905), ('test_f1_macro', 0.8905), ('test_recall', 0.8948), ('test_precision', 0.8886)] (SGDClassifier)
+[('test_accuracy', 0.8946), ('test_f1_macro', 0.8944), ('test_recall', 0.9266), ('test_precision', 0.8719)] (SVM)
+[('test_accuracy', 0.7549), ('test_f1_macro', 0.7547), ('test_recall', 0.7582), ('test_precision', 0.7559)] (DecisionTreeClassifier)

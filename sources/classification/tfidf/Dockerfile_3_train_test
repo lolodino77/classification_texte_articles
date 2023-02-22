@@ -2,7 +2,7 @@ FROM python:3.8-slim
 ARG corpus_name
 ARG corpus_extension
 
-WORKDIR /classification_texte_articles_version_objet
+WORKDIR /classification_texte_articles
 
 COPY sources/classification/tfidf/requirements.txt sources/classification/tfidf/requirements.txt
 RUN python -m pip install --upgrade pip

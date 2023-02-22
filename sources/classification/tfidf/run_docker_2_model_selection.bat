@@ -1,4 +1,4 @@
-cd C:\Users\eupho\OneDrive\Documents\perso\projets\classification_texte_articles_version_objet
+cd C:\Users\eupho\OneDrive\Documents\perso\projets\classification_texte_articles
 
 @REM Exemples de commandes pour lancer le .bat
 @REM Syntaxe generale :
@@ -21,9 +21,9 @@ set corpus_extension=%2
 docker rm -f conteneur_tfidf_classif
 docker image rm image_tfidf_classif
 docker build --build-arg corpus_name --build-arg corpus_extension -t image_tfidf_classif -f sources/classification/tfidf/Dockerfile_2_model_selection .
-docker run --name=conteneur_tfidf_classif -d -v %cd%\data\output\%corpus_name%:/classification_texte_articles_version_objet/data/output/%corpus_name%/ image_tfidf_classif corpus_%corpus_name%.%corpus_extension%
+docker run --name=conteneur_tfidf_classif -d -v %cd%\data\output\%corpus_name%:/classification_texte_articles/data/output/%corpus_name%/ image_tfidf_classif corpus_%corpus_name%.%corpus_extension%
 docker logs conteneur_tfidf_classif
 
 @REM docker start -i conteneur_tfidf_classif
 
-cd C:\Users\eupho\OneDrive\Documents\perso\projets\classification_texte_articles_version_objet\sources\classification\tfidf
+cd C:\Users\eupho\OneDrive\Documents\perso\projets\classification_texte_articles\sources\classification\tfidf

@@ -22,10 +22,7 @@ def from_bibliographylist(filename, num_articles, table_format):
 
 
 def from_bloglist(filename, num_articles, table_format):
-    print("in from_bloglist")
     blogList = BlogList(filename, num_articles, table_format)
-    print("prout")
-    print(blogList)
     blogList.save_articles_urls()
     blogList.save_corpus_txt()
     blogList.save_corpus_dataframe()

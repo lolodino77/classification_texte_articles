@@ -207,12 +207,12 @@ def save_cross_validation(X_train, y_train, scorings, num_iter, k, dataset_name,
 
     models = []
     models.append(('LR', LogisticRegression(solver='liblinear', multi_class='ovr')))
-    # models.append(('AdaBoostClassifier', AdaBoostClassifier()))
-    # models.append(('KNN', KNeighborsClassifier()))
-    # models.append(('RandomForest', RandomForestClassifier()))
-    # models.append(('SGDClassifier', SGDClassifier()))
-    # models.append(('SVM', SVC()))
-    # models.append(('DecisionTreeClassifier', DecisionTreeClassifier()))
+    models.append(('AdaBoostClassifier', AdaBoostClassifier()))
+    models.append(('KNN', KNeighborsClassifier()))
+    models.append(('RandomForest', RandomForestClassifier()))
+    models.append(('SGDClassifier', SGDClassifier()))
+    models.append(('SVM', SVC()))
+    models.append(('DecisionTreeClassifier', DecisionTreeClassifier()))
     # models.append(('MLPClassifier', MLPClassifier(max_iter=100))) car diverge donc trop long
      
     # evaluate each model in turn
@@ -344,7 +344,7 @@ def save_learning_curves_multiple_models(models, X_train, y_train, cv_param, sco
     # y_train (numpy ndarray int) : Les etiquettes au format int (le format string ne marche pas)
     #cv_param : parametres de type kfold pour la cross validation
 def save_learning_curve(model, X_train, y_train, cv_param, scoring, train_sizes, dataset_name, stage, n_jobs=-1):
-    """Affiche la learning curve du modele selectionne selon un critere
+    """Enregistre au format .png la learning curve du modele selectionne selon un critere
        Learning curve = performances du modele (selon un critere) en fonction de la taille du trainset
 
     Entrees : 
@@ -568,15 +568,17 @@ def select_models(corpus, corpus_name, id_col_name, class_col_name, features_col
     train_sizes = np.linspace(0.2, 1.0, num_experiences)
     # n_jobs = -1
     models = []
-    # models.append(('AdaBoostClassifier', AdaBoostClassifier()))
+    models.append(('LR', LogisticRegression(solver='liblinear', multi_class='ovr')))
+    models.append(('AdaBoostClassifier', AdaBoostClassifier()))
+    models.append(('KNN', KNeighborsClassifier()))
     models.append(('RandomForest', RandomForestClassifier()))
-    # models.append(('SGDClassifier', SGDClassifier()))
-    # models.append(('SVM', SVC()))
+    models.append(('SGDClassifier', SGDClassifier()))
+    models.append(('SVM', SVC()))
     models.append(('DecisionTreeClassifier', DecisionTreeClassifier()))
 
     # scorings = ['accuracy', 'f1_macro', 'recall', 'precision']
-    # scorings = ['accuracy', 'f1_macro', 'recall']
-    scorings = ["accuracy"]
+    scorings = ['accuracy', 'f1_macro', 'recall']
+    # scorings = ["accuracy"]
     for scoring in scorings:
         save_learning_curves_multiple_models(models, X_train_tfidf, y_train, cv_param, scoring, train_sizes, 
                                             corpus_name)
