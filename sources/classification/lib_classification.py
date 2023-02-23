@@ -302,39 +302,51 @@ def save_learning_curves_multiple_models(models, X_train, y_train, cv_param, sco
     colors = iter(cm.rainbow(np.linspace(0, 1, len(models))))
     fig, ax = plt.subplots(figsize=(14, 9))
     linewidth = 3
-    trans_y = -2
+    trans_y = -3 #ecart en deux courbes (la translation verticale)
 
     zip_list = list(zip(models, colors))
     model_tuple, color = zip_list[0]
-    name, model = model_tuple
-    print("model =", name)
+    model_name, model = model_tuple
+    if("Classifier" in model_name):
+        model_name = model_name.split("Classifier")[0]
+    else:
+        model_name = model_name.split("(")[0]
+
+    print("model =", model_name)
     print("shape X_train =", len(y_train))
     n_jobs = -1
     train_sizes, train_scores, cv_scores = learning_curve(model, X_train, y_train, cv=cv_param, scoring=scoring, n_jobs=n_jobs, train_sizes=train_sizes)
     train_scores_mean = np.mean(train_scores, axis=1)
     cv_scores_mean = np.mean(cv_scores, axis=1)
-    model_name = str(model)
     ax.plot(train_sizes, train_scores_mean, label=model_name, color=color, linewidth=linewidth)
     ax.plot(train_sizes, cv_scores_mean, color=color, linewidth=linewidth)
     for i in range(1, len(zip_list)):
         model_tuple, color = zip_list[i]
-        name, model = model_tuple
+        model_name, model = model_tuple
+        if("Classifier" in model_name):
+            model_name = model_name.split("Classifier")[0]
+        else:
+            model_name = model_name.split("(")[0]
+            
         train_sizes, train_scores, cv_scores = learning_curve(model, X_train, y_train, cv=cv_param, scoring=scoring, n_jobs=n_jobs, train_sizes=train_sizes)
         train_scores_mean = np.mean(train_scores, axis=1)
         cv_scores_mean = np.mean(cv_scores, axis=1)
-        model_name = str(model)
         title = scoring.capitalize() + " sur le trainset et sur le cvset \n en fonction de la taille du trainset"
         tr = mtrans.offset_copy(ax.transData, fig=fig, x=0.0, y=-(trans_y*i), units='points')
         ax.plot(train_sizes, train_scores_mean, label=model_name, color=color, linewidth=linewidth, transform=tr)
         # ax.plot(train_sizes, train_scores_mean, label=model_name, color=color, linewidth=linewidth)
-        ax.plot(train_sizes, cv_scores_mean, color=color, linewidth=linewidth)
-        
-        plt.xticks(fontsize=16)
-        plt.yticks(fontsize=16)
-        plt.title(title, size=19)
-        plt.xlabel("Taille du trainset", fontsize=18)
-        plt.ylabel(scoring.capitalize(), fontsize=18)
-        plt.legend(loc="best", prop={'size': 16})
+        ax.plot(train_sizes, cv_scores_mean, color=color, linewidth=linewidth, linestyle="dashed")
+
+    # plt.text(0.5, 0.5, "full line : scores on trainset\dashed line : scores on cvset")
+    plt.plot([], [], color="black", linestyle="solid", label="scores sur le trainset")
+    plt.plot([], [], color="black", linestyle="dashed", label="scores sur le cvset")
+    plt.xticks(fontsize=16)
+    plt.yticks(fontsize=16)
+    plt.title(title, size=19)
+    plt.xlabel("Taille du trainset", fontsize=18)
+    plt.ylabel(scoring.capitalize(), fontsize=18)
+    plt.legend(ncol=3, loc="lower right", prop={'size': 16})
+
     path = "./data/output/{}/select_model/learning_curve_{}".format(dataset_name, scoring)
     plt.savefig(path)
 
@@ -481,9 +493,11 @@ def save_false_predictions(corpus, dataset_name, indices_test, y_test, y_pred, c
                                     avec les noms des classes en int
                                     Exemple : {"0":chien, "1":chat}
     """
-    corpus_test = pd.DataFrame({"id":corpus.iloc[indices_test].id, "message": corpus.iloc[indices_test].message, "truth":y_test, "pred":y_pred})
+    corpus_test = pd.DataFrame({"id":corpus.iloc[indices_test].id, "message": corpus.iloc[indices_test].message, 
+                                "message_preprocessed": corpus.iloc[indices_test].message_preprocessed,
+                                "truth":y_test, "pred":y_pred})
     corpus_test_errors = corpus_test.query("truth != pred")
-    corpus_test_errors = corpus_test_errors[["id", "truth", "pred", "message"]]
+    corpus_test_errors = corpus_test_errors[["id", "truth", "pred", "message", "message_preprocessed"]]
     corpus_test_errors["truth"] = np.select([corpus_test_errors["truth"] == 0], [class_names["0"]], default=class_names["1"])
     corpus_test_errors["pred"] = np.select([corpus_test_errors["pred"] == 0], [class_names["0"]], default=class_names["1"])
     corpus_test_errors.to_csv("./data/output/{}/best_model/false_predictions.csv".format(dataset_name), index=False, header=True)
@@ -522,8 +536,8 @@ def save_model_diagnostics(corpus, X_train, y_train, y_test, y_pred, indices_tes
     train_sizes = np.linspace(0.2, 1.0, num_experiences)
     n_jobs = -1
     scorings = ['accuracy', 'f1_macro', 'recall', 'precision']
-    save_all_learning_curves(model, X_train, y_train, cv_param, scorings, train_sizes, 
-                                dataset_name, "best_model", n_jobs)
+    # save_all_learning_curves(model, X_train, y_train, cv_param, scorings, train_sizes, 
+    #                             dataset_name, "best_model", n_jobs)
 
     # Fausses predictions
     save_false_predictions(corpus, dataset_name, indices_test, y_test, y_pred, class_names)
@@ -576,9 +590,11 @@ def select_models(corpus, corpus_name, id_col_name, class_col_name, features_col
     models.append(('SVM', SVC()))
     models.append(('DecisionTreeClassifier', DecisionTreeClassifier()))
 
+
+
     # scorings = ['accuracy', 'f1_macro', 'recall', 'precision']
-    scorings = ['accuracy', 'f1_macro', 'recall']
-    # scorings = ["accuracy"]
+    # scorings = ['accuracy', 'f1_macro', 'recall']
+    scorings = ["accuracy"]
     for scoring in scorings:
         save_learning_curves_multiple_models(models, X_train_tfidf, y_train, cv_param, scoring, train_sizes, 
                                             corpus_name)

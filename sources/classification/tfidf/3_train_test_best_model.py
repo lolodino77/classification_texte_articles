@@ -57,7 +57,8 @@ print(corpus.id.duplicated().any())
 print(corpus.index.duplicated().any())
 corpus
 
-model = SGDClassifier()
+# model = SGDClassifier()
+model = SVC()
 X = corpus["message_preprocessed"]
 y_str = corpus["category"]
 y = corpus["category_bin"]
