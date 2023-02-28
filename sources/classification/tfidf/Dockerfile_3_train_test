@@ -11,7 +11,7 @@ RUN pip install --no-cache-dir -r ./sources/classification/tfidf/requirements.tx
 COPY data/input/merged_corpus/corpus_${corpus_name}.${corpus_extension} data/input/merged_corpus/corpus_${corpus_name}.${corpus_extension}
 COPY data/input/merged_corpus/labelEncoder_category_${corpus_name}.joblib data/input/merged_corpus/labelEncoder_category_${corpus_name}.joblib
 COPY sources/lib_general.py sources/lib_general.py
-COPY sources/main_test.py sources/main_test.py
+#COPY sources/main_test.py sources/main_test.py
 COPY sources/classification/lib_classification.py sources/classification/lib_classification.py
 COPY sources/classification/tfidf/3_train_test_best_model.py sources/classification/tfidf/3_train_test_best_model.py
 RUN mkdir -p data/output/${corpus_name}/
